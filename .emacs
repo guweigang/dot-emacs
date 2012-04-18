@@ -148,6 +148,8 @@
 
 ;; psvn
 (require 'psvn)
+(add-to-list 'load-path "/share/.emacs.d/git-emacs")
+(require 'git-emacs)
 
 ;; tabbar
 (add-to-list 'load-path "/share/.emacs.d/tabbar")
