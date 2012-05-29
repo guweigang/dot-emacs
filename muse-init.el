@@ -34,6 +34,10 @@
                    :header "~/personal-site/blog/templates/generic-header.html"
                    :footer "~/personal-site/blog/templates/generic-footer.html")
 
+(muse-derive-style "bull-xhtml" "xhtml"
+                   :header "~/personal-site/bull/templates/header.html"
+                   :footer "~/personal-site/bull/templates/footer.html")
+
 (setq muse-project-alist
       '(
         ("Blog" ("~/personal-site/blog"
@@ -53,6 +57,12 @@
          (:base "lisp-xhtml"
                 :base-url "http://bullsoft.org/lisp/emacs"
                 :path "~/personal-site/lisp/manual"))
+
+        ("Bull Framework" ("~/personal-site/bull"
+                       :default "index")
+         (:base "bull-xhtml"
+                :base-url "http://bullsoft.org/framework/manual/"
+                :path "~/personal-site/bull/manual"))
         ))
 
 

@@ -1,5 +1,4 @@
 ;; .emacs
-
 ;;; uncomment this line to disable loading of "default.el" at startup
 ;; (setq inhibit-default-init t)
 
@@ -20,16 +19,11 @@
 ;;(setq default-font "Consolas-13")
 (prefer-coding-system 'utf-8)
 (setq default-buffer-file-coding-system 'utf-8)
-
-
 (transient-mark-mode t)
-
 (display-time)
 (setq display-time-day-and-date t)
 (setq display-time-24hr-format t)
-
 (show-paren-mode 't)
-
 (setq-default indent-tabs-mode nil)
 (setq default-tab-width 4) ; width for display tabs
 (setq c-default-style "linux"
@@ -42,11 +36,9 @@
 ; python
 ; java
 ; user
-
 ; show line number the cursor is on, in status bar (the mode line)
 (line-number-mode 1)
 (column-number-mode 1)
-
 
 ; display line numbers in margin (fringe). Emacs 23 only.
 (global-linum-mode 1) ; always show line numbers
@@ -56,21 +48,27 @@
 
 (add-to-list 'load-path "/share/.emacs.d")
 
-(load "php-mode")
+;; (load "php-mode")
+
+(require 'pi-php-mode)
+
 (add-to-list 'auto-mode-alist
          '("\\.php[345]\\'\\|\\.php\\'\\|\\.phtml\\'" . php-mode))
 
+(add-hook 'php-mode-hook
+          '(lambda () (define-abbrev php-mode-abbrev-table "ex" "extends")))
+
 (add-hook 'php-mode-hook (lambda ()
-                           (defun ywb-php-lineup-arglist-intro (langelem)
+                           (defun php-lineup-arglist-intro (langelem)
                              (save-excursion
                                (goto-char (cdr langelem))
                                (vector (+ (current-column) c-basic-offset))))
-                           (defun ywb-php-lineup-arglist-close (langelem)
+                           (defun php-lineup-arglist-close (langelem)
                              (save-excursion
-                               (goto-char (cdr langelem))
+                               (goto-char (cdr langelem))                                  
                                (vector (current-column))))
-                           (c-set-offset 'arglist-intro 'ywb-php-lineup-arglist-intro)
-                           (c-set-offset 'arglist-close 'ywb-php-lineup-arglist-close)
+                           (c-set-offset 'arglist-intro 'php-lineup-arglist-intro)
+                           (c-set-offset 'arglist-close 'php-lineup-arglist-close)
                            (c-set-offset 'case-label '+)))
 
 ;; (setq php-manual-file "~/php-complet-file")
@@ -78,9 +76,9 @@
 ;; nxhtml
 (load "nxhtml/autostart.el")
 
+;; yasnippet
 (add-to-list 'load-path "/share/.emacs.d/yasnippet-0.6.1c")
 (require 'yasnippet) ;; not yasnippet-bundle
-
 (yas/initialize)
 (yas/load-directory "/share/.emacs.d/yasnippet-0.6.1c/snippets")
 
@@ -110,7 +108,6 @@
 ; If you want kill-line to kill including the line ending char
 (setq kill-whole-line t)
 
-
 ;; auto complete
 (add-to-list 'load-path "/share/.emacs.d/")
 (require 'auto-complete-config)
@@ -118,7 +115,6 @@
 (ac-config-default)
 (define-key ac-completing-map "\C-n" 'ac-next)
 (define-key ac-completing-map "\C-p" 'ac-previous)
-
 (defun ac-yasnippet-candidate ()
   (let ((table (yas/get-snippet-tables major-mode)))
     (if table
@@ -148,8 +144,13 @@
 
 ;; psvn
 (require 'psvn)
+
+;; git
 (add-to-list 'load-path "/share/.emacs.d/git-emacs")
 (require 'git-emacs)
+
+(add-to-list 'load-path "/share/.emacs.d/magit")
+(require 'magit)
 
 ;; tabbar
 (add-to-list 'load-path "/share/.emacs.d/tabbar")
@@ -267,7 +268,7 @@
   ;; If you edit it by hand, you could mess it up, so be careful.
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
-
+ '(git--mark-blob-face ((((class color) (background light)) (:foreground "white"))))
  '(mumamo-background-chunk-major ((((class color) (min-colors 8)) (:background "black"))))
  '(mumamo-background-chunk-submode1 ((((class color) (min-colors 8)) (:background "black"))))
  '(mumamo-background-chunk-submode2 ((((class color) (min-colors 8)) (:background "black"))))
@@ -285,9 +286,6 @@
 (global-set-key (kbd "<f11>") 'delete-other-windows)
 (global-set-key (kbd "<f12>") 'other-window)
 (global-set-key (kbd "<select>") 'move-end-of-line)
-
-
-
 (global-set-key (kbd "C-\\") 'backward-kill-word)
 
 ;; 高亮当前行
@@ -328,16 +326,20 @@
 (setq x-select-enable-primary nil)
 ; makes killing/yanking interact with clipboard X11 selection
 (setq x-select-enable-clipboard t)
+(require 'fringe)
 
-;; zencoding mode
-;;(add-to-list 'load-path "/share/.emacs.d/zencoding-mode")
+(add-to-list 'load-path "/share/.emacs.d/emacs-calfw")
+(require 'calfw)
+(require 'calfw-org)
+(require 'calfw-cal)
 
-;;(require 'zencoding-mode)
-;; Auto-start on any markup modes
-;;(add-hook 'sgml-mode-hook 'zencoding-mode)
-
-;;(require 'zencoding-builder)
-;;(define-key zencoding-mode-keymap (kbd "M-RET") 'zencoding-builder)
-
-
+;; Month
+(setq calendar-month-name-array
+  ["一月" "二月" "三月" "四月" "五月" "六月"
+   "七月" "八月" "九月" "十月" "十一月" "十二月"])
+;; Week days
+(setq calendar-day-name-array
+      ["周日" "周一" "周二" "周三" "周四" "周五" "周六"])
+;; First day of the week
+(setq calendar-week-start-day 0) ; 0:Sunday, 1:Monday
 
