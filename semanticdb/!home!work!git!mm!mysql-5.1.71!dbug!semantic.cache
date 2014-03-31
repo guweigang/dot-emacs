@@ -1,0 +1,38 @@
+;; Object dbug/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "dbug/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("INCLUDES" variable (:default-value ("-I$(top_builddir)/include" "-I$(top_srcdir)/include")) nil [738 812])
+            ("LDADD" variable (:default-value ("libdbug.a" "../mysys/libmysys.a" "../strings/libmystrings.a")) nil [812 892])
+            ("pkglib_LIBRARIES" variable (:default-value ("libdbug.a")) nil [892 926])
+            ("noinst_HEADERS" variable (:default-value ("dbug_long.h")) nil [926 962])
+            ("libdbug_a_SOURCES" variable (:default-value ("dbug.c" "sanity.c")) nil [962 1002])
+            ("EXTRA_DIST" variable (:default-value ("CMakeLists.txt" "example1.c" "example2.c" "example3.c" "user.r" "monty.doc" "dbug_add_tags.pl" "my_main.c" "main.c" "factorial.c" "dbug_analyze.c" "CMakeLists.txt")) nil [1002 1227])
+            ("NROFF_INC" variable (:default-value ("example1.r" "example2.r" "example3.r" "main.r" "factorial.r" "output1.r" "output2.r" "output3.r" "output4.r" "output5.r")) nil [1227 1405])
+            ("CLEANFILES" variable (:default-value ("$(NROFF_INC)" "user.t" "user.ps")) nil [1405 1457])
+            ("noinst_PROGRAMS" variable (:default-value ("factorial")) nil [1512 1559])
+            ("factorial_SOURCES" variable (:default-value ("my_main.c" "factorial.c")) nil [1559 1605])
+            ("dbug_analyze_SOURCES" variable (:default-value ("dbug_analyze.c")) nil [1605 1644])
+            ("all" function (:arguments ("user.t" "user.ps")) nil [1645 1676])
+            ("user.t" function (:arguments ("user.r" "$(NROFF_INC)")) nil [1677 1738])
+            ("user.ps" function (:arguments ("user.r" "$(NROFF_INC)")) nil [1739 1793])
+            ("output1.r" function (:arguments ("factorial")) nil [1794 1855])
+            ("output2.r" function (:arguments ("factorial")) nil [1856 1917])
+            ("output3.r" function (:arguments ("factorial")) nil [1918 1979])
+            ("output4.r" function (:arguments ("factorial")) nil [1980 2046])
+            ("output5.r" function (:arguments ("factorial")) nil [2047 2122])
+            (".c.r" function nil nil [2122 2174]))          
+    :file "Makefile.am"
+    :pointmax 2227
+    :fsize 2226
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax '((symbol 2218 . 2226) (punctuation 2217 . 2218) (punctuation 2216 . 2217) (symbol 2215 . 2216) (bol 2215 . 2215))
+    )
+   )
+  :file "!home!work!git!mm!mysql-5.1.71!dbug!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

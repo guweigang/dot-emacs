@@ -1,0 +1,1824 @@
+;; Object cxxtools/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cxxtools/"
+  :tables (list 
+   (semanticdb-table "arg.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("CXXTOOLS_ARG_H" variable (:constant-flag t) nil [1403 1417])
+            ("sstream" include (:system-flag t) nil [1419 1437])
+            ("string.h" include (:system-flag t) nil [1438 1457])
+            ("cxxtools" type
+               (:members 
+                  ( ("ArgBase" type
+                       (:members 
+                          ( ("protected" label nil (reparse-symbol classsubparts) [1499 1509])
+                            ("m_isset" variable (:type "bool") (reparse-symbol classsubparts) [1514 1527])
+                            ("removeArg" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("argc" variable
+                                       (:reference 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [1555 1565])
+                                    ("argv" variable
+                                       (:pointer 1
+                                        :dereference 1
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [1566 1579])
+                                    ("pos" variable (:type "int") (reparse-symbol arg-sub-list) [1580 1588])
+                                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [1589 1595]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1533 1718])
+                            ("public" label nil (reparse-symbol classsubparts) [1722 1729])
+                            ("ArgBase" function
+                               (:constructor-flag t
+                                :type ("ArgBase" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1734 1774])
+                            ("isSet" function (:type "bool") (reparse-symbol classsubparts) [1875 1915]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1481 1918])
+                    ("ArgBaseT" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("m_value" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1980 1990])
+                            ("protected" label nil (reparse-symbol classsubparts) [1994 2004])
+                            ("ArgBaseT" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("def" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2027 2040]))                                  
+                                :type ("ArgBaseT" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2018 2069])
+                            ("extract" function
+                               (:arguments 
+                                  ( ("str" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [2088 2104])
+                                    ("argc" variable
+                                       (:reference 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [2105 2115])
+                                    ("argv" variable
+                                       (:pointer 1
+                                        :dereference 1
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [2116 2129])
+                                    ("i" variable (:type "int") (reparse-symbol arg-sub-list) [2130 2136])
+                                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [2137 2143]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2075 2347])
+                            ("public" label nil (reparse-symbol classsubparts) [2351 2358])
+                            ("getValue" function
+                               (:constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2403 2450])
+                            ("T" function (:type "int") (reparse-symbol classsubparts) [3267 3298])
+                            ("=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("value" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3328 3343]))                                  
+                                :type ("ArgBaseT" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [3304 3398]))                          
+                        :superclasses 
+                          ( ("ArgBase" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1920 3401])
+                    ("ArgBaseT" type
+                       (:type "class"
+                        :members 
+                          ( ("m_value" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [3466 3486])
+                            ("protected" label nil (reparse-symbol classsubparts) [3490 3500])
+                            ("ArgBaseT" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("def" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [3523 3539]))                                  
+                                :type ("ArgBaseT" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3514 3568])
+                            ("extract" function
+                               (:arguments 
+                                  ( ("str" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [3587 3603])
+                                    ("argc" variable
+                                       (:reference 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [3604 3614])
+                                    ("argv" variable
+                                       (:pointer 1
+                                        :dereference 1
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [3615 3628])
+                                    ("i" variable (:type "int") (reparse-symbol arg-sub-list) [3629 3635])
+                                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [3636 3642]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [3574 3751])
+                            ("public" label nil (reparse-symbol classsubparts) [3755 3762])
+                            ("getValue" function
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [3804 3854])
+                            ("=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("value" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [3996 4014]))                                  
+                                :type ("ArgBaseT" type
+                                     (:template-specifier 
+                                        ( ("char" type
+                                             (:pointer 1
+                                              :constant-flag t)
+                                              nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [3962 4069]))                          
+                        :superclasses 
+                          ( ("ArgBase" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :template-specifier 
+                          ( ("char" type
+                               (:pointer 1
+                                :constant-flag t)
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [3403 4072])
+                    ("ArgBaseT" type
+                       (:type "class"
+                        :members 
+                          ( ("m_value" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4137 4157])
+                            ("protected" label nil (reparse-symbol classsubparts) [4161 4171])
+                            ("ArgBaseT" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("def" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4194 4217]))                                  
+                                :type ("ArgBaseT" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4185 4246])
+                            ("extract" function
+                               (:arguments 
+                                  ( ("str" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [4265 4281])
+                                    ("argc" variable
+                                       (:reference 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [4282 4292])
+                                    ("argv" variable
+                                       (:pointer 1
+                                        :dereference 1
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [4293 4306])
+                                    ("i" variable (:type "int") (reparse-symbol arg-sub-list) [4307 4313])
+                                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [4314 4320]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [4252 4429])
+                            ("public" label nil (reparse-symbol classsubparts) [4433 4440])
+                            ("getValue" function
+                               (:constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4482 4539])
+                            ("=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("value" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4695 4720]))                                  
+                                :type ("ArgBaseT" type
+                                     (:template-specifier 
+                                        ( ("std::string" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [4661 4775]))                          
+                        :superclasses 
+                          ( ("ArgBase" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :template-specifier 
+                          ( ("std::string" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [4074 4778])
+                    ("Arg" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [5571 5578])
+                            ("Arg" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("def" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5691 5705])
+                                    ("" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5706 5709]))                                  
+                                :type ("Arg" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5687 5745])
+                            ("Arg" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("argc" variable
+                                       (:reference 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [6086 6096])
+                                    ("argv" variable
+                                       (:pointer 1
+                                        :dereference 1
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [6097 6110])
+                                    ("ch" variable (:type "char") (reparse-symbol arg-sub-list) [6111 6119])
+                                    ("def" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6120 6134])
+                                    ("" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6135 6138]))                                  
+                                :type ("Arg" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6082 6203])
+                            ("Arg" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("argc" variable
+                                       (:reference 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [6572 6582])
+                                    ("argv" variable
+                                       (:pointer 1
+                                        :dereference 1
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [6583 6596])
+                                    ("str" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [6597 6613])
+                                    ("def" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6614 6628])
+                                    ("" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6629 6632]))                                  
+                                :type ("Arg" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6568 6714])
+                            ("Arg" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("argc" variable
+                                       (:reference 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [6724 6734])
+                                    ("argv" variable
+                                       (:pointer 1
+                                        :dereference 1
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [6735 6748]))                                  
+                                :type ("Arg" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6720 6824])
+                            ("set" function
+                               (:arguments 
+                                  ( ("argc" variable
+                                       (:reference 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [7149 7159])
+                                    ("argv" variable
+                                       (:pointer 1
+                                        :dereference 1
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [7160 7173])
+                                    ("ch" variable (:type "char") (reparse-symbol arg-sub-list) [7174 7182]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7140 7726])
+                            ("set" function
+                               (:arguments 
+                                  ( ("argc" variable
+                                       (:reference 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [8116 8126])
+                                    ("argv" variable
+                                       (:pointer 1
+                                        :dereference 1
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [8127 8140])
+                                    ("str" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [8141 8157]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [8107 8809])
+                            ("set" function
+                               (:arguments 
+                                  ( ("argc" variable
+                                       (:reference 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [8882 8892])
+                                    ("argv" variable
+                                       (:pointer 1
+                                        :dereference 1
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [8893 8906]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [8873 9114]))                          
+                        :superclasses 
+                          ( ("ArgBaseT" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [5514 9117])
+                    ("Arg" type
+                       (:type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [9529 9536])
+                            ("Arg" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("def" variable (:type "bool") (reparse-symbol arg-sub-list) [9640 9650])
+                                    ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9651 9657]))                                  
+                                :type ("Arg" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9636 9686])
+                            ("Arg" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("argc" variable
+                                       (:reference 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [10769 10779])
+                                    ("argv" variable
+                                       (:pointer 1
+                                        :dereference 1
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [10780 10793])
+                                    ("ch" variable (:type "char") (reparse-symbol arg-sub-list) [10794 10802])
+                                    ("def" variable (:type "bool") (reparse-symbol arg-sub-list) [10803 10813])
+                                    ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10814 10820]))                                  
+                                :type ("Arg" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10765 10890])
+                            ("Arg" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("argc" variable
+                                       (:reference 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [10900 10910])
+                                    ("argv" variable
+                                       (:pointer 1
+                                        :dereference 1
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [10911 10924])
+                                    ("str" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [10925 10941])
+                                    ("def" variable (:type "bool") (reparse-symbol arg-sub-list) [10942 10952])
+                                    ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10953 10959]))                                  
+                                :type ("Arg" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10896 11030])
+                            ("set" function
+                               (:arguments 
+                                  ( ("argc" variable
+                                       (:reference 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [11045 11055])
+                                    ("argv" variable
+                                       (:pointer 1
+                                        :dereference 1
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [11056 11069])
+                                    ("ch" variable (:type "char") (reparse-symbol arg-sub-list) [11070 11078]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [11036 12358])
+                            ("set" function
+                               (:arguments 
+                                  ( ("argc" variable
+                                       (:reference 1
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [12642 12652])
+                                    ("argv" variable
+                                       (:pointer 1
+                                        :dereference 1
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [12653 12666])
+                                    ("str" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [12667 12683]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [12633 13033])
+                            ("isTrue" function (:type "bool") (reparse-symbol classsubparts) [13093 13134])
+                            ("isFalse" function (:type "bool") (reparse-symbol classsubparts) [13198 13240])
+                            ("private" label nil (reparse-symbol classsubparts) [13334 13342])
+                            ("m_value" variable (:type "bool") (reparse-symbol classsubparts) [13347 13360]))                          
+                        :superclasses 
+                          ( ("ArgBase" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :template-specifier 
+                          ( ("bool" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [9480 13363])
+                    ("<<" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("std::ostream" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("out" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13413 13431])
+                            ("arg" variable
+                               (:constant-flag t
+                                :type ("ArgBaseT" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [13432 13454]))                          
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [13365 13490]))                  
+                :type "namespace")
+                nil [1459 13493]))          
+    :file "arg.h"
+    :pointmax 13520
+    :fsize 13519
+    :lastmodtime '(20859 30360 0 0)
+    :unmatched-syntax '((semantic-list 13311 . 13330) (CONST 13304 . 13309) (semantic-list 13301 . 13303) (BOOL 13297 . 13301) (OPERATOR 13288 . 13296) (punctuation 10951 . 10952) (punctuation 10812 . 10813) (punctuation 9649 . 9650) (semantic-list 6630 . 6632) (punctuation 6627 . 6628) (semantic-list 6136 . 6138) (punctuation 6133 . 6134) (semantic-list 5707 . 5709) (punctuation 5704 . 5705) (EXPLICIT 5678 . 5686) (semantic-list 4636 . 4655) (CONST 4628 . 4633) (semantic-list 4625 . 4627) (punctuation 4624 . 4625) (symbol 4618 . 4624) (punctuation 4617 . 4618) (punctuation 4616 . 4617) (symbol 4613 . 4616) (CONST 4607 . 4612) (OPERATOR 4598 . 4606) (EXPLICIT 4176 . 4184) (semantic-list 3937 . 3956) (CONST 3929 . 3934) (semantic-list 3926 . 3928) (punctuation 3925 . 3926) (CHAR 3921 . 3925) (CONST 3915 . 3920) (OPERATOR 3906 . 3914) (EXPLICIT 3505 . 3513) (OPERATOR 3258 . 3266) (EXPLICIT 2009 . 2017))
+    :lexical-table 
+        '(("CXXTOOLS_ARG_H")
+          )
+
+    )
+   (semanticdb-table "string.h"
+    :file "string.h"
+    :fsize 22126
+    :lastmodtime '(20859 30360 0 0)
+    )
+   (semanticdb-table "char.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("CXXTOOLS_CHAR_H" variable (:constant-flag t) nil [1400 1415])
+            ("cxxtools/api.h" include (:system-flag t) nil [1417 1442])
+            ("string" include (:system-flag t) nil [1443 1460])
+            ("cstring" include (:system-flag t) nil [1461 1479])
+            ("ios" include (:system-flag t) nil [1480 1494])
+            ("stdint.h" include (:system-flag t) nil [1495 1514])
+            ("cxxtools" type
+               (:members 
+                  ( ("Char" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [3299 3306])
+                            ("value_type" type
+                               (:typedef ("int32_t" type (:type "class") nil nil)
+                                :superclasses "int32_t"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3319 3346])
+                            ("Char" function
+                               (:constructor-flag t
+                                :type ("Char" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3418 3463])
+                            ("Char" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("ch" variable (:type "char") (reparse-symbol arg-sub-list) [3575 3583]))                                  
+                                :type ("Char" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3570 3663])
+                            ("Char" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("ch" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [3775 3792]))                                  
+                                :type ("Char" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3770 3846])
+                            ("Char" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("ch" variable (:type "wchar_t") (reparse-symbol arg-sub-list) [3958 3969]))                                  
+                                :type ("Char" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3953 4046])
+                            ("Char" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("ch" variable (:type ("value_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4178 4192]))                                  
+                                :type ("Char" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4173 4232])
+                            ("narrow" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("def" variable (:type "char") (reparse-symbol arg-sub-list) [4992 5002]))                                  
+                                :type "char")
+                                (reparse-symbol classsubparts) [4980 5014])
+                            ("toWchar" function (:type "wchar_t") (reparse-symbol classsubparts) [5028 5092])
+                            ("null" function
+                               (:typemodifiers ("static")
+                                :type ("Char" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5106 5184])
+                            ("=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("ch" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Char" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5214 5229]))                                  
+                                :type ("Char" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5198 5279])
+                            ("value" function (:type ("value_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5471 5526])
+                            ("value_type" function (:type "int") (reparse-symbol classsubparts) [5929 5978])
+                            ("==" function
+                               (:operator-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("a" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Char" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6200 6214])
+                                    ("b" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Char" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6215 6229]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6177 6276])
+                            ("==" function
+                               (:operator-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("a" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Char" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6312 6326])
+                                    ("b" variable (:type "wchar_t") (reparse-symbol arg-sub-list) [6327 6337]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6289 6376])
+                            ("==" function
+                               (:operator-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("a" variable (:type "wchar_t") (reparse-symbol arg-sub-list) [6412 6422])
+                                    ("b" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Char" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6423 6437]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6389 6476])
+                            ("==" function
+                               (:operator-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("a" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Char" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6512 6526])
+                                    ("b" variable (:type "char") (reparse-symbol arg-sub-list) [6527 6534]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6489 6573])
+                            ("==" function
+                               (:operator-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("a" variable (:type "char") (reparse-symbol arg-sub-list) [6609 6616])
+                                    ("b" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Char" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6617 6631]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6586 6670])
+                            ("!=" function
+                               (:operator-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("a" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Char" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6900 6914])
+                                    ("b" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Char" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6915 6929]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6877 6976])
+                            ("!=" function
+                               (:operator-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("a" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Char" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7012 7026])
+                                    ("b" variable (:type "wchar_t") (reparse-symbol arg-sub-list) [7027 7037]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [6989 7076])
+                            ("!=" function
+                               (:operator-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("a" variable (:type "wchar_t") (reparse-symbol arg-sub-list) [7112 7122])
+                                    ("b" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Char" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7123 7137]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7089 7176])
+                            ("!=" function
+                               (:operator-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("a" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Char" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7212 7226])
+                                    ("b" variable (:type "char") (reparse-symbol arg-sub-list) [7227 7234]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7189 7273])
+                            ("!=" function
+                               (:operator-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("a" variable (:type "char") (reparse-symbol arg-sub-list) [7309 7316])
+                                    ("b" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Char" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7317 7331]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7286 7370])
+                            ("<" function
+                               (:operator-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("a" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Char" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7639 7653])
+                                    ("b" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Char" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7654 7668]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7617 7714])
+                            ("<" function
+                               (:operator-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("a" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Char" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7749 7763])
+                                    ("b" variable (:type "wchar_t") (reparse-symbol arg-sub-list) [7764 7774]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7727 7812])
+                            ("<" function
+                               (:operator-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("a" variable (:type "wchar_t") (reparse-symbol arg-sub-list) [7847 7857])
+                                    ("b" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Char" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7858 7872]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7825 7910])
+                            ("<" function
+                               (:operator-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("a" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Char" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7945 7959])
+                                    ("b" variable (:type "char") (reparse-symbol arg-sub-list) [7960 7967]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [7923 8005])
+                            ("<" function
+                               (:operator-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("a" variable (:type "char") (reparse-symbol arg-sub-list) [8040 8047])
+                                    ("b" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Char" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8048 8062]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [8018 8100])
+                            (">" function
+                               (:operator-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("a" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Char" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8375 8389])
+                                    ("b" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Char" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8390 8404]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [8353 8450])
+                            (">" function
+                               (:operator-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("a" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Char" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8485 8499])
+                                    ("b" variable (:type "wchar_t") (reparse-symbol arg-sub-list) [8500 8510]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [8463 8548])
+                            (">" function
+                               (:operator-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("a" variable (:type "wchar_t") (reparse-symbol arg-sub-list) [8583 8593])
+                                    ("b" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Char" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8594 8608]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [8561 8646])
+                            (">" function
+                               (:operator-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("a" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Char" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8681 8695])
+                                    ("b" variable (:type "char") (reparse-symbol arg-sub-list) [8696 8703]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [8659 8741])
+                            (">" function
+                               (:operator-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("a" variable (:type "char") (reparse-symbol arg-sub-list) [8776 8783])
+                                    ("b" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Char" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8784 8798]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [8754 8836])
+                            ("<=" function
+                               (:operator-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("a" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Char" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9125 9139])
+                                    ("b" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Char" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9140 9154]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [9101 9201])
+                            ("<=" function
+                               (:operator-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("a" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Char" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9238 9252])
+                                    ("b" variable (:type "wchar_t") (reparse-symbol arg-sub-list) [9253 9263]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [9214 9302])
+                            ("<=" function
+                               (:operator-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("a" variable (:type "wchar_t") (reparse-symbol arg-sub-list) [9339 9349])
+                                    ("b" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Char" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9350 9364]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [9315 9403])
+                            ("<=" function
+                               (:operator-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("a" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Char" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9440 9454])
+                                    ("b" variable (:type "char") (reparse-symbol arg-sub-list) [9455 9462]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [9416 9501])
+                            ("<=" function
+                               (:operator-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("a" variable (:type "char") (reparse-symbol arg-sub-list) [9538 9545])
+                                    ("b" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Char" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9546 9560]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [9514 9599])
+                            (">=" function
+                               (:operator-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("a" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Char" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9896 9910])
+                                    ("b" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Char" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9911 9925]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [9872 9972])
+                            (">=" function
+                               (:operator-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("a" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Char" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10009 10023])
+                                    ("b" variable (:type "wchar_t") (reparse-symbol arg-sub-list) [10024 10034]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [9985 10073])
+                            (">=" function
+                               (:operator-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("a" variable (:type "wchar_t") (reparse-symbol arg-sub-list) [10110 10120])
+                                    ("b" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Char" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10121 10135]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [10086 10174])
+                            (">=" function
+                               (:operator-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("a" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Char" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10211 10225])
+                                    ("b" variable (:type "char") (reparse-symbol arg-sub-list) [10226 10233]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [10187 10272])
+                            (">=" function
+                               (:operator-flag t
+                                :typemodifiers ("friend")
+                                :arguments 
+                                  ( ("a" variable (:type "char") (reparse-symbol arg-sub-list) [10309 10316])
+                                    ("b" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Char" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10317 10331]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [10285 10370])
+                            ("private" label nil (reparse-symbol classsubparts) [10380 10388])
+                            ("_value" variable (:type ("value_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10401 10419]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [3274 10426])
+                    ("MBState" type
+                       (:members 
+                          ( ("MBState" function
+                               (:constructor-flag t
+                                :type ("MBState" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [10461 10496])
+                            ("n" variable (:type "int") (reparse-symbol classsubparts) [10506 10512])
+                            ("value" variable (:type ("" type
+                                 (:members 
+                                    ( ("wchars" variable
+                                         (:dereference 1
+                                          :type ("Char::value_type" type (:type "class") nil nil))
+                                          (reparse-symbol classsubparts) [10541 10568])
+                                      ("mbytes" variable
+                                         (:dereference 1
+                                          :type "char")
+                                          (reparse-symbol classsubparts) [10581 10597]))                                    
+                                  :type "union")
+                                  nil nil)) (reparse-symbol classsubparts) [10521 10614]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [10432 10621])
+                    ("<<" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("out" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10666 10684])
+                            ("ch" variable (:type ("Char" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10685 10693]))                          
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [10640 10694]))                  
+                :type "namespace")
+                nil [1516 10697])
+            ("std" type
+               (:members 
+                  ( ("char_traits" type
+                       (:type "struct"
+                        :members 
+                          ( ("char_type" type
+                               (:typedef ("cxxtools::Char" type (:type "class") nil nil)
+                                :superclasses "cxxtools::Char"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [10830 10863])
+                            ("int_type" type
+                               (:typedef ("cxxtools::Char::value_type" type (:type "class") nil nil)
+                                :superclasses "cxxtools::Char::value_type"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [10872 10916])
+                            ("off_type" type
+                               (:typedef ("std::streamoff" type (:type "class") nil nil)
+                                :superclasses "std::streamoff"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [10925 10957])
+                            ("pos_type" type
+                               (:typedef ("std::streampos" type (:type "class") nil nil)
+                                :superclasses "std::streampos"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [10966 10998])
+                            ("state_type" type
+                               (:typedef ("cxxtools::MBState" type (:type "class") nil nil)
+                                :superclasses "cxxtools::MBState"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [11007 11044])
+                            ("assign" function
+                               (:prototype-flag t
+                                :typemodifiers ("inline" "static")
+                                :arguments 
+                                  ( ("c1" variable
+                                       (:reference 1
+                                        :type ("char_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11080 11094])
+                                    ("c2" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("char_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11095 11115]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [11054 11116])
+                            ("eq" function
+                               (:prototype-flag t
+                                :typemodifiers ("inline" "static")
+                                :arguments 
+                                  ( ("c1" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("char_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11148 11168])
+                                    ("c2" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("char_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11169 11189]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [11126 11190])
+                            ("lt" function
+                               (:prototype-flag t
+                                :typemodifiers ("inline" "static")
+                                :arguments 
+                                  ( ("c1" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("char_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11222 11242])
+                                    ("c2" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("char_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11243 11263]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [11200 11264])
+                            ("compare" function
+                               (:prototype-flag t
+                                :typemodifiers ("inline" "static")
+                                :arguments 
+                                  ( ("c1" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("char_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11300 11320])
+                                    ("c2" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("char_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11321 11341])
+                                    ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11342 11351]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [11274 11352])
+                            ("length" function
+                               (:prototype-flag t
+                                :typemodifiers ("inline" "static")
+                                :arguments 
+                                  ( ("s" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("char_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11390 11409]))                                  
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11362 11410])
+                            ("find" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :typemodifiers ("inline" "static")
+                                :constant-flag t
+                                :arguments 
+                                  ( ("s" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("char_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11456 11475])
+                                    ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11476 11485])
+                                    ("a" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("char_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11486 11505]))                                  
+                                :type ("char_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11420 11506])
+                            ("move" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :typemodifiers ("inline" "static")
+                                :arguments 
+                                  ( ("s1" variable
+                                       (:pointer 1
+                                        :type ("char_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11546 11560])
+                                    ("s2" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("char_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11561 11581])
+                                    ("n" variable (:type ("int_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11582 11593]))                                  
+                                :type ("char_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11516 11594])
+                            ("copy" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :typemodifiers ("inline" "static")
+                                :arguments 
+                                  ( ("s1" variable
+                                       (:pointer 1
+                                        :type ("char_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11634 11648])
+                                    ("s2" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("char_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11649 11669])
+                                    ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11670 11679]))                                  
+                                :type ("char_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11604 11680])
+                            ("assign" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :typemodifiers ("inline" "static")
+                                :arguments 
+                                  ( ("s" variable
+                                       (:pointer 1
+                                        :type ("char_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11722 11735])
+                                    ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11736 11745])
+                                    ("a" variable (:type ("char_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11746 11758]))                                  
+                                :type ("char_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11690 11759])
+                            ("to_char_type" function
+                               (:prototype-flag t
+                                :typemodifiers ("inline" "static")
+                                :arguments 
+                                  ( ("c" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("int_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11806 11824]))                                  
+                                :type ("char_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11769 11825])
+                            ("to_int_type" function
+                               (:prototype-flag t
+                                :typemodifiers ("inline" "static")
+                                :arguments 
+                                  ( ("c" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("char_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11870 11889]))                                  
+                                :type ("int_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11835 11890])
+                            ("eq_int_type" function
+                               (:prototype-flag t
+                                :typemodifiers ("inline" "static")
+                                :arguments 
+                                  ( ("c1" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("int_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11931 11950])
+                                    ("c2" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("int_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11951 11970]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [11900 11971])
+                            ("eof" function
+                               (:prototype-flag t
+                                :typemodifiers ("inline" "static")
+                                :type ("int_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11981 12010])
+                            ("not_eof" function
+                               (:prototype-flag t
+                                :typemodifiers ("inline" "static")
+                                :arguments 
+                                  ( ("c" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("int_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12051 12069]))                                  
+                                :type ("int_type" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12020 12070]))                          
+                        :template-specifier 
+                          ( ("cxxtools::Char" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [10766 12077])
+                    ("assign" function
+                       (:parent "char_traits"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("c1" variable
+                               (:reference 1
+                                :type ("char_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12131 12145])
+                            ("c2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("char_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12146 12166]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [12083 12195])
+                    ("eq" function
+                       (:parent "char_traits"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("c1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("char_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12246 12266])
+                            ("c2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("char_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12267 12287]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [12202 12324])
+                    ("lt" function
+                       (:parent "char_traits"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("c1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("char_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12375 12395])
+                            ("c2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("char_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12396 12416]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [12331 12452])
+                    ("compare" function
+                       (:parent "char_traits"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("s1" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("char_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12507 12527])
+                            ("s2" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("char_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12528 12548])
+                            ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12549 12558]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [12459 12748])
+                    ("length" function
+                       (:parent "char_traits"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("s" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("char_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12805 12824]))                          
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [12755 12977])
+                    ("find" function
+                       (:pointer 1
+                        :parent "char_traits"
+                        :arguments 
+                          ( ("s" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("char_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13075 13094])
+                            ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13095 13104])
+                            ("a" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("char_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13105 13124]))                          
+                        :type ("char_type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [13026 13258])
+                    ("move" function
+                       (:pointer 1
+                        :parent "char_traits"
+                        :arguments 
+                          ( ("s1" variable
+                               (:pointer 1
+                                :type ("char_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13350 13364])
+                            ("s2" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("char_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13365 13385])
+                            ("n" variable (:type ("int_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13386 13397]))                          
+                        :type ("char_type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [13301 13491])
+                    ("copy" function
+                       (:pointer 1
+                        :parent "char_traits"
+                        :arguments 
+                          ( ("s1" variable
+                               (:pointer 1
+                                :type ("char_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13583 13597])
+                            ("s2" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("char_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13598 13618])
+                            ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13619 13628]))                          
+                        :type ("char_type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [13534 13721])
+                    ("assign" function
+                       (:pointer 1
+                        :parent "char_traits"
+                        :arguments 
+                          ( ("s" variable
+                               (:pointer 1
+                                :type ("char_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13815 13828])
+                            ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13829 13838])
+                            ("a" variable (:type ("char_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13839 13851]))                          
+                        :type ("char_type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [13764 13941])
+                    ("to_char_type" function
+                       (:parent "char_traits"
+                        :arguments 
+                          ( ("c" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("int_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14040 14058]))                          
+                        :type ("char_type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [13984 14099])
+                    ("to_int_type" function
+                       (:parent "char_traits"
+                        :arguments 
+                          ( ("c" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("char_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14196 14215]))                          
+                        :type ("int_type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [14142 14253])
+                    ("eq_int_type" function
+                       (:parent "char_traits"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("c1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("int_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14313 14332])
+                            ("c2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("int_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14333 14352]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [14260 14389])
+                    ("eof" function
+                       (:parent "char_traits"
+                        :type ("int_type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [14432 14588])
+                    ("not_eof" function
+                       (:parent "char_traits"
+                        :arguments 
+                          ( ("c" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("int_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14677 14695]))                          
+                        :type ("int_type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [14631 14753]))                  
+                :type "namespace")
+                nil [10722 14756])
+            ("cxxtools" type
+               (:members 
+                  ( ("narrow" function
+                       (:parent "Char"
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("def" variable (:type "char") (reparse-symbol arg-sub-list) [14826 14835]))                          
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [14801 15081]))                  
+                :type "namespace")
+                nil [14775 15083])
+            ("std" type
+               (:members 
+                  ( ("ctype_base" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [18734 18741])
+                            ("" type
+                               (:members 
+                                  ( ("alpha" variable
+                                       (:constant-flag t
+                                        :default-value (18778 18779)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [18769 18779])
+                                    ("cntrl" variable
+                                       (:constant-flag t
+                                        :default-value (18807 18808)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [18798 18808])
+                                    ("digit" variable
+                                       (:constant-flag t
+                                        :default-value (18836 18837)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [18827 18837])
+                                    ("lower" variable
+                                       (:constant-flag t
+                                        :default-value (18865 18866)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [18856 18866])
+                                    ("print" variable
+                                       (:constant-flag t
+                                        :default-value (18894 18895)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [18885 18895])
+                                    ("punct" variable
+                                       (:constant-flag t
+                                        :default-value (18923 18924)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [18914 18924])
+                                    ("space" variable
+                                       (:constant-flag t
+                                        :default-value (18952 18953)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [18943 18953])
+                                    ("upper" variable
+                                       (:constant-flag t
+                                        :default-value (18981 18982)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [18972 18982])
+                                    ("xdigit" variable
+                                       (:constant-flag t
+                                        :default-value (19010 19011)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [19001 19011])
+                                    ("alnum" variable
+                                       (:constant-flag t
+                                        :default-value (19039 19053)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [19030 19053])
+                                    ("graph" variable
+                                       (:constant-flag t
+                                        :default-value (19075 19098)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [19066 19098]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [18750 19099])
+                            ("mask" type
+                               (:typedef ("unsigned short")
+                                :superclasses "unsigned short"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [19109 19137])
+                            ("ctype_base" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("_refs" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19158 19172]))                                  
+                                :type ("ctype_base" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [19147 19187]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [18711 19190]))                  
+                :type "namespace")
+                nil [18694 19193])
+            ("cxxtools" type
+               (:members 
+                  ( ("ctypeMask" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ch" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Char" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19270 19285]))                          
+                        :type ("std::ctype_base::mask" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [19238 19286])
+                    ("isalpha" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("ch" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Char" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19307 19322]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [19288 19377])
+                    ("isalnum" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("ch" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Char" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19398 19413]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [19379 19468])
+                    ("ispunct" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("ch" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Char" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19489 19504]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [19470 19559])
+                    ("iscntrl" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("ch" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Char" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19580 19595]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [19561 19650])
+                    ("isdigit" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("ch" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Char" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19671 19686]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [19652 19741])
+                    ("isxdigit" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("ch" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Char" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19763 19778]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [19743 19834])
+                    ("isgraph" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("ch" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Char" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19855 19870]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [19836 19925])
+                    ("islower" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("ch" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Char" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [19946 19961]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [19927 20016])
+                    ("isupper" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("ch" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Char" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20037 20052]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [20018 20107])
+                    ("isprint" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("ch" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Char" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20128 20143]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [20109 20198])
+                    ("isspace" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("ch" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Char" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20219 20234]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [20200 20289])
+                    ("tolower" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ch" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Char" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20317 20332]))                          
+                        :type ("Char" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [20304 20333])
+                    ("toupper" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ch" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Char" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [20361 20376]))                          
+                        :type ("Char" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [20348 20377]))                  
+                :type "namespace")
+                nil [19203 20380]))          
+    :file "char.h"
+    :pointmax 20480
+    :fsize 20479
+    :lastmodtime '(20859 30360 0 0)
+    :unmatched-syntax '((symbol 20335 . 20347) (symbol 20291 . 20303) (symbol 19225 . 19237) (number 19173 . 19174) (punctuation 19171 . 19172) (number 19015 . 19016) (punctuation 19013 . 19014) (punctuation 19012 . 19013) (number 18986 . 18987) (punctuation 18984 . 18985) (punctuation 18983 . 18984) (number 18957 . 18958) (punctuation 18955 . 18956) (punctuation 18954 . 18955) (number 18928 . 18929) (punctuation 18926 . 18927) (punctuation 18925 . 18926) (number 18899 . 18900) (punctuation 18897 . 18898) (punctuation 18896 . 18897) (number 18870 . 18871) (punctuation 18868 . 18869) (punctuation 18867 . 18868) (number 18841 . 18842) (punctuation 18839 . 18840) (punctuation 18838 . 18839) (number 18812 . 18813) (punctuation 18810 . 18811) (punctuation 18809 . 18810) (number 18783 . 18784) (punctuation 18781 . 18782) (punctuation 18780 . 18781) (number 19015 . 19016) (punctuation 19013 . 19014) (punctuation 19012 . 19013) (number 18986 . 18987) (punctuation 18984 . 18985) (punctuation 18983 . 18984) (number 18957 . 18958) (punctuation 18955 . 18956) (punctuation 18954 . 18955) (number 18928 . 18929) (punctuation 18926 . 18927) (punctuation 18925 . 18926) (number 18899 . 18900) (punctuation 18897 . 18898) (punctuation 18896 . 18897) (number 18870 . 18871) (punctuation 18868 . 18869) (punctuation 18867 . 18868) (number 18841 . 18842) (punctuation 18839 . 18840) (punctuation 18838 . 18839) (number 18812 . 18813) (punctuation 18810 . 18811) (punctuation 18809 . 18810) (number 18783 . 18784) (punctuation 18781 . 18782) (punctuation 18780 . 18781) (punctuation 14630 . 14631) (punctuation 14629 . 14630) (punctuation 14628 . 14629) (symbol 14624 . 14628) (punctuation 14623 . 14624) (punctuation 14622 . 14623) (symbol 14614 . 14622) (punctuation 14613 . 14614) (symbol 14602 . 14613) (INLINE 14595 . 14601) (punctuation 14431 . 14432) (punctuation 14430 . 14431) (punctuation 14429 . 14430) (symbol 14425 . 14429) (punctuation 14424 . 14425) (punctuation 14423 . 14424) (symbol 14415 . 14423) (punctuation 14414 . 14415) (symbol 14403 . 14414) (INLINE 14396 . 14402) (punctuation 14141 . 14142) (punctuation 14140 . 14141) (punctuation 14139 . 14140) (symbol 14135 . 14139) (punctuation 14134 . 14135) (punctuation 14133 . 14134) (symbol 14125 . 14133) (punctuation 14124 . 14125) (symbol 14113 . 14124) (INLINE 14106 . 14112) (punctuation 13983 . 13984) (punctuation 13982 . 13983) (punctuation 13981 . 13982) (symbol 13977 . 13981) (punctuation 13976 . 13977) (punctuation 13975 . 13976) (symbol 13967 . 13975) (punctuation 13966 . 13967) (symbol 13955 . 13966) (INLINE 13948 . 13954) (punctuation 13763 . 13764) (punctuation 13762 . 13763) (punctuation 13761 . 13762) (symbol 13757 . 13761) (punctuation 13756 . 13757) (punctuation 13755 . 13756) (symbol 13747 . 13755) (punctuation 13746 . 13747) (symbol 13735 . 13746) (INLINE 13728 . 13734) (punctuation 13533 . 13534) (punctuation 13532 . 13533) (punctuation 13531 . 13532) (symbol 13527 . 13531) (punctuation 13526 . 13527) (punctuation 13525 . 13526) (symbol 13517 . 13525) (punctuation 13516 . 13517) (symbol 13505 . 13516) (INLINE 13498 . 13504) (punctuation 13300 . 13301) (punctuation 13299 . 13300) (punctuation 13298 . 13299) (symbol 13294 . 13298) (punctuation 13293 . 13294) (punctuation 13292 . 13293) (symbol 13284 . 13292) (punctuation 13283 . 13284) (symbol 13272 . 13283) (INLINE 13265 . 13271) (punctuation 13025 . 13026) (punctuation 13024 . 13025) (punctuation 13023 . 13024) (symbol 13019 . 13023) (punctuation 13018 . 13019) (punctuation 13017 . 13018) (symbol 13009 . 13017) (punctuation 13008 . 13009) (symbol 12997 . 13008) (CONST 12991 . 12996) (INLINE 12984 . 12990) (symbol 10627 . 10639) (OPERATOR 5920 . 5928) (string 5003 . 5006) (punctuation 5001 . 5002) (EXPLICIT 4164 . 4172))
+    :lexical-table 
+        '(("CXXTOOLS_CHAR_H")
+          )
+
+    )
+   (semanticdb-table "api.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("cxxtools_Api_h" variable (:constant-flag t) nil [1403 1417])
+            ("cxxtools/config.h" include (:system-flag t) nil [1419 1447])
+            ("CXXTOOLS_EXPORT" variable (:constant-flag t) nil [2025 2040])
+            ("CXXTOOLS_IMPORT" variable (:constant-flag t) nil [2053 2068])
+            ("CXXTOOLS_API" variable (:constant-flag t) nil [2169 2181])
+            ("__NOLOCK_ON_INPUT" variable (:constant-flag t) nil [2293 2310])
+            ("__NOLOCK_ON_OUTPUT" variable (:constant-flag t) nil [2407 2425]))          
+    :file "api.h"
+    :pointmax 2441
+    :fsize 2440
+    :lastmodtime '(20859 35297 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("__NOLOCK_ON_OUTPUT")
+          ("cxxtools_Api_h")
+          ("CXXTOOLS_API" . ((symbol "CXXTOOLS_IMPORT" 2182 . 2197)))
+          ("CXXTOOLS_EXPORT")
+          ("CXXTOOLS_IMPORT")
+          ("__NOLOCK_ON_INPUT")
+          )
+
+    )
+   (semanticdb-table "atomicity.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("CXXTOOLS_ATOMICITY_H" variable (:constant-flag t) nil [1459 1479])
+            ("cxxtools/config.h" include (:system-flag t) nil [1481 1509])
+            ("CXXTOOLS_ATOMICITY_GCC_X86_64" variable (:constant-flag t) nil [3122 3151])
+            ("cxxtools/atomicity.gcc.x86_64.h" include (:system-flag t) nil [3152 3202])
+            ("cxxtools/atomicity.generic.h" include (:system-flag t) nil [4308 4355])
+            ("cxxtools" type
+               (:members 
+                  ( ("atomicGet" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("val" variable
+                               (:reference 1
+                                :typemodifiers ("volatile")
+                                :type ("atomic_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4562 4585]))                          
+                        :type ("atomic_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4543 4586])
+                    ("atomicSet" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("val" variable
+                               (:reference 1
+                                :typemodifiers ("volatile")
+                                :type ("atomic_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4688 4711])
+                            ("n" variable (:type ("atomic_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4712 4723]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4673 4724])
+                    ("atomicIncrement" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("val" variable
+                               (:reference 1
+                                :typemodifiers ("volatile")
+                                :type ("atomic_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4859 4882]))                          
+                        :type ("atomic_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4834 4883])
+                    ("atomicDecrement" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("val" variable
+                               (:reference 1
+                                :typemodifiers ("volatile")
+                                :type ("atomic_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5018 5041]))                          
+                        :type ("atomic_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4993 5042])
+                    ("atomicExchangeAdd" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("val" variable
+                               (:reference 1
+                                :typemodifiers ("volatile")
+                                :type ("atomic_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5170 5193])
+                            ("add" variable (:type ("atomic_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5194 5207]))                          
+                        :type ("atomic_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [5143 5208])
+                    ("atomicCompareExchange" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("val" variable
+                               (:reference 1
+                                :typemodifiers ("volatile")
+                                :type ("atomic_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5420 5443])
+                            ("exch" variable (:type ("atomic_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5444 5458])
+                            ("comp" variable (:type ("atomic_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5459 5473]))                          
+                        :type ("atomic_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [5389 5474])
+                    ("atomicCompareExchange" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [5680 5694])
+                            ("" variable (:type ("ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5696 5700])
+                            ("exch" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [5701 5712])
+                            ("comp" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [5713 5724]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5652 5725])
+                    ("atomicExchange" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("val" variable
+                               (:reference 1
+                                :typemodifiers ("volatile")
+                                :type ("atomic_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5872 5895])
+                            ("exch" variable (:type ("atomic_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5896 5910]))                          
+                        :type ("atomic_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [5848 5911])
+                    ("atomicExchange" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [6057 6071])
+                            ("" variable (:type ("dest" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6073 6078])
+                            ("exch" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [6079 6090]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6036 6091]))                  
+                :type "namespace")
+                nil [4429 6094]))          
+    :file "atomicity.h"
+    :pointmax 6103
+    :fsize 6102
+    :lastmodtime '(20859 30360 0 0)
+    :unmatched-syntax '((punctuation 6071 . 6072) (VOLATILE 6063 . 6071) (punctuation 5694 . 5695) (VOLATILE 5686 . 5694) (semantic-list 2816 . 2828) (symbol 2809 . 2816) (punctuation 2807 . 2808) (punctuation 2806 . 2807) (semantic-list 2792 . 2805) (symbol 2785 . 2792))
+    :lexical-table 
+        '(("CXXTOOLS_ATOMICITY_GCC_X86_64")
+          ("CXXTOOLS_ATOMICITY_H")
+          )
+
+    )
+   (semanticdb-table "atomicity.gcc.x86_64.h"
+    :file "atomicity.gcc.x86_64.h"
+    :fsize 1549
+    :lastmodtime '(20859 30360 0 0)
+    )
+   (semanticdb-table "atomicity.generic.h"
+    :file "atomicity.generic.h"
+    :fsize 1602
+    :lastmodtime '(20859 30360 0 0)
+    )
+   (semanticdb-table "config.h.in"
+    :file "config.h.in"
+    :fsize 554
+    :lastmodtime '(20859 30360 0 0)
+    )
+   )
+  :file "!home!work!git!php-hogdeer!cxxtools!include!cxxtools!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

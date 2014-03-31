@@ -1,0 +1,166 @@
+;; Object kernel/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "kernel/"
+  :tables (list 
+   (semanticdb-table "memory.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("php.h" include nil nil [1213 1229])
+            ("php_phalcon.h" include nil nil [1230 1254])
+            ("kernel/memory.h" include nil nil [1255 1281])
+            ("kernel/fcall.h" include nil nil [1282 1307])
+            ("phalcon_init_nvar" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("var" variable
+                       (:pointer 2
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2051 2071])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2062 2072]))                  
+                :type "void")
+                nil [2021 2338])
+            ("phalcon_cpy_wrt" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("dest" variable
+                       (:pointer 2
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2429 2441])
+                    ("var" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2442 2461])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2452 2462]))                  
+                :type "void")
+                nil [2401 2630])
+            ("phalcon_cpy_wrt_ctor" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("dest" variable
+                       (:pointer 2
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2759 2771])
+                    ("var" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2772 2791])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2782 2792]))                  
+                :type "void")
+                nil [2726 3038])
+            ("phalcon_memory_grow_stack" function
+               (:arguments 
+                  ( ("" variable (:type ("TSRMLS_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3149 3158]))                  
+                :type ("PHALCON_FASTCALL" type (:type "class") nil nil))
+                nil [3106 3803])
+            ("phalcon_memory_restore_stack" function
+               (:arguments 
+                  ( ("" variable (:type ("TSRMLS_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3930 3939]))                  
+                :type ("PHALCON_FASTCALL" type (:type "class") nil nil))
+                nil [3884 6248])
+            ("phalcon_clean_shutdown_stack" function
+               (:arguments 
+                  ( ("" variable (:type ("TSRMLS_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6363 6372]))                  
+                :type ("PHALCON_FASTCALL" type (:type "class") nil nil))
+                nil [6317 7101])
+            ("phalcon_memory_observe" function
+               (:arguments 
+                  ( ("var" variable
+                       (:pointer 2
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7232 7252])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7243 7253]))                  
+                :type ("PHALCON_FASTCALL" type (:type "class") nil nil))
+                nil [7192 8314])
+            ("phalcon_memory_alloc" function
+               (:arguments 
+                  ( ("var" variable
+                       (:pointer 2
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8416 8436])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8427 8437]))                  
+                :type ("PHALCON_FASTCALL" type (:type "class") nil nil))
+                nil [8378 9556])
+            ("phalcon_memory_remove" function
+               (:arguments 
+                  ( ("var" variable
+                       (:pointer 2
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9665 9685])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9676 9686]))                  
+                :type ("PHALCON_FASTCALL" type (:type "class") nil nil))
+                nil [9626 9742])
+            ("phalcon_clean_restore_stack" function
+               (:arguments 
+                  ( ("" variable (:type ("TSRMLS_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9848 9857]))                  
+                :type ("PHALCON_FASTCALL" type (:type "class") nil nil))
+                nil [9803 9972])
+            ("phalcon_copy_ctor" function
+               (:arguments 
+                  ( ("destiny" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10082 10096])
+                    ("origin" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10097 10110]))                  
+                :type ("PHALCON_FASTCALL" type (:type "class") nil nil))
+                nil [10047 10208])
+            ("phalcon_create_symbol_table" function
+               (:arguments 
+                  ( ("" variable (:type ("TSRMLS_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10296 10305]))                  
+                :type "void")
+                nil [10263 11025])
+            ("phalcon_clean_symbol_tables" function
+               (:arguments 
+                  ( ("" variable (:type ("TSRMLS_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11110 11119]))                  
+                :type "void")
+                nil [11077 11401])
+            ("phalcon_set_symbol" function
+               (:arguments 
+                  ( ("key_name" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11480 11495])
+                    ("value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11496 11517])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11508 11518]))                  
+                :type "int")
+                nil [11457 11892])
+            ("phalcon_set_symbol_str" function
+               (:arguments 
+                  ( ("key_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11983 11998])
+                    ("key_length" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [11999 12023])
+                    ("value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12024 12045])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12036 12046]))                  
+                :type "int")
+                nil [11956 12332]))          
+    :file "memory.c"
+    :pointmax 12335
+    :fsize 12289
+    :lastmodtime '(20913 28990 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "memory.h"
+    :file "memory.h"
+    :fsize 5292
+    :lastmodtime '(20912 8435 0 0)
+    )
+   (semanticdb-table "fcall.h"
+    :file "fcall.h"
+    :fsize 37005
+    :lastmodtime '(20912 8435 0 0)
+    )
+   )
+  :file "!home!work!git!bullsoft!cphalcon!ext!kernel!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

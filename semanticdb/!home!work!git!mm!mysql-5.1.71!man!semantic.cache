@@ -1,0 +1,22 @@
+;; Object man/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "man/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("man1_MANS" variable (:default-value ("@man1_files@")) nil [824 851])
+            ("man8_MANS" variable (:default-value ("@man8_files@")) nil [851 878])
+            ("EXTRA_DIST" variable (:default-value ("$(man1_MANS)" "$(man8_MANS)")) nil [878 918])
+            ("install-data-hook" function nil nil [974 1036]))          
+    :file "Makefile.am"
+    :pointmax 1089
+    :fsize 1088
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax '((symbol 1080 . 1088) (punctuation 1079 . 1080) (punctuation 1078 . 1079) (symbol 1077 . 1078) (bol 1077 . 1077))
+    )
+   )
+  :file "!home!work!git!mm!mysql-5.1.71!man!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

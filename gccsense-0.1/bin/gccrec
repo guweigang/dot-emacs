@@ -1,0 +1,178 @@
+#!/usr/bin/env ruby
+# gccrec - Record and replay GCC command
+# Copyright (C) 2010  Tomohiro Matsuyama <tomo@cx4a.org>
+# 
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+# 
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+# 
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+require 'rubygems'
+require 'optparse'
+require 'pathname'
+require 'shellwords'
+require 'stringio'
+require 'sqlite3'
+
+def Shellwords.unshellwords(array)
+  array.map {|elt| elt.index(/\s/) ? "\"#{elt.gsub(/([\"$])/, '\\1')}\"" : elt}.join(' ')
+end
+
+class GCCRec
+  VERSION = '0.1'
+
+  DB_NAME = '.gccrec'
+  GCC_ONE_ARG_REGEXP = /^-(?:o|I|idirafter|imacros|include|iprefix|isystem|iwithprefix|iwithprefixbefore|L|D|U|x|MF|MT|MQ|aux-info|-param|A|Xlinker|u)(.*)$/
+
+  class DB
+    def initialize(file)
+      @db = SQLite3::Database.new(file)
+      @db.execute('create table gccrec (file text primary key on conflict replace, driver text, args text, workdir text)') rescue nil
+    end
+
+    def close
+      @db.close
+    end
+
+    def lookup(file)
+      @db.execute('select file, driver, args, workdir from gccrec where file = ?', file) do |file, driver, args, workdir|
+        args = Shellwords.shellwords(args)
+        yield file, driver, args, workdir
+      end
+    end
+
+    def record(file, driver, args, workdir)
+      @db.execute('insert into gccrec (file, driver, args, workdir) values (?, ?, ?, ?)',
+                  file, driver, Shellwords.unshellwords(args), workdir)
+    end
+  end
+
+  def initialize
+    @workdir = Dir.getwd
+  end
+
+  def process(args)
+    @args = args.dup
+    parse_own_args
+    if @replay
+      replay
+    else
+      parse_gcc_args
+      record
+      compile
+    end
+  end
+
+  def parse_own_args
+    OptionParser.new('Usage: gccrec [options] [gcc-driver] [gcc-options]') do |opt|
+      opt.version = VERSION
+      opt.on('-d', '--driver=DRIVER')    {|v| @driver = v }
+      opt.on('-D', '--db=DBFILE')        {|v| @db_file = v }
+      opt.on('--dry-run')                { @dry_run = true }
+      opt.on('-a', '--alternative=FILE') {|v| @alternative = v }
+      opt.on('-p', '--prefix=PREFIX')    {|v| @prefix = v }
+      opt.on('-r', '--replay')           { @replay = true }
+      opt.on('-v', '--verbose')          { @verbose = true }
+      opt.order! @args
+      
+      if @replay
+        @input_file = @args.shift
+        die_with_help(opt, 'input file not given') unless @input_file
+      elsif !@driver
+        @driver = @args.shift
+        die_with_help(opt, 'driver not given') unless @driver
+      end
+      @comp_args = @args.dup
+      @db_file = "#{ENV['HOME']}/#{DB_NAME}" unless @db_file
+    end
+  end
+
+  def parse_gcc_args
+    @cc_args = []
+    @input_files = []
+    while arg = @args.shift
+      case arg
+      when GCC_ONE_ARG_REGEXP
+        @cc_args << arg
+        @cc_args << @args.shift if $1.empty?
+      when /^-/
+        @cc_args << arg
+      else
+        if File.file?(arg) && !File.extname(arg).empty? # heuristic
+          @input_files << arg
+        else
+          @cc_args << arg
+        end
+      end
+    end
+  end
+
+  def record
+    open_db do |db|
+      @input_files.each do |file|
+        file = Pathname.new(file).realpath.to_s rescue die("no such file: #{file}")
+        db.record(file, @driver, @cc_args, @workdir)
+      end
+    end
+  end
+
+  def replay
+    file = Pathname.new(@input_file).realpath.to_s rescue die("no such file: #{@input_file}")
+    
+    driver, args, workdir = @driver, @comp_args + [@alternative || file], '.'
+    open_db do |db|
+      db.lookup(file) do |file, _driver, _args, _workdir|
+        if @prefix
+          _args.unshift _driver
+          _driver = @prefix
+        end
+        driver, workdir = _driver, _workdir
+        args = _args + args
+      end
+    end
+    if driver
+      puts Shellwords.unshellwords([driver, *args]) if @verbose
+      return if @dry_run
+      Dir.chdir(workdir) { exec([driver, driver], *args) }
+    end
+    die "record not found: #{@input_file}"
+  end
+
+  def compile
+    args = @comp_args
+    puts Shellwords.unshellwords([@driver, *args]) if @verbose
+    exec([@driver, @driver], *args) unless @dry_run
+  end
+
+  def open_db
+    begin
+      @db = DB.new(@db_file)
+      yield @db
+    ensure
+      @db.close
+      @db = nil
+    end
+  end
+
+  def die(msg)
+    $stderr.puts msg
+    exit 1
+  end
+
+  def die_with_help(opt, msg)
+    $stderr.puts msg
+    $stderr.puts
+    $stderr.puts opt.help
+    exit 1
+  end
+end
+
+GCCRec.new.process(ARGV) if $0 == __FILE__

@@ -1,0 +1,410 @@
+;; Object sphinx-1.3.0/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "sphinx-1.3.0/"
+  :tables (list 
+   (semanticdb-table "php_sphinx.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("PHP_SPHINX_H" variable (:constant-flag t) nil [1301 1313])
+            ("sphinx_module_entry" variable
+               (:typemodifiers ("extern")
+                :type ("zend_module_entry" type (:type "class") nil nil))
+                nil [1315 1360])
+            ("phpext_sphinx_ptr" variable (:constant-flag t) nil [1369 1386])
+            ("PHP_MINIT_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sphinx" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1465 1472]))                  
+                :type "int")
+                nil [1446 1473])
+            ("PHP_MINFO_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sphinx" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1493 1500]))                  
+                :type "int")
+                nil [1474 1501])
+            ("PHP_SPHINX_VERSION" variable (:constant-flag t) nil [1511 1529]))          
+    :file "php_sphinx.h"
+    :pointmax 1702
+    :fsize 1701
+    :lastmodtime '(20829 27372 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("PHP_SPHINX_H")
+          ("PHP_SPHINX_VERSION" . ((string "\"1.3.0\"" 1530 . 1537)))
+          ("phpext_sphinx_ptr" . ((punctuation "&" 1387 . 1388) (symbol "sphinx_module_entry" 1388 . 1407)))
+          )
+
+    )
+   (semanticdb-table "sphinx.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("php.h" include nil nil [1317 1333])
+            ("php_ini.h" include nil nil [1334 1354])
+            ("ext/standard/info.h" include nil nil [1355 1385])
+            ("ext/standard/file.h" include nil nil [1386 1416])
+            ("zend_operators.h" include nil nil [1417 1444])
+            ("php_sphinx.h" include nil nil [1445 1468])
+            ("sphinxclient.h" include (:system-flag t) nil [1470 1495])
+            ("ce_sphinx_client" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [1497 1539])
+            ("php_sphinx_client_handlers" variable
+               (:typemodifiers ("static")
+                :type ("zend_object_handlers" type (:type "class") nil nil))
+                nil [1541 1596])
+            ("cannot_be_cloned" variable
+               (:typemodifiers ("static")
+                :type ("zend_object_handlers" type (:type "class") nil nil))
+                nil [1597 1642])
+            ("php_sphinx_client" type
+               (:typedef ("_php_sphinx_client" type (:type "struct") nil nil)
+                :superclasses "_php_sphinx_client"
+                :type "typedef")
+                nil [1644 1767])
+            ("_php_sphinx_client" type
+               (:members 
+                  ( ("std" variable (:type ("zend_object" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1681 1697])
+                    ("sphinx" variable
+                       (:pointer 1
+                        :type ("sphinx_client" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1699 1721])
+                    ("array_result" variable (:type ("zend_bool" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1723 1746]))                  
+                :type "struct")
+                nil [1644 1767])
+            ("E_RECOVERABLE_ERROR" variable (:constant-flag t) nil [1862 1881])
+            ("SPHINX_CONST" variable (:constant-flag t) nil [1908 1920])
+            ("SPHINX_INITIALIZED" variable (:constant-flag t) nil [2001 2019])
+            ("php_sphinx_client_obj_dtor" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2213 2235])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2226 2236]))                  
+                :type "void")
+                nil [2174 2385])
+            ("php_sphinx_client_new" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ce" variable
+                       (:pointer 1
+                        :type ("zend_class_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2444 2474])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2465 2475]))                  
+                :type ("zend_object_value" type (:type "class") nil nil))
+                nil [2397 3173])
+            ("php_sphinx_client_read_property" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3417 3430])
+                    ("member" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3431 3444])
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) [3445 3463])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3454 3464]))                  
+                :type ("zval" type (:type "class") nil nil))
+                nil [3372 4216])
+            ("php_sphinx_client_get_properties" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4279 4301])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4292 4302]))                  
+                :type ("HashTable" type (:type "class") nil nil))
+                nil [4228 4875])
+            ("php_sphinx_result_to_array" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("php_sphinx_client" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5265 5286])
+                    ("result" variable
+                       (:pointer 1
+                        :type ("sphinx_result" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5287 5309])
+                    ("array" variable
+                       (:pointer 2
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5310 5332])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5323 5333]))                  
+                :type "void")
+                nil [5226 10574])
+            ("PHP_METHOD" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("SphinxClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10654 10667])
+                    ("" variable (:type ("__construct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10668 10680]))                  
+                :type "int")
+                nil [10636 10987])
+            ("PHP_METHOD" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("SphinxClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11087 11100])
+                    ("" variable (:type ("setServer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11101 11111]))                  
+                :type "int")
+                nil [11069 11508])
+            ("PHP_METHOD" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("SphinxClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11640 11653])
+                    ("" variable (:type ("setLimits" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11654 11664]))                  
+                :type "int")
+                nil [11622 12123])
+            ("PHP_METHOD" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("SphinxClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12211 12224])
+                    ("" variable (:type ("setMatchMode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12225 12238]))                  
+                :type "int")
+                nil [12193 12577])
+            ("PHP_METHOD" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("SphinxClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12673 12686])
+                    ("" variable (:type ("setIndexWeights" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12687 12703]))                  
+                :type "int")
+                nil [12655 14322])
+            ("PHP_METHOD" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("SphinxClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14934 14947])
+                    ("" variable (:type ("setIDRange" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14948 14959]))                  
+                :type "int")
+                nil [14916 15343])
+            ("PHP_METHOD" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("SphinxClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15466 15479])
+                    ("" variable (:type ("setFilter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15480 15490]))                  
+                :type "int")
+                nil [15448 16490])
+            ("PHP_METHOD" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("SphinxClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16622 16635])
+                    ("" variable (:type ("setFilterRange" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16636 16651]))                  
+                :type "int")
+                nil [16604 17125])
+            ("PHP_METHOD" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("SphinxClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17266 17279])
+                    ("" variable (:type ("setFilterFloatRange" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17280 17300]))                  
+                :type "int")
+                nil [17248 17781])
+            ("PHP_METHOD" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("SphinxClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17925 17938])
+                    ("" variable (:type ("setGeoAnchor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17939 17952]))                  
+                :type "int")
+                nil [17907 18464])
+            ("PHP_METHOD" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("SphinxClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18588 18601])
+                    ("" variable (:type ("setGroupBy" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18602 18613]))                  
+                :type "int")
+                nil [18570 19151])
+            ("PHP_METHOD" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("SphinxClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19251 19264])
+                    ("" variable (:type ("setGroupDistinct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19265 19282]))                  
+                :type "int")
+                nil [19233 19674])
+            ("PHP_METHOD" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("SphinxClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19774 19787])
+                    ("" variable (:type ("setRetries" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19788 19799]))                  
+                :type "int")
+                nil [19756 20177])
+            ("PHP_METHOD" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("SphinxClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20269 20282])
+                    ("" variable (:type ("setMaxQueryTime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20283 20299]))                  
+                :type "int")
+                nil [20251 20651])
+            ("PHP_METHOD" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("SphinxClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21372 21385])
+                    ("" variable (:type ("setRankingMode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21386 21401]))                  
+                :type "int")
+                nil [21354 21753])
+            ("PHP_METHOD" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("SphinxClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21856 21869])
+                    ("" variable (:type ("setFieldWeights" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21870 21886]))                  
+                :type "int")
+                nil [21838 23505])
+            ("PHP_METHOD" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("SphinxClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23609 23622])
+                    ("" variable (:type ("setSortMode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23623 23635]))                  
+                :type "int")
+                nil [23591 24045])
+            ("PHP_METHOD" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("SphinxClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24143 24156])
+                    ("" variable (:type ("setConnectTimeout" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24157 24175]))                  
+                :type "int")
+                nil [24125 24533])
+            ("PHP_METHOD" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("SphinxClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24635 24648])
+                    ("" variable (:type ("setArrayResult" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24649 24664]))                  
+                :type "int")
+                nil [24617 24968])
+            ("PHP_METHOD" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("SphinxClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25107 25120])
+                    ("" variable (:type ("updateAttributes" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25121 25138]))                  
+                :type "int")
+                nil [25089 30525])
+            ("PHP_METHOD" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("SphinxClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30659 30672])
+                    ("" variable (:type ("buildExcerpts" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30673 30687]))                  
+                :type "int")
+                nil [30641 36193])
+            ("PHP_METHOD" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("SphinxClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36312 36325])
+                    ("" variable (:type ("buildKeywords" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36326 36340]))                  
+                :type "int")
+                nil [36294 37437])
+            ("PHP_METHOD" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("SphinxClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37517 37530])
+                    ("" variable (:type ("resetFilters" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37531 37544]))                  
+                :type "int")
+                nil [37499 37707])
+            ("PHP_METHOD" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("SphinxClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37787 37800])
+                    ("" variable (:type ("resetGroupBy" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37801 37814]))                  
+                :type "int")
+                nil [37769 37977])
+            ("PHP_METHOD" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("SphinxClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38061 38074])
+                    ("" variable (:type ("getLastWarning" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38075 38090]))                  
+                :type "int")
+                nil [38043 38375])
+            ("PHP_METHOD" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("SphinxClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38457 38470])
+                    ("" variable (:type ("getLastError" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38471 38484]))                  
+                :type "int")
+                nil [38439 38757])
+            ("PHP_METHOD" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("SphinxClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38877 38890])
+                    ("" variable (:type ("query" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38891 38897]))                  
+                :type "int")
+                nil [38859 39447])
+            ("PHP_METHOD" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("SphinxClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39569 39582])
+                    ("" variable (:type ("addQuery" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39583 39592]))                  
+                :type "int")
+                nil [39551 40077])
+            ("PHP_METHOD" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("SphinxClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40157 40170])
+                    ("" variable (:type ("runQueries" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40171 40182]))                  
+                :type "int")
+                nil [40139 40733])
+            ("PHP_METHOD" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("SphinxClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40826 40839])
+                    ("" variable (:type ("escapeString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40840 40853]))                  
+                :type "int")
+                nil [40808 41615])
+            ("PHP_METHOD" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("SphinxClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45613 45626])
+                    ("" variable (:type ("__sleep" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45627 45635]))                  
+                :type "int")
+                nil [45595 45745])
+            ("PHP_METHOD" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("SphinxClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45820 45833])
+                    ("" variable (:type ("__wakeup" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45834 45843]))                  
+                :type "int")
+                nil [45802 45953])
+            ("sphinx_client_methods" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("zend_function_entry" type (:type "class") nil nil))
+                nil [49726 53304])
+            ("PHP_MINIT_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("sphinx" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [53365 53372]))                  
+                :type "int")
+                nil [53346 55618])
+            ("PHP_MINFO_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("sphinx" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55679 55686]))                  
+                :type "int")
+                nil [55660 55944])
+            ("sphinx_functions" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("zend_function_entry" type (:type "class") nil nil))
+                nil [55956 56038])
+            ("sphinx_module_entry" variable (:type ("zend_module_entry" type (:type "class") nil nil)) nil [56081 56374]))          
+    :file "sphinx.c"
+    :pointmax 56522
+    :fsize 56521
+    :lastmodtime '(20829 27372 0 0)
+    :unmatched-syntax '((semantic-list 49712 . 49714) (symbol 49695 . 49712) (semantic-list 49685 . 49694) (symbol 49672 . 49685) (number 49686 . 49687) (semantic-list 49626 . 49670) (symbol 49604 . 49626) (number 49668 . 49669) (number 49665 . 49666) (number 49662 . 49663) (semantic-list 49600 . 49602) (symbol 49583 . 49600) (semantic-list 49545 . 49582) (symbol 49526 . 49545) (number 49580 . 49581) (semantic-list 49522 . 49524) (symbol 49505 . 49522) (semantic-list 49492 . 49504) (symbol 49479 . 49492) (number 49493 . 49494) (semantic-list 49467 . 49477) (symbol 49454 . 49467) (number 49468 . 49469) (semantic-list 49442 . 49452) (symbol 49429 . 49442) (number 49443 . 49444) (semantic-list 49390 . 49427) (symbol 49368 . 49390) (number 49425 . 49426) (number 49422 . 49423) (number 49419 . 49420) (semantic-list 49364 . 49366) (symbol 49347 . 49364) (semantic-list 49337 . 49346) (symbol 49324 . 49337) (number 49338 . 49339) (semantic-list 49312 . 49322) (symbol 49299 . 49312) (number 49313 . 49314) (semantic-list 49287 . 49297) (symbol 49274 . 49287) (number 49288 . 49289) (semantic-list 49227 . 49272) (symbol 49205 . 49227) (number 49270 . 49271) (number 49267 . 49268) (number 49264 . 49265) (semantic-list 49201 . 49203) (symbol 49184 . 49201) (semantic-list 49174 . 49183) (symbol 49161 . 49174) (number 49175 . 49176) (semantic-list 49149 . 49159) (symbol 49136 . 49149) (number 49150 . 49151) (semantic-list 49124 . 49134) (symbol 49111 . 49124) (number 49125 . 49126) (semantic-list 49100 . 49109) (symbol 49087 . 49100) (number 49101 . 49102) (semantic-list 49040 . 49085) (symbol 49018 . 49040) (number 49083 . 49084) (number 49080 . 49081) (number 49077 . 49078) (semantic-list 49014 . 49016) (symbol 48997 . 49014) (semantic-list 48988 . 48996) (symbol 48975 . 48988) (number 48989 . 48990) (semantic-list 48962 . 48973) (symbol 48949 . 48962) (number 48963 . 48964) (semantic-list 48932 . 48947) (symbol 48919 . 48932) (number 48933 . 48934) (semantic-list 48907 . 48917) (symbol 48894 . 48907) (number 48908 . 48909) (semantic-list 48844 . 48892) (symbol 48822 . 48844) (number 48890 . 48891) (number 48887 . 48888) (number 48884 . 48885) (semantic-list 48818 . 48820) (symbol 48801 . 48818) (semantic-list 48783 . 48800) (symbol 48770 . 48783) (number 48784 . 48785) (semantic-list 48722 . 48768) (symbol 48700 . 48722) (number 48766 . 48767) (number 48763 . 48764) (number 48760 . 48761) (semantic-list 48696 . 48698) (symbol 48679 . 48696) (semantic-list 48666 . 48678) (symbol 48653 . 48666) (number 48667 . 48668) (semantic-list 48602 . 48651) (symbol 48580 . 48602) (number 48649 . 48650) (number 48646 . 48647) (number 48643 . 48644) (semantic-list 48576 . 48578) (symbol 48559 . 48576) (semantic-list 48547 . 48558) (symbol 48534 . 48547) (number 48548 . 48549) (semantic-list 48523 . 48532) (symbol 48510 . 48523) (number 48524 . 48525) (semantic-list 48465 . 48508) (symbol 48443 . 48465) (number 48506 . 48507) (number 48503 . 48504) (number 48500 . 48501) (semantic-list 48432 . 48434) (symbol 48415 . 48432) (semantic-list 48403 . 48414) (symbol 48390 . 48403) (number 48404 . 48405) (semantic-list 48342 . 48388) (symbol 48320 . 48342) (number 48386 . 48387) (number 48383 . 48384) (number 48380 . 48381) (semantic-list 47918 . 47920) (symbol 47901 . 47918) (semantic-list 47890 . 47900) (symbol 47877 . 47890) (number 47891 . 47892) (semantic-list 47828 . 47875) (symbol 47806 . 47828) (number 47873 . 47874) (number 47870 . 47871) (number 47867 . 47868) (semantic-list 47802 . 47804) (symbol 47785 . 47802) (semantic-list 47774 . 47784) (symbol 47761 . 47774) (number 47775 . 47776) (semantic-list 47749 . 47759) (symbol 47736 . 47749) (number 47750 . 47751) (semantic-list 47692 . 47734) (symbol 47670 . 47692) (number 47732 . 47733) (number 47729 . 47730) (number 47726 . 47727) (semantic-list 47666 . 47668) (symbol 47649 . 47666) (semantic-list 47634 . 47648) (symbol 47621 . 47634) (number 47635 . 47636) (semantic-list 47571 . 47619) (symbol 47549 . 47571) (number 47617 . 47618) (number 47614 . 47615) (number 47611 . 47612) (semantic-list 47545 . 47547) (symbol 47528 . 47545) (semantic-list 47513 . 47527) (symbol 47500 . 47513) (number 47514 . 47515) (semantic-list 47489 . 47498) (symbol 47476 . 47489) (number 47490 . 47491) (semantic-list 47460 . 47474) (symbol 47447 . 47460) (number 47461 . 47462) (semantic-list 47403 . 47445) (symbol 47381 . 47403) (number 47443 . 47444) (number 47440 . 47441) (number 47437 . 47438) (semantic-list 47377 . 47379) (symbol 47360 . 47377) (semantic-list 47345 . 47359) (symbol 47332 . 47345) (number 47346 . 47347) (semantic-list 47317 . 47330) (symbol 47304 . 47317) (number 47318 . 47319) (semantic-list 47289 . 47302) (symbol 47276 . 47289) (number 47290 . 47291) (semantic-list 47262 . 47274) (symbol 47249 . 47262) (number 47263 . 47264) (semantic-list 47203 . 47247) (symbol 47181 . 47203) (number 47245 . 47246) (number 47242 . 47243) (number 47239 . 47240) (semantic-list 47177 . 47179) (symbol 47160 . 47177) (semantic-list 47147 . 47159) (symbol 47134 . 47147) (number 47148 . 47149) (semantic-list 47124 . 47132) (symbol 47111 . 47124) (number 47125 . 47126) (semantic-list 47101 . 47109) (symbol 47088 . 47101) (number 47102 . 47103) (semantic-list 47072 . 47086) (symbol 47059 . 47072) (number 47073 . 47074) (semantic-list 47011 . 47057) (symbol 46989 . 47011) (number 47055 . 47056) (number 47052 . 47053) (number 47049 . 47050) (semantic-list 46985 . 46987) (symbol 46968 . 46985) (semantic-list 46955 . 46967) (symbol 46942 . 46955) (number 46956 . 46957) (semantic-list 46929 . 46940) (symbol 46916 . 46929) (number 46930 . 46931) (semantic-list 46900 . 46914) (symbol 46887 . 46900) (number 46901 . 46902) (semantic-list 46844 . 46885) (symbol 46822 . 46844) (number 46883 . 46884) (number 46880 . 46881) (number 46877 . 46878) (semantic-list 46818 . 46820) (symbol 46801 . 46818) (semantic-list 46792 . 46800) (symbol 46779 . 46792) (number 46793 . 46794) (semantic-list 46769 . 46777) (symbol 46756 . 46769) (number 46770 . 46771) (semantic-list 46712 . 46754) (symbol 46690 . 46712) (number 46752 . 46753) (number 46749 . 46750) (number 46746 . 46747) (semantic-list 46537 . 46539) (symbol 46520 . 46537) (semantic-list 46507 . 46519) (symbol 46494 . 46507) (number 46508 . 46509) (semantic-list 46445 . 46492) (symbol 46423 . 46445) (number 46490 . 46491) (number 46487 . 46488) (number 46484 . 46485) (semantic-list 46419 . 46421) (symbol 46402 . 46419) (semantic-list 46392 . 46401) (symbol 46379 . 46392) (number 46393 . 46394) (semantic-list 46333 . 46377) (symbol 46311 . 46333) (number 46375 . 46376) (number 46372 . 46373) (number 46369 . 46370) (semantic-list 46307 . 46309) (symbol 46290 . 46307) (semantic-list 46278 . 46289) (symbol 46265 . 46278) (number 46279 . 46280) (semantic-list 46247 . 46263) (symbol 46234 . 46247) (number 46248 . 46249) (semantic-list 46222 . 46232) (symbol 46209 . 46222) (number 46223 . 46224) (semantic-list 46196 . 46207) (symbol 46183 . 46196) (number 46197 . 46198) (semantic-list 46140 . 46181) (symbol 46118 . 46140) (number 46179 . 46180) (number 46176 . 46177) (number 46173 . 46174) (semantic-list 46114 . 46116) (symbol 46097 . 46114) (semantic-list 46087 . 46096) (symbol 46074 . 46087) (number 46088 . 46089) (semantic-list 46061 . 46072) (symbol 46048 . 46061) (number 46062 . 46063) (semantic-list 46005 . 46046) (symbol 45983 . 46005) (number 46044 . 46045) (number 46041 . 46042) (number 46038 . 46039))
+    :lexical-table 
+        '(("SPHINX_INITIALIZED" (spp-arg-list ("c") 2019 . 2022) . 
+              ((IF "if" 2027 . 2029) (semantic-list "(!(c) || !(c)->sphinx)" 2030 . 2052) (semantic-list "{ \\
+			php_error_docref(NULL TSRMLS_CC, E_WARNING, \"using uninitialized SphinxClient object\"); \\
+			RETURN_FALSE; \\
+		}" 2053 . 2172)))
+          ("E_RECOVERABLE_ERROR" . ((symbol "E_WARNING" 1882 . 1891)))
+          ("SPHINX_CONST" (spp-arg-list ("name") 1920 . 1926) . ((symbol "REGISTER_LONG_CONSTANT" 1927 . 1949) (semantic-list "(#name, name, CONST_CS | CONST_PERSISTENT)" 1949 . 1991)))
+          )
+
+    )
+   )
+  :file "!home!work!download!sphinx-1.3.0!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

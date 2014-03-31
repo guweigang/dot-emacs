@@ -1,0 +1,228 @@
+;; Object runkit/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "runkit/"
+  :tables (list 
+   (semanticdb-table "runkit_methods.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("php_runkit.h" include nil nil [1220 1243]))          
+    :file "runkit_methods.c"
+    :pointmax 25638
+    :fsize 25637
+    :lastmodtime '(21079 42017 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "php_runkit.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("PHP_RUNKIT_H" variable (:constant-flag t) nil [1249 1261])
+            ("php.h" include nil nil [1312 1328])
+            ("php_ini.h" include nil nil [1329 1349])
+            ("ext/standard/info.h" include nil nil [1350 1380])
+            ("ext/standard/php_string.h" include nil nil [1381 1417])
+            ("PHP_RUNKIT_VERSION" variable (:constant-flag t) nil [1550 1568])
+            ("PHP_RUNKIT_SANDBOX_CLASSNAME" variable (:constant-flag t) nil [1593 1621])
+            ("PHP_RUNKIT_SANDBOX_PARENT_CLASSNAME" variable (:constant-flag t) nil [1648 1683])
+            ("PHP_RUNKIT_IMPORT_FUNCTIONS" variable (:constant-flag t) nil [1717 1744])
+            ("PHP_RUNKIT_IMPORT_CLASS_METHODS" variable (:constant-flag t) nil [1784 1815])
+            ("PHP_RUNKIT_IMPORT_CLASS_CONSTS" variable (:constant-flag t) nil [1851 1881])
+            ("PHP_RUNKIT_IMPORT_CLASS_PROPS" variable (:constant-flag t) nil [1918 1947])
+            ("PHP_RUNKIT_IMPORT_CLASS_STATIC_PROPS" variable (:constant-flag t) nil [1985 2021])
+            ("PHP_RUNKIT_IMPORT_CLASSES" variable (:constant-flag t) nil [2052 2077])
+            ("PHP_RUNKIT_IMPORT_OVERRIDE" variable (:constant-flag t) nil [2307 2333])
+            ("PHP_RUNKIT_OVERRIDE_OBJECTS" variable (:constant-flag t) nil [2374 2401])
+            ("runkit_module_entry" variable
+               (:typemodifiers ("extern")
+                :type ("zend_module_entry" type (:type "class") nil nil))
+                nil [3378 3423])
+            ("phpext_runkit_ptr" variable (:constant-flag t) nil [3432 3449])
+            ("PHP_MINIT_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("runkit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3491 3498]))                  
+                :type "int")
+                nil [3472 3499])
+            ("PHP_MSHUTDOWN_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("runkit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3523 3530]))                  
+                :type "int")
+                nil [3500 3531])
+            ("PHP_RINIT_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("runkit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3551 3558]))                  
+                :type "int")
+                nil [3532 3559])
+            ("PHP_RSHUTDOWN_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("runkit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3583 3590]))                  
+                :type "int")
+                nil [3560 3591])
+            ("PHP_MINFO_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("runkit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3611 3618]))                  
+                :type "int")
+                nil [3592 3619])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("runkit_return_value_used" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3634 3659]))                  
+                :type "int")
+                nil [3621 3660])
+            ("ZEND_DECLARE_MODULE_GLOBALS" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type ("runkit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5393 5400]))                  
+                :type "int")
+                nil [5358 5401])
+            ("RUNKIT_G" variable (:constant-flag t) nil [5536 5544])
+            ("RUNKIT_TSRMLS_C" variable (:constant-flag t) nil [5576 5591])
+            ("RUNKIT_REFCOUNT" variable (:constant-flag t) nil [6286 6301])
+            ("RUNKIT_IS_REF" variable (:constant-flag t) nil [6325 6338])
+            ("RUNKIT_IS_CALLABLE" variable (:constant-flag t) nil [6362 6380])
+            ("RUNKIT_FILE_HANDLE_DTOR" variable (:constant-flag t) nil [6459 6482])
+            ("RUNKIT_53_TSRMLS_PARAM" variable (:constant-flag t) nil [6545 6567])
+            ("RUNKIT_53_TSRMLS_ARG" variable (:constant-flag t) nil [6606 6626])
+            ("RUNKIT_UNDER53_TSRMLS_FETCH" variable (:constant-flag t) nil [6663 6690])
+            ("RUNKIT_UNDER53" variable (:constant-flag t) nil [6731 6745])
+            ("RUNKIT_ABOVE53" variable (:constant-flag t) nil [6786 6800])
+            ("zend_hash_quick_del" variable (:constant-flag t) nil [6841 6860])
+            ("PHP_RUNKIT_ACC_RETURN_REFERENCE" variable (:constant-flag t) nil [7053 7084])
+            ("ALLOC_PERMANENT_ZVAL" variable (:constant-flag t) nil [7149 7169]))          
+    :file "php_runkit.h"
+    :pointmax 28917
+    :fsize 28916
+    :lastmodtime '(21079 42017 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("PHP_RUNKIT_VERSION" . ((string "\"1.0.4-dev\"" 1573 . 1584)))
+          ("PHP_RUNKIT_SANDBOX_PARENT_CLASSNAME" . ((string "\"Runkit_Sandbox_Parent\"" 1684 . 1707)))
+          ("PHP_RUNKIT_IMPORT_CLASS_PROPS" . ((number "0x0008" 1970 . 1976)))
+          ("RUNKIT_TSRMLS_C" . ((symbol "NULL" 5593 . 5597)))
+          ("PHP_RUNKIT_IMPORT_CLASS_STATIC_PROPS" . ((number "0x0010" 2037 . 2043)))
+          ("ALLOC_PERMANENT_ZVAL" (spp-arg-list ("z") 7169 . 7172) . 
+              ((semantic-list "(z)" 7179 . 7182) (punctuation "=" 7183 . 7184) (semantic-list "(zval*)" 7185 . 7192) (symbol "malloc" 7192 . 7198) (semantic-list "(sizeof(zval))" 7198 . 7212)))
+          ("phpext_runkit_ptr" . ((punctuation "&" 3450 . 3451) (symbol "runkit_module_entry" 3451 . 3470)))
+          ("RUNKIT_IS_REF" . ((symbol "is_ref" 6342 . 6348)))
+          ("PHP_RUNKIT_IMPORT_FUNCTIONS" . ((number "0x0001" 1769 . 1775)))
+          ("PHP_RUNKIT_IMPORT_CLASS_METHODS" . ((number "0x0002" 1836 . 1842)))
+          ("PHP_RUNKIT_IMPORT_CLASS_CONSTS" . ((number "0x0004" 1903 . 1909)))
+          ("PHP_RUNKIT_OVERRIDE_OBJECTS" . ((number "0x8000" 2426 . 2432)))
+          ("PHP_RUNKIT_IMPORT_CLASSES" . ((semantic-list "(PHP_RUNKIT_IMPORT_CLASS_METHODS|PHP_RUNKIT_IMPORT_CLASS_CONSTS|\\
+                                                             PHP_RUNKIT_IMPORT_CLASS_PROPS|PHP_RUNKIT_IMPORT_CLASS_STATIC_PROPS)" 2104 . 2298)))
+          ("PHP_RUNKIT_IMPORT_OVERRIDE" . ((number "0x0020" 2359 . 2365)))
+          ("RUNKIT_53_TSRMLS_PARAM" (spp-arg-list ("param") 6567 . 6574) . ((semantic-list "(param)" 6585 . 6592)))
+          ("RUNKIT_53_TSRMLS_ARG" (spp-arg-list ("arg") 6626 . 6631) . ((symbol "arg" 6646 . 6649)))
+          ("RUNKIT_UNDER53_TSRMLS_FETCH" (spp-arg-list nil 6690 . 6692) . ((symbol "TSRMLS_FETCH" 6703 . 6715) (semantic-list "()" 6715 . 6717)))
+          ("PHP_RUNKIT_ACC_RETURN_REFERENCE" . ((number "0x4000000" 7093 . 7102)))
+          ("PHP_RUNKIT_SANDBOX_CLASSNAME" . ((string "\"Runkit_Sandbox\"" 1623 . 1639)))
+          ("RUNKIT_IS_CALLABLE" (spp-arg-list ("cb_zv" "flags" "cb_sp") 6380 . 6401) . ((symbol "zend_is_callable" 6402 . 6418) (semantic-list "((cb_zv), (flags), (cb_sp))" 6418 . 6445)))
+          ("RUNKIT_FILE_HANDLE_DTOR" (spp-arg-list ("pHandle") 6482 . 6491) . ((symbol "zend_file_handle_dtor" 6499 . 6520) (semantic-list "((pHandle))" 6520 . 6531)))
+          ("zend_hash_quick_del" (spp-arg-list ("ht" "key" "key_len" "h") 6860 . 6881) . ((symbol "zend_hash_del" 6882 . 6895) (semantic-list "(ht, key, key_len)" 6895 . 6913)))
+          ("PHP_RUNKIT_H")
+          ("RUNKIT_G" (spp-arg-list ("v") 5544 . 5547) . ((semantic-list "(runkit_globals.v)" 5549 . 5567)))
+          ("RUNKIT_REFCOUNT" . ((symbol "refcount" 6303 . 6311)))
+          ("RUNKIT_UNDER53" . ((number "1" 6771 . 6772)))
+          ("RUNKIT_ABOVE53" . ((number "0" 6826 . 6827)))
+          )
+
+    )
+   (semanticdb-table "runkit_functions.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("php_runkit.h" include nil nil [1220 1243])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("runkit_return_value_used" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28735 28760]))                  
+                :type "int")
+                nil [28722 29107]))          
+    :file "runkit_functions.c"
+    :pointmax 29256
+    :fsize 29255
+    :lastmodtime '(21079 42017 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "runkit.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("php_runkit.h" include nil nil [1220 1243])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("runkit_zval_inspect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2004 2024]))                  
+                :type "int")
+                nil [1991 2497])
+            ("runkit_functions" variable
+               (:dereference 1
+                :type ("zend_function_entry" type (:type "class") nil nil))
+                nil [2539 4319])
+            ("runkit_module_entry" variable (:type ("zend_module_entry" type (:type "class") nil nil)) nil [4362 4702])
+            ("php_runkit_feature_constant" variable (:constant-flag t) nil [7397 7424])
+            ("_php_runkit_feature_constant" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7657 7674])
+                    ("name_len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7675 7691])
+                    ("enabled" variable (:type ("zend_bool" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7692 7710])
+                    ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [7720 7730])
+                    ("module_number" variable (:type "int") (reparse-symbol arg-sub-list) [7731 7758])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7749 7759]))                  
+                :type "void")
+                nil [7616 7974])
+            ("PHP_MINIT_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("runkit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8026 8033]))                  
+                :type "int")
+                nil [8007 12151])
+            ("PHP_MSHUTDOWN_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("runkit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12220 12227]))                  
+                :type "int")
+                nil [12197 12712])
+            ("PHP_RINIT_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("runkit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14189 14196]))                  
+                :type "int")
+                nil [14170 14957])
+            ("php_runkit_delete_user_functions" function
+               (:arguments 
+                  ( ("pDest" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [15356 15377])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15368 15378]))                  
+                :type "int")
+                nil [15319 15532])
+            ("PHP_RSHUTDOWN_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("runkit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15601 15608]))                  
+                :type "int")
+                nil [15578 16855])
+            ("PHP_MINFO_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("runkit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16916 16923]))                  
+                :type "int")
+                nil [16897 18004]))          
+    :file "runkit.c"
+    :pointmax 18152
+    :fsize 18151
+    :lastmodtime '(21079 42017 0 0)
+    :unmatched-syntax '((semantic-list 1271 . 1279) (symbol 1244 . 1271))
+    :lexical-table 
+        '(("php_runkit_feature_constant" (spp-arg-list ("feature" "enabled") 7424 . 7442) . ((symbol "_php_runkit_feature_constant" 7447 . 7475) (semantic-list "(\"RUNKIT_FEATURE_\" #feature, sizeof(\"RUNKIT_FEATURE_\" #feature), (enabled), \\
+									CONST_CS | CONST_PERSISTENT, module_number TSRMLS_CC)" 7475 . 7615)))
+          )
+
+    )
+   )
+  :file "!home!work!git!runkit!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

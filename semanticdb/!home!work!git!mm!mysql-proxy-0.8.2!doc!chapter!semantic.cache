@@ -1,0 +1,19 @@
+;; Object chapter/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "chapter/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("EXTRA_DIST" variable (:default-value ("protocol.txt" "scripting.txt")) nil [1 45]))          
+    :file "Makefile.am"
+    :pointmax 46
+    :fsize 45
+    :lastmodtime '(21022 63839 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!git!mm!mysql-proxy-0.8.2!doc!chapter!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

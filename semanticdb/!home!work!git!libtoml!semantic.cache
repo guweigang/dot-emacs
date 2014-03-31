@@ -1,0 +1,508 @@
+;; Object libtoml/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "libtoml/"
+  :tables (list 
+   (semanticdb-table "toml.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("inttypes.h" include (:system-flag t) nil [40 61])
+            ("sys/types.h" include (:system-flag t) nil [62 84])
+            ("sys/uio.h" include (:system-flag t) nil [85 105])
+            ("unistd.h" include (:system-flag t) nil [106 125])
+            ("time.h" include (:system-flag t) nil [126 143])
+            ("errno.h" include (:system-flag t) nil [144 162])
+            ("string.h" include (:system-flag t) nil [163 182])
+            ("ccan/list/list.h" include (:system-flag t) nil [183 210])
+            ("toml.h" include nil nil [212 229])
+            ("toml_node_walker" variable
+               (:functionpointer-flag t
+                :type "void")
+                nil [239 292])
+            ("toml_init" function
+               (:arguments 
+                  ( ("toml_root" variable
+                       (:pointer 2
+                        :type ("toml_node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [308 337]))                  
+                :type "int")
+                nil [294 581])
+            ("toml_get" function
+               (:pointer 1
+                :arguments 
+                  ( ("toml_root" variable
+                       (:pointer 1
+                        :type ("toml_node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [611 639])
+                    ("key" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [640 650]))                  
+                :type ("toml_node" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [583 1087])
+            ("_toml_dump" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("toml_node" variable
+                       (:pointer 1
+                        :type ("toml_node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1112 1140])
+                    ("output" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1141 1154])
+                    ("bname" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1155 1167])
+                    ("indent" variable (:type "int") (reparse-symbol arg-sub-list) [1168 1179])
+                    ("newline" variable (:type "int") (reparse-symbol arg-sub-list) [1197 1209]))                  
+                :type "void")
+                nil [1089 3685])
+            ("_toml_walk" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("node" variable
+                       (:pointer 1
+                        :type ("toml_node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3710 3733])
+                    ("fn" variable (:type ("toml_node_walker" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3734 3754])
+                    ("ctx" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3755 3765]))                  
+                :type "void")
+                nil [3687 4315])
+            ("toml_dump" function
+               (:arguments 
+                  ( ("toml_root" variable
+                       (:pointer 1
+                        :type ("toml_node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4332 4360])
+                    ("output" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4361 4374]))                  
+                :type "void")
+                nil [4317 4422])
+            ("_toml_tojson" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("toml_node" variable
+                       (:pointer 1
+                        :type ("toml_node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4449 4477])
+                    ("output" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4478 4491])
+                    ("indent" variable (:type "int") (reparse-symbol arg-sub-list) [4492 4503]))                  
+                :type "void")
+                nil [4424 7264])
+            ("toml_tojson" function
+               (:arguments 
+                  ( ("toml_root" variable
+                       (:pointer 1
+                        :type ("toml_node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7283 7311])
+                    ("output" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7312 7325]))                  
+                :type "void")
+                nil [7266 7416])
+            ("_toml_free" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("node" variable
+                       (:pointer 1
+                        :type ("toml_node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7441 7464]))                  
+                :type "void")
+                nil [7418 8127])
+            ("toml_free" function
+               (:arguments 
+                  ( ("toml_root" variable
+                       (:pointer 1
+                        :type ("toml_node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8144 8172]))                  
+                :type "void")
+                nil [8129 8257]))          
+    :file "toml.c"
+    :pointmax 8259
+    :fsize 8257
+    :lastmodtime '(21084 61916 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "toml.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("TOML_H" variable (:constant-flag t) nil [24 30])
+            ("ccan/list/list.h" include (:system-flag t) nil [32 59])
+            ("sys/types.h" include (:system-flag t) nil [60 82])
+            ("stdio.h" include (:system-flag t) nil [83 101])
+            ("time.h" include (:system-flag t) nil [102 119])
+            ("toml_type" type
+               (:members 
+                  ( ("TOML_ROOT" variable
+                       (:constant-flag t
+                        :default-value (151 152)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [139 152])
+                    ("TOML_KEYGROUP" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [155 169])
+                    ("TOML_LIST" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [171 181])
+                    ("TOML_INT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [183 192])
+                    ("TOML_FLOAT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [194 205])
+                    ("TOML_STRING" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [207 219])
+                    ("TOML_DATE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [221 231])
+                    ("TOML_BOOLEAN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [233 246]))                  
+                :type "enum")
+                nil [121 249])
+            ("toml_node" type
+               (:members 
+                  ( ("type" variable (:type ("toml_type" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [271 291])
+                    ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [293 304])
+                    ("value" variable (:type ("" type
+                         (:members 
+                            ( ("map" variable (:type ("list_head" type
+                                   (:prototype t
+                                    :type "struct")
+                                    nil nil)) (reparse-symbol classsubparts) [316 337])
+                              ("list" variable (:type ("list_head" type
+                                   (:prototype t
+                                    :type "struct")
+                                    nil nil)) (reparse-symbol classsubparts) [340 362])
+                              ("integer" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [365 381])
+                              ("floating" variable (:type "double") (reparse-symbol classsubparts) [384 400])
+                              ("string" variable
+                                 (:pointer 1
+                                  :type "char")
+                                  (reparse-symbol classsubparts) [403 416])
+                              ("epoch" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [419 432]))                            
+                          :type "union")
+                          nil nil)) (reparse-symbol classsubparts) [306 442]))                  
+                :type "struct")
+                nil [251 445])
+            ("toml_keygroup_item" type
+               (:members 
+                  ( ("map" variable (:type ("list_node" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [476 497])
+                    ("node" variable (:type ("toml_node" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [499 521]))                  
+                :type "struct")
+                nil [447 524])
+            ("toml_list_item" type
+               (:members 
+                  ( ("list" variable (:type ("list_node" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [551 573])
+                    ("node" variable (:type ("toml_node" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [575 597]))                  
+                :type "struct")
+                nil [526 600])
+            ("toml_init" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 2
+                        :type ("toml_node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [616 636]))                  
+                :type "int")
+                nil [602 637])
+            ("toml_parse" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("toml_node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [653 672])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [673 680])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [681 685]))                  
+                :type "int")
+                nil [638 686])
+            ("toml_get" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("toml_node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [714 733])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [734 741]))                  
+                :type ("toml_node" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [687 742])
+            ("toml_dump" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("toml_node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [758 777])
+                    ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [778 785]))                  
+                :type "void")
+                nil [743 786])
+            ("toml_tojson" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("toml_node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [804 823])
+                    ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [824 831]))                  
+                :type "void")
+                nil [787 832])
+            ("toml_free" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("toml_node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [848 867]))                  
+                :type "void")
+                nil [833 868]))          
+    :file "toml.h"
+    :pointmax 877
+    :fsize 876
+    :lastmodtime '(21067 60084 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("TOML_H")
+          )
+
+    )
+   (semanticdb-table "toml_parse.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("unistd.h" include (:system-flag t) nil [26 45])
+            ("stdio.h" include (:system-flag t) nil [46 64])
+            ("stdlib.h" include (:system-flag t) nil [65 84])
+            ("string.h" include (:system-flag t) nil [85 104])
+            ("inttypes.h" include (:system-flag t) nil [105 126])
+            ("time.h" include (:system-flag t) nil [127 144])
+            ("toml.h" include nil nil [146 163])
+            ("signal.h" include (:system-flag t) nil [164 183])
+            ("toml_stack_item" type
+               (:members 
+                  ( ("list" variable (:type ("list_node" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [211 233])
+                    ("list_type" variable (:type ("toml_type" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [235 260])
+                    ("node" variable
+                       (:pointer 1
+                        :type ("toml_node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [262 285]))                  
+                :type "struct")
+                nil [185 288])
+            ("toml_type_to_str" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :arguments 
+                  ( ("type" variable (:type ("toml_type" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [327 347]))                  
+                :type "char")
+                nil [290 720])
+            ("_toml_actions" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "char")
+                nil [776 6125])
+            ("_toml_key_offsets" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "short")
+                nil [6127 9963])
+            ("_toml_trans_keys" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "char")
+                nil [9965 41565])
+            ("_toml_single_lengths" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "char")
+                nil [41567 43769])
+            ("_toml_range_lengths" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "char")
+                nil [43771 45857])
+            ("_toml_index_offsets" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "short")
+                nil [45859 49692])
+            ("_toml_indicies" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "short")
+                nil [49694 82918])
+            ("_toml_trans_targs" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "short")
+                nil [82920 91057])
+            ("_toml_trans_actions" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "short")
+                nil [91059 99480])
+            ("toml_start" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :type "int")
+                nil [99482 99516])
+            ("toml_first_final" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :type "int")
+                nil [99517 99557])
+            ("toml_error" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :type "int")
+                nil [99558 99590])
+            ("toml_en_main" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :type "int")
+                nil [99592 99628])
+            ("toml_en_main_lines_list" variable
+               (:typemodifiers ("static")
+                :constant-flag t
+                :type "int")
+                nil [99629 99675])
+            ("toml_parse" function
+               (:arguments 
+                  ( ("toml_root" variable
+                       (:pointer 1
+                        :type ("toml_node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [99720 99748])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [99749 99759])
+                    ("buflen" variable (:type "int") (reparse-symbol arg-sub-list) [99760 99771]))                  
+                :type "int")
+                nil [99705 113301]))          
+    :file "toml_parse.c"
+    :pointmax 113302
+    :fsize 113301
+    :lastmodtime '(21067 62249 0 0)
+    :unmatched-syntax '((string 99688 . 99703) (number 99684 . 99687) (symbol 99679 . 99683) (punctuation 99678 . 99679) (string 761 . 775) (number 758 . 760) (symbol 753 . 757) (punctuation 752 . 753) (string 733 . 748) (number 729 . 732) (symbol 724 . 728) (punctuation 723 . 724) (string 10 . 25) (number 8 . 9) (symbol 3 . 7) (punctuation 2 . 3) (string 761 . 775) (number 758 . 760) (symbol 753 . 757) (punctuation 752 . 753) (string 733 . 748) (number 729 . 732) (symbol 724 . 728) (punctuation 723 . 724) (string 10 . 25) (number 8 . 9) (symbol 3 . 7) (punctuation 2 . 3) (string 761 . 775) (number 758 . 760) (symbol 753 . 757) (punctuation 752 . 753) (string 733 . 748) (number 729 . 732) (symbol 724 . 728) (punctuation 723 . 724) (string 10 . 25) (number 8 . 9) (symbol 3 . 7) (punctuation 2 . 3) (string 761 . 775) (number 758 . 760) (symbol 753 . 757) (punctuation 752 . 753) (string 733 . 748) (number 729 . 732) (symbol 724 . 728) (punctuation 723 . 724) (string 10 . 25) (number 8 . 9) (symbol 3 . 7) (punctuation 2 . 3) (string 761 . 775) (number 758 . 760) (symbol 753 . 757) (punctuation 752 . 753) (string 733 . 748) (number 729 . 732) (symbol 724 . 728) (punctuation 723 . 724) (string 10 . 25) (number 8 . 9) (symbol 3 . 7) (punctuation 2 . 3) (string 761 . 775) (number 758 . 760) (symbol 753 . 757) (punctuation 752 . 753) (string 733 . 748) (number 729 . 732) (symbol 724 . 728) (punctuation 723 . 724) (string 10 . 25) (number 8 . 9) (symbol 3 . 7) (punctuation 2 . 3) (string 761 . 775) (number 758 . 760) (symbol 753 . 757) (punctuation 752 . 753) (string 733 . 748) (number 729 . 732) (symbol 724 . 728) (punctuation 723 . 724) (string 10 . 25) (number 8 . 9) (symbol 3 . 7) (punctuation 2 . 3) (string 761 . 775) (number 758 . 760) (symbol 753 . 757) (punctuation 752 . 753) (string 733 . 748) (number 729 . 732) (symbol 724 . 728) (punctuation 723 . 724) (string 10 . 25) (number 8 . 9) (symbol 3 . 7) (punctuation 2 . 3) (string 761 . 775) (number 758 . 760) (symbol 753 . 757) (punctuation 752 . 753) (string 733 . 748) (number 729 . 732) (symbol 724 . 728) (punctuation 723 . 724) (string 10 . 25) (number 8 . 9) (symbol 3 . 7) (punctuation 2 . 3) (string 761 . 775) (number 758 . 760) (symbol 753 . 757) (punctuation 752 . 753) (string 733 . 748) (number 729 . 732) (symbol 724 . 728) (punctuation 723 . 724) (string 10 . 25) (number 8 . 9) (symbol 3 . 7) (punctuation 2 . 3) (string 761 . 775) (number 758 . 760) (symbol 753 . 757) (punctuation 752 . 753) (string 733 . 748) (number 729 . 732) (symbol 724 . 728) (punctuation 723 . 724) (string 10 . 25) (number 8 . 9) (symbol 3 . 7) (punctuation 2 . 3) (string 761 . 775) (number 758 . 760) (symbol 753 . 757) (punctuation 752 . 753) (string 733 . 748) (number 729 . 732) (symbol 724 . 728) (punctuation 723 . 724) (string 10 . 25) (number 8 . 9) (symbol 3 . 7) (punctuation 2 . 3) (string 761 . 775) (number 758 . 760) (symbol 753 . 757) (punctuation 752 . 753) (string 733 . 748) (number 729 . 732) (symbol 724 . 728) (punctuation 723 . 724) (string 10 . 25) (number 8 . 9) (symbol 3 . 7) (punctuation 2 . 3) (string 761 . 775) (number 758 . 760) (symbol 753 . 757) (punctuation 752 . 753) (string 733 . 748) (number 729 . 732) (symbol 724 . 728) (punctuation 723 . 724) (string 10 . 25) (number 8 . 9) (symbol 3 . 7) (punctuation 2 . 3) (string 761 . 775) (number 758 . 760) (symbol 753 . 757) (punctuation 752 . 753) (string 733 . 748) (number 729 . 732) (symbol 724 . 728) (punctuation 723 . 724) (string 10 . 25) (number 8 . 9) (symbol 3 . 7) (punctuation 2 . 3) (string 761 . 775) (number 758 . 760) (symbol 753 . 757) (punctuation 752 . 753) (string 733 . 748) (number 729 . 732) (symbol 724 . 728) (punctuation 723 . 724) (string 10 . 25) (number 8 . 9) (symbol 3 . 7) (punctuation 2 . 3) (string 761 . 775) (number 758 . 760) (symbol 753 . 757) (punctuation 752 . 753) (string 733 . 748) (number 729 . 732) (symbol 724 . 728) (punctuation 723 . 724) (string 10 . 25) (number 8 . 9) (symbol 3 . 7) (punctuation 2 . 3) (string 761 . 775) (number 758 . 760) (symbol 753 . 757) (punctuation 752 . 753) (string 733 . 748) (number 729 . 732) (symbol 724 . 728) (punctuation 723 . 724) (string 10 . 25) (number 8 . 9) (symbol 3 . 7) (punctuation 2 . 3) (string 761 . 775) (number 758 . 760) (symbol 753 . 757) (punctuation 752 . 753) (string 733 . 748) (number 729 . 732) (symbol 724 . 728) (punctuation 723 . 724) (string 10 . 25) (number 8 . 9) (symbol 3 . 7) (punctuation 2 . 3) (string 761 . 775) (number 758 . 760) (symbol 753 . 757) (punctuation 752 . 753) (string 733 . 748) (number 729 . 732) (symbol 724 . 728) (punctuation 723 . 724) (string 10 . 25) (number 8 . 9) (symbol 3 . 7) (punctuation 2 . 3) (string 761 . 775) (number 758 . 760) (symbol 753 . 757) (punctuation 752 . 753) (string 733 . 748) (number 729 . 732) (symbol 724 . 728) (punctuation 723 . 724) (string 10 . 25) (number 8 . 9) (symbol 3 . 7) (punctuation 2 . 3) (string 761 . 775) (number 758 . 760) (symbol 753 . 757) (punctuation 752 . 753) (string 733 . 748) (number 729 . 732) (symbol 724 . 728) (punctuation 723 . 724) (string 10 . 25) (number 8 . 9) (symbol 3 . 7) (punctuation 2 . 3))
+    )
+   )
+  :file "!home!work!git!libtoml!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

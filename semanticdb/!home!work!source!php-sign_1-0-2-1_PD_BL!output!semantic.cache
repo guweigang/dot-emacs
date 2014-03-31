@@ -1,0 +1,187 @@
+;; Object output/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "output/"
+  :tables (list 
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("srcdir" variable (:default-value ("/home/work/source/php-sign_1-0-2-1_PD_BL/output")) nil [1 58])
+            ("builddir" variable (:default-value ("/home/work/source/php-sign_1-0-2-1_PD_BL/output")) nil [58 117])
+            ("top_srcdir" variable (:default-value ("/home/work/source/php-sign_1-0-2-1_PD_BL/output")) nil [117 178])
+            ("top_builddir" variable (:default-value ("/home/work/source/php-sign_1-0-2-1_PD_BL/output")) nil [178 241])
+            ("EGREP" variable (:default-value ("grep" "-E")) nil [241 257])
+            ("SED" variable (:default-value ("/bin/sed")) nil [257 272])
+            ("CONFIGURE_COMMAND" variable (:default-value ("'./configure'" "'--with-dict=/home/work/source/php-sign_1-0-2-1_PD_BL/output/dict/'" "'--with-php-config=/home/work/local/php/bin/php-config'" "'--with-ullib=/home/work/source/php-sign_1-0-2-1_PD_BL/output/ullib/'")) nil [272 500])
+            ("CONFIGURE_OPTIONS" variable (:default-value ("'--with-dict=/home/work/source/php-sign_1-0-2-1_PD_BL/output/dict/'" "'--with-php-config=/home/work/local/php/bin/php-config'" "'--with-ullib=/home/work/source/php-sign_1-0-2-1_PD_BL/output/ullib/'")) nil [500 714])
+            ("SHLIB_SUFFIX_NAME" variable (:default-value ("so")) nil [714 737])
+            ("SHLIB_DL_SUFFIX_NAME" variable (:default-value ("so")) nil [737 763])
+            ("ZEND_EXT_TYPE" variable (:default-value ("zend_extension")) nil [763 794])
+            ("RE2C" variable (:default-value ("exit" "0;")) nil [794 809])
+            ("AWK" variable (:default-value ("gawk")) nil [809 820])
+            ("SIGN_SHARED_LIBADD" variable nil nil [820 841])
+            ("shared_objects_sign" variable (:default-value ("sign.lo")) nil [841 871])
+            ("PHP_PECL_EXTENSION" variable (:default-value ("sign")) nil [871 897])
+            ("PHP_MODULES" variable (:default-value ("$(phplibdir)/sign.la")) nil [897 932])
+            ("PHP_ZEND_EX" variable nil nil [932 946])
+            ("all_targets" variable (:default-value ("$(PHP_MODULES)" "$(PHP_ZEND_EX)")) nil [946 990])
+            ("install_targets" variable (:default-value ("install-modules" "install-headers")) nil [990 1040])
+            ("prefix" variable (:default-value ("/home/work/local/php")) nil [1040 1070])
+            ("exec_prefix" variable (:default-value ("$(prefix)")) nil [1070 1094])
+            ("libdir" variable (:default-value ("${exec_prefix}/lib")) nil [1094 1122])
+            ("prefix" variable (:default-value ("/home/work/local/php")) nil [1122 1152])
+            ("phplibdir" variable (:default-value ("/home/work/source/php-sign_1-0-2-1_PD_BL/output/modules")) nil [1152 1220])
+            ("phpincludedir" variable (:default-value ("/home/work/local/php/include/php")) nil [1220 1269])
+            ("CC" variable (:default-value ("cc")) nil [1269 1277])
+            ("CFLAGS" variable (:default-value ("-g" "-O2")) nil [1277 1293])
+            ("CFLAGS_CLEAN" variable (:default-value ("$(CFLAGS)")) nil [1293 1318])
+            ("CPP" variable (:default-value ("cc" "-E")) nil [1318 1330])
+            ("CPPFLAGS" variable (:default-value ("-DHAVE_CONFIG_H")) nil [1330 1357])
+            ("CXX" variable (:default-value ("g++")) nil [1357 1367])
+            ("CXXFLAGS" variable (:default-value ("-g" "-O2")) nil [1367 1385])
+            ("CXXFLAGS_CLEAN" variable (:default-value ("$(CXXFLAGS)")) nil [1385 1414])
+            ("EXTENSION_DIR" variable (:default-value ("/home/work/local/php/lib/php/extensions/no-debug-zts-20090626")) nil [1414 1492])
+            ("PHP_EXECUTABLE" variable (:default-value ("/home/work/local/php/bin/php")) nil [1492 1538])
+            ("EXTRA_LDFLAGS" variable nil nil [1538 1554])
+            ("EXTRA_LIBS" variable nil nil [1554 1567])
+            ("INCLUDES" variable (:default-value ("-I/home/work/local/php/include/php" "-I/home/work/local/php/include/php/main" "-I/home/work/local/php/include/php/TSRM" "-I/home/work/local/php/include/php/Zend" "-I/home/work/local/php/include/php/ext" "-I/home/work/local/php/include/php/ext/date/lib" "-I/home/work/source/php-sign_1-0-2-1_PD_BL/output/ullib//include" "-I/home/work/source/php-sign_1-0-2-1_PD_BL/output/dict//include")) nil [1567 1949])
+            ("LFLAGS" variable nil nil [1949 1958])
+            ("LDFLAGS" variable (:default-value ("-Wl,-rpath,/home/work/source/php-sign_1-0-2-1_PD_BL/output/ullib//lib" "-L/home/work/source/php-sign_1-0-2-1_PD_BL/output/ullib//lib" "-Wl,-rpath,/home/work/source/php-sign_1-0-2-1_PD_BL/output/dict//lib" "-L/home/work/source/php-sign_1-0-2-1_PD_BL/output/dict//lib")) nil [1958 2228])
+            ("SHARED_LIBTOOL" variable nil nil [2228 2245])
+            ("LIBTOOL" variable (:default-value ("$(SHELL)" "$(top_builddir)/libtool")) nil [2245 2288])
+            ("SHELL" variable (:default-value ("/bin/sh")) nil [2288 2304])
+            ("INSTALL_HEADERS" variable nil nil [2304 2322])
+            ("mkinstalldirs" variable (:default-value ("$(top_srcdir)/build/shtool" "mkdir" "-p")) nil [2322 2374])
+            ("INSTALL" variable (:default-value ("$(top_srcdir)/build/shtool" "install" "-c")) nil [2374 2422])
+            ("INSTALL_DATA" variable (:default-value ("$(INSTALL)" "-m" "644")) nil [2422 2455])
+            ("DEFS" variable (:default-value ("-DPHP_ATOM_INC" "-I$(top_builddir)/include" "-I$(top_builddir)/main" "-I$(top_srcdir)")) nil [2456 2543])
+            ("COMMON_FLAGS" variable (:default-value ("$(DEFS)" "$(INCLUDES)" "$(EXTRA_INCLUDES)" "$(CPPFLAGS)" "$(PHP_FRAMEWORKPATH)")) nil [2543 2629])
+            ("all" function (:arguments ("$(all_targets)")) nil [2630 2734])
+            ("build-modules" function (:arguments ("$(PHP_MODULES)" "$(PHP_ZEND_EX)")) nil [2734 2779])
+            ("libphp" function (:arguments ("$(PHP_GLOBAL_OBJS)" "$(PHP_SAPI_OBJS)")) nil [2780 3118])
+            ("libs/libphp" function (:arguments ("$(PHP_GLOBAL_OBJS)" "$(PHP_SAPI_OBJS)")) nil [3119 3432])
+            ("install" function (:arguments ("$(all_targets)" "$(install_targets)")) nil [3433 3476])
+            ("install-sapi" function (:arguments ("$(OVERALL_TARGET)")) nil [3477 4019])
+            ("install-modules" function (:arguments ("build-modules")) nil [4020 4292])
+            ("install-headers" function nil nil [4293 5297])
+            ("PHP_TEST_SETTINGS" variable (:default-value ("-d" "'open_basedir='" "-d" "'output_buffering=0'" "-d" "'memory_limit=-1'")) nil [5298 5382])
+            ("PHP_TEST_SHARED_EXTENSIONS" variable (:default-value ("` \\
+	if test \"x$(PHP_MODULES)\" != \"x\"; then \\
+		for i in $(PHP_MODULES)\"\"; do \\
+			. $$i; $(top_srcdir)/build/shtool echo -n -- \" -d extension=$$dlname\"; \\
+		done; \\
+	fi; \\
+	if test \"x$(PHP_ZEND_EX)\" != \"x\"; then \\
+		for i in $(PHP_ZEND_EX)\"\"; do \\
+			. $$i; $(top_srcdir)/build/shtool echo -n -- \" -d $(ZEND_EXT_TYPE)=$(top_builddir)/modules/$$dlname\"; \\
+		done; \\
+	fi`")) nil [5382 5783])
+            ("PHP_DEPRECATED_DIRECTIVES_REGEX" variable (:default-value ("'^(define_syslog_variables|register_(globals|long_arrays)?|safe_mode|magic_quotes_(gpc|runtime|sybase)?|(zend_)?extension(_debug)?(_ts)?)[\\t\\ ]*='")) nil [5783 5964])
+            ("test" function (:arguments ("all")) nil [5965 7153])
+            ("clean" function nil nil [7154 7478])
+            ("distclean" function (:arguments ("clean")) nil [7479 7767])
+            (".PHONY" function (:arguments ("all" "clean" "install" "distclean" "test")) nil [7768 7809])
+            (".NOEXPORT" function nil nil [7809 7820])
+            ("sign.lo" function (:arguments ("/home/work/source/php-sign_1-0-2-1_PD_BL/output/sign.cpp")) nil [7820 8100])
+            ("$(phplibdir)" function (:arguments ("./sign.la")) nil [8100 8185])
+            ("./sign.la" function (:arguments ("$(shared_objects_sign)" "$(SIGN_SHARED_DEPENDENCIES)")) nil [8186 8476]))          
+    :file "Makefile"
+    :pointmax 8477
+    :fsize 8476
+    :lastmodtime '(20958 27151 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "sign.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("php.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [1267 1283])
+            ("php_ini.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [1284 1304])
+            ("ext/standard/info.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [1305 1335])
+            ("php.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [1267 1283])
+            ("php_ini.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [1284 1304])
+            ("ext/standard/info.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [1305 1335])
+            ("php.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [1267 1283])
+            ("php_ini.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [1284 1304])
+            ("ext/standard/info.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [1305 1335])
+            ("php.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [1267 1283])
+            ("php_ini.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [1284 1304])
+            ("ext/standard/info.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [1305 1335])
+            ("ul_url.h" include nil nil [1341 1360])
+            ("ul_sign.h" include nil nil [1361 1381])
+            ("php_sign.h" include nil nil [1382 1403])
+            ("ul_url_sign.h" include nil nil [1404 1428])
+            ("le_sign" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [1589 1608])
+            ("sign_functions" variable
+               (:dereference 1
+                :type ("zend_function_entry" type (:type "class") nil nil))
+                nil [1712 2024])
+            ("sign_module_entry" variable (:type ("zend_module_entry" type (:type "class") nil nil)) nil [2065 2560])
+            ("C" extern nil nil [2572 2640])
+            ("PHP_MINIT_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("sign" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3320 3325]))                  
+                :type "int")
+                nil [3301 3427])
+            ("PHP_MSHUTDOWN_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("sign" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3496 3501]))                  
+                :type "int")
+                nil [3473 3601])
+            ("PHP_RINIT_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("sign" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3717 3722]))                  
+                :type "int")
+                nil [3698 3743])
+            ("PHP_RSHUTDOWN_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("sign" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3865 3870]))                  
+                :type "int")
+                nil [3842 3891])
+            ("PHP_MINFO_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("sign" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3952 3957]))                  
+                :type "int")
+                nil [3933 4161])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("confirm_sign_compiled" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4554 4576]))                  
+                :type "int")
+                nil [4541 4917])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("creat_sign_mds64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5311 5328]))                  
+                :type "int")
+                nil [5298 6057])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("creat_sign_fs64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6136 6152]))                  
+                :type "int")
+                nil [6123 6880])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("creat_sign_fs64_str" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6963 6983]))                  
+                :type "int")
+                nil [6950 7794])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("creat_url_sign64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7946 7963]))                  
+                :type "int")
+                nil [7933 8349]))          
+    :file "sign.cpp"
+    :pointmax 8498
+    :fsize 8497
+    :lastmodtime '(20958 26129 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "php_sign.h"
+    :file "php_sign.h"
+    :fsize 2807
+    :lastmodtime '(20958 20056 0 0)
+    )
+   )
+  :file "!home!work!source!php-sign_1-0-2-1_PD_BL!output!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

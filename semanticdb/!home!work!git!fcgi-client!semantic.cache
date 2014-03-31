@@ -1,0 +1,78 @@
+;; Object fcgi-client/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "fcgi-client/"
+  :tables (list 
+   (semanticdb-table "fcgi.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("fcgi_defs.h" include nil nil [1 23])
+            ("fcgi_header.h" include nil nil [24 48])
+            ("unistd.h" include (:system-flag t) nil [50 69])
+            ("errno.h" include (:system-flag t) nil [70 88])
+            ("netdb.h" include (:system-flag t) nil [89 107])
+            ("sys/types.h" include (:system-flag t) nil [108 130])
+            ("netinet/in.h" include (:system-flag t) nil [131 154])
+            ("sys/socket.h" include (:system-flag t) nil [155 178])
+            ("arpa/inet.h" include (:system-flag t) nil [180 202])
+            ("BUF_SIZE" variable (:constant-flag t) nil [212 220])
+            ("FCGI_SERVER" variable (:constant-flag t) nil [234 245])
+            ("FCGI_PORT" variable (:constant-flag t) nil [266 275])
+            ("MAXDATASIZE" variable (:constant-flag t) nil [291 302])
+            ("N_NameValue" variable (:constant-flag t) nil [317 328])
+            ("nvs" variable
+               (:dereference 1
+                :type ("fcgi_name_value" type (:type "class") nil nil))
+                nil [332 1258])
+            ("get_in_addr" function
+               (:pointer 1
+                :arguments 
+                  ( ("sa" variable
+                       (:pointer 1
+                        :type ("sockaddr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1278 1298]))                  
+                :type "void")
+                nil [1260 1452])
+            ("fcgi_connect" function
+               (:arguments 
+                  ( ("sock" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1471 1481]))                  
+                :type "int")
+                nil [1454 2415])
+            ("simple_session_1" function
+               (:arguments 
+                  ( ("sockfd" variable (:type "int") (reparse-symbol arg-sub-list) [2440 2451]))                  
+                :type "void")
+                nil [2418 4353])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [4364 4373])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4374 4386]))                  
+                :type "int")
+                nil [4355 4644]))          
+    :file "fcgi.c"
+    :pointmax 4706
+    :fsize 4644
+    :lastmodtime '(21161 31240 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("FCGI_SERVER" . ((string "\"127.0.0.1\"" 246 . 257)))
+          ("FCGI_PORT" . ((string "\"9999\"" 276 . 282)))
+          ("BUF_SIZE" . ((number "5000" 221 . 225)))
+          ("MAXDATASIZE" . ((number "1000" 303 . 307)))
+          ("N_NameValue" . ((number "27" 329 . 331)))
+          )
+
+    )
+   )
+  :file "!home!work!git!fcgi-client!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

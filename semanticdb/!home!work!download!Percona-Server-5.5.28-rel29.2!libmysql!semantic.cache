@@ -1,0 +1,1967 @@
+;; Object libmysql/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "libmysql/"
+  :tables (list 
+   (semanticdb-table "libmysql.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("my_global.h" include (:system-flag t) nil [830 852])
+            ("my_sys.h" include (:system-flag t) nil [853 872])
+            ("my_time.h" include (:system-flag t) nil [873 893])
+            ("mysys_err.h" include (:system-flag t) nil [894 916])
+            ("m_string.h" include (:system-flag t) nil [917 938])
+            ("m_ctype.h" include (:system-flag t) nil [939 959])
+            ("mysql.h" include nil nil [960 978])
+            ("mysql_version.h" include nil nil [979 1005])
+            ("mysqld_error.h" include nil nil [1006 1031])
+            ("errmsg.h" include nil nil [1032 1051])
+            ("violite.h" include (:system-flag t) nil [1052 1072])
+            ("sys/stat.h" include (:system-flag t) nil [1073 1094])
+            ("signal.h" include (:system-flag t) nil [1095 1114])
+            ("time.h" include (:system-flag t) nil [1115 1132])
+            ("sys/socket.h" include (:system-flag t) nil [1198 1221])
+            ("netinet/in.h" include (:system-flag t) nil [1222 1245])
+            ("arpa/inet.h" include (:system-flag t) nil [1246 1268])
+            ("netdb.h" include (:system-flag t) nil [1269 1287])
+            ("my_pthread.h" include (:system-flag t) nil [1539 1562])
+            ("INADDR_NONE" variable (:constant-flag t) nil [1627 1638])
+            ("sql_common.h" include (:system-flag t) nil [1650 1673])
+            ("client_settings.h" include nil nil [1674 1702])
+            ("net_buffer_length" variable (:type ("ulong" type (:type "class") nil nil)) nil [1756 1787])
+            ("errno.h" include (:system-flag t) nil [2022 2040])
+            ("SOCKET_ERROR" variable (:constant-flag t) nil [2049 2061])
+            ("MAX_LONG_DATA_LENGTH" variable (:constant-flag t) nil [2174 2194])
+            ("unsigned_field" variable (:constant-flag t) nil [2208 2222])
+            ("append_wild" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("to" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2280 2289])
+                    ("end" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2289 2299])
+                    ("wild" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2299 2316]))                  
+                :type "void")
+                nil [2256 2317])
+            ("my_pipe_sig_handler" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("sig" variable (:type "int") (reparse-symbol arg-sub-list) [2350 2358]))                  
+                :type ("sig_handler" type (:type "class") nil nil))
+                nil [2318 2359])
+            ("mysql_client_init" variable
+               (:typemodifiers ("static")
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [2361 2397])
+            ("org_my_init_done" variable
+               (:typemodifiers ("static")
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [2398 2433])
+            ("MYSQL_STMT_EXT" type
+               (:typedef ("st_mysql_stmt_extension" type (:type "struct") nil nil)
+                :superclasses "st_mysql_stmt_extension"
+                :type "typedef")
+                nil [2435 2521])
+            ("st_mysql_stmt_extension" type
+               (:members 
+                  ( ("fields_mem_root" variable (:type ("MEM_ROOT" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2478 2503]))                  
+                :type "struct")
+                nil [2435 2521])
+            ("mysql_server_init" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3016 3049])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3059 3095])
+                    ("groups" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3105 3143]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [2990 4755])
+            ("mysql_server_end" function (:type ("STDCALL" type (:type "class") nil nil)) nil [5072 5484])
+            ("mysql_internal_parameters" variable
+               (:typemodifiers ("static")
+                :type ("MYSQL_PARAMETERS" type (:type "class") nil nil))
+                nil [5486 5582])
+            ("mysql_get_parameters" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5631 5636]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [5602 5677])
+            ("mysql_thread_init" function (:type ("STDCALL" type (:type "class") nil nil)) nil [5687 5745])
+            ("mysql_thread_end" function (:type ("STDCALL" type (:type "class") nil nil)) nil [5752 5801])
+            ("append_wild" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("to" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5869 5878])
+                    ("end" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5879 5889])
+                    ("wild" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5890 5907]))                  
+                :type "void")
+                nil [5845 6233])
+            ("mysql_debug" function
+               (:arguments 
+                  ( ("debug" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6476 6518]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [6456 7156])
+            ("my_pipe_sig_handler" function
+               (:arguments 
+                  ( ("sig" variable (:type "int") (reparse-symbol arg-sub-list) [7381 7413]))                  
+                :type ("sig_handler" type (:type "class") nil nil))
+                nil [7349 7558])
+            ("mysql_change_user" function
+               (:arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8417 8430])
+                    ("user" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8431 8448])
+                    ("passwd" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8455 8474])
+                    ("db" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8475 8490]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [8391 9702])
+            ("read_user_name" function
+               (:arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9865 9876]))                  
+                :type "void")
+                nil [9845 10461])
+            ("handle_local_infile" function
+               (:arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10677 10690])
+                    ("net_filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10691 10716]))                  
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [10649 13061])
+            ("default_local_infile_data" type
+               (:typedef ("st_default_local_infile" type (:type "struct") nil nil)
+                :superclasses "st_default_local_infile"
+                :type "typedef")
+                nil [13262 13424])
+            ("st_default_local_infile" type
+               (:members 
+                  ( ("fd" variable (:type "int") (reparse-symbol classsubparts) [13305 13312])
+                    ("error_num" variable (:type "int") (reparse-symbol classsubparts) [13315 13329])
+                    ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [13332 13353])
+                    ("error_msg" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [13356 13395]))                  
+                :type "struct")
+                nil [13262 13424])
+            ("default_local_infile_init" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ptr" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [13824 13835])
+                    ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13836 13857])
+                    ("userdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [13871 13911]))                  
+                :type "int")
+                nil [13787 14528])
+            ("default_local_infile_read" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [14837 14847])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14848 14858])
+                    ("buf_len" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14859 14872]))                  
+                :type "int")
+                nil [14800 15236])
+            ("default_local_infile_end" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [15448 15458]))                  
+                :type "void")
+                nil [15411 15663])
+            ("default_local_infile_error" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [15984 15994])
+                    ("error_msg" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15995 16011])
+                    ("error_msg_len" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16012 16031]))                  
+                :type "int")
+                nil [15946 16376])
+            ("mysql_set_local_infile_handler" function
+               (:arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16415 16428])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [16460 16484])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [16579 16603])
+                    ("" variable (:type "void") (reparse-symbol arg-sub-list) [16658 16682])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [16723 16748])
+                    ("userdata" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [16803 16818]))                  
+                :type "void")
+                nil [16379 17097])
+            ("mysql_set_local_infile_default" function
+               (:arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17136 17149]))                  
+                :type "void")
+                nil [17100 17409])
+            ("mysql_query" function
+               (:arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17713 17726])
+                    ("query" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17727 17745]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [17693 17811])
+            ("mysql_fetch_field" function
+               (:arguments 
+                  ( ("result" variable
+                       (:pointer 1
+                        :type ("MYSQL_RES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18048 18066]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [18022 18191])
+            ("mysql_data_seek" function
+               (:arguments 
+                  ( ("result" variable
+                       (:pointer 1
+                        :type ("MYSQL_RES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18412 18430])
+                    ("row" variable (:type ("my_ulonglong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18431 18448]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [18388 18672])
+            ("mysql_row_seek" function
+               (:arguments 
+                  ( ("result" variable
+                       (:pointer 1
+                        :type ("MYSQL_RES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19076 19094])
+                    ("row" variable (:type ("MYSQL_ROW_OFFSET" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19095 19116]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [19053 19250])
+            ("mysql_field_seek" function
+               (:arguments 
+                  ( ("result" variable
+                       (:pointer 1
+                        :type ("MYSQL_RES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19297 19315])
+                    ("field_offset" variable (:type ("MYSQL_FIELD_OFFSET" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19316 19348]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [19272 19470])
+            ("mysql_list_dbs" function
+               (:arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19688 19701])
+                    ("wild" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [19702 19719]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [19665 19937])
+            ("mysql_list_tables" function
+               (:arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20235 20248])
+                    ("wild" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20249 20266]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [20209 20484])
+            ("cli_list_fields" function
+               (:pointer 1
+                :arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20516 20529]))                  
+                :type ("MYSQL_FIELD" type (:type "class") nil nil))
+                nil [20487 20824])
+            ("mysql_list_fields" function
+               (:arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21179 21192])
+                    ("table" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [21193 21211])
+                    ("wild" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [21212 21229]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [21153 22017])
+            ("mysql_list_processes" function
+               (:arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22114 22127]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [22085 22819])
+            ("mysql_shutdown" function
+               (:arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23297 23310])
+                    ("shutdown_level" variable (:type ("mysql_enum_shutdown_level" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [23311 23357]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [23274 23512])
+            ("mysql_refresh" function
+               (:arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23541 23554])
+                    ("options" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23554 23567]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [23519 23710])
+            ("mysql_kill" function
+               (:arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23736 23749])
+                    ("pid" variable (:type ("ulong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23749 23759]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [23717 23906])
+            ("mysql_set_server_option" function
+               (:arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23945 23958])
+                    ("option" variable (:type ("enum_mysql_set_option" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [23959 23993]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [23913 24166])
+            ("mysql_dump_debug_info" function
+               (:arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24203 24216]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [24173 24313])
+            ("cli_read_statistics" function
+               (:pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24348 24361]))                  
+                :type "char")
+                nil [24316 24614])
+            ("mysql_stat" function
+               (:arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24649 24662]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [24630 24842])
+            ("mysql_ping" function
+               (:arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24868 24881]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [24849 25085])
+            ("mysql_get_server_info" function
+               (:arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25131 25144]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [25101 25189])
+            ("mysql_get_host_info" function
+               (:arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25233 25246]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [25205 25278])
+            ("mysql_get_proto_info" function
+               (:arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25315 25328]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [25286 25368])
+            ("mysql_get_client_info" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [25413 25418]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [25383 25461])
+            ("mysql_get_client_version" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [25502 25507]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [25469 25538])
+            ("mysql_eof" function
+               (:arguments 
+                  ( ("res" variable
+                       (:pointer 1
+                        :type ("MYSQL_RES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25566 25581]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [25548 25604])
+            ("mysql_fetch_field_direct" function
+               (:arguments 
+                  ( ("res" variable
+                       (:pointer 1
+                        :type ("MYSQL_RES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25653 25668])
+                    ("fieldnr" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25668 25681]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [25620 25719])
+            ("mysql_fetch_fields" function
+               (:arguments 
+                  ( ("res" variable
+                       (:pointer 1
+                        :type ("MYSQL_RES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25762 25777]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [25735 25805])
+            ("mysql_row_tell" function
+               (:arguments 
+                  ( ("res" variable
+                       (:pointer 1
+                        :type ("MYSQL_RES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25847 25862]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [25824 25893])
+            ("mysql_field_tell" function
+               (:arguments 
+                  ( ("res" variable
+                       (:pointer 1
+                        :type ("MYSQL_RES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25939 25954]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [25914 25989])
+            ("mysql_field_count" function
+               (:arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26043 26056]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [26017 26089])
+            ("mysql_affected_rows" function
+               (:arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26132 26145]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [26104 26180])
+            ("mysql_insert_id" function
+               (:arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26219 26232]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [26195 26263])
+            ("mysql_sqlstate" function
+               (:arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26300 26313]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [26277 26379])
+            ("mysql_warning_count" function
+               (:arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26414 26427]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [26386 26462])
+            ("mysql_info" function
+               (:arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26495 26508]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [26476 26534])
+            ("mysql_thread_id" function
+               (:arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26566 26579]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [26542 26612])
+            ("mysql_character_set_name" function
+               (:arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26660 26673]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [26627 26710])
+            ("mysql_get_character_set_info" function
+               (:arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26754 26767])
+                    ("csinfo" variable
+                       (:pointer 1
+                        :type ("MY_CHARSET_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26768 26792]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [26717 27233])
+            ("mysql_thread_safe" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [27266 27271]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [27240 27287])
+            ("mysql_embedded" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [27321 27326]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [27298 27391])
+            ("my_net_local_init" function
+               (:arguments 
+                  ( ("net" variable
+                       (:pointer 1
+                        :type ("NET" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27684 27693]))                  
+                :type "void")
+                nil [27661 27952])
+            ("mysql_hex_string" function
+               (:arguments 
+                  ( ("to" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [28914 28923])
+                    ("from" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [28924 28941])
+                    ("length" variable (:type ("ulong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28942 28955]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [28889 29219])
+            ("mysql_escape_string" function
+               (:arguments 
+                  ( ("to" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [29430 29439])
+                    ("from" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [29439 29456])
+                    ("length" variable (:type ("ulong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29456 29469]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [29402 29557])
+            ("mysql_real_escape_string" function
+               (:arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29598 29611])
+                    ("to" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [29612 29621])
+                    ("from" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [29621 29638])
+                    ("length" variable (:type ("ulong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29643 29656]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [29565 29883])
+            ("myodbc_remove_escape" function
+               (:arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29919 29932])
+                    ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [29932 29943]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [29890 30406])
+            ("DEFAULT_PREFETCH_ROWS" variable (:constant-flag t) nil [31102 31123])
+            ("stmt_read_row_unbuffered" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31489 31506])
+                    ("row" variable
+                       (:pointer 2
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [31507 31527]))                  
+                :type "int")
+                nil [31453 31528])
+            ("stmt_read_row_buffered" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31563 31580])
+                    ("row" variable
+                       (:pointer 2
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [31581 31601]))                  
+                :type "int")
+                nil [31529 31602])
+            ("stmt_read_row_from_cursor" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31640 31657])
+                    ("row" variable
+                       (:pointer 2
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [31658 31678]))                  
+                :type "int")
+                nil [31603 31679])
+            ("stmt_read_row_no_data" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31713 31730])
+                    ("row" variable
+                       (:pointer 2
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [31731 31751]))                  
+                :type "int")
+                nil [31680 31752])
+            ("stmt_read_row_no_result_set" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31792 31809])
+                    ("row" variable
+                       (:pointer 2
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [31810 31830]))                  
+                :type "int")
+                nil [31753 31831])
+            ("stmt_update_metadata" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31974 31991])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("MYSQL_ROWS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31992 32009]))                  
+                :type "void")
+                nil [31941 32010])
+            ("setup_one_fetch_function" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("MYSQL_BIND" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32051 32064])
+                    ("field" variable
+                       (:pointer 1
+                        :type ("MYSQL_FIELD" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32065 32084]))                  
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [32011 32085])
+            ("RESET_SERVER_SIDE" variable (:constant-flag t) nil [32152 32169])
+            ("RESET_LONG_DATA" variable (:constant-flag t) nil [32180 32195])
+            ("RESET_STORE_RESULT" variable (:constant-flag t) nil [32206 32224])
+            ("RESET_CLEAR_ERROR" variable (:constant-flag t) nil [32235 32252])
+            ("reset_stmt_handle" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32289 32306])
+                    ("flags" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32307 32318]))                  
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [32256 32319])
+            ("MAX_DATE_REP_LENGTH" variable (:constant-flag t) nil [32494 32513])
+            ("MAX_TIME_REP_LENGTH" variable (:constant-flag t) nil [32637 32656])
+            ("MAX_DATETIME_REP_LENGTH" variable (:constant-flag t) nil [32779 32802])
+            ("MAX_DOUBLE_STRING_REP_LENGTH" variable (:constant-flag t) nil [32815 32843])
+            ("IS_TRUNCATED" variable (:constant-flag t) nil [32899 32911])
+            ("BIND_RESULT_DONE" variable (:constant-flag t) nil [33106 33122])
+            ("REPORT_DATA_TRUNCATION" variable (:constant-flag t) nil [33283 33305])
+            ("my_realloc_str" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("net" variable
+                       (:pointer 1
+                        :type ("NET" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33870 33879])
+                    ("length" variable (:type ("ulong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33880 33893]))                  
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [33840 34292])
+            ("stmt_clear_error" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34324 34341]))                  
+                :type "void")
+                nil [34295 34481])
+            ("set_stmt_error" function
+               (:arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34602 34620])
+                    ("errcode" variable (:type "int") (reparse-symbol arg-sub-list) [34621 34633])
+                    ("sqlstate" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [34654 34675])
+                    ("err" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [34676 34692]))                  
+                :type "void")
+                nil [34582 34986])
+            ("set_stmt_errmsg" function
+               (:arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35189 35206])
+                    ("net" variable
+                       (:pointer 1
+                        :type ("NET" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35207 35216]))                  
+                :type "void")
+                nil [35168 35635])
+            ("cli_read_prepare_result" function
+               (:arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35908 35921])
+                    ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35922 35939]))                  
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [35876 37426])
+            ("mysql_stmt_init" function
+               (:arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38650 38663]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [38626 39713])
+            ("mysql_stmt_prepare" function
+               (:arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [40979 40996])
+                    ("query" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [40997 41015])
+                    ("length" variable (:type ("ulong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41016 41029]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [40952 43509])
+            ("alloc_stmt_fields" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43780 43797]))                  
+                :type "void")
+                nil [43750 46041])
+            ("update_stmt_fields" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46293 46310]))                  
+                :type "void")
+                nil [46262 47540])
+            ("mysql_stmt_result_metadata" function
+               (:arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [48638 48655]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [48603 49388])
+            ("mysql_stmt_param_metadata" function
+               (:arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49848 49865]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [49814 50081])
+            ("store_param_type" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pos" variable
+                       (:pointer 2
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [50163 50183])
+                    ("param" variable
+                       (:pointer 1
+                        :type ("MYSQL_BIND" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50184 50202]))                  
+                :type "void")
+                nil [50134 50319])
+            ("store_param_tinyint" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("net" variable
+                       (:pointer 1
+                        :type ("NET" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50855 50864])
+                    ("param" variable
+                       (:pointer 1
+                        :type ("MYSQL_BIND" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50865 50883]))                  
+                :type "void")
+                nil [50823 50936])
+            ("store_param_short" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("net" variable
+                       (:pointer 1
+                        :type ("NET" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50968 50977])
+                    ("param" variable
+                       (:pointer 1
+                        :type ("MYSQL_BIND" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50978 50996]))                  
+                :type "void")
+                nil [50938 51096])
+            ("store_param_int32" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("net" variable
+                       (:pointer 1
+                        :type ("NET" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51128 51137])
+                    ("param" variable
+                       (:pointer 1
+                        :type ("MYSQL_BIND" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51138 51156]))                  
+                :type "void")
+                nil [51098 51256])
+            ("store_param_int64" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("net" variable
+                       (:pointer 1
+                        :type ("NET" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51288 51297])
+                    ("param" variable
+                       (:pointer 1
+                        :type ("MYSQL_BIND" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51298 51316]))                  
+                :type "void")
+                nil [51258 51423])
+            ("store_param_float" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("net" variable
+                       (:pointer 1
+                        :type ("NET" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51455 51464])
+                    ("param" variable
+                       (:pointer 1
+                        :type ("MYSQL_BIND" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51465 51483]))                  
+                :type "void")
+                nil [51425 51587])
+            ("store_param_double" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("net" variable
+                       (:pointer 1
+                        :type ("NET" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51620 51629])
+                    ("param" variable
+                       (:pointer 1
+                        :type ("MYSQL_BIND" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51630 51648]))                  
+                :type "void")
+                nil [51589 51754])
+            ("store_param_time" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("net" variable
+                       (:pointer 1
+                        :type ("NET" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51785 51794])
+                    ("param" variable
+                       (:pointer 1
+                        :type ("MYSQL_BIND" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51795 51813]))                  
+                :type "void")
+                nil [51756 52355])
+            ("net_store_datetime" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("net" variable
+                       (:pointer 1
+                        :type ("NET" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [52388 52397])
+                    ("tm" variable
+                       (:pointer 1
+                        :type ("MYSQL_TIME" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [52398 52413]))                  
+                :type "void")
+                nil [52357 52990])
+            ("store_param_date" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("net" variable
+                       (:pointer 1
+                        :type ("NET" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [53021 53030])
+                    ("param" variable
+                       (:pointer 1
+                        :type ("MYSQL_BIND" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [53031 53049]))                  
+                :type "void")
+                nil [52992 53187])
+            ("store_param_datetime" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("net" variable
+                       (:pointer 1
+                        :type ("NET" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [53222 53231])
+                    ("param" variable
+                       (:pointer 1
+                        :type ("MYSQL_BIND" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [53232 53250]))                  
+                :type "void")
+                nil [53189 53333])
+            ("store_param_str" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("net" variable
+                       (:pointer 1
+                        :type ("NET" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [53363 53372])
+                    ("param" variable
+                       (:pointer 1
+                        :type ("MYSQL_BIND" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [53373 53391]))                  
+                :type "void")
+                nil [53335 53609])
+            ("store_param_null" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("net" variable
+                       (:pointer 1
+                        :type ("NET" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [53980 53989])
+                    ("param" variable
+                       (:pointer 1
+                        :type ("MYSQL_BIND" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [53990 54008]))                  
+                :type "void")
+                nil [53951 54093])
+            ("store_param" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [54282 54299])
+                    ("param" variable
+                       (:pointer 1
+                        :type ("MYSQL_BIND" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [54300 54318]))                  
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [54255 55014])
+            ("execute" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [55200 55217])
+                    ("packet" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [55218 55231])
+                    ("length" variable (:type ("ulong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55232 55245]))                  
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [55177 56344])
+            ("cli_stmt_execute" function
+               (:arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [56368 56385]))                  
+                :type "int")
+                nil [56347 58624])
+            ("stmt_read_row_buffered" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [59016 59033])
+                    ("row" variable
+                       (:pointer 2
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [59034 59054]))                  
+                :type "int")
+                nil [58982 59233])
+            ("stmt_read_row_unbuffered" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [59927 59944])
+                    ("row" variable
+                       (:pointer 2
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [59945 59965]))                  
+                :type "int")
+                nil [59891 61140])
+            ("stmt_read_row_from_cursor" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [61372 61389])
+                    ("row" variable
+                       (:pointer 2
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [61390 61410]))                  
+                :type "int")
+                nil [61335 62733])
+            ("stmt_read_row_no_data" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [62871 62913])
+                    ("row" variable
+                       (:pointer 2
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [62936 62981]))                  
+                :type "int")
+                nil [62838 63009])
+            ("stmt_read_row_no_result_set" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [63050 63092])
+                    ("row" variable
+                       (:pointer 2
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [63115 63160]))                  
+                :type "int")
+                nil [63011 63242])
+            ("mysql_stmt_attr_set" function
+               (:arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [63532 63549])
+                    ("attr_type" variable (:type ("enum_stmt_attr_type" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [63586 63621])
+                    ("value" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [63658 63676]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [63504 64420])
+            ("mysql_stmt_attr_get" function
+               (:arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [64459 64476])
+                    ("attr_type" variable (:type ("enum_stmt_attr_type" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [64513 64548])
+                    ("value" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [64585 64597]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [64431 64927])
+            ("reinit_result_set_metadata" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [65264 65281]))                  
+                :type "void")
+                nil [65225 66374])
+            ("prepare_to_fetch_result" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [66413 66430]))                  
+                :type "void")
+                nil [66377 67237])
+            ("mysql_stmt_execute" function
+               (:arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [69005 69022]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [68978 69674])
+            ("mysql_stmt_param_count" function
+               (:arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [69770 69788]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [69739 69866])
+            ("mysql_stmt_affected_rows" function
+               (:arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [69974 69991]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [69941 70025])
+            ("mysql_stmt_field_count" function
+               (:arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [70169 70186]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [70138 70218])
+            ("mysql_stmt_insert_id" function
+               (:arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [70824 70841]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [70795 70871])
+            ("int_is_null_true" variable
+               (:typemodifiers ("static")
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [70874 70909])
+            ("int_is_null_false" variable
+               (:typemodifiers ("static")
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [70942 70978])
+            ("mysql_stmt_bind_param" function
+               (:arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [79771 79788])
+                    ("my_bind" variable
+                       (:pointer 1
+                        :type ("MYSQL_BIND" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [79789 79809]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [79741 83264])
+            ("mysql_stmt_send_long_data" function
+               (:arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [85053 85070])
+                    ("param_number" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [85071 85089])
+                    ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [85097 85114])
+                    ("length" variable (:type ("ulong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [85115 85128]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [85019 86923])
+            ("read_binary_time" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("tm" variable
+                       (:pointer 1
+                        :type ("MYSQL_TIME" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [87676 87691])
+                    ("pos" variable
+                       (:pointer 2
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [87692 87704]))                  
+                :type "void")
+                nil [87647 88333])
+            ("read_binary_datetime" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("tm" variable
+                       (:pointer 1
+                        :type ("MYSQL_TIME" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [88368 88383])
+                    ("pos" variable
+                       (:pointer 2
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [88384 88396]))                  
+                :type "void")
+                nil [88335 88967])
+            ("read_binary_date" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("tm" variable
+                       (:pointer 1
+                        :type ("MYSQL_TIME" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [88998 89013])
+                    ("pos" variable
+                       (:pointer 2
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [89014 89026]))                  
+                :type "void")
+                nil [88969 89402])
+            ("fetch_string_with_conversion" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("param" variable
+                       (:pointer 1
+                        :type ("MYSQL_BIND" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [89634 89652])
+                    ("value" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [89653 89665])
+                    ("length" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [89707 89719]))                  
+                :type "void")
+                nil [89593 93017])
+            ("fetch_long_with_conversion" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("param" variable
+                       (:pointer 1
+                        :type ("MYSQL_BIND" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [93254 93272])
+                    ("field" variable
+                       (:pointer 1
+                        :type ("MYSQL_FIELD" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [93273 93292])
+                    ("value" variable (:type ("longlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [93332 93347])
+                    ("is_unsigned" variable (:type ("my_bool" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [93348 93368]))                  
+                :type "void")
+                nil [93215 96036])
+            ("fetch_float_with_conversion" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("param" variable
+                       (:pointer 1
+                        :type ("MYSQL_BIND" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [96438 96456])
+                    ("field" variable
+                       (:pointer 1
+                        :type ("MYSQL_FIELD" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [96457 96476])
+                    ("value" variable (:type "double") (reparse-symbol arg-sub-list) [96517 96530])
+                    ("type" variable (:type ("my_gcvt_arg_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [96531 96553]))                  
+                :type "void")
+                nil [96398 99635])
+            ("fetch_datetime_with_conversion" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("param" variable
+                       (:pointer 1
+                        :type ("MYSQL_BIND" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [99819 99837])
+                    ("field" variable
+                       (:pointer 1
+                        :type ("MYSQL_FIELD" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [99881 99900])
+                    ("my_time" variable
+                       (:pointer 1
+                        :type ("MYSQL_TIME" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [99944 99964]))                  
+                :type "void")
+                nil [99776 101463])
+            ("fetch_result_with_conversion" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("param" variable
+                       (:pointer 1
+                        :type ("MYSQL_BIND" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [101954 101972])
+                    ("field" variable
+                       (:pointer 1
+                        :type ("MYSQL_FIELD" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [101973 101992])
+                    ("row" variable
+                       (:pointer 2
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [102034 102046]))                  
+                :type "void")
+                nil [101913 104375])
+            ("fetch_result_tinyint" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("param" variable
+                       (:pointer 1
+                        :type ("MYSQL_BIND" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [104860 104878])
+                    ("field" variable
+                       (:pointer 1
+                        :type ("MYSQL_FIELD" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [104879 104898])
+                    ("row" variable
+                       (:pointer 2
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [104932 104944]))                  
+                :type "void")
+                nil [104827 105156])
+            ("fetch_result_short" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("param" variable
+                       (:pointer 1
+                        :type ("MYSQL_BIND" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [105189 105207])
+                    ("field" variable
+                       (:pointer 1
+                        :type ("MYSQL_FIELD" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [105208 105227])
+                    ("row" variable
+                       (:pointer 2
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [105259 105271]))                  
+                :type "void")
+                nil [105158 105506])
+            ("fetch_result_int32" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("param" variable
+                       (:pointer 1
+                        :type ("MYSQL_BIND" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [105539 105557])
+                    ("field" variable
+                       (:pointer 1
+                        :type ("MYSQL_FIELD" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [105589 105632])
+                    ("row" variable
+                       (:pointer 2
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [105664 105676]))                  
+                :type "void")
+                nil [105508 105910])
+            ("fetch_result_int64" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("param" variable
+                       (:pointer 1
+                        :type ("MYSQL_BIND" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [105943 105961])
+                    ("field" variable
+                       (:pointer 1
+                        :type ("MYSQL_FIELD" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [105993 106036])
+                    ("row" variable
+                       (:pointer 2
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [106068 106080]))                  
+                :type "void")
+                nil [105912 106327])
+            ("fetch_result_float" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("param" variable
+                       (:pointer 1
+                        :type ("MYSQL_BIND" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [106360 106378])
+                    ("field" variable
+                       (:pointer 1
+                        :type ("MYSQL_FIELD" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [106410 106453])
+                    ("row" variable
+                       (:pointer 2
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [106485 106497]))                  
+                :type "void")
+                nil [106329 106589])
+            ("fetch_result_double" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("param" variable
+                       (:pointer 1
+                        :type ("MYSQL_BIND" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [106623 106641])
+                    ("field" variable
+                       (:pointer 1
+                        :type ("MYSQL_FIELD" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [106674 106717])
+                    ("row" variable
+                       (:pointer 2
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [106750 106762]))                  
+                :type "void")
+                nil [106591 106856])
+            ("fetch_result_time" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("param" variable
+                       (:pointer 1
+                        :type ("MYSQL_BIND" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [106888 106906])
+                    ("field" variable
+                       (:pointer 1
+                        :type ("MYSQL_FIELD" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [106937 106980])
+                    ("row" variable
+                       (:pointer 2
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [107011 107023]))                  
+                :type "void")
+                nil [106858 107103])
+            ("fetch_result_date" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("param" variable
+                       (:pointer 1
+                        :type ("MYSQL_BIND" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [107135 107153])
+                    ("field" variable
+                       (:pointer 1
+                        :type ("MYSQL_FIELD" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [107184 107227])
+                    ("row" variable
+                       (:pointer 2
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [107258 107270]))                  
+                :type "void")
+                nil [107105 107350])
+            ("fetch_result_datetime" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("param" variable
+                       (:pointer 1
+                        :type ("MYSQL_BIND" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [107386 107404])
+                    ("field" variable
+                       (:pointer 1
+                        :type ("MYSQL_FIELD" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [107439 107482])
+                    ("row" variable
+                       (:pointer 2
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [107517 107529]))                  
+                :type "void")
+                nil [107352 107613])
+            ("fetch_result_bin" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("param" variable
+                       (:pointer 1
+                        :type ("MYSQL_BIND" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [107644 107662])
+                    ("field" variable
+                       (:pointer 1
+                        :type ("MYSQL_FIELD" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [107692 107735])
+                    ("row" variable
+                       (:pointer 2
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [107765 107777]))                  
+                :type "void")
+                nil [107615 108010])
+            ("fetch_result_str" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("param" variable
+                       (:pointer 1
+                        :type ("MYSQL_BIND" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [108041 108059])
+                    ("field" variable
+                       (:pointer 1
+                        :type ("MYSQL_FIELD" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [108089 108132])
+                    ("row" variable
+                       (:pointer 2
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [108162 108174]))                  
+                :type "void")
+                nil [108012 108582])
+            ("skip_result_fixed" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("param" variable
+                       (:pointer 1
+                        :type ("MYSQL_BIND" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [108706 108724])
+                    ("field" variable
+                       (:pointer 1
+                        :type ("MYSQL_FIELD" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [108734 108777])
+                    ("row" variable
+                       (:pointer 2
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [108787 108799]))                  
+                :type "void")
+                nil [108676 108835])
+            ("skip_result_with_length" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("param" variable
+                       (:pointer 1
+                        :type ("MYSQL_BIND" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [108874 108916])
+                    ("field" variable
+                       (:pointer 1
+                        :type ("MYSQL_FIELD" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [108925 108968])
+                    ("row" variable
+                       (:pointer 2
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [108977 108989]))                  
+                :type "void")
+                nil [108838 109052])
+            ("skip_result_string" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("param" variable
+                       (:pointer 1
+                        :type ("MYSQL_BIND" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [109086 109128])
+                    ("field" variable
+                       (:pointer 1
+                        :type ("MYSQL_FIELD" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [109139 109158])
+                    ("row" variable
+                       (:pointer 2
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [109169 109181]))                  
+                :type "void")
+                nil [109055 109309])
+            ("is_binary_compatible" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("type1" variable (:type ("enum_field_types" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [109684 109712])
+                    ("type2" variable (:type ("enum_field_types" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [109749 109777]))                  
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [109648 110990])
+            ("setup_one_fetch_function" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("param" variable
+                       (:pointer 1
+                        :type ("MYSQL_BIND" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [111856 111874])
+                    ("field" variable
+                       (:pointer 1
+                        :type ("MYSQL_FIELD" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [111875 111894]))                  
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [111816 116239])
+            ("mysql_stmt_bind_result" function
+               (:arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [116338 116355])
+                    ("my_bind" variable
+                       (:pointer 1
+                        :type ("MYSQL_BIND" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [116356 116376]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [116307 118289])
+            ("stmt_fetch_row" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [118358 118375])
+                    ("row" variable
+                       (:pointer 1
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [118376 118387]))                  
+                :type "int")
+                nil [118332 119993])
+            ("cli_unbuffered_fetch" function
+               (:arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [120021 120034])
+                    ("row" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [120035 120046]))                  
+                :type "int")
+                nil [119996 120207])
+            ("mysql_stmt_fetch" function
+               (:arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [120299 120316]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [120274 120839])
+            ("mysql_stmt_fetch_column" function
+               (:arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [121278 121295])
+                    ("my_bind" variable
+                       (:pointer 1
+                        :type ("MYSQL_BIND" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [121296 121316])
+                    ("column" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [121353 121365])
+                    ("offset" variable (:type ("ulong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [121366 121379]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [121246 122367])
+            ("cli_read_binary_rows" function
+               (:arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [122455 122472]))                  
+                :type "int")
+                nil [122430 123801])
+            ("stmt_update_metadata" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [124030 124047])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("MYSQL_ROWS" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [124048 124065]))                  
+                :type "void")
+                nil [123997 124767])
+            ("mysql_stmt_store_result" function
+               (:arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [124858 124875]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [124826 128036])
+            ("mysql_stmt_row_seek" function
+               (:arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [128141 128158])
+                    ("row" variable (:type ("MYSQL_ROW_OFFSET" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [128159 128180]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [128113 128317])
+            ("mysql_stmt_row_tell" function
+               (:arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [128423 128440]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [128395 128516])
+            ("mysql_stmt_data_seek" function
+               (:arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [128616 128633])
+                    ("row" variable (:type ("my_ulonglong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [128634 128651]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [128587 129037])
+            ("mysql_stmt_num_rows" function
+               (:arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [129141 129158]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [129113 129234])
+            ("reset_stmt_handle" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [129430 129447])
+                    ("flags" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [129448 129459]))                  
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [129397 131558])
+            ("mysql_stmt_free_result" function
+               (:arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [131599 131616]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [131568 131869])
+            ("mysql_stmt_close" function
+               (:arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [132257 132274]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [132232 133648])
+            ("mysql_stmt_reset" function
+               (:arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [133730 133747]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [133705 134226])
+            ("mysql_stmt_errno" function
+               (:arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [134295 134313]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [134270 134384])
+            ("mysql_stmt_sqlstate" function
+               (:arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [134426 134444]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [134398 134516])
+            ("mysql_stmt_error" function
+               (:arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [134595 134613]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [134570 134684])
+            ("mysql_commit" function
+               (:arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [134918 134932]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [134897 135029])
+            ("mysql_rollback" function
+               (:arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [135104 135118]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [135081 135219])
+            ("mysql_autocommit" function
+               (:arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [135303 135317])
+                    ("auto_mode" variable (:type ("my_bool" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [135318 135336]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [135278 135611])
+            ("mysql_more_results" function
+               (:arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [135941 135954]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [135914 136155])
+            ("mysql_next_result" function
+               (:arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [136237 136250]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [136211 136667])
+            ("mysql_stmt_next_result" function
+               (:arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [136705 136722]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [136674 137490])
+            ("mysql_use_result" function
+               (:arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [137530 137543]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [137505 137594])
+            ("mysql_read_query_result" function
+               (:arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [137636 137649]))                  
+                :type ("STDCALL" type (:type "class") nil nil))
+                nil [137604 137707]))          
+    :file "libmysql.c"
+    :pointmax 137709
+    :fsize 137708
+    :lastmodtime '(20667 6660 0 0)
+    :unmatched-syntax '((symbol 137596 . 137603) (punctuation 137503 . 137504) (symbol 137493 . 137502) (INT 136670 . 136673) (INT 136207 . 136210) (symbol 135906 . 135913) (symbol 135270 . 135277) (symbol 135073 . 135080) (symbol 134889 . 134896) (punctuation 134569 . 134570) (CHAR 134564 . 134568) (CONST 134558 . 134563) (punctuation 134397 . 134398) (CHAR 134392 . 134396) (CONST 134386 . 134391) (symbol 134265 . 134269) (symbol 133697 . 133704) (symbol 132224 . 132231) (symbol 131560 . 131567) (symbol 129100 . 129112) (VOID 128582 . 128586) (symbol 128378 . 128394) (symbol 128096 . 128112) (INT 124822 . 124825) (INT 121242 . 121245) (INT 120270 . 120273) (symbol 116299 . 116306) (symbol 85011 . 85018) (symbol 79733 . 79740) (symbol 70782 . 70794) (INT 70134 . 70137) (UNSIGNED 70125 . 70133) (symbol 69928 . 69940) (symbol 69733 . 69738) (INT 68974 . 68977) (symbol 64423 . 64430) (symbol 63496 . 63503) (punctuation 49812 . 49813) (symbol 49802 . 49811) (punctuation 48601 . 48602) (symbol 48591 . 48600) (INT 40948 . 40951) (punctuation 38624 . 38625) (symbol 38613 . 38623) (VOID 29885 . 29889) (symbol 29559 . 29564) (symbol 29396 . 29401) (symbol 28883 . 28888) (symbol 27290 . 27297) (symbol 27235 . 27239) (VOID 26712 . 26716) (punctuation 26625 . 26626) (CHAR 26620 . 26624) (CONST 26614 . 26619) (symbol 26536 . 26541) (punctuation 26475 . 26476) (CHAR 26470 . 26474) (CONST 26464 . 26469) (symbol 26381 . 26385) (punctuation 26276 . 26277) (CHAR 26271 . 26275) (CONST 26265 . 26270) (symbol 26182 . 26194) (symbol 26091 . 26103) (INT 26013 . 26016) (UNSIGNED 26004 . 26012) (symbol 25895 . 25913) (symbol 25807 . 25823) (punctuation 25733 . 25734) (symbol 25721 . 25732) (punctuation 25618 . 25619) (symbol 25606 . 25617) (symbol 25540 . 25547) (symbol 25463 . 25468) (punctuation 25381 . 25382) (CHAR 25376 . 25380) (CONST 25370 . 25375) (symbol 25281 . 25285) (punctuation 25203 . 25204) (CHAR 25198 . 25202) (CONST 25192 . 25197) (punctuation 25099 . 25100) (CHAR 25094 . 25098) (CONST 25088 . 25093) (INT 24845 . 24848) (punctuation 24628 . 24629) (CHAR 24623 . 24627) (CONST 24617 . 24622) (INT 24169 . 24172) (INT 23909 . 23912) (INT 23713 . 23716) (INT 23515 . 23518) (INT 23270 . 23273) (punctuation 22083 . 22084) (symbol 22073 . 22082) (punctuation 21151 . 21152) (symbol 21141 . 21150) (punctuation 20207 . 20208) (symbol 20197 . 20206) (punctuation 19663 . 19664) (symbol 19653 . 19662) (symbol 19253 . 19271) (symbol 19036 . 19052) (VOID 18383 . 18387) (punctuation 18020 . 18021) (symbol 18008 . 18019) (INT 17689 . 17692) (semantic-list 16748 . 16770) (semantic-list 16727 . 16748) (semantic-list 16682 . 16690) (semantic-list 16663 . 16682) (semantic-list 16603 . 16625) (semantic-list 16583 . 16603) (semantic-list 16484 . 16546) (semantic-list 16464 . 16484) (symbol 8383 . 8390) (VOID 6451 . 6455) (VOID 5747 . 5751) (symbol 5679 . 5686) (punctuation 5601 . 5602) (symbol 5584 . 5600) (VOID 5067 . 5071) (INT 2986 . 2989) (punctuation 1832 . 1833) (number 1827 . 1832) (punctuation 1826 . 1827) (number 1821 . 1826) (punctuation 1820 . 1821) (number 1815 . 1820) (punctuation 1813 . 1814) (symbol 1795 . 1813) (symbol 1788 . 1793))
+    :lexical-table 
+        '(("RESET_LONG_DATA" . ((number "2" 32196 . 32197)))
+          ("RESET_STORE_RESULT" . ((number "4" 32225 . 32226)))
+          ("MAX_DATE_REP_LENGTH" . ((number "5" 32514 . 32515)))
+          ("REPORT_DATA_TRUNCATION" . ((number "2" 33306 . 33307)))
+          ("MAX_LONG_DATA_LENGTH" . ((number "8192" 2195 . 2199)))
+          ("unsigned_field" (spp-arg-list ("A") 2222 . 2225) . ((semantic-list "((A)->flags & UNSIGNED_FLAG)" 2226 . 2254)))
+          ("RESET_CLEAR_ERROR" . ((number "8" 32253 . 32254)))
+          ("IS_TRUNCATED" (spp-arg-list ("value" "is_unsigned" "min" "max" "umax") 32911 . 32947) . ((semantic-list "((is_unsigned) ? (((value) > (umax) || (value) < 0) ? 1 : 0) : \\
+                         (((value) > (max)  || (value) < (min)) ? 1 : 0))" 32958 . 33096)))
+          ("INADDR_NONE" . ((punctuation "-" 1639 . 1640) (number "1" 1640 . 1641)))
+          ("SOCKET_ERROR" . ((punctuation "-" 2062 . 2063) (number "1" 2063 . 2064)))
+          ("MAX_DOUBLE_STRING_REP_LENGTH" . ((number "331" 32844 . 32847)))
+          ("BIND_RESULT_DONE" . ((number "1" 33123 . 33124)))
+          ("MAX_TIME_REP_LENGTH" . ((number "13" 32657 . 32659)))
+          ("RESET_SERVER_SIDE" . ((number "1" 32170 . 32171)))
+          ("MAX_DATETIME_REP_LENGTH" . ((number "12" 32803 . 32805)))
+          ("DEFAULT_PREFETCH_ROWS" . ((semantic-list "(ulong)" 31124 . 31131) (number "1" 31132 . 31133)))
+          )
+
+    )
+   (semanticdb-table "client_settings.h"
+    :file "client_settings.h"
+    :fsize 2827
+    :lastmodtime '(20667 6660 0 0)
+    )
+   )
+  :file "!home!work!download!Percona-Server-5.5.28-rel29.2!libmysql!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

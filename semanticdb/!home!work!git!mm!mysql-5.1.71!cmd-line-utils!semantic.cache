@@ -1,0 +1,20 @@
+;; Object cmd-line-utils/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cmd-line-utils/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("SUBDIRS" variable (:default-value ("@readline_basedir@")) nil [782 810])
+            ("DIST_SUBDIRS" variable (:default-value ("libedit" "readline")) nil [810 841]))          
+    :file "Makefile.am"
+    :pointmax 894
+    :fsize 893
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax '((symbol 885 . 893) (punctuation 884 . 885) (punctuation 883 . 884) (symbol 882 . 883) (bol 882 . 882))
+    )
+   )
+  :file "!home!work!git!mm!mysql-5.1.71!cmd-line-utils!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

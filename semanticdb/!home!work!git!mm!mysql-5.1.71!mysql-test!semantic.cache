@@ -1,0 +1,30 @@
+;; Object mysql-test/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mysql-test/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("testroot" variable (:default-value ("$(prefix)")) nil [812 833])
+            ("testdir" variable (:default-value ("$(testroot)/mysql-test")) nil [833 866])
+            ("test_SCRIPTS" variable (:default-value ("mtr" "mysql-test-run" "mysql-test-run.pl" "mysql-stress-test.pl")) nil [867 952])
+            ("nobase_test_DATA" variable (:default-value ("valgrind.supp" "lib/v1/mysql-test-run.pl" "lib/v1/mtr_cases.pl" "lib/v1/mtr_io.pl" "lib/v1/mtr_report.pl" "lib/v1/My/Config.pm" "lib/v1/mtr_gcov.pl" "lib/v1/mtr_match.pl" "lib/v1/mtr_stress.pl" "lib/v1/ndb_config_1_node.ini" "lib/v1/ndb_config_2_node.ini" "lib/v1/mtr_gprof.pl" "lib/v1/mtr_misc.pl" "lib/v1/mtr_timer.pl" "lib/v1/mtr_im.pl" "lib/v1/mtr_process.pl" "lib/v1/mtr_unique.pl" "lib/mtr_cases.pm" "lib/mtr_gcov.pl" "lib/mtr_gprof.pl" "lib/mtr_io.pl" "lib/mtr_match.pm" "lib/mtr_misc.pl" "lib/mtr_process.pl" "lib/mtr_report.pm" "lib/mtr_stress.pl" "lib/mtr_unique.pm" "lib/My/ConfigFactory.pm" "lib/My/Config.pm" "lib/My/Find.pm" "lib/My/Handles.pm" "lib/My/Options.pm" "lib/My/Test.pm" "lib/My/Platform.pm" "lib/My/SafeProcess.pm" "lib/My/File/Path.pm" "lib/My/SysInfo.pm" "lib/My/CoreDump.pm" "lib/My/SafeProcess/Base.pm")) nil [953 1845])
+            ("SUBDIRS" variable (:default-value ("lib/My/SafeProcess")) nil [1846 1875])
+            ("EXTRA_DIST" variable (:default-value ("README" "$(test_SCRIPTS)" "$(nobase_test_DATA)")) nil [1876 1940])
+            ("install_test_files" function nil nil [3692 4107])
+            ("dist-hook" function nil nil [4108 4175])
+            ("install-data-local" function nil nil [4176 4262])
+            ("uninstall-local" function nil nil [4263 4313])
+            ("mtr" function nil nil [4365 4415])
+            ("mysql-test-run" function nil nil [4478 4561]))          
+    :file "Makefile.am"
+    :pointmax 4614
+    :fsize 4613
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax '((symbol 4605 . 4613) (punctuation 4604 . 4605) (punctuation 4603 . 4604) (symbol 4602 . 4603) (bol 4602 . 4602) (symbol 3562 . 3584) (symbol 3536 . 3558) (symbol 3507 . 3535) (symbol 3486 . 3506) (symbol 3462 . 3482) (symbol 3440 . 3461) (symbol 3418 . 3439) (symbol 3394 . 3414) (symbol 3375 . 3393) (symbol 3355 . 3374) (symbol 3341 . 3354) (symbol 3310 . 3337) (symbol 3285 . 3306) (symbol 3263 . 3284) (symbol 3243 . 3262) (symbol 3219 . 3239) (symbol 3204 . 3218) (symbol 3189 . 3203) (symbol 3176 . 3188) (symbol 3157 . 3172) (symbol 3143 . 3156) (symbol 3129 . 3142) (symbol 3117 . 3128) (symbol 3098 . 3113) (symbol 3082 . 3097) (symbol 3068 . 3081) (symbol 3053 . 3064) (symbol 3041 . 3052) (symbol 3031 . 3040) (symbol 3013 . 3027) (symbol 2998 . 3012) (symbol 2977 . 2997) (symbol 2962 . 2973) (symbol 2947 . 2958) (symbol 2929 . 2946) (symbol 2919 . 2928) (symbol 2899 . 2915) (symbol 2882 . 2898) (symbol 2867 . 2881) (symbol 2849 . 2863) (symbol 2834 . 2848) (symbol 2814 . 2830) (symbol 2796 . 2813) (symbol 2785 . 2795) (symbol 2774 . 2784) (symbol 2765 . 2773) (symbol 2746 . 2761) (symbol 2727 . 2742) (symbol 2709 . 2726) (symbol 2687 . 2708) (symbol 2665 . 2683) (symbol 2643 . 2664) (symbol 2629 . 2642) (symbol 2603 . 2625) (symbol 2578 . 2602) (symbol 2555 . 2577) (symbol 2530 . 2551) (symbol 2510 . 2529) (symbol 2494 . 2509) (symbol 2475 . 2490) (symbol 2457 . 2474) (symbol 2435 . 2456) (symbol 2410 . 2431) (symbol 2396 . 2409) (symbol 2369 . 2392) (symbol 2350 . 2365) (symbol 2325 . 2346) (symbol 2310 . 2324) (symbol 2295 . 2309) (symbol 2282 . 2294) (symbol 2263 . 2278) (symbol 2243 . 2262) (symbol 2223 . 2239) (symbol 2190 . 2219) (symbol 2160 . 2189) (symbol 2135 . 2156) (symbol 2113 . 2134) (symbol 2098 . 2109) (symbol 2083 . 2097) (symbol 2074 . 2082) (INCLUDE 2066 . 2073) (symbol 2064 . 2065) (symbol 2062 . 2063) (punctuation 2060 . 2061) (symbol 2050 . 2059) (bol 2050 . 2050))
+    )
+   )
+  :file "!home!work!git!mm!mysql-5.1.71!mysql-test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

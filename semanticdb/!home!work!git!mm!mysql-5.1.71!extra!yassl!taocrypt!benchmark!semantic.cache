@@ -1,0 +1,24 @@
+;; Object benchmark/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "benchmark/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("INCLUDES" variable (:default-value ("-I$(srcdir)/../include" "-I$(srcdir)/../mySTL")) nil [743 798])
+            ("noinst_PROGRAMS" variable (:default-value ("benchmark")) nil [798 829])
+            ("benchmark_SOURCES" variable (:default-value ("benchmark.cpp")) nil [829 864])
+            ("benchmark_LDADD" variable (:default-value ("$(top_builddir)/extra/yassl/taocrypt/src/libtaocrypt.la")) nil [864 941])
+            ("benchmark_CXXFLAGS" variable (:default-value ("-DYASSL_PURE_C" "@yassl_thread_cxxflags@")) nil [941 1001])
+            ("EXTRA_DIST" variable (:default-value ("benchmark.dsp" "rsa1024.der" "dh1024.der" "dsa1024.der" "make.bat")) nil [1001 1072]))          
+    :file "Makefile.am"
+    :pointmax 1125
+    :fsize 1124
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax '((symbol 1116 . 1124) (punctuation 1115 . 1116) (punctuation 1114 . 1115) (symbol 1113 . 1114) (bol 1113 . 1113))
+    )
+   )
+  :file "!home!work!git!mm!mysql-5.1.71!extra!yassl!taocrypt!benchmark!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

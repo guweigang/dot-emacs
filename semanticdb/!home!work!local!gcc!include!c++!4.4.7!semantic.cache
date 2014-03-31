@@ -1,0 +1,48 @@
+;; Object 4.4.7/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "4.4.7/"
+  :tables (list 
+   (semanticdb-table "iostream"
+    :file "iostream"
+    :fsize 2654
+    :lastmodtime '(20683 7371 0 0)
+    )
+   (semanticdb-table "map"
+    :file "map"
+    :fsize 2479
+    :lastmodtime '(20683 7371 0 0)
+    )
+   (semanticdb-table "string"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("_GLIBCXX_STRING" variable (:constant-flag t) nil [1326 1341])
+            ("bits/c++config.h" include (:system-flag t) nil [1372 1399])
+            ("bits/stringfwd.h" include (:system-flag t) nil [1400 1427])
+            ("bits/char_traits.h" include (:system-flag t) nil [1428 1457])
+            ("bits/allocator.h" include (:system-flag t) nil [1498 1525])
+            ("bits/cpp_type_traits.h" include (:system-flag t) nil [1526 1559])
+            ("bits/localefwd.h" include (:system-flag t) nil [1560 1587])
+            ("bits/ostream_insert.h" include (:system-flag t) nil [1629 1661])
+            ("bits/stl_iterator_base_types.h" include (:system-flag t) nil [1662 1703])
+            ("bits/stl_iterator_base_funcs.h" include (:system-flag t) nil [1704 1745])
+            ("bits/stl_iterator.h" include (:system-flag t) nil [1746 1776])
+            ("bits/stl_function.h" include (:system-flag t) nil [1777 1807])
+            ("ext/numeric_traits.h" include (:system-flag t) nil [1820 1851])
+            ("bits/stl_algobase.h" include (:system-flag t) nil [1853 1883])
+            ("bits/basic_string.h" include (:system-flag t) nil [1885 1915])
+            ("bits/basic_string.tcc" include (:system-flag t) nil [1950 1983]))          
+    :file "string"
+    :pointmax 2022
+    :fsize 2021
+    :lastmodtime '(20683 7371 0 0)
+    :unmatched-syntax '((symbol 1357 . 1370) (symbol 1353 . 1356) (symbol 1346 . 1352) (punctuation 1345 . 1346))
+    :lexical-table 
+        '(("_GLIBCXX_STRING" . ((number "1" 1342 . 1343)))
+          )
+
+    )
+   )
+  :file "!home!work!local!gcc!include!c++!4.4.7!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

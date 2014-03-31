@@ -1,0 +1,37 @@
+;; Object tests/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tests/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("LIBMYSQLCLIENT_LA" variable (:default-value ("$(top_builddir)/libmysql_r/libmysqlclient_r.la")) nil [844 912])
+            ("LIBMYSQLCLIENT_LA" variable (:default-value ("$(top_builddir)/libmysql/libmysqlclient.la")) nil [917 981])
+            ("EXTRA_DIST" variable (:default-value ("auto_increment.res" "auto_increment.tst" "function.res" "function.tst" "lock_test.pl" "lock_test.res" "export.pl" "big_record.pl" "fork2_test.pl" "fork_big.pl" "insert_and_repair.pl" "grant.pl" "grant.res" "test_delayed_insert.pl" "pmail.pl" "mail_to_db.pl" "table_types.pl" "myisam-big-rows.tst" "mysql_client_fw.c" "CMakeLists.txt")) nil [988 1342])
+            ("bin_PROGRAMS" variable (:default-value ("mysql_client_test")) nil [1343 1377])
+            ("noinst_PROGRAMS" variable (:default-value ("insert_test")) nil [1377 1440])
+            ("INCLUDES" variable (:default-value ("-I$(top_builddir)/include" "-I$(top_srcdir)/include" "$(openssl_includes)")) nil [1441 1528])
+            ("LIBS" variable (:default-value ("@CLIENT_LIBS@")) nil [1528 1551])
+            ("LDADD" variable (:default-value ("@CLIENT_EXTRA_LDFLAGS@" "$(LIBMYSQLCLIENT_LA)")) nil [1551 1631])
+            ("mysql_client_test_LDADD" variable (:default-value ("$(LDADD)" "$(CXXLDFLAGS)")) nil [1632 1680])
+            ("mysql_client_test_SOURCES" variable (:default-value ("mysql_client_test.c" "$(top_srcdir)/mysys/my_memmem.c")) nil [1680 1763])
+            ("mysql_client_test.o" function (:arguments ("mysql_client_fw.c")) nil [1763 1802])
+            ("insert_test_SOURCES" variable (:default-value ("insert_test.c")) nil [1803 1844])
+            ("select_test_SOURCES" variable (:default-value ("select_test.c")) nil [1844 1885])
+            ("insert_test_DEPENDENCIES" variable (:default-value ("$(LIBRARIES)" "$(pkglib_LTLIBRARIES)")) nil [1885 1946])
+            ("select_test_DEPENDENCIES" variable (:default-value ("$(LIBRARIES)" "$(pkglib_LTLIBRARIES)")) nil [1946 2007])
+            ("bug25714_SOURCES" variable (:default-value ("bug25714.c")) nil [2008 2046])
+            ("bug25714_DEPENDENCIES" variable (:default-value ("$(LIBRARIES)" "$(pkglib_LTLIBRARIES)")) nil [2046 2108])
+            ("DEFS" variable (:default-value ("-DMYSQL_CLIENT_NO_THREADS")) nil [2131 2166])
+            ("thread_test.o" function (:arguments ("thread_test.c")) nil [2167 2229]))          
+    :file "Makefile.am"
+    :pointmax 2282
+    :fsize 2281
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax '((symbol 2273 . 2281) (punctuation 2272 . 2273) (punctuation 2271 . 2272) (symbol 2270 . 2271) (bol 2270 . 2270))
+    )
+   )
+  :file "!home!work!git!mm!mysql-5.1.71!tests!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

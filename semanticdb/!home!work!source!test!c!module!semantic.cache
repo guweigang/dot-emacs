@@ -1,0 +1,399 @@
+;; Object module/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "module/"
+  :tables (list 
+   (semanticdb-table "dnotify.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("linux/fs.h" include (:system-flag t) nil [628 649])
+            ("linux/module.h" include (:system-flag t) nil [650 675])
+            ("linux/sched.h" include (:system-flag t) nil [676 700])
+            ("linux/init.h" include (:system-flag t) nil [701 724])
+            ("linux/spinlock.h" include (:system-flag t) nil [725 752])
+            ("linux/slab.h" include (:system-flag t) nil [753 776])
+            ("linux/vmalloc.h" include (:system-flag t) nil [777 803])
+            ("asm/semaphore.h" include (:system-flag t) nil [804 830])
+            ("asm/uaccess.h" include (:system-flag t) nil [831 855])
+            ("fcntl.h" include nil nil [856 874])
+            ("changeinfo.h" include nil nil [875 898])
+            ("BUFFER_SIZE" variable (:constant-flag t) nil [907 918])
+            ("dnotify_struct" type
+               (:members 
+                  ( ("dn_next" variable
+                       (:pointer 1
+                        :type ("dnotify_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [955 987])
+                    ("dn_mask" variable (:type "unsigned long") (reparse-symbol classsubparts) [989 1012])
+                    ("dn_fd" variable (:type "int") (reparse-symbol classsubparts) [1069 1081])
+                    ("dn_filp" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1083 1106])
+                    ("dn_owner" variable (:type ("fl_owner_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1108 1129])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1131 1145])
+                    ("max" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1147 1160])
+                    ("buffer" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [1162 1178]))                  
+                :type "struct")
+                nil [930 1181])
+            ("dnotify_ops" type
+               (:members 
+                  ( ("dnotify_flush" variable
+                       (:functionpointer-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1205 1253])
+                    ("fcntl_dirnotify" variable
+                       (:functionpointer-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [1255 1311])
+                    ("fcntl_getdirnotify" variable
+                       (:functionpointer-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [1313 1372])
+                    ("dnotify_init_dentry" variable
+                       (:functionpointer-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1374 1425])
+                    ("dnotify_move_dentry" variable
+                       (:functionpointer-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1427 1478])
+                    ("dnotify_dispose_dentry" variable
+                       (:functionpointer-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1480 1534])
+                    ("dnotify_parent" variable
+                       (:functionpointer-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1536 1623]))                  
+                :type "struct")
+                nil [1183 1626])
+            ("postevent" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("dentry" variable
+                       (:pointer 1
+                        :type ("dentry" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1650 1672])
+                    ("mask" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [1672 1691])
+                    ("blocks" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1691 1704])
+                    ("nblocks" variable (:type "int") (reparse-symbol arg-sub-list) [1704 1716]))                  
+                :type "void")
+                nil [1628 1717])
+            ("dir_notify_enable" variable (:type "int") nil [1719 1743])
+            ("dnotify_ops" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("dnotify_ops" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1744 1783])
+            ("dn_lock" variable
+               (:typemodifiers ("static")
+                :type ("spinlock_t" type (:type "class") nil nil))
+                nil [1825 1872])
+            ("dn_cache" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("kmem_cache_t" type (:type "class") nil nil))
+                nil [1905 1935])
+            ("dn_buffer_cache" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("kmem_cache_t" type (:type "class") nil nil))
+                nil [1960 1997])
+            ("__append" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dn" variable
+                       (:pointer 1
+                        :type ("dnotify_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2054 2080])
+                    ("block" variable
+                       (:pointer 1
+                        :type ("block" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2080 2100]))                  
+                :type "void")
+                nil [2033 2216])
+            ("__getmasks" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dentry" variable
+                       (:pointer 1
+                        :type ("dentry" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2278 2300])
+                    ("mask" variable
+                       (:pointer 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [2300 2320])
+                    ("rmask" variable
+                       (:pointer 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [2320 2341]))                  
+                :type "void")
+                nil [2255 2509])
+            ("__initmasks" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dentry" variable
+                       (:pointer 1
+                        :type ("dentry" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2596 2618])
+                    ("pmask" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2618 2638])
+                    ("rmask" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2638 2658]))                  
+                :type "void")
+                nil [2572 2944])
+            ("initmasks" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dentry" variable
+                       (:pointer 1
+                        :type ("dentry" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3015 3037]))                  
+                :type "void")
+                nil [2993 3356])
+            ("__registernames" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("droot" variable
+                       (:pointer 1
+                        :type ("dentry" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3438 3459])
+                    ("dentry" variable
+                       (:pointer 1
+                        :type ("dentry" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3459 3481]))                  
+                :type "void")
+                nil [3410 3844])
+            ("registernames" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dentry" variable
+                       (:pointer 1
+                        :type ("dentry" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3924 3946]))                  
+                :type "void")
+                nil [3898 4019])
+            ("dnotify_flush" function
+               (:arguments 
+                  ( ("filp" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4067 4085])
+                    ("id" variable (:type ("fl_owner_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4086 4100]))                  
+                :type "void")
+                nil [4048 4606])
+            ("fcntl_getdirnotify" function
+               (:arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [4677 4684])
+                    ("filp" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4685 4703])
+                    ("arg" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [4704 4722]))                  
+                :type "int")
+                nil [4654 5597])
+            ("fcntl_dirnotify" function
+               (:arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [5619 5626])
+                    ("filp" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5627 5645])
+                    ("arg" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [5646 5664]))                  
+                :type "int")
+                nil [5599 7140])
+            ("consumeevent" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dentry" variable
+                       (:pointer 1
+                        :type ("dentry" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7167 7189])
+                    ("event" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [7189 7209])
+                    ("args" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7209 7220])
+                    ("nargs" variable (:type "int") (reparse-symbol arg-sub-list) [7220 7230]))                  
+                :type "void")
+                nil [7142 7940])
+            ("postevent" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dsource" variable
+                       (:pointer 1
+                        :type ("dentry" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8049 8072])
+                    ("event" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [8072 8092])
+                    ("args" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [8092 8103])
+                    ("nargs" variable (:type "int") (reparse-symbol arg-sub-list) [8103 8113]))                  
+                :type "void")
+                nil [8027 8666])
+            ("dnotify_parent" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dentry" variable
+                       (:pointer 1
+                        :type ("dentry" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8751 8773])
+                    ("event" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [8773 8793])
+                    ("args" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [8793 8804])
+                    ("nargs" variable (:type "int") (reparse-symbol arg-sub-list) [8804 8814]))                  
+                :type "void")
+                nil [8724 9206])
+            ("dnotify_init_dentry" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dentry" variable
+                       (:pointer 1
+                        :type ("dentry" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9240 9262]))                  
+                :type "void")
+                nil [9208 9388])
+            ("dnotify_move_dentry" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dentry" variable
+                       (:pointer 1
+                        :type ("dentry" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9422 9444]))                  
+                :type "void")
+                nil [9390 9492])
+            ("dnotify_dispose_dentry" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dentry" variable
+                       (:pointer 1
+                        :type ("dentry" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9529 9551]))                  
+                :type "void")
+                nil [9494 9669])
+            ("my_dnotify_ops" variable (:type ("dnotify_ops" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [9671 9983])
+            ("dnotify_init" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10016 10021]))                  
+                :type ("__init" type (:type "class") nil nil))
+                nil [9996 10398])
+            ("dnotify_exit" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10432 10437]))                  
+                :type ("__exit" type (:type "class") nil nil))
+                nil [10412 10529])
+            ("module_init" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("dnotify_init" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10543 10556]))                  
+                :type "int")
+                nil [10531 10557])
+            ("module_exit" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("dnotify_exit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10570 10583]))                  
+                :type "int")
+                nil [10558 10584])
+            ("MODULE_LICENSE" function
+               (:prototype-flag t
+                :type "int")
+                nil [10585 10607]))          
+    :file "dnotify.c"
+    :pointmax 10608
+    :fsize 10608
+    :lastmodtime '(16478 3797 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("BUFFER_SIZE" . ((semantic-list "(4096*10)" 919 . 928)))
+          )
+
+    )
+   (semanticdb-table "fcntl.h"
+    :file "fcntl.h"
+    :fsize 1861
+    :lastmodtime '(16478 320 0 0)
+    )
+   (semanticdb-table "changeinfo.h"
+    :file "changeinfo.h"
+    :fsize 3647
+    :lastmodtime '(16478 4561 0 0)
+    )
+   )
+  :file "!home!work!source!test!c!module!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,43 @@
+;; Object mysys/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mysys/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("MYSQLDATAdir" variable (:default-value ("$(localstatedir)")) nil [738 771])
+            ("MYSQLSHAREdir" variable (:default-value ("$(pkgdatadir)")) nil [771 802])
+            ("MYSQLBASEdir" variable (:default-value ("$(prefix)")) nil [802 827])
+            ("INCLUDES" variable (:default-value ("@ZLIB_INCLUDES@" "-I$(top_builddir)/include" "-I$(top_srcdir)/include" "-I$(srcdir)")) nil [827 922])
+            ("pkglib_LIBRARIES" variable (:default-value ("libmysys.a")) nil [922 952])
+            ("LDADD" variable (:default-value ("libmysys.a" "$(top_builddir)/strings/libmystrings.a" "$(top_builddir)/dbug/libdbug.a")) nil [952 1043])
+            ("noinst_HEADERS" variable (:default-value ("mysys_priv.h" "my_static.h" "my_handler_errors.h")) nil [1043 1105])
+            ("libmysys_a_SOURCES" variable (:default-value ("my_init.c" "my_getwd.c" "mf_getdate.c" "my_mmap.c" "mf_path.c" "mf_loadpath.c" "my_file.c" "my_open.c" "my_create.c" "my_dup.c" "my_seek.c" "my_read.c" "my_pread.c" "my_write.c" "my_getpagesize.c" "mf_keycaches.c" "my_crc32.c" "mf_iocache.c" "mf_iocache2.c" "mf_cache.c" "mf_tempfile.c" "mf_tempdir.c" "my_lock.c" "mf_brkhant.c" "my_alarm.c" "my_malloc.c" "my_realloc.c" "my_once.c" "mulalloc.c" "my_alloc.c" "safemalloc.c" "my_new.cc" "my_vle.c" "my_fopen.c" "my_fstream.c" "my_getsystime.c" "my_error.c" "errors.c" "my_div.c" "my_messnc.c" "mf_format.c" "mf_same.c" "mf_dirname.c" "mf_fn_ext.c" "my_symlink.c" "my_symlink2.c" "mf_pack.c" "mf_unixpath.c" "mf_arr_appstr.c" "mf_wcomp.c" "mf_wfile.c" "my_gethwaddr.c" "mf_qsort.c" "mf_qsort2.c" "mf_sort.c" "ptr_cmp.c" "mf_radix.c" "queues.c" "my_getncpus.c" "tree.c" "trie.c" "list.c" "hash.c" "array.c" "string.c" "typelib.c" "my_copy.c" "my_append.c" "my_lib.c" "my_delete.c" "my_rename.c" "my_redel.c" "my_chsize.c" "my_clock.c" "my_quick.c" "my_lockmem.c" "my_static.c" "my_sync.c" "my_getopt.c" "my_mkdir.c" "default_modify.c" "default.c" "my_compress.c" "checksum.c" "my_net.c" "my_sleep.c" "charset.c" "charset-def.c" "my_bitmap.c" "my_bit.c" "md5.c" "rijndael.c" "my_aes.c" "sha1.c" "my_compare.c" "my_netware.c" "my_largepage.c" "my_memmem.c" "stacktrace.c" "my_windac.c" "my_access.c" "base64.c" "my_libwrap.c")) nil [1105 2466])
+            ("libmysys_a_SOURCES" variable (:default-value ("mf_keycache.c")) nil [2656 2694])
+            ("EXTRA_DIST" variable (:default-value ("thr_alarm.c" "thr_lock.c" "my_pthread.c" "my_thr_init.c" "thr_mutex.c" "thr_rwlock.c" "CMakeLists.txt" "mf_soundex.c" "my_conio.c" "my_wincond.c" "my_winthread.c")) nil [2701 2872])
+            ("libmysys_a_LIBADD" variable (:default-value ("@THREAD_LOBJECTS@")) nil [2872 2910])
+            ("DEFS" variable (:default-value ("-DDEFAULT_BASEDIR=\\\"$(prefix)\\\"" "-DMYSQL_DATADIR=\"\\\"$(MYSQLDATAdir)\\\"\"" "-DDEFAULT_CHARSET_HOME=\"\\\"$(MYSQLBASEdir)\\\"\"" "-DSHAREDIR=\"\\\"$(MYSQLSHAREdir)\\\"\"" "-DDEFAULT_HOME_ENV=MYSQL_HOME" "-DDEFAULT_GROUP_SUFFIX_ENV=MYSQL_GROUP_SUFFIX" "-DDEFAULT_SYSCONFDIR=\"\\\"$(sysconfdir)\\\"\"" "@DEFS@")) nil [3070 3408])
+            ("libmysys_a_DEPENDENCIES" variable (:default-value ("@THREAD_LOBJECTS@")) nil [3409 3452])
+            ("FLAGS" variable (:default-value ("$(DEFS)" "$(INCLUDES)" "$(CPPFLAGS)" "$(CFLAGS)" "@NOINST_LDFLAGS@")) nil [3533 3598])
+            ("test_bitmap" function (:arguments ("my_bitmap.c" "$(LIBRARIES)")) nil [3763 3867])
+            ("test_priority_queue" function (:arguments ("queues.c" "$(LIBRARIES)")) nil [3868 3974])
+            ("test_thr_alarm" function (:arguments ("thr_alarm.c" "$(LIBRARIES)")) nil [3975 4164])
+            ("test_thr_lock" function (:arguments ("thr_lock.c" "$(LIBRARIES)")) nil [4165 4346])
+            ("test_vsnprintf" function (:arguments ("my_vsnprintf.c" "$(LIBRARIES)")) nil [4347 4537])
+            ("test_io_cache" function (:arguments ("mf_iocache.c" "$(LIBRARIES)")) nil [4538 4720])
+            ("test_dir" function (:arguments ("test_dir.c" "$(LIBRARIES)")) nil [4721 4827])
+            ("test_charset" function (:arguments ("test_charset.c" "$(LIBRARIES)")) nil [4828 4946])
+            ("testhash" function (:arguments ("testhash.c" "$(LIBRARIES)")) nil [4947 5053])
+            ("test_gethwaddr" function (:arguments ("my_gethwaddr.c" "$(LIBRARIES)")) nil [5054 5249])
+            ("test_base64" function (:arguments ("base64.c" "$(LIBRARIES)")) nil [5250 5421]))          
+    :file "Makefile.am"
+    :pointmax 5474
+    :fsize 5473
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax '((symbol 5465 . 5473) (punctuation 5464 . 5465) (punctuation 5463 . 5464) (symbol 5462 . 5463) (bol 5462 . 5462))
+    )
+   )
+  :file "!home!work!git!mm!mysql-5.1.71!mysys!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

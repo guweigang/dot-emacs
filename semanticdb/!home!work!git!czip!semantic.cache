@@ -1,0 +1,470 @@
+;; Object czip/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "czip/"
+  :tables (list 
+   (semanticdb-table "czip.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_QQWRY_DAT_IP_" variable (:constant-flag t) nil [64 78])
+            ("windows.h" include (:system-flag t) nil [79 99])
+            ("stdio.h" include (:system-flag t) nil [100 118])
+            ("stdlib.h" include (:system-flag t) nil [119 138])
+            ("string.h" include (:system-flag t) nil [139 158])
+            ("tchar.h" include (:system-flag t) nil [159 177])
+            ("LeftMov" variable
+               (:dereference 1
+                :typemodifiers ("extern")
+                :type ("DWORD" type (:type "class") nil nil))
+                nil [179 203])
+            ("IP_FIND" type
+               (:typedef ("_IP_FIND" type (:type "struct") nil nil)
+                :superclasses "_IP_FIND"
+                :type "typedef")
+                nil [237 359])
+            ("PIP_FIND" type
+               (:typedef ("_IP_FIND" type (:type "struct") nil nil)
+                :pointer 1
+                :superclasses "_IP_FIND"
+                :type "typedef")
+                nil [237 359])
+            ("_IP_FIND" type
+               (:members 
+                  ( ("SessionStartAddr" variable (:type ("DWORD" type (:type "class") nil nil)) (reparse-symbol classsubparts) [265 288])
+                    ("offset" variable
+                       (:suffix ":24"
+                        :type ("DWORD" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [302 318]))                  
+                :type "struct")
+                nil [237 359])
+            ("IP_HEADER" type
+               (:typedef ("_IP_HEADER" type (:type "struct") nil nil)
+                :superclasses "_IP_HEADER"
+                :type "typedef")
+                nil [377 489])
+            ("PIP_HEADER" type
+               (:typedef ("_IP_HEADER" type (:type "struct") nil nil)
+                :pointer 1
+                :superclasses "_IP_HEADER"
+                :type "typedef")
+                nil [377 489])
+            ("_IP_HEADER" type
+               (:members 
+                  ( ("StartIp" variable (:type ("PIP_FIND" type (:type "class") nil nil)) (reparse-symbol classsubparts) [407 424])
+                    ("EndIp" variable (:type ("PIP_FIND" type (:type "class") nil nil)) (reparse-symbol classsubparts) [437 452]))                  
+                :type "struct")
+                nil [377 489])
+            ("IP_ADDR" type
+               (:typedef ("_IP_ADDR" type (:type "struct") nil nil)
+                :superclasses "_IP_ADDR"
+                :type "typedef")
+                nil [499 646])
+            ("PIP_ADDR" type
+               (:typedef ("_IP_ADDR" type (:type "struct") nil nil)
+                :pointer 1
+                :superclasses "_IP_ADDR"
+                :type "typedef")
+                nil [499 646])
+            ("_IP_ADDR" type
+               (:members 
+                  ( ("flags" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [527 541])
+                    ("offset" variable
+                       (:suffix ":24"
+                        :type ("DWORD" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [583 599]))                  
+                :type "struct")
+                nil [499 646])
+            ("IP_RECORD" type
+               (:typedef ("_IP_RECORD" type (:type "struct") nil nil)
+                :superclasses "_IP_RECORD"
+                :type "typedef")
+                nil [656 759])
+            ("PIP_RECORD" type
+               (:typedef ("_IP_RECORD" type (:type "struct") nil nil)
+                :pointer 1
+                :superclasses "_IP_RECORD"
+                :type "typedef")
+                nil [656 759])
+            ("_IP_RECORD" type
+               (:members 
+                  ( ("SessionEndAddr" variable (:type ("DWORD" type (:type "class") nil nil)) (reparse-symbol classsubparts) [686 707])
+                    ("addr" variable (:type ("IP_ADDR" type (:type "class") nil nil)) (reparse-symbol classsubparts) [721 734]))                  
+                :type "struct")
+                nil [656 759])
+            ("IP_SAVE" type
+               (:typedef ("_IP_SAVE" type (:type "struct") nil nil)
+                :superclasses "_IP_SAVE"
+                :type "typedef")
+                nil [771 948])
+            ("PIP_SAVE" type
+               (:typedef ("_IP_SAVE" type (:type "struct") nil nil)
+                :pointer 1
+                :superclasses "_IP_SAVE"
+                :type "typedef")
+                nil [771 948])
+            ("_IP_SAVE" type
+               (:members 
+                  ( ("FindIP" variable (:type ("DWORD" type (:type "class") nil nil)) (reparse-symbol classsubparts) [800 813])
+                    ("StartIP" variable (:type ("DWORD" type (:type "class") nil nil)) (reparse-symbol classsubparts) [827 841])
+                    ("EndIP" variable (:type ("DWORD" type (:type "class") nil nil)) (reparse-symbol classsubparts) [854 866])
+                    ("Country" variable (:type ("PSTR" type (:type "class") nil nil)) (reparse-symbol classsubparts) [880 893])
+                    ("City" variable (:type ("PSTR" type (:type "class") nil nil)) (reparse-symbol classsubparts) [905 915]))                  
+                :type "struct")
+                nil [771 948])
+            ("CDWYIP" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [985 992])
+                    ("CDWYIP" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("point" variable (:type ("LPVOID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1002 1015]))                          
+                        :type ("CDWYIP" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [995 1016])
+                    ("FindIP" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("DWORD" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1060 1066]))                          
+                        :type ("VOID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1048 1067])
+                    ("FindIP" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("PTSTR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1112 1118]))                          
+                        :type ("VOID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1100 1119])
+                    ("FindADDr" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("PSTR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1152 1157]))                          
+                        :type ("VOID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1138 1158])
+                    ("show" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("showip" variable (:type ("BOOL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1186 1199])
+                            ("" variable (:type ("TRUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1200 1205]))                          
+                        :type ("VOID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1176 1206])
+                    ("GetSaveInfo" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :constant-flag t
+                        :type ("IP_SAVE" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1217 1247])
+                    ("CDWYIP" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1291 1301])
+                    ("protected" label nil (reparse-symbol classsubparts) [1303 1313])
+                    ("ShortFindIP" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("PIP_FIND" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1334 1343])
+                            ("" variable (:type ("PIP_FIND" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1344 1353])
+                            ("" variable (:type ("DWORD" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1354 1361]))                          
+                        :type ("DWORD" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1316 1362])
+                    ("szIP2ulIP" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("szIP" variable (:type ("PTSTR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1389 1400]))                          
+                        :type ("DWORD" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1373 1401])
+                    ("ulIP2szIP" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ulIP" variable (:type ("DWORD" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1443 1454]))                          
+                        :type ("PTSTR" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1427 1455])
+                    ("GetAddress" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("addr" variable (:type ("PIP_ADDR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1493 1508])
+                            ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [1508 1517]))                          
+                        :type ("VOID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1477 1518])
+                    ("GetAddress" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("addr" variable (:type ("PIP_RECORD" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1551 1567]))                          
+                        :type ("VOID" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1535 1568])
+                    ("private" label nil (reparse-symbol classsubparts) [1570 1578])
+                    ("szbuf" variable
+                       (:dereference 1
+                        :type ("TCHAR" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1581 1597])
+                    ("iphead" variable (:type ("PIP_HEADER" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1618 1636])
+                    ("ip" variable (:type ("IP_SAVE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1660 1671]))                  
+                :type "class")
+                nil [969 1688]))          
+    :file "czip.h"
+    :pointmax 1714
+    :unmatched-syntax '((punctuation 1198 . 1199) (semantic-list 962 . 967) (symbol 958 . 962) (punctuation 1198 . 1199) (punctuation 1198 . 1199) (symbol 951 . 957) (punctuation 1198 . 1199) (punctuation 1198 . 1199) (punctuation 950 . 951) (semantic-list 217 . 225) (symbol 213 . 217) (number 223 . 224) (symbol 206 . 212) (number 223 . 224) (punctuation 205 . 206))
+    :lexical-table 
+        '(("_QQWRY_DAT_IP_")
+          )
+
+    )
+   (semanticdb-table "QQWry_IP.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("GetIP.h" include nil nil [35 53])
+            ("LeftMov" variable
+               (:dereference 1
+                :type ("DWORD" type (:type "class") nil nil))
+                nil [55 89])
+            ("CDWYIP" function
+               (:constructor-flag t
+                :parent "CDWYIP"
+                :arguments 
+                  ( ("point" variable (:type ("LPVOID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [106 119]))                  
+                :type ("CDWYIP" type (:type "class") nil nil))
+                nil [91 192])
+            ("GetAddress" function
+               (:parent "CDWYIP"
+                :arguments 
+                  ( ("addr" variable (:type ("PIP_ADDR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [257 272])
+                    ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [272 281]))                  
+                :type ("VOID" type (:type "class") nil nil))
+                nil [233 1004])
+            ("GetAddress" function
+               (:parent "CDWYIP"
+                :arguments 
+                  ( ("Record" variable (:type ("PIP_RECORD" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1030 1048]))                  
+                :type ("VOID" type (:type "class") nil nil))
+                nil [1006 1523])
+            ("FindIP" function
+               (:parent "CDWYIP"
+                :arguments 
+                  ( ("Address" variable (:type ("DWORD" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1564 1578]))                  
+                :type ("VOID" type (:type "class") nil nil))
+                nil [1544 2122])
+            ("FindIP" function
+               (:parent "CDWYIP"
+                :arguments 
+                  ( ("szip" variable (:type ("PTSTR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2203 2214]))                  
+                :type ("VOID" type (:type "class") nil nil))
+                nil [2183 2247])
+            ("szIP2ulIP" function
+               (:parent "CDWYIP"
+                :arguments 
+                  ( ("szIP" variable (:type ("PTSTR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2291 2302]))                  
+                :type ("DWORD" type (:type "class") nil nil))
+                nil [2267 3016])
+            ("ulIP2szIP" function
+               (:parent "CDWYIP"
+                :arguments 
+                  ( ("ulIP" variable (:type ("DWORD" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3059 3070]))                  
+                :type ("PTSTR" type (:type "class") nil nil))
+                nil [3035 3278])
+            ("GetSaveInfo" function
+               (:pointer 1
+                :parent "CDWYIP"
+                :constant-flag t
+                :type ("IP_SAVE" type (:type "class") nil nil))
+                nil [3280 3335])
+            ("show" function
+               (:parent "CDWYIP"
+                :arguments 
+                  ( ("showip" variable (:type ("BOOL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3369 3381]))                  
+                :type ("VOID" type (:type "class") nil nil))
+                nil [3351 3669])
+            ("FindADDr" function
+               (:parent "CDWYIP"
+                :arguments 
+                  ( ("AddrName" variable (:type ("PSTR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3717 3731]))                  
+                :type ("VOID" type (:type "class") nil nil))
+                nil [3695 4145])
+            ("CDWYIP" function
+               (:destructor-flag t
+                :parent "CDWYIP"
+                :type "void")
+                nil [4147 4166]))          
+    :file "QQWry_IP.cpp"
+    :pointmax 4168
+    :fsize 4504
+    :lastmodtime '(21090 12867 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "test.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("GetIP.h" include nil nil [1 19])
+            ("windows.h" include nil nil [20 40])
+            ("FindCallName" function
+               (:arguments 
+                  ( ("CommandLine" variable (:type ("LPTSTR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [79 98]))                  
+                :type ("LPTSTR" type (:type "class") nil nil))
+                nil [59 279])
+            ("UnicodeToANSI" function
+               (:arguments 
+                  ( ("str" variable (:type ("PWCHAR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [309 321]))                  
+                :type ("PCHAR" type (:type "class") nil nil))
+                nil [288 1090])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1101 1110])
+                    ("argv" variable
+                       (:dereference 1
+                        :type ("PTCHAR" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1111 1125]))                  
+                :type "int")
+                nil [1092 3045]))          
+    :file "test.cpp"
+    :pointmax 3025
+    :fsize 3153
+    :lastmodtime '(21090 13656 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "GetIP.h"
+    :major-mode 'c-mode
+    :tags nil
+    :file "GetIP.h"
+    :pointmax 1
+    :fsize 2080
+    :lastmodtime '(21090 13615 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "windows.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("sys/type.h" include (:system-flag t) nil [257 278])
+            ("DWORD" type
+               (:typedef ("unsigned long")
+                :superclasses "unsigned long"
+                :type "typedef")
+                nil [279 307])
+            ("BOOL" type
+               (:typedef ("int")
+                :superclasses "int"
+                :type "typedef")
+                nil [308 325])
+            ("BYTE" type
+               (:typedef ("unsigned char")
+                :superclasses "unsigned char"
+                :type "typedef")
+                nil [326 353])
+            ("WORD" type
+               (:typedef ("unsigned short")
+                :superclasses "unsigned short"
+                :type "typedef")
+                nil [354 382])
+            ("FLOAT" type
+               (:typedef ("float")
+                :superclasses "float"
+                :type "typedef")
+                nil [383 403])
+            ("PFLOAT" type
+               (:typedef ("FLOAT" type (:type "class") nil nil)
+                :pointer 1
+                :superclasses "FLOAT"
+                :type "typedef")
+                nil [404 426])
+            ("PBOOL" type
+               (:typedef ("BOOL" type (:type "class") nil nil)
+                :pointer 1
+                :superclasses "BOOL"
+                :type "typedef")
+                nil [427 447])
+            ("LPBOOL" type
+               (:typedef ("BOOL" type (:type "class") nil nil)
+                :pointer 1
+                :superclasses "BOOL"
+                :type "typedef")
+                nil [448 469])
+            ("PBYTE" type
+               (:typedef ("BYTE" type (:type "class") nil nil)
+                :pointer 1
+                :superclasses "BYTE"
+                :type "typedef")
+                nil [470 490])
+            ("LPBYTE" type
+               (:typedef ("BYTE" type (:type "class") nil nil)
+                :pointer 1
+                :superclasses "BYTE"
+                :type "typedef")
+                nil [491 512])
+            ("PINT" type
+               (:typedef ("int")
+                :pointer 1
+                :superclasses "int"
+                :type "typedef")
+                nil [513 531])
+            ("LPINT" type
+               (:typedef ("int")
+                :pointer 1
+                :superclasses "int"
+                :type "typedef")
+                nil [532 551])
+            ("PWORD" type
+               (:typedef ("WORD" type (:type "class") nil nil)
+                :pointer 1
+                :superclasses "WORD"
+                :type "typedef")
+                nil [552 572])
+            ("LPWORD" type
+               (:typedef ("WORD" type (:type "class") nil nil)
+                :pointer 1
+                :superclasses "WORD"
+                :type "typedef")
+                nil [573 594])
+            ("LPLONG" type
+               (:typedef ("long")
+                :pointer 1
+                :superclasses "long"
+                :type "typedef")
+                nil [595 616])
+            ("PDWORD" type
+               (:typedef ("DWORD" type (:type "class") nil nil)
+                :pointer 1
+                :superclasses "DWORD"
+                :type "typedef")
+                nil [617 639])
+            ("LPDWORD" type
+               (:typedef ("DWORD" type (:type "class") nil nil)
+                :pointer 1
+                :superclasses "DWORD"
+                :type "typedef")
+                nil [640 663])
+            ("LPVOID" type
+               (:typedef ("void")
+                :pointer 1
+                :superclasses "void"
+                :type "typedef")
+                nil [664 686])
+            ("LPCVOID" variable
+               (:pointer 1
+                :type "void")
+                nil [701 716])
+            ("INT" type
+               (:typedef ("int")
+                :superclasses "int"
+                :type "typedef")
+                nil [718 734])
+            ("UINT" type
+               (:typedef ("unsigned int")
+                :superclasses "unsigned int"
+                :type "typedef")
+                nil [735 761])
+            ("PUINT" type
+               (:typedef ("unsigned int")
+                :pointer 1
+                :superclasses "unsigned int"
+                :type "typedef")
+                nil [762 790]))          
+    :file "windows.h"
+    :pointmax 791
+    :fsize 812
+    :lastmodtime '(21090 13402 0 0)
+    :unmatched-syntax '((symbol 695 . 700) (TYPEDEF 687 . 694))
+    )
+   )
+  :file "!home!work!git!czip!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

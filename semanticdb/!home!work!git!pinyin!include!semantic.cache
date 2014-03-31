@@ -1,0 +1,361 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables (list 
+   (semanticdb-table "IPinyinDict.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("IPINYINDICT_H" variable (:constant-flag t) nil [31 44])
+            ("PYSyllable.h" include nil nil [46 69])
+            ("IDictionary.h" include nil nil [70 94])
+            ("vector" include (:system-flag t) nil [96 113])
+            ("stack" include (:system-flag t) nil [114 130])
+            ("NLP" type
+               (:members 
+                  ( ("Pinyin" type
+                       (:members 
+                          ( ("PinyinType_T" type
+                               (:members 
+                                  ( ("PYTYPE_QUANPIN" variable
+                                       (:constant-flag t
+                                        :default-value (219 220)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [202 220])
+                                    ("PYTYPE_ENGLISH" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [222 237])
+                                    ("PYTYPE_JIANPIN" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [238 253])
+                                    ("PYTYPE_SPECIAL" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [254 269])
+                                    ("PYTYPE_DELIMITER" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [270 287])
+                                    ("PYTYPE_INVALID" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [288 303]))                                  
+                                :type "enum")
+                                (reparse-symbol namespacesubparts) [183 304])
+                            ("seg_t" type
+                               (:members 
+                                  ( ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [341 352])
+                                    ("endpos" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [378 392])
+                                    ("type" variable (:type ("PinyinType_T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [418 436])
+                                    ("info" variable (:type "unsigned int") (reparse-symbol classsubparts) [449 467]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [314 537])
+                            ("LONGEST" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("a" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("seg_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [568 583])
+                                    ("b" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("seg_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [584 599]))                                  
+                                :type ("seg_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [547 658])
+                            ("IPinyinDict" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [697 704])
+                                    ("IPinyinDict" function
+                                       (:constructor-flag t
+                                        :type ("IPinyinDict" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [717 732])
+                                    ("IPinyinDict" function
+                                       (:destructor-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [746 770])
+                                    ("public" label nil (reparse-symbol classsubparts) [780 787])
+                                    ("load" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("path" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [818 835]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [800 840])
+                                    ("findLongestMatchQuanpin" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("pinyin" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [890 909])
+                                            ("pos" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [910 921])
+                                            ("seg" variable
+                                               (:reference 1
+                                                :type ("seg_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [922 933]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [853 944])
+                                    ("findPrefixMatchQuanpin" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("pinyin" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [993 1012])
+                                            ("pos" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1013 1024])
+                                            ("segs" variable
+                                               (:reference 1
+                                                :type ("stack" type
+                                                     (:template-specifier 
+                                                        ( ("seg_t" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [1025 1044]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [957 1055])
+                                    ("findLongestMatchJianpin" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("pinyin" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [1105 1124])
+                                            ("pos" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1125 1136])
+                                            ("segs" variable
+                                               (:reference 1
+                                                :type ("stack" type
+                                                     (:template-specifier 
+                                                        ( ("seg_t" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [1137 1156]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [1068 1167])
+                                    ("findPrefixMatchJianpin" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("pinyin" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [1216 1235])
+                                            ("pos" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1236 1247])
+                                            ("segs" variable
+                                               (:reference 1
+                                                :type ("stack" type
+                                                     (:template-specifier 
+                                                        ( ("seg_t" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [1248 1267]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [1180 1278])
+                                    ("findLongestMatchPinyin" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("pinyin" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [1327 1346])
+                                            ("pos" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1347 1358])
+                                            ("segs" variable
+                                               (:reference 1
+                                                :type ("stack" type
+                                                     (:template-specifier 
+                                                        ( ("seg_t" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [1359 1378]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [1291 1389])
+                                    ("findPrefixMatchPinyin" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("pinyin" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [1437 1456])
+                                            ("pos" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1457 1468])
+                                            ("segs" variable
+                                               (:reference 1
+                                                :type ("stack" type
+                                                     (:template-specifier 
+                                                        ( ("seg_t" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [1469 1488]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [1402 1499])
+                                    ("findLongestMatchEnglish" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("dict" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("IDictionary" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1549 1573])
+                                            ("pinyin" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [1574 1593])
+                                            ("pos" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1594 1605])
+                                            ("seg" variable
+                                               (:reference 1
+                                                :type ("seg_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1606 1617]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [1512 1628])
+                                    ("findPrefixMatchEnglish" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("dict" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("IDictionary" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1677 1701])
+                                            ("pinyin" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [1702 1721])
+                                            ("pos" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1722 1733])
+                                            ("segs" variable
+                                               (:reference 1
+                                                :type ("stack" type
+                                                     (:template-specifier 
+                                                        ( ("seg_t" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [1734 1753]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [1641 1764])
+                                    ("isQuanpinPrefix" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("pinyin" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [1796 1815])
+                                            ("pos" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1816 1827])
+                                            ("seg" variable
+                                               (:reference 1
+                                                :type ("seg_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1828 1839]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1768 1850])
+                                    ("isEnglishPrefix" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("dict" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("IDictionary" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1891 1915])
+                                            ("pinyin" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [1916 1935])
+                                            ("pos" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1936 1947])
+                                            ("seg" variable
+                                               (:reference 1
+                                                :type ("seg_t" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1948 1959]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1863 1970])
+                                    ("getAdjustSyllable" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("origin" variable (:type ("SyllableCode_T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2023 2045])
+                                            ("adjust" variable
+                                               (:reference 1
+                                                :type ("vector" type
+                                                     (:template-specifier 
+                                                        ( ("SyllableCode_T" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [2046 2077]))                                          
+                                        :type "unsigned int")
+                                        (reparse-symbol classsubparts) [1984 2088])
+                                    ("getSyllableStr" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("syl" variable (:type ("SyllableCode_T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2130 2149])
+                                            ("syl_str" variable
+                                               (:pointer 1
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [2150 2164]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2102 2175]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [669 2186]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [152 2192]))                  
+                :type "namespace")
+                nil [132 2194]))          
+    :file "IPinyinDict.h"
+    :pointmax 2203
+    :fsize 2232
+    :lastmodtime '(20848 50834 0 0)
+    :unmatched-syntax '((punctuation 770 . 771) (punctuation 732 . 733) (punctuation 658 . 659))
+    :lexical-table 
+        '(("IPINYINDICT_H")
+          )
+
+    )
+   (semanticdb-table "PYSyllable.h"
+    :file "PYSyllable.h"
+    :fsize 30170
+    :lastmodtime '(20848 50834 0 0)
+    )
+   (semanticdb-table "IDictionary.h"
+    :file "IDictionary.h"
+    :fsize 5649
+    :lastmodtime '(20848 50834 0 0)
+    )
+   )
+  :file "!home!work!git!pinyin!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

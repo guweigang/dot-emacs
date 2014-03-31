@@ -1,0 +1,55 @@
+;; Object demo/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "demo/"
+  :tables (list 
+   (semanticdb-table "runmode.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("CodeMirror: Mode Runner Demo" section nil nil [64 169])
+            ("CodeMirror: Mode Runner Demo" section nil nil [169 218])
+            ("CodeMirror: Mode Runner Demo" section nil nil [218 274])
+            ("CodeMirror: Mode Runner Demo" section nil nil [274 380])
+            ("CodeMirror: Mode Runner Demo" section (:members 
+              ( ("CodeMirror: Mode Runner Demo" section nil nil [391 848]))              ) nil [380 848])
+            ("function doHighlight() {
+  CodeMirror.runMode(document.getElementById(\"code\").value, \"application/xml\",
+                     document.getElementById(\"output\"));
+}" section (:members 
+              ( ("lib/runmode.js" anchor nil nil [1158 1161])
+                ("mode spec" anchor nil nil [1391 1394]))              ) nil [848 1977]))          
+    :file "runmode.html"
+    :pointmax 1977
+    :fsize 1976
+    :lastmodtime '(20853 19560 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "complete.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("CodeMirror: Autocomplete Demo" section nil nil [64 170])
+            ("CodeMirror: Autocomplete demo" section nil nil [170 219])
+            ("CodeMirror: Autocomplete demo" section nil nil [219 337])
+            ("CodeMirror: Autocomplete demo" section nil nil [337 398])
+            ("CodeMirror: Autocomplete demo" section nil nil [398 518])
+            ("CodeMirror: Autocomplete demo" section (:members 
+              ( ("CodeMirror: Autocomplete demo" section (:members 
+                  ( ("here" anchor nil nil [1946 1949])
+                    ("here" anchor nil nil [1996 1999]))                  ) nil [529 2086]))              ) nil [518 2086])
+            ("CodeMirror.commands.autocomplete = function(cm) {
+        CodeMirror.showHint(cm, CodeMirror.javascriptHint);
+      }
+      var editor = CodeMirror.fromTextArea(document.getElementById(\"code\"), {
+        lineNumbers: true,
+        extraKeys: {\"Ctrl-Space\": \"autocomplete\"}
+      });" section nil nil [2086 2416]))          
+    :file "complete.html"
+    :pointmax 2416
+    :fsize 2415
+    :lastmodtime '(20853 19560 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!git!gwidc!skeleton!public!codemirror!demo!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

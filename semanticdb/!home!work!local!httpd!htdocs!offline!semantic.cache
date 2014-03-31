@@ -1,0 +1,123 @@
+;; Object offline/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "offline/"
+  :tables (list 
+   (semanticdb-table "index.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("电商平台线下服务" section nil nil [77 5753])
+            ("电商平台线下服务" section nil nil [5753 6413])
+            ("电商平台线下服务" section (:members 
+              ( ("首页" anchor nil nil [7424 7427])
+                ("关于我们" anchor nil nil [7468 7471])
+                ("联系我们" anchor nil nil [7519 7522])
+                ("服务内容 <b class="caret">" anchor nil nil [7729 7732])
+                ("用户查询" anchor nil nil [7888 7891])
+                ("报表统计" anchor nil nil [7938 7941])
+                ("商品查询" anchor nil nil [7988 7991])
+                ("新样式" anchor nil nil [8136 8139])
+                ("效果评估" anchor nil nil [8185 8188])
+                ("电商平台" section nil nil [8810 9172])
+                ("凤巢Plusbox样式" section nil nil [9172 9541])
+                ("阿拉丁最小圈" section (:members 
+                  ( ("First featurette headling. <span class="muted">It'll blow your mind." section nil nil [11353 11892])
+                    ("Oh yeah, it's that good. <span class="muted">See for yourself." section nil nil [11892 12425])
+                    ("And lastly, this one. <span class="muted">Checkmate." section (:members 
+                      ( ("Back to top" anchor nil nil [12913 12916])
+                        ("Privacy" anchor nil nil [12983 12986])
+                        ("Terms" anchor nil nil [13016 13019]))                      ) nil [12425 13249]))                  ) nil [9541 13249]))              ) nil [6413 13249])
+            ("!function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)" section nil nil [13249 13297])
+            ("!function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)" section nil nil [13297 13359])
+            ("!function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)" section nil nil [13359 13416])
+            ("!function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)" section nil nil [13416 13473])
+            ("!function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)" section nil nil [13473 13533])
+            ("!function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)" section nil nil [13533 13594])
+            ("!function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)" section nil nil [13594 13649])
+            ("!function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)" section nil nil [13649 13708])
+            ("!function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)" section nil nil [13708 13767])
+            ("!function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)" section nil nil [13767 13825])
+            ("!function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)" section nil nil [13825 13885])
+            ("!function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)" section nil nil [13885 13945])
+            ("!function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)" section nil nil [13945 14006])
+            ("!function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)" section nil nil [14006 14190]))          
+    :file "index.html"
+    :pointmax 14190
+    :fsize 14463
+    :lastmodtime '(20703 6253)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!local!httpd!htdocs!offline!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

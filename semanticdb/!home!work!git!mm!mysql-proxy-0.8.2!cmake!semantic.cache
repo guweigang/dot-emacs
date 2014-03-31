@@ -1,0 +1,19 @@
+;; Object cmake/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cmake/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("EXTRA_DIST" variable (:default-value ("Tar.cmake" "ChassisPlugin.cmake" "ChassisInstall.cmake")) nil [1 81]))          
+    :file "Makefile.am"
+    :pointmax 81
+    :fsize 80
+    :lastmodtime '(21022 63839 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!git!mm!mysql-proxy-0.8.2!cmake!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

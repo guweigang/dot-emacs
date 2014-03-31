@@ -1,0 +1,91 @@
+;; Object bullsoft.github.io/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bullsoft.github.io/"
+  :tables (list 
+   (semanticdb-table "index.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("The Bull Software Foundation" section nil nil [254 392])
+            ("&nbsp;" section (:members 
+              ( ("&nbsp;" anchor nil nil [408 411])
+                ("首页" anchor nil nil [585 588])
+                ("Solar Framework" anchor nil nil [1122 1125])
+                ("Aura Framework" anchor nil nil [1210 1213])
+                ("Phalcon Framework" anchor nil nil [1312 1315])
+                ("Emacs" anchor nil nil [1496 1499])
+                ("Make" anchor nil nil [1541 1544])
+                ("Perl6" anchor nil nil [1666 1669])
+                ("Cherokee" anchor nil nil [1711 1714])
+                ("GitHub" anchor nil nil [1887 1890])
+                ("加入我们" anchor nil nil [2030 2033])
+                ("开源" anchor nil nil [2250 2253])
+                ("现有成熟开源项目" anchor nil nil [2350 2353])
+                ("现有成熟开源项目" section (:members 
+                  ( ("PHP-Binlog" anchor nil nil [2578 2581])
+                    ("MySQL Replication Listener" anchor nil nil [2680 2683])
+                    ("PHP-Pinyin" anchor nil nil [2818 2821]))                  ) nil [2543 2951])
+                ("文档翻译" section (:members 
+                  ( ("Solar Framework" anchor nil nil [2985 2988])
+                    ("Aura Framework" anchor nil nil [3069 3072])
+                    ("Phalcon Framework" anchor nil nil [3167 3170]))                  ) nil [2951 3330])
+                ("捐助列表" section nil nil [3330 3970])
+                ("开源镜像" section (:members 
+                  ( ("网易" anchor nil nil [4072 4075])
+                    ("网易（希网）" anchor nil nil [4190 4193])
+                    ("搜狐" anchor nil nil [4313 4316])
+                    ("兰州大学" anchor nil nil [4432 4435])
+                    ("北京交通大学" anchor nil nil [4554 4557])
+                    ("上海交通大学" anchor nil nil [4682 4685])
+                    ("中国科学技术大学" anchor nil nil [4804 4807])
+                    ("天津大学" anchor nil nil [4932 4935])
+                    ("天津大学" anchor nil nil [5056 5059])
+                    ("东北大学" anchor nil nil [5178 5181])
+                    ("清华大学" anchor nil nil [5300 5303])
+                    ("大连理工大学" anchor nil nil [5424 5427]))                  ) nil [3970 5884]))              ) nil [392 5884])
+            ("$(function() {
+      var $menu = $('#ldd_menu');
+      $menu.children('li').each(function(){
+      var $this = $(this);
+      var $span = $this.children('span.drop');
+      $span.data('width',$span.width());
+
+      $this.bind('mouseenter',function(){
+      $menu.find('.ldd_submenu').stop(true,true).hide();
+      $span.stop().animate({'width':'510px'},300,function(){
+      $this.find('.ldd_submenu').slideDown(300);
+      });
+      }).bind('mouseleave',function(){
+      $this.find('.ldd_submenu').stop(true,true).hide();
+      $span.stop().animate({'width':$span.data('width')+'px'},300);
+      });
+      });
+      });" section nil nil [5884 5999])
+            ("$(function() {
+      var $menu = $('#ldd_menu');
+      $menu.children('li').each(function(){
+      var $this = $(this);
+      var $span = $this.children('span.drop');
+      $span.data('width',$span.width());
+
+      $this.bind('mouseenter',function(){
+      $menu.find('.ldd_submenu').stop(true,true).hide();
+      $span.stop().animate({'width':'510px'},300,function(){
+      $this.find('.ldd_submenu').slideDown(300);
+      });
+      }).bind('mouseleave',function(){
+      $this.find('.ldd_submenu').stop(true,true).hide();
+      $span.stop().animate({'width':$span.data('width')+'px'},300);
+      });
+      });
+      });" section nil nil [5999 6692]))          
+    :file "index.html"
+    :pointmax 6692
+    :fsize 7133
+    :lastmodtime '(20992 55478 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!git!bullsoft.github.io!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

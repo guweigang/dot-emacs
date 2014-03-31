@@ -1,0 +1,397 @@
+;; Object xmlrpc/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "xmlrpc/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("AM_CPPFLAGS" variable (:default-value ("-I$(top_srcdir)/src" "-I$(top_builddir)/include" "-I$(top_srcdir)/include")) nil [1 85])
+            ("lib_LTLIBRARIES" variable (:default-value ("libcxxtools-xmlrpc.la")) nil [86 126])
+            ("libcxxtools_xmlrpc_la_SOURCES" variable (:default-value ("client.cpp" "clientimpl.cpp" "httpclient.cpp" "httpclientimpl.cpp" "formatter.cpp" "responder.cpp" "scanner.cpp" "service.cpp")) nil [127 295])
+            ("noinst_HEADERS" variable (:default-value ("clientimpl.h" "httpclientimpl.h")) nil [296 349])
+            ("libcxxtools_xmlrpc_la_LIBADD" variable (:default-value ("$(top_builddir)/src/libcxxtools.la" "$(top_builddir)/src/http/libcxxtools-http.la")) nil [350 461])
+            ("libcxxtools_xmlrpc_la_LDFLAGS" variable (:default-value ("-version-info" "@sonumber@" "@SHARED_LIB_FLAG@")) nil [462 537]))          
+    :file "Makefile.am"
+    :pointmax 538
+    :fsize 537
+    :lastmodtime '(20853 59019 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "responder.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cxxtools/xmlrpc/responder.h" include nil nil [1411 1449])
+            ("cxxtools/xmlrpc/service.h" include nil nil [1450 1486])
+            ("cxxtools/remoteexception.h" include nil nil [1487 1524])
+            ("cxxtools/xml/xmlerror.h" include nil nil [1525 1559])
+            ("cxxtools/xml/startelement.h" include nil nil [1560 1598])
+            ("cxxtools/xml/characters.h" include nil nil [1599 1635])
+            ("cxxtools/xml/endelement.h" include nil nil [1636 1672])
+            ("cxxtools/http/reply.h" include nil nil [1673 1705])
+            ("cxxtools/utf8codec.h" include nil nil [1706 1737])
+            ("cxxtools/log.h" include nil nil [1738 1763])
+            ("cxxtools" type
+               (:members 
+                  ( ("xmlrpc" type
+                       (:members 
+                          ( ("XmlRpcResponder" function
+                               (:constructor-flag t
+                                :parent "XmlRpcResponder"
+                                :arguments 
+                                  ( ("service" variable
+                                       (:reference 1
+                                        :type ("Service" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1881 1898]))                                  
+                                :type ("XmlRpcResponder" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1848 2151])
+                            ("XmlRpcResponder" function
+                               (:destructor-flag t
+                                :parent "XmlRpcResponder"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2154 2250])
+                            ("beginRequest" function
+                               (:parent "XmlRpcResponder"
+                                :arguments 
+                                  ( ("is" variable
+                                       (:reference 1
+                                        :type ("std::istream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2288 2305])
+                                    ("request" variable
+                                       (:reference 1
+                                        :type ("http::Request" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2306 2329]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2253 2412])
+                            ("readBody" function
+                               (:parent "XmlRpcResponder"
+                                :arguments 
+                                  ( ("is" variable
+                                       (:reference 1
+                                        :type ("std::istream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2453 2470]))                                  
+                                :type ("std::size_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2415 3253])
+                            ("replyError" function
+                               (:parent "XmlRpcResponder"
+                                :arguments 
+                                  ( ("os" variable
+                                       (:reference 1
+                                        :type ("std::ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3289 3306])
+                                    ("request" variable
+                                       (:reference 1
+                                        :type ("http::Request" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3307 3330])
+                                    ("reply" variable
+                                       (:reference 1
+                                        :type ("http::Reply" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3368 3387])
+                                    ("ex" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::exception" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3388 3413]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [3256 4527])
+                            ("reply" function
+                               (:parent "XmlRpcResponder"
+                                :arguments 
+                                  ( ("os" variable
+                                       (:reference 1
+                                        :type ("std::ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4558 4575])
+                                    ("request" variable
+                                       (:reference 1
+                                        :type ("http::Request" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4576 4599])
+                                    ("reply" variable
+                                       (:reference 1
+                                        :type ("http::Reply" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4600 4619]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [4530 5745])
+                            ("advance" function
+                               (:parent "XmlRpcResponder"
+                                :arguments 
+                                  ( ("node" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("cxxtools::xml::Node" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5778 5810]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [5748 10683]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1828 10685]))                  
+                :type "namespace")
+                nil [1806 10688]))          
+    :file "responder.cpp"
+    :pointmax 10689
+    :fsize 10688
+    :lastmodtime '(20853 59019 0 0)
+    :unmatched-syntax '((semantic-list 1775 . 1804) (symbol 1765 . 1775) (string 1776 . 1803))
+    )
+   (semanticdb-table "scanner.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cxxtools/xmlrpc/scanner.h" include (:system-flag t) nil [1412 1448])
+            ("cxxtools/xml/startelement.h" include (:system-flag t) nil [1449 1487])
+            ("cxxtools/xml/endelement.h" include (:system-flag t) nil [1488 1524])
+            ("cxxtools/xml/characters.h" include (:system-flag t) nil [1525 1561])
+            ("cxxtools/serializationinfo.h" include (:system-flag t) nil [1562 1601])
+            ("cxxtools/serializationerror.h" include (:system-flag t) nil [1602 1642])
+            ("cxxtools/deserializerbase.h" include (:system-flag t) nil [1643 1681])
+            ("cxxtools/composer.h" include (:system-flag t) nil [1682 1712])
+            ("cxxtools" type
+               (:members 
+                  ( ("xmlrpc" type
+                       (:members 
+                          ( ("unnamed" type
+                               (:members 
+                                  ( ("throwSerializationError" function
+                                       (:arguments 
+                                          ( ("msg" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [1801 1818]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [1772 1901]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1756 1903])
+                            ("begin" function
+                               (:parent "Scanner"
+                                :arguments 
+                                  ( ("handler" variable
+                                       (:reference 1
+                                        :type ("DeserializerBase" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1925 1951])
+                                    ("composer" variable
+                                       (:reference 1
+                                        :type ("IComposer" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1952 1972]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1905 2083])
+                            ("advance" function
+                               (:parent "Scanner"
+                                :arguments 
+                                  ( ("node" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("cxxtools::xml::Node" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2107 2139]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [2085 12656]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1736 12659]))                  
+                :type "namespace")
+                nil [1714 12662]))          
+    :file "scanner.cpp"
+    :pointmax 12663
+    :fsize 12662
+    :lastmodtime '(20853 59019 0 0)
+    :unmatched-syntax '((string 1819 . 1846) (punctuation 1817 . 1818))
+    )
+   (semanticdb-table "formatter.cpp"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "formatter.cpp"
+    :pointmax 3073
+    :fsize 3072
+    :lastmodtime '(20853 59019 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "clientimpl.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cxxtools/xmlrpc/client.h" include nil nil [1412 1447])
+            ("clientimpl.h" include nil nil [1448 1471])
+            ("cxxtools/remoteprocedure.h" include nil nil [1472 1509])
+            ("cxxtools/xml/xmlerror.h" include nil nil [1510 1544])
+            ("cxxtools/xml/startelement.h" include nil nil [1545 1583])
+            ("cxxtools/xml/characters.h" include nil nil [1584 1620])
+            ("cxxtools/xml/endelement.h" include nil nil [1621 1657])
+            ("cxxtools/selectable.h" include nil nil [1658 1690])
+            ("cxxtools/utf8codec.h" include nil nil [1691 1722])
+            ("cxxtools/xmlrpc/errorcodes.h" include nil nil [1723 1762])
+            ("cxxtools/serializationerror.h" include nil nil [1763 1803])
+            ("cxxtools/log.h" include nil nil [1804 1829])
+            ("cxxtools" type
+               (:members 
+                  ( (">>=" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("si" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cxxtools::SerializationInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1923 1961])
+                            ("fault" variable
+                               (:reference 1
+                                :type ("RemoteException" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1962 1985]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1898 2185])
+                    ("<<=" function
+                       (:operator-flag t
+                        :typemodifiers ("inline")
+                        :arguments 
+                          ( ("si" variable
+                               (:reference 1
+                                :type ("cxxtools::SerializationInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2213 2245])
+                            ("fault" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("RemoteException" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2246 2275]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2188 2375])
+                    ("xmlrpc" type
+                       (:members 
+                          ( ("unnamed" type
+                               (:members 
+                                  ( ("methodCall" variable
+                                       (:typemodifiers ("static")
+                                        :constant-flag t
+                                        :type ("String" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [2414 2461])
+                                    ("methodName" variable
+                                       (:typemodifiers ("static")
+                                        :constant-flag t
+                                        :type ("String" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [2466 2513])
+                                    ("params" variable
+                                       (:typemodifiers ("static")
+                                        :constant-flag t
+                                        :type ("String" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [2518 2557])
+                                    ("param" variable
+                                       (:typemodifiers ("static")
+                                        :constant-flag t
+                                        :type ("String" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [2562 2599]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [2398 2601])
+                            ("ClientImpl" function
+                               (:constructor-flag t
+                                :parent "ClientImpl"
+                                :type ("ClientImpl" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2603 2885])
+                            ("ClientImpl" function
+                               (:destructor-flag t
+                                :parent "ClientImpl"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2887 2916])
+                            ("beginCall" function
+                               (:parent "ClientImpl"
+                                :arguments 
+                                  ( ("r" variable
+                                       (:reference 1
+                                        :type ("IComposer" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2946 2959])
+                                    ("method" variable
+                                       (:reference 1
+                                        :type ("IRemoteProcedure" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2960 2985])
+                                    ("argv" variable
+                                       (:pointer 2
+                                        :type ("IDecomposer" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2986 3005])
+                                    ("argc" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3006 3020]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2919 3201])
+                            ("endCall" function
+                               (:parent "ClientImpl"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [3204 3252])
+                            ("call" function
+                               (:parent "ClientImpl"
+                                :arguments 
+                                  ( ("r" variable
+                                       (:reference 1
+                                        :type ("IComposer" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3277 3290])
+                                    ("method" variable
+                                       (:reference 1
+                                        :type ("IRemoteProcedure" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3291 3316])
+                                    ("argv" variable
+                                       (:pointer 2
+                                        :type ("IDecomposer" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3317 3336])
+                                    ("argc" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3337 3351]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [3255 4058])
+                            ("activeProcedure" function
+                               (:pointer 1
+                                :parent "ClientImpl"
+                                :constant-flag t
+                                :type ("IRemoteProcedure" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [4061 4144])
+                            ("cancel" function
+                               (:parent "ClientImpl"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [4146 4192])
+                            ("onReadReplyBegin" function
+                               (:parent "ClientImpl"
+                                :arguments 
+                                  ( ("is" variable
+                                       (:reference 1
+                                        :type ("std::istream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4228 4245]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [4194 4269])
+                            ("onReadReply" function
+                               (:parent "ClientImpl"
+                                :type ("std::size_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [4271 5372])
+                            ("onReplyFinished" function
+                               (:parent "ClientImpl"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [5375 5908])
+                            ("prepareRequest" function
+                               (:parent "ClientImpl"
+                                :arguments 
+                                  ( ("name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("String" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5943 5962])
+                                    ("argv" variable
+                                       (:pointer 2
+                                        :type ("IDecomposer" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5963 5982])
+                                    ("argc" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5983 5997]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [5911 6424])
+                            ("advance" function
+                               (:parent "ClientImpl"
+                                :arguments 
+                                  ( ("node" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("cxxtools::xml::Node" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6452 6484]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [6427 10182]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2378 10185]))                  
+                :type "namespace")
+                nil [1875 10188]))          
+    :file "clientimpl.cpp"
+    :pointmax 10189
+    :fsize 10188
+    :lastmodtime '(20853 59019 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "clientimpl.h"
+    :file "clientimpl.h"
+    :fsize 3619
+    :lastmodtime '(20853 59019 0 0)
+    )
+   )
+  :file "!home!work!git!cxxtools!src!xmlrpc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

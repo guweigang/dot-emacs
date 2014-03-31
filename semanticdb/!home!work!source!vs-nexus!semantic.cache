@@ -1,0 +1,18 @@
+;; Object vs-nexus/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "vs-nexus/"
+  :tables (list 
+   (semanticdb-table "wrapperInfo.json"
+    :major-mode 'js-mode
+    :tags nil
+    :file "wrapperInfo.json"
+    :pointmax 124807
+    :fsize 131701
+    :lastmodtime '(20899 40188 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!source!vs-nexus!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

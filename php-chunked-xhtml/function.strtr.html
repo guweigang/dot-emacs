@@ -1,0 +1,165 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>转换指定字符</title>
+
+ </head>
+ <body><div class="manualnavbar" style="text-align: center;">
+ <div class="prev" style="text-align: left; float: left;"><a href="function.strtoupper.html">strtoupper</a></div>
+ <div class="next" style="text-align: right; float: right;"><a href="function.substr-compare.html">substr_compare</a></div>
+ <div class="up"><a href="ref.strings.html">字符串函数</a></div>
+ <div class="home"><a href="index.html">PHP Manual</a></div>
+</div><hr /><div id="function.strtr" class="refentry">
+ <div class="refnamediv">
+  <h1 class="refname">strtr</h1>
+  <p class="verinfo">(PHP 4, PHP 5)</p><p class="refpurpose"><span class="refname">strtr</span> &mdash; <span class="dc-title">转换指定字符</span></p>
+
+ </div>
+ 
+ <div class="refsect1 description" id="refsect1-function.strtr-description">
+  <h3 class="title">说明</h3>
+  <div class="methodsynopsis dc-description">
+   <span class="type">string</span> <span class="methodname"><strong>strtr</strong></span>
+    ( <span class="methodparam"><span class="type">string</span> <code class="parameter">$str</code></span>
+   , <span class="methodparam"><span class="type">string</span> <code class="parameter">$from</code></span>
+   , <span class="methodparam"><span class="type">string</span> <code class="parameter">$to</code></span>
+   )</div>
+
+  <div class="methodsynopsis dc-description">
+   <span class="type">string</span> <span class="methodname"><strong>strtr</strong></span>
+    ( <span class="methodparam"><span class="type">string</span> <code class="parameter">$str</code></span>
+   , <span class="methodparam"><span class="type">array</span> <code class="parameter">$replace_pairs</code></span>
+   )</div>
+
+  <p class="para rdfs-comment">
+   该函数返回 <em><code class="parameter">str</code></em> 的一个副本，并将在 <em><code class="parameter">from</code></em> 中指定的字符转换为 <em><code class="parameter">to</code></em> 中相应的字符。
+  </p>
+  <p class="para">
+   如果 <em><code class="parameter">from</code></em> 与 <em><code class="parameter">to</code></em> 长度不相等，那么多余的字符部分将被忽略。
+  </p>
+ </div>
+
+
+ <div class="refsect1 parameters" id="refsect1-function.strtr-parameters">
+  <h3 class="title">参数</h3>
+  <p class="para">
+   <dl>
+
+    <dt>
+
+     <span class="term"><em><code class="parameter">str</code></em></span>
+     <dd>
+
+      <p class="para">
+       待转换的<span class="type"><span class="type 字符串">字符串</span></span>。
+      </p>
+     </dd>
+
+    </dt>
+
+    <dt>
+
+     <span class="term"><em><code class="parameter">from</code></em></span>
+     <dd>
+
+      <p class="para">
+       <span class="type"><span class="type 字符串">字符串</span></span>中与将要被转换的目的字符 <em><code class="parameter">to</code></em> 相对应的源字符。
+      </p>
+     </dd>
+
+    </dt>
+
+    <dt>
+
+     <span class="term"><em><code class="parameter">to</code></em></span>
+     <dd>
+
+      <p class="para">
+       <span class="type"><span class="type 字符串">字符串</span></span>中与将要被转换的字符 <em><code class="parameter">from</code></em> 相对应的目的字符。
+      </p>
+     </dd>
+
+    </dt>
+
+    <dt>
+
+     <span class="term"><em><code class="parameter">replace_pairs</code></em></span>
+     <dd>
+
+      <p class="para">
+       参数 <em><code class="parameter">replace_pairs</code></em> 可以用来取代 <em><code class="parameter">to</code></em> 和 <em><code class="parameter">from</code></em> 参数，因为它是以  <em>array(&#039;from&#039; =&gt; &#039;to&#039;, ...)</em> 格式出现的数组。
+      </p>
+     </dd>
+
+    </dt>
+
+   </dl>
+
+  </p>
+ </div>
+
+ 
+ <div class="refsect1 returnvalues" id="refsect1-function.strtr-returnvalues">
+  <h3 class="title">返回值</h3>
+  <p class="para">
+   返回转换后的<span class="type"><span class="type 字符串">字符串</span></span>。
+  </p>
+  <p class="para">
+   如果 <em><code class="parameter">replace_pairs</code></em> 中包含一个空<span class="type"><span class="type 字符串">字符串</span></span>（<em>&quot;&quot;</em>）键，那么将返回 <strong><code>FALSE</code></strong>。
+  </p>
+ </div>
+
+
+ <div class="refsect1 examples" id="refsect1-function.strtr-examples">
+  <h3 class="title">范例</h3>
+  <p class="para">
+   <div class="example" id="example-4777">
+    <p><strong>Example #1  <span class="function"><strong>strtr()</strong></span> 范例</strong></p>
+    <div class="example-contents">
+<div class="phpcode"><code><span style="color: #000000">
+<span style="color: #0000BB">&lt;?php<br />$addr&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">strtr</span><span style="color: #007700">(</span><span style="color: #0000BB">$addr</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">"äåö"</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">"aao"</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">?&gt;</span>
+</span>
+</code></div>
+    </div>
+
+   </div>
+  </p>
+  <p class="para">
+   可以使用两个参数调用  <span class="function"><strong>strtr()</strong></span>。如果被以两个参数调用，它将以不同的方式运行：<em><code class="parameter">from</code></em> 必须是一组待转换的字符串对。 <span class="function"><strong>strtr()</strong></span> 总是首先尽可能尝试最长的匹配，并且它不会处理已经被转换过的部分。
+  </p>
+  <div class="example" id="example-4778">
+   <p><strong>Example #2 使用两个参数的  <span class="function"><strong>strtr()</strong></span> 范例</strong></p>
+    <div class="example-contents">
+<div class="phpcode"><code><span style="color: #000000">
+<span style="color: #0000BB">&lt;?php<br />$trans&nbsp;</span><span style="color: #007700">=&nbsp;array(</span><span style="color: #DD0000">"hello"&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">"hi"</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">"hi"&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">"hello"</span><span style="color: #007700">);<br />echo&nbsp;</span><span style="color: #0000BB">strtr</span><span style="color: #007700">(</span><span style="color: #DD0000">"hi&nbsp;all,&nbsp;I&nbsp;said&nbsp;hello"</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$trans</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">?&gt;</span>
+</span>
+</code></div>
+    </div>
+
+    <div class="example-contents"><p>以上例程会输出：</p></div>
+    <div class="example-contents screen">
+<div class="cdata"><pre>
+hello all, I said hi
+</pre></div>
+    </div>
+  </div>
+ </div>
+
+
+ <div class="refsect1 seealso" id="refsect1-function.strtr-seealso">
+  <h3 class="title">参见</h3>
+  <p class="para">
+   <ul class="simplelist">
+    <li class="member"> <span class="function"><a href="function.str-replace.html" class="function" rel="rdfs-seeAlso">str_replace()</a> - 子字符串替换</span></li>
+    <li class="member"> <span class="function"><a href="function.preg-replace.html" class="function" rel="rdfs-seeAlso">preg_replace()</a> - 执行一个正则表达式的搜索和替换</span></li>
+   </ul>
+  </p>
+ </div>
+
+</div><hr /><div class="manualnavbar" style="text-align: center;">
+ <div class="prev" style="text-align: left; float: left;"><a href="function.strtoupper.html">strtoupper</a></div>
+ <div class="next" style="text-align: right; float: right;"><a href="function.substr-compare.html">substr_compare</a></div>
+ <div class="up"><a href="ref.strings.html">字符串函数</a></div>
+ <div class="home"><a href="index.html">PHP Manual</a></div>
+</div></body></html>

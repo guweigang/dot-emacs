@@ -1,0 +1,26 @@
+;; Object share/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "share/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("EXTRA_DIST" variable (:default-value ("errmsg.txt")) nil [796 819])
+            ("dist-hook" function nil nil [820 1174])
+            ("all-local" function (:arguments ("english/errmsg.sys")) nil [1175 1205])
+            ("english/errmsg.sys" function (:arguments ("errmsg.txt")) nil [1334 1450])
+            ("install-data-local" function nil nil [1451 1975])
+            ("uninstall-local" function nil nil [2047 2100])
+            ("distclean-local" function nil nil [2101 2140])
+            ("link_sources" function nil nil [2154 2168]))          
+    :file "Makefile.am"
+    :pointmax 2221
+    :fsize 2220
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax '((symbol 2212 . 2220) (punctuation 2211 . 2212) (punctuation 2210 . 2211) (symbol 2209 . 2210) (bol 2209 . 2209))
+    )
+   )
+  :file "!home!work!git!mm!mysql-5.1.71!sql!share!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,31 @@
+;; Object test/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "test/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("noinst_PROGRAMS" variable (:default-value ("alltests")) nil [1 99])
+            ("AM_CPPFLAGS" variable (:default-value ("-I$(top_srcdir)/src" "-I$(top_builddir)/include" "-I$(top_srcdir)/include")) nil [100 184])
+            ("alltests_SOURCES" variable (:default-value ("arg-test.cpp" "base64-test.cpp" "binrpc-test.cpp" "binserializer-test.cpp" "cache-test.cpp" "clock-test.cpp" "csvdeserializer-test.cpp" "csvserializer-test.cpp" "convert-test.cpp" "join-test.cpp" "json-test.cpp" "jsondeserializer-test.cpp" "jsonrpc-test.cpp" "jsonrpchttp-test.cpp" "jsonserializer-test.cpp" "md5-test.cpp" "pool-test.cpp" "properties-test.cpp" "serializationinfo-test.cpp" "smartptr-test.cpp" "split-test.cpp" "string-test.cpp" "test-main.cpp" "trim-test.cpp" "uri-test.cpp" "xmlreader-test.cpp" "xmlrpc-test.cpp" "xmlserializer-test.cpp")) nil [185 873])
+            ("alltests_SOURCES" variable (:default-value ("iconvstream-test.cpp")) nil [894 938])
+            ("alltests_LDADD" variable (:default-value ("$(top_builddir)/src/libcxxtools.la" "$(top_builddir)/src/bin/libcxxtools-bin.la" "$(top_builddir)/src/http/libcxxtools-http.la" "$(top_builddir)/src/json/libcxxtools-json.la" "$(top_builddir)/src/unit/libcxxtools-unit.la" "$(top_builddir)/src/xmlrpc/libcxxtools-xmlrpc.la")) nil [945 1274])
+            ("serializer_bench_SOURCES" variable (:default-value ("serializer-bench.cpp")) nil [1275 1323])
+            ("serializer_bench_LDADD" variable (:default-value ("$(top_builddir)/src/libcxxtools.la" "$(top_builddir)/src/bin/libcxxtools-bin.la")) nil [1324 1437])
+            ("rpcbenchclient_SOURCES" variable (:default-value ("rpcbenchclient.cpp")) nil [1438 1482])
+            ("rpcbenchclient_LDADD" variable (:default-value ("$(top_builddir)/src/libcxxtools.la" "$(top_builddir)/src/http/libcxxtools-http.la" "$(top_builddir)/src/xmlrpc/libcxxtools-xmlrpc.la" "$(top_builddir)/src/bin/libcxxtools-bin.la" "$(top_builddir)/src/json/libcxxtools-json.la")) nil [1483 1763])
+            ("rpcbenchserver_SOURCES" variable (:default-value ("rpcbenchserver.cpp")) nil [1764 1808])
+            ("rpcbenchserver_LDADD" variable (:default-value ("$(top_builddir)/src/libcxxtools.la" "$(top_builddir)/src/http/libcxxtools-http.la" "$(top_builddir)/src/xmlrpc/libcxxtools-xmlrpc.la" "$(top_builddir)/src/bin/libcxxtools-bin.la" "$(top_builddir)/src/json/libcxxtools-json.la")) nil [1809 2089])
+            ("AM_CXXFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [2090 2122])
+            ("AM_LDFLAGS" variable (:default-value ("$(PTHREAD_LIBS)")) nil [2122 2151]))          
+    :file "Makefile.am"
+    :pointmax 2151
+    :fsize 2150
+    :lastmodtime '(20859 30360 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!git!php-hogdeer!cxxtools!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,23 @@
+;; Object unit/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "unit/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("AM_CPPFLAGS" variable (:default-value ("-I$(top_srcdir)/src" "-I$(top_builddir)/include" "-I$(top_srcdir)/include")) nil [1 85])
+            ("lib_LTLIBRARIES" variable (:default-value ("libcxxtools-unit.la")) nil [86 124])
+            ("libcxxtools_unit_la_SOURCES" variable (:default-value ("application.cpp" "testcase.cpp" "test.cpp" "testsuite.cpp" "assertion.cpp" "reporter.cpp" "testcontext.cpp" "testprotocol.cpp")) nil [125 291])
+            ("libcxxtools_unit_la_LIBADD" variable (:default-value ("$(top_builddir)/src/libcxxtools.la")) nil [292 356])
+            ("libcxxtools_unit_la_LDFLAGS" variable (:default-value ("-version-info" "@sonumber@" "@SHARED_LIB_FLAG@")) nil [357 430]))          
+    :file "Makefile.am"
+    :pointmax 431
+    :fsize 430
+    :lastmodtime '(20859 30360 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!git!php-hogdeer!cxxtools!src!unit!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

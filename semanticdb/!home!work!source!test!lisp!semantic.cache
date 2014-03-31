@@ -1,0 +1,19 @@
+;; Object lisp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lisp/"
+  :tables (list 
+   (semanticdb-table "test.scheme"
+    :major-mode 'scheme-mode
+    :tags 
+        '( ("test" variable (:default-value ((16 . 23))) nil [1 24]))          
+    :file "test.scheme"
+    :pointmax 30
+    :fsize 29
+    :lastmodtime '(20797 26138)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!source!test!lisp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

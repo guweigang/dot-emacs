@@ -1,0 +1,24 @@
+;; Object bin/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bin/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("AM_CPPFLAGS" variable (:default-value ("-I$(top_srcdir)/src" "-I$(top_builddir)/include" "-I$(top_srcdir)/include")) nil [1 85])
+            ("lib_LTLIBRARIES" variable (:default-value ("libcxxtools-bin.la")) nil [86 123])
+            ("noinst_HEADERS" variable (:default-value ("responder.h" "rpcclientimpl.h" "rpcserverimpl.h" "scanner.h" "socket.h" "worker.h")) nil [124 231])
+            ("libcxxtools_bin_la_SOURCES" variable (:default-value ("deserializer.cpp" "formatter.cpp" "responder.cpp" "socket.cpp" "rpcclient.cpp" "rpcclientimpl.cpp" "rpcserver.cpp" "rpcserverimpl.cpp" "scanner.cpp" "valueparser.cpp" "worker.cpp")) nil [232 453])
+            ("libcxxtools_bin_la_LIBADD" variable (:default-value ("$(top_builddir)/src/libcxxtools.la")) nil [454 517])
+            ("libcxxtools_bin_la_LDFLAGS" variable (:default-value ("-version-info" "@sonumber@" "@SHARED_LIB_FLAG@")) nil [518 590]))          
+    :file "Makefile.am"
+    :pointmax 591
+    :fsize 590
+    :lastmodtime '(20853 59036 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!git!cxxtools!src!bin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

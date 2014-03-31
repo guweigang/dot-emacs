@@ -1,0 +1,36 @@
+;; Object views/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "views/"
+  :tables (list 
+   (semanticdb-table "tab.js"
+    :major-mode 'js-mode
+    :tags nil
+    :file "tab.js"
+    :pointmax 1013
+    :fsize 1012
+    :lastmodtime '(21112 33592 0 0)
+    :unmatched-syntax '((PAREN_BLOCK 7 . 1011))
+    )
+   (semanticdb-table "tab-snippet.js"
+    :major-mode 'js-mode
+    :tags nil
+    :file "tab-snippet.js"
+    :pointmax 712
+    :fsize 711
+    :lastmodtime '(21112 33592 0 0)
+    :unmatched-syntax '((PAREN_BLOCK 7 . 710))
+    )
+   (semanticdb-table "my-form.js"
+    :major-mode 'js-mode
+    :tags nil
+    :file "my-form.js"
+    :pointmax 2979
+    :fsize 2978
+    :lastmodtime '(21112 33592 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!local!httpd!htdocs!adbox!form-builder!assets!js!views!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

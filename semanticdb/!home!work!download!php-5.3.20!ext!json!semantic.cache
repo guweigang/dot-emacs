@@ -1,0 +1,281 @@
+;; Object json/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "json/"
+  :tables (list 
+   (semanticdb-table "php_json.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("PHP_JSON_H" variable (:constant-flag t) nil [1172 1182])
+            ("PHP_JSON_VERSION" variable (:constant-flag t) nil [1192 1208])
+            ("ext/standard/php_smart_str.h" include nil nil [1217 1256])
+            ("json_module_entry" variable
+               (:typemodifiers ("extern")
+                :type ("zend_module_entry" type (:type "class") nil nil))
+                nil [1258 1301])
+            ("phpext_json_ptr" variable (:constant-flag t) nil [1310 1325])
+            ("PHP_JSON_API" variable (:constant-flag t) nil [1451 1463])
+            ("error_code" variable (:type "int") nil [1549 1564])
+            ("JSON_G" variable (:constant-flag t) nil [1688 1694])
+            ("php_json_encode" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("smart_str" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1757 1772])
+                    ("val" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1773 1783])
+                    ("options" variable (:type "int") (reparse-symbol arg-sub-list) [1784 1805])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1796 1806]))                  
+                :type "void")
+                nil [1736 1807])
+            ("php_json_decode" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1842 1861])
+                    ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1862 1872])
+                    ("str_len" variable (:type "int") (reparse-symbol arg-sub-list) [1873 1885])
+                    ("assoc" variable (:type ("zend_bool" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1886 1902])
+                    ("depth" variable (:type "long") (reparse-symbol arg-sub-list) [1903 1923])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1914 1924]))                  
+                :type "void")
+                nil [1821 1925])
+            ("PHP_JSON_HEX_TAG" variable (:constant-flag t) nil [1935 1951])
+            ("PHP_JSON_HEX_AMP" variable (:constant-flag t) nil [1967 1983])
+            ("PHP_JSON_HEX_APOS" variable (:constant-flag t) nil [1999 2016])
+            ("PHP_JSON_HEX_QUOT" variable (:constant-flag t) nil [2032 2049])
+            ("PHP_JSON_FORCE_OBJECT" variable (:constant-flag t) nil [2065 2086])
+            ("PHP_JSON_NUMERIC_CHECK" variable (:constant-flag t) nil [2102 2124])
+            ("PHP_JSON_OUTPUT_ARRAY" variable (:constant-flag t) nil [2141 2162])
+            ("PHP_JSON_OUTPUT_OBJECT" variable (:constant-flag t) nil [2173 2195]))          
+    :file "php_json.h"
+    :pointmax 2361
+    :fsize 2360
+    :lastmodtime '(20689 55724 0 0)
+    :unmatched-syntax '((symbol "PHPAPI" 1808 . 1820) (symbol "PHPAPI" 1723 . 1735) (semantic-list 1588 . 1594) (symbol 1565 . 1588) (semantic-list 1541 . 1547) (symbol 1516 . 1541))
+    :lexical-table 
+        '(("PHP_JSON_HEX_QUOT" . ((semantic-list "(1<<3)" 2050 . 2056)))
+          ("PHP_JSON_NUMERIC_CHECK" . ((semantic-list "(1<<5)" 2125 . 2131)))
+          ("PHP_JSON_HEX_AMP" . ((semantic-list "(1<<1)" 1984 . 1990)))
+          ("PHP_JSON_HEX_APOS" . ((semantic-list "(1<<2)" 2017 . 2023)))
+          ("phpext_json_ptr" . ((punctuation "&" 1326 . 1327) (symbol "json_module_entry" 1327 . 1344)))
+          ("PHP_JSON_API" . ((symbol "PHPAPI" 1464 . 1470)))
+          ("PHP_JSON_FORCE_OBJECT" . ((semantic-list "(1<<4)" 2087 . 2093)))
+          ("PHP_JSON_OUTPUT_ARRAY" . ((number "0" 2163 . 2164)))
+          ("PHP_JSON_H")
+          ("PHP_JSON_VERSION" . ((string "\"1.2.1\"" 1209 . 1216)))
+          ("JSON_G" (spp-arg-list ("v") 1694 . 1697) . ((semantic-list "(json_globals.v)" 1698 . 1714)))
+          ("PHP_JSON_HEX_TAG" . ((semantic-list "(1<<0)" 1952 . 1958)))
+          ("PHP_JSON_OUTPUT_OBJECT" . ((number "1" 2196 . 2197)))
+          )
+
+    )
+   (semanticdb-table "json.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("php.h" include nil nil [1194 1210])
+            ("php_ini.h" include nil nil [1211 1231])
+            ("ext/standard/info.h" include nil nil [1232 1262])
+            ("ext/standard/php_smart_str.h" include nil nil [1263 1302])
+            ("utf8_to_utf16.h" include nil nil [1303 1329])
+            ("JSON_parser.h" include nil nil [1330 1354])
+            ("php_json.h" include nil nil [1355 1376])
+            ("PHP_MINFO_FUNCTION" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("json" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1404 1409]))                  
+                :type "int")
+                nil [1378 1410])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("json_encode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1431 1443]))                  
+                :type "int")
+                nil [1411 1444])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("json_decode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1465 1477]))                  
+                :type "int")
+                nil [1445 1478])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("json_last_error" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1499 1515]))                  
+                :type "int")
+                nil [1479 1516])
+            ("digits" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "char")
+                nil [1518 1566])
+            ("json_functions" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type ("function_entry" type (:type "class") nil nil))
+                nil [2001 2198])
+            ("PHP_MINIT_FUNCTION" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("json" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2252 2257]))                  
+                :type "int")
+                nil [2226 3438])
+            ("PHP_GINIT_FUNCTION" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("json" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3505 3510]))                  
+                :type "int")
+                nil [3479 3545])
+            ("json_module_entry" variable (:type ("zend_module_entry" type (:type "class") nil nil)) nil [3587 3846])
+            ("PHP_MINFO_FUNCTION" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("json" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3967 3972]))                  
+                :type "int")
+                nil [3941 4157])
+            ("json_escape_string" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("smart_str" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4200 4215])
+                    ("s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4216 4224])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [4225 4233])
+                    ("options" variable (:type "int") (reparse-symbol arg-sub-list) [4234 4255])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4246 4256]))                  
+                :type "void")
+                nil [4169 4257])
+            ("json_determine_array_type" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("val" variable
+                       (:pointer 2
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4296 4316])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4307 4317]))                  
+                :type "int")
+                nil [4259 4906])
+            ("json_encode_array" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("smart_str" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4948 4963])
+                    ("val" variable
+                       (:pointer 2
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4964 4975])
+                    ("options" variable (:type "int") (reparse-symbol arg-sub-list) [4976 4997])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4988 4998]))                  
+                :type "void")
+                nil [4918 7403])
+            ("REVERSE16" variable (:constant-flag t) nil [7423 7432])
+            ("json_escape_string" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("smart_str" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7565 7580])
+                    ("s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7581 7589])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [7590 7598])
+                    ("options" variable (:type "int") (reparse-symbol arg-sub-list) [7599 7620])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7611 7621]))                  
+                :type "void")
+                nil [7534 10695])
+            ("php_json_encode" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("smart_str" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10741 10756])
+                    ("val" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10757 10767])
+                    ("options" variable (:type "int") (reparse-symbol arg-sub-list) [10768 10789])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10780 10790]))                  
+                :type "void")
+                nil [10720 11922])
+            ("php_json_decode" function
+               (:arguments 
+                  ( ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11968 11987])
+                    ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11988 11998])
+                    ("str_len" variable (:type "int") (reparse-symbol arg-sub-list) [11999 12011])
+                    ("assoc" variable (:type ("zend_bool" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12012 12028])
+                    ("depth" variable (:type "long") (reparse-symbol arg-sub-list) [12029 12049])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12040 12050]))                  
+                :type "void")
+                nil [11947 13461])
+            ("PHP_FUNCTION" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("json_encode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13602 13614]))                  
+                :type "int")
+                nil [13582 13960])
+            ("PHP_FUNCTION" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("json_decode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14121 14133]))                  
+                :type "int")
+                nil [14101 14533])
+            ("PHP_FUNCTION" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("json_last_error" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14656 14672]))                  
+                :type "int")
+                nil [14636 14772]))          
+    :file "json.c"
+    :pointmax 14920
+    :fsize 14919
+    :lastmodtime '(20689 55724 0 0)
+    :unmatched-syntax '((symbol 11934 . 11946) (symbol 10707 . 10719) (semantic-list 1960 . 1962) (symbol 1943 . 1960) (semantic-list 1914 . 1942) (symbol 1895 . 1914) (number 1940 . 1941) (semantic-list 1891 . 1893) (symbol 1874 . 1891) (semantic-list 1863 . 1873) (symbol 1850 . 1863) (number 1864 . 1865) (semantic-list 1838 . 1848) (symbol 1825 . 1838) (number 1839 . 1840) (semantic-list 1814 . 1823) (symbol 1801 . 1814) (number 1815 . 1816) (semantic-list 1769 . 1799) (symbol 1747 . 1769) (number 1797 . 1798) (number 1794 . 1795) (number 1791 . 1792) (semantic-list 1743 . 1745) (symbol 1726 . 1743) (semantic-list 1713 . 1725) (symbol 1700 . 1713) (number 1714 . 1715) (semantic-list 1688 . 1698) (symbol 1675 . 1688) (number 1689 . 1690) (semantic-list 1643 . 1673) (symbol 1621 . 1643) (number 1671 . 1672) (number 1668 . 1669) (number 1665 . 1666) (semantic-list 1595 . 1601) (symbol 1568 . 1595))
+    :lexical-table 
+        '(("REVERSE16" (spp-arg-list ("us") 7432 . 7436) . ((semantic-list "(((us & 0xf) << 12) | (((us >> 4) & 0xf) << 8) | (((us >> 8) & 0xf) << 4) | ((us >> 12) & 0xf))" 7437 . 7532)))
+          )
+
+    )
+   (semanticdb-table "utf8_to_utf16.h"
+    :file "utf8_to_utf16.h"
+    :fsize 91
+    :lastmodtime '(20689 55724 0 0)
+    )
+   (semanticdb-table "JSON_parser.h"
+    :file "JSON_parser.h"
+    :fsize 778
+    :lastmodtime '(20689 55724 0 0)
+    )
+   )
+  :file "!home!work!download!php-5.3.20!ext!json!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

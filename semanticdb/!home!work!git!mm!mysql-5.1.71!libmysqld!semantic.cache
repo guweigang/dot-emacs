@@ -1,0 +1,58 @@
+;; Object libmysqld/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "libmysqld/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("MYSQLDATAdir" variable (:default-value ("$(localstatedir)")) nil [856 889])
+            ("MYSQLSHAREdir" variable (:default-value ("$(pkgdatadir)")) nil [889 920])
+            ("MYSQLBASEdir" variable (:default-value ("$(prefix)")) nil [920 945])
+            ("MYSQLLIBdir" variable (:default-value ("$(libdir)")) nil [945 979])
+            ("pkgplugindir" variable (:default-value ("$(pkglibdir)/plugin")) nil [979 1015])
+            ("EXTRA_DIST" variable (:default-value ("libmysqld.def" "CMakeLists.txt")) nil [1016 1059])
+            ("DEFS" variable (:default-value ("-DEMBEDDED_LIBRARY" "-DMYSQL_SERVER" "-DDEFAULT_MYSQL_HOME=\"\\\"$(MYSQLBASEdir)\\\"\"" "-DMYSQL_DATADIR=\"\\\"$(MYSQLDATAdir)\\\"\"" "-DSHAREDIR=\"\\\"$(MYSQLSHAREdir)\\\"\"" "-DPLUGINDIR=\"\\\"$(pkgplugindir)\\\"\"")) nil [1059 1271])
+            ("INCLUDES" variable (:default-value ("-I$(top_builddir)/include" "-I$(top_srcdir)/include" "-I$(top_builddir)/sql" "-I$(top_srcdir)/sql" "-I$(top_srcdir)/sql/examples" "-I$(top_srcdir)/regex" "$(openssl_includes)" "@ZLIB_INCLUDES@" "@condition_dependent_plugin_includes@")) nil [1271 1524])
+            ("noinst_LIBRARIES" variable (:default-value ("libmysqld_int.a")) nil [1525 1560])
+            ("pkglib_LIBRARIES" variable (:default-value ("libmysqld.a")) nil [1560 1591])
+            ("SUBDIRS" variable (:default-value ("." "examples")) nil [1591 1613])
+            ("libmysqld_sources" variable (:default-value ("libmysqld.c" "lib_sql.cc" "emb_qcache.cc")) nil [1613 1669])
+            ("libmysqlsources" variable (:default-value ("errmsg.c" "get_password.c" "libmysql.c" "client.c" "pack.c" "my_time.c")) nil [1669 1774])
+            ("noinst_HEADERS" variable (:default-value ("embedded_priv.h" "emb_qcache.h")) nil [1775 1821])
+            ("sqlsources" variable (:default-value ("derror.cc" "field.cc" "field_conv.cc" "strfunc.cc" "filesort.cc" "ha_ndbcluster.cc" "ha_ndbcluster_cond.cc" "ha_ndbcluster_binlog.cc" "ha_partition.cc" "handler.cc" "sql_handler.cc" "hostname.cc" "init.cc" "password.c" "item.cc" "item_buff.cc" "item_cmpfunc.cc" "item_create.cc" "item_func.cc" "item_strfunc.cc" "item_sum.cc" "item_timefunc.cc" "item_geofunc.cc" "item_subselect.cc" "item_row.cc" "item_xmlfunc.cc" "key.cc" "lock.cc" "log.cc" "sql_state.c" "log_event.cc" "rpl_record.cc" "log_event_old.cc" "rpl_record_old.cc" "protocol.cc" "net_serv.cc" "opt_range.cc" "opt_sum.cc" "procedure.cc" "records.cc" "sql_acl.cc" "sql_load.cc" "discover.cc" "sql_locale.cc" "sql_profile.cc" "sql_analyse.cc" "sql_base.cc" "sql_cache.cc" "sql_class.cc" "sql_crypt.cc" "sql_db.cc" "sql_delete.cc" "sql_error.cc" "sql_insert.cc" "sql_lex.cc" "sql_list.cc" "sql_manager.cc" "sql_map.cc" "scheduler.cc" "sql_connect.cc" "sql_parse.cc" "sql_prepare.cc" "sql_derived.cc" "sql_rename.cc" "sql_select.cc" "sql_do.cc" "sql_show.cc" "set_var.cc" "sql_string.cc" "sql_table.cc" "sql_test.cc" "sql_udf.cc" "sql_update.cc" "sql_yacc.cc" "table.cc" "thr_malloc.cc" "time.cc" "unireg.cc" "uniques.cc" "sql_union.cc" "hash_filo.cc" "spatial.cc" "gstream.cc" "sql_help.cc" "tztime.cc" "sql_cursor.cc" "sp_head.cc" "sp_pcontext.cc" "sp.cc" "sp_cache.cc" "sp_rcontext.cc" "parse_file.cc" "sql_view.cc" "sql_trigger.cc" "my_decimal.cc" "rpl_filter.cc" "sql_partition.cc" "sql_builtin.cc" "sql_plugin.cc" "debug_sync.cc" "sql_tablespace.cc" "rpl_injector.cc" "my_user.c" "partition_info.cc" "sql_servers.cc" "event_parse_data.cc")) nil [1822 3326])
+            ("libmysqld_int_a_SOURCES" variable (:default-value ("$(libmysqld_sources)")) nil [3327 3373])
+            ("nodist_libmysqld_int_a_SOURCES" variable (:default-value ("$(libmysqlsources)" "$(sqlsources)")) nil [3373 3438])
+            ("libmysqld_a_SOURCES" variable nil nil [3438 3459])
+            ("sqlstoragesources" variable (:default-value ("$(EXTRA_libmysqld_a_SOURCES)")) nil [3460 3509])
+            ("storagesources" variable (:default-value ("@condition_dependent_plugin_modules@")) nil [3509 3563])
+            ("storageobjects" variable (:default-value ("@condition_dependent_plugin_objects@")) nil [3563 3617])
+            ("storagesourceslinks" variable (:default-value ("@condition_dependent_plugin_links@")) nil [3617 3674])
+            ("sql_yacc.cc" function (:arguments ("$(top_srcdir)/sql/sql_yacc.yy")) nil [3699 3764])
+            ("sql_yacc." function (:arguments ("$(top_srcdir)/sql/sql_yacc.yy")) nil [3699 3764])
+            ("INC_LIB" variable (:default-value ("$(top_builddir)/regex/libregex.a" "$(top_builddir)/mysys/libmysys.a" "$(top_builddir)/strings/libmystrings.a" "$(top_builddir)/dbug/libdbug.a" "$(top_builddir)/vio/libvio.a" "@NDB_SCI_LIBS@" "@mysql_plugin_libs@" "$(yassl_inc_libs)")) nil [3825 4094])
+            ("yassl_inc_libs" variable (:default-value ("$(top_builddir)/extra/yassl/src/.libs/libyassl.a")) nil [4109 4239])
+            ("ha_ndbcluster.o" function (:arguments ("ha_ndbcluster.cc")) nil [4292 4382])
+            ("ha_ndbcluster_cond.o" function (:arguments ("ha_ndbcluster_cond.cc")) nil [4383 4483])
+            ("ha_ndbcluster_binlog.o" function (:arguments ("ha_ndbcluster_binlog.cc")) nil [4484 4589])
+            ("handler.o" function (:arguments ("handler.cc")) nil [4642 4721])
+            ("ha_federated.o" function (:arguments ("ha_federated.cc")) nil [4850 4916])
+            ("ha_heap.o" function (:arguments ("ha_heap.cc")) nil [4917 4973])
+            ("ha_innodb.o" function (:arguments ("ha_innodb.cc")) nil [4974 5034])
+            ("ha_myisam.o" function (:arguments ("ha_myisam.cc")) nil [5035 5095])
+            ("ha_myisammrg.o" function (:arguments ("ha_myisammrg.cc")) nil [5096 5162])
+            ("libmysqld.a" function (:arguments ("libmysqld_int.a" "$(INC_LIB)" "$(libmysqld_a_DEPENDENCIES)" "$(storageobjects)")) nil [5612 5698])
+            ("BUILT_SOURCES" variable (:default-value ("link_sources")) nil [7083 7112])
+            ("CLEANFILES" variable (:default-value ("$(BUILT_SOURCES)")) nil [7113 7143])
+            ("link_sources" function nil nil [7144 8210])
+            ("clean-local" function nil nil [8212 8359]))          
+    :file "Makefile.am"
+    :pointmax 8412
+    :fsize 8411
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax '((symbol 8403 . 8411) (punctuation 8402 . 8403) (punctuation 8401 . 8402) (symbol 8400 . 8401) (bol 8400 . 8400) (shell-command 5819 . 6681) (bol 5818 . 5818) (shell-command 5798 . 5817) (bol 5797 . 5797) (shell-command 5714 . 5791) (bol 5713 . 5713))
+    )
+   )
+  :file "!home!work!git!mm!mysql-5.1.71!libmysqld!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

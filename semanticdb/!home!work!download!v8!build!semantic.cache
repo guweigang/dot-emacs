@@ -1,0 +1,36 @@
+;; Object build/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "build/"
+  :tables (list 
+   (semanticdb-table "gyp_v8"
+    :major-mode 'python-mode
+    :tags 
+        '( ("glob" include nil nil [1726 1737])
+            ("os" include nil nil [1738 1747])
+            ("shlex" include nil nil [1748 1760])
+            ("sys" include nil nil [1761 1771])
+            ("script_dir" variable nil nil [1773 1811])
+            ("v8_root" variable nil nil [1812 1875])
+            ("if" code nil nil [1877 1981])
+            ("sys" code nil nil [1982 2032])
+            ("utils" include nil nil [2033 2045])
+            ("sys" code nil nil [2047 2113])
+            ("gyp" include nil nil [2114 2124])
+            ("apply_gyp_environment" function (:arguments 
+              ( ("file_path" variable nil (reparse-symbol function_parameters) [2153 2162]))              ) nil [2127 2986])
+            ("additional_include_files" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [3017 3021]))              ) nil [2988 4010])
+            ("run_gyp" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [4024 4028]))              ) nil [4012 4114])
+            ("if" code nil nil [4116 5979]))          
+    :file "gyp_v8"
+    :pointmax 5979
+    :fsize 5978
+    :lastmodtime '(20698 59760)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!download!v8!build!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

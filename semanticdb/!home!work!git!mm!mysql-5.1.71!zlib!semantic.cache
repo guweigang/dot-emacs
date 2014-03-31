@@ -1,0 +1,27 @@
+;; Object zlib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "zlib/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("INCLUDES" variable (:default-value ("-I$(top_builddir)/include" "-I$(top_srcdir)/include")) nil [756 817])
+            ("LIBS" variable (:default-value ("$(NON_THREADED_LIBS)")) nil [818 845])
+            ("pkglib_LTLIBRARIES" variable (:default-value ("libz.la")) nil [846 875])
+            ("noinst_LTLIBRARIES" variable (:default-value ("libzlt.la")) nil [875 906])
+            ("libz_la_LDFLAGS" variable (:default-value ("-static")) nil [907 936])
+            ("noinst_HEADERS" variable (:default-value ("crc32.h" "deflate.h" "inffast.h" "inffixed.h" "inflate.h" "inftrees.h" "trees.h" "zconf.h" "zlib.h" "zutil.h")) nil [937 1058])
+            ("libz_la_SOURCES" variable (:default-value ("adler32.c" "compress.c" "crc32.c" "deflate.c" "gzio.c" "infback.c" "inffast.c" "inflate.c" "inftrees.c" "trees.c" "uncompr.c" "zutil.c")) nil [1059 1211])
+            ("libzlt_la_SOURCES" variable (:default-value ("$(libz_la_SOURCES)")) nil [1211 1251])
+            ("EXTRA_DIST" variable (:default-value ("README" "FAQ" "INDEX" "ChangeLog" "algorithm.txt" "zlib.3" "CMakeLists.txt")) nil [1252 1327]))          
+    :file "Makefile.am"
+    :pointmax 1380
+    :fsize 1379
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax '((symbol 1371 . 1379) (punctuation 1370 . 1371) (punctuation 1369 . 1370) (symbol 1368 . 1369) (bol 1368 . 1368))
+    )
+   )
+  :file "!home!work!git!mm!mysql-5.1.71!zlib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

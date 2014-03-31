@@ -1,0 +1,184 @@
+;; Object http/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "http/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("AM_CPPFLAGS" variable (:default-value ("-I$(top_srcdir)/src" "-I$(top_builddir)/include" "-I$(top_srcdir)/include")) nil [1 85])
+            ("lib_LTLIBRARIES" variable (:default-value ("libcxxtools-http.la")) nil [86 124])
+            ("libcxxtools_http_la_SOURCES" variable (:default-value ("chunkedreader.cpp" "client.cpp" "clientimpl.cpp" "mapper.cpp" "messageheader.cpp" "notauthenticatedresponder.cpp" "notauthenticatedservice.cpp" "notfoundresponder.cpp" "notfoundservice.cpp" "parser.cpp" "server.cpp" "serverimpl.cpp" "service.cpp" "socket.cpp" "request.cpp" "responder.cpp" "worker.cpp")) nil [125 527])
+            ("noinst_HEADERS" variable (:default-value ("chunkedreader.h" "clientimpl.h" "mapper.h" "notauthenticatedresponder.h" "notauthenticatedservice.h" "notfoundresponder.h" "notfoundservice.h" "parser.h" "serverimpl.h" "serverimplbase.h" "socket.h" "worker.h")) nil [528 804])
+            ("libcxxtools_http_la_LIBADD" variable (:default-value ("$(top_builddir)/src/libcxxtools.la")) nil [805 869])
+            ("libcxxtools_http_la_LDFLAGS" variable (:default-value ("-version-info" "@sonumber@" "@SHARED_LIB_FLAG@")) nil [870 943]))          
+    :file "Makefile.am"
+    :pointmax 944
+    :fsize 943
+    :lastmodtime '(20859 30360 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "socket.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("socket.h" include nil nil [1385 1404])
+            ("serverimpl.h" include nil nil [1405 1428])
+            ("cxxtools/log.h" include (:system-flag t) nil [1429 1454])
+            ("cassert" include (:system-flag t) nil [1455 1473])
+            ("config.h" include nil nil [1474 1493])
+            ("cxxtools" type
+               (:members 
+                  ( ("http" type
+                       (:members 
+                          ( ("onMethod" function
+                               (:parent "Socket::ParseEvent"
+                                :arguments 
+                                  ( ("method" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1605 1631]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1571 1664])
+                            ("onUrl" function
+                               (:parent "Socket::ParseEvent"
+                                :arguments 
+                                  ( ("url" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1697 1720]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1666 1747])
+                            ("onUrlParam" function
+                               (:parent "Socket::ParseEvent"
+                                :arguments 
+                                  ( ("q" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1785 1806]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1749 1835])
+                            ("Socket" function
+                               (:constructor-flag t
+                                :parent "Socket"
+                                :arguments 
+                                  ( ("server" variable
+                                       (:reference 1
+                                        :type ("ServerImpl" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1852 1871])
+                                    ("tcpServer" variable
+                                       (:reference 1
+                                        :type ("net::TcpServer" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1872 1898]))                                  
+                                :type ("Socket" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1837 2366])
+                            ("Socket" function
+                               (:constructor-flag t
+                                :parent "Socket"
+                                :arguments 
+                                  ( ("socket" variable
+                                       (:reference 1
+                                        :type ("Socket" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2383 2398]))                                  
+                                :type ("Socket" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2368 2882])
+                            ("Socket" function
+                               (:destructor-flag t
+                                :parent "Socket"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2884 2956])
+                            ("accept" function
+                               (:parent "Socket"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2958 3153])
+                            ("setSelector" function
+                               (:parent "Socket"
+                                :arguments 
+                                  ( ("s" variable
+                                       (:pointer 1
+                                        :type ("SelectorBase" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3180 3196]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [3155 3239])
+                            ("removeSelector" function
+                               (:parent "Socket"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [3241 3332])
+                            ("onIODeviceInput" function
+                               (:parent "Socket"
+                                :arguments 
+                                  ( ("iodevice" variable
+                                       (:reference 1
+                                        :type ("IODevice" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3363 3382]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [3334 3443])
+                            ("onInput" function
+                               (:parent "Socket"
+                                :arguments 
+                                  ( ("sb" variable
+                                       (:reference 1
+                                        :type ("StreamBuffer" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3466 3483]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [3445 5960])
+                            ("doReply" function
+                               (:parent "Socket"
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [5962 6414])
+                            ("onOutput" function
+                               (:parent "Socket"
+                                :arguments 
+                                  ( ("sb" variable
+                                       (:reference 1
+                                        :type ("StreamBuffer" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6438 6455]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [6416 7617])
+                            ("onTimeout" function
+                               (:parent "Socket"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [7619 7693])
+                            ("sendReply" function
+                               (:parent "Socket"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [7695 9168]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1553 9171]))                  
+                :type "namespace")
+                nil [1531 9192]))          
+    :file "socket.cpp"
+    :pointmax 9215
+    :fsize 9214
+    :lastmodtime '(20859 30360 0 0)
+    :unmatched-syntax '((semantic-list 1505 . 1529) (symbol 1495 . 1505) (string 1506 . 1528))
+    )
+   (semanticdb-table "socket.h"
+    :major-mode 'c-mode
+    :tags nil
+    :file "socket.h"
+    :pointmax 3744
+    :fsize 3743
+    :lastmodtime '(20859 30360 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "serverimpl.h"
+    :file "serverimpl.h"
+    :fsize 3694
+    :lastmodtime '(20859 30360 0 0)
+    )
+   (semanticdb-table "service.cpp"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "service.cpp"
+    :pointmax 2719
+    :fsize 2718
+    :lastmodtime '(20859 30360 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!git!php-hogdeer!cxxtools!src!http!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

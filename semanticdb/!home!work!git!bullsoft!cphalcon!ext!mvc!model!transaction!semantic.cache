@@ -1,0 +1,144 @@
+;; Object transaction/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "transaction/"
+  :tables (list 
+   (semanticdb-table "manager.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("php.h" include nil nil [1213 1229])
+            ("php_phalcon.h" include nil nil [1230 1254])
+            ("phalcon.h" include nil nil [1255 1275])
+            ("Zend/zend_operators.h" include nil nil [1277 1309])
+            ("Zend/zend_exceptions.h" include nil nil [1310 1343])
+            ("Zend/zend_interfaces.h" include nil nil [1344 1377])
+            ("kernel/main.h" include nil nil [1379 1403])
+            ("kernel/memory.h" include nil nil [1404 1430])
+            ("kernel/object.h" include nil nil [1432 1458])
+            ("kernel/fcall.h" include nil nil [1459 1484])
+            ("kernel/exception.h" include nil nil [1485 1514])
+            ("kernel/array.h" include nil nil [1515 1540])
+            ("kernel/file.h" include nil nil [1541 1565])
+            ("kernel/operators.h" include nil nil [1566 1595])
+            ("PHALCON_INIT_CLASS" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Transaction_Manager" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2854 2892]))                  
+                :type "int")
+                nil [2835 3985])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Transaction_Manager" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4112 4150])
+                    ("" variable (:type ("__construct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4151 4163]))                  
+                :type "int")
+                nil [4101 5035])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Transaction_Manager" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5152 5190])
+                    ("" variable (:type ("setDI" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5191 5197]))                  
+                :type "int")
+                nil [5141 5387])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Transaction_Manager" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5488 5526])
+                    ("" variable (:type ("getDI" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5527 5533]))                  
+                :type "int")
+                nil [5477 5587])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Transaction_Manager" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5753 5791])
+                    ("" variable (:type ("setDbService" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5792 5805]))                  
+                :type "int")
+                nil [5742 5963])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Transaction_Manager" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6069 6107])
+                    ("" variable (:type ("getDbService" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6108 6121]))                  
+                :type "int")
+                nil [6058 6164])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Transaction_Manager" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6373 6411])
+                    ("" variable (:type ("setRollbackPendent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6412 6431]))                  
+                :type "int")
+                nil [6362 6609])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Transaction_Manager" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6756 6794])
+                    ("" variable (:type ("getRollbackPendent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6795 6814]))                  
+                :type "int")
+                nil [6745 6865])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Transaction_Manager" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6964 7002])
+                    ("" variable (:type ("has" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7003 7007]))                  
+                :type "int")
+                nil [6953 7360])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Transaction_Manager" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7613 7651])
+                    ("" variable (:type ("get" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7652 7656]))                  
+                :type "int")
+                nil [7602 8749])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Transaction_Manager" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8907 8945])
+                    ("" variable (:type ("getOrCreateTransaction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8946 8969]))                  
+                :type "int")
+                nil [8896 11715])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Transaction_Manager" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11791 11829])
+                    ("" variable (:type ("rollbackPendent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11830 11846]))                  
+                :type "int")
+                nil [11780 11947])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Transaction_Manager" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12022 12060])
+                    ("" variable (:type ("commit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12061 12068]))                  
+                :type "int")
+                nil [12011 13019])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Transaction_Manager" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13174 13212])
+                    ("" variable (:type ("rollback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13213 13222]))                  
+                :type "int")
+                nil [13163 14483])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Transaction_Manager" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14624 14662])
+                    ("" variable (:type ("notifyRollback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14663 14678]))                  
+                :type "int")
+                nil [14613 14874])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Transaction_Manager" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15013 15051])
+                    ("" variable (:type ("notifyCommit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15052 15065]))                  
+                :type "int")
+                nil [15002 15261])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Transaction_Manager" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15399 15437])
+                    ("" variable (:type ("_collectTransaction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15438 15458]))                  
+                :type "int")
+                nil [15388 16509])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Transaction_Manager" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16581 16619])
+                    ("" variable (:type ("collectTransactions" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16620 16640]))                  
+                :type "int")
+                nil [16570 17366]))          
+    :file "manager.c"
+    :pointmax 17163
+    :fsize 17368
+    :lastmodtime '(20913 30687 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "exception.h"
+    :file "exception.h"
+    :fsize 1294
+    :lastmodtime '(20911 24049 0 0)
+    )
+   )
+  :file "!home!work!git!bullsoft!cphalcon!ext!mvc!model!transaction!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

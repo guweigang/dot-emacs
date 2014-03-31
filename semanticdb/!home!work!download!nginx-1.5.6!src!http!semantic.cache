@@ -1,0 +1,3109 @@
+;; Object http/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "http/"
+  :tables (list 
+   (semanticdb-table "ngx_http_core_module.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("ngx_config.h" include (:system-flag t) nil [69 92])
+            ("ngx_core.h" include (:system-flag t) nil [93 114])
+            ("ngx_http.h" include (:system-flag t) nil [115 136])
+            ("ngx_http_method_name_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("name" variable
+                             (:pointer 1
+                              :type ("u_char" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [160 176])
+                          ("method" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [181 199]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [139 225])
+            ("NGX_HTTP_REQUEST_BODY_FILE_OFF" variable (:constant-flag t) nil [236 266])
+            ("NGX_HTTP_REQUEST_BODY_FILE_ON" variable (:constant-flag t) nil [280 309])
+            ("NGX_HTTP_REQUEST_BODY_FILE_CLEAN" variable (:constant-flag t) nil [324 356])
+            ("ngx_http_core_find_location" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [407 429]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [362 430])
+            ("ngx_http_core_find_static_location" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [483 505])
+                    ("node" variable
+                       (:pointer 1
+                        :type ("ngx_http_location_tree_node_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [510 546]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [431 547])
+            ("ngx_http_core_preconfiguration" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [597 612]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [549 613])
+            ("ngx_http_core_create_main_conf" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [658 673]))                  
+                :type "void")
+                nil [614 674])
+            ("ngx_http_core_init_main_conf" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [717 732])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [733 744]))                  
+                :type "char")
+                nil [675 745])
+            ("ngx_http_core_create_srv_conf" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [789 804]))                  
+                :type "void")
+                nil [746 805])
+            ("ngx_http_core_merge_srv_conf" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [848 863])
+                    ("parent" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [868 881])
+                    ("child" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [882 894]))                  
+                :type "char")
+                nil [806 895])
+            ("ngx_http_core_create_loc_conf" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [939 954]))                  
+                :type "void")
+                nil [896 955])
+            ("ngx_http_core_merge_loc_conf" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [998 1013])
+                    ("parent" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1018 1031])
+                    ("child" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1032 1044]))                  
+                :type "char")
+                nil [956 1045])
+            ("ngx_http_core_server" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1081 1096])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1097 1116])
+                    ("dummy" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1121 1133]))                  
+                :type "char")
+                nil [1047 1134])
+            ("ngx_http_core_location" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1171 1186])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1187 1206])
+                    ("dummy" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1211 1223]))                  
+                :type "char")
+                nil [1135 1224])
+            ("ngx_http_core_regex_location" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1271 1286])
+                    ("clcf" variable
+                       (:pointer 1
+                        :type ("ngx_http_core_loc_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1291 1322])
+                    ("regex" variable
+                       (:pointer 1
+                        :type ("ngx_str_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1323 1340])
+                    ("caseless" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1341 1361]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [1225 1362])
+            ("ngx_http_core_types" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1397 1412])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1413 1432])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1437 1448]))                  
+                :type "char")
+                nil [1364 1449])
+            ("ngx_http_core_type" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1482 1497])
+                    ("dummy" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1498 1519])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1524 1535]))                  
+                :type "char")
+                nil [1450 1536])
+            ("ngx_http_core_listen" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1572 1587])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1588 1607])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1612 1623]))                  
+                :type "char")
+                nil [1538 1624])
+            ("ngx_http_core_server_name" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1664 1679])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1680 1699])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1704 1715]))                  
+                :type "char")
+                nil [1625 1716])
+            ("ngx_http_core_root" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1749 1764])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1765 1784])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1785 1796]))                  
+                :type "char")
+                nil [1717 1797])
+            ("ngx_http_core_limit_except" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1838 1853])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1854 1873])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1878 1889]))                  
+                :type "char")
+                nil [1798 1890])
+            ("ngx_http_core_directio" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1927 1942])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1943 1962])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1967 1978]))                  
+                :type "char")
+                nil [1891 1979])
+            ("ngx_http_core_error_page" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2018 2033])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2034 2053])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2058 2069]))                  
+                :type "char")
+                nil [1980 2070])
+            ("ngx_http_core_try_files" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2108 2123])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2124 2143])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2148 2159]))                  
+                :type "char")
+                nil [2071 2160])
+            ("ngx_http_core_open_file_cache" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2204 2219])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2220 2239])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2244 2255]))                  
+                :type "char")
+                nil [2161 2256])
+            ("ngx_http_core_error_log" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2294 2309])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2310 2329])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2334 2345]))                  
+                :type "char")
+                nil [2257 2346])
+            ("ngx_http_core_keepalive" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2384 2399])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2400 2419])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2424 2435]))                  
+                :type "char")
+                nil [2347 2436])
+            ("ngx_http_core_internal" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2473 2488])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2489 2508])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2513 2524]))                  
+                :type "char")
+                nil [2437 2525])
+            ("ngx_http_core_resolver" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2562 2577])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2578 2597])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2602 2613]))                  
+                :type "char")
+                nil [2526 2614])
+            ("ngx_http_get_forwarded_addr_internal" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2914 2936])
+                    ("addr" variable
+                       (:pointer 1
+                        :type ("ngx_addr_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2941 2958])
+                    ("xff" variable
+                       (:pointer 1
+                        :type ("u_char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2959 2971])
+                    ("xfflen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2972 2986])
+                    ("proxies" variable
+                       (:pointer 1
+                        :type ("ngx_array_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2987 3008])
+                    ("recursive" variable (:type "int") (reparse-symbol arg-sub-list) [3013 3027]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [2860 3028])
+            ("ngx_http_core_lowat_check" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3190 3205])
+                    ("post" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3206 3217])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3218 3229]))                  
+                :type "char")
+                nil [3151 3230])
+            ("ngx_http_core_pool_size" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3268 3283])
+                    ("post" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3284 3295])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3296 3307]))                  
+                :type "char")
+                nil [3231 3308])
+            ("ngx_http_core_lowat_post" variable
+               (:typemodifiers ("static")
+                :type ("ngx_conf_post_t" type (:type "class") nil nil))
+                nil [3310 3395])
+            ("ngx_http_core_pool_size_p" variable
+               (:typemodifiers ("static")
+                :type ("ngx_conf_post_handler_pt" type (:type "class") nil nil))
+                nil [3397 3486])
+            ("ngx_conf_deprecated_optimize_server_names" variable
+               (:typemodifiers ("static")
+                :type ("ngx_conf_deprecated_t" type (:type "class") nil nil))
+                nil [3488 3642])
+            ("ngx_conf_deprecated_open_file_cache_retest" variable
+               (:typemodifiers ("static")
+                :type ("ngx_conf_deprecated_t" type (:type "class") nil nil))
+                nil [3644 3798])
+            ("ngx_conf_deprecated_satisfy_any" variable
+               (:typemodifiers ("static")
+                :type ("ngx_conf_deprecated_t" type (:type "class") nil nil))
+                nil [3800 3918])
+            ("ngx_http_core_request_body_in_file" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("ngx_conf_enum_t" type (:type "class") nil nil))
+                nil [3921 4194])
+            ("ngx_http_core_satisfy" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("ngx_conf_enum_t" type (:type "class") nil nil))
+                nil [4489 4668])
+            ("ngx_http_core_lingering_close" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("ngx_conf_enum_t" type (:type "class") nil nil))
+                nil [4671 4917])
+            ("ngx_http_core_if_modified_since" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("ngx_conf_enum_t" type (:type "class") nil nil))
+                nil [4920 5156])
+            ("ngx_http_core_keepalive_disable" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("ngx_conf_bitmask_t" type (:type "class") nil nil))
+                nil [5159 5442])
+            ("ngx_http_client_temp_path" variable
+               (:typemodifiers ("static")
+                :type ("ngx_path_init_t" type (:type "class") nil nil))
+                nil [5445 5556])
+            ("ngx_http_core_commands" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("ngx_command_t" type (:type "class") nil nil))
+                nil [6613 26738])
+            ("ngx_http_core_module_ctx" variable
+               (:typemodifiers ("static")
+                :type ("ngx_http_module_t" type (:type "class") nil nil))
+                nil [26741 27392])
+            ("ngx_http_core_module" variable (:type ("ngx_module_t" type (:type "class") nil nil)) nil [27395 28102])
+            ("ngx_http_core_get_method" variable (:type ("ngx_str_t" type (:type "class") nil nil)) nil [28105 28168])
+            ("ngx_http_handler" function
+               (:arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28193 28215]))                  
+                :type "void")
+                nil [28171 29231])
+            ("ngx_http_core_run_phases" function
+               (:arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29264 29286]))                  
+                :type "void")
+                nil [29234 29686])
+            ("ngx_http_core_generic_phase" function
+               (:arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29727 29749])
+                    ("ph" variable
+                       (:pointer 1
+                        :type ("ngx_http_phase_handler_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29750 29779]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [29689 30417])
+            ("ngx_http_core_rewrite_phase" function
+               (:arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30458 30480])
+                    ("ph" variable
+                       (:pointer 1
+                        :type ("ngx_http_phase_handler_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30481 30510]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [30420 30943])
+            ("ngx_http_core_find_config_phase" function
+               (:arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30988 31010])
+                    ("ph" variable
+                       (:pointer 1
+                        :type ("ngx_http_phase_handler_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31015 31044]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [30946 33814])
+            ("ngx_http_core_post_rewrite_phase" function
+               (:arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33860 33882])
+                    ("ph" variable
+                       (:pointer 1
+                        :type ("ngx_http_phase_handler_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33887 33916]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [33817 34972])
+            ("ngx_http_core_access_phase" function
+               (:arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35012 35034])
+                    ("ph" variable
+                       (:pointer 1
+                        :type ("ngx_http_phase_handler_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35035 35064]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [34975 36339])
+            ("ngx_http_core_post_access_phase" function
+               (:arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36384 36406])
+                    ("ph" variable
+                       (:pointer 1
+                        :type ("ngx_http_phase_handler_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36411 36440]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [36342 36990])
+            ("ngx_http_core_try_files_phase" function
+               (:arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37033 37055])
+                    ("ph" variable
+                       (:pointer 1
+                        :type ("ngx_http_phase_handler_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37060 37089]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [36993 42705])
+            ("ngx_http_core_content_phase" function
+               (:arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42746 42768])
+                    ("ph" variable
+                       (:pointer 1
+                        :type ("ngx_http_phase_handler_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42773 42802]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [42708 43975])
+            ("ngx_http_update_location_config" function
+               (:arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [44015 44037]))                  
+                :type "void")
+                nil [43978 46355])
+            ("ngx_http_core_find_location" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46573 46595]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [46528 48102])
+            ("ngx_http_core_find_static_location" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [48288 48310])
+                    ("node" variable
+                       (:pointer 1
+                        :type ("ngx_http_location_tree_node_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [48315 48351]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [48236 49932])
+            ("ngx_http_test_content_type" function
+               (:pointer 1
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49969 49991])
+                    ("types_hash" variable
+                       (:pointer 1
+                        :type ("ngx_hash_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49992 50015]))                  
+                :type "void")
+                nil [49935 50899])
+            ("ngx_http_set_content_type" function
+               (:arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50938 50960]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [50902 52205])
+            ("ngx_http_set_exten" function
+               (:arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [52232 52254]))                  
+                :type "void")
+                nil [52208 52628])
+            ("ngx_http_set_etag" function
+               (:arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [52659 52681]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [52631 53494])
+            ("ngx_http_send_response" function
+               (:arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [53530 53552])
+                    ("status" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [53553 53571])
+                    ("ct" variable
+                       (:pointer 1
+                        :type ("ngx_str_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [53576 53590])
+                    ("cv" variable
+                       (:pointer 1
+                        :type ("ngx_http_complex_value_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [53591 53620]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [53497 55461])
+            ("ngx_http_send_header" function
+               (:arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [55495 55517]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [55464 55851])
+            ("ngx_http_output_filter" function
+               (:arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [55887 55909])
+                    ("in" variable
+                       (:pointer 1
+                        :type ("ngx_chain_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [55910 55926]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [55854 56298])
+            ("ngx_http_map_uri_to_path" function
+               (:pointer 1
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [56335 56357])
+                    ("path" variable
+                       (:pointer 1
+                        :type ("ngx_str_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [56358 56374])
+                    ("root_length" variable
+                       (:pointer 1
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [56379 56399])
+                    ("reserved" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [56400 56416]))                  
+                :type ("u_char" type (:type "class") nil nil))
+                nil [56301 58249])
+            ("ngx_http_auth_basic_user" function
+               (:arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [58287 58309]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [58252 60006])
+            ("ngx_http_subrequest" function
+               (:arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [65801 65823])
+                    ("uri" variable
+                       (:pointer 1
+                        :type ("ngx_str_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [65828 65843])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("ngx_str_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [65844 65860])
+                    ("psr" variable
+                       (:pointer 2
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [65861 65886])
+                    ("ps" variable
+                       (:pointer 1
+                        :type ("ngx_http_post_subrequest_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [65891 65922])
+                    ("flags" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [65923 65940]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [65771 69045])
+            ("ngx_http_internal_redirect" function
+               (:arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [69085 69107])
+                    ("uri" variable
+                       (:pointer 1
+                        :type ("ngx_str_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [69112 69127])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("ngx_str_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [69128 69144]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [69048 70281])
+            ("ngx_http_named_location" function
+               (:arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [70318 70340])
+                    ("name" variable
+                       (:pointer 1
+                        :type ("ngx_str_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [70341 70357]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [70284 72348])
+            ("ngx_http_cleanup_add" function
+               (:pointer 1
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [72393 72415])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [72416 72428]))                  
+                :type ("ngx_http_cleanup_t" type (:type "class") nil nil))
+                nil [72351 72974])
+            ("ngx_http_set_disable_symlinks" function
+               (:arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [73017 73039])
+                    ("clcf" variable
+                       (:pointer 1
+                        :type ("ngx_http_core_loc_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [73044 73075])
+                    ("path" variable
+                       (:pointer 1
+                        :type ("ngx_str_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [73076 73092])
+                    ("of" variable
+                       (:pointer 1
+                        :type ("ngx_open_file_info_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [73093 73118]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [72977 73957])
+            ("ngx_http_get_forwarded_addr" function
+               (:arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [73998 74020])
+                    ("addr" variable
+                       (:pointer 1
+                        :type ("ngx_addr_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [74021 74038])
+                    ("headers" variable
+                       (:pointer 1
+                        :type ("ngx_array_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [74043 74064])
+                    ("value" variable
+                       (:pointer 1
+                        :type ("ngx_str_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [74065 74082])
+                    ("proxies" variable
+                       (:pointer 1
+                        :type ("ngx_array_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [74083 74104])
+                    ("recursive" variable (:type "int") (reparse-symbol arg-sub-list) [74109 74123]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [73960 75040])
+            ("ngx_http_get_forwarded_addr_internal" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [75097 75119])
+                    ("addr" variable
+                       (:pointer 1
+                        :type ("ngx_addr_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [75120 75137])
+                    ("xff" variable
+                       (:pointer 1
+                        :type ("u_char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [75142 75154])
+                    ("xfflen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [75155 75169])
+                    ("proxies" variable
+                       (:pointer 1
+                        :type ("ngx_array_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [75170 75191])
+                    ("recursive" variable (:type "int") (reparse-symbol arg-sub-list) [75192 75206]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [75043 77771])
+            ("ngx_http_core_server" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [77809 77824])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [77825 77844])
+                    ("dummy" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [77845 77857]))                  
+                :type "char")
+                nil [77774 80815])
+            ("ngx_http_core_location" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [80855 80870])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [80871 80890])
+                    ("dummy" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [80891 80903]))                  
+                :type "char")
+                nil [80818 86071])
+            ("ngx_http_core_regex_location" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [86120 86135])
+                    ("clcf" variable
+                       (:pointer 1
+                        :type ("ngx_http_core_loc_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [86136 86167])
+                    ("regex" variable
+                       (:pointer 1
+                        :type ("ngx_str_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [86172 86189])
+                    ("caseless" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [86190 86210]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [86074 86934])
+            ("ngx_http_core_types" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [86971 86986])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [86987 87006])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [87007 87018]))                  
+                :type "char")
+                nil [86937 87459])
+            ("ngx_http_core_type" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [87495 87510])
+                    ("dummy" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [87511 87532])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [87533 87544]))                  
+                :type "char")
+                nil [87462 89262])
+            ("ngx_http_core_preconfiguration" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [89313 89328]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [89265 89381])
+            ("ngx_http_core_create_main_conf" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [89429 89444]))                  
+                :type "void")
+                nil [89384 90031])
+            ("ngx_http_core_init_main_conf" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [90077 90092])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [90093 90104]))                  
+                :type "char")
+                nil [90034 91010])
+            ("ngx_http_core_create_srv_conf" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [91057 91072]))                  
+                :type "void")
+                nil [91013 91884])
+            ("ngx_http_core_merge_srv_conf" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [91930 91945])
+                    ("parent" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [91946 91959])
+                    ("child" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [91960 91972]))                  
+                :type "char")
+                nil [91887 94214])
+            ("ngx_http_core_create_loc_conf" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [94261 94276]))                  
+                :type "void")
+                nil [94217 97729])
+            ("ngx_http_core_text_html_type" variable
+               (:typemodifiers ("static")
+                :type ("ngx_str_t" type (:type "class") nil nil))
+                nil [97732 97805])
+            ("ngx_http_core_image_gif_type" variable
+               (:typemodifiers ("static")
+                :type ("ngx_str_t" type (:type "class") nil nil))
+                nil [97806 97879])
+            ("ngx_http_core_image_jpeg_type" variable
+               (:typemodifiers ("static")
+                :type ("ngx_str_t" type (:type "class") nil nil))
+                nil [97880 97955])
+            ("ngx_http_core_default_types" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("ngx_hash_key_t" type (:type "class") nil nil))
+                nil [97957 98234])
+            ("ngx_http_core_merge_loc_conf" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [98280 98295])
+                    ("parent" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [98296 98309])
+                    ("child" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [98310 98322]))                  
+                :type "char")
+                nil [98237 108785])
+            ("ngx_http_core_listen" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [108823 108838])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [108839 108858])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [108859 108870]))                  
+                :type "char")
+                nil [108788 118220])
+            ("ngx_http_core_server_name" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [118263 118278])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [118279 118298])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [118299 118310]))                  
+                :type "char")
+                nil [118223 120890])
+            ("ngx_http_core_root" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [120926 120941])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [120942 120961])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [120962 120973]))                  
+                :type "char")
+                nil [120893 123700])
+            ("ngx_methods_names" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("ngx_http_method_name_t" type (:type "class") nil nil))
+                nil [123703 124603])
+            ("ngx_http_core_limit_except" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [124647 124662])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [124663 124682])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [124683 124694]))                  
+                :type "char")
+                nil [124606 127054])
+            ("ngx_http_core_directio" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [127094 127109])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [127110 127129])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [127130 127141]))                  
+                :type "char")
+                nil [127057 127621])
+            ("ngx_http_core_error_page" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [127663 127678])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [127679 127698])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [127699 127710]))                  
+                :type "char")
+                nil [127624 130878])
+            ("ngx_http_core_try_files" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [130919 130934])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [130935 130954])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [130955 130966]))                  
+                :type "char")
+                nil [130881 132972])
+            ("ngx_http_core_open_file_cache" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [133019 133034])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [133035 133054])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [133055 133066]))                  
+                :type "char")
+                nil [132975 134737])
+            ("ngx_http_core_error_log" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [134778 134793])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [134794 134813])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [134814 134825]))                  
+                :type "char")
+                nil [134740 134923])
+            ("ngx_http_core_keepalive" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [134964 134979])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [134980 134999])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [135000 135011]))                  
+                :type "char")
+                nil [134926 135615])
+            ("ngx_http_core_internal" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [135655 135670])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [135671 135690])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [135691 135702]))                  
+                :type "char")
+                nil [135618 135881])
+            ("ngx_http_core_resolver" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [135921 135936])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [135937 135956])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [135957 135968]))                  
+                :type "char")
+                nil [135884 136308])
+            ("ngx_http_core_lowat_check" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [141385 141400])
+                    ("post" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [141401 141412])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [141413 141424]))                  
+                :type "char")
+                nil [141345 142027])
+            ("ngx_http_core_pool_size" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [142068 142083])
+                    ("post" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [142084 142095])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [142096 142107]))                  
+                :type "char")
+                nil [142030 142638]))          
+    :file "ngx_http_core_module.c"
+    :pointmax 142639
+    :fsize 142638
+    :lastmodtime '(21066 53716 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("NGX_HTTP_REQUEST_BODY_FILE_OFF" . ((number "0" 270 . 271)))
+          ("NGX_HTTP_REQUEST_BODY_FILE_ON" . ((number "1" 314 . 315)))
+          ("NGX_HTTP_REQUEST_BODY_FILE_CLEAN" . ((number "2" 358 . 359)))
+          )
+
+    )
+   (semanticdb-table "ngx_http.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_NGX_HTTP_H_INCLUDED_" variable (:constant-flag t) nil [107 128])
+            ("ngx_config.h" include (:system-flag t) nil [131 154])
+            ("ngx_core.h" include (:system-flag t) nil [155 176])
+            ("ngx_http_request_t" type
+               (:typedef ("ngx_http_request_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :superclasses "ngx_http_request_s"
+                :type "typedef")
+                nil [179 236])
+            ("ngx_http_upstream_t" type
+               (:typedef ("ngx_http_upstream_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :superclasses "ngx_http_upstream_s"
+                :type "typedef")
+                nil [237 295])
+            ("ngx_http_cache_t" type
+               (:typedef ("ngx_http_cache_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :superclasses "ngx_http_cache_s"
+                :type "typedef")
+                nil [296 351])
+            ("ngx_http_file_cache_t" type
+               (:typedef ("ngx_http_file_cache_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :superclasses "ngx_http_file_cache_s"
+                :type "typedef")
+                nil [352 412])
+            ("ngx_http_log_ctx_t" type
+               (:typedef ("ngx_http_log_ctx_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :superclasses "ngx_http_log_ctx_s"
+                :type "typedef")
+                nil [413 470])
+            ("ngx_http_chunked_t" type
+               (:typedef ("ngx_http_chunked_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :superclasses "ngx_http_chunked_s"
+                :type "typedef")
+                nil [471 528])
+            ("ngx_http_header_handler_pt" variable
+               (:functionpointer-flag t
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [629 735])
+            ("ngx_http_log_handler_pt" variable
+               (:functionpointer-flag t
+                :type ("u_char" type (:type "class") nil nil))
+                nil [744 855])
+            ("ngx_http_variables.h" include (:system-flag t) nil [858 889])
+            ("ngx_http_config.h" include (:system-flag t) nil [890 918])
+            ("ngx_http_request.h" include (:system-flag t) nil [919 948])
+            ("ngx_http_script.h" include (:system-flag t) nil [949 977])
+            ("ngx_http_upstream.h" include (:system-flag t) nil [978 1008])
+            ("ngx_http_upstream_round_robin.h" include (:system-flag t) nil [1009 1051])
+            ("ngx_http_busy_lock.h" include (:system-flag t) nil [1052 1083])
+            ("ngx_http_core_module.h" include (:system-flag t) nil [1084 1117])
+            ("ngx_http_log_ctx_s" type
+               (:members 
+                  ( ("connection" variable
+                       (:pointer 1
+                        :type ("ngx_connection_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1388 1420])
+                    ("request" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1425 1454])
+                    ("current_request" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1459 1496]))                  
+                :type "struct")
+                nil [1356 1499])
+            ("ngx_http_chunked_s" type
+               (:members 
+                  ( ("state" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1534 1561])
+                    ("size" variable (:type ("off_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1566 1592])
+                    ("length" variable (:type ("off_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1597 1625]))                  
+                :type "struct")
+                nil [1502 1628])
+            ("ngx_http_status_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("http_version" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1652 1686])
+                          ("code" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1691 1717])
+                          ("count" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1722 1749])
+                          ("start" variable
+                             (:pointer 1
+                              :type ("u_char" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [1754 1781])
+                          ("end" variable
+                             (:pointer 1
+                              :type ("u_char" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [1786 1811]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [1631 1832])
+            ("ngx_http_get_module_ctx" variable (:constant-flag t) nil [1843 1866])
+            ("ngx_http_set_ctx" variable (:constant-flag t) nil [1914 1930])
+            ("ngx_http_add_location" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2014 2029])
+                    ("locations" variable
+                       (:pointer 2
+                        :type ("ngx_queue_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2030 2054])
+                    ("clcf" variable
+                       (:pointer 1
+                        :type ("ngx_http_core_loc_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2059 2090]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [1982 2091])
+            ("ngx_http_add_listen" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2122 2137])
+                    ("cscf" variable
+                       (:pointer 1
+                        :type ("ngx_http_core_srv_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2138 2169])
+                    ("lsopt" variable
+                       (:pointer 1
+                        :type ("ngx_http_listen_opt_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2174 2203]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [2092 2204])
+            ("ngx_http_init_connection" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("ngx_connection_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2237 2257]))                  
+                :type "void")
+                nil [2207 2258])
+            ("ngx_http_close_connection" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("ngx_connection_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2290 2310]))                  
+                :type "void")
+                nil [2259 2311])
+            ("ngx_http_parse_request_line" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2493 2515])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("ngx_buf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2516 2529]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [2455 2530])
+            ("ngx_http_parse_uri" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2560 2582]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [2531 2583])
+            ("ngx_http_parse_complex_uri" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2621 2643])
+                    ("merge_slashes" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2648 2673]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [2584 2674])
+            ("ngx_http_parse_status_line" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2712 2734])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("ngx_buf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2735 2748])
+                    ("status" variable
+                       (:pointer 1
+                        :type ("ngx_http_status_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2753 2779]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [2675 2780])
+            ("ngx_http_parse_unsafe_uri" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2817 2839])
+                    ("uri" variable
+                       (:pointer 1
+                        :type ("ngx_str_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2840 2855])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("ngx_str_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2860 2876])
+                    ("flags" variable
+                       (:pointer 1
+                        :type ("ngx_uint_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2877 2895]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [2781 2896])
+            ("ngx_http_parse_header_line" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2934 2956])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("ngx_buf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2957 2970])
+                    ("allow_underscores" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2975 3004]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [2897 3005])
+            ("ngx_http_parse_multi_header_lines" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("headers" variable
+                       (:pointer 1
+                        :type ("ngx_array_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3050 3071])
+                    ("name" variable
+                       (:pointer 1
+                        :type ("ngx_str_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3076 3092])
+                    ("value" variable
+                       (:pointer 1
+                        :type ("ngx_str_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3093 3110]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [3006 3111])
+            ("ngx_http_arg" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3135 3157])
+                    ("name" variable
+                       (:pointer 1
+                        :type ("u_char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3158 3171])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3172 3183])
+                    ("value" variable
+                       (:pointer 1
+                        :type ("ngx_str_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3188 3205]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [3112 3206])
+            ("ngx_http_split_args" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3232 3254])
+                    ("uri" variable
+                       (:pointer 1
+                        :type ("ngx_str_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3255 3270])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("ngx_str_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3275 3291]))                  
+                :type "void")
+                nil [3207 3292])
+            ("ngx_http_parse_chunked" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3326 3348])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("ngx_buf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3349 3362])
+                    ("ctx" variable
+                       (:pointer 1
+                        :type ("ngx_http_chunked_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3367 3391]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [3293 3392])
+            ("ngx_http_create_request" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("ngx_connection_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3439 3459]))                  
+                :type ("ngx_http_request_t" type (:type "class") nil nil))
+                nil [3395 3460])
+            ("ngx_http_process_request_uri" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3500 3522]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [3461 3523])
+            ("ngx_http_process_request_header" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3566 3588]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [3524 3589])
+            ("ngx_http_process_request" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3620 3642]))                  
+                :type "void")
+                nil [3590 3643])
+            ("ngx_http_update_location_config" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3681 3703]))                  
+                :type "void")
+                nil [3644 3704])
+            ("ngx_http_handler" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3727 3749]))                  
+                :type "void")
+                nil [3705 3750])
+            ("ngx_http_run_posted_requests" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("ngx_connection_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3785 3805]))                  
+                :type "void")
+                nil [3751 3806])
+            ("ngx_http_post_request" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3839 3861])
+                    ("pr" variable
+                       (:pointer 1
+                        :type ("ngx_http_posted_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3866 3896]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [3807 3897])
+            ("ngx_http_finalize_request" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3929 3951])
+                    ("rc" variable (:type ("ngx_int_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3952 3965]))                  
+                :type "void")
+                nil [3898 3966])
+            ("ngx_http_free_request" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3994 4016])
+                    ("rc" variable (:type ("ngx_int_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4017 4030]))                  
+                :type "void")
+                nil [3967 4031])
+            ("ngx_http_empty_handler" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("wev" variable
+                       (:pointer 1
+                        :type ("ngx_event_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4061 4078]))                  
+                :type "void")
+                nil [4033 4079])
+            ("ngx_http_request_empty_handler" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4116 4138]))                  
+                :type "void")
+                nil [4080 4139])
+            ("ngx_http_ephemeral" variable (:constant-flag t) nil [4150 4168])
+            ("NGX_HTTP_LAST" variable (:constant-flag t) nil [4208 4221])
+            ("NGX_HTTP_FLUSH" variable (:constant-flag t) nil [4234 4248])
+            ("ngx_http_send_special" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4285 4307])
+                    ("flags" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4308 4325]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [4253 4326])
+            ("ngx_http_read_client_request_body" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4373 4395])
+                    ("post_handler" variable (:type ("ngx_http_client_body_handler_pt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4400 4445]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [4329 4446])
+            ("ngx_http_send_header" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4479 4501]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [4448 4502])
+            ("ngx_http_special_response_handler" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4547 4569])
+                    ("error" variable (:type ("ngx_int_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4574 4590]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [4503 4591])
+            ("ngx_http_filter_finalize_request" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4635 4657])
+                    ("m" variable
+                       (:pointer 1
+                        :type ("ngx_module_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4662 4678])
+                    ("error" variable (:type ("ngx_int_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4679 4695]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [4592 4696])
+            ("ngx_http_clean_header" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4724 4746]))                  
+                :type "void")
+                nil [4697 4747])
+            ("ngx_http_parse_time" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("value" variable
+                       (:pointer 1
+                        :type ("u_char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4777 4791])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4792 4803]))                  
+                :type ("time_t" type (:type "class") nil nil))
+                nil [4750 4804])
+            ("ngx_http_get_time" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4830 4840])
+                    ("t" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4841 4850]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [4805 4851])
+            ("ngx_http_discard_request_body" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4895 4917]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [4855 4918])
+            ("ngx_http_discarded_request_body_handler" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4964 4986]))                  
+                :type "void")
+                nil [4919 4987])
+            ("ngx_http_block_reading" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5016 5038]))                  
+                :type "void")
+                nil [4988 5039])
+            ("ngx_http_test_reading" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5067 5089]))                  
+                :type "void")
+                nil [5040 5090])
+            ("ngx_http_types_slot" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5119 5134])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5135 5154])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [5155 5166]))                  
+                :type "char")
+                nil [5093 5167])
+            ("ngx_http_merge_types" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5195 5210])
+                    ("keys" variable
+                       (:pointer 2
+                        :type ("ngx_array_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5211 5230])
+                    ("types_hash" variable
+                       (:pointer 1
+                        :type ("ngx_hash_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5235 5258])
+                    ("prev_keys" variable
+                       (:pointer 2
+                        :type ("ngx_array_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5259 5283])
+                    ("prev_types_hash" variable
+                       (:pointer 1
+                        :type ("ngx_hash_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5288 5316])
+                    ("default_types" variable
+                       (:pointer 1
+                        :type ("ngx_str_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5317 5342]))                  
+                :type "char")
+                nil [5168 5343])
+            ("ngx_http_set_default_types" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5381 5396])
+                    ("types" variable
+                       (:pointer 2
+                        :type ("ngx_array_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5397 5417])
+                    ("default_type" variable
+                       (:pointer 1
+                        :type ("ngx_str_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5422 5446]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [5344 5447])
+            ("ngx_http_module" variable
+               (:typemodifiers ("extern")
+                :type ("ngx_module_t" type (:type "class") nil nil))
+                nil [5538 5575])
+            ("ngx_http_html_default_types" variable
+               (:dereference 1
+                :typemodifiers ("extern")
+                :type ("ngx_str_t" type (:type "class") nil nil))
+                nil [5577 5625])
+            ("ngx_http_top_header_filter" variable
+               (:typemodifiers ("extern")
+                :type ("ngx_http_output_header_filter_pt" type (:type "class") nil nil))
+                nil [5628 5696])
+            ("ngx_http_top_body_filter" variable
+               (:typemodifiers ("extern")
+                :type ("ngx_http_output_body_filter_pt" type (:type "class") nil nil))
+                nil [5697 5763]))          
+    :file "ngx_http.h"
+    :pointmax 5801
+    :fsize 5800
+    :lastmodtime '(21066 53716 0 0)
+    :unmatched-syntax '((TYPEDEF 736 . 743) (TYPEDEF 621 . 628))
+    :lexical-table 
+        '(("ngx_http_set_ctx" (spp-arg-list ("r" "c" "module") 1930 . 1944) . 
+              ((symbol "r" 1950 . 1951) (punctuation "-" 1951 . 1952) (punctuation ">" 1952 . 1953) (symbol "ctx" 1953 . 1956) (semantic-list "[module.ctx_index]" 1956 . 1974) (punctuation "=" 1975 . 1976) (symbol "c" 1977 . 1978) (punctuation ";" 1978 . 1979)))
+          ("NGX_HTTP_LAST" . ((number "1" 4224 . 4225)))
+          ("ngx_http_get_module_ctx" (spp-arg-list ("r" "module") 1866 . 1877) . 
+              ((semantic-list "(r)" 1879 . 1882) (punctuation "-" 1882 . 1883) (punctuation ">" 1883 . 1884) (symbol "ctx" 1884 . 1887) (semantic-list "[module.ctx_index]" 1887 . 1905)))
+          ("ngx_http_ephemeral" (spp-arg-list ("r") 4168 . 4171) . ((semantic-list "(void *)" 4173 . 4181) (semantic-list "(&r->uri_start)" 4182 . 4197)))
+          ("NGX_HTTP_FLUSH" . ((number "2" 4250 . 4251)))
+          ("_NGX_HTTP_H_INCLUDED_")
+          )
+
+    )
+   (semanticdb-table "ngx_http_variables.h"
+    :file "ngx_http_variables.h"
+    :fsize 3040
+    :lastmodtime '(21066 53716 0 0)
+    )
+   (semanticdb-table "ngx_http_config.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_NGX_HTTP_CONFIG_H_INCLUDED_" variable (:constant-flag t) nil [114 142])
+            ("ngx_config.h" include (:system-flag t) nil [145 168])
+            ("ngx_core.h" include (:system-flag t) nil [169 190])
+            ("ngx_http.h" include (:system-flag t) nil [191 212])
+            ("ngx_http_conf_ctx_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("main_conf" variable
+                             (:pointer 2
+                              :type "void")
+                              (reparse-symbol classsubparts) [236 260])
+                          ("srv_conf" variable
+                             (:pointer 2
+                              :type "void")
+                              (reparse-symbol classsubparts) [265 288])
+                          ("loc_conf" variable
+                             (:pointer 2
+                              :type "void")
+                              (reparse-symbol classsubparts) [293 316]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [215 339])
+            ("ngx_http_module_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("preconfiguration" variable
+                             (:functionpointer-flag t
+                              :type ("ngx_int_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [363 411])
+                          ("postconfiguration" variable
+                             (:functionpointer-flag t
+                              :type ("ngx_int_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [416 465])
+                          ("create_main_conf" variable
+                             (:functionpointer-flag t
+                              :type "void")
+                              (reparse-symbol classsubparts) [471 519])
+                          ("init_main_conf" variable
+                             (:functionpointer-flag t
+                              :type "char")
+                              (reparse-symbol classsubparts) [524 582])
+                          ("create_srv_conf" variable
+                             (:functionpointer-flag t
+                              :type "void")
+                              (reparse-symbol classsubparts) [588 635])
+                          ("merge_srv_conf" variable
+                             (:functionpointer-flag t
+                              :type "char")
+                              (reparse-symbol classsubparts) [640 710])
+                          ("create_loc_conf" variable
+                             (:functionpointer-flag t
+                              :type "void")
+                              (reparse-symbol classsubparts) [716 763])
+                          ("merge_loc_conf" variable
+                             (:functionpointer-flag t
+                              :type "char")
+                              (reparse-symbol classsubparts) [768 838]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [342 859])
+            ("NGX_HTTP_MODULE" variable (:constant-flag t) nil [870 885])
+            ("NGX_HTTP_MAIN_CONF" variable (:constant-flag t) nil [931 949])
+            ("NGX_HTTP_SRV_CONF" variable (:constant-flag t) nil [976 993])
+            ("NGX_HTTP_LOC_CONF" variable (:constant-flag t) nil [1021 1038])
+            ("NGX_HTTP_UPS_CONF" variable (:constant-flag t) nil [1066 1083])
+            ("NGX_HTTP_SIF_CONF" variable (:constant-flag t) nil [1111 1128])
+            ("NGX_HTTP_LIF_CONF" variable (:constant-flag t) nil [1156 1173])
+            ("NGX_HTTP_LMT_CONF" variable (:constant-flag t) nil [1201 1218])
+            ("NGX_HTTP_MAIN_CONF_OFFSET" variable (:constant-flag t) nil [1248 1273])
+            ("NGX_HTTP_SRV_CONF_OFFSET" variable (:constant-flag t) nil [1324 1348])
+            ("NGX_HTTP_LOC_CONF_OFFSET" variable (:constant-flag t) nil [1399 1423])
+            ("ngx_http_get_module_main_conf" variable (:constant-flag t) nil [1476 1505])
+            ("ngx_http_get_module_srv_conf" variable (:constant-flag t) nil [1592 1620])
+            ("ngx_http_get_module_loc_conf" variable (:constant-flag t) nil [1673 1701])
+            ("ngx_http_conf_get_module_main_conf" variable (:constant-flag t) nil [1756 1790])
+            ("ngx_http_conf_get_module_srv_conf" variable (:constant-flag t) nil [1903 1936])
+            ("ngx_http_conf_get_module_loc_conf" variable (:constant-flag t) nil [2049 2082])
+            ("ngx_http_cycle_get_module_main_conf" variable (:constant-flag t) nil [2196 2231]))          
+    :file "ngx_http_config.h"
+    :pointmax 2566
+    :fsize 2565
+    :lastmodtime '(21066 53716 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("NGX_HTTP_UPS_CONF" . ((number "0x10000000" 1092 . 1102)))
+          ("NGX_HTTP_SIF_CONF" . ((number "0x20000000" 1137 . 1147)))
+          ("ngx_http_get_module_srv_conf" (spp-arg-list ("r" "module") 1620 . 1631) . 
+              ((semantic-list "(r)" 1633 . 1636) (punctuation "-" 1636 . 1637) (punctuation ">" 1637 . 1638) (symbol "srv_conf" 1638 . 1646) (semantic-list "[module.ctx_index]" 1646 . 1664)))
+          ("ngx_http_get_module_loc_conf" (spp-arg-list ("r" "module") 1701 . 1712) . 
+              ((semantic-list "(r)" 1714 . 1717) (punctuation "-" 1717 . 1718) (punctuation ">" 1718 . 1719) (symbol "loc_conf" 1719 . 1727) (semantic-list "[module.ctx_index]" 1727 . 1745)))
+          ("ngx_http_get_module_main_conf" (spp-arg-list ("r" "module") 1505 . 1516) . 
+              ((semantic-list "(r)" 1551 . 1554) (punctuation "-" 1554 . 1555) (punctuation ">" 1555 . 1556) (symbol "main_conf" 1556 . 1565) (semantic-list "[module.ctx_index]" 1565 . 1583)))
+          ("_NGX_HTTP_CONFIG_H_INCLUDED_")
+          ("NGX_HTTP_MAIN_CONF" . ((number "0x02000000" 957 . 967)))
+          ("ngx_http_cycle_get_module_main_conf" (spp-arg-list ("cycle" "module") 2231 . 2246) . ((semantic-list "(cycle->conf_ctx[ngx_http_module.index] ?                                 \\
+        ((ngx_http_conf_ctx_t *) cycle->conf_ctx[ngx_http_module.index])      \\
+            ->main_conf[module.ctx_index]:                                    \\
+        NULL)" 2272 . 2521)))
+          ("NGX_HTTP_MODULE" . ((number "0x50545448" 896 . 906)))
+          ("NGX_HTTP_LIF_CONF" . ((number "0x40000000" 1182 . 1192)))
+          ("NGX_HTTP_LMT_CONF" . ((number "0x80000000" 1227 . 1237)))
+          ("NGX_HTTP_MAIN_CONF_OFFSET" . ((symbol "offsetof" 1275 . 1283) (semantic-list "(ngx_http_conf_ctx_t, main_conf)" 1283 . 1315)))
+          ("NGX_HTTP_SRV_CONF_OFFSET" . ((symbol "offsetof" 1351 . 1359) (semantic-list "(ngx_http_conf_ctx_t, srv_conf)" 1359 . 1390)))
+          ("NGX_HTTP_LOC_CONF_OFFSET" . ((symbol "offsetof" 1426 . 1434) (semantic-list "(ngx_http_conf_ctx_t, loc_conf)" 1434 . 1465)))
+          ("NGX_HTTP_SRV_CONF" . ((number "0x04000000" 1002 . 1012)))
+          ("NGX_HTTP_LOC_CONF" . ((number "0x08000000" 1047 . 1057)))
+          ("ngx_http_conf_get_module_main_conf" (spp-arg-list ("cf" "module") 1790 . 1802) . 
+              ((semantic-list "((ngx_http_conf_ctx_t *) cf->ctx)" 1832 . 1865) (punctuation "-" 1865 . 1866) (punctuation ">" 1866 . 1867) (symbol "main_conf" 1867 . 1876) (semantic-list "[module.ctx_index]" 1876 . 1894)))
+          ("ngx_http_conf_get_module_srv_conf" (spp-arg-list ("cf" "module") 1936 . 1948) . 
+              ((semantic-list "((ngx_http_conf_ctx_t *) cf->ctx)" 1979 . 2012) (punctuation "-" 2012 . 2013) (punctuation ">" 2013 . 2014) (symbol "srv_conf" 2014 . 2022) (semantic-list "[module.ctx_index]" 2022 . 2040)))
+          ("ngx_http_conf_get_module_loc_conf" (spp-arg-list ("cf" "module") 2082 . 2094) . 
+              ((semantic-list "((ngx_http_conf_ctx_t *) cf->ctx)" 2125 . 2158) (punctuation "-" 2158 . 2159) (punctuation ">" 2159 . 2160) (symbol "loc_conf" 2160 . 2168) (semantic-list "[module.ctx_index]" 2168 . 2186)))
+          )
+
+    )
+   (semanticdb-table "ngx_http_request.h"
+    :file "ngx_http_request.h"
+    :fsize 19950
+    :lastmodtime '(21066 53716 0 0)
+    )
+   (semanticdb-table "ngx_http_script.h"
+    :file "ngx_http_script.h"
+    :fsize 7745
+    :lastmodtime '(21066 53716 0 0)
+    )
+   (semanticdb-table "ngx_http_upstream.h"
+    :file "ngx_http_upstream.h"
+    :fsize 13127
+    :lastmodtime '(21066 53716 0 0)
+    )
+   (semanticdb-table "ngx_http_upstream_round_robin.h"
+    :file "ngx_http_upstream_round_robin.h"
+    :fsize 2517
+    :lastmodtime '(21066 53716 0 0)
+    )
+   (semanticdb-table "ngx_http_busy_lock.h"
+    :file "ngx_http_busy_lock.h"
+    :fsize 1272
+    :lastmodtime '(21066 53716 0 0)
+    )
+   (semanticdb-table "ngx_http_core_module.h"
+    :file "ngx_http_core_module.h"
+    :fsize 18806
+    :lastmodtime '(21066 53716 0 0)
+    )
+   (semanticdb-table "ngx_http_request.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("ngx_config.h" include (:system-flag t) nil [69 92])
+            ("ngx_core.h" include (:system-flag t) nil [93 114])
+            ("ngx_http.h" include (:system-flag t) nil [115 136])
+            ("ngx_http_wait_request_handler" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ev" variable
+                       (:pointer 1
+                        :type ("ngx_event_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [181 197]))                  
+                :type "void")
+                nil [139 198])
+            ("ngx_http_process_request_line" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("rev" variable
+                       (:pointer 1
+                        :type ("ngx_event_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [241 258]))                  
+                :type "void")
+                nil [199 259])
+            ("ngx_http_process_request_headers" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("rev" variable
+                       (:pointer 1
+                        :type ("ngx_event_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [305 322]))                  
+                :type "void")
+                nil [260 323])
+            ("ngx_http_read_request_header" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [368 390]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [324 391])
+            ("ngx_http_alloc_large_header_buffer" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [444 466])
+                    ("request_line" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [471 495]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [392 496])
+            ("ngx_http_process_header_line" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [544 566])
+                    ("h" variable
+                       (:pointer 1
+                        :type ("ngx_table_elt_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [571 590])
+                    ("offset" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [591 609]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [498 610])
+            ("ngx_http_process_unique_header_line" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [664 686])
+                    ("h" variable
+                       (:pointer 1
+                        :type ("ngx_table_elt_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [691 710])
+                    ("offset" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [711 729]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [611 730])
+            ("ngx_http_process_multi_header_lines" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [784 806])
+                    ("h" variable
+                       (:pointer 1
+                        :type ("ngx_table_elt_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [811 830])
+                    ("offset" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [831 849]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [731 850])
+            ("ngx_http_process_host" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [890 912])
+                    ("h" variable
+                       (:pointer 1
+                        :type ("ngx_table_elt_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [917 936])
+                    ("offset" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [937 955]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [851 956])
+            ("ngx_http_process_connection" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1002 1024])
+                    ("h" variable
+                       (:pointer 1
+                        :type ("ngx_table_elt_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1029 1048])
+                    ("offset" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1049 1067]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [957 1068])
+            ("ngx_http_process_user_agent" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1114 1136])
+                    ("h" variable
+                       (:pointer 1
+                        :type ("ngx_table_elt_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1141 1160])
+                    ("offset" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1161 1179]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [1069 1180])
+            ("ngx_http_validate_host" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("host" variable
+                       (:pointer 1
+                        :type ("ngx_str_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1222 1238])
+                    ("pool" variable
+                       (:pointer 1
+                        :type ("ngx_pool_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1239 1256])
+                    ("alloc" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1261 1278]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [1182 1279])
+            ("ngx_http_set_virtual_server" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1325 1347])
+                    ("host" variable
+                       (:pointer 1
+                        :type ("ngx_str_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1352 1368]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [1280 1369])
+            ("ngx_http_find_virtual_server" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("ngx_connection_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1416 1436])
+                    ("virtual_names" variable
+                       (:pointer 1
+                        :type ("ngx_http_virtual_names_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1441 1481])
+                    ("host" variable
+                       (:pointer 1
+                        :type ("ngx_str_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1482 1498])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1503 1525])
+                    ("cscfp" variable
+                       (:pointer 2
+                        :type ("ngx_http_core_srv_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1526 1559]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [1370 1560])
+            ("ngx_http_request_handler" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ev" variable
+                       (:pointer 1
+                        :type ("ngx_event_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1599 1615]))                  
+                :type "void")
+                nil [1562 1616])
+            ("ngx_http_terminate_request" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1656 1678])
+                    ("rc" variable (:type ("ngx_int_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1679 1692]))                  
+                :type "void")
+                nil [1617 1693])
+            ("ngx_http_terminate_handler" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1733 1755]))                  
+                :type "void")
+                nil [1694 1756])
+            ("ngx_http_finalize_connection" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1798 1820]))                  
+                :type "void")
+                nil [1757 1821])
+            ("ngx_http_set_write_handler" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1866 1888]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [1822 1889])
+            ("ngx_http_writer" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1918 1940]))                  
+                :type "void")
+                nil [1890 1941])
+            ("ngx_http_request_finalizer" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1981 2003]))                  
+                :type "void")
+                nil [1942 2004])
+            ("ngx_http_set_keepalive" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2041 2063]))                  
+                :type "void")
+                nil [2006 2064])
+            ("ngx_http_keepalive_handler" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ev" variable
+                       (:pointer 1
+                        :type ("ngx_event_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2104 2120]))                  
+                :type "void")
+                nil [2065 2121])
+            ("ngx_http_set_lingering_close" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2163 2185]))                  
+                :type "void")
+                nil [2122 2186])
+            ("ngx_http_lingering_close_handler" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ev" variable
+                       (:pointer 1
+                        :type ("ngx_event_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2232 2248]))                  
+                :type "void")
+                nil [2187 2249])
+            ("ngx_http_post_action" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2288 2310]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [2250 2311])
+            ("ngx_http_close_request" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2347 2369])
+                    ("error" variable (:type ("ngx_int_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2370 2386]))                  
+                :type "void")
+                nil [2312 2387])
+            ("ngx_http_log_request" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2421 2443]))                  
+                :type "void")
+                nil [2388 2444])
+            ("ngx_http_log_error" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("log" variable
+                       (:pointer 1
+                        :type ("ngx_log_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2480 2495])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("u_char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2496 2508])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2509 2520]))                  
+                :type ("u_char" type (:type "class") nil nil))
+                nil [2446 2521])
+            ("ngx_http_log_error_handler" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2564 2586])
+                    ("sr" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2591 2614])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("u_char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2615 2627])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2628 2639]))                  
+                :type ("u_char" type (:type "class") nil nil))
+                nil [2522 2640])
+            ("ngx_http_client_errors" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [2789 3082])
+            ("ngx_http_headers_in" variable
+               (:dereference 1
+                :type ("ngx_http_header_t" type (:type "class") nil nil))
+                nil [3085 7184])
+            ("ngx_http_init_connection" function
+               (:arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("ngx_connection_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7217 7237]))                  
+                :type "void")
+                nil [7187 11322])
+            ("ngx_http_wait_request_handler" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("rev" variable
+                       (:pointer 1
+                        :type ("ngx_event_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11367 11384]))                  
+                :type "void")
+                nil [11325 14128])
+            ("ngx_http_create_request" function
+               (:pointer 1
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("ngx_connection_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14176 14196]))                  
+                :type ("ngx_http_request_t" type (:type "class") nil nil))
+                nil [14131 16921])
+            ("ngx_http_process_request_line" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("rev" variable
+                       (:pointer 1
+                        :type ("ngx_event_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23691 23708]))                  
+                :type "void")
+                nil [23649 28068])
+            ("ngx_http_process_request_uri" function
+               (:arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28110 28132]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [28071 30880])
+            ("ngx_http_process_request_headers" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("rev" variable
+                       (:pointer 1
+                        :type ("ngx_event_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30928 30945]))                  
+                :type "void")
+                nil [30883 36784])
+            ("ngx_http_read_request_header" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36831 36853]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [36787 38095])
+            ("ngx_http_alloc_large_header_buffer" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [38150 38172])
+                    ("request_line" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38177 38201]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [38098 42061])
+            ("ngx_http_process_header_line" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42110 42132])
+                    ("h" variable
+                       (:pointer 1
+                        :type ("ngx_table_elt_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42133 42152])
+                    ("offset" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42157 42175]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [42064 42340])
+            ("ngx_http_process_unique_header_line" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42396 42418])
+                    ("h" variable
+                       (:pointer 1
+                        :type ("ngx_table_elt_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42419 42438])
+                    ("offset" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42443 42461]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [42343 42948])
+            ("ngx_http_process_host" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42990 43012])
+                    ("h" variable
+                       (:pointer 1
+                        :type ("ngx_table_elt_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43013 43032])
+                    ("offset" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43037 43055]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [42951 43833])
+            ("ngx_http_process_connection" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43881 43903])
+                    ("h" variable
+                       (:pointer 1
+                        :type ("ngx_table_elt_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43904 43923])
+                    ("offset" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43928 43946]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [43836 44245])
+            ("ngx_http_process_user_agent" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [44293 44315])
+                    ("h" variable
+                       (:pointer 1
+                        :type ("ngx_table_elt_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [44316 44335])
+                    ("offset" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44340 44358]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [44248 45995])
+            ("ngx_http_process_multi_header_lines" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46051 46073])
+                    ("h" variable
+                       (:pointer 1
+                        :type ("ngx_table_elt_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46074 46093])
+                    ("offset" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46098 46116]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [45998 46694])
+            ("ngx_http_process_request_header" function
+               (:arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46739 46761]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [46697 49305])
+            ("ngx_http_process_request" function
+               (:arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49338 49360]))                  
+                :type "void")
+                nil [49308 51659])
+            ("ngx_http_validate_host" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("host" variable
+                       (:pointer 1
+                        :type ("ngx_str_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51702 51718])
+                    ("pool" variable
+                       (:pointer 1
+                        :type ("ngx_pool_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51719 51736])
+                    ("alloc" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51737 51754]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [51662 53296])
+            ("ngx_http_set_virtual_server" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [53344 53366])
+                    ("host" variable
+                       (:pointer 1
+                        :type ("ngx_str_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [53367 53383]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [53299 55489])
+            ("ngx_http_find_virtual_server" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("ngx_connection_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [55538 55558])
+                    ("virtual_names" variable
+                       (:pointer 1
+                        :type ("ngx_http_virtual_names_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [55563 55603])
+                    ("host" variable
+                       (:pointer 1
+                        :type ("ngx_str_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [55604 55620])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [55625 55647])
+                    ("cscfp" variable
+                       (:pointer 2
+                        :type ("ngx_http_core_srv_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [55648 55681]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [55492 57632])
+            ("ngx_http_request_handler" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ev" variable
+                       (:pointer 1
+                        :type ("ngx_event_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [57672 57688]))                  
+                :type "void")
+                nil [57635 58139])
+            ("ngx_http_run_posted_requests" function
+               (:arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("ngx_connection_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [58176 58196]))                  
+                :type "void")
+                nil [58142 58812])
+            ("ngx_http_post_request" function
+               (:arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [58847 58869])
+                    ("pr" variable
+                       (:pointer 1
+                        :type ("ngx_http_posted_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [58870 58900]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [58815 59258])
+            ("ngx_http_finalize_request" function
+               (:arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [59292 59314])
+                    ("rc" variable (:type ("ngx_int_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [59315 59328]))                  
+                :type "void")
+                nil [59261 63802])
+            ("ngx_http_terminate_request" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [63844 63866])
+                    ("rc" variable (:type ("ngx_int_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [63867 63880]))                  
+                :type "void")
+                nil [63805 64950])
+            ("ngx_http_terminate_handler" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [64992 65014]))                  
+                :type "void")
+                nil [64953 65199])
+            ("ngx_http_finalize_connection" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [65243 65265]))                  
+                :type "void")
+                nil [65202 66499])
+            ("ngx_http_set_write_handler" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [66546 66568]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [66502 67407])
+            ("ngx_http_writer" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [67438 67460]))                  
+                :type "void")
+                nil [67410 69564])
+            ("ngx_http_request_finalizer" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [69606 69628]))                  
+                :type "void")
+                nil [69567 69805])
+            ("ngx_http_block_reading" function
+               (:arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [69836 69858]))                  
+                :type "void")
+                nil [69808 70242])
+            ("ngx_http_test_reading" function
+               (:arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [70272 70294]))                  
+                :type "void")
+                nil [70245 72292])
+            ("ngx_http_set_keepalive" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [72330 72352]))                  
+                :type "void")
+                nil [72295 78267])
+            ("ngx_http_keepalive_handler" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("rev" variable
+                       (:pointer 1
+                        :type ("ngx_event_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [78309 78326]))                  
+                :type "void")
+                nil [78270 81261])
+            ("ngx_http_set_lingering_close" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [81305 81327]))                  
+                :type "void")
+                nil [81264 82434])
+            ("ngx_http_lingering_close_handler" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("rev" variable
+                       (:pointer 1
+                        :type ("ngx_event_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [82482 82499]))                  
+                :type "void")
+                nil [82437 83764])
+            ("ngx_http_empty_handler" function
+               (:arguments 
+                  ( ("wev" variable
+                       (:pointer 1
+                        :type ("ngx_event_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [83795 83812]))                  
+                :type "void")
+                nil [83767 83904])
+            ("ngx_http_request_empty_handler" function
+               (:arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [83943 83965]))                  
+                :type "void")
+                nil [83907 84094])
+            ("ngx_http_send_special" function
+               (:arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [84129 84151])
+                    ("flags" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [84152 84169]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [84097 84655])
+            ("ngx_http_post_action" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [84696 84718]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [84658 85488])
+            ("ngx_http_close_request" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [85526 85548])
+                    ("rc" variable (:type ("ngx_int_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [85549 85562]))                  
+                :type "void")
+                nil [85491 86144])
+            ("ngx_http_free_request" function
+               (:arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [86174 86196])
+                    ("rc" variable (:type ("ngx_int_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [86197 86210]))                  
+                :type "void")
+                nil [86147 88241])
+            ("ngx_http_log_request" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [88277 88299]))                  
+                :type "void")
+                nil [88244 88680])
+            ("ngx_http_close_connection" function
+               (:arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("ngx_connection_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [88714 88734]))                  
+                :type "void")
+                nil [88683 89241])
+            ("ngx_http_log_error" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("log" variable
+                       (:pointer 1
+                        :type ("ngx_log_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [89279 89294])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("u_char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [89295 89307])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [89308 89319]))                  
+                :type ("u_char" type (:type "class") nil nil))
+                nil [89244 89913])
+            ("ngx_http_log_error_handler" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [89959 89981])
+                    ("sr" variable
+                       (:pointer 1
+                        :type ("ngx_http_request_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [89982 90005])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("u_char" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [90010 90022])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [90023 90034]))                  
+                :type ("u_char" type (:type "class") nil nil))
+                nil [89916 91790]))          
+    :file "ngx_http_request.c"
+    :pointmax 91791
+    :fsize 91790
+    :lastmodtime '(21066 53716 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!download!nginx-1.5.6!src!http!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

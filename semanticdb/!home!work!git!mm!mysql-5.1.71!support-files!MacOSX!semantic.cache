@@ -1,0 +1,23 @@
+;; Object MacOSX/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "MacOSX/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("EXTRA_DIST" variable (:default-value ("Info.plist.sh" "Description.plist.sh" "StartupParameters.plist.sh" "postflight.sh" "preflight.sh" "ReadMe.txt" "MySQLCOM" "StartupItem.Description.plist" "StartupItem.Info.plist" "StartupItem.postinstall")) nil [787 1022])
+            ("noinst_DATA" variable (:default-value ("Info.plist" "Description.plist" "StartupParameters.plist" "postflight" "preflight")) nil [1023 1127])
+            ("CLEANFILES" variable (:default-value ("Info.plist" "Description.plist" "StartupParameters.plist" "postflight" "preflight")) nil [1128 1231])
+            ("SUFFIXES" variable (:default-value (".sh")) nil [1232 1247])
+            (".sh" function nil nil [1248 1547]))          
+    :file "Makefile.am"
+    :pointmax 1600
+    :fsize 1599
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax '((symbol 1591 . 1599) (punctuation 1590 . 1591) (punctuation 1589 . 1590) (symbol 1588 . 1589) (bol 1588 . 1588))
+    )
+   )
+  :file "!home!work!git!mm!mysql-5.1.71!support-files!MacOSX!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

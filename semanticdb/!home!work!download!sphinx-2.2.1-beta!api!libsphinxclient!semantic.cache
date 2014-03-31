@@ -1,0 +1,36 @@
+;; Object libsphinxclient/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "libsphinxclient/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("AUTOMAKE_OPTIONS" variable (:default-value ("foreign" "no-dependencies")) nil [1 44])
+            ("lib_LTLIBRARIES" variable (:default-value ("libsphinxclient.la")) nil [45 82])
+            ("noinst_PROGRAMS" variable (:default-value ("test")) nil [82 105])
+            ("libsphinxclient_la_SOURCES" variable (:default-value ("sphinxclient.c")) nil [106 151])
+            ("test_SOURCES" variable (:default-value ("test.c")) nil [151 173])
+            ("libsphinxclient_la_LIBADD" variable (:default-value ("@LTLIBOBJS@")) nil [174 214])
+            ("libsphinxclient_la_LDFLAGS" variable (:default-value ("-release" "@VERSION@")) nil [214 262])
+            ("include_HEADERS" variable (:default-value ("sphinxclient.h")) nil [263 299])
+            ("test_LDADD" variable (:default-value (".libs/libsphinxclient.a")) nil [299 336]))          
+    :file "Makefile.am"
+    :pointmax 336
+    :fsize 335
+    :lastmodtime '(18556 42529 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "test.c"
+    :major-mode 'c-mode
+    :tags nil
+    :file "test.c"
+    :pointmax 12628
+    :fsize 12627
+    :lastmodtime '(20780 19337 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!download!sphinx-2.2.1-beta!api!libsphinxclient!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

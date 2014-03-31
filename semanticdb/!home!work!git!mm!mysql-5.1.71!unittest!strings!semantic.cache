@@ -1,0 +1,22 @@
+;; Object strings/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "strings/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("AM_CPPFLAGS" variable (:default-value ("@ZLIB_INCLUDES@" "-I$(top_builddir)/include")) nil [730 792])
+            ("AM_CPPFLAGS" variable (:default-value ("-I$(top_srcdir)/include" "-I$(top_srcdir)/unittest/mytap")) nil [792 866])
+            ("LDADD" variable (:default-value ("$(top_builddir)/unittest/mytap/libmytap.a" "$(top_builddir)/mysys/libmysys.a" "$(top_builddir)/dbug/libdbug.a" "$(top_builddir)/strings/libmystrings.a")) nil [867 1040])
+            ("noinst_PROGRAMS" variable (:default-value ("strings-t")) nil [1041 1070]))          
+    :file "Makefile.am"
+    :pointmax 1123
+    :fsize 1122
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax '((symbol 1114 . 1122) (punctuation 1113 . 1114) (punctuation 1112 . 1113) (symbol 1111 . 1112) (bol 1111 . 1111))
+    )
+   )
+  :file "!home!work!git!mm!mysql-5.1.71!unittest!strings!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

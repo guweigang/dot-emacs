@@ -1,0 +1,22 @@
+;; Object cxxtools/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cxxtools/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("ACLOCAL_AMFLAGS" variable (:default-value ("-I" "m4")) nil [1 25])
+            ("bin_SCRIPTS" variable (:default-value ("cxxtools-config")) nil [250 280])
+            ("pkgconfigdir" variable (:default-value ("$(libdir)/pkgconfig/")) nil [281 317])
+            ("pkgconfig_DATA" variable (:default-value ("pkgconfig/cxxtools-bin.pc" "pkgconfig/cxxtools-http.pc" "pkgconfig/cxxtools-json.pc" "pkgconfig/cxxtools.pc" "pkgconfig/cxxtools-unit.pc" "pkgconfig/cxxtools-xmlrpc.pc")) nil [318 508]))          
+    :file "Makefile.am"
+    :pointmax 508
+    :fsize 507
+    :lastmodtime '(20853 59043 0 0)
+    :unmatched-syntax '((semantic-list 234 . 248) (punctuation 233 . 234) (semantic-list 222 . 232) (punctuation 221 . 222) (INCLUDE 207 . 214) (symbol 192 . 200) (symbol 178 . 185) (symbol 161 . 171) (symbol 146 . 154) (symbol 131 . 139) (symbol 121 . 124) (punctuation 119 . 120) (symbol 111 . 118) (bol 111 . 111) (symbol 99 . 103) (punctuation 97 . 98) (symbol 84 . 96) (bol 82 . 82) (symbol 53 . 57) (punctuation 51 . 52) (symbol 42 . 50) (bol 40 . 40))
+    )
+   )
+  :file "!home!work!git!cxxtools!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

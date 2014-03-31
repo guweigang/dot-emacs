@@ -1,0 +1,82 @@
+;; Object demo/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "demo/"
+  :tables (list 
+   (semanticdb-table "rpcserver.cpp"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "rpcserver.cpp"
+    :pointmax 3976
+    :fsize 3975
+    :lastmodtime '(20859 30360 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("noinst_PROGRAMS" variable (:default-value ("arg")) nil [1 294])
+            ("arg_SOURCES" variable (:default-value ("arg.cpp")) nil [295 317])
+            ("arg_set_SOURCES" variable (:default-value ("arg-set.cpp")) nil [317 347])
+            ("cgi_SOURCES" variable (:default-value ("cgi.cpp")) nil [347 369])
+            ("dir_SOURCES" variable (:default-value ("dir.cpp")) nil [369 391])
+            ("dlloader_SOURCES" variable (:default-value ("dlloader.cpp")) nil [391 423])
+            ("getini_SOURCES" variable (:default-value ("getini.cpp")) nil [423 451])
+            ("hd_SOURCES" variable (:default-value ("hd.cpp")) nil [451 471])
+            ("httprequest_SOURCES" variable (:default-value ("httprequest.cpp")) nil [471 509])
+            ("httpserver_SOURCES" variable (:default-value ("httpserver.cpp")) nil [509 545])
+            ("log_SOURCES" variable (:default-value ("log.cpp")) nil [545 567])
+            ("logbench_SOURCES" variable (:default-value ("logbench.cpp")) nil [567 599])
+            ("logsh_SOURCES" variable (:default-value ("logsh.cpp")) nil [599 625])
+            ("md5sum_SOURCES" variable (:default-value ("md5sum.cpp")) nil [625 653])
+            ("mime_SOURCES" variable (:default-value ("mime.cpp")) nil [653 677])
+            ("multifstream_SOURCES" variable (:default-value ("multifstream.cpp")) nil [677 717])
+            ("netcat_SOURCES" variable (:default-value ("netcat.cpp")) nil [717 745])
+            ("netio_SOURCES" variable (:default-value ("netio.cpp")) nil [745 771])
+            ("netmsg_SOURCES" variable (:default-value ("netmsg.cpp")) nil [771 799])
+            ("pipestream_SOURCES" variable (:default-value ("pipestream.cpp")) nil [799 835])
+            ("pool_SOURCES" variable (:default-value ("pool.cpp")) nil [835 859])
+            ("signals_SOURCES" variable (:default-value ("signals.cpp")) nil [859 889])
+            ("thread_SOURCES" variable (:default-value ("thread.cpp")) nil [889 917])
+            ("threadpool_SOURCES" variable (:default-value ("threadpool.cpp")) nil [917 953])
+            ("uuencode_SOURCES" variable (:default-value ("uuencode.cpp")) nil [953 985])
+            ("cxxlog_SOURCES" variable (:default-value ("cxxlog.cpp")) nil [985 1013])
+            ("rpcserver_SOURCES" variable (:default-value ("rpcserver.cpp")) nil [1013 1047])
+            ("rpcechoclient_SOURCES" variable (:default-value ("rpcechoclient.cpp")) nil [1047 1089])
+            ("rpcaddclient_SOURCES" variable (:default-value ("rpcaddclient.cpp")) nil [1089 1129])
+            ("splitter_SOURCES" variable (:default-value ("splitter.cpp")) nil [1129 1161])
+            ("json_SOURCES" variable (:default-value ("json.cpp")) nil [1161 1185])
+            ("regex_SOURCES" variable (:default-value ("regex.cpp")) nil [1185 1211])
+            ("execLs_SOURCES" variable (:default-value ("execLs.cpp")) nil [1211 1239])
+            ("rpcasyncaddclient_SOURCES" variable (:default-value ("rpcasyncaddclient.cpp")) nil [1239 1289])
+            ("noinst_PROGRAMS" variable (:default-value ("iconv")) nil [1310 1335])
+            ("iconv_SOURCES" variable (:default-value ("iconv.cpp")) nil [1335 1361])
+            ("BASE_LIBS" variable (:default-value ("$(top_builddir)/src/libcxxtools.la")) nil [1368 1415])
+            ("HTTP_LIBS" variable (:default-value ("$(BASE_LIBS)")) nil [1415 1485])
+            ("XMLRPC_LIBS" variable (:default-value ("$(BASE_LIBS)")) nil [1485 1561])
+            ("BIN_LIBS" variable (:default-value ("$(HTTP_LIBS)")) nil [1561 1628])
+            ("JSON_LIBS" variable (:default-value ("$(HTTP_LIBS)")) nil [1628 1698])
+            ("AM_CPPFLAGS" variable (:default-value ("-I$(top_srcdir)/src" "-I$(top_builddir)/include" "-I$(top_srcdir)/include")) nil [1699 1783])
+            ("LDADD" variable (:default-value ("$(top_builddir)/src/libcxxtools.la")) nil [1783 1826])
+            ("AM_CXXFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [1826 1858])
+            ("httpserver_LDADD" variable (:default-value ("$(HTTP_LIBS)")) nil [1859 1892])
+            ("httprequest_LDADD" variable (:default-value ("$(HTTP_LIBS)")) nil [1892 1925])
+            ("rpcserver_LDADD" variable (:default-value ("$(XMLRPC_LIBS)" "$(BIN_LIBS)" "$(JSON_LIBS)")) nil [1925 1983])
+            ("rpcechoclient_LDADD" variable (:default-value ("$(XMLRPC_LIBS)" "$(BIN_LIBS)" "$(JSON_LIBS)")) nil [1983 2045])
+            ("rpcaddclient_LDADD" variable (:default-value ("$(XMLRPC_LIBS)" "$(BIN_LIBS)" "$(JSON_LIBS)")) nil [2045 2106])
+            ("json_LDADD" variable (:default-value ("$(HTTP_LIBS)")) nil [2106 2132])
+            ("rpcasyncaddclient_LDADD" variable (:default-value ("$(XMLRPC_LIBS)" "$(BIN_LIBS)" "$(JSON_LIBS)")) nil [2132 2198])
+            ("log.xml" function nil nil [2199 2271])
+            ("noinst_DATA" variable (:default-value ("log.xml")) nil [2272 2294])
+            ("CLEANFILES" variable (:default-value ("log.xml")) nil [2294 2315])
+            ("EXTRA_DIST" variable (:default-value ("README")) nil [2315 2335]))          
+    :file "Makefile.am"
+    :pointmax 2335
+    :fsize 2334
+    :lastmodtime '(20859 30360 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!git!php-hogdeer!cxxtools!demo!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

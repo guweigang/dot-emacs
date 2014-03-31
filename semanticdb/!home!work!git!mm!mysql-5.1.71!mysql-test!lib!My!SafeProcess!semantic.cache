@@ -1,0 +1,23 @@
+;; Object SafeProcess/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SafeProcess/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("testroot" variable (:default-value ("$(prefix)")) nil [753 774])
+            ("safedir" variable (:default-value ("$(testroot)/mysql-test/lib/My/SafeProcess")) nil [774 826])
+            ("safe_PROGRAMS" variable (:default-value ("my_safe_process")) nil [853 886])
+            ("my_safe_process_SOURCES" variable (:default-value ("safe_process.cc")) nil [887 929])
+            ("EXTRA_DIST" variable (:default-value ("safe_kill_win.cc" "safe_process_win.cc" "CMakeLists.txt")) nil [930 1004]))          
+    :file "Makefile.am"
+    :pointmax 1058
+    :fsize 1057
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax '((symbol 1049 . 1057) (punctuation 1048 . 1049) (punctuation 1047 . 1048) (symbol 1046 . 1047) (bol 1046 . 1046))
+    )
+   )
+  :file "!home!work!git!mm!mysql-5.1.71!mysql-test!lib!My!SafeProcess!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

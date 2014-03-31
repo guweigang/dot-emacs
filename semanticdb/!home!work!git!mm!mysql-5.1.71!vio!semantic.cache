@@ -1,0 +1,24 @@
+;; Object vio/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "vio/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("INCLUDES" variable (:default-value ("-I$(top_builddir)/include" "-I$(top_srcdir)/include" "$(openssl_includes)")) nil [708 795])
+            ("LDADD" variable (:default-value ("@CLIENT_EXTRA_LDFLAGS@" "$(openssl_libs)" "$(yassl_libs)")) nil [795 858])
+            ("pkglib_LIBRARIES" variable (:default-value ("libvio.a")) nil [858 886])
+            ("noinst_HEADERS" variable (:default-value ("vio_priv.h")) nil [887 915])
+            ("libvio_a_SOURCES" variable (:default-value ("vio.c" "viosocket.c" "viossl.c" "viosslfactories.c")) nil [916 980])
+            ("EXTRA_DIST" variable (:default-value ("CMakeLists.txt")) nil [981 1009]))          
+    :file "Makefile.am"
+    :pointmax 1062
+    :fsize 1061
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax '((symbol 1053 . 1061) (punctuation 1052 . 1053) (punctuation 1051 . 1052) (symbol 1050 . 1051) (bol 1050 . 1050))
+    )
+   )
+  :file "!home!work!git!mm!mysql-5.1.71!vio!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

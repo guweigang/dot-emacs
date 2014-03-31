@@ -1,0 +1,90 @@
+;; Object sample/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "sample/"
+  :tables (list 
+   (semanticdb-table "%%home%%work%%git%%phalcon-framework%%sample%%views%%cart%%index.volt.compiled"
+    :major-mode 'html-mode
+    :tags 
+        '( ("血拼大爆炸！！！" section nil nil [735 804])
+            ("血拼大爆炸！！！" section nil nil [804 875])
+            ("血拼大爆炸！！！" section nil nil [875 938])
+            ("血拼大爆炸！！！" section nil nil [938 989])
+            ("血拼大爆炸！！！" section nil nil [989 1036])
+            ("血拼大爆炸！！！" section nil nil [1036 1112])
+            ("首页" section (:members 
+              ( ("我的主页" anchor nil nil [2336 2339])
+                ("我的购物车" anchor nil nil [2370 2373])
+                ("购买记录" anchor nil nil [2463 2466])
+                ("愿望清单" anchor nil nil [2497 2500])
+                ("消息中心" anchor nil nil [2531 2534])
+                ("资料修改" anchor nil nil [2573 2576])
+                ("商家认证" anchor nil nil [2607 2610])
+                ("退出" anchor nil nil [2679 2682])
+                ("成功加入购物车！" section nil nil [3258 3628])
+                ("商品列表" section (:members 
+                  ( ("user->nickname; ?>" anchor nil nil [4460 4463])
+                    ("user->nickname; ?>" anchor nil nil [4625 4628])
+                    ("user->nickname; ?>" anchor nil nil [4756 4759])
+                    ("[删除]" anchor nil nil [5168 5171]))                  ) nil [3628 5891]))              ) nil [1112 5891])
+            ("" section nil nil [5891 5961])
+            ("" section nil nil [5961 6027])
+            ("" section nil nil [6027 6097])
+            ("" section nil nil [6097 6170])
+            ("" section nil nil [6170 6241])
+            ("" section nil nil [6241 6313])
+            ("" section nil nil [6313 6387])
+            ("" section nil nil [6387 6473]))          
+    :file "%%home%%work%%git%%phalcon-framework%%sample%%views%%cart%%index.volt.compiled"
+    :pointmax 6473
+    :fsize 7872
+    :lastmodtime '(21254 48845 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "%%home%%work%%git%%phalcon-framework%%sample%%views%%index%%index.volt.compiled"
+    :major-mode 'html-mode
+    :tags 
+        '( ("血拼大爆炸！！！" section nil nil [776 845])
+            ("血拼大爆炸！！！" section nil nil [845 916])
+            ("血拼大爆炸！！！" section nil nil [916 982])
+            ("血拼大爆炸！！！" section nil nil [982 1058])
+            ("首页" section (:members 
+              ( ("我的主页" anchor nil nil [2316 2319])
+                ("我的购物车" anchor nil nil [2350 2353])
+                ("购买记录" anchor nil nil [2443 2446])
+                ("愿望清单" anchor nil nil [2477 2480])
+                ("消息中心" anchor nil nil [2511 2514])
+                ("资料修改" anchor nil nil [2553 2556])
+                ("商家认证" anchor nil nil [2587 2590])
+                ("退出" anchor nil nil [2659 2662])
+                ("血拼首页" anchor nil nil [3288 3291])
+                ("日用百货" anchor nil nil [3382 3385])
+                ("生鲜食品" anchor nil nil [3466 3469])
+                ("服饰鞋包" anchor nil nil [3551 3554])
+                ("美妆护理" anchor nil nil [3640 3643])
+                ("运动健康" anchor nil nil [3725 3728])
+                ("数码家电" anchor nil nil [3812 3815])
+                ("母婴用具" anchor nil nil [3901 3904])
+                ("海外购" anchor nil nil [3987 3990])
+                ("其他" anchor nil nil [4071 4074])
+                ("user->nickname; ?>" anchor nil nil [5558 5561]))              ) nil [1058 6450])
+            ("" section nil nil [6450 6520])
+            ("" section nil nil [6520 6586])
+            ("" section nil nil [6586 6656])
+            ("" section nil nil [6656 6729])
+            ("" section nil nil [6729 6800])
+            ("" section nil nil [6800 6872])
+            ("" section nil nil [6872 6946])
+            ("" section nil nil [6946 7014])
+            ("" section nil nil [7014 7083])
+            ("" section nil nil [7083 7144]))          
+    :file "%%home%%work%%git%%phalcon-framework%%sample%%views%%index%%index.volt.compiled"
+    :pointmax 7144
+    :fsize 7375
+    :lastmodtime '(21255 35011 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!var!compiled!sample!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,2100 @@
+;; Object date/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "date/"
+  :tables (list 
+   (semanticdb-table "php_date.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("php.h" include nil nil [1161 1177])
+            ("php_streams.h" include nil nil [1178 1202])
+            ("php_main.h" include nil nil [1203 1224])
+            ("php_globals.h" include nil nil [1225 1249])
+            ("php_ini.h" include nil nil [1250 1270])
+            ("ext/standard/info.h" include nil nil [1271 1301])
+            ("ext/standard/php_versioning.h" include nil nil [1302 1342])
+            ("ext/standard/php_math.h" include nil nil [1343 1377])
+            ("php_date.h" include nil nil [1378 1399])
+            ("zend_interfaces.h" include nil nil [1400 1428])
+            ("lib/timelib.h" include nil nil [1429 1453])
+            ("time.h" include (:system-flag t) nil [1454 1471])
+            ("php_date_llabs" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("i" variable (:type "long long") (reparse-symbol arg-sub-list) [1738 1751]))                  
+                :type "long long")
+                nil [1698 1779])
+            ("date_functions" variable
+               (:dereference 1
+                :constant-flag t
+                :type ("zend_function_entry" type (:type "class") nil nil))
+                nil [10288 12748])
+            ("date_funcs_date" variable
+               (:dereference 1
+                :constant-flag t
+                :type ("zend_function_entry" type (:type "class") nil nil))
+                nil [12750 14254])
+            ("date_funcs_timezone" variable
+               (:dereference 1
+                :constant-flag t
+                :type ("zend_function_entry" type (:type "class") nil nil))
+                nil [14256 15123])
+            ("date_funcs_interval" variable
+               (:dereference 1
+                :constant-flag t
+                :type ("zend_function_entry" type (:type "class") nil nil))
+                nil [15125 15770])
+            ("date_funcs_period" variable
+               (:dereference 1
+                :constant-flag t
+                :type ("zend_function_entry" type (:type "class") nil nil))
+                nil [15772 15962])
+            ("guess_timezone" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("tzdb" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("timelib_tzdb" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15992 16026])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16017 16027]))                  
+                :type "char")
+                nil [15964 16028])
+            ("date_register_classes" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("TSRMLS_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16063 16072]))                  
+                :type "void")
+                nil [16029 16073])
+            ("PHP_GINIT_FUNCTION" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("date" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16145 16150]))                  
+                :type "int")
+                nil [16119 16151])
+            ("php_date_global_timezone_db" variable
+               (:pointer 1
+                :type ("timelib_tzdb" type (:type "class") nil nil))
+                nil [16171 16213])
+            ("php_date_global_timezone_db_enabled" variable (:type "int") nil [16214 16254])
+            ("DATE_DEFAULT_LATITUDE" variable (:constant-flag t) nil [16264 16285])
+            ("DATE_DEFAULT_LONGITUDE" variable (:constant-flag t) nil [16304 16326])
+            ("DATE_SUNSET_ZENITH" variable (:constant-flag t) nil [16415 16433])
+            ("DATE_SUNRISE_ZENITH" variable (:constant-flag t) nil [16521 16540])
+            ("date_ce_period" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [17134 17220])
+            ("date_ce_interval" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [17134 17220])
+            ("date_ce_timezone" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [17134 17220])
+            ("date_ce_date" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [17134 17220])
+            ("php_date_get_date_ce" function
+               (:pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [17269 17274]))                  
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [17230 17300])
+            ("php_date_get_timezone_ce" function
+               (:pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [17352 17357]))                  
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [17309 17387])
+            ("date_object_handlers_date" variable
+               (:typemodifiers ("static")
+                :type ("zend_object_handlers" type (:type "class") nil nil))
+                nil [17389 17443])
+            ("date_object_handlers_timezone" variable
+               (:typemodifiers ("static")
+                :type ("zend_object_handlers" type (:type "class") nil nil))
+                nil [17444 17502])
+            ("date_object_handlers_interval" variable
+               (:typemodifiers ("static")
+                :type ("zend_object_handlers" type (:type "class") nil nil))
+                nil [17503 17561])
+            ("date_object_handlers_period" variable
+               (:typemodifiers ("static")
+                :type ("zend_object_handlers" type (:type "class") nil nil))
+                nil [17562 17618])
+            ("DATE_SET_CONTEXT" variable (:constant-flag t) nil [17628 17644])
+            ("DATE_FETCH_OBJECT" variable (:constant-flag t) nil [17699 17716])
+            ("DATE_CHECK_INITIALIZED" variable (:constant-flag t) nil [18086 18108])
+            ("date_object_free_storage_date" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [18348 18370])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18361 18371]))                  
+                :type "void")
+                nil [18306 18372])
+            ("date_object_free_storage_timezone" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [18419 18441])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18432 18442]))                  
+                :type "void")
+                nil [18373 18443])
+            ("date_object_free_storage_interval" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [18490 18512])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18503 18513]))                  
+                :type "void")
+                nil [18444 18514])
+            ("date_object_free_storage_period" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [18559 18581])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18572 18582]))                  
+                :type "void")
+                nil [18515 18583])
+            ("date_object_new_date" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("class_type" variable
+                       (:pointer 1
+                        :type ("zend_class_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18631 18669])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18660 18670]))                  
+                :type ("zend_object_value" type (:type "class") nil nil))
+                nil [18585 18671])
+            ("date_object_new_timezone" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("class_type" variable
+                       (:pointer 1
+                        :type ("zend_class_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18722 18760])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18751 18761]))                  
+                :type ("zend_object_value" type (:type "class") nil nil))
+                nil [18672 18762])
+            ("date_object_new_interval" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("class_type" variable
+                       (:pointer 1
+                        :type ("zend_class_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18813 18851])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18842 18852]))                  
+                :type ("zend_object_value" type (:type "class") nil nil))
+                nil [18763 18853])
+            ("date_object_new_period" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("class_type" variable
+                       (:pointer 1
+                        :type ("zend_class_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18902 18940])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18931 18941]))                  
+                :type ("zend_object_value" type (:type "class") nil nil))
+                nil [18854 18942])
+            ("date_object_clone_date" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("this_ptr" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18992 19016])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19007 19017]))                  
+                :type ("zend_object_value" type (:type "class") nil nil))
+                nil [18944 19018])
+            ("date_object_clone_timezone" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("this_ptr" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19071 19095])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19086 19096]))                  
+                :type ("zend_object_value" type (:type "class") nil nil))
+                nil [19019 19097])
+            ("date_object_clone_interval" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("this_ptr" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19150 19174])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19165 19175]))                  
+                :type ("zend_object_value" type (:type "class") nil nil))
+                nil [19098 19176])
+            ("date_object_clone_period" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("this_ptr" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19227 19251])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19242 19252]))                  
+                :type ("zend_object_value" type (:type "class") nil nil))
+                nil [19177 19253])
+            ("date_object_compare_date" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("d1" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19291 19300])
+                    ("d2" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19301 19319])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19310 19320]))                  
+                :type "int")
+                nil [19255 19321])
+            ("date_object_get_properties" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19367 19389])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19380 19390]))                  
+                :type ("HashTable" type (:type "class") nil nil))
+                nil [19322 19391])
+            ("date_object_get_properties_interval" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19446 19468])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19459 19469]))                  
+                :type ("HashTable" type (:type "class") nil nil))
+                nil [19392 19470])
+            ("date_interval_read_property" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19506 19519])
+                    ("member" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19520 19533])
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) [19534 19552])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19543 19553]))                  
+                :type ("zval" type (:type "class") nil nil))
+                nil [19472 19554])
+            ("date_interval_write_property" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19589 19602])
+                    ("member" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19603 19616])
+                    ("value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19617 19638])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19629 19639]))                  
+                :type "void")
+                nil [19555 19640])
+            ("date_module_entry" variable (:type ("zend_module_entry" type (:type "class") nil nil)) nil [19666 20390])
+            ("PHP_GINIT_FUNCTION" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("date" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20458 20463]))                  
+                :type "int")
+                nil [20432 20570])
+            ("_php_date_tzinfo_dtor" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("tzinfo" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [20617 20630]))                  
+                :type "void")
+                nil [20583 20714])
+            ("PHP_RINIT_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("date" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20764 20769]))                  
+                :type "int")
+                nil [20745 20921])
+            ("PHP_RSHUTDOWN_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("date" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20989 20994]))                  
+                :type "int")
+                nil [20966 21326])
+            ("DATE_TIMEZONEDB" variable (:constant-flag t) nil [21346 21361])
+            ("DATE_FORMAT_RFC822" variable (:constant-flag t) nil [22169 22187])
+            ("DATE_FORMAT_RFC850" variable (:constant-flag t) nil [22504 22522])
+            ("DATE_FORMAT_RFC1036" variable (:constant-flag t) nil [22958 22977])
+            ("DATE_FORMAT_RFC1123" variable (:constant-flag t) nil [23218 23237])
+            ("DATE_FORMAT_RFC2822" variable (:constant-flag t) nil [24238 24257])
+            ("DATE_FORMAT_RFC3339" variable (:constant-flag t) nil [25049 25068])
+            ("DATE_FORMAT_ISO8601" variable (:constant-flag t) nil [25096 25115])
+            ("DATE_TZ_ERRMSG" variable (:constant-flag t) nil [25143 25157])
+            ("SUNFUNCS_RET_TIMESTAMP" variable (:constant-flag t) nil [25482 25504])
+            ("SUNFUNCS_RET_STRING" variable (:constant-flag t) nil [25515 25534])
+            ("SUNFUNCS_RET_DOUBLE" variable (:constant-flag t) nil [25548 25567])
+            ("PHP_MINIT_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("date" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25623 25628]))                  
+                :type "int")
+                nil [25604 28063])
+            ("PHP_MSHUTDOWN_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("date" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28131 28136]))                  
+                :type "int")
+                nil [28108 28268])
+            ("PHP_MINFO_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("date" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28328 28333]))                  
+                :type "int")
+                nil [28309 28811])
+            ("php_date_parse_tzfile" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("formal_tzname" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [28903 28923])
+                    ("tzdb" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("timelib_tzdb" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28924 28958])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28949 28959]))                  
+                :type ("timelib_tzinfo" type (:type "class") nil nil))
+                nil [28858 29453])
+            ("php_date_parse_tzfile_wrapper" function
+               (:pointer 1
+                :arguments 
+                  ( ("formal_tzname" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [29501 29521])
+                    ("tzdb" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("timelib_tzdb" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29522 29547]))                  
+                :type ("timelib_tzinfo" type (:type "class") nil nil))
+                nil [29455 29630])
+            ("guess_timezone" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("tzdb" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("timelib_tzdb" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29697 29731])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29722 29732]))                  
+                :type "char")
+                nil [29669 32663])
+            ("get_timezone_info" function
+               (:pointer 1
+                :arguments 
+                  ( ("" variable (:type ("TSRMLS_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32706 32715]))                  
+                :type ("timelib_tzinfo" type (:type "class") nil nil))
+                nil [32672 33000])
+            ("ext/standard/php_smart_str.h" include nil nil [33048 33087])
+            ("mon_full_names" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [33089 33249])
+            ("mon_short_names" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [33251 33372])
+            ("day_full_names" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [33374 33488])
+            ("day_short_names" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [33490 33576])
+            ("english_suffix" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("number" variable (:type ("timelib_sll" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33606 33625]))                  
+                :type "char")
+                nil [33578 33809])
+            ("php_date_full_day_name" function
+               (:pointer 1
+                :arguments 
+                  ( ("y" variable (:type ("timelib_sll" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33880 33894])
+                    ("m" variable (:type ("timelib_sll" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33895 33909])
+                    ("d" variable (:type ("timelib_sll" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33910 33924]))                  
+                :type "char")
+                nil [33851 34071])
+            ("php_date_short_day_name" function
+               (:pointer 1
+                :arguments 
+                  ( ("y" variable (:type ("timelib_sll" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34103 34117])
+                    ("m" variable (:type ("timelib_sll" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34118 34132])
+                    ("d" variable (:type ("timelib_sll" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34133 34147]))                  
+                :type "char")
+                nil [34073 34295])
+            ("date_format" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("format" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [34372 34385])
+                    ("format_len" variable (:type "int") (reparse-symbol arg-sub-list) [34386 34401])
+                    ("t" variable
+                       (:pointer 1
+                        :type ("timelib_time" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34402 34418])
+                    ("localtime" variable (:type "int") (reparse-symbol arg-sub-list) [34419 34433]))                  
+                :type "char")
+                nil [34347 40930])
+            ("php_date" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("INTERNAL_FUNCTION_PARAMETERS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40953 40982])
+                    ("localtime" variable (:type "int") (reparse-symbol arg-sub-list) [40983 40997]))                  
+                :type "void")
+                nil [40932 41344])
+            ("php_format_date" function
+               (:pointer 1
+                :arguments 
+                  ( ("format" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [41385 41398])
+                    ("format_len" variable (:type "int") (reparse-symbol arg-sub-list) [41399 41414])
+                    ("ts" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41415 41425])
+                    ("localtime" variable (:type "int") (reparse-symbol arg-sub-list) [41426 41449])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41440 41450]))                  
+                :type "char")
+                nil [41363 41852])
+            ("php_idate" function
+               (:arguments 
+                  ( ("format" variable (:type "char") (reparse-symbol arg-sub-list) [41906 41918])
+                    ("ts" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41919 41929])
+                    ("localtime" variable (:type "int") (reparse-symbol arg-sub-list) [41930 41944]))                  
+                :type "int")
+                nil [41892 44624])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("date" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44739 44744]))                  
+                :type "int")
+                nil [44726 44796])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("gmdate" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44911 44918]))                  
+                :type "int")
+                nil [44898 44970])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("idate" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45093 45099]))                  
+                :type "int")
+                nil [45080 45637])
+            ("php_date_set_tzdb" function
+               (:arguments 
+                  ( ("tzdb" variable
+                       (:pointer 1
+                        :type ("timelib_tzdb" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [45724 45743]))                  
+                :type "void")
+                nil [45701 45951])
+            ("php_parse_date" function
+               (:arguments 
+                  ( ("string" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [46054 46067])
+                    ("now" variable
+                       (:pointer 1
+                        :type "signed long")
+                        (reparse-symbol arg-sub-list) [46068 46085]))                  
+                :type "signed long")
+                nil [46027 46610])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("strtotime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46757 46767]))                  
+                :type "int")
+                nil [46744 48400])
+            ("php_mktime" function
+               (:arguments 
+                  ( ("" variable (:type ("INTERNAL_FUNCTION_PARAMETERS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48477 48506])
+                    ("gmt" variable (:type "int") (reparse-symbol arg-sub-list) [48507 48515]))                  
+                :type "void")
+                nil [48461 50728])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("mktime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50886 50893]))                  
+                :type "int")
+                nil [50873 50947])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("gmmktime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51111 51120]))                  
+                :type "int")
+                nil [51098 51174])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("checkdate" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51324 51334]))                  
+                :type "int")
+                nil [51311 51608])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("time" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54106 54111]))                  
+                :type "int")
+                nil [54093 54147])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("localtime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54405 54415]))                  
+                :type "int")
+                nil [54392 55930])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("getdate" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [56031 56039]))                  
+                :type "int")
+                nil [56018 57111])
+            ("PHP_DATE_TIMEZONE_GROUP_AFRICA" variable (:constant-flag t) nil [57131 57161])
+            ("PHP_DATE_TIMEZONE_GROUP_AMERICA" variable (:constant-flag t) nil [57181 57212])
+            ("PHP_DATE_TIMEZONE_GROUP_ANTARCTICA" variable (:constant-flag t) nil [57231 57265])
+            ("PHP_DATE_TIMEZONE_GROUP_ARCTIC" variable (:constant-flag t) nil [57281 57311])
+            ("PHP_DATE_TIMEZONE_GROUP_ASIA" variable (:constant-flag t) nil [57331 57359])
+            ("PHP_DATE_TIMEZONE_GROUP_ATLANTIC" variable (:constant-flag t) nil [57381 57413])
+            ("PHP_DATE_TIMEZONE_GROUP_AUSTRALIA" variable (:constant-flag t) nil [57431 57464])
+            ("PHP_DATE_TIMEZONE_GROUP_EUROPE" variable (:constant-flag t) nil [57481 57511])
+            ("PHP_DATE_TIMEZONE_GROUP_INDIAN" variable (:constant-flag t) nil [57531 57561])
+            ("PHP_DATE_TIMEZONE_GROUP_PACIFIC" variable (:constant-flag t) nil [57581 57612])
+            ("PHP_DATE_TIMEZONE_GROUP_UTC" variable (:constant-flag t) nil [57631 57658])
+            ("PHP_DATE_TIMEZONE_GROUP_ALL" variable (:constant-flag t) nil [57681 57708])
+            ("PHP_DATE_TIMEZONE_GROUP_ALL_W_BC" variable (:constant-flag t) nil [57731 57763])
+            ("PHP_DATE_TIMEZONE_PER_COUNTRY" variable (:constant-flag t) nil [57781 57810])
+            ("PHP_DATE_PERIOD_EXCLUDE_START_DATE" variable (:constant-flag t) nil [57832 57866])
+            ("date_period_it" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("intern" variable (:type ("zend_object_iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [57940 57969])
+                          ("date_period_zval" variable
+                             (:pointer 1
+                              :type ("zval" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [57971 58010])
+                          ("current" variable
+                             (:pointer 1
+                              :type ("zval" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [58012 58042])
+                          ("object" variable
+                             (:pointer 1
+                              :type ("php_period_obj" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [58044 58073])
+                          ("current_index" variable (:type "int") (reparse-symbol classsubparts) [58075 58111]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [57922 58129])
+            ("date_period_it_invalidate_current" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("iter" variable
+                       (:pointer 1
+                        :type ("zend_object_iterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [58221 58257])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [58248 58258]))                  
+                :type "void")
+                nil [58175 58409])
+            ("date_period_it_dtor" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("iter" variable
+                       (:pointer 1
+                        :type ("zend_object_iterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [58484 58520])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [58511 58521]))                  
+                :type "void")
+                nil [58452 58695])
+            ("date_period_it_has_more" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("iter" variable
+                       (:pointer 1
+                        :type ("zend_object_iterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [58777 58813])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [58804 58814]))                  
+                :type "int")
+                nil [58742 59443])
+            ("date_period_it_current_data" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("iter" variable
+                       (:pointer 1
+                        :type ("zend_object_iterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [59534 59561])
+                    ("data" variable
+                       (:pointer 3
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [59562 59584])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [59575 59585]))                  
+                :type "void")
+                nil [59494 60239])
+            ("date_period_it_current_key" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("iter" variable
+                       (:pointer 1
+                        :type ("zend_object_iterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [60327 60354])
+                    ("str_key" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [60355 60370])
+                    ("str_key_len" variable
+                       (:pointer 1
+                        :type ("uint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [60371 60389])
+                    ("int_key" variable
+                       (:pointer 1
+                        :type ("ulong" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [60390 60414])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [60405 60415]))                  
+                :type "int")
+                nil [60289 60536])
+            ("date_period_it_move_forward" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("iter" variable
+                       (:pointer 1
+                        :type ("zend_object_iterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [60627 60663])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [60654 60664]))                  
+                :type "void")
+                nil [60587 60803])
+            ("date_period_it_rewind" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("iter" variable
+                       (:pointer 1
+                        :type ("zend_object_iterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [60882 60918])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [60909 60919]))                  
+                :type "void")
+                nil [60848 61219])
+            ("date_period_it_funcs" variable (:type ("zend_object_iterator_funcs" type (:type "class") nil nil)) nil [61261 61511])
+            ("date_object_period_get_iterator" function
+               (:pointer 1
+                :arguments 
+                  ( ("ce" variable
+                       (:pointer 1
+                        :type ("zend_class_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [61569 61590])
+                    ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [61591 61604])
+                    ("by_ref" variable (:type "int") (reparse-symbol arg-sub-list) [61605 61625])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [61616 61626]))                  
+                :type ("zend_object_iterator" type (:type "class") nil nil))
+                nil [61515 62130])
+            ("date_register_classes" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("TSRMLS_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [62166 62175]))                  
+                :type "void")
+                nil [62132 66941])
+            ("date_object_new_date_ex" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("class_type" variable
+                       (:pointer 1
+                        :type ("zend_class_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [66999 67028])
+                    ("ptr" variable
+                       (:pointer 2
+                        :type ("php_date_obj" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [67029 67057])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [67048 67058]))                  
+                :type ("zend_object_value" type (:type "class") nil nil))
+                nil [66943 67701])
+            ("date_object_new_date" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("class_type" variable
+                       (:pointer 1
+                        :type ("zend_class_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [67749 67787])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [67778 67788]))                  
+                :type ("zend_object_value" type (:type "class") nil nil))
+                nil [67703 67853])
+            ("date_object_clone_date" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("this_ptr" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [67903 67927])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [67918 67928]))                  
+                :type ("zend_object_value" type (:type "class") nil nil))
+                nil [67855 68658])
+            ("date_object_compare_date" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("d1" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [68696 68705])
+                    ("d2" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [68706 68724])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [68715 68725]))                  
+                :type "int")
+                nil [68660 69340])
+            ("date_object_get_properties" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [69387 69409])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [69400 69410]))                  
+                :type ("HashTable" type (:type "class") nil nil))
+                nil [69342 70755])
+            ("date_object_new_timezone_ex" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("class_type" variable
+                       (:pointer 1
+                        :type ("zend_class_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [70817 70846])
+                    ("ptr" variable
+                       (:pointer 2
+                        :type ("php_timezone_obj" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [70847 70879])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [70870 70880]))                  
+                :type ("zend_object_value" type (:type "class") nil nil))
+                nil [70757 71542])
+            ("date_object_new_timezone" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("class_type" variable
+                       (:pointer 1
+                        :type ("zend_class_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [71594 71632])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [71623 71633]))                  
+                :type ("zend_object_value" type (:type "class") nil nil))
+                nil [71544 71702])
+            ("date_object_clone_timezone" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("this_ptr" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [71756 71780])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [71771 71781]))                  
+                :type ("zend_object_value" type (:type "class") nil nil))
+                nil [71704 72650])
+            ("date_object_new_interval_ex" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("class_type" variable
+                       (:pointer 1
+                        :type ("zend_class_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [72712 72741])
+                    ("ptr" variable
+                       (:pointer 2
+                        :type ("php_interval_obj" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [72742 72774])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [72765 72775]))                  
+                :type ("zend_object_value" type (:type "class") nil nil))
+                nil [72652 73437])
+            ("date_object_new_interval" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("class_type" variable
+                       (:pointer 1
+                        :type ("zend_class_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [73489 73527])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [73518 73528]))                  
+                :type ("zend_object_value" type (:type "class") nil nil))
+                nil [73439 73597])
+            ("date_object_clone_interval" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("this_ptr" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [73651 73675])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [73666 73676]))                  
+                :type ("zend_object_value" type (:type "class") nil nil))
+                nil [73599 74063])
+            ("date_object_get_properties_interval" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [74119 74141])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [74132 74142]))                  
+                :type ("HashTable" type (:type "class") nil nil))
+                nil [74065 75121])
+            ("date_object_new_period_ex" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("class_type" variable
+                       (:pointer 1
+                        :type ("zend_class_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [75181 75210])
+                    ("ptr" variable
+                       (:pointer 2
+                        :type ("php_period_obj" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [75211 75241])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [75232 75242]))                  
+                :type ("zend_object_value" type (:type "class") nil nil))
+                nil [75123 75894])
+            ("date_object_new_period" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("class_type" variable
+                       (:pointer 1
+                        :type ("zend_class_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [75944 75982])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [75973 75983]))                  
+                :type ("zend_object_value" type (:type "class") nil nil))
+                nil [75896 76050])
+            ("date_object_clone_period" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("this_ptr" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [76102 76126])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [76117 76127]))                  
+                :type ("zend_object_value" type (:type "class") nil nil))
+                nil [76052 76506])
+            ("date_object_free_storage_date" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [76550 76572])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [76563 76573]))                  
+                :type "void")
+                nil [76508 76749])
+            ("date_object_free_storage_timezone" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [76797 76819])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [76810 76820]))                  
+                :type "void")
+                nil [76751 77021])
+            ("date_object_free_storage_interval" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [77069 77091])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [77082 77092]))                  
+                :type "void")
+                nil [77023 77254])
+            ("date_object_free_storage_period" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [77300 77322])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [77313 77323]))                  
+                :type "void")
+                nil [77256 77671])
+            ("php_date_instantiate" function
+               (:pointer 1
+                :arguments 
+                  ( ("pce" variable
+                       (:pointer 1
+                        :type ("zend_class_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [77732 77754])
+                    ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [77755 77777])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [77768 77778]))                  
+                :type ("zval" type (:type "class") nil nil))
+                nil [77705 77915])
+            ("update_errors_warnings" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("last_errors" variable
+                       (:pointer 1
+                        :type ("timelib_error_container" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [78087 78133])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [78124 78134]))                  
+                :type "void")
+                nil [78052 78284])
+            ("php_date_initialize" function
+               (:arguments 
+                  ( ("dateobj" variable
+                       (:pointer 1
+                        :type ("php_date_obj" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [78317 78339])
+                    ("time_str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [78350 78365])
+                    ("time_str_len" variable (:type "int") (reparse-symbol arg-sub-list) [78366 78383])
+                    ("format" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [78384 78397])
+                    ("timezone_object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [78398 78420])
+                    ("ctor" variable (:type "int") (reparse-symbol arg-sub-list) [78421 78439])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [78430 78440]))                  
+                :type "int")
+                nil [78293 80673])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("date_create" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [80794 80806]))                  
+                :type "int")
+                nil [80781 81302])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("date_create_from_format" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [81502 81526]))                  
+                :type "int")
+                nil [81489 82098])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("DateTime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [82228 82237])
+                    ("" variable (:type ("__construct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [82238 82250]))                  
+                :type "int")
+                nil [82217 82773])
+            ("php_date_initialize_from_hash" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("return_value" variable
+                       (:pointer 2
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [82826 82846])
+                    ("dateobj" variable
+                       (:pointer 2
+                        :type ("php_date_obj" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [82847 82870])
+                    ("myht" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [82871 82896])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [82887 82897]))                  
+                :type "int")
+                nil [82785 84506])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("DateTime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [84559 84568])
+                    ("" variable (:type ("__set_state" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [84569 84581]))                  
+                :type "int")
+                nil [84548 85007])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("DateTime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [85067 85076])
+                    ("" variable (:type ("__wakeup" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [85077 85086]))                  
+                :type "int")
+                nil [85056 85363])
+            ("zval_from_error_container" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("z" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [85501 85509])
+                    ("error" variable
+                       (:pointer 1
+                        :type ("timelib_error_container" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [85510 85541]))                  
+                :type "void")
+                nil [85463 86163])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("date_get_last_errors" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [86298 86319]))                  
+                :type "int")
+                nil [86285 86470])
+            ("php_date_do_return_parsed_time" function
+               (:arguments 
+                  ( ("" variable (:type ("INTERNAL_FUNCTION_PARAMETERS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [86518 86547])
+                    ("parsed_time" variable
+                       (:pointer 1
+                        :type ("timelib_time" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [86548 86574])
+                    ("error" variable
+                       (:pointer 1
+                        :type ("timelib_error_container" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [86575 86613]))                  
+                :type "void")
+                nil [86482 89407])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("date_parse" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [89533 89544]))                  
+                :type "int")
+                nil [89520 90022])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("date_parse_from_format" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [90185 90208]))                  
+                :type "int")
+                nil [90172 90746])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("date_format" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [90890 90902]))                  
+                :type "int")
+                nil [90877 91382])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("date_modify" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [91501 91513]))                  
+                :type "int")
+                nil [91488 93374])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("date_add" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [93524 93533]))                  
+                :type "int")
+                nil [93511 94923])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("date_sub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [95078 95087]))                  
+                :type "int")
+                nil [95065 96509])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("date_timezone_get" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [96658 96676]))                  
+                :type "int")
+                nil [96645 97740])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("date_timezone_set" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [97892 97910]))                  
+                :type "int")
+                nil [97879 98706])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("date_offset_get" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [98812 98828]))                  
+                :type "int")
+                nil [98799 99726])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("date_time_set" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [99864 99878]))                  
+                :type "int")
+                nil [99851 100372])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("date_date_set" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [100504 100518]))                  
+                :type "int")
+                nil [100491 101007])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("date_isodate_set" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [101147 101164]))                  
+                :type "int")
+                nil [101134 101831])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("date_timestamp_set" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [101991 102010]))                  
+                :type "int")
+                nil [101978 102494])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("date_timestamp_get" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [102604 102623]))                  
+                :type "int")
+                nil [102591 103150])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("date_diff" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [103305 103315]))                  
+                :type "int")
+                nil [103292 104236])
+            ("timezone_initialize" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("tzi" variable
+                       (:pointer 2
+                        :type ("timelib_tzinfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [104279 104300])
+                    ("tz" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [104311 104329])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [104320 104330]))                  
+                :type "int")
+                nil [104248 104711])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("timezone_open" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [104821 104835]))                  
+                :type "int")
+                nil [104808 105301])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("DateTimeZone" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [105419 105432])
+                    ("" variable (:type ("__construct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [105433 105445]))                  
+                :type "int")
+                nil [105408 106038])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("timezone_name_get" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [106162 106180]))                  
+                :type "int")
+                nil [106149 107019])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("timezone_name_from_abbr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [107182 107206]))                  
+                :type "int")
+                nil [107169 107576])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("timezone_offset_get" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [107712 107732]))                  
+                :type "int")
+                nil [107699 108712])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("timezone_transitions_get" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [108981 109006]))                  
+                :type "int")
+                nil [108968 111476])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("timezone_location_get" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [111651 111673]))                  
+                :type "int")
+                nil [111638 112433])
+            ("date_interval_initialize" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("rt" variable
+                       (:pointer 2
+                        :type ("timelib_rel_time" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [112481 112503])
+                    ("format" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [112514 112527])
+                    ("format_length" variable (:type "int") (reparse-symbol arg-sub-list) [112528 112555])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [112546 112556]))                  
+                :type "int")
+                nil [112445 113326])
+            ("date_interval_read_property" function
+               (:pointer 1
+                :arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [113400 113413])
+                    ("member" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [113414 113427])
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) [113428 113446])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [113437 113447]))                  
+                :type ("zval" type (:type "class") nil nil))
+                nil [113366 114760])
+            ("date_interval_write_property" function
+               (:arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [114845 114858])
+                    ("member" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [114859 114872])
+                    ("value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [114873 114894])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [114885 114895]))                  
+                :type "void")
+                nil [114811 116305])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("DateInterval" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [116431 116444])
+                    ("" variable (:type ("__construct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [116445 116457]))                  
+                :type "int")
+                nil [116420 117126])
+            ("php_date_long_from_hash_element" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("myht" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [117182 117198])
+                    ("element" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [117199 117213])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [117214 117226]))                  
+                :type "long")
+                nil [117138 117420])
+            ("php_date_interval_initialize_from_hash" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("return_value" variable
+                       (:pointer 2
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [117472 117492])
+                    ("intobj" variable
+                       (:pointer 2
+                        :type ("php_interval_obj" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [117493 117519])
+                    ("myht" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [117520 117545])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [117536 117546]))                  
+                :type "int")
+                nil [117422 118204])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("DateInterval" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [118261 118274])
+                    ("" variable (:type ("__set_state" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [118275 118287]))                  
+                :type "int")
+                nil [118250 118727])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("DateInterval" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [118791 118804])
+                    ("" variable (:type ("__wakeup" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [118805 118814]))                  
+                :type "int")
+                nil [118780 119101])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("date_interval_create_from_date_string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [119309 119347]))                  
+                :type "int")
+                nil [119296 120025])
+            ("date_interval_format" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("format" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [120105 120118])
+                    ("format_len" variable (:type "int") (reparse-symbol arg-sub-list) [120119 120134])
+                    ("t" variable
+                       (:pointer 1
+                        :type ("timelib_rel_time" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [120135 120155]))                  
+                :type "char")
+                nil [120071 122034])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("date_interval_format" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [122164 122185]))                  
+                :type "int")
+                nil [122151 122673])
+            ("date_period_initialize" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("st" variable
+                       (:pointer 2
+                        :type ("timelib_time" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [122719 122737])
+                    ("et" variable
+                       (:pointer 2
+                        :type ("timelib_time" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [122738 122756])
+                    ("d" variable
+                       (:pointer 2
+                        :type ("timelib_rel_time" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [122757 122778])
+                    ("recurrences" variable
+                       (:pointer 1
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [122779 122797])
+                    ("format" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [122808 122821])
+                    ("format_length" variable (:type "int") (reparse-symbol arg-sub-list) [122822 122849])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [122840 122850]))                  
+                :type "int")
+                nil [122685 123374])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("DatePeriod" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [123533 123544])
+                    ("" variable (:type ("__construct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [123545 123557]))                  
+                :type "int")
+                nil [123522 126493])
+            ("check_id_allowed" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("id" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [126533 126542])
+                    ("what" variable (:type "long") (reparse-symbol arg-sub-list) [126543 126553]))                  
+                :type "int")
+                nil [126505 127679])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("timezone_identifiers_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [127839 127865]))                  
+                :type "int")
+                nil [127826 129060])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("timezone_version_get" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [129176 129197]))                  
+                :type "int")
+                nil [129163 129288])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("timezone_abbreviations_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [129439 129467]))                  
+                :type "int")
+                nil [129426 130360])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("date_default_timezone_set" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [130533 130559]))                  
+                :type "int")
+                nil [130520 131005])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("date_default_timezone_get" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [131154 131180]))                  
+                :type "int")
+                nil [131141 131294])
+            ("php_do_date_sunrise_sunset" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("INTERNAL_FUNCTION_PARAMETERS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [131441 131470])
+                    ("calc_sunset" variable (:type "int") (reparse-symbol arg-sub-list) [131471 131487]))                  
+                :type "void")
+                nil [131402 133571])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("date_sunrise" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [133791 133804]))                  
+                :type "int")
+                nil [133778 133874])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("date_sunset" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [134092 134104]))                  
+                :type "int")
+                nil [134079 134174])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("date_sun_info" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [134358 134372]))                  
+                :type "int")
+                nil [134345 137916]))          
+    :file "php_date.c"
+    :pointmax 138044
+    :fsize 138050
+    :lastmodtime '(20689 55724 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("DATE_FORMAT_RFC1036" . ((string "\"D, d M y H:i:s O\"" 22979 . 22997)))
+          ("DATE_DEFAULT_LATITUDE" . ((string "\"31.7667\"" 16286 . 16295)))
+          ("DATE_CHECK_INITIALIZED" (spp-arg-list ("member" "class_name") 18108 . 18128) . 
+              ((IF "if" 18132 . 18134) (semantic-list "(!(member))" 18135 . 18146) (semantic-list "{ \\
+		php_error_docref(NULL TSRMLS_CC, E_WARNING, \"The \" #class_name \" object has not been correctly initialized by its constructor\"); \\
+		RETURN_FALSE; \\
+	}" 18147 . 18304)))
+          ("DATE_FORMAT_RFC2822" . ((string "\"D, d M Y H:i:s O\"" 24259 . 24277)))
+          ("SUNFUNCS_RET_TIMESTAMP" . ((number "0" 25505 . 25506)))
+          ("SUNFUNCS_RET_STRING" . ((number "1" 25538 . 25539)))
+          ("PHP_DATE_TIMEZONE_GROUP_UTC" . ((number "0x0400" 57666 . 57672)))
+          ("PHP_DATE_TIMEZONE_GROUP_ALL" . ((number "0x07FF" 57716 . 57722)))
+          ("DATE_FORMAT_RFC1123" . ((string "\"D, d M Y H:i:s O\"" 23239 . 23257)))
+          ("DATE_TZ_ERRMSG" . 
+              ((string "\"It is not safe to rely on the system's timezone settings. You are \"" 25161 . 25229) (string "\"*required* to use the date.timezone setting or the \"" 25233 . 25286) (string "\"date_default_timezone_set() function. In case you used any of those \"" 25290 . 25360) (string "\"methods and you are still getting this warning, you most likely \"" 25364 . 25430) (string "\"misspelled the timezone identifier. \"" 25434 . 25472)))
+          ("PHP_DATE_TIMEZONE_GROUP_AMERICA" . ((number "0x0002" 57216 . 57222)))
+          ("PHP_DATE_TIMEZONE_GROUP_ATLANTIC" . ((number "0x0020" 57416 . 57422)))
+          ("PHP_DATE_TIMEZONE_GROUP_ALL_W_BC" . ((number "0x0FFF" 57766 . 57772)))
+          ("DATE_TIMEZONEDB" . 
+              ((symbol "php_date_global_timezone_db" 21367 . 21394) (punctuation "?" 21395 . 21396) (symbol "php_date_global_timezone_db" 21397 . 21424) (punctuation ":" 21425 . 21426) (symbol "timelib_builtin_db" 21427 . 21445) (semantic-list "()" 21445 . 21447)))
+          ("SUNFUNCS_RET_DOUBLE" . ((number "2" 25571 . 25572)))
+          ("DATE_SET_CONTEXT" . 
+              ((symbol "zval" 17648 . 17652) (punctuation "*" 17653 . 17654) (symbol "object" 17654 . 17660) (punctuation ";" 17660 . 17661) (symbol "object" 17665 . 17671) (punctuation "=" 17672 . 17673) (symbol "getThis" 17674 . 17681) (semantic-list "()" 17681 . 17683) (punctuation ";" 17683 . 17684)))
+          ("DATE_FETCH_OBJECT" . 
+              ((symbol "php_date_obj" 17720 . 17732) (punctuation "*" 17733 . 17734) (symbol "obj" 17734 . 17737) (punctuation ";" 17737 . 17738) (symbol "DATE_SET_CONTEXT" 17742 . 17758) (punctuation ";" 17758 . 17759) (IF "if" 17763 . 17765) (semantic-list "(object)" 17766 . 17774) (semantic-list "{	\\
+		if (zend_parse_parameters_none() == FAILURE) {	\\
+			return;	\\
+		}	\\
+	}" 17775 . 17851) (ELSE "else" 17852 . 17856) (semantic-list "{	\\
+		if (zend_parse_method_parameters(ZEND_NUM_ARGS() TSRMLS_CC, NULL, \"O\", &object, date_ce_date) == FAILURE) {	\\
+			RETURN_FALSE;	\\
+		}	\\
+	}" 17857 . 18000) (symbol "obj" 18004 . 18007) (punctuation "=" 18008 . 18009) (semantic-list "(php_date_obj *)" 18010 . 18026) (symbol "zend_object_store_get_object" 18027 . 18055) (semantic-list "(object TSRMLS_CC)" 18055 . 18073) (punctuation ";" 18073 . 18074)))
+          ("DATE_FORMAT_RFC850" . ((string "\"l, d-M-y H:i:s T\"" 22525 . 22543)))
+          ("DATE_FORMAT_RFC3339" . ((string "\"Y-m-d\\\\TH:i:sP\"" 25070 . 25086)))
+          ("PHP_DATE_TIMEZONE_GROUP_ASIA" . ((number "0x0010" 57366 . 57372)))
+          ("PHP_DATE_TIMEZONE_GROUP_PACIFIC" . ((number "0x0200" 57616 . 57622)))
+          ("DATE_DEFAULT_LONGITUDE" . ((string "\"35.2333\"" 16327 . 16336)))
+          ("DATE_SUNRISE_ZENITH" . ((string "\"90.583333\"" 16541 . 16552)))
+          ("PHP_DATE_TIMEZONE_GROUP_ANTARCTICA" . ((number "0x0004" 57266 . 57272)))
+          ("PHP_DATE_TIMEZONE_GROUP_EUROPE" . ((number "0x0080" 57516 . 57522)))
+          ("DATE_FORMAT_ISO8601" . ((string "\"Y-m-d\\\\TH:i:sO\"" 25117 . 25133)))
+          ("PHP_DATE_TIMEZONE_GROUP_ARCTIC" . ((number "0x0008" 57316 . 57322)))
+          ("PHP_DATE_TIMEZONE_GROUP_AUSTRALIA" . ((number "0x0040" 57466 . 57472)))
+          ("PHP_DATE_TIMEZONE_GROUP_INDIAN" . ((number "0x0100" 57566 . 57572)))
+          ("DATE_SUNSET_ZENITH" . ((string "\"90.583333\"" 16434 . 16445)))
+          ("PHP_DATE_TIMEZONE_PER_COUNTRY" . ((number "0x1000" 57816 . 57822)))
+          ("PHP_DATE_PERIOD_EXCLUDE_START_DATE" . ((number "0x0001" 57867 . 57873)))
+          ("DATE_FORMAT_RFC822" . ((string "\"D, d M y H:i:s O\"" 22190 . 22208)))
+          ("PHP_DATE_TIMEZONE_GROUP_AFRICA" . ((number "0x0001" 57166 . 57172)))
+          )
+
+    )
+   (semanticdb-table "php_date.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("PHP_DATE_H" variable (:constant-flag t) nil [1188 1198])
+            ("lib/timelib.h" include nil nil [1200 1224])
+            ("Zend/zend_hash.h" include nil nil [1225 1252])
+            ("date_module_entry" variable
+               (:typemodifiers ("extern")
+                :type ("zend_module_entry" type (:type "class") nil nil))
+                nil [1254 1297])
+            ("phpext_date_ptr" variable (:constant-flag t) nil [1306 1321])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("date" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1355 1360]))                  
+                :type "int")
+                nil [1342 1361])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("idate" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1375 1381]))                  
+                :type "int")
+                nil [1362 1382])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("gmdate" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1396 1403]))                  
+                :type "int")
+                nil [1383 1404])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("strtotime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1418 1428]))                  
+                :type "int")
+                nil [1405 1429])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("mktime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1444 1451]))                  
+                :type "int")
+                nil [1431 1452])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("gmmktime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1466 1475]))                  
+                :type "int")
+                nil [1453 1476])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("checkdate" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1491 1501]))                  
+                :type "int")
+                nil [1478 1502])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("time" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1596 1601]))                  
+                :type "int")
+                nil [1583 1602])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("localtime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1616 1626]))                  
+                :type "int")
+                nil [1603 1627])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("getdate" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1641 1649]))                  
+                :type "int")
+                nil [1628 1650])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("DateTime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1688 1697])
+                    ("" variable (:type ("__construct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1698 1710]))                  
+                :type "int")
+                nil [1677 1711])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("DateTime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1723 1732])
+                    ("" variable (:type ("__wakeup" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1733 1742]))                  
+                :type "int")
+                nil [1712 1743])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("DateTime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1755 1764])
+                    ("" variable (:type ("__set_state" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1765 1777]))                  
+                :type "int")
+                nil [1744 1778])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("date_create" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1792 1804]))                  
+                :type "int")
+                nil [1779 1805])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("date_create_from_format" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1819 1843]))                  
+                :type "int")
+                nil [1806 1844])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("date_parse" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1858 1869]))                  
+                :type "int")
+                nil [1845 1870])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("date_parse_from_format" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1884 1907]))                  
+                :type "int")
+                nil [1871 1908])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("date_get_last_errors" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1922 1943]))                  
+                :type "int")
+                nil [1909 1944])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("date_format" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1958 1970]))                  
+                :type "int")
+                nil [1945 1971])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("date_modify" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1985 1997]))                  
+                :type "int")
+                nil [1972 1998])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("date_add" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2012 2021]))                  
+                :type "int")
+                nil [1999 2022])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("date_sub" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2036 2045]))                  
+                :type "int")
+                nil [2023 2046])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("date_timezone_get" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2060 2078]))                  
+                :type "int")
+                nil [2047 2079])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("date_timezone_set" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2093 2111]))                  
+                :type "int")
+                nil [2080 2112])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("date_offset_get" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2126 2142]))                  
+                :type "int")
+                nil [2113 2143])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("date_diff" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2157 2167]))                  
+                :type "int")
+                nil [2144 2168])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("date_time_set" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2183 2197]))                  
+                :type "int")
+                nil [2170 2198])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("date_date_set" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2212 2226]))                  
+                :type "int")
+                nil [2199 2227])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("date_isodate_set" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2241 2258]))                  
+                :type "int")
+                nil [2228 2259])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("date_timestamp_set" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2273 2292]))                  
+                :type "int")
+                nil [2260 2293])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("date_timestamp_get" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2307 2326]))                  
+                :type "int")
+                nil [2294 2327])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("DateTimeZone" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2340 2353])
+                    ("" variable (:type ("__construct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2354 2366]))                  
+                :type "int")
+                nil [2329 2367])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("timezone_open" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2381 2395]))                  
+                :type "int")
+                nil [2368 2396])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("timezone_name_get" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2410 2428]))                  
+                :type "int")
+                nil [2397 2429])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("timezone_name_from_abbr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2443 2467]))                  
+                :type "int")
+                nil [2430 2468])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("timezone_offset_get" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2482 2502]))                  
+                :type "int")
+                nil [2469 2503])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("timezone_transitions_get" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2517 2542]))                  
+                :type "int")
+                nil [2504 2543])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("timezone_location_get" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2557 2579]))                  
+                :type "int")
+                nil [2544 2580])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("timezone_identifiers_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2594 2620]))                  
+                :type "int")
+                nil [2581 2621])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("timezone_abbreviations_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2635 2663]))                  
+                :type "int")
+                nil [2622 2664])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("timezone_version_get" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2678 2699]))                  
+                :type "int")
+                nil [2665 2700])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("DateInterval" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2713 2726])
+                    ("" variable (:type ("__construct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2727 2739]))                  
+                :type "int")
+                nil [2702 2740])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("DateInterval" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2752 2765])
+                    ("" variable (:type ("__wakeup" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2766 2775]))                  
+                :type "int")
+                nil [2741 2776])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("DateInterval" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2788 2801])
+                    ("" variable (:type ("__set_state" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2802 2814]))                  
+                :type "int")
+                nil [2777 2815])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("date_interval_format" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2829 2850]))                  
+                :type "int")
+                nil [2816 2851])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("date_interval_create_from_date_string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2865 2903]))                  
+                :type "int")
+                nil [2852 2904])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("DatePeriod" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2917 2928])
+                    ("" variable (:type ("__construct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2929 2941]))                  
+                :type "int")
+                nil [2906 2942])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("date_default_timezone_set" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2989 3015]))                  
+                :type "int")
+                nil [2976 3016])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("date_default_timezone_get" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3030 3056]))                  
+                :type "int")
+                nil [3017 3057])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("date_sunrise" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3094 3107]))                  
+                :type "int")
+                nil [3081 3108])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("date_sunset" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3122 3134]))                  
+                :type "int")
+                nil [3109 3135])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("date_sun_info" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3149 3163]))                  
+                :type "int")
+                nil [3136 3164])
+            ("PHP_RINIT_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("date" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3185 3190]))                  
+                :type "int")
+                nil [3166 3191])
+            ("PHP_RSHUTDOWN_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("date" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3215 3220]))                  
+                :type "int")
+                nil [3192 3221])
+            ("PHP_MINIT_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("date" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3241 3246]))                  
+                :type "int")
+                nil [3222 3247])
+            ("PHP_MSHUTDOWN_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("date" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3271 3276]))                  
+                :type "int")
+                nil [3248 3277])
+            ("PHP_MINFO_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("date" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3297 3302]))                  
+                :type "int")
+                nil [3278 3303])
+            ("php_date_obj" type
+               (:typedef ("_php_date_obj" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :superclasses "_php_date_obj"
+                :type "typedef")
+                nil [3305 3347])
+            ("php_timezone_obj" type
+               (:typedef ("_php_timezone_obj" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :superclasses "_php_timezone_obj"
+                :type "typedef")
+                nil [3348 3398])
+            ("php_interval_obj" type
+               (:typedef ("_php_interval_obj" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :superclasses "_php_interval_obj"
+                :type "typedef")
+                nil [3399 3449])
+            ("php_period_obj" type
+               (:typedef ("_php_period_obj" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :superclasses "_php_period_obj"
+                :type "typedef")
+                nil [3450 3496])
+            ("_php_date_obj" type
+               (:members 
+                  ( ("std" variable (:type ("zend_object" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3522 3540])
+                    ("time" variable
+                       (:pointer 1
+                        :type ("timelib_time" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3542 3561])
+                    ("props" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3563 3583]))                  
+                :type "struct")
+                nil [3498 3586])
+            ("_php_timezone_obj" type
+               (:members 
+                  ( ("std" variable (:type ("zend_object" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3616 3636])
+                    ("initialized" variable (:type "int") (reparse-symbol classsubparts) [3638 3666])
+                    ("type" variable (:type "int") (reparse-symbol classsubparts) [3668 3689])
+                    ("tzi" variable (:type ("" type
+                         (:members 
+                            ( ("tz" variable
+                                 (:pointer 1
+                                  :type ("timelib_tzinfo" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [3701 3720])
+                              ("utc_offset" variable (:type ("timelib_sll" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3750 3777])
+                              ("z" variable (:type ("" type
+                                   (:members 
+                                      ( ("utc_offset" variable (:type ("timelib_sll" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3873 3897])
+                                        ("abbr" variable
+                                           (:pointer 1
+                                            :type "char")
+                                            (reparse-symbol classsubparts) [3901 3919])
+                                        ("dst" variable (:type "int") (reparse-symbol classsubparts) [3923 3940]))                                      
+                                    :type "struct")
+                                    nil nil)) (reparse-symbol classsubparts) [3810 3947]))                            
+                          :type "union")
+                          nil nil)) (reparse-symbol classsubparts) [3691 3955]))                  
+                :type "struct")
+                nil [3588 3958])
+            ("_php_interval_obj" type
+               (:members 
+                  ( ("std" variable (:type ("zend_object" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3988 4010])
+                    ("diff" variable
+                       (:pointer 1
+                        :type ("timelib_rel_time" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4012 4035])
+                    ("props" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4037 4061])
+                    ("initialized" variable (:type "int") (reparse-symbol classsubparts) [4063 4093]))                  
+                :type "struct")
+                nil [3960 4096])
+            ("_php_period_obj" type
+               (:members 
+                  ( ("std" variable (:type ("zend_object" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4124 4146])
+                    ("start" variable
+                       (:pointer 1
+                        :type ("timelib_time" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4148 4172])
+                    ("current" variable
+                       (:pointer 1
+                        :type ("timelib_time" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4174 4200])
+                    ("end" variable
+                       (:pointer 1
+                        :type ("timelib_time" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4202 4224])
+                    ("interval" variable
+                       (:pointer 1
+                        :type ("timelib_rel_time" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4226 4253])
+                    ("recurrences" variable (:type "int") (reparse-symbol classsubparts) [4255 4285])
+                    ("initialized" variable (:type "int") (reparse-symbol classsubparts) [4287 4317])
+                    ("include_start_date" variable (:type "int") (reparse-symbol classsubparts) [4319 4356]))                  
+                :type "struct")
+                nil [4098 4359])
+            ("default_timezone" variable
+               (:pointer 1
+                :type "char")
+                nil [4394 4422])
+            ("timezone" variable
+               (:pointer 1
+                :type "char")
+                nil [4424 4444])
+            ("tzcache" variable
+               (:pointer 1
+                :type ("HashTable" type (:type "class") nil nil))
+                nil [4446 4465])
+            ("last_errors" variable
+               (:pointer 1
+                :type ("timelib_error_container" type (:type "class") nil nil))
+                nil [4467 4504])
+            ("DATEG" variable (:constant-flag t) nil [4625 4630])
+            ("php_parse_date" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("string" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4729 4742])
+                    ("now" variable
+                       (:pointer 1
+                        :type "signed long")
+                        (reparse-symbol arg-sub-list) [4743 4760]))                  
+                :type "signed long")
+                nil [4702 4761])
+            ("php_mktime" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("INTERNAL_FUNCTION_PARAMETERS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4785 4814])
+                    ("gmt" variable (:type "int") (reparse-symbol arg-sub-list) [4815 4823]))                  
+                :type "void")
+                nil [4769 4824])
+            ("php_idate" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("format" variable (:type "char") (reparse-symbol arg-sub-list) [4846 4858])
+                    ("ts" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4859 4869])
+                    ("localtime" variable (:type "int") (reparse-symbol arg-sub-list) [4870 4884]))                  
+                :type "int")
+                nil [4832 4885])
+            ("php_format_date" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("format" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5039 5052])
+                    ("format_len" variable (:type "int") (reparse-symbol arg-sub-list) [5053 5068])
+                    ("ts" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5069 5079])
+                    ("localtime" variable (:type "int") (reparse-symbol arg-sub-list) [5080 5103])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5094 5104]))                  
+                :type "char")
+                nil [5017 5105])
+            ("php_date_set_tzdb" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("tzdb" variable
+                       (:pointer 1
+                        :type ("timelib_tzdb" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5176 5195]))                  
+                :type "void")
+                nil [5153 5196])
+            ("get_timezone_info" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type ("TSRMLS_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5238 5247]))                  
+                :type ("timelib_tzinfo" type (:type "class") nil nil))
+                nil [5204 5248])
+            ("php_date_get_date_ce" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5364 5369]))                  
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [5325 5370])
+            ("php_date_get_timezone_ce" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5421 5426]))                  
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [5378 5427])
+            ("php_date_instantiate" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("pce" variable
+                       (:pointer 1
+                        :type ("zend_class_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5546 5568])
+                    ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5569 5591])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5582 5592]))                  
+                :type ("zval" type (:type "class") nil nil))
+                nil [5519 5593])
+            ("php_date_initialize" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dateobj" variable
+                       (:pointer 1
+                        :type ("php_date_obj" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5625 5647])
+                    ("time_str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5658 5673])
+                    ("time_str_len" variable (:type "int") (reparse-symbol arg-sub-list) [5674 5691])
+                    ("format" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5692 5705])
+                    ("timezone_object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5706 5728])
+                    ("ctor" variable (:type "int") (reparse-symbol arg-sub-list) [5729 5747])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5738 5748]))                  
+                :type "int")
+                nil [5601 5749]))          
+    :file "php_date.h"
+    :pointmax 5776
+    :fsize 5775
+    :lastmodtime '(20689 55724 0 0)
+    :unmatched-syntax '((symbol 5594 . 5600) (symbol 5512 . 5518) (symbol 5371 . 5377) (symbol 5318 . 5324) (symbol 5197 . 5203) (symbol 5146 . 5152) (symbol 5010 . 5016) (symbol 4825 . 4831) (symbol 4762 . 4768) (symbol 4695 . 4701) (semantic-list 4528 . 4534) (symbol 4505 . 4528) (semantic-list 4386 . 4392) (symbol 4361 . 4386))
+    :lexical-table 
+        '(("phpext_date_ptr" . ((punctuation "&" 1322 . 1323) (symbol "date_module_entry" 1323 . 1340)))
+          ("DATEG" (spp-arg-list ("v") 4630 . 4633) . ((semantic-list "(date_globals.v)" 4634 . 4650)))
+          ("PHP_DATE_H")
+          )
+
+    )
+   )
+  :file "!home!work!download!php-5.3.20!ext!date!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

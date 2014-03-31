@@ -1,0 +1,183 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "value.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("value.h" include nil nil [720 738])
+            ("binlog_event.h" include nil nil [739 764])
+            ("iomanip" include (:system-flag t) nil [765 783])
+            ("mysql" using (:type ("mysql" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [785 807])
+            ("mysql::system" using (:type ("mysql::system" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [808 838])
+            ("mysql" type
+               (:members 
+                  ( ("calc_field_size" function
+                       (:arguments 
+                          ( ("column_type" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [883 909])
+                            ("field_ptr" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "unsigned char")
+                                (reparse-symbol arg-sub-list) [910 941])
+                            ("metadata" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [962 980]))                          
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [858 4715])
+                    ("Value" function
+                       (:constructor-flag t
+                        :parent "Value"
+                        :arguments 
+                          ( ("val" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4898 4915]))                          
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4885 5049])
+                    ("=" function
+                       (:operator-flag t
+                        :parent "Value"
+                        :arguments 
+                          ( ("val" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5075 5092]))                          
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [5051 5242])
+                    ("==" function
+                       (:operator-flag t
+                        :parent "Value"
+                        :arguments 
+                          ( ("val" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5267 5284]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [5244 5446])
+                    ("!=" function
+                       (:operator-flag t
+                        :parent "Value"
+                        :arguments 
+                          ( ("val" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5471 5488]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [5448 5525])
+                    ("as_c_str" function
+                       (:pointer 1
+                        :parent "Value"
+                        :arguments 
+                          ( ("size" variable
+                               (:reference 1
+                                :type "unsigned long")
+                                (reparse-symbol arg-sub-list) [5549 5569]))                          
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [5527 5922])
+                    ("as_blob" function
+                       (:pointer 1
+                        :parent "Value"
+                        :arguments 
+                          ( ("size" variable
+                               (:reference 1
+                                :type "unsigned long")
+                                (reparse-symbol arg-sub-list) [5954 5974]))                          
+                        :type "unsigned char")
+                        (reparse-symbol namespacesubparts) [5924 6431])
+                    ("as_int32" function
+                       (:parent "Value"
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [6433 6658])
+                    ("as_int8" function
+                       (:parent "Value"
+                        :type ("int8_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [6660 6879])
+                    ("as_int16" function
+                       (:parent "Value"
+                        :type ("int16_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [6881 7104])
+                    ("as_int64" function
+                       (:parent "Value"
+                        :type ("int64_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [7106 7329])
+                    ("as_float" function
+                       (:parent "Value"
+                        :type "float")
+                        (reparse-symbol namespacesubparts) [7331 7412])
+                    ("as_double" function
+                       (:parent "Value"
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [7414 7498])
+                    ("to" function
+                       (:parent "Converter"
+                        :arguments 
+                          ( ("str" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7519 7536])
+                            ("val" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7537 7554]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7500 10621])
+                    ("to" function
+                       (:parent "Converter"
+                        :arguments 
+                          ( ("out" variable
+                               (:reference 1
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [10642 10653])
+                            ("val" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10654 10671]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [10623 10794])
+                    ("to" function
+                       (:parent "Converter"
+                        :arguments 
+                          ( ("out" variable
+                               (:reference 1
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [10815 10825])
+                            ("val" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10826 10843]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [10796 12557]))                  
+                :type "namespace")
+                nil [839 12561]))          
+    :file "value.cpp"
+    :pointmax 12585
+    :fsize 12584
+    :lastmodtime '(21022 49848 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "binary_log.cpp"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "binary_log.cpp"
+    :pointmax 3084
+    :fsize 3083
+    :lastmodtime '(21022 49848 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!download!mysql-hadoop-applier-0.1.0!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,42 @@
+;; Object demo/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "demo/"
+  :tables (list 
+   (semanticdb-table "zhuyin.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("IPYFactory.h" include nil nil [74 97])
+            ("iostream" include (:system-flag t) nil [98 117])
+            ("sstream" include (:system-flag t) nil [118 136])
+            ("string" include (:system-flag t) nil [137 154])
+            ("stdio.h" include (:system-flag t) nil [155 173])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [175 195])
+            ("NLP::Pinyin" using (:type ("NLP::Pinyin" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [196 224])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [235 244])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [245 264]))                  
+                :type "int")
+                nil [226 1779]))          
+    :file "zhuyin.cpp"
+    :pointmax 1781
+    :fsize 1800
+    :lastmodtime '(20848 64805 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!local!pinyin!demo!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

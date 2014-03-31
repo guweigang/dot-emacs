@@ -1,0 +1,1535 @@
+;; Object ext/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ext/"
+  :tables (list 
+   (semanticdb-table "ruby_binlog.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("__RUBY_BINLOG_H__" variable (:constant-flag t) nil [35 52])
+            ("private" variable (:constant-flag t) nil [70 77])
+            ("string" include (:system-flag t) nil [86 103])
+            ("binlog_api.h" include (:system-flag t) nil [104 127])
+            ("ruby.h" include (:system-flag t) nil [128 145])
+            ("rubysig.h" include (:system-flag t) nil [146 166])
+            ("ruby_binlog_event.h" include nil nil [168 198])
+            ("RSTRING_PTR" variable (:constant-flag t) nil [228 239])
+            ("RSTRING_LEN" variable (:constant-flag t) nil [296 307])
+            ("__F" variable (:constant-flag t) nil [426 429])
+            ("WAIT_INTERVAL" variable (:constant-flag t) nil [487 500])
+            ("rb_mBinlog" variable
+               (:typemodifiers ("extern")
+                :type ("VALUE" type (:type "class") nil nil))
+                nil [506 530])
+            ("rb_eBinlogError" variable
+               (:typemodifiers ("extern")
+                :type ("VALUE" type (:type "class") nil nil))
+                nil [531 560])
+            ("ruby" type
+               (:members 
+                  ( ("binlog" type
+                       (:members 
+                          ( ("get_field_type_str" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :constant-flag t
+                                :arguments 
+                                  ( ("type" variable (:type ("mysql::system::enum_field_types" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [629 666]))                                  
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [598 667])
+                            ("cast_to_tcp_driver" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :arguments 
+                                  ( ("driver" variable
+                                       (:pointer 1
+                                        :type ("mysql::system::Binary_log_driver" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [721 762]))                                  
+                                :type ("mysql::system::Binlog_tcp_driver" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [668 763]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [579 765]))                  
+                :type "namespace")
+                nil [562 787])
+            ("Init_binlog" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [863 882])
+            ("C" extern (:members 
+              ( ("Init_binlog" function
+                   (:typemodifiers ("extern" "\"C\"")
+                    :type "void"
+                    :prototype-flag t)
+                    (reparse-symbol extern-c-contents) [863 882]))              ) nil [807 884]))          
+    :file "ruby_binlog.h"
+    :pointmax 914
+    :fsize 913
+    :lastmodtime '(20653 43180 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("__F" (spp-arg-list ("f") 429 . 432) . ((semantic-list "(reinterpret_cast<VALUE (*)(...)>(f))" 433 . 470)))
+          ("RSTRING_LEN" (spp-arg-list ("s") 307 . 310) . ((semantic-list "(RSTRING(s)->len)" 311 . 328)))
+          ("WAIT_INTERVAL" . ((number "300" 501 . 504)))
+          ("private" . ((PUBLIC "public" 78 . 84)))
+          ("__RUBY_BINLOG_H__")
+          ("RSTRING_PTR" (spp-arg-list ("s") 239 . 242) . ((semantic-list "(RSTRING(s)->ptr)" 243 . 260)))
+          )
+
+    )
+   (semanticdb-table "ruby_binlog_event.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("__RUBY_BINLOG_EVENT_H__" variable (:constant-flag t) nil [41 64])
+            ("ruby_binlog.h" include nil nil [66 90])
+            ("rb_cBinlogEvent" variable
+               (:typemodifiers ("extern")
+                :type ("VALUE" type (:type "class") nil nil))
+                nil [92 121])
+            ("ruby" type
+               (:members 
+                  ( ("binlog" type
+                       (:members 
+                          ( ("Event" type
+                               (:members 
+                                  ( ("m_event_header" variable
+                                       (:pointer 1
+                                        :type ("mysql::Log_event_header" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [177 217])
+                                    ("get_marker" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [245 256]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [221 257])
+                                    ("get_timestamp" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [287 298]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [260 299])
+                                    ("get_type_code" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [329 340]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [302 341])
+                                    ("get_server_id" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [371 382]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [344 383])
+                                    ("get_event_length" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [416 427]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [386 428])
+                                    ("get_next_position" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [462 473]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [431 474])
+                                    ("get_flags" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [500 511]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [477 512])
+                                    ("get_event_type" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [543 554]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [515 555])
+                                    ("init" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("clazz" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [575 587]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [558 588]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [160 591])
+                            ("QueryEvent" type
+                               (:superclasses 
+                                  ( ("Event" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("m_event" variable
+                                       (:pointer 1
+                                        :type ("mysql::Query_event" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [630 658])
+                                    ("free" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("p" variable
+                                               (:pointer 1
+                                                :type ("QueryEvent" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [679 693]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [662 694])
+                                    ("alloc" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("klass" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [716 728]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [697 729])
+                                    ("set_event" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [754 765])
+                                            ("event" variable
+                                               (:pointer 1
+                                                :type ("mysql::Binary_log_event" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [766 797]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [732 798])
+                                    ("init" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [801 820])
+                                    ("get_thread_id" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [851 862]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [824 863])
+                                    ("get_exec_time" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [893 904]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [866 905])
+                                    ("get_error_code" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [936 947]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [908 948])
+                                    ("get_variables" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [978 989]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [951 990])
+                                    ("get_db_name" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1018 1029]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [993 1030])
+                                    ("get_query" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1056 1067]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1033 1068]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [593 1071])
+                            ("RotateEvent" type
+                               (:superclasses 
+                                  ( ("Event" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("m_event" variable
+                                       (:pointer 1
+                                        :type ("mysql::Rotate_event" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1111 1140])
+                                    ("free" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("p" variable
+                                               (:pointer 1
+                                                :type ("RotateEvent" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1161 1176]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1144 1177])
+                                    ("alloc" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("klass" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1199 1211]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1180 1212])
+                                    ("set_event" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1237 1248])
+                                            ("event" variable
+                                               (:pointer 1
+                                                :type ("mysql::Binary_log_event" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1249 1280]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1215 1281])
+                                    ("init" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1284 1303])
+                                    ("get_binlog_file" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1336 1347]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1307 1348])
+                                    ("get_binlog_pos" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1379 1390]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1351 1391]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1073 1394])
+                            ("FormatEvent" type
+                               (:superclasses 
+                                  ( ("Event" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("m_event" variable
+                                       (:pointer 1
+                                        :type ("mysql::Format_event" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1434 1463])
+                                    ("free" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("p" variable
+                                               (:pointer 1
+                                                :type ("FormatEvent" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1484 1499]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1467 1500])
+                                    ("alloc" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("klass" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1522 1534]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1503 1535])
+                                    ("set_event" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1560 1571])
+                                            ("event" variable
+                                               (:pointer 1
+                                                :type ("mysql::Binary_log_event" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1572 1603]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1538 1604])
+                                    ("init" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1607 1626])
+                                    ("get_binlog_version" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1662 1673]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1630 1674])
+                                    ("get_master_version" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1709 1720]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1677 1721])
+                                    ("get_created_ts" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1752 1763]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1724 1764])
+                                    ("get_log_header_len" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1799 1810]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1767 1811]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1396 1814])
+                            ("UserVarEvent" type
+                               (:superclasses 
+                                  ( ("Event" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("m_event" variable
+                                       (:pointer 1
+                                        :type ("mysql::User_var_event" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1855 1886])
+                                    ("free" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("p" variable
+                                               (:pointer 1
+                                                :type ("UserVarEvent" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1907 1923]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1890 1924])
+                                    ("alloc" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("klass" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1946 1958]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1927 1959])
+                                    ("set_event" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1984 1995])
+                                            ("event" variable
+                                               (:pointer 1
+                                                :type ("mysql::Binary_log_event" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1996 2027]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1962 2028])
+                                    ("init" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2031 2050])
+                                    ("get_name" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2076 2087]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2054 2088])
+                                    ("get_is_null" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2116 2127]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2091 2128])
+                                    ("get_type" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2153 2164]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2131 2165])
+                                    ("get_charset" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2193 2204]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2168 2205])
+                                    ("get_value" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2231 2242]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2208 2243]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1816 2246])
+                            ("TableMapEvent" type
+                               (:superclasses 
+                                  ( ("Event" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("m_event" variable
+                                       (:pointer 1
+                                        :type ("mysql::Table_map_event" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2288 2320])
+                                    ("free" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("p" variable
+                                               (:pointer 1
+                                                :type ("TableMapEvent" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2341 2358]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2324 2359])
+                                    ("alloc" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("klass" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2381 2393]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2362 2394])
+                                    ("set_event" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2419 2430])
+                                            ("event" variable
+                                               (:pointer 1
+                                                :type ("mysql::Binary_log_event" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2431 2462]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2397 2463])
+                                    ("init" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2466 2485])
+                                    ("get_table_id" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2515 2526]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2489 2527])
+                                    ("get_flags" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2553 2564]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2530 2565])
+                                    ("get_db_name" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2593 2604]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2568 2605])
+                                    ("get_table_name" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2636 2647]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2608 2648])
+                                    ("get_columns" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2676 2687]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2651 2688])
+                                    ("get_column_types" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2721 2732]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2691 2733])
+                                    ("get_metadata" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2762 2773]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2736 2774])
+                                    ("get_null_bits" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2804 2815]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2777 2816]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [2248 2819])
+                            ("RowEvent" type
+                               (:superclasses 
+                                  ( ("Event" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("m_event" variable
+                                       (:pointer 1
+                                        :type ("mysql::Row_event" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2856 2882])
+                                    ("m_table_map" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2885 2903])
+                                    ("free" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("p" variable
+                                               (:pointer 1
+                                                :type ("RowEvent" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2924 2936]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2907 2937])
+                                    ("mark" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("p" variable
+                                               (:pointer 1
+                                                :type ("RowEvent" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2957 2969]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2940 2970])
+                                    ("alloc" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("klass" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2992 3004]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2973 3005])
+                                    ("set_event" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3030 3041])
+                                            ("event" variable
+                                               (:pointer 1
+                                                :type ("mysql::Binary_log_event" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3042 3073])
+                                            ("table_map" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3074 3090]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3008 3091])
+                                    ("init" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3094 3113])
+                                    ("get_table_id" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3143 3154]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3117 3155])
+                                    ("get_db_name" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3183 3194]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3158 3195])
+                                    ("get_table_name" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3226 3237]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3198 3238])
+                                    ("get_column_types" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3271 3282]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3241 3283])
+                                    ("get_flags" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3309 3320]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3286 3321])
+                                    ("get_columns_len" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3353 3364]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3324 3365])
+                                    ("get_null_bits_len" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3399 3410]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3368 3411])
+                                    ("get_columns_before_image" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3452 3463]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3414 3464])
+                                    ("get_used_columns" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3497 3508]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3467 3509])
+                                    ("get_row" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3533 3544]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3512 3545])
+                                    ("get_rows" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3570 3581]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3548 3582])
+                                    ("private" label nil (reparse-symbol classsubparts) [3584 3592])
+                                    ("proc0" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("fields" variable
+                                               (:reference 1
+                                                :type ("mysql::Row_of_fields" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3613 3642])
+                                            ("rb_fields" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3643 3659]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3595 3660])
+                                    ("proc_insert" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("fields" variable
+                                               (:reference 1
+                                                :type ("mysql::Row_of_fields" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3688 3717]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3663 3718])
+                                    ("proc_update" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("old_fields" variable
+                                               (:reference 1
+                                                :type ("mysql::Row_of_fields" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3746 3779])
+                                            ("new_fields" variable
+                                               (:reference 1
+                                                :type ("mysql::Row_of_fields" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3780 3813]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3721 3814])
+                                    ("proc_delete" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("fields" variable
+                                               (:reference 1
+                                                :type ("mysql::Row_of_fields" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3842 3871]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3817 3872]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [2821 3875])
+                            ("IntVarEvent" type
+                               (:superclasses 
+                                  ( ("Event" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("m_event" variable
+                                       (:pointer 1
+                                        :type ("mysql::Int_var_event" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3915 3945])
+                                    ("free" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("p" variable
+                                               (:pointer 1
+                                                :type ("IntVarEvent" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3966 3981]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3949 3982])
+                                    ("alloc" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("klass" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4004 4016]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3985 4017])
+                                    ("set_event" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4042 4053])
+                                            ("event" variable
+                                               (:pointer 1
+                                                :type ("mysql::Binary_log_event" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4054 4085]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4020 4086])
+                                    ("init" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4089 4108])
+                                    ("get_type" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4134 4145]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4112 4146])
+                                    ("get_value" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4172 4183]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4149 4184]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [3877 4187])
+                            ("IncidentEvent" type
+                               (:superclasses 
+                                  ( ("Event" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("m_event" variable
+                                       (:pointer 1
+                                        :type ("mysql::Incident_event" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4229 4260])
+                                    ("free" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("p" variable
+                                               (:pointer 1
+                                                :type ("IncidentEvent" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4281 4298]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4264 4299])
+                                    ("alloc" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("klass" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4321 4333]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4302 4334])
+                                    ("set_event" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4359 4370])
+                                            ("event" variable
+                                               (:pointer 1
+                                                :type ("mysql::Binary_log_event" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4371 4402]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4337 4403])
+                                    ("init" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4406 4425])
+                                    ("get_type" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4451 4462]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4429 4463])
+                                    ("get_message" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4491 4502]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4466 4503]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [4189 4506])
+                            ("XidEvent" type
+                               (:superclasses 
+                                  ( ("Event" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("m_event" variable
+                                       (:pointer 1
+                                        :type ("mysql::Xid" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4543 4563])
+                                    ("free" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("p" variable
+                                               (:pointer 1
+                                                :type ("XidEvent" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4584 4596]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4567 4597])
+                                    ("alloc" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("klass" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4619 4631]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4600 4632])
+                                    ("set_event" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4657 4668])
+                                            ("event" variable
+                                               (:pointer 1
+                                                :type ("mysql::Binary_log_event" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4669 4700]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4635 4701])
+                                    ("init" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4704 4723])
+                                    ("get_xid_id" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4751 4762]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4727 4763]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [4508 4766])
+                            ("UnimplementedEvent" type
+                               (:superclasses 
+                                  ( ("Event" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("m_event" variable
+                                       (:pointer 1
+                                        :type ("mysql::Binary_log_event" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4813 4846])
+                                    ("free" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("p" variable
+                                               (:pointer 1
+                                                :type ("QueryEvent" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4867 4881]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4850 4882])
+                                    ("alloc" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("klass" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4904 4916]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4885 4917])
+                                    ("set_event" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4942 4953])
+                                            ("event" variable
+                                               (:pointer 1
+                                                :type ("mysql::Binary_log_event" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4954 4985]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4920 4986])
+                                    ("init" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4989 5008]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [4768 5011]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [140 5014]))                  
+                :type "namespace")
+                nil [123 5036]))          
+    :file "ruby_binlog_event.h"
+    :pointmax 5090
+    :fsize 5089
+    :lastmodtime '(20653 43180 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("__RUBY_BINLOG_EVENT_H__")
+          )
+
+    )
+   (semanticdb-table "ruby_binlog.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("ruby_binlog.h" include nil nil [1 25])
+            ("rb_cBinlogQueryEvent" variable
+               (:typemodifiers ("extern")
+                :type ("VALUE" type (:type "class") nil nil))
+                nil [27 61])
+            ("rb_cBinlogRotateEvent" variable
+               (:typemodifiers ("extern")
+                :type ("VALUE" type (:type "class") nil nil))
+                nil [62 97])
+            ("rb_cBinlogFormatEvent" variable
+               (:typemodifiers ("extern")
+                :type ("VALUE" type (:type "class") nil nil))
+                nil [98 133])
+            ("rb_cBinlogUserVarEvent" variable
+               (:typemodifiers ("extern")
+                :type ("VALUE" type (:type "class") nil nil))
+                nil [134 170])
+            ("rb_cBinlogTableMapEvent" variable
+               (:typemodifiers ("extern")
+                :type ("VALUE" type (:type "class") nil nil))
+                nil [171 208])
+            ("rb_cBinlogRowEvent" variable
+               (:typemodifiers ("extern")
+                :type ("VALUE" type (:type "class") nil nil))
+                nil [209 241])
+            ("rb_cBinlogIntVarEvent" variable
+               (:typemodifiers ("extern")
+                :type ("VALUE" type (:type "class") nil nil))
+                nil [242 277])
+            ("rb_cBinlogIncidentEvent" variable
+               (:typemodifiers ("extern")
+                :type ("VALUE" type (:type "class") nil nil))
+                nil [278 315])
+            ("rb_cBinlogXid" variable
+               (:typemodifiers ("extern")
+                :type ("VALUE" type (:type "class") nil nil))
+                nil [316 343])
+            ("rb_cBinlogUnimplementedEvent" variable
+               (:typemodifiers ("extern")
+                :type ("VALUE" type (:type "class") nil nil))
+                nil [344 386])
+            ("ruby" type
+               (:members 
+                  ( ("binlog" type
+                       (:members 
+                          ( ("Client" type
+                               (:members 
+                                  ( ("m_binlog" variable
+                                       (:pointer 1
+                                        :type ("Binary_log" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [443 464])
+                                    ("m_table_map" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [467 485])
+                                    ("free" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("p" variable
+                                               (:pointer 1
+                                                :type ("Client" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [506 516]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [489 640])
+                                    ("mark" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("p" variable
+                                               (:pointer 1
+                                                :type ("Client" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [661 671]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [644 743])
+                                    ("alloc" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("klass" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [766 778]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [747 912])
+                                    ("initialize" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [940 951])
+                                            ("uri" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [952 962]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [916 1173])
+                                    ("connect" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1198 1209]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1177 1394])
+                                    ("is_closed" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2025 2036]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2002 2472])
+                                    ("wait_for_next_event" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2509 2520]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2476 5518])
+                                    ("set_position" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [5548 5557])
+                                            ("argv" variable
+                                               (:pointer 1
+                                                :type ("VALUE" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5558 5570])
+                                            ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5571 5582]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5522 6477])
+                                    ("set_position2" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6508 6519])
+                                            ("position" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6520 6535]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6481 6972])
+                                    ("get_position" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [7002 7011])
+                                            ("argv" variable
+                                               (:pointer 1
+                                                :type ("VALUE" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7012 7024])
+                                            ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7025 7036]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6976 7499])
+                                    ("get_position2" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7530 7541]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7503 7734])
+                                    ("init" function
+                                       (:typemodifiers ("static")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [7738 8703]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [425 8706]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [405 8709]))                  
+                :type "namespace")
+                nil [388 8731])
+            ("rb_mBinlog" variable (:type ("VALUE" type (:type "class") nil nil)) nil [8751 8768])
+            ("rb_cBinlogEvent" variable (:type ("VALUE" type (:type "class") nil nil)) nil [8769 8791])
+            ("rb_eBinlogError" variable (:type ("VALUE" type (:type "class") nil nil)) nil [8792 8814])
+            ("Init_binlog" function (:type "void") nil [8816 11987]))          
+    :file "ruby_binlog.cpp"
+    :pointmax 11988
+    :fsize 11987
+    :lastmodtime '(20653 43180 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ruby_binlog_rotate_event.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("ruby_binlog.h" include nil nil [1 25])
+            ("rb_cBinlogRotateEvent" variable (:type ("VALUE" type (:type "class") nil nil)) nil [27 55])
+            ("ruby" type
+               (:members 
+                  ( ("binlog" type
+                       (:members 
+                          ( ("free" function
+                               (:parent "RotateEvent"
+                                :arguments 
+                                  ( ("p" variable
+                                       (:pointer 1
+                                        :type ("RotateEvent" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [117 132]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [94 242])
+                            ("alloc" function
+                               (:parent "RotateEvent"
+                                :arguments 
+                                  ( ("klass" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [269 281]))                                  
+                                :type ("VALUE" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [244 420])
+                            ("set_event" function
+                               (:parent "RotateEvent"
+                                :arguments 
+                                  ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [450 461])
+                                    ("event" variable
+                                       (:pointer 1
+                                        :type ("mysql::Binary_log_event" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [462 493]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [422 646])
+                            ("init" function
+                               (:parent "RotateEvent"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [648 1032])
+                            ("get_binlog_file" function
+                               (:parent "RotateEvent"
+                                :arguments 
+                                  ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1069 1080]))                                  
+                                :type ("VALUE" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1034 1198])
+                            ("get_binlog_pos" function
+                               (:parent "RotateEvent"
+                                :arguments 
+                                  ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1234 1245]))                                  
+                                :type ("VALUE" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1200 1350]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [74 1353]))                  
+                :type "namespace")
+                nil [57 1375]))          
+    :file "ruby_binlog_rotate_event.cpp"
+    :pointmax 1394
+    :fsize 1393
+    :lastmodtime '(20653 43180 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ruby_binlog_row_event.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("ruby_binlog.h" include nil nil [1 25])
+            ("rb_cBinlogRowEvent" variable (:type ("VALUE" type (:type "class") nil nil)) nil [27 52])
+            ("ruby" type
+               (:members 
+                  ( ("binlog" type
+                       (:members 
+                          ( ("free" function
+                               (:parent "RowEvent"
+                                :arguments 
+                                  ( ("p" variable
+                                       (:pointer 1
+                                        :type ("RowEvent" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [111 123]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [91 255])
+                            ("mark" function
+                               (:parent "RowEvent"
+                                :arguments 
+                                  ( ("p" variable
+                                       (:pointer 1
+                                        :type ("RowEvent" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [277 289]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [257 353])
+                            ("alloc" function
+                               (:parent "RowEvent"
+                                :arguments 
+                                  ( ("klass" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [377 389]))                                  
+                                :type ("VALUE" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [355 548])
+                            ("set_event" function
+                               (:parent "RowEvent"
+                                :arguments 
+                                  ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [575 586])
+                                    ("event" variable
+                                       (:pointer 1
+                                        :type ("mysql::Binary_log_event" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [587 618])
+                                    ("table_map" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [619 635]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [550 809])
+                            ("init" function
+                               (:parent "RowEvent"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [811 2145])
+                            ("get_table_id" function
+                               (:parent "RowEvent"
+                                :arguments 
+                                  ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2176 2187]))                                  
+                                :type ("VALUE" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2147 2284])
+                            ("get_db_name" function
+                               (:parent "RowEvent"
+                                :arguments 
+                                  ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2314 2325]))                                  
+                                :type ("VALUE" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2286 2575])
+                            ("get_table_name" function
+                               (:parent "RowEvent"
+                                :arguments 
+                                  ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2608 2619]))                                  
+                                :type ("VALUE" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2577 2872])
+                            ("get_column_types" function
+                               (:parent "RowEvent"
+                                :arguments 
+                                  ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2907 2918]))                                  
+                                :type ("VALUE" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2874 3464])
+                            ("get_flags" function
+                               (:parent "RowEvent"
+                                :arguments 
+                                  ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3492 3503]))                                  
+                                :type ("VALUE" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3466 3598])
+                            ("get_columns_len" function
+                               (:parent "RowEvent"
+                                :arguments 
+                                  ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3632 3643]))                                  
+                                :type ("VALUE" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3600 3745])
+                            ("get_null_bits_len" function
+                               (:parent "RowEvent"
+                                :arguments 
+                                  ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3781 3792]))                                  
+                                :type ("VALUE" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3747 3895])
+                            ("get_columns_before_image" function
+                               (:parent "RowEvent"
+                                :arguments 
+                                  ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3938 3949]))                                  
+                                :type ("VALUE" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3897 4255])
+                            ("get_used_columns" function
+                               (:parent "RowEvent"
+                                :arguments 
+                                  ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4290 4301]))                                  
+                                :type ("VALUE" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [4257 4591])
+                            ("get_row" function
+                               (:parent "RowEvent"
+                                :arguments 
+                                  ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4617 4628]))                                  
+                                :type ("VALUE" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [4593 4900])
+                            ("get_rows" function
+                               (:parent "RowEvent"
+                                :arguments 
+                                  ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4927 4938]))                                  
+                                :type ("VALUE" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [4902 5832])
+                            ("proc0" function
+                               (:parent "RowEvent"
+                                :arguments 
+                                  ( ("fields" variable
+                                       (:reference 1
+                                        :type ("mysql::Row_of_fields" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5855 5884])
+                                    ("rb_fields" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5885 5901]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [5834 6517])
+                            ("proc_insert" function
+                               (:parent "RowEvent"
+                                :arguments 
+                                  ( ("fields" variable
+                                       (:reference 1
+                                        :type ("mysql::Row_of_fields" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6547 6576]))                                  
+                                :type ("VALUE" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [6519 6674])
+                            ("proc_update" function
+                               (:parent "RowEvent"
+                                :arguments 
+                                  ( ("old_fields" variable
+                                       (:reference 1
+                                        :type ("mysql::Row_of_fields" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6704 6737])
+                                    ("new_fields" variable
+                                       (:reference 1
+                                        :type ("mysql::Row_of_fields" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6738 6771]))                                  
+                                :type ("VALUE" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [6676 7078])
+                            ("proc_delete" function
+                               (:parent "RowEvent"
+                                :arguments 
+                                  ( ("fields" variable
+                                       (:reference 1
+                                        :type ("mysql::Row_of_fields" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7108 7137]))                                  
+                                :type ("VALUE" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [7080 7235]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [71 7238]))                  
+                :type "namespace")
+                nil [54 7260]))          
+    :file "ruby_binlog_row_event.cpp"
+    :pointmax 7279
+    :fsize 7278
+    :lastmodtime '(20653 43180 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ruby_binlog_event.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("ruby_binlog.h" include nil nil [1 25])
+            ("ruby" type
+               (:members 
+                  ( ("binlog" type
+                       (:members 
+                          ( ("get_marker" function
+                               (:parent "Event"
+                                :arguments 
+                                  ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [88 99]))                                  
+                                :type ("VALUE" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [64 196])
+                            ("get_timestamp" function
+                               (:parent "Event"
+                                :arguments 
+                                  ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [225 236]))                                  
+                                :type ("VALUE" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [198 337])
+                            ("get_type_code" function
+                               (:parent "Event"
+                                :arguments 
+                                  ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [366 377]))                                  
+                                :type ("VALUE" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [339 477])
+                            ("get_server_id" function
+                               (:parent "Event"
+                                :arguments 
+                                  ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [506 517]))                                  
+                                :type ("VALUE" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [479 618])
+                            ("get_event_length" function
+                               (:parent "Event"
+                                :arguments 
+                                  ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [650 661]))                                  
+                                :type ("VALUE" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [620 765])
+                            ("get_next_position" function
+                               (:parent "Event"
+                                :arguments 
+                                  ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [798 809]))                                  
+                                :type ("VALUE" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [767 914])
+                            ("get_flags" function
+                               (:parent "Event"
+                                :arguments 
+                                  ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [939 950]))                                  
+                                :type ("VALUE" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [916 1046])
+                            ("get_event_type" function
+                               (:parent "Event"
+                                :arguments 
+                                  ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1076 1087]))                                  
+                                :type ("VALUE" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1048 1264])
+                            ("init" function
+                               (:parent "Event"
+                                :arguments 
+                                  ( ("clazz" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1283 1295]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1266 1875]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [44 1878]))                  
+                :type "namespace")
+                nil [27 1900]))          
+    :file "ruby_binlog_event.cpp"
+    :pointmax 1919
+    :fsize 1918
+    :lastmodtime '(20653 43180 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ruby_binlog_query_event.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("ruby_binlog.h" include nil nil [1 25])
+            ("rb_cBinlogQueryEvent" variable (:type ("VALUE" type (:type "class") nil nil)) nil [27 54])
+            ("ruby" type
+               (:members 
+                  ( ("binlog" type
+                       (:members 
+                          ( ("free" function
+                               (:parent "QueryEvent"
+                                :arguments 
+                                  ( ("p" variable
+                                       (:pointer 1
+                                        :type ("QueryEvent" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [115 129]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [93 239])
+                            ("alloc" function
+                               (:parent "QueryEvent"
+                                :arguments 
+                                  ( ("klass" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [265 277]))                                  
+                                :type ("VALUE" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [241 414])
+                            ("set_event" function
+                               (:parent "QueryEvent"
+                                :arguments 
+                                  ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [443 454])
+                                    ("event" variable
+                                       (:pointer 1
+                                        :type ("mysql::Binary_log_event" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [455 486]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [416 636])
+                            ("init" function
+                               (:parent "QueryEvent"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [638 1333])
+                            ("get_thread_id" function
+                               (:parent "QueryEvent"
+                                :arguments 
+                                  ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1367 1378]))                                  
+                                :type ("VALUE" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1335 1482])
+                            ("get_exec_time" function
+                               (:parent "QueryEvent"
+                                :arguments 
+                                  ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1516 1527]))                                  
+                                :type ("VALUE" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1484 1631])
+                            ("get_error_code" function
+                               (:parent "QueryEvent"
+                                :arguments 
+                                  ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1666 1677]))                                  
+                                :type ("VALUE" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1633 1782])
+                            ("get_variables" function
+                               (:parent "QueryEvent"
+                                :arguments 
+                                  ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1816 1827]))                                  
+                                :type ("VALUE" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1784 2115])
+                            ("get_db_name" function
+                               (:parent "QueryEvent"
+                                :arguments 
+                                  ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2147 2158]))                                  
+                                :type ("VALUE" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2117 2270])
+                            ("get_query" function
+                               (:parent "QueryEvent"
+                                :arguments 
+                                  ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2300 2311]))                                  
+                                :type ("VALUE" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2272 2421]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [73 2424]))                  
+                :type "namespace")
+                nil [56 2446]))          
+    :file "ruby_binlog_query_event.cpp"
+    :pointmax 2465
+    :fsize 2464
+    :lastmodtime '(20653 43180 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ruby_binlog_user_var_event.cpp"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "ruby_binlog_user_var_event.cpp"
+    :pointmax 2071
+    :fsize 2070
+    :lastmodtime '(20653 43180 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!git!ruby-binlog!ext!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

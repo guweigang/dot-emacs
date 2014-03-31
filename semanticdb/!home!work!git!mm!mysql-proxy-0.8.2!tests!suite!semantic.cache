@@ -1,0 +1,28 @@
+;; Object suite/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "suite/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("SUBDIRS" variable (:default-value ("base" "bugs")) nil [1 19])
+            ("TESTS_ENVIRONMENT" variable (:default-value ("MYSQL_TEST_BIN=\"${MYSQL_TEST_BIN}\"" "LUA_USER_PATH=\"${top_srcdir}/lib/?.lua\"" "LUA_CPATH=\".libs/?.@DYNLIB_LUA_SUFFIX@;${top_builddir}/lib/.libs/?.@DYNLIB_LUA_SUFFIX@\"" "@DYNLIB_PATH_VAR@=\"${top_builddir}/src/.libs/:${@DYNLIB_PATH_VAR@}\"" "MYSQL_PROXY_VERSION=\"${PACKAGE_VERSION}\"" "top_builddir=${top_builddir}" "builddir=${builddir}" "srcdir=${srcdir}/" "BUILD_OS=${build}" "${builddir}/lua-runner" "${srcdir}/run-tests.lua")) nil [20 475])
+            ("TESTS" variable (:default-value ("base")) nil [476 487])
+            ("check_PROGRAMS" variable (:default-value ("lua-runner")) nil [488 514])
+            ("lua_runner_SOURCES" variable (:default-value ("lua_runner.c")) nil [515 547])
+            ("lua_runner_LDFLAGS" variable (:default-value ("${LUA_LDFLAGS}")) nil [547 581])
+            ("lua_runner_LDADD" variable (:default-value ("${LUA_LIBS}")) nil [581 610])
+            ("lua_runner_CFLAGS" variable (:default-value ("${LUA_CFLAGS}")) nil [610 642])
+            ("EXTRA_DIST" variable (:default-value ("run-tests.lua" "lua-tests-wrapper.sh.in" "CMakeLists.txt")) nil [644 717])
+            ("clean-local" function nil nil [718 767]))          
+    :file "Makefile.am"
+    :pointmax 767
+    :fsize 766
+    :lastmodtime '(21022 63839 0 0)
+    :unmatched-syntax '((shell-command 732 . 766) (bol 731 . 731))
+    )
+   )
+  :file "!home!work!git!mm!mysql-proxy-0.8.2!tests!suite!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

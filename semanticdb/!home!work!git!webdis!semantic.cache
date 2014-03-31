@@ -1,0 +1,36 @@
+;; Object webdis/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "webdis/"
+  :tables (list 
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("OUT" variable (:default-value ("webdis")) nil [1 12])
+            ("HIREDIS_OBJ" variable (:default-value ("hiredis/hiredis.o" "hiredis/sds.o" "hiredis/net.o" "hiredis/async.o")) nil [12 86])
+            ("JANSSON_OBJ" variable (:default-value ("jansson/src/dump.o" "jansson/src/error.o" "jansson/src/hashtable.o" "jansson/src/load.o" "jansson/src/strbuffer.o" "jansson/src/utf.o" "jansson/src/value.o" "jansson/src/variadic.o")) nil [86 265])
+            ("FORMAT_OBJS" variable (:default-value ("formats/json.o" "formats/raw.o" "formats/common.o" "formats/custom-type.o")) nil [265 345])
+            ("HTTP_PARSER_OBJS" variable (:default-value ("http-parser/http_parser.o")) nil [345 388])
+            ("CFLAGS" variable (:default-value ("-O0" "-ggdb" "-Wall" "-Wextra" "-I." "-Ijansson/src" "-Ihttp-parser" "-I/home/work/local/libevent/include")) nil [389 488])
+            ("LDFLAGS" variable (:default-value ("-L/home/work/local/libevent/lib" "-levent" "-pthread")) nil [488 545])
+            ("MSGPACK_LIB" variable (:default-value ("$(shell ls /usr/lib/libmsgpack.so 2>/dev/null)")) nil [570 629])
+            ("DEPS" variable (:default-value ("$(FORMAT_OBJS)" "$(HIREDIS_OBJ)" "$(JANSSON_OBJ)" "$(HTTP_PARSER_OBJS)")) nil [749 819])
+            ("OBJS" variable (:default-value ("webdis.o" "cmd.o" "worker.o" "slog.o" "server.o" "libb64/cencode.o" "acl.o" "md5/md5.o" "sha1/sha1.o" "http.o" "client.o" "websocket.o" "pool.o" "conf.o" "$(DEPS)")) nil [819 959])
+            ("INSTALL_DIRS" variable (:default-value ("$(DESTDIR)" "$(DESTDIR)/$(PREFIX)" "$(DESTDIR)/$(PREFIX)/bin" "$(CONFDIR)")) nil [1010 1123])
+            ("all" function (:arguments ("$(OUT)" "Makefile")) nil [1124 1145])
+            ("$(OUT)" function (:arguments ("$(OBJS)" "Makefile")) nil [1146 1207])
+            ("%.o" function (:arguments ("%.c" "%.h" "Makefile")) nil [1208 1259])
+            ("%.o" function (:arguments ("%.c" "Makefile")) nil [1260 1307])
+            ("$(INSTALL_DIRS)" function nil nil [1308 1338])
+            ("clean" function nil nil [1339 1368])
+            ("install" function (:arguments ("$(OUT)" "$(INSTALL_DIRS)")) nil [1369 1469]))          
+    :file "Makefile"
+    :pointmax 1433
+    :fsize 1468
+    :lastmodtime '(20738 21461)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!git!webdis!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

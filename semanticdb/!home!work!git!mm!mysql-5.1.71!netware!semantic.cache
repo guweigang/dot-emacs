@@ -1,0 +1,38 @@
+;; Object netware/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "netware/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("INCLUDES" variable (:default-value ("-I$(top_builddir)/include" "-I$(top_srcdir)/include" "-I..")) nil [804 872])
+            ("LDADD" variable (:default-value ("@CLIENT_EXTRA_LDFLAGS@" "../mysys/libmysys.a" "../dbug/libdbug.a" "../strings/libmystrings.a")) nil [872 976])
+            ("bin_PROGRAMS" variable (:default-value ("mysqld_safe")) nil [976 1046])
+            ("mysqld_safe_SOURCES" variable (:default-value ("mysqld_safe.c" "my_manage.c")) nil [1046 1094])
+            ("mysql_install_db_SOURCES" variable (:default-value ("mysql_install_db.c" "my_manage.c")) nil [1094 1151])
+            ("mysql_test_run_SOURCES" variable (:default-value ("mysql_test_run.c" "my_manage.c")) nil [1151 1205])
+            ("libmysql_SOURCES" variable (:default-value ("libmysqlmain.c")) nil [1205 1239])
+            ("libmysql_LDADD" variable (:default-value ("../libmysql/.libs/libmysqlclient.a" "@openssl_libs@" "@yassl_libs@")) nil [1239 1326])
+            ("netware_build_files" variable (:default-value ("client/mysql.def" "client/mysqladmin.def" "client/mysqlbinlog.def" "client/mysqlcheck.def" "client/mysqldump.def" "client/mysqlimport.def" "client/mysqlshow.def" "client/mysqltest.def" "client/mysqlslap.def" "client/mysql_upgrade.def" "sql/mysqld.def" "extra/mysql_waitpid.def" "tests/mysql_client_test.def" "extra/my_print_defaults.def" "extra/perror.def" "extra/replace.def" "extra/resolveip.def" "extra/comp_err.def" "extra/resolve_stack_dump.def" "libmysqld/libmysqld.def" "storage/myisam/myisamchk.def" "storage/myisam/myisamlog.def" "storage/myisam/myisampack.def" "storage/myisam/myisam_ftdump.def")) nil [1327 2400])
+            ("BUILT_SOURCES" variable (:default-value ("link_sources" "init_db.sql" "test_db.sql")) nil [2401 2470])
+            ("CLEANFILES" variable (:default-value ("$(BUILT_SOURCES)")) nil [2470 2503])
+            ("all" function (:arguments ("$(BUILT_SOURCES)")) nil [2504 2526])
+            ("link_sources" function nil nil [2527 2700])
+            ("BUILT_SOURCES" variable (:default-value ("libmysql.imp" "init_db.sql" "test_db.sql")) nil [2707 2776])
+            ("DISTCLEANFILES" variable (:default-value ("libmysql.imp")) nil [2776 2821])
+            ("CLEANFILES" variable (:default-value ("init_db.sql" "test_db.sql")) nil [2821 2877])
+            ("libmysql.imp" function (:arguments ("$(top_srcdir)/libmysql/libmysql.def")) nil [2931 3218])
+            ("EXTRA_DIST" variable (:default-value ("$(BUILT_SOURCES)" "comp_err.def" "install_test_db.ncf" "libmysql.def" "libmysqlmain.c" "my_manage.c" "my_manage.h" "my_print_defaults.def" "myisam_ftdump.def" "myisamchk.def" "myisamlog.def" "myisampack.def" "mysql.def" "mysql.xdc" "mysql_fix_privilege_tables.pl" "mysql_install_db.c" "mysql_install_db.def" "mysql_secure_installation.pl" "mysql_test_run.c" "mysql_test_run.def" "mysql_waitpid.def" "mysqladmin.def" "mysqlbinlog.def" "mysqlcheck.def" "mysqld.def" "mysqld_safe.c" "mysqld_safe.def" "mysqldump.def" "mysqlimport.def" "mysqlshow.def" "mysqltest.def" "mysqlslap.def" "mysql_upgrade.def" "perror.def" "mysql_client_test.def" "replace.def" "resolve_stack_dump.def" "resolveip.def" "static_init_db.sql" "init_db.sql" "test_db.sql" "BUILD/apply-patch" "BUILD/compile-AUTOTOOLS" "BUILD/compile-linux-tools" "BUILD/compile-netware-END" "BUILD/compile-netware-START" "BUILD/compile-netware-all" "BUILD/compile-netware-debug" "BUILD/compile-netware-max" "BUILD/compile-netware-max-debug" "BUILD/compile-netware-src" "BUILD/compile-netware-standard" "BUILD/create-patch" "BUILD/cron-build" "BUILD/crontab" "BUILD/knetware.imp" "BUILD/mwasmnlm" "BUILD/mwccnlm" "BUILD/mwenv" "BUILD/mwldnlm" "BUILD/nwbuild" "BUILD/openssl.imp" "BUILD/save-patch")) nil [3219 4450])
+            ("init_db.sql" function (:arguments ("$(top_srcdir)/scripts/mysql_system_tables.sql" "$(top_srcdir)/scripts/mysql_system_tables_data.sql")) nil [4571 4873])
+            ("test_db.sql" function (:arguments ("init_db.sql" "$(top_srcdir)/scripts/mysql_test_data_timezone.sql")) nil [4933 5115]))          
+    :file "Makefile.am"
+    :pointmax 5168
+    :fsize 5167
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax '((symbol 5159 . 5167) (punctuation 5158 . 5159) (punctuation 5157 . 5158) (symbol 5156 . 5157) (bol 5156 . 5156))
+    )
+   )
+  :file "!home!work!git!mm!mysql-5.1.71!netware!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,331 @@
+;; Object corelib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "corelib/"
+  :tables (list 
+   (semanticdb-table "log.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("phenom/defs.h" include nil nil [606 630])
+            ("phenom/log.h" include nil nil [631 654])
+            ("phenom/thread.h" include nil nil [655 681])
+            ("phenom/sysutil.h" include nil nil [682 709])
+            ("phenom/printf.h" include nil nil [710 736])
+            ("phenom/hook.h" include nil nil [737 761])
+            ("sys/syscall.h" include (:system-flag t) nil [779 803])
+            ("log_lock" variable
+               (:typemodifiers ("static")
+                :type ("pthread_mutex_t" type (:type "class") nil nil))
+                nil [856 916])
+            ("log_level" variable
+               (:typemodifiers ("static")
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [917 955])
+            ("log_labels" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "char")
+                nil [956 1077])
+            ("disable_stderr" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [1080 1115])
+            ("ph_log_level_set" function
+               (:arguments 
+                  ( ("level" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1142 1156]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [1117 1224])
+            ("ph_log_level_get" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1251 1256]))                  
+                :type ("uint8_t" type (:type "class") nil nil))
+                nil [1226 1280])
+            ("get_tname" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("me" variable
+                       (:pointer 1
+                        :type ("ph_thread_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1304 1320])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1321 1331])
+                    ("size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1332 1346]))                  
+                :type "void")
+                nil [1282 1978])
+            ("ph_logv" function
+               (:arguments 
+                  ( ("level" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1993 2007])
+                    ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2008 2024])
+                    ("ap" variable (:type ("va_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2025 2036]))                  
+                :type "void")
+                nil [1980 3137])
+            ("ph_log_disable_stderr" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3166 3171]))                  
+                :type "void")
+                nil [3139 3200])
+            ("ph_log" function
+               (:arguments 
+                  ( ("level" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3214 3228])
+                    ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3229 3245])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [3246 3250]))                  
+                :type "void")
+                nil [3202 3331])
+            ("ph_log_stacktrace" function
+               (:arguments 
+                  ( ("level" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3450 3464]))                  
+                :type "void")
+                nil [3427 3797])
+            ("ph_panic" function
+               (:arguments 
+                  ( ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3813 3829])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [3830 3834]))                  
+                :type "void")
+                nil [3799 4021]))          
+    :file "log.c"
+    :pointmax 4049
+    :fsize 4613
+    :lastmodtime '(21161 5278 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "thread.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("__USE_GNU" variable (:constant-flag t) nil [614 623])
+            ("phenom/job.h" include nil nil [625 648])
+            ("phenom/sysutil.h" include nil nil [649 676])
+            ("phenom/log.h" include nil nil [677 700])
+            ("ck_backoff.h" include (:system-flag t) nil [701 724])
+            ("corelib/job.h" include nil nil [725 749])
+            ("__ph_thread_key" variable (:type ("pthread_key_t" type (:type "class") nil nil)) nil [1388 1418])
+            ("next_tid" variable
+               (:typemodifiers ("static")
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [1419 1448])
+            ("misc_epoch" variable
+               (:typemodifiers ("static")
+                :type ("ck_epoch_t" type (:type "class") nil nil))
+                nil [1449 1478])
+            ("ph_thread_all_threads" variable (:type ("ck_stack_t" type (:type "class") nil nil)) nil [1479 1535])
+            ("num_cores" variable
+               (:typemodifiers ("static")
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [1537 1567])
+            ("detect_cores" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1594 1599]))                  
+                :type "void")
+                nil [1569 2468])
+            ("ph_num_cores" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2492 2497]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [2470 2569])
+            ("destroy_thread" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2598 2608]))                  
+                :type "void")
+                nil [2571 2751])
+            ("thread_fini" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2981 2986]))                  
+                :type "void")
+                nil [2957 3230])
+            ("thread_init" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3256 3261]))                  
+                :type "void")
+                nil [3232 3351])
+            ("ph_thread_boot_data" type
+               (:members 
+                  ( ("thr" variable
+                       (:pointer 2
+                        :type ("ph_thread_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3434 3452])
+                    ("func" variable
+                       (:functionpointer-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3455 3476])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [3479 3489]))                  
+                :type "struct")
+                nil [3403 3492])
+            ("ph_thread_init_myself" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("booting" variable (:type "bool") (reparse-symbol arg-sub-list) [3536 3549]))                  
+                :type ("ph_thread_t" type (:type "class") nil nil))
+                nil [3494 4706])
+            ("ph_thread_boot" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4736 4746]))                  
+                :type "void")
+                nil [4708 5213])
+            ("ph_thread_spawn" function
+               (:pointer 1
+                :arguments 
+                  ( ("func" variable (:type ("ph_thread_func" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5244 5264])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [5265 5275]))                  
+                :type ("ph_thread_t" type (:type "class") nil nil))
+                nil [5215 5739])
+            ("ph_thread_join" function
+               (:arguments 
+                  ( ("thr" variable
+                       (:pointer 1
+                        :type ("ph_thread_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5760 5777])
+                    ("res" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [5778 5789]))                  
+                :type "int")
+                nil [5741 5831])
+            ("ph_thread_self_slow" function
+               (:pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5866 5871]))                  
+                :type ("ph_thread_t" type (:type "class") nil nil))
+                nil [5833 6027])
+            ("ph_thread_set_name" function
+               (:arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6053 6070]))                  
+                :type "void")
+                nil [6029 6611])
+            ("ph_cpu_set_t" type
+               (:typedef ("cpu_set_t" type (:type "class") nil nil)
+                :superclasses "cpu_set_t"
+                :type "typedef")
+                nil [6613 6644])
+            ("apply_affinity" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("set" variable
+                       (:pointer 1
+                        :type ("ph_cpu_set_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6673 6691])
+                    ("me" variable
+                       (:pointer 1
+                        :type ("ph_thread_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6692 6708]))                  
+                :type "bool")
+                nil [6646 6916])
+            ("ph_cpu_set" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("aff" variable (:type "int") (reparse-symbol arg-sub-list) [8182 8190])
+                    ("set" variable
+                       (:pointer 1
+                        :type ("ph_cpu_set_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8191 8209]))                  
+                :type "void")
+                nil [8152 8293])
+            ("ph_thread_set_affinity_policy" function
+               (:arguments 
+                  ( ("me" variable
+                       (:pointer 1
+                        :type ("ph_thread_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8629 8645])
+                    ("policy" variable
+                       (:pointer 1
+                        :type ("ph_variant_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8646 8667]))                  
+                :type "bool")
+                nil [8594 9898])
+            ("ph_thread_set_affinity" function
+               (:arguments 
+                  ( ("me" variable
+                       (:pointer 1
+                        :type ("ph_thread_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9928 9944])
+                    ("affinity" variable (:type "int") (reparse-symbol arg-sub-list) [9945 9958]))                  
+                :type "bool")
+                nil [9900 10064])
+            ("ph_thread_epoch_begin" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10093 10098]))                  
+                :type "void")
+                nil [10066 10190])
+            ("ph_thread_epoch_end" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10217 10222]))                  
+                :type "void")
+                nil [10192 10312])
+            ("ph_thread_epoch_defer" function
+               (:arguments 
+                  ( ("entry" variable
+                       (:pointer 1
+                        :type ("ck_epoch_entry_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10341 10365])
+                    ("func" variable
+                       (:pointer 1
+                        :type ("ck_epoch_cb_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10366 10386]))                  
+                :type "void")
+                nil [10314 10490])
+            ("ph_thread_epoch_poll" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10518 10523]))                  
+                :type "bool")
+                nil [10492 10621])
+            ("ph_thread_epoch_barrier" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10652 10657]))                  
+                :type "void")
+                nil [10623 10751]))          
+    :file "thread.c"
+    :pointmax 10780
+    :fsize 10779
+    :lastmodtime '(21161 26444 0 0)
+    :unmatched-syntax '((semantic-list 3372 . 3401) (symbol 3353 . 3372) (number 3399 . 3400) (semantic-list 2894 . 2955) (symbol 2876 . 2894) (spp-include "phenom/log.h" 677 . 700) (spp-include "phenom/sysutil.h" 649 . 676) (spp-include "phenom/job.h" 625 . 648))
+    :lexical-table 
+        '(("__USE_GNU")
+          )
+
+    )
+   (semanticdb-table "job.h"
+    :file "job.h"
+    :fsize 4042
+    :lastmodtime '(21161 5278 0 0)
+    )
+   )
+  :file "!home!work!git!libphenom!corelib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

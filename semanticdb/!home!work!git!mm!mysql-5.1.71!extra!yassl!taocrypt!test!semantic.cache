@@ -1,0 +1,24 @@
+;; Object test/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "test/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("INCLUDES" variable (:default-value ("-I$(srcdir)/../include" "-I$(srcdir)/../mySTL")) nil [743 798])
+            ("noinst_PROGRAMS" variable (:default-value ("test")) nil [798 821])
+            ("test_SOURCES" variable (:default-value ("test.cpp")) nil [821 845])
+            ("test_LDADD" variable (:default-value ("$(top_builddir)/extra/yassl/taocrypt/src/libtaocrypt.la")) nil [845 917])
+            ("test_CXXFLAGS" variable (:default-value ("-DYASSL_PURE_C" "@yassl_thread_cxxflags@")) nil [917 972])
+            ("EXTRA_DIST" variable (:default-value ("make.bat")) nil [972 994]))          
+    :file "Makefile.am"
+    :pointmax 1047
+    :fsize 1046
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax '((symbol 1038 . 1046) (punctuation 1037 . 1038) (punctuation 1036 . 1037) (symbol 1035 . 1036) (bol 1035 . 1035))
+    )
+   )
+  :file "!home!work!git!mm!mysql-5.1.71!extra!yassl!taocrypt!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

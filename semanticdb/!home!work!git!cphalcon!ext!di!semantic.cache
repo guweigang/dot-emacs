@@ -1,0 +1,72 @@
+;; Object di/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "di/"
+  :tables (list 
+   (semanticdb-table "injectable.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("php.h" include nil nil [1213 1229])
+            ("php_phalcon.h" include nil nil [1230 1254])
+            ("phalcon.h" include nil nil [1255 1275])
+            ("Zend/zend_operators.h" include nil nil [1277 1309])
+            ("Zend/zend_exceptions.h" include nil nil [1310 1343])
+            ("Zend/zend_interfaces.h" include nil nil [1344 1377])
+            ("kernel/main.h" include nil nil [1379 1403])
+            ("kernel/memory.h" include nil nil [1404 1430])
+            ("kernel/exception.h" include nil nil [1432 1461])
+            ("kernel/object.h" include nil nil [1462 1488])
+            ("kernel/fcall.h" include nil nil [1489 1514])
+            ("kernel/operators.h" include nil nil [1515 1544])
+            ("kernel/array.h" include nil nil [1545 1570])
+            ("kernel/concat.h" include nil nil [1571 1597])
+            ("PHALCON_INIT_CLASS" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_DI_Injectable" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1854 1876]))                  
+                :type "int")
+                nil [1835 2396])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_DI_Injectable" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2502 2524])
+                    ("" variable (:type ("setDI" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2525 2531]))                  
+                :type "int")
+                nil [2491 2919])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_DI_Injectable" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3018 3040])
+                    ("" variable (:type ("getDI" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3041 3047]))                  
+                :type "int")
+                nil [3007 3457])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_DI_Injectable" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3564 3586])
+                    ("" variable (:type ("setEventsManager" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3587 3604]))                  
+                :type "int")
+                nil [3553 3774])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_DI_Injectable" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3879 3901])
+                    ("" variable (:type ("getEventsManager" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3902 3919]))                  
+                :type "int")
+                nil [3868 3968])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_DI_Injectable" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4045 4067])
+                    ("" variable (:type ("__get" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4068 4074]))                  
+                :type "int")
+                nil [4034 6408]))          
+    :file "injectable.c"
+    :pointmax 6410
+    :fsize 6409
+    :lastmodtime '(21046 54063 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "exception.h"
+    :file "exception.h"
+    :fsize 1256
+    :lastmodtime '(21046 50962 0 0)
+    )
+   )
+  :file "!home!work!git!cphalcon!ext!di!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

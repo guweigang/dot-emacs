@@ -1,0 +1,18 @@
+;; Object php-websocket-client/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "php-websocket-client/"
+  :tables (list 
+   (semanticdb-table "composer.json"
+    :major-mode 'js-mode
+    :tags nil
+    :file "composer.json"
+    :pointmax 555
+    :fsize 554
+    :lastmodtime '(21244 21372 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!git!php-websocket-client!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

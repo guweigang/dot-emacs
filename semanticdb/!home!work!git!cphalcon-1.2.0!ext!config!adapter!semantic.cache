@@ -1,0 +1,76 @@
+;; Object adapter/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "adapter/"
+  :tables (list 
+   (semanticdb-table "ini.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("phalcon_config_adapter_ini_ce" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [1164 1219])
+            ("PHALCON_INIT_CLASS" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Config_Adapter_Ini" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1240 1267]))                  
+                :type "int")
+                nil [1221 1268])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Config_Adapter_Ini" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1281 1308])
+                    ("" variable (:type ("__construct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1309 1321]))                  
+                :type "int")
+                nil [1270 1322])
+            ("PHALCON_INIT_FUNCS" function
+               (:arguments 
+                  ( ("" variable (:type ("phalcon_config_adapter_ini_method_entry" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1472 1512]))                  
+                :type "int")
+                nil [1453 1656]))          
+    :file "ini.h"
+    :pointmax 1659
+    :fsize 1658
+    :lastmodtime '(20955 42574 0 0)
+    :unmatched-syntax '((punctuation 1656 . 1657) (semantic-list 1449 . 1451) (symbol 1432 . 1449) (semantic-list 1418 . 1431) (symbol 1405 . 1418) (number 1419 . 1420) (semantic-list 1346 . 1403) (symbol 1324 . 1346) (number 1401 . 1402) (number 1398 . 1399) (number 1395 . 1396))
+    )
+   (semanticdb-table "ini.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("php.h" include nil nil [1213 1229])
+            ("php_phalcon.h" include nil nil [1230 1254])
+            ("phalcon.h" include nil nil [1255 1275])
+            ("Zend/zend_operators.h" include nil nil [1277 1309])
+            ("Zend/zend_exceptions.h" include nil nil [1310 1343])
+            ("Zend/zend_interfaces.h" include nil nil [1344 1377])
+            ("kernel/main.h" include nil nil [1379 1403])
+            ("kernel/memory.h" include nil nil [1404 1430])
+            ("kernel/fcall.h" include nil nil [1432 1457])
+            ("kernel/operators.h" include nil nil [1458 1487])
+            ("kernel/concat.h" include nil nil [1488 1514])
+            ("kernel/exception.h" include nil nil [1515 1544])
+            ("kernel/hash.h" include nil nil [1545 1569])
+            ("kernel/string.h" include nil nil [1570 1596])
+            ("kernel/array.h" include nil nil [1597 1622])
+            ("PHALCON_INIT_CLASS" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Config_Adapter_Ini" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2290 2317]))                  
+                :type "int")
+                nil [2271 2481])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Config_Adapter_Ini" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2574 2601])
+                    ("" variable (:type ("__construct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2602 2614]))                  
+                :type "int")
+                nil [2563 4846]))          
+    :file "ini.c"
+    :pointmax 4848
+    :fsize 4847
+    :lastmodtime '(20955 42574 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!git!cphalcon-1.2.0!ext!config!adapter!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

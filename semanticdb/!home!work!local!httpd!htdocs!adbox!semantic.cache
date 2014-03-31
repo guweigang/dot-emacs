@@ -1,0 +1,18 @@
+;; Object adbox/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "adbox/"
+  :tables (list 
+   (semanticdb-table "index.html"
+    :major-mode 'html-mode
+    :tags nil
+    :file "index.html"
+    :pointmax 18084
+    :fsize 18391
+    :lastmodtime '(21015 3069 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!local!httpd!htdocs!adbox!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

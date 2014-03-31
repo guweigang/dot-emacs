@@ -1,0 +1,463 @@
+;; Object php-acp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "php-acp/"
+  :tables (list 
+   (semanticdb-table "php_acp.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("PHP_ACP_H" variable (:constant-flag t) nil [1171 1180])
+            ("acp_module_entry" variable
+               (:typemodifiers ("extern")
+                :type ("zend_module_entry" type (:type "class") nil nil))
+                nil [1182 1224])
+            ("phpext_acp_ptr" variable (:constant-flag t) nil [1233 1247])
+            ("PHP_ACP_EXTNAME" variable (:constant-flag t) nil [1275 1290])
+            ("PHP_ACP_VERSION" variable (:constant-flag t) nil [1305 1320])
+            ("PHP_ACP_API" variable (:constant-flag t) nil [1438 1449])
+            ("toml.h" include nil nil [1562 1579])
+            ("PHP_MINIT_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("acp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1600 1604]))                  
+                :type "int")
+                nil [1581 1605])
+            ("PHP_MSHUTDOWN_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("acp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1629 1633]))                  
+                :type "int")
+                nil [1606 1634])
+            ("PHP_RINIT_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("acp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1654 1658]))                  
+                :type "int")
+                nil [1635 1659])
+            ("PHP_RSHUTDOWN_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("acp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1683 1687]))                  
+                :type "int")
+                nil [1660 1688])
+            ("PHP_MINFO_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("acp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1708 1712]))                  
+                :type "int")
+                nil [1689 1713])
+            ("bullsoft_php.h" include nil nil [1715 1740])
+            ("tnp" type
+               (:typedef ("toml_node" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :superclasses "toml_node"
+                :type "typedef")
+                nil [1741 1771])
+            ("acp_decode_object" type
+               (:typedef ("_acp_decode_object" type (:type "struct") nil nil)
+                :superclasses "_acp_decode_object"
+                :type "typedef")
+                nil [1773 1881])
+            ("_acp_decode_object" type
+               (:members 
+                  ( ("std" variable (:type ("zend_object" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1813 1829])
+                    ("root" variable (:type ("tnp" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1834 1843])
+                    ("current" variable (:type ("tnp" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1848 1860]))                  
+                :type "struct")
+                nil [1773 1881])
+            ("create_decode_object" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("class_type" variable
+                       (:pointer 1
+                        :type ("zend_class_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1922 1960])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1951 1961]))                  
+                :type ("zend_object_value" type (:type "class") nil nil))
+                nil [1883 1962])
+            ("free_decode_object" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1987 2009])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2000 2010]))                  
+                :type "void")
+                nil [1963 2011])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Acp_Dec" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2024 2032])
+                    ("" variable (:type ("__construct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2033 2045]))                  
+                :type "int")
+                nil [2013 2046])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Acp_Dec" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2058 2066])
+                    ("" variable (:type ("__destruct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2067 2078]))                  
+                :type "int")
+                nil [2047 2079])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Acp_Dec" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2091 2099])
+                    ("" variable (:type ("__get" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2100 2106]))                  
+                :type "int")
+                nil [2080 2107])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Acp_Dec" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2119 2127])
+                    ("" variable (:type ("reset" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2128 2134]))                  
+                :type "int")
+                nil [2108 2135])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Acp_Dec" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2147 2155])
+                    ("" variable (:type ("head" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2156 2161]))                  
+                :type "int")
+                nil [2136 2162])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Acp_Dec" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2174 2182])
+                    ("" variable (:type ("tail" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2183 2188]))                  
+                :type "int")
+                nil [2163 2189])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Acp_Dec" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2201 2209])
+                    ("" variable (:type ("toArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2210 2218]))                  
+                :type "int")
+                nil [2190 2219])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Acp_Enc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2232 2240])
+                    ("" variable (:type ("__construct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2241 2253]))                  
+                :type "int")
+                nil [2221 2254])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Acp_Enc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2266 2274])
+                    ("" variable (:type ("__destruct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2275 2286]))                  
+                :type "int")
+                nil [2255 2287])
+            ("ACP_G" variable (:constant-flag t) nil [2992 2997])
+            ("ACP_G" variable (:constant-flag t) nil [2992 2997])
+            ("ACP_G" variable (:constant-flag t) nil [2992 2997])
+            ("ACP_G" variable (:constant-flag t) nil [2992 2997])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Acp_Enc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2299 2307])
+                    ("" variable (:type ("toConf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2308 2315]))                  
+                :type "int")
+                nil [2288 2316])
+            ("ACP_G" variable (:constant-flag t) nil [2992 2997]))          
+    :file "php_acp.h"
+    :pointmax 3186
+    :fsize 3185
+    :lastmodtime '(21087 36883 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("PHP_ACP_EXTNAME" . ((string "\"acp\"" 1291 . 1296)))
+          ("phpext_acp_ptr" . ((punctuation "&" 1248 . 1249) (symbol "acp_module_entry" 1249 . 1265)))
+          ("PHP_ACP_API" . ((symbol "__attribute__" 1450 . 1463) (semantic-list "((visibility(\"default\")))" 1464 . 1489)))
+          ("PHP_ACP_VERSION" . ((string "\"0.1\"" 1321 . 1326)))
+          ("PHP_ACP_H")
+          ("ACP_G" (spp-arg-list ("v") 2997 . 3000) . ((semantic-list "(acp_globals.v)" 3001 . 3016)))
+          )
+
+    )
+   (semanticdb-table "bullsoft_php.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("BULLSOFT_PHP_H" variable (:constant-flag t) nil [32 46])
+            ("PHP_FE_END" variable (:constant-flag t) nil [75 85])
+            ("ZEND_MOD_END" variable (:constant-flag t) nil [150 162])
+            ("BULLSOFT_INIT_FUNCS" variable (:constant-flag t) nil [335 354])
+            ("BULLSOFT_INIT_CLASS" variable (:constant-flag t) nil [436 455])
+            ("BULLSOFT_INIT" variable (:constant-flag t) nil [551 564])
+            ("BULLSOFT_REGISTER_CLASS" variable (:constant-flag t) nil [738 761])
+            ("HASH_P" variable (:constant-flag t) nil [1083 1089])
+            ("HASH_PP" variable (:constant-flag t) nil [1160 1167])
+            ("IS_SCALAR_P" variable (:constant-flag t) nil [1242 1253])
+            ("IS_SCALAR_PP" variable (:constant-flag t) nil [1398 1410])
+            ("IS_ARRAY_OR_OBJECT_P" variable (:constant-flag t) nil [1438 1458])
+            ("Z_NUMVAL_P" variable (:constant-flag t) nil [1596 1606])
+            ("Z_NUMVAL_PP" variable (:constant-flag t) nil [1813 1824])
+            ("BULLSOFT_EXCEPTION" variable (:constant-flag t) nil [2033 2051])
+            ("BULLSOFT_PUSH_PARAM" variable (:constant-flag t) nil [2380 2399])
+            ("BULLSOFT_POP_PARAM" variable (:constant-flag t) nil [2460 2478])
+            ("BULLSOFT_PUSH_EO_PARAM" variable (:constant-flag t) nil [2536 2558])
+            ("BULLSOFT_POP_EO_PARAM" variable (:constant-flag t) nil [2617 2638])
+            ("BULLSOFT_CALL_METHOD_BASE" variable (:constant-flag t) nil [2703 2728])
+            ("BULLSOFT_CALL_METHOD_HELPER" variable (:constant-flag t) nil [2781 2808])
+            ("BULLSOFT_CALL_METHOD" variable (:constant-flag t) nil [3341 3361])
+            ("BULLSOFT_CALL_METHOD1" variable (:constant-flag t) nil [3517 3538])
+            ("BULLSOFT_CALL_METHOD2" variable (:constant-flag t) nil [3676 3697])
+            ("BULLSOFT_CALL_METHOD3" variable (:constant-flag t) nil [3951 3972])
+            ("bullsoft_init_properties" variable (:constant-flag t) nil [4552 4576]))          
+    :file "bullsoft_php.h"
+    :pointmax 4852
+    :fsize 4851
+    :lastmodtime '(21085 9970 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("BULLSOFT_PUSH_PARAM" (spp-arg-list ("arg") 2399 . 2404) . ((symbol "zend_ptr_stack_push" 2405 . 2424) (semantic-list "(&EG(argument_stack), arg)" 2424 . 2450)))
+          ("BULLSOFT_CALL_METHOD_HELPER" (spp-arg-list ("classname" "name" "retval" "thisptr" "num" "param") 2808 . 2854) . 
+              ((symbol "BULLSOFT_PUSH_PARAM" 2864 . 2883) (semantic-list "(param)" 2883 . 2890) (punctuation ";" 2890 . 2891) (symbol "BULLSOFT_PUSH_PARAM" 2892 . 2911) (semantic-list "((void*)num)" 2911 . 2923) (punctuation ";" 2923 . 2924) (symbol "BULLSOFT_PUSH_EO_PARAM" 2953 . 2975) (semantic-list "()" 2975 . 2977) (punctuation ";" 2977 . 2978) (symbol "BULLSOFT_CALL_METHOD_BASE" 3042 . 3067) (semantic-list "(classname, name)" 3067 . 3084) (semantic-list "(num, retval, NULL, thisptr, 0 TSRMLS_CC)" 3084 . 3125) (punctuation ";" 3125 . 3126) (symbol "BULLSOFT_POP_EO_PARAM" 3131 . 3152) (semantic-list "()" 3152 . 3154) (punctuation ";" 3154 . 3155) (symbol "BULLSOFT_POP_PARAM" 3220 . 3238) (semantic-list "()" 3238 . 3240) (punctuation ";" 3240 . 3241) (symbol "BULLSOFT_POP_PARAM" 3309 . 3327) (semantic-list "()" 3327 . 3329) (punctuation ";" 3329 . 3330)))
+          ("bullsoft_init_properties" (spp-arg-list ("intern") 4576 . 4584) . ((semantic-list "{                                     \\
+	zval *tmp;                                                         \\
+	zend_hash_copy(intern->std.properties, &class_type->default_properties, (copy_ctor_func_t) zval_add_ref, (void *) &tmp, sizeof(zval *)); \\
+}" 4585 . 4836)))
+          ("IS_ARRAY_OR_OBJECT_P" (spp-arg-list ("a") 1458 . 1461) . ((semantic-list "(Z_TYPE_P(a) == IS_ARRAY || Z_TYPE_P(a) == IS_OBJECT)" 1462 . 1515)))
+          ("Z_NUMVAL_P" (spp-arg-list ("variable" "value") 1606 . 1623) . ((semantic-list "((Z_TYPE_P(variable) == IS_LONG && Z_LVAL_P(variable) == value) ||    \\
+   (Z_TYPE_P(variable) == IS_DOUBLE && Z_DVAL_P(variable) == value))" 1664 . 1804)))
+          ("HASH_P" (spp-arg-list ("a") 1089 . 1092) . ((semantic-list "(Z_TYPE_P(a) == IS_ARRAY ? Z_ARRVAL_P(a) : Z_OBJPROP_P(a))" 1093 . 1151)))
+          ("BULLSOFT_PHP_H")
+          ("IS_SCALAR_PP" (spp-arg-list ("a") 1410 . 1413) . ((symbol "IS_SCALAR_P" 1414 . 1425) (semantic-list "(*a)" 1425 . 1429)))
+          ("BULLSOFT_PUSH_EO_PARAM" (spp-arg-list nil 2558 . 2560) . ((symbol "zend_ptr_stack_push" 2561 . 2580) (semantic-list "(&EG(argument_stack), NULL)" 2580 . 2607)))
+          ("BULLSOFT_POP_EO_PARAM" (spp-arg-list nil 2638 . 2640) . 
+              ((semantic-list "(void)" 2641 . 2647) (symbol "zend_ptr_stack_pop" 2647 . 2665) (semantic-list "(&EG(argument_stack))" 2665 . 2686)))
+          ("BULLSOFT_CALL_METHOD_BASE" (spp-arg-list ("classname" "name") 2728 . 2745) . ((spp-symbol-merge ((spp-symbol-merge ((spp-symbol-merge ((symbol "zim_" 2746 . 2750) (symbol "classname" 2752 . 2761)) 2746 . 2761) (symbol "_" 2763 . 2764)) 2746 . 2764) (symbol "name" 2766 . 2770)) 2746 . 2770)))
+          ("BULLSOFT_CALL_METHOD1" (spp-arg-list ("classname" "name" "retval" "thisptr" "param1") 3538 . 3580) . 
+              ((symbol "BULLSOFT_CALL_METHOD_HELPER" 3592 . 3619) (semantic-list "(classname, name, retval, thisptr, 1, param1)" 3619 . 3664) (punctuation ";" 3664 . 3665)))
+          ("BULLSOFT_INIT" (spp-arg-list ("extname" "name") 564 . 579) . 
+              ((IF "if" 625 . 627) (semantic-list "(extname## _ ##name## _init(INIT_FUNC_ARGS_PASSTHRU) == FAILURE)" 628 . 692) (semantic-list "{ \\
+        return FAILURE; \\
+    }" 693 . 728)))
+          ("Z_NUMVAL_PP" (spp-arg-list ("variable" "value") 1824 . 1841) . ((semantic-list "((Z_TYPE_PP(variable) == IS_LONG && Z_LVAL_PP(variable) == value) ||  \\
+   (Z_TYPE_PP(variable) == IS_DOUBLE && Z_DVAL_PP(variable) == value))" 1881 . 2023)))
+          ("BULLSOFT_CALL_METHOD2" (spp-arg-list ("classname" "name" "retval" "thisptr" "param1" "param2") 3697 . 3747) . 
+              ((symbol "BULLSOFT_PUSH_PARAM" 3753 . 3772) (semantic-list "(param1)" 3772 . 3780) (punctuation ";" 3780 . 3781) (symbol "BULLSOFT_CALL_METHOD_HELPER" 3836 . 3863) (semantic-list "(classname, name, retval, thisptr, 2, param2)" 3863 . 3908) (punctuation ";" 3908 . 3909) (symbol "BULLSOFT_POP_PARAM" 3919 . 3937) (semantic-list "()" 3937 . 3939) (punctuation ";" 3939 . 3940)))
+          ("PHP_FE_END" . ((semantic-list "{ NULL, NULL, NULL, 0, 0 }" 86 . 112)))
+          ("BULLSOFT_REGISTER_CLASS" (spp-arg-list ("extname" "class_name" "name" "methods" "flags") 761 . 804) . ((semantic-list "{ \\
+    zend_class_entry ce; \\
+    memset(&ce, 0, sizeof(zend_class_entry)); \\
+    INIT_CLASS_ENTRY(ce, #class_name, methods); \\
+    extname## _ ##name## _ce = zend_register_internal_class(&ce TSRMLS_CC); \\
+    extname## _ ##name## _ce->ce_flags |= flags;  \\
+  }" 811 . 1073)))
+          ("BULLSOFT_CALL_METHOD3" (spp-arg-list ("classname" "name" "retval" "thisptr" "param1" "param2" "param3") 3972 . 4030) . 
+              ((symbol "BULLSOFT_PUSH_PARAM" 4035 . 4054) (semantic-list "(param1)" 4054 . 4062) (punctuation ";" 4062 . 4063) (symbol "BULLSOFT_PUSH_PARAM" 4125 . 4144) (semantic-list "(param2)" 4144 . 4152) (punctuation ";" 4152 . 4153) (symbol "BULLSOFT_CALL_METHOD_HELPER" 4215 . 4242) (semantic-list "(classname, name, retval, thisptr, 3, param3)" 4242 . 4287) (punctuation ";" 4287 . 4288) (symbol "BULLSOFT_POP_PARAM" 4305 . 4323) (semantic-list "()" 4323 . 4325) (punctuation ";" 4325 . 4326) (symbol "BULLSOFT_POP_PARAM" 4395 . 4413) (semantic-list "()" 4413 . 4415) (punctuation ";" 4415 . 4416)))
+          ("BULLSOFT_EXCEPTION" (spp-arg-list ("msg") 2051 . 2056) . 
+              ((symbol "zend_throw_exception" 2057 . 2077) (semantic-list "(zend_exception_get_default(TSRMLS_C), #msg, 0 TSRMLS_CC)" 2077 . 2134) (punctuation ";" 2134 . 2135)))
+          ("BULLSOFT_POP_PARAM" (spp-arg-list nil 2478 . 2480) . 
+              ((semantic-list "(void)" 2481 . 2487) (symbol "zend_ptr_stack_pop" 2487 . 2505) (semantic-list "(&EG(argument_stack))" 2505 . 2526)))
+          ("BULLSOFT_INIT_FUNCS" (spp-arg-list ("class_functions") 354 . 371) . 
+              ((STATIC "static" 372 . 378) (CONST "const" 379 . 384) (symbol "function_entry" 385 . 399) (symbol "class_functions" 400 . 415) (semantic-list "[]" 415 . 417) (punctuation "=" 418 . 419)))
+          ("HASH_PP" (spp-arg-list ("a") 1167 . 1170) . ((semantic-list "(Z_TYPE_PP(a) == IS_ARRAY ? Z_ARRVAL_PP(a) : Z_OBJPROP_PP(a))" 1171 . 1232)))
+          ("IS_SCALAR_P" (spp-arg-list ("a") 1253 . 1256) . ((semantic-list "(Z_TYPE_P(a) == IS_NULL || Z_TYPE_P(a) == IS_LONG || Z_TYPE_P(a) == IS_DOUBLE || Z_TYPE_P(a) == IS_BOOL || Z_TYPE_P(a) == IS_STRING)" 1257 . 1389)))
+          ("ZEND_MOD_END" . ((semantic-list "{ NULL, NULL, NULL, 0 }" 163 . 186)))
+          ("BULLSOFT_INIT_CLASS" (spp-arg-list ("extname" "name") 455 . 470) . 
+              ((INT "int" 495 . 498) (spp-symbol-merge ((spp-symbol-merge ((spp-symbol-merge ((symbol "extname" 499 . 506) (symbol "_" 509 . 510)) 499 . 510) (symbol "name" 513 . 517)) 499 . 517) (symbol "_init" 520 . 525)) 499 . 525) (semantic-list "(INIT_FUNC_ARGS)" 525 . 541)))
+          ("BULLSOFT_CALL_METHOD" (spp-arg-list ("classname" "name" "retval" "thisptr") 3361 . 3395) . 
+              ((symbol "BULLSOFT_CALL_METHOD_BASE" 3424 . 3449) (semantic-list "(classname, name)" 3449 . 3466) (semantic-list "(0, retval, NULL, thisptr, 0 TSRMLS_CC)" 3466 . 3505) (punctuation ";" 3505 . 3506)))
+          )
+
+    )
+   (semanticdb-table "acp.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1194 1212])
+            ("unistd.h" include (:system-flag t) nil [1213 1232])
+            ("stdlib.h" include (:system-flag t) nil [1233 1252])
+            ("sys/types.h" include (:system-flag t) nil [1253 1275])
+            ("string.h" include (:system-flag t) nil [1276 1295])
+            ("fcntl.h" include (:system-flag t) nil [1296 1314])
+            ("sys/stat.h" include (:system-flag t) nil [1315 1336])
+            ("sys/mman.h" include (:system-flag t) nil [1337 1358])
+            ("libgen.h" include (:system-flag t) nil [1359 1378])
+            ("php.h" include nil nil [1380 1396])
+            ("php_ini.h" include nil nil [1397 1417])
+            ("ext/standard/info.h" include nil nil [1418 1448])
+            ("php_acp.h" include nil nil [1449 1469])
+            ("zend_exceptions.h" include nil nil [1470 1498])
+            ("toml.h" include nil nil [1499 1516])
+            ("ext/date/php_date.h" include nil nil [1517 1547])
+            ("acp_dec_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [1583 1612])
+            ("acp_enc_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [1613 1642])
+            ("BULLSOFT_INIT_CLASS" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("acp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1738 1742])
+                    ("" variable (:type ("Acp_Dec" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1743 1751]))                  
+                :type "int")
+                nil [1718 1752])
+            ("acp_functions" variable
+               (:dereference 1
+                :constant-flag t
+                :type ("zend_function_entry" type (:type "class") nil nil))
+                nil [1854 1961])
+            ("BULLSOFT_INIT_FUNCS" function
+               (:arguments 
+                  ( ("" variable (:type ("acp_dec_methods" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2102 2118]))                  
+                :type "int")
+                nil [2082 2583])
+            ("BULLSOFT_INIT_FUNCS" function
+               (:arguments 
+                  ( ("" variable (:type ("acp_enc_methods" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2606 2622]))                  
+                :type "int")
+                nil [2586 2850])
+            ("acp_module_entry" variable (:type ("zend_module_entry" type (:type "class") nil nil)) nil [2881 3328])
+            ("php_acp_init_globals" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("acp_globals" variable
+                       (:pointer 1
+                        :type ("zend_acp_globals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3456 3486]))                  
+                :type "void")
+                nil [3423 3490])
+            ("create_decode_object" function
+               (:arguments 
+                  ( ("class_type" variable
+                       (:pointer 1
+                        :type ("zend_class_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3541 3579])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3570 3580]))                  
+                :type ("zend_object_value" type (:type "class") nil nil))
+                nil [3502 4396])
+            ("free_decode_object" function
+               (:arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4422 4444])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4435 4445]))                  
+                :type "void")
+                nil [4398 4626])
+            ("PHP_MINIT_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("acp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4677 4681]))                  
+                :type "int")
+                nil [4658 4976])
+            ("PHP_MSHUTDOWN_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("acp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5045 5049]))                  
+                :type "int")
+                nil [5022 5070])
+            ("PHP_RINIT_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("acp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5186 5190]))                  
+                :type "int")
+                nil [5167 5211])
+            ("PHP_RSHUTDOWN_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("acp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5333 5337]))                  
+                :type "int")
+                nil [5310 5358])
+            ("PHP_MINFO_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("acp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5419 5423]))                  
+                :type "int")
+                nil [5400 5546])
+            ("BULLSOFT_INIT_CLASS" function
+               (:arguments 
+                  ( ("" variable (:type ("acp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5578 5582])
+                    ("" variable (:type ("Acp_Dec" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5583 5591]))                  
+                :type "int")
+                nil [5558 5663])
+            ("BULLSOFT_INIT_CLASS" function
+               (:arguments 
+                  ( ("" variable (:type ("acp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5685 5689])
+                    ("" variable (:type ("Acp_Enc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5690 5698]))                  
+                :type "int")
+                nil [5665 5770])
+            ("php_toml_to_zval" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("toml_node" variable (:type ("tnp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5801 5815])
+                    ("result" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5816 5843])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5834 5844]))                  
+                :type "void")
+                nil [5772 8875])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Acp_Dec" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8888 8896])
+                    ("" variable (:type ("__construct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8897 8909]))                  
+                :type "int")
+                nil [8877 10111])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Acp_Dec" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10124 10132])
+                    ("" variable (:type ("__destruct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10133 10144]))                  
+                :type "int")
+                nil [10113 10148])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Acp_Dec" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10161 10169])
+                    ("" variable (:type ("toArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10170 10178]))                  
+                :type "int")
+                nil [10150 10619])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Acp_Dec" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10632 10640])
+                    ("" variable (:type ("__get" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10641 10647]))                  
+                :type "int")
+                nil [10621 12368])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Acp_Dec" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12381 12389])
+                    ("" variable (:type ("reset" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12390 12396]))                  
+                :type "int")
+                nil [12370 12618])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Acp_Dec" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12631 12639])
+                    ("" variable (:type ("head" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12640 12645]))                  
+                :type "int")
+                nil [12620 12980])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Acp_Dec" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12993 13001])
+                    ("" variable (:type ("tail" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13002 13007]))                  
+                :type "int")
+                nil [12982 13343])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Acp_Enc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13356 13364])
+                    ("" variable (:type ("__construct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13365 13377]))                  
+                :type "int")
+                nil [13345 13382])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Acp_Enc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13395 13403])
+                    ("" variable (:type ("__destruct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13404 13415]))                  
+                :type "int")
+                nil [13384 13420])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Acp_Enc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13433 13441])
+                    ("" variable (:type ("toConf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13442 13449]))                  
+                :type "int")
+                nil [13422 13454]))          
+    :file "acp.c"
+    :pointmax 13592
+    :fsize 13591
+    :lastmodtime '(21088 6588 0 0)
+    :unmatched-syntax '((punctuation 2850 . 2851) (punctuation 2583 . 2584) (semantic-list 2078 . 2080) (symbol 2061 . 2078) (semantic-list 2051 . 2060) (symbol 2038 . 2051) (number 2052 . 2053) (semantic-list 1996 . 2036) (symbol 1974 . 1996) (number 2034 . 2035) (number 2012 . 2013) (semantic-list 1576 . 1581) (symbol 1549 . 1576))
+    )
+   )
+  :file "!home!work!git!php-acp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

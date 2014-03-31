@@ -1,0 +1,18 @@
+;; Object categories/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "categories/"
+  :tables (list 
+   (semanticdb-table "index.html"
+    :major-mode 'html-mode
+    :tags nil
+    :file "index.html"
+    :pointmax 2427
+    :fsize 2426
+    :lastmodtime '(20809 13608)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!local!httpd!htdocs!blog!pub!blog!categories!categories!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

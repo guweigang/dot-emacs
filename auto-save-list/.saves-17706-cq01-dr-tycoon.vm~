@@ -1,0 +1,12 @@
+/home/work/local/httpd/htdocs/cloud/skeleton/confs/dev.ini
+/home/work/local/httpd/htdocs/cloud/skeleton/confs/#dev.ini#
+/home/work/local/httpd/htdocs/cloud/backend/views/setting/pay.volt
+/home/work/local/httpd/htdocs/cloud/backend/views/setting/#pay.volt#
+/home/work/local/httpd/htdocs/cloud/skeleton/apps/Bootstrap.php
+/home/work/local/httpd/htdocs/cloud/skeleton/apps/#Bootstrap.php#
+/home/work/local/httpd/htdocs/cloud/backend/controllers/SettingController.php
+/home/work/local/httpd/htdocs/cloud/backend/controllers/#SettingController.php#
+/home/work/local/httpd/htdocs/cloud/backend/views/setting/sms.volt
+/home/work/local/httpd/htdocs/cloud/backend/views/setting/#sms.volt#
+/home/work/local/httpd/htdocs/cloud/backend/views/setting/mail.volt
+/home/work/local/httpd/htdocs/cloud/backend/views/setting/#mail.volt#

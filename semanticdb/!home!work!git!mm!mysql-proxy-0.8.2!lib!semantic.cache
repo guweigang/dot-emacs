@@ -1,0 +1,289 @@
+;; Object lib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lib/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("luaextdir" variable (:default-value ("${pkglibdir}/lua")) nil [1 30])
+            ("SUBDIRS" variable (:default-value ("proxy")) nil [31 48])
+            ("example_scripts" variable (:default-value ("active-queries.lua" "active-transactions.lua" "admin-sql.lua" "analyze-query.lua" "auditing.lua" "commit-obfuscator.lua" "commit-obfuscator.msc" "histogram.lua" "load-multi.lua" "ro-balance.lua" "ro-pooling.lua" "rw-splitting.lua" "xtab.lua")) nil [103 390])
+            ("EXTRA_DIST" variable nil nil [390 404])
+            ("dist_doc_DATA" variable (:default-value ("${example_scripts}")) nil [528 563])
+            ("EXTRA_DIST" variable (:default-value ("${example_scripts}")) nil [568 601])
+            ("dist_luaext_DATA" variable (:default-value ("admin.lua")) nil [608 640])
+            ("luaext_LTLIBRARIES" variable (:default-value ("lfs.la")) nil [641 715])
+            ("lfs_la_SOURCES" variable (:default-value ("lfs.c")) nil [716 740])
+            ("lfs_la_CPPFLAGS" variable (:default-value ("${LUA_CFLAGS}")) nil [777 809])
+            ("lfs_la_LDFLAGS" variable (:default-value ("$(AM_LDFLAGS)" "-module" "-avoid-version")) nil [809 864])
+            ("posix_la_SOURCES" variable (:default-value ("posix.c")) nil [865 893])
+            ("posix_la_CPPFLAGS" variable (:default-value ("${LUA_CFLAGS}")) nil [930 964])
+            ("posix_la_LDFLAGS" variable (:default-value ("$(AM_LDFLAGS)" "-module" "-avoid-version")) nil [964 1021])
+            ("glib2_la_SOURCES" variable (:default-value ("glib2.c")) nil [1022 1050])
+            ("glib2_la_CPPFLAGS" variable (:default-value ("${LUA_CFLAGS}" "${GLIB_CFLAGS}")) nil [1087 1136])
+            ("glib2_la_LDFLAGS" variable (:default-value ("$(AM_LDFLAGS)" "-module" "-avoid-version")) nil [1136 1193])
+            ("glib2_la_LIBADD" variable (:default-value ("$(GLIB_LIBS)")) nil [1193 1226])
+            ("chassis_la_SOURCES" variable (:default-value ("chassis.c")) nil [1227 1259])
+            ("chassis_la_CPPFLAGS" variable (:default-value ("${LUA_CFLAGS}" "${GLIB_CFLAGS}" "-I${top_srcdir}/src/")) nil [1296 1368])
+            ("chassis_la_LDFLAGS" variable (:default-value ("$(AM_LDFLAGS)" "-module" "-avoid-version")) nil [1368 1427])
+            ("chassis_la_LIBADD" variable (:default-value ("${GLIB_LIBS}" "${top_builddir}/src/libmysql-chassis.la")) nil [1427 1502])
+            ("mysql_la_SOURCES" variable (:default-value ("mysql-proto.c" "mysql-password.c" "sql-tokenizer.l" "sql-tokenizer-tokens.c" "sql-tokenizer-keywords.c" "sql-tokenizer-lua.c")) nil [1503 1657])
+            ("mysql_la_CPPFLAGS" variable (:default-value ("${LUA_CFLAGS}" "${GLIB_CFLAGS}" "-I${top_srcdir}/src/" "${MYSQL_CFLAGS}" "-I${top_builddir}/lib/")) nil [1694 1803])
+            ("mysql_la_LDFLAGS" variable (:default-value ("$(AM_LDFLAGS)" "-module" "-avoid-version")) nil [1803 1860])
+            ("mysql_la_LIBADD" variable (:default-value ("${GLIB_LIBS}" "${top_builddir}/src/libmysql-proxy.la")) nil [1860 1931])
+            ("lpeg_la_SOURCES" variable (:default-value ("lpeg.c")) nil [1932 1958])
+            ("lpeg_la_CPPFLAGS" variable (:default-value ("${LUA_CFLAGS}")) nil [1958 1991])
+            ("lpeg_la_LDFLAGS" variable (:default-value ("$(AM_LDFLAGS)" "-module" "-avoid-version")) nil [1991 2047])
+            ("noinst_HEADERS" variable (:default-value ("sql-tokenizer.h" "sql-tokenizer-keywords.h")) nil [2049 2115])
+            ("EXTRA_DIST" variable (:default-value ("glib2.def" "lfs.def" "chassis.def" "lpeg.def" "mysql.def" "posix.def" "CMakeLists.txt")) nil [2116 2225])
+            ("DISTCLEANFILES" variable (:default-value ("sql-tokenizer.c" "sql-tokenizer-keywords.c")) nil [2226 2290])
+            ("noinst_PROGRAMS" variable (:default-value ("sql-tokenizer-gen")) nil [2291 2325])
+            ("sql_tokenizer_gen_SOURCES" variable (:default-value ("sql-tokenizer-gen.c" "sql-tokenizer-tokens.c")) nil [2326 2401])
+            ("sql_tokenizer_gen_CPPFLAGS" variable (:default-value ("${GLIB_CFLAGS}" "-I${srcdir}")) nil [2402 2456])
+            ("sql_tokenizer_gen_LDADD" variable (:default-value ("${GLIB_LIBS}")) nil [2456 2493])
+            ("sql-tokenizer.c" function (:arguments ("sql-tokenizer-keywords.c")) nil [2494 2536])
+            ("sql-tokenizer-keywords.c" function (:arguments ("sql-tokenizer-gen")) nil [2537 2651]))          
+    :file "Makefile.am"
+    :pointmax 2653
+    :fsize 2652
+    :lastmodtime '(21022 63839 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "mysql-proto.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("lua.h" include (:system-flag t) nil [825 841])
+            ("lauxlib.h" include (:system-flag t) nil [842 862])
+            ("lualib.h" include (:system-flag t) nil [863 882])
+            ("network-mysqld-proto.h" include nil nil [884 917])
+            ("network-mysqld-packet.h" include nil nil [918 952])
+            ("network_mysqld_type.h" include nil nil [953 985])
+            ("network-mysqld-masterinfo.h" include nil nil [986 1024])
+            ("glib-ext.h" include nil nil [1025 1046])
+            ("lua-env.h" include nil nil [1047 1067])
+            ("C" variable (:constant-flag t) nil [1077 1078])
+            ("S" variable (:constant-flag t) nil [1107 1108])
+            ("LUA_IMPORT_INT" variable (:constant-flag t) nil [1136 1150])
+            ("LUA_IMPORT_STR" variable (:constant-flag t) nil [1301 1315])
+            ("LUA_EXPORT_INT" variable (:constant-flag t) nil [1542 1556])
+            ("LUA_EXPORT_BOOL" variable (:constant-flag t) nil [1642 1657])
+            ("LUA_EXPORT_STR" variable (:constant-flag t) nil [1743 1757])
+            ("lua_proto_get_err_packet" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1901 1914]))                  
+                :type "int")
+                nil [1864 2651])
+            ("lua_proto_append_err_packet" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2693 2706]))                  
+                :type "int")
+                nil [2653 3185])
+            ("lua_proto_get_ok_packet" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3223 3236]))                  
+                :type "int")
+                nil [3187 4010])
+            ("lua_proto_get_masterinfo_string" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4056 4069]))                  
+                :type "int")
+                nil [4012 5346])
+            ("lua_proto_append_masterinfo_string" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5395 5408]))                  
+                :type "int")
+                nil [5348 6515])
+            ("lua_proto_append_ok_packet" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6557 6570]))                  
+                :type "int")
+                nil [6518 7091])
+            ("lua_proto_get_eof_packet" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7130 7143]))                  
+                :type "int")
+                nil [7093 7848])
+            ("lua_proto_append_eof_packet" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7890 7903]))                  
+                :type "int")
+                nil [7850 8352])
+            ("lua_proto_get_response_packet" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8396 8409]))                  
+                :type "int")
+                nil [8354 9325])
+            ("lua_proto_append_response_packet" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9372 9385]))                  
+                :type "int")
+                nil [9327 10226])
+            ("lua_proto_get_challenge_packet" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10271 10284]))                  
+                :type "int")
+                nil [10228 11274])
+            ("lua_proto_append_challenge_packet" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11322 11335]))                  
+                :type "int")
+                nil [11276 12057])
+            ("lua_proto_get_stmt_prepare_packet" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12105 12118]))                  
+                :type "int")
+                nil [12059 12793])
+            ("lua_proto_get_stmt_prepare_ok_packet" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12921 12934]))                  
+                :type "int")
+                nil [12872 13726])
+            ("lua_proto_get_stmt_execute_packet" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13835 13848]))                  
+                :type "int")
+                nil [13789 16859])
+            ("lua_proto_get_stmt_execute_packet_stmt_id" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16915 16928]))                  
+                :type "int")
+                nil [16861 17429])
+            ("lua_proto_get_stmt_close_packet" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17476 17489]))                  
+                :type "int")
+                nil [17432 18150])
+            ("set_info" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18228 18241]))                  
+                :type "void")
+                nil [18206 18623])
+            ("mysql_protolib" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type ("luaL_reg" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [18626 19698])
+            ("LUAEXT_API" variable (:constant-flag t) nil [19777 19787])
+            ("luaopen_mysql_proto" function
+               (:typemodifiers ("extern")
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19839 19852]))                  
+                :type "int")
+                nil [19803 19927]))          
+    :file "mysql-proto.c"
+    :pointmax 19928
+    :fsize 19927
+    :lastmodtime '(21022 63839 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("LUA_IMPORT_STR" (spp-arg-list ("x" "y") 1315 . 1321) . 
+              ((symbol "lua_getfield_literal" 1325 . 1345) (semantic-list "(L, -1, C(G_STRINGIFY(y)))" 1345 . 1371) (punctuation ";" 1371 . 1372) (IF "if" 1376 . 1378) (semantic-list "(!lua_isnil(L, -1))" 1379 . 1398) (semantic-list "{ \\
+		size_t s_len; \\
+		const char *s = lua_tolstring(L, -1, &s_len); \\
+		g_string_assign_len(x->y, s, s_len); \\
+	}" 1399 . 1514) (symbol "lua_pop" 1518 . 1525) (semantic-list "(L, 1)" 1525 . 1531) (punctuation ";" 1531 . 1532)))
+          ("C" (spp-arg-list ("x") 1078 . 1081) . 
+              ((symbol "x" 1082 . 1083) (punctuation "," 1083 . 1084) (SIZEOF "sizeof" 1085 . 1091) (semantic-list "(x)" 1091 . 1094) (punctuation "-" 1095 . 1096) (number "1" 1097 . 1098)))
+          ("LUA_EXPORT_INT" (spp-arg-list ("x" "y") 1556 . 1562) . 
+              ((symbol "lua_pushinteger" 1566 . 1581) (semantic-list "(L, x->y)" 1581 . 1590) (punctuation ";" 1590 . 1591) (symbol "lua_setfield" 1595 . 1607) (semantic-list "(L, -2, G_STRINGIFY(y))" 1607 . 1630) (punctuation ";" 1630 . 1631)))
+          ("S" (spp-arg-list ("x") 1108 . 1111) . 
+              ((symbol "x" 1112 . 1113) (punctuation "-" 1113 . 1114) (punctuation ">" 1114 . 1115) (symbol "str" 1115 . 1118) (punctuation "," 1118 . 1119) (symbol "x" 1120 . 1121) (punctuation "-" 1121 . 1122) (punctuation ">" 1122 . 1123) (symbol "len" 1123 . 1126)))
+          ("LUA_EXPORT_STR" (spp-arg-list ("x" "y") 1757 . 1763) . 
+              ((IF "if" 1767 . 1769) (semantic-list "(x->y->len)" 1770 . 1781) (semantic-list "{ \\
+		lua_pushlstring(L, S(x->y)); \\
+		lua_setfield(L, -2, G_STRINGIFY(y)); \\
+	}" 1782 . 1862)))
+          ("LUA_EXPORT_BOOL" (spp-arg-list ("x" "y") 1657 . 1663) . 
+              ((symbol "lua_pushboolean" 1667 . 1682) (semantic-list "(L, x->y)" 1682 . 1691) (punctuation ";" 1691 . 1692) (symbol "lua_setfield" 1696 . 1708) (semantic-list "(L, -2, G_STRINGIFY(y))" 1708 . 1731) (punctuation ";" 1731 . 1732)))
+          ("LUAEXT_API" . ((EXTERN "extern" 19788 . 19794)))
+          ("LUA_IMPORT_INT" (spp-arg-list ("x" "y") 1150 . 1156) . 
+              ((symbol "lua_getfield_literal" 1160 . 1180) (semantic-list "(L, -1, C(G_STRINGIFY(y)))" 1180 . 1206) (punctuation ";" 1206 . 1207) (IF "if" 1211 . 1213) (semantic-list "(!lua_isnil(L, -1))" 1214 . 1233) (semantic-list "{ \\
+		x->y = lua_tointeger(L, -1); \\
+	}" 1234 . 1273) (symbol "lua_pop" 1277 . 1284) (semantic-list "(L, 1)" 1284 . 1290) (punctuation ";" 1290 . 1291)))
+          )
+
+    )
+   )
+  :file "!home!work!git!mm!mysql-proxy-0.8.2!lib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

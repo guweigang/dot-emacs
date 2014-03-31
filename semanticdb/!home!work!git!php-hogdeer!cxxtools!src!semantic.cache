@@ -1,0 +1,38 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("AM_CPPFLAGS" variable (:default-value ("-I$(top_srcdir)/src" "-I$(top_builddir)/include" "-I$(top_srcdir)/include")) nil [1 85])
+            ("lib_LTLIBRARIES" variable (:default-value ("libcxxtools.la")) nil [86 119])
+            ("libcxxtools_la_SOURCES" variable (:default-value ("addrinfo.cpp" "addrinfoimpl.cpp" "application.cpp" "applicationimpl.cpp" "base64codec.cpp" "csvdeserializer.cpp" "csvformatter.cpp" "csvparser.cpp" "char.cpp" "clock.cpp" "clockimpl.cpp" "condition.cpp" "conditionimpl.cpp" "connectable.cpp" "connection.cpp" "cgi.cpp" "conversionerror.cpp" "convert.cpp" "date.cpp" "datetime.cpp" "decomposer.cpp" "deserializer.cpp" "directory.cpp" "directoryimpl.cpp" "error.cpp" "eventloop.cpp" "eventsink.cpp" "eventsource.cpp" "fdstream.cpp" "file.cpp" "filedevice.cpp" "filedeviceimpl.cpp" "fileimpl.cpp" "fileinfo.cpp" "formatter.cpp" "hdstream.cpp" "inifile.cpp" "iniparser.cpp" "iodevice.cpp" "iodeviceimpl.cpp" "ioerror.cpp" "iostream.cpp" "jsondeserializer.cpp" "jsonformatter.cpp" "jsonparser.cpp" "jsonserializer.cpp" "library.cpp" "libraryimpl.cpp" "log.cpp" "md5.c" "md5stream.cpp" "mime.cpp" "multifstream.cpp" "mutex.cpp" "muteximpl.cpp" "pipe.cpp" "pipeimpl.cpp" "posix/commandinput.cpp" "posix/commandoutput.cpp" "posix/pipestream.cpp" "posix/posixpipe.cpp" "properties.cpp" "propertiesdeserializer.cpp" "query_params.cpp" "quotedprintablestream.cpp" "regex.cpp" "selectable.cpp" "selector.cpp" "selectorimpl.cpp" "semaphore.cpp" "semaphoreimpl.cpp" "serviceregistry.cpp" "settings.cpp" "settingsreader.cpp" "settingswriter.cpp" "serializationerror.cpp" "serializationinfo.cpp" "signal.cpp" "streambuffer.cpp" "string.cpp" "stringstream.cpp" "systemerror.cpp" "tee.cpp" "textbuffer.cpp" "textcodec.cpp" "textstream.cpp" "thread.cpp" "threadimpl.cpp" "threadpool.cpp" "threadpoolimpl.cpp" "time.cpp" "timer.cpp" "timespan.cpp" "uri.cpp" "utf8codec.cpp" "uuencode.cpp" "xmltag.cpp" "net.cpp" "tcpserverimpl.cpp" "tcpserver.cpp" "tcpsocket.cpp" "tcpsocketimpl.cpp" "tcpstream.cpp" "udp.cpp" "udpstream.cpp" "xml/characters.cpp" "xml/endelement.cpp" "xml/entityresolver.cpp" "xml/namespacecontext.cpp" "xml/startelement.cpp" "xml/xmldeserializer.cpp" "xml/xmlerror.cpp" "xml/xmlformatter.cpp" "xml/xmlreader.cpp" "xml/xmlserializer.cpp" "xml/xmlwriter.cpp")) nil [120 2266])
+            ("noinst_HEADERS" variable (:default-value ("addrinfoimpl.h" "applicationimpl.h" "clockimpl.h" "conditionimpl.h" "directoryimpl.h" "error.h" "facets.cpp" "fileimpl.h" "filedeviceimpl.h" "fileinfoimpl.h" "iodeviceimpl.h" "libraryimpl.h" "md5.h" "muteximpl.h" "pipeimpl.h" "selectableimpl.h" "selectorimpl.h" "semaphoreimpl.h" "settingsreader.h" "settingswriter.h" "threadimpl.h" "threadpoolimpl.h" "unicode.h" "tcpserverimpl.h" "tcpsocketimpl.h")) nil [2267 2710])
+            ("libcxxtools_la_SOURCES" variable (:default-value ("iconvwrap.cpp" "iconvstream.cpp")) nil [2731 2793])
+            ("libcxxtools_la_SOURCES" variable (:default-value ("atomicity.sun.cpp")) nil [2822 2869])
+            ("libcxxtools_la_SOURCES" variable (:default-value ("atomicity.windows.cpp")) nil [2902 2953])
+            ("libcxxtools_la_SOURCES" variable (:default-value ("atomicity.gcc.arm.cpp")) nil [2986 3037])
+            ("libcxxtools_la_SOURCES" variable (:default-value ("atomicity.gcc.mips.cpp")) nil [3071 3123])
+            ("libcxxtools_la_SOURCES" variable (:default-value ("atomicity.gcc.ppc.cpp")) nil [3156 3207])
+            ("libcxxtools_la_SOURCES" variable (:default-value ("atomicity.gcc.x86_64.cpp")) nil [3243 3297])
+            ("libcxxtools_la_SOURCES" variable (:default-value ("atomicity.gcc.x86.cpp")) nil [3330 3381])
+            ("libcxxtools_la_SOURCES" variable (:default-value ("atomicity.gcc.sparc32.cpp")) nil [3418 3473])
+            ("libcxxtools_la_SOURCES" variable (:default-value ("atomicity.gcc.sparc64.cpp")) nil [3510 3565])
+            ("libcxxtools_la_SOURCES" variable (:default-value ("atomicity.gcc.avr32.cpp")) nil [3600 3653])
+            ("libcxxtools_la_SOURCES" variable (:default-value ("atomicity.pthread.cpp")) nil [3686 3737])
+            ("libcxxtools_la_SOURCES" variable (:default-value ("atomicity.generic.cpp")) nil [3770 3821])
+            ("libcxxtools_la_LIBADD" variable (:default-value ("$(LIBICONV)")) nil [3828 3864])
+            ("libcxxtools_la_CXXFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [3864 3908])
+            ("libcxxtools_la_LDFLAGS" variable (:default-value ("-version-info" "@sonumber@" "$(PTHREAD_LIBS)" "@SHARED_LIB_FLAG@")) nil [3908 3992]))          
+    :file "Makefile.am"
+    :pointmax 3992
+    :fsize 3991
+    :lastmodtime '(20859 30360 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!git!php-hogdeer!cxxtools!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

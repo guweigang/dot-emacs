@@ -1,0 +1,479 @@
+;; Object net/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "net/"
+  :tables (list 
+   (semanticdb-table "socket.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("phenom/socket.h" include nil nil [606 632])
+            ("phenom/sysutil.h" include nil nil [633 660])
+            ("phenom/memory.h" include nil nil [661 687])
+            ("phenom/job.h" include nil nil [688 711])
+            ("phenom/log.h" include nil nil [712 735])
+            ("phenom/dns.h" include nil nil [736 759])
+            ("phenom/printf.h" include nil nil [760 786])
+            ("phenom/configuration.h" include nil nil [787 820])
+            ("connect_job" type
+               (:members 
+                  ( ("job" variable (:type ("ph_job_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [845 858])
+                    ("s" variable (:type ("ph_socket_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [861 875])
+                    ("addr" variable (:type ("ph_sockaddr_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [878 897])
+                    ("status" variable (:type "int") (reparse-symbol classsubparts) [900 911])
+                    ("start" variable (:type ("timeval" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [914 935])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [938 948])
+                    ("func" variable (:type ("ph_socket_connect_func" type (:type "class") nil nil)) (reparse-symbol classsubparts) [951 979]))                  
+                :type "struct")
+                nil [822 982])
+            ("resolve_and_connect" type
+               (:members 
+                  ( ("addr" variable (:type ("ph_sockaddr_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1015 1034])
+                    ("s" variable (:type ("ph_socket_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1037 1051])
+                    ("resolve_status" variable (:type "int") (reparse-symbol classsubparts) [1054 1073])
+                    ("connect_status" variable (:type "int") (reparse-symbol classsubparts) [1076 1095])
+                    ("port" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1098 1112])
+                    ("elapsed" variable (:type ("timeval" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [1115 1154])
+                    ("timeout" variable (:type ("timeval" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [1115 1154])
+                    ("start" variable (:type ("timeval" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [1115 1154])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [1157 1167])
+                    ("func" variable (:type ("ph_sock_connect_func" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1170 1196]))                  
+                :type "struct")
+                nil [984 1199])
+            ("defs" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("ph_memtype_def_t" type (:type "class") nil nil))
+                nil [1201 1476])
+            ("mt" variable
+               (:typemodifiers ("static")
+                :type ("" type
+                     (:members 
+                        ( ("resolve_and_connect" variable (:type ("ph_memtype_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1495 1547])
+                          ("sock" variable (:type ("ph_memtype_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1495 1547])
+                          ("connect_job" variable (:type ("ph_memtype_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1495 1547]))                        
+                      :type "struct")
+                      nil nil))
+                nil [1477 1553])
+            ("ssl_sock_idx" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [1554 1578])
+            ("ph_socket_for_addr" function
+               (:arguments 
+                  ( ("addr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("ph_sockaddr_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1611 1637])
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) [1638 1647])
+                    ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [1648 1658]))                  
+                :type ("ph_socket_t" type (:type "class") nil nil))
+                nil [1580 1914])
+            ("connect_complete" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("j" variable
+                       (:pointer 1
+                        :type ("ph_job_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1945 1957])
+                    ("why" variable (:type ("ph_iomask_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1958 1974])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1975 1986]))                  
+                :type "void")
+                nil [1916 2513])
+            ("sock_dtor" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("job" variable
+                       (:pointer 1
+                        :type ("ph_job_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2537 2551]))                  
+                :type "void")
+                nil [2515 3069])
+            ("try_send" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("sock" variable
+                       (:pointer 1
+                        :type ("ph_sock_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3092 3108]))                  
+                :type "bool")
+                nil [3071 3284])
+            ("try_read" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("sock" variable
+                       (:pointer 1
+                        :type ("ph_sock_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3307 3323]))                  
+                :type "bool")
+                nil [3286 3523])
+            ("sock_dispatch" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("j" variable
+                       (:pointer 1
+                        :type ("ph_job_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3551 3563])
+                    ("why" variable (:type ("ph_iomask_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3564 3580])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3581 3592]))                  
+                :type "void")
+                nil [3525 5429])
+            ("connect_job_template" variable
+               (:typemodifiers ("static")
+                :type ("ph_job_def" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [5431 5532])
+            ("sock_job_template" variable
+               (:typemodifiers ("static")
+                :type ("ph_job_def" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [5534 5634])
+            ("do_sock_init" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5661 5666]))                  
+                :type "void")
+                nil [5636 5912])
+            ("ph_socket_connect" function
+               (:arguments 
+                  ( ("s" variable (:type ("ph_socket_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5970 5984])
+                    ("addr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("ph_sockaddr_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5985 6011])
+                    ("timeout" variable
+                       (:pointer 1
+                        :type ("timeval" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6014 6038])
+                    ("func" variable (:type ("ph_socket_connect_func" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6039 6067])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6068 6078]))                  
+                :type "void")
+                nil [5947 6987])
+            ("MAX_SOCK_BUFFER_SIZE" variable (:constant-flag t) nil [7032 7052])
+            ("sock_stm_close" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("stm" variable
+                       (:pointer 1
+                        :type ("ph_stream_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7090 7107]))                  
+                :type "bool")
+                nil [7063 7154])
+            ("sock_stm_readv" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("stm" variable
+                       (:pointer 1
+                        :type ("ph_stream_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7183 7200])
+                    ("iov" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("iovec" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7201 7225])
+                    ("iovcnt" variable (:type "int") (reparse-symbol arg-sub-list) [7230 7241])
+                    ("nread" variable
+                       (:pointer 1
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7242 7258]))                  
+                :type "bool")
+                nil [7156 7996])
+            ("sock_stm_writev" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("stm" variable
+                       (:pointer 1
+                        :type ("ph_stream_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8026 8043])
+                    ("iov" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("iovec" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8044 8068])
+                    ("iovcnt" variable (:type "int") (reparse-symbol arg-sub-list) [8073 8084])
+                    ("nwrotep" variable
+                       (:pointer 1
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8085 8103]))                  
+                :type "bool")
+                nil [7998 8584])
+            ("sock_stm_seek" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("stm" variable
+                       (:pointer 1
+                        :type ("ph_stream_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8612 8629])
+                    ("delta" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8630 8644])
+                    ("whence" variable (:type "int") (reparse-symbol arg-sub-list) [8645 8656])
+                    ("newpos" variable
+                       (:pointer 1
+                        :type ("uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8661 8678]))                  
+                :type "bool")
+                nil [8586 8816])
+            ("sock_stm_funcs" variable
+               (:typemodifiers ("static")
+                :type ("ph_stream_funcs" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [8818 8940])
+            ("ph_sock_new_from_socket" function
+               (:pointer 1
+                :arguments 
+                  ( ("s" variable (:type ("ph_socket_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8977 8991])
+                    ("sockname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("ph_sockaddr_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8992 9022])
+                    ("peername" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("ph_sockaddr_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9025 9055]))                  
+                :type ("ph_sock_t" type (:type "class") nil nil))
+                nil [8942 9931])
+            ("ph_sock_free" function
+               (:arguments 
+                  ( ("sock" variable
+                       (:pointer 1
+                        :type ("ph_sock_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9951 9967]))                  
+                :type "void")
+                nil [9933 10029])
+            ("ph_sock_enable" function
+               (:arguments 
+                  ( ("sock" variable
+                       (:pointer 1
+                        :type ("ph_sock_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10051 10067])
+                    ("enable" variable (:type "bool") (reparse-symbol arg-sub-list) [10068 10080]))                  
+                :type "void")
+                nil [10031 10598])
+            ("calc_elapsed" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("rac" variable
+                       (:pointer 1
+                        :type ("resolve_and_connect" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10632 10664]))                  
+                :type "void")
+                nil [10600 10760])
+            ("free_rac" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("rac" variable
+                       (:pointer 1
+                        :type ("resolve_and_connect" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10783 10815]))                  
+                :type "void")
+                nil [10762 10863])
+            ("connected_sock" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable (:type ("ph_socket_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10892 10906])
+                    ("addr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("ph_sockaddr_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10907 10933])
+                    ("status" variable (:type "int") (reparse-symbol arg-sub-list) [10938 10949])
+                    ("elapsed" variable
+                       (:pointer 1
+                        :type ("timeval" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10950 10974])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [10975 10985]))                  
+                :type "void")
+                nil [10865 11523])
+            ("attempt_connect" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("rac" variable
+                       (:pointer 1
+                        :type ("resolve_and_connect" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11553 11585]))                  
+                :type "void")
+                nil [11525 11946])
+            ("did_sys_resolve" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("ph_dns_addrinfo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11976 12000]))                  
+                :type "void")
+                nil [11948 12398])
+            ("resolve_ares" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [12425 12435])
+                    ("status" variable (:type "int") (reparse-symbol arg-sub-list) [12436 12447])
+                    ("timeouts" variable (:type "int") (reparse-symbol arg-sub-list) [12448 12461])
+                    ("hostent" variable
+                       (:pointer 1
+                        :type ("hostent" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12466 12490]))                  
+                :type "void")
+                nil [12400 12879])
+            ("ph_sock_resolve_and_connect" function
+               (:arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12914 12931])
+                    ("port" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12932 12946])
+                    ("timeout" variable
+                       (:pointer 1
+                        :type ("timeval" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12951 12975])
+                    ("resolver" variable (:type "int") (reparse-symbol arg-sub-list) [12980 12993])
+                    ("func" variable (:type ("ph_sock_connect_func" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12994 13020])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [13021 13031]))                  
+                :type "void")
+                nil [12881 14374])
+            ("ph_sock_read_bytes_exact" function
+               (:pointer 1
+                :arguments 
+                  ( ("sock" variable
+                       (:pointer 1
+                        :type ("ph_sock_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14411 14427])
+                    ("len" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14428 14441]))                  
+                :type ("ph_buf_t" type (:type "class") nil nil))
+                nil [14376 14494])
+            ("ph_sock_read_record" function
+               (:pointer 1
+                :arguments 
+                  ( ("sock" variable
+                       (:pointer 1
+                        :type ("ph_sock_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14526 14542])
+                    ("delim" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14543 14561])
+                    ("delim_len" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14566 14585]))                  
+                :type ("ph_buf_t" type (:type "class") nil nil))
+                nil [14496 14652])
+            ("ph_sock_read_line" function
+               (:pointer 1
+                :arguments 
+                  ( ("sock" variable
+                       (:pointer 1
+                        :type ("ph_sock_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14682 14698]))                  
+                :type ("ph_buf_t" type (:type "class") nil nil))
+                nil [14654 14758])
+            ("ssl_info_callback" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ssl" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14790 14805])
+                    ("where" variable (:type "int") (reparse-symbol arg-sub-list) [14806 14816])
+                    ("ret" variable (:type "int") (reparse-symbol arg-sub-list) [14817 14825]))                  
+                :type "void")
+                nil [14760 15010])
+            ("ph_sock_openssl_enable" function
+               (:arguments 
+                  ( ("sock" variable
+                       (:pointer 1
+                        :type ("ph_sock_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15040 15056])
+                    ("ssl" variable
+                       (:pointer 1
+                        :type ("SSL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15057 15066])
+                    ("is_client" variable (:type "bool") (reparse-symbol arg-sub-list) [15071 15086])
+                    ("handshake_cb" variable (:type ("ph_sock_openssl_handshake_func" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15087 15131]))                  
+                :type "void")
+                nil [15012 15912]))          
+    :file "socket.c"
+    :pointmax 15933
+    :fsize 15939
+    :lastmodtime '(21086 31824 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("MAX_SOCK_BUFFER_SIZE" . 
+              ((number "128" 7053 . 7056) (punctuation "*" 7056 . 7057) (number "1024" 7057 . 7061)))
+          )
+
+    )
+   )
+  :file "!home!work!git!libphenom!corelib!net!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

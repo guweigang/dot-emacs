@@ -1,0 +1,19 @@
+;; Object bugs/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bugs/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("SUBDIRS" variable (:default-value ("r" "t")) nil [1 13]))          
+    :file "Makefile.am"
+    :pointmax 13
+    :fsize 12
+    :lastmodtime '(21022 63839 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!git!mm!mysql-proxy-0.8.2!tests!suite!bugs!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

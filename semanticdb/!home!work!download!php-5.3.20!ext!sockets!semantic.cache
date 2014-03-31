@@ -1,0 +1,19 @@
+;; Object sockets/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "sockets/"
+  :tables (list 
+   (semanticdb-table "sockets.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("php.h" include nil nil [1438 1454]))          
+    :file "sockets.c"
+    :pointmax 54923
+    :fsize 54922
+    :lastmodtime '(20689 55724 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!download!php-5.3.20!ext!sockets!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

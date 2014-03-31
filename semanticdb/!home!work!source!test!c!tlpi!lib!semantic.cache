@@ -1,0 +1,187 @@
+;; Object lib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lib/"
+  :tables (list 
+   (semanticdb-table "tlpi_hdr.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("TLPI_HDR_H" variable (:constant-flag t) nil [28 38])
+            ("sys/typs.h" include (:system-flag t) nil [40 61])
+            ("stdio.h" include (:system-flag t) nil [62 80])
+            ("stdlib.h" include (:system-flag t) nil [81 100])
+            ("unistd.h" include (:system-flag t) nil [102 121])
+            ("errno.h" include (:system-flag t) nil [122 140])
+            ("string.h" include (:system-flag t) nil [141 160])
+            ("get_num.h" include nil nil [162 182])
+            ("error_functions.h" include nil nil [183 211])
+            ("Boolean" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("FALSE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [228 234])
+                          ("TRUE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [235 241]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [213 250])
+            ("min" variable (:constant-flag t) nil [260 263])
+            ("max" variable (:constant-flag t) nil [301 304]))          
+    :file "tlpi_hdr.h"
+    :pointmax 342
+    :fsize 341
+    :lastmodtime '(21113 51810 0 0)
+    :unmatched-syntax '((semantic-list 226 . 241) (ENUM 221 . 225) (TYPEDEF 213 . 220) (semantic-list 226 . 240) (ENUM 221 . 225) (TYPEDEF 213 . 220) (punctuation 171 . 172) (symbol 163 . 170) (punctuation 162 . 163) (symbol 163 . 170) (punctuation 162 . 163) (punctuation 150 . 151) (symbol 142 . 149) (punctuation 141 . 142) (punctuation 110 . 111) (symbol 102 . 109) (punctuation 101 . 102))
+    :lexical-table 
+        '(("TLPI_HDR_H")
+          ("max" (spp-arg-list ("m" "n") 304 . 309) . ((semantic-list "((m) > (n) ? (m) : (n))" 310 . 333)))
+          ("min" (spp-arg-list ("m" "n") 263 . 268) . ((semantic-list "((m) < (n) ? (m) : (n))" 269 . 292)))
+          )
+
+    )
+   (semanticdb-table "error_functions.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("ERROR_FUNCTIONS_H" variable (:constant-flag t) nil [35 52])
+            ("errMsg" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [242 261])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [262 266]))                  
+                :type "void")
+                nil [230 267])
+            ("NORETURN" variable (:constant-flag t) nil [486 494])
+            ("NORETURN" variable (:constant-flag t) nil [486 494])
+            ("errExit" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [814 833])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [834 838]))                  
+                :type "void")
+                nil [801 848])
+            ("err_exit" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1028 1047])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [1048 1052]))                  
+                :type "void")
+                nil [1014 1062])
+            ("errExitEN" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("errnum" variable (:type "int") (reparse-symbol arg-sub-list) [1659 1670])
+                    ("format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1671 1690])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [1691 1695]))                  
+                :type "void")
+                nil [1644 1705])
+            ("fatal" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1810 1829])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [1830 1834]))                  
+                :type "void")
+                nil [1799 1844])
+            ("usageErr" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1904 1923])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [1924 1928]))                  
+                :type "void")
+                nil [1890 1938])
+            ("cmdLineErr" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1956 1975])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [1976 1980]))                  
+                :type "void")
+                nil [1940 1990]))          
+    :file "error_functions.h"
+    :pointmax 1196
+    :fsize 1998
+    :lastmodtime '(21114 15284 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("NORETURN" . ((symbol "__attribute__" 495 . 508) (semantic-list "((__noreturn__))" 509 . 525)))
+          ("ERROR_FUNCTIONS_H")
+          )
+
+    )
+   (semanticdb-table "error_functions.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdarg.h" include (:system-flag t) nil [1 20])
+            ("error_functions.h" include nil nil [21 49])
+            ("tlpi_hdr.h" include nil nil [50 71])
+            ("ename.c.inc" include nil nil [72 94])
+            ("terminate" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("useExit3" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [216 233]))                  
+                :type "void")
+                nil [194 586])
+            ("outputError" function
+               (:arguments 
+                  ( ("useErr" variable (:type ("Bollean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [613 628])
+                    ("err" variable (:type "int") (reparse-symbol arg-sub-list) [629 637])
+                    ("flushStdout" variable (:type ("Boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [638 658])
+                    ("format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [684 703])
+                    ("ap" variable (:type ("va_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [704 715]))                  
+                :type "void")
+                nil [596 1293])
+            ("errMsg" function
+               (:arguments 
+                  ( ("format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1308 1327])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [1328 1332]))                  
+                :type "void")
+                nil [1296 1561]))          
+    :file "error_functions.c"
+    :pointmax 1564
+    :fsize 1563
+    :lastmodtime '(21115 11786 0 0)
+    :unmatched-syntax '((symbol 588 . 595) (symbol 588 . 595) (symbol 588 . 595))
+    )
+   )
+  :file "!home!work!source!test!c!tlpi!lib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,57 @@
+;; Object phalcon-framework/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "phalcon-framework/"
+  :tables (list 
+    (semanticdb-table "order-center.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("login" section nil nil [269 456])
+            ("╃o再难如初οゞ" section nil nil [456 987])
+            ("╃o再难如初οゞ" section (:members 
+              ( ("关注他" anchor nil nil [1991 1994])
+                ("血拼大爆炸" anchor nil nil [3440 3443])
+                ("流浪的猫咪" anchor nil nil [3567 3570])
+                ("流浪的猫咪" anchor nil nil [3638 3641])
+                ("流浪的猫咪" anchor nil nil [3709 3712])
+                ("删除" anchor nil nil [4139 4142])
+                ("血拼大爆炸" anchor nil nil [4483 4486])
+                ("流浪的猫咪" anchor nil nil [4570 4573])
+                ("流浪的猫咪" anchor nil nil [4635 4638])
+                ("流浪的猫咪" anchor nil nil [4700 4703])
+                ("删除" anchor nil nil [5052 5055])
+                ("血拼大爆炸" anchor nil nil [5367 5370])
+                ("流浪的猫咪" anchor nil nil [5454 5457])
+                ("流浪的猫咪" anchor nil nil [5519 5522])
+                ("流浪的猫咪" anchor nil nil [5584 5587])
+                ("删除" anchor nil nil [5936 5939])
+                ("血拼大爆炸" anchor nil nil [6251 6254])
+                ("流浪的猫咪" anchor nil nil [6338 6341])
+                ("流浪的猫咪" anchor nil nil [6403 6406])
+                ("流浪的猫咪" anchor nil nil [6468 6471])
+                ("删除" anchor nil nil [6820 6823])
+                ("血拼大爆炸" anchor nil nil [7135 7138])
+                ("流浪的猫咪" anchor nil nil [7222 7225])
+                ("流浪的猫咪" anchor nil nil [7287 7290])
+                ("流浪的猫咪" anchor nil nil [7352 7355])
+                ("删除" anchor nil nil [7704 7707])
+                ("血拼大爆炸" anchor nil nil [8019 8022])
+                ("流浪的猫咪" anchor nil nil [8106 8109])
+                ("流浪的猫咪" anchor nil nil [8171 8174])
+                ("流浪的猫咪" anchor nil nil [8236 8239])
+                ("删除" anchor nil nil [8588 8591])
+                ("血拼大爆炸" anchor nil nil [8903 8906])
+                ("流浪的猫咪" anchor nil nil [8990 8993])
+                ("流浪的猫咪" anchor nil nil [9055 9058])
+                ("流浪的猫咪" anchor nil nil [9120 9123])
+                ("删除" anchor nil nil [9472 9475]))              ) nil [987 9660]))          
+    :file "order-center.html"
+    :pointmax 9660
+    :fsize 10537
+    :lastmodtime '(21276 31150 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!git!phalcon-framework!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

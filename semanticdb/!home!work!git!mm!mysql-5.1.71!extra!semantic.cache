@@ -1,0 +1,34 @@
+;; Object extra/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "extra/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("INCLUDES" variable (:default-value ("-I$(top_builddir)/include" "-I$(top_srcdir)/include" "-I$(top_srcdir)/sql")) nil [699 786])
+            ("LDADD" variable (:default-value ("@CLIENT_EXTRA_LDFLAGS@" "../mysys/libmysys.a" "../dbug/libdbug.a" "../strings/libmystrings.a" "$(ZLIB_LIBS)")) nil [786 906])
+            ("BUILT_SOURCES" variable (:default-value ("$(top_builddir)/include/mysqld_error.h" "$(top_builddir)/include/sql_state.h" "$(top_builddir)/include/mysqld_ername.h")) nil [906 1089])
+            ("pkginclude_HEADERS" variable (:default-value ("$(BUILT_SOURCES)")) nil [1089 1126])
+            ("DISTCLEANFILES" variable (:default-value ("$(BUILT_SOURCES)")) nil [1126 1160])
+            ("SUBDIRS" variable (:default-value ("@yassl_dir@")) nil [1160 1183])
+            ("DIST_SUBDIRS" variable (:default-value ("yassl")) nil [1183 1205])
+            ("$(top_builddir)" function (:arguments ("comp_err.c" "$(top_srcdir)/sql/share/errmsg.txt")) nil [1378 1850])
+            ("$(top_builddir)" function (:arguments ("$(top_builddir)/include/mysqld_error.h")) nil [1850 1930])
+            ("$(top_builddir)" function (:arguments ("$(top_builddir)/include/mysqld_error.h")) nil [1930 2006])
+            ("bin_PROGRAMS" variable (:default-value ("replace")) nil [2007 2105])
+            ("bin_PROGRAMS" variable (:default-value ("innochecksum")) nil [2163 2192])
+            ("noinst_PROGRAMS" variable (:default-value ("charset2html")) nil [2199 2230])
+            ("EXTRA_PROGRAMS" variable (:default-value ("comp_err")) nil [2230 2256])
+            ("EXTRA_DIST" variable (:default-value ("CMakeLists.txt")) nil [2256 2285])
+            ("perror.o" function (:arguments ("perror.c")) nil [2286 2359]))          
+    :file "Makefile.am"
+    :pointmax 2412
+    :fsize 2411
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax '((symbol 2403 . 2411) (punctuation 2402 . 2403) (punctuation 2401 . 2402) (symbol 2400 . 2401) (bol 2400 . 2400))
+    )
+   )
+  :file "!home!work!git!mm!mysql-5.1.71!extra!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

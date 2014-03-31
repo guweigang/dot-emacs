@@ -1,0 +1,99 @@
+;; Object mcon/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mcon/"
+  :tables (list 
+   (semanticdb-table "io.h"
+    :file "io.h"
+    :fsize 974
+    :lastmodtime '(20688 19357 0 0)
+    )
+   (semanticdb-table "manager.h"
+    :file "manager.h"
+    :fsize 2000
+    :lastmodtime '(20688 19357 0 0)
+    )
+   (semanticdb-table "utils.h"
+    :file "utils.h"
+    :fsize 2820
+    :lastmodtime '(20688 19357 0 0)
+    )
+   (semanticdb-table "io.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("string.h" include (:system-flag t) nil [608 627])
+            ("errno.h" include (:system-flag t) nil [628 646])
+            ("sys/types.h" include (:system-flag t) nil [647 669])
+            ("sys/socket.h" include (:system-flag t) nil [748 771])
+            ("sys/time.h" include (:system-flag t) nil [772 793])
+            ("unistd.h" include (:system-flag t) nil [794 813])
+            ("stdlib.h" include (:system-flag t) nil [821 840])
+            ("stdio.h" include (:system-flag t) nil [841 859])
+            ("types.h" include nil nil [860 878])
+            ("mongo_io_send" function
+               (:arguments 
+                  ( ("sock" variable (:type "int") (reparse-symbol arg-sub-list) [1223 1232])
+                    ("packet" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1233 1246])
+                    ("total" variable (:type "int") (reparse-symbol arg-sub-list) [1247 1257])
+                    ("error_message" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1258 1279]))                  
+                :type "int")
+                nil [1205 1588])
+            ("mongo_io_recv_header" function
+               (:arguments 
+                  ( ("sock" variable (:type "int") (reparse-symbol arg-sub-list) [1892 1901])
+                    ("reply_buffer" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1902 1921])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [1922 1931])
+                    ("error_message" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1932 1953]))                  
+                :type "int")
+                nil [1867 2205])
+            ("mongo_io_recv_data" function
+               (:arguments 
+                  ( ("sock" variable (:type "int") (reparse-symbol arg-sub-list) [2230 2239])
+                    ("dest" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2240 2251])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [2252 2261])
+                    ("error_message" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2262 2283]))                  
+                :type "int")
+                nil [2207 2688])
+            ("mongo_io_wait_with_timeout" function
+               (:arguments 
+                  ( ("sock" variable (:type "int") (reparse-symbol arg-sub-list) [2993 3002])
+                    ("to" variable (:type "int") (reparse-symbol arg-sub-list) [3003 3010])
+                    ("error_message" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3011 3032]))                  
+                :type "int")
+                nil [2962 4056]))          
+    :file "io.c"
+    :pointmax 4057
+    :fsize 4056
+    :lastmodtime '(20688 19357 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "types.h"
+    :file "types.h"
+    :fsize 6236
+    :lastmodtime '(20688 19357 0 0)
+    )
+   )
+  :file "!home!work!download!mongo-1.3.2!mcon!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

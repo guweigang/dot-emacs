@@ -1,0 +1,20 @@
+;; Object yassl/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "yassl/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("SUBDIRS" variable (:default-value ("taocrypt" "src" "testsuite")) nil [706 739])
+            ("EXTRA_DIST" variable (:default-value ("CMakeLists.txt")) nil [739 767]))          
+    :file "Makefile.am"
+    :pointmax 820
+    :fsize 819
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax '((symbol 811 . 819) (punctuation 810 . 811) (punctuation 809 . 810) (symbol 808 . 809) (bol 808 . 808))
+    )
+   )
+  :file "!home!work!git!mm!mysql-5.1.71!extra!yassl!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

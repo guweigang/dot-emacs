@@ -1,0 +1,24 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("INCLUDES" variable (:default-value ("-I$(srcdir)/../include" "-I$(srcdir)/../taocrypt/include" "-I$(srcdir)/../taocrypt/mySTL")) nil [743 839])
+            ("noinst_LTLIBRARIES" variable (:default-value ("libyassl.la")) nil [840 873])
+            ("libyassl_la_SOURCES" variable (:default-value ("buffer.cpp" "cert_wrapper.cpp" "crypto_wrapper.cpp" "handshake.cpp" "lock.cpp" "log.cpp" "socket_wrapper.cpp" "ssl.cpp" "template_instnt.cpp" "timer.cpp" "yassl_imp.cpp" "yassl_error.cpp" "yassl_int.cpp")) nil [873 1080])
+            ("EXTRA_DIST" variable (:default-value ("$(wildcard ../include/*.hpp)" "$(wildcard ../include/openssl/*.h)")) nil [1080 1157])
+            ("AM_CXXFLAGS" variable (:default-value ("-DYASSL_PURE_C" "-DYASSL_PREFIX" "@yassl_thread_cxxflags@")) nil [1157 1225])
+            ("%" function (:arguments ("SCCS/s.%")) nil [1266 1278]))          
+    :file "Makefile.am"
+    :pointmax 1279
+    :fsize 1278
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!git!mm!mysql-5.1.71!extra!yassl!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

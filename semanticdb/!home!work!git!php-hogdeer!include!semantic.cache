@@ -1,0 +1,342 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables (list 
+   (semanticdb-table "client.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("PHP_HOGDEER_CLIENT_H" variable (:constant-flag t) nil [38 58])
+            ("iostream" include (:system-flag t) nil [60 79])
+            ("cxxtools/arg.h" include (:system-flag t) nil [80 105])
+            ("cxxtools/log.h" include (:system-flag t) nil [106 131])
+            ("cxxtools/remoteprocedure.h" include (:system-flag t) nil [132 169])
+            ("cxxtools/xmlrpc/httpclient.h" include (:system-flag t) nil [170 209])
+            ("cxxtools/bin/rpcclient.h" include (:system-flag t) nil [210 245])
+            ("cxxtools/json/rpcclient.h" include (:system-flag t) nil [246 282])
+            ("cxxtools/json/httpclient.h" include (:system-flag t) nil [283 320])
+            ("hogdeer_client_ce" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [322 365])
+            ("HOGDEER_INIT_CLASS" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Hogdeer_Client" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [385 400]))                  
+                :type "int")
+                nil [366 401])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Hogdeer_Client" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [414 429])
+                    ("" variable (:type ("__construct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [430 442]))                  
+                :type "int")
+                nil [403 443])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Hogdeer_Client" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [455 470])
+                    ("" variable (:type ("__destruct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [471 482]))                  
+                :type "int")
+                nil [444 483])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Hogdeer_Client" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [495 510])
+                    ("" variable (:type ("call" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [511 516]))                  
+                :type "int")
+                nil [484 517])
+            ("get_http_xmlrpc_client" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cls" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [579 589]))                  
+                :type ("cxxtools::xmlrpc::HttpClient" type (:type "class") nil nil))
+                nil [519 590])
+            ("get_http_jsonrpc_client" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cls" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [652 662]))                  
+                :type ("cxxtools::json::HttpClient" type (:type "class") nil nil))
+                nil [591 663])
+            ("get_tcp_binaryrpc_client" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cls" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [726 736]))                  
+                :type ("cxxtools::bin::RpcClient" type (:type "class") nil nil))
+                nil [664 737])
+            ("get_tcp_jsonrpc_client" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cls" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [798 808]))                  
+                :type ("cxxtools::json::RpcClient" type (:type "class") nil nil))
+                nil [738 809])
+            ("HOGDEER_INIT_FUNCS" function
+               (:arguments 
+                  ( ("" variable (:type ("client_methods" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [830 845]))                  
+                :type "int")
+                nil [811 1077]))          
+    :file "client.h"
+    :pointmax 1087
+    :fsize 1086
+    :lastmodtime '(20872 44294 0 0)
+    :unmatched-syntax '((punctuation 1077 . 1078) (punctuation 1077 . 1078) (close-paren 1076 . 1077) (symbol 1065 . 1075) (semantic-list 1015 . 1060) (symbol 1009 . 1015) (semantic-list 937 . 1004) (symbol 931 . 937) (punctuation 988 . 989) (semantic-list 858 . 926) (symbol 852 . 858) (punctuation 910 . 911))
+    :lexical-table 
+        '(("PHP_HOGDEER_CLIENT_H")
+          )
+
+    )
+   (semanticdb-table "server.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("PHP_HOGDEER_SERVER_H" variable (:constant-flag t) nil [38 58])
+            ("iostream" include (:system-flag t) nil [60 79])
+            ("cxxtools/arg.h" include (:system-flag t) nil [80 105])
+            ("cxxtools/log.h" include (:system-flag t) nil [106 131])
+            ("cxxtools/xmlrpc/service.h" include (:system-flag t) nil [132 168])
+            ("cxxtools/http/server.h" include (:system-flag t) nil [169 202])
+            ("cxxtools/bin/rpcserver.h" include (:system-flag t) nil [203 238])
+            ("cxxtools/json/rpcserver.h" include (:system-flag t) nil [239 275])
+            ("cxxtools/json/httpservice.h" include (:system-flag t) nil [276 314])
+            ("cxxtools/eventloop.h" include (:system-flag t) nil [315 346])
+            ("hogdeer_server_ce" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [348 391])
+            ("HOGDEER_INIT_CLASS" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Hogdeer_Server" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [411 426]))                  
+                :type "int")
+                nil [392 427])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Hogdeer_Server" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [440 455])
+                    ("" variable (:type ("__construct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [456 468]))                  
+                :type "int")
+                nil [429 469])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Hogdeer_Server" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [481 496])
+                    ("" variable (:type ("__destruct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [497 508]))                  
+                :type "int")
+                nil [470 509])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Hogdeer_Server" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [521 536])
+                    ("" variable (:type ("addService" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [537 548]))                  
+                :type "int")
+                nil [510 549])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Hogdeer_Server" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [561 576])
+                    ("" variable (:type ("handle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [577 584]))                  
+                :type "int")
+                nil [550 585])
+            ("get_http_server" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cls" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [637 647]))                  
+                :type ("cxxtools::http::Server" type (:type "class") nil nil))
+                nil [587 648])
+            ("get_binary_server" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cls" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [701 711]))                  
+                :type ("cxxtools::bin::RpcServer" type (:type "class") nil nil))
+                nil [649 712])
+            ("get_json_server" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cls" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [763 773]))                  
+                :type ("cxxtools::json::RpcServer" type (:type "class") nil nil))
+                nil [713 774])
+            ("get_http_xmlrpc_service" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cls" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [836 846]))                  
+                :type ("cxxtools::xmlrpc::Service" type (:type "class") nil nil))
+                nil [776 847])
+            ("get_http_jsonrpc_service" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cls" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [909 919]))                  
+                :type ("cxxtools::json::HttpService" type (:type "class") nil nil))
+                nil [848 920])
+            ("get_event_loop" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cls" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [965 975]))                  
+                :type ("cxxtools::EventLoop" type (:type "class") nil nil))
+                nil [922 976])
+            ("HOGDEER_INIT_FUNCS" function
+               (:arguments 
+                  ( ("" variable (:type ("server_methods" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [997 1012]))                  
+                :type "int")
+                nil [978 1298]))          
+    :file "server.h"
+    :pointmax 1308
+    :fsize 1307
+    :lastmodtime '(20895 2052 0 0)
+    :unmatched-syntax '((punctuation 1298 . 1299))
+    :lexical-table 
+        '(("PHP_HOGDEER_SERVER_H")
+          )
+
+    )
+   (semanticdb-table "http_client.h"
+    :major-mode 'c-mode
+    :tags nil
+    :file "http_client.h"
+    :pointmax 1
+    :fsize 0
+    :lastmodtime '(20895 1706 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "http_server.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("PHP_HOGDEER_HTTP_SERVER" variable (:constant-flag t) nil [41 64])
+            ("cxxtools/http/server.h" include (:system-flag t) nil [66 99])
+            ("cxxtools/http/request.h" include (:system-flag t) nil [100 134])
+            ("cxxtools/http/reply.h" include (:system-flag t) nil [135 167])
+            ("cxxtools/http/responder.h" include (:system-flag t) nil [168 204])
+            ("cxxtools/eventloop.h" include (:system-flag t) nil [205 236])
+            ("cxxtools/regex.h" include (:system-flag t) nil [237 264])
+            ("cxxtools/log.h" include (:system-flag t) nil [265 290])
+            ("cxxtools/arg.h" include (:system-flag t) nil [291 316])
+            ("hogdeer_http_server_ce" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [318 366])
+            ("HOGDEER_INIT_CLASS" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Hogdeer_Http_Server" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [387 407]))                  
+                :type "int")
+                nil [368 408])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Hogdeer_Http_Server" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [421 441])
+                    ("" variable (:type ("__construct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [442 454]))                  
+                :type "int")
+                nil [410 455])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Hogdeer_Http_Server" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [467 487])
+                    ("" variable (:type ("__destruct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [488 499]))                  
+                :type "int")
+                nil [456 500])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Hogdeer_Http_Server" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [512 532])
+                    ("" variable (:type ("addService" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [533 544]))                  
+                :type "int")
+                nil [501 545])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Hogdeer_Http_Server" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [557 577])
+                    ("" variable (:type ("handle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [578 585]))                  
+                :type "int")
+                nil [546 586])
+            ("get_event_loop_1" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cls" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [633 643]))                  
+                :type ("cxxtools::EventLoop" type (:type "class") nil nil))
+                nil [588 644])
+            ("get_http_server_1" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cls" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [694 704]))                  
+                :type ("cxxtools::http::Server" type (:type "class") nil nil))
+                nil [645 705])
+            ("HOGDEER_INIT_FUNCS" function
+               (:arguments 
+                  ( ("" variable (:type ("http_server_methods" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [726 746]))                  
+                :type "int")
+                nil [707 1056]))          
+    :file "http_server.h"
+    :pointmax 1066
+    :fsize 1065
+    :lastmodtime '(20895 18215 0 0)
+    :unmatched-syntax '((punctuation 1056 . 1057))
+    :lexical-table 
+        '(("PHP_HOGDEER_HTTP_SERVER")
+          )
+
+    )
+   )
+  :file "!home!work!git!php-hogdeer!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

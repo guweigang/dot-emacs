@@ -1,0 +1,2010 @@
+;; Object http/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "http/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("AM_CPPFLAGS" variable (:default-value ("-I$(top_srcdir)/src" "-I$(top_builddir)/include" "-I$(top_srcdir)/include")) nil [1 85])
+            ("lib_LTLIBRARIES" variable (:default-value ("libcxxtools-http.la")) nil [86 124])
+            ("libcxxtools_http_la_SOURCES" variable (:default-value ("chunkedreader.cpp" "client.cpp" "clientimpl.cpp" "mapper.cpp" "messageheader.cpp" "notauthenticatedresponder.cpp" "notauthenticatedservice.cpp" "notfoundresponder.cpp" "notfoundservice.cpp" "parser.cpp" "server.cpp" "serverimpl.cpp" "service.cpp" "socket.cpp" "request.cpp" "responder.cpp" "worker.cpp")) nil [125 527])
+            ("noinst_HEADERS" variable (:default-value ("chunkedreader.h" "clientimpl.h" "mapper.h" "notauthenticatedresponder.h" "notauthenticatedservice.h" "notfoundresponder.h" "notfoundservice.h" "parser.h" "serverimpl.h" "serverimplbase.h" "socket.h" "worker.h")) nil [528 804])
+            ("libcxxtools_http_la_LIBADD" variable (:default-value ("$(top_builddir)/src/libcxxtools.la")) nil [805 869])
+            ("libcxxtools_http_la_LDFLAGS" variable (:default-value ("-version-info" "@sonumber@" "@SHARED_LIB_FLAG@")) nil [870 943]))          
+    :file "Makefile.am"
+    :pointmax 944
+    :fsize 943
+    :lastmodtime '(20853 59026 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "client.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cxxtools/http/client.h" include (:system-flag t) nil [1385 1418])
+            ("cxxtools/net/addrinfo.h" include (:system-flag t) nil [1419 1453])
+            ("clientimpl.h" include nil nil [1454 1477])
+            ("cxxtools" type
+               (:members 
+                  ( ("http" type
+                       (:members 
+                          ( ("Client" function
+                               (:constructor-flag t
+                                :parent "Client"
+                                :type ("Client" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1519 1569])
+                            ("Client" function
+                               (:constructor-flag t
+                                :parent "Client"
+                                :arguments 
+                                  ( ("addrinfo" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("net::AddrInfo" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1586 1616]))                                  
+                                :type ("Client" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1571 1660])
+                            ("Client" function
+                               (:constructor-flag t
+                                :parent "Client"
+                                :arguments 
+                                  ( ("uri" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("net::Uri" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1677 1697]))                                  
+                                :type ("Client" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1662 1736])
+                            ("Client" function
+                               (:constructor-flag t
+                                :parent "Client"
+                                :arguments 
+                                  ( ("host" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1753 1777])
+                                    ("port" variable (:type "unsigned short int") (reparse-symbol arg-sub-list) [1778 1802]))                                  
+                                :type ("Client" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1738 1863])
+                            ("Client" function
+                               (:constructor-flag t
+                                :parent "Client"
+                                :arguments 
+                                  ( ("selector" variable
+                                       (:reference 1
+                                        :type ("SelectorBase" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1881 1904])
+                                    ("host" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1905 1929])
+                                    ("port" variable (:type "unsigned short int") (reparse-symbol arg-sub-list) [1930 1954]))                                  
+                                :type ("Client" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1866 2025])
+                            ("Client" function
+                               (:constructor-flag t
+                                :parent "Client"
+                                :arguments 
+                                  ( ("selector" variable
+                                       (:reference 1
+                                        :type ("SelectorBase" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2042 2065])
+                                    ("addrinfo" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("net::AddrInfo" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2066 2096]))                                  
+                                :type ("Client" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2027 2150])
+                            ("Client" function
+                               (:constructor-flag t
+                                :parent "Client"
+                                :arguments 
+                                  ( ("selector" variable
+                                       (:reference 1
+                                        :type ("SelectorBase" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2167 2190])
+                                    ("uri" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("net::Uri" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2191 2211]))                                  
+                                :type ("Client" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2152 2260])
+                            ("Client" function
+                               (:destructor-flag t
+                                :parent "Client"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2262 2301])
+                            ("connect" function
+                               (:parent "Client"
+                                :arguments 
+                                  ( ("addrinfo" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("net::AddrInfo" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2324 2354]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2303 2388])
+                            ("connect" function
+                               (:parent "Client"
+                                :arguments 
+                                  ( ("host" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2411 2435])
+                                    ("port" variable (:type "unsigned short int") (reparse-symbol arg-sub-list) [2436 2460]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2390 2511])
+                            ("execute" function
+                               (:parent "Client"
+                                :constant-flag t
+                                :arguments 
+                                  ( ("request" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Request" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2548 2571])
+                                    ("timeout" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2572 2592]))                                  
+                                :type ("ReplyHeader" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2513 2726])
+                            ("header" function
+                               (:parent "Client"
+                                :constant-flag t
+                                :type ("ReplyHeader" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2728 2795])
+                            ("readBody" function
+                               (:parent "Client"
+                                :arguments 
+                                  ( ("s" variable
+                                       (:reference 1
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2819 2834]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2797 2862])
+                            ("get" function
+                               (:parent "Client"
+                                :arguments 
+                                  ( ("url" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2888 2911])
+                                    ("timeout" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2912 2932]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2864 2973])
+                            ("beginExecute" function
+                               (:parent "Client"
+                                :arguments 
+                                  ( ("request" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Request" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3001 3024]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2975 3062])
+                            ("endExecute" function
+                               (:parent "Client"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [3064 3118])
+                            ("setSelector" function
+                               (:parent "Client"
+                                :arguments 
+                                  ( ("selector" variable
+                                       (:reference 1
+                                        :type ("SelectorBase" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3145 3168]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [3120 3206])
+                            ("wait" function
+                               (:parent "Client"
+                                :arguments 
+                                  ( ("msecs" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3226 3244]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [3208 3272])
+                            ("in" function
+                               (:parent "Client"
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3274 3328])
+                            ("host" function
+                               (:parent "Client"
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3330 3399])
+                            ("port" function
+                               (:parent "Client"
+                                :type "unsigned short int")
+                                (reparse-symbol namespacesubparts) [3401 3470])
+                            ("auth" function
+                               (:parent "Client"
+                                :arguments 
+                                  ( ("username" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3490 3518])
+                                    ("password" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3519 3547]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [3472 3588])
+                            ("clearAuth" function
+                               (:parent "Client"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [3590 3642])
+                            ("cancel" function
+                               (:parent "Client"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [3644 3690]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1501 3693]))                  
+                :type "namespace")
+                nil [1479 3714]))          
+    :file "client.cpp"
+    :pointmax 3737
+    :fsize 3736
+    :lastmodtime '(20853 59026 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "clientimpl.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("cxxtools_Http_ClientImpl_h" variable (:constant-flag t) nil [1428 1454])
+            ("cxxtools/net/tcpserver.h" include (:system-flag t) nil [1456 1491])
+            ("cxxtools/net/tcpsocket.h" include (:system-flag t) nil [1492 1527])
+            ("parser.h" include nil nil [1528 1547])
+            ("cxxtools/http/request.h" include (:system-flag t) nil [1548 1582])
+            ("cxxtools/http/reply.h" include (:system-flag t) nil [1583 1615])
+            ("cxxtools/selectable.h" include (:system-flag t) nil [1616 1648])
+            ("cxxtools/iostream.h" include (:system-flag t) nil [1649 1679])
+            ("cxxtools/timer.h" include (:system-flag t) nil [1680 1707])
+            ("cxxtools/connectable.h" include (:system-flag t) nil [1708 1741])
+            ("cxxtools/delegate.h" include (:system-flag t) nil [1742 1772])
+            ("string" include (:system-flag t) nil [1773 1790])
+            ("sstream" include (:system-flag t) nil [1791 1809])
+            ("cstddef" include (:system-flag t) nil [1810 1828])
+            ("chunkedreader.h" include nil nil [1829 1855])
+            ("cxxtools" type
+               (:members 
+                  ( ("net" type
+                       (:members 
+                          ( ("Uri" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1899 1909]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1879 1911])
+                    ("http" type
+                       (:members 
+                          ( ("Client" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1931 1944])
+                            ("ClientImpl" type
+                               (:superclasses 
+                                  ( ("Connectable" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("ParseEvent" friend nil (reparse-symbol classsubparts) [1994 2017])
+                                    ("_client" variable
+                                       (:pointer 1
+                                        :type ("Client" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2028 2044])
+                                    ("public" label nil (reparse-symbol classsubparts) [2091 2111])
+                                    ("MessageHeaderEvent" variable (:type "int") (reparse-symbol classsubparts) [2112 2493])
+                                    ("_parseEvent" variable (:type ("ParseEvent" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2503 2526])
+                                    ("_parser" variable (:type ("HeaderParser" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2535 2556])
+                                    ("_request" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("Request" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2566 2590])
+                                    ("_replyHeader" variable (:type ("ReplyHeader" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2599 2624])
+                                    ("_addrInfo" variable (:type ("net::AddrInfo" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2634 2658])
+                                    ("_socket" variable (:type ("net::TcpSocket" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2667 2690])
+                                    ("_stream" variable (:type ("IOStream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2699 2716])
+                                    ("_chunkedIStream" variable (:type ("ChunkedIStream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2725 2756])
+                                    ("_username" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2765 2787])
+                                    ("_password" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2796 2818])
+                                    ("_contentLength" variable (:type "long") (reparse-symbol classsubparts) [2828 2848])
+                                    ("_readHeader" variable (:type "bool") (reparse-symbol classsubparts) [2857 2874])
+                                    ("_chunkedEncoding" variable (:type "bool") (reparse-symbol classsubparts) [2883 2905])
+                                    ("_reconnectOnError" variable (:type "bool") (reparse-symbol classsubparts) [2914 2937])
+                                    ("_errorPending" variable (:type "bool") (reparse-symbol classsubparts) [2946 2965])
+                                    ("sendRequest" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("request" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Request" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2992 3015]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2975 3016])
+                                    ("processHeaderAvailable" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("sb" variable
+                                               (:reference 1
+                                                :type ("StreamBuffer" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3053 3070]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3025 3071])
+                                    ("processBodyAvailable" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("sb" variable
+                                               (:reference 1
+                                                :type ("StreamBuffer" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3106 3123]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3080 3124])
+                                    ("reexecute" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("request" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Request" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3149 3172]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3134 3173])
+                                    ("reexecuteBegin" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("request" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Request" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3202 3225]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3182 3226])
+                                    ("doparse" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3235 3250])
+                                    ("protected" label nil (reparse-symbol classsubparts) [3256 3266])
+                                    ("onConnect" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("socket" variable
+                                               (:reference 1
+                                                :type ("net::TcpSocket" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3290 3313]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3275 3314])
+                                    ("onOutput" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("sb" variable
+                                               (:reference 1
+                                                :type ("StreamBuffer" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3337 3354]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3323 3355])
+                                    ("onInput" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("sb" variable
+                                               (:reference 1
+                                                :type ("StreamBuffer" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3377 3394]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3364 3395])
+                                    ("public" label nil (reparse-symbol classsubparts) [3401 3408])
+                                    ("ClientImpl" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("client" variable
+                                               (:pointer 1
+                                                :type ("Client" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3428 3443]))                                          
+                                        :type ("ClientImpl" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3417 3444])
+                                    ("ClientImpl" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("client" variable
+                                               (:pointer 1
+                                                :type ("Client" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3464 3479])
+                                            ("addrinfo" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("net::AddrInfo" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3480 3510]))                                          
+                                        :type ("ClientImpl" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3453 3511])
+                                    ("ClientImpl" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("client" variable
+                                               (:pointer 1
+                                                :type ("Client" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3531 3546])
+                                            ("uri" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("net::Uri" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3547 3567]))                                          
+                                        :type ("ClientImpl" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3520 3568])
+                                    ("ClientImpl" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("client" variable
+                                               (:pointer 1
+                                                :type ("Client" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3588 3603])
+                                            ("selector" variable
+                                               (:reference 1
+                                                :type ("SelectorBase" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3604 3627])
+                                            ("addrinfo" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("net::AddrInfo" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3628 3658]))                                          
+                                        :type ("ClientImpl" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3577 3659])
+                                    ("ClientImpl" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("client" variable
+                                               (:pointer 1
+                                                :type ("Client" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3679 3694])
+                                            ("selector" variable
+                                               (:reference 1
+                                                :type ("SelectorBase" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3695 3718])
+                                            ("uri" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("net::Uri" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3719 3739]))                                          
+                                        :type ("ClientImpl" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3668 3740])
+                                    ("connect" function
+                                       (:arguments 
+                                          ( ("addrinfo" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("net::AddrInfo" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3835 3865]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3822 3948])
+                                    ("execute" function
+                                       (:prototype-flag t
+                                        :constant-flag t
+                                        :arguments 
+                                          ( ("request" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Request" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4176 4199])
+                                            ("timeout" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4212 4233])
+                                            ("" variable (:type ("Selectable::WaitInfinite" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4234 4259]))                                          
+                                        :type ("ReplyHeader" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4149 4260])
+                                    ("header" function
+                                       (:constant-flag t
+                                        :type ("ReplyHeader" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4270 4330])
+                                    ("readBody" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("s" variable
+                                               (:reference 1
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4475 4490]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4461 4491])
+                                    ("readBody" function (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4622 4744])
+                                    ("get" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("url" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4895 4918])
+                                            ("timeout" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4931 4952])
+                                            ("" variable (:type ("Selectable::WaitInfinite" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4953 4978]))                                          
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4879 4979])
+                                    ("beginExecute" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("request" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Request" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5343 5366]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [5325 5367])
+                                    ("endExecute" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [5377 5395])
+                                    ("setSelector" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("selector" variable
+                                               (:reference 1
+                                                :type ("SelectorBase" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5422 5445]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [5405 5446])
+                                    ("wait" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("msecs" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5580 5598]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [5570 5599])
+                                    ("in" function (:type ("std::istream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5685 5880])
+                                    ("host" function
+                                       (:constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5890 5978])
+                                    ("port" function (:type "unsigned short") (reparse-symbol classsubparts) [5988 6072])
+                                    ("auth" function
+                                       (:arguments 
+                                          ( ("username" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6163 6191])
+                                            ("password" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6192 6220]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [6153 6276])
+                                    ("clearAuth" function (:type "void") (reparse-symbol classsubparts) [6286 6352])
+                                    ("cancel" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [6362 6376]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1946 6379]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1913 6382]))                  
+                :type "namespace")
+                nil [1857 6403]))          
+    :file "clientimpl.h"
+    :pointmax 6434
+    :fsize 6433
+    :lastmodtime '(20853 59026 0 0)
+    :unmatched-syntax '((punctuation 4951 . 4952) (punctuation 4232 . 4233) (punctuation 2111 . 2112) (punctuation 2089 . 2090) (symbol 2078 . 2088) (symbol 2060 . 2077) (CLASS 2054 . 2059) (punctuation 2017 . 2018))
+    :lexical-table 
+        '(("cxxtools_Http_ClientImpl_h")
+          )
+
+    )
+   (semanticdb-table "service.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cxxtools/http/service.h" include (:system-flag t) nil [1362 1396])
+            ("cxxtools/http/responder.h" include (:system-flag t) nil [1397 1433])
+            ("cxxtools" type
+               (:members 
+                  ( ("http" type
+                       (:members 
+                          ( ("doCreateResponder" function
+                               (:pointer 1
+                                :parent "Service"
+                                :arguments 
+                                  ( ("request" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Request" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1513 1536]))                                  
+                                :type ("Responder" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1475 1628])
+                            ("doReleaseResponder" function
+                               (:parent "Service"
+                                :arguments 
+                                  ( ("responder" variable
+                                       (:pointer 1
+                                        :type ("Responder" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1663 1684]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1630 1807])
+                            ("waitIdle" function
+                               (:parent "Service"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1809 1925])
+                            ("checkAuth" function
+                               (:parent "Service"
+                                :arguments 
+                                  ( ("request" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Request" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1951 1974]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [1927 2206])
+                            ("CachedServiceBase" function
+                               (:destructor-flag t
+                                :parent "CachedServiceBase"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2208 2356])
+                            ("createResponder" function
+                               (:pointer 1
+                                :parent "CachedServiceBase"
+                                :arguments 
+                                  ( ("request" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Request" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2404 2427]))                                  
+                                :type ("Responder" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2358 2618])
+                            ("releaseResponder" function
+                               (:parent "CachedServiceBase"
+                                :arguments 
+                                  ( ("resp" variable
+                                       (:pointer 1
+                                        :type ("Responder" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2661 2677]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2620 2713]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1457 2716]))                  
+                :type "namespace")
+                nil [1435 2718]))          
+    :file "service.cpp"
+    :pointmax 2719
+    :fsize 2718
+    :lastmodtime '(20853 59026 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "clientimpl.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("clientimpl.h" include nil nil [1385 1408])
+            ("cxxtools/http/client.h" include (:system-flag t) nil [1409 1442])
+            ("cxxtools/net/uri.h" include (:system-flag t) nil [1443 1472])
+            ("parser.h" include nil nil [1473 1492])
+            ("cxxtools/ioerror.h" include (:system-flag t) nil [1493 1522])
+            ("cxxtools/textstream.h" include (:system-flag t) nil [1523 1555])
+            ("cxxtools/base64codec.h" include (:system-flag t) nil [1556 1589])
+            ("sstream" include (:system-flag t) nil [1590 1608])
+            ("config.h" include nil nil [1609 1628])
+            ("cxxtools/log.h" include (:system-flag t) nil [1630 1655])
+            ("cxxtools" type
+               (:members 
+                  ( ("http" type
+                       (:members 
+                          ( ("onHttpReturn" function
+                               (:parent "ClientImpl::ParseEvent"
+                                :arguments 
+                                  ( ("ret" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1780 1793])
+                                    ("text" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1794 1818]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1738 1862])
+                            ("ClientImpl" function
+                               (:constructor-flag t
+                                :parent "ClientImpl"
+                                :arguments 
+                                  ( ("client" variable
+                                       (:pointer 1
+                                        :type ("Client" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1887 1902]))                                  
+                                :type ("ClientImpl" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1864 2440])
+                            ("ClientImpl" function
+                               (:constructor-flag t
+                                :parent "ClientImpl"
+                                :arguments 
+                                  ( ("client" variable
+                                       (:pointer 1
+                                        :type ("Client" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2466 2481])
+                                    ("addrinfo" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("net::AddrInfo" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2482 2512]))                                  
+                                :type ("ClientImpl" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2443 3072])
+                            ("ClientImpl" function
+                               (:constructor-flag t
+                                :parent "ClientImpl"
+                                :arguments 
+                                  ( ("client" variable
+                                       (:pointer 1
+                                        :type ("Client" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3097 3112])
+                                    ("uri" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("net::Uri" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3113 3133]))                                  
+                                :type ("ClientImpl" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3074 3869])
+                            ("ClientImpl" function
+                               (:constructor-flag t
+                                :parent "ClientImpl"
+                                :arguments 
+                                  ( ("client" variable
+                                       (:pointer 1
+                                        :type ("Client" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3894 3909])
+                                    ("selector" variable
+                                       (:reference 1
+                                        :type ("SelectorBase" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3910 3933])
+                                    ("addrinfo" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("net::AddrInfo" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3934 3964]))                                  
+                                :type ("ClientImpl" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3871 4551])
+                            ("ClientImpl" function
+                               (:constructor-flag t
+                                :parent "ClientImpl"
+                                :arguments 
+                                  ( ("client" variable
+                                       (:pointer 1
+                                        :type ("Client" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4577 4592])
+                                    ("selector" variable
+                                       (:reference 1
+                                        :type ("SelectorBase" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4593 4616])
+                                    ("uri" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("net::Uri" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4617 4637]))                                  
+                                :type ("ClientImpl" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [4554 5348])
+                            ("setSelector" function
+                               (:parent "ClientImpl"
+                                :arguments 
+                                  ( ("selector" variable
+                                       (:reference 1
+                                        :type ("SelectorBase" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5380 5403]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [5351 5434])
+                            ("reexecute" function
+                               (:parent "ClientImpl"
+                                :arguments 
+                                  ( ("request" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Request" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5464 5487]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [5437 5654])
+                            ("reexecuteBegin" function
+                               (:parent "ClientImpl"
+                                :arguments 
+                                  ( ("request" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Request" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5688 5711]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [5656 5871])
+                            ("doparse" function
+                               (:parent "ClientImpl"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [5873 5990])
+                            ("execute" function
+                               (:parent "ClientImpl"
+                                :constant-flag t
+                                :arguments 
+                                  ( ("request" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Request" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6031 6054])
+                                    ("timeout" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6055 6075]))                                  
+                                :type ("ReplyHeader" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [5992 7319])
+                            ("readBody" function
+                               (:parent "ClientImpl"
+                                :arguments 
+                                  ( ("s" variable
+                                       (:reference 1
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7348 7363]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [7322 8396])
+                            ("get" function
+                               (:parent "ClientImpl"
+                                :arguments 
+                                  ( ("url" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8427 8450])
+                                    ("timeout" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8451 8471]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [8399 8555])
+                            ("beginExecute" function
+                               (:parent "ClientImpl"
+                                :arguments 
+                                  ( ("request" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Request" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8588 8611]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [8558 9515])
+                            ("endExecute" function
+                               (:parent "ClientImpl"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [9518 9632])
+                            ("wait" function
+                               (:parent "ClientImpl"
+                                :arguments 
+                                  ( ("msecs" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9657 9675]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [9635 9704])
+                            ("sendRequest" function
+                               (:parent "ClientImpl"
+                                :arguments 
+                                  ( ("request" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Request" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9736 9759]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [9707 11774])
+                            ("onConnect" function
+                               (:parent "ClientImpl"
+                                :arguments 
+                                  ( ("socket" variable
+                                       (:reference 1
+                                        :type ("net::TcpSocket" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11803 11826]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [11776 12230])
+                            ("onOutput" function
+                               (:parent "ClientImpl"
+                                :arguments 
+                                  ( ("sb" variable
+                                       (:reference 1
+                                        :type ("StreamBuffer" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12258 12275]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [12232 13359])
+                            ("onInput" function
+                               (:parent "ClientImpl"
+                                :arguments 
+                                  ( ("sb" variable
+                                       (:reference 1
+                                        :type ("StreamBuffer" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13386 13403]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [13361 14611])
+                            ("processHeaderAvailable" function
+                               (:parent "ClientImpl"
+                                :arguments 
+                                  ( ("sb" variable
+                                       (:reference 1
+                                        :type ("StreamBuffer" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14653 14670]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [14613 16092])
+                            ("processBodyAvailable" function
+                               (:parent "ClientImpl"
+                                :arguments 
+                                  ( ("sb" variable
+                                       (:reference 1
+                                        :type ("StreamBuffer" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16132 16149]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [16094 19153])
+                            ("cancel" function
+                               (:parent "ClientImpl"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [19155 19288]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1720 19292]))                  
+                :type "namespace")
+                nil [1698 19313]))          
+    :file "clientimpl.cpp"
+    :pointmax 19336
+    :fsize 19335
+    :lastmodtime '(20853 59026 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "parser.h"
+    :file "parser.h"
+    :fsize 5837
+    :lastmodtime '(20853 59026 0 0)
+    )
+   (semanticdb-table "request.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cxxtools/http/request.h" include (:system-flag t) nil [1365 1399])
+            ("cxxtools/textstream.h" include (:system-flag t) nil [1400 1432])
+            ("cxxtools/base64codec.h" include (:system-flag t) nil [1433 1466])
+            ("string" include (:system-flag t) nil [1467 1484])
+            ("cxxtools" type
+               (:members 
+                  ( ("http" type
+                       (:members 
+                          ( ("auth" function
+                               (:parent "Request"
+                                :type ("Request::Auth" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1526 2004]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1508 2007]))                  
+                :type "namespace")
+                nil [1486 2010]))          
+    :file "request.cpp"
+    :pointmax 2011
+    :fsize 2010
+    :lastmodtime '(20853 59026 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "server.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cxxtools/http/server.h" include (:system-flag t) nil [1385 1418])
+            ("cxxtools/eventloop.h" include (:system-flag t) nil [1419 1450])
+            ("cxxtools/log.h" include (:system-flag t) nil [1451 1476])
+            ("serverimpl.h" include nil nil [1477 1500])
+            ("cxxtools" type
+               (:members 
+                  ( ("http" type
+                       (:members 
+                          ( ("Server" function
+                               (:constructor-flag t
+                                :parent "Server"
+                                :arguments 
+                                  ( ("eventLoop" variable
+                                       (:reference 1
+                                        :type ("EventLoopBase" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1593 1618]))                                  
+                                :type ("Server" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1578 1677])
+                            ("Server" function
+                               (:constructor-flag t
+                                :parent "Server"
+                                :arguments 
+                                  ( ("eventLoop" variable
+                                       (:reference 1
+                                        :type ("EventLoopBase" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1694 1719])
+                                    ("ip" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1720 1742])
+                                    ("port" variable (:type "unsigned short int") (reparse-symbol arg-sub-list) [1743 1767])
+                                    ("backlog" variable (:type "int") (reparse-symbol arg-sub-list) [1768 1780]))                                  
+                                :type ("Server" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1679 1870])
+                            ("Server" function
+                               (:destructor-flag t
+                                :parent "Server"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1872 2010])
+                            ("listen" function
+                               (:parent "Server"
+                                :arguments 
+                                  ( ("ip" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2032 2054])
+                                    ("port" variable (:type "unsigned short int") (reparse-symbol arg-sub-list) [2055 2079])
+                                    ("backlog" variable (:type "int") (reparse-symbol arg-sub-list) [2080 2092]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2012 2188])
+                            ("addService" function
+                               (:parent "Server"
+                                :arguments 
+                                  ( ("url" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2214 2237])
+                                    ("service" variable
+                                       (:reference 1
+                                        :type ("Service" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2238 2255]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2190 2296])
+                            ("addService" function
+                               (:parent "Server"
+                                :arguments 
+                                  ( ("url" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Regex" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2322 2339])
+                                    ("service" variable
+                                       (:reference 1
+                                        :type ("Service" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2340 2357]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2298 2398])
+                            ("removeService" function
+                               (:parent "Server"
+                                :arguments 
+                                  ( ("service" variable
+                                       (:reference 1
+                                        :type ("Service" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2427 2444]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2400 2483])
+                            ("readTimeout" function
+                               (:parent "Server"
+                                :type ("std::size_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2485 2561])
+                            ("writeTimeout" function
+                               (:parent "Server"
+                                :type ("std::size_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2563 2641])
+                            ("keepAliveTimeout" function
+                               (:parent "Server"
+                                :type ("std::size_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2643 2729])
+                            ("readTimeout" function
+                               (:parent "Server"
+                                :arguments 
+                                  ( ("ms" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2756 2771]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2731 2803])
+                            ("writeTimeout" function
+                               (:parent "Server"
+                                :arguments 
+                                  ( ("ms" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2831 2846]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2805 2879])
+                            ("keepAliveTimeout" function
+                               (:parent "Server"
+                                :arguments 
+                                  ( ("ms" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2911 2926]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2881 2963])
+                            ("minThreads" function
+                               (:parent "Server"
+                                :type "unsigned int")
+                                (reparse-symbol namespacesubparts) [2965 3036])
+                            ("minThreads" function
+                               (:parent "Server"
+                                :arguments 
+                                  ( ("m" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3062 3073]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [3038 3103])
+                            ("maxThreads" function
+                               (:parent "Server"
+                                :type "unsigned int")
+                                (reparse-symbol namespacesubparts) [3105 3176])
+                            ("maxThreads" function
+                               (:parent "Server"
+                                :arguments 
+                                  ( ("m" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3202 3213]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [3178 3243]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1560 3246]))                  
+                :type "namespace")
+                nil [1538 3267]))          
+    :file "server.cpp"
+    :pointmax 3290
+    :fsize 3289
+    :lastmodtime '(20853 59026 0 0)
+    :unmatched-syntax '((semantic-list 1512 . 1536) (symbol 1502 . 1512) (string 1513 . 1535))
+    )
+   (semanticdb-table "serverimpl.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("serverimpl.h" include nil nil [1362 1385])
+            ("worker.h" include nil nil [1386 1405])
+            ("socket.h" include nil nil [1406 1425])
+            ("cxxtools/eventloop.h" include (:system-flag t) nil [1427 1458])
+            ("cxxtools/log.h" include (:system-flag t) nil [1459 1484])
+            ("cxxtools/net/tcpserver.h" include (:system-flag t) nil [1485 1520])
+            ("signal.h" include (:system-flag t) nil [1522 1541])
+            ("cxxtools" type
+               (:members 
+                  ( ("http" type
+                       (:members 
+                          ( ("IdleSocketEvent" type
+                               (:superclasses 
+                                  ( ("BasicEvent" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("_socket" variable
+                                       (:pointer 1
+                                        :type ("Socket" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1692 1708])
+                                    ("public" label nil (reparse-symbol classsubparts) [1714 1721])
+                                    ("IdleSocketEvent" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("socket" variable
+                                               (:pointer 1
+                                                :type ("Socket" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1755 1770]))                                          
+                                        :type ("IdleSocketEvent" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1739 1816])
+                                    ("socket" function
+                                       (:pointer 1
+                                        :type ("Socket" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1826 1870]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1623 1874])
+                            ("KeepAliveTimeoutEvent" type
+                               (:superclasses 
+                                  ( ("BasicEvent" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("_socket" variable
+                                       (:pointer 1
+                                        :type ("Socket" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1957 1973])
+                                    ("public" label nil (reparse-symbol classsubparts) [1979 1986])
+                                    ("KeepAliveTimeoutEvent" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("socket" variable
+                                               (:pointer 1
+                                                :type ("Socket" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2026 2041]))                                          
+                                        :type ("KeepAliveTimeoutEvent" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2004 2087])
+                                    ("socket" function
+                                       (:pointer 1
+                                        :type ("Socket" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2097 2141]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1876 2145])
+                            ("ServerStartEvent" type
+                               (:superclasses 
+                                  ( ("BasicEvent" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("_server" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("ServerImpl" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2218 2244])
+                                    ("public" label nil (reparse-symbol classsubparts) [2250 2257])
+                                    ("ServerStartEvent" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("server" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("ServerImpl" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2292 2317]))                                          
+                                        :type ("ServerStartEvent" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2275 2363])
+                                    ("server" function
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("ServerImpl" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2373 2427]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [2147 2431])
+                            ("NoWaitingThreadsEvent" type
+                               (:superclasses 
+                                  ( ("BasicEvent" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [2433 2508])
+                            ("ThreadTerminatedEvent" type
+                               (:superclasses 
+                                  ( ("BasicEvent" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("_worker" variable
+                                       (:pointer 1
+                                        :type ("Worker" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2591 2607])
+                                    ("public" label nil (reparse-symbol classsubparts) [2613 2620])
+                                    ("ThreadTerminatedEvent" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("worker" variable
+                                               (:pointer 1
+                                                :type ("Worker" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2660 2675]))                                          
+                                        :type ("ThreadTerminatedEvent" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2638 2721])
+                                    ("worker" function
+                                       (:pointer 1
+                                        :type ("Worker" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2731 2775]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [2510 2778])
+                            ("ActiveSocketEvent" type
+                               (:superclasses 
+                                  ( ("BasicEvent" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("_socket" variable
+                                       (:pointer 1
+                                        :type ("Socket" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2853 2869])
+                                    ("public" label nil (reparse-symbol classsubparts) [2875 2882])
+                                    ("ActiveSocketEvent" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("socket" variable
+                                               (:pointer 1
+                                                :type ("Socket" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2918 2933]))                                          
+                                        :type ("ActiveSocketEvent" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2900 2979])
+                                    ("socket" function
+                                       (:pointer 1
+                                        :type ("Socket" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2989 3033]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [2780 3037])
+                            ("ServerImpl" function
+                               (:constructor-flag t
+                                :parent "ServerImpl"
+                                :arguments 
+                                  ( ("eventLoop" variable
+                                       (:reference 1
+                                        :type ("EventLoopBase" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3063 3088])
+                                    ("runmodeChanged" variable
+                                       (:reference 1
+                                        :type ("Signal" type
+                                             (:template-specifier 
+                                                ( ("Server::Runmode" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [3089 3129]))                                  
+                                :type ("ServerImpl" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3040 3859])
+                            ("ServerImpl" function
+                               (:destructor-flag t
+                                :parent "ServerImpl"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [3861 4142])
+                            ("listen" function
+                               (:parent "ServerImpl"
+                                :arguments 
+                                  ( ("ip" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4168 4190])
+                                    ("port" variable (:type "unsigned short int") (reparse-symbol arg-sub-list) [4191 4215])
+                                    ("backlog" variable (:type "int") (reparse-symbol arg-sub-list) [4216 4228]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [4144 4564])
+                            ("start" function
+                               (:parent "ServerImpl"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [4566 4879])
+                            ("terminate" function
+                               (:parent "ServerImpl"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [4881 6425])
+                            ("noWaitingThreads" function
+                               (:parent "ServerImpl"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [6427 6595])
+                            ("threadTerminated" function
+                               (:parent "ServerImpl"
+                                :arguments 
+                                  ( ("worker" variable
+                                       (:pointer 1
+                                        :type ("Worker" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6631 6646]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [6597 6926])
+                            ("addIdleSocket" function
+                               (:parent "ServerImpl"
+                                :arguments 
+                                  ( ("socket" variable
+                                       (:pointer 1
+                                        :type ("Socket" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6959 6974]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [6928 7275])
+                            ("onIdleSocket" function
+                               (:parent "ServerImpl"
+                                :arguments 
+                                  ( ("event" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("IdleSocketEvent" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7307 7336]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [7277 7674])
+                            ("onActiveSocket" function
+                               (:parent "ServerImpl"
+                                :arguments 
+                                  ( ("event" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ActiveSocketEvent" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7708 7739]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [7676 7775])
+                            ("onNoWaitingThreads" function
+                               (:parent "ServerImpl"
+                                :arguments 
+                                  ( ("event" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("NoWaitingThreadsEvent" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7813 7848]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [7777 8572])
+                            ("onThreadTerminated" function
+                               (:parent "ServerImpl"
+                                :arguments 
+                                  ( ("event" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ThreadTerminatedEvent" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8610 8645]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [8574 8991])
+                            ("onServerStart" function
+                               (:parent "ServerImpl"
+                                :arguments 
+                                  ( ("event" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ServerStartEvent" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9024 9054]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [8993 9119])
+                            ("onInput" function
+                               (:parent "ServerImpl"
+                                :arguments 
+                                  ( ("socket" variable
+                                       (:reference 1
+                                        :type ("Socket" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9146 9161]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [9121 9613])
+                            ("onTimeout" function
+                               (:parent "ServerImpl"
+                                :arguments 
+                                  ( ("socket" variable
+                                       (:reference 1
+                                        :type ("Socket" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9642 9657]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [9615 9788])
+                            ("onKeepAliveTimeout" function
+                               (:parent "ServerImpl"
+                                :arguments 
+                                  ( ("event" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("KeepAliveTimeoutEvent" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9826 9861]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [9790 10030]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1605 10034]))                  
+                :type "namespace")
+                nil [1584 10036]))          
+    :file "serverimpl.cpp"
+    :pointmax 10037
+    :fsize 10036
+    :lastmodtime '(20853 59026 0 0)
+    :unmatched-syntax '((EXPLICIT 2891 . 2899) (EXPLICIT 2629 . 2637) (EXPLICIT 2266 . 2274) (EXPLICIT 1995 . 2003) (EXPLICIT 1730 . 1738) (semantic-list 1553 . 1582) (symbol 1543 . 1553) (string 1554 . 1581))
+    )
+   (semanticdb-table "serverimpl.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("CXXTOOLS_HTTP_SERVERIMPL_H" variable (:constant-flag t) nil [1405 1431])
+            ("serverimplbase.h" include nil nil [1433 1460])
+            ("set" include (:system-flag t) nil [1461 1475])
+            ("vector" include (:system-flag t) nil [1476 1493])
+            ("cxxtools/queue.h" include (:system-flag t) nil [1494 1521])
+            ("cxxtools/event.h" include (:system-flag t) nil [1522 1549])
+            ("cxxtools/http/server.h" include (:system-flag t) nil [1550 1583])
+            ("cxxtools" type
+               (:members 
+                  ( ("EventLoopBase" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1607 1627])
+                    ("net" type
+                       (:members 
+                          ( ("TcpServer" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1649 1665]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1629 1667])
+                    ("http" type
+                       (:members 
+                          ( ("Worker" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1687 1700])
+                            ("ServerImpl" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1701 1718])
+                            ("Socket" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1719 1732])
+                            ("IdleSocketEvent" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1733 1755])
+                            ("KeepAliveTimeoutEvent" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1756 1784])
+                            ("ServerStartEvent" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1785 1808])
+                            ("NoWaitingThreadsEvent" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1809 1837])
+                            ("ThreadTerminatedEvent" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1838 1866])
+                            ("ActiveSocketEvent" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1867 1891])
+                            ("ServerImpl" type
+                               (:superclasses 
+                                  ( ("ServerImplBase" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil)
+                                    ("Connectable" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [1960 1967])
+                                    ("ServerImpl" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("eventLoop" variable
+                                               (:reference 1
+                                                :type ("EventLoopBase" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1987 2012])
+                                            ("runmodeChanged" variable
+                                               (:reference 1
+                                                :type ("Signal" type
+                                                     (:template-specifier 
+                                                        ( ("Server::Runmode" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [2013 2053]))                                          
+                                        :type ("ServerImpl" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1976 2054])
+                                    ("ServerImpl" function
+                                       (:prototype-flag t
+                                        :destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2063 2077])
+                                    ("listen" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("ip" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2139 2161])
+                                            ("port" variable (:type "unsigned short int") (reparse-symbol arg-sub-list) [2162 2186])
+                                            ("backlog" variable (:type "int") (reparse-symbol arg-sub-list) [2187 2199]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2127 2200])
+                                    ("isTerminating" function (:type "bool") (reparse-symbol classsubparts) [2210 2289])
+                                    ("terminate" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2339 2356])
+                                    ("private" label nil (reparse-symbol classsubparts) [2362 2370])
+                                    ("noWaitingThreads" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2379 2403])
+                                    ("onInput" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("_socket" variable
+                                               (:reference 1
+                                                :type ("Socket" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2425 2441]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2412 2442])
+                                    ("onTimeout" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("_socket" variable
+                                               (:reference 1
+                                                :type ("Socket" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2466 2482]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2451 2483])
+                                    ("addIdleSocket" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("socket" variable
+                                               (:pointer 1
+                                                :type ("Socket" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2512 2527]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2493 2528])
+                                    ("onIdleSocket" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("event" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("IdleSocketEvent" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2555 2584]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2537 2585])
+                                    ("onActiveSocket" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("event" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ActiveSocketEvent" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2614 2645]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2594 2646])
+                                    ("onKeepAliveTimeout" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("event" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("KeepAliveTimeoutEvent" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2679 2714]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2655 2715])
+                                    ("onNoWaitingThreads" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("event" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("NoWaitingThreadsEvent" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2748 2783]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2724 2784])
+                                    ("onThreadTerminated" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("event" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ThreadTerminatedEvent" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2817 2852]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2793 2853])
+                                    ("onServerStart" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("event" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ServerStartEvent" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2881 2911]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2862 2912])
+                                    ("start" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2921 2934])
+                                    ("Worker" friend nil (reparse-symbol classsubparts) [2944 2963])
+                                    ("inputSlot" variable (:type ("MethodSlot" type
+                                         (:template-specifier 
+                                            ( ("void" type nil nil nil)
+                                              ("ServerImpl" type nil nil nil)
+                                              ("Socket" type (:reference 1) nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [3036 3084])
+                                    ("timeoutSlot" variable (:type ("MethodSlot" type
+                                         (:template-specifier 
+                                            ( ("void" type nil nil nil)
+                                              ("ServerImpl" type nil nil nil)
+                                              ("Socket" type (:reference 1) nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [3093 3143])
+                                    ("_queue" variable (:type ("Queue" type
+                                         (:template-specifier 
+                                            ( ("Socket" type (:pointer 1) nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [3153 3175])
+                                    ("_idleSockets" variable (:type ("std::set" type
+                                         (:template-specifier 
+                                            ( ("Socket" type (:pointer 1) nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [3184 3215])
+                                    ("ListenerType" type
+                                       (:typedef ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("net::TcpServer" type (:pointer 1) nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :superclasses "std::vector"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3286 3336])
+                                    ("_listener" variable (:type ("ListenerType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3345 3368])
+                                    ("Threads" type
+                                       (:typedef ("std::set" type
+                                             (:template-specifier 
+                                                ( ("Worker" type (:pointer 1) nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :superclasses "std::set"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3439 3473])
+                                    ("_threads" variable (:type ("Threads" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3482 3499])
+                                    ("_terminatedThreads" variable (:type ("Threads" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3508 3535])
+                                    ("_threadMutex" variable (:type ("Mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3544 3563])
+                                    ("_threadTerminated" variable (:type ("Condition" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3572 3600])
+                                    ("threadTerminated" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("worker" variable
+                                               (:pointer 1
+                                                :type ("Worker" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [3631 3646]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3609 3647]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1893 3650]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1669 3653]))                  
+                :type "namespace")
+                nil [1585 3655]))          
+    :file "serverimpl.h"
+    :pointmax 3695
+    :fsize 3694
+    :lastmodtime '(20853 59026 0 0)
+    :unmatched-syntax '((punctuation 2963 . 2964))
+    :lexical-table 
+        '(("CXXTOOLS_HTTP_SERVERIMPL_H")
+          )
+
+    )
+   (semanticdb-table "worker.h"
+    :file "worker.h"
+    :fsize 1825
+    :lastmodtime '(20853 59026 0 0)
+    )
+   (semanticdb-table "socket.h"
+    :file "socket.h"
+    :fsize 3743
+    :lastmodtime '(20853 59026 0 0)
+    )
+   (semanticdb-table "serverimplbase.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("CXXTOOLS_HTTP_SERVERIMPLBASE_H" variable (:constant-flag t) nil [1409 1439])
+            ("cxxtools/noncopyable.h" include (:system-flag t) nil [1441 1474])
+            ("cxxtools/http/server.h" include (:system-flag t) nil [1475 1508])
+            ("mapper.h" include nil nil [1509 1528])
+            ("cxxtools" type
+               (:members 
+                  ( ("EventLoopBase" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1552 1572])
+                    ("http" type
+                       (:members 
+                          ( ("ServerImplBase" type
+                               (:superclasses 
+                                  ( ("NonCopyable" type
+                                       (:protection "private"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [1641 1648])
+                                    ("ServerImplBase" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("eventLoop" variable
+                                               (:reference 1
+                                                :type ("EventLoopBase" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1672 1697])
+                                            ("runmodeChanged" variable
+                                               (:reference 1
+                                                :type ("Signal" type
+                                                     (:template-specifier 
+                                                        ( ("Server::Runmode" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [1698 1738]))                                          
+                                        :type ("ServerImplBase" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1657 2047])
+                                    ("ServerImplBase" function
+                                       (:destructor-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2057 2086])
+                                    ("listen" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("ip" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2116 2138])
+                                            ("port" variable (:type "unsigned short int") (reparse-symbol arg-sub-list) [2139 2163])
+                                            ("backlog" variable (:type "int") (reparse-symbol arg-sub-list) [2164 2176]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2096 2181])
+                                    ("addService" function
+                                       (:arguments 
+                                          ( ("url" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2207 2230])
+                                            ("service" variable
+                                               (:reference 1
+                                                :type ("Service" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2231 2248]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2191 2294])
+                                    ("addService" function
+                                       (:arguments 
+                                          ( ("url" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Regex" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2319 2336])
+                                            ("service" variable
+                                               (:reference 1
+                                                :type ("Service" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2337 2354]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2303 2400])
+                                    ("removeService" function
+                                       (:arguments 
+                                          ( ("service" variable
+                                               (:reference 1
+                                                :type ("Service" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2428 2445]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2409 2489])
+                                    ("getResponder" function
+                                       (:pointer 1
+                                        :arguments 
+                                          ( ("request" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Request" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2523 2546]))                                          
+                                        :type ("Responder" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2499 2600])
+                                    ("getDefaultResponder" function
+                                       (:pointer 1
+                                        :arguments 
+                                          ( ("request" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Request" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2640 2663]))                                          
+                                        :type ("Responder" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2609 2724])
+                                    ("readTimeout" function (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2734 2796])
+                                    ("writeTimeout" function (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2805 2868])
+                                    ("keepAliveTimeout" function (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2877 2944])
+                                    ("readTimeout" function
+                                       (:arguments 
+                                          ( ("ms" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2971 2986]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2954 3014])
+                                    ("writeTimeout" function
+                                       (:arguments 
+                                          ( ("ms" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3041 3056]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3023 3084])
+                                    ("keepAliveTimeout" function
+                                       (:arguments 
+                                          ( ("ms" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3115 3130]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3093 3158])
+                                    ("minThreads" function (:type "unsigned int") (reparse-symbol classsubparts) [3168 3229])
+                                    ("minThreads" function
+                                       (:arguments 
+                                          ( ("m" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3254 3265]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3238 3296])
+                                    ("maxThreads" function (:type "unsigned int") (reparse-symbol classsubparts) [3306 3367])
+                                    ("maxThreads" function
+                                       (:arguments 
+                                          ( ("m" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3392 3403]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3376 3434])
+                                    ("terminate" function
+                                       (:typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3444 3485])
+                                    ("runmode" function (:type ("Server::Runmode" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3494 3554])
+                                    ("protected" label nil (reparse-symbol classsubparts) [3560 3570])
+                                    ("runmode" function
+                                       (:arguments 
+                                          ( ("runmode" variable (:type ("Server::Runmode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3592 3616]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [3579 3706])
+                                    ("_eventLoop" variable (:type ("EventLoopBase" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3716 3742])
+                                    ("private" label nil (reparse-symbol classsubparts) [3748 3756])
+                                    ("_readTimeout" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3765 3790])
+                                    ("_writeTimeout" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3799 3825])
+                                    ("_keepAliveTimeout" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3834 3864])
+                                    ("_minThreads" variable (:type "unsigned int") (reparse-symbol classsubparts) [3874 3895])
+                                    ("_maxThreads" variable (:type "unsigned int") (reparse-symbol classsubparts) [3904 3925])
+                                    ("_runmodeChanged" variable (:type ("Signal" type
+                                         (:template-specifier 
+                                            ( ("Server::Runmode" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [3935 3976])
+                                    ("_runmode" variable (:type ("Server::Runmode" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3985 4010])
+                                    ("_mapper" variable (:type ("Mapper" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4020 4035]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1592 4038]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1574 4041]))                  
+                :type "namespace")
+                nil [1530 4043]))          
+    :file "serverimplbase.h"
+    :pointmax 4083
+    :fsize 4082
+    :lastmodtime '(20853 59026 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("CXXTOOLS_HTTP_SERVERIMPLBASE_H")
+          )
+
+    )
+   (semanticdb-table "mapper.h"
+    :file "mapper.h"
+    :fsize 2653
+    :lastmodtime '(20853 59026 0 0)
+    )
+   (semanticdb-table "worker.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("worker.h" include nil nil [1362 1381])
+            ("serverimpl.h" include nil nil [1382 1405])
+            ("cxxtools/log.h" include (:system-flag t) nil [1406 1431])
+            ("socket.h" include nil nil [1432 1451])
+            ("cxxtools" type
+               (:members 
+                  ( ("http" type
+                       (:members 
+                          ( ("run" function
+                               (:parent "Worker"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1528 3963]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1510 3967]))                  
+                :type "namespace")
+                nil [1489 3969]))          
+    :file "worker.cpp"
+    :pointmax 3970
+    :fsize 3969
+    :lastmodtime '(20853 59026 0 0)
+    :unmatched-syntax '((semantic-list 1463 . 1487) (symbol 1453 . 1463) (string 1464 . 1486))
+    )
+   (semanticdb-table "responder.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cxxtools/http/responder.h" include (:system-flag t) nil [1385 1421])
+            ("cxxtools/http/reply.h" include (:system-flag t) nil [1422 1454])
+            ("cxxtools/http/request.h" include (:system-flag t) nil [1455 1489])
+            ("cxxtools" type
+               (:members 
+                  ( ("http" type
+                       (:members 
+                          ( ("beginRequest" function
+                               (:parent "Responder"
+                                :arguments 
+                                  ( ("in" variable
+                                       (:reference 1
+                                        :type ("std::istream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1559 1576])
+                                    ("request" variable
+                                       (:reference 1
+                                        :type ("Request" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1577 1594]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1530 1623])
+                            ("readBody" function
+                               (:parent "Responder"
+                                :arguments 
+                                  ( ("in" variable
+                                       (:reference 1
+                                        :type ("std::istream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1657 1674]))                                  
+                                :type ("std::size_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1625 1901])
+                            ("replyError" function
+                               (:parent "Responder"
+                                :arguments 
+                                  ( ("out" variable
+                                       (:reference 1
+                                        :type ("std::ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1930 1948])
+                                    ("request" variable
+                                       (:reference 1
+                                        :type ("Request" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1949 1966])
+                                    ("reply" variable
+                                       (:reference 1
+                                        :type ("Reply" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1967 1980])
+                                    ("ex" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::exception" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1981 2006]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1903 2179]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1512 2182]))                  
+                :type "namespace")
+                nil [1491 2203]))          
+    :file "responder.cpp"
+    :pointmax 2226
+    :fsize 2225
+    :lastmodtime '(20853 59026 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "chunkedreader.h"
+    :file "chunkedreader.h"
+    :fsize 2772
+    :lastmodtime '(20853 59026 0 0)
+    )
+   )
+  :file "!home!work!git!cxxtools!src!http!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

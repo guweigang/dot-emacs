@@ -1,0 +1,77 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "tests.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdint.h" include (:system-flag t) nil [20 39])
+            ("stdlib.h" include (:system-flag t) nil [40 59])
+            ("string.h" include (:system-flag t) nil [60 79])
+            ("inttypes.h" include (:system-flag t) nil [80 101])
+            ("tny/tny.h" include nil nil [102 122])
+            ("printObj" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("tny" variable
+                       (:pointer 1
+                        :type ("Tny" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [138 147])
+                    ("level" variable (:type "int") (reparse-symbol arg-sub-list) [148 158]))                  
+                :type "void")
+                nil [124 159])
+            ("printElement" function
+               (:arguments 
+                  ( ("tny" variable
+                       (:pointer 1
+                        :type ("Tny" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [178 187])
+                    ("level" variable (:type "int") (reparse-symbol arg-sub-list) [188 198]))                  
+                :type "int")
+                nil [161 769])
+            ("printObj" function
+               (:arguments 
+                  ( ("tny" variable
+                       (:pointer 1
+                        :type ("Tny" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [785 794])
+                    ("level" variable (:type "int") (reparse-symbol arg-sub-list) [795 805]))                  
+                :type "void")
+                nil [771 1512])
+            ("Tny_cmp" function
+               (:arguments 
+                  ( ("left" variable
+                       (:pointer 1
+                        :type ("Tny" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1526 1536])
+                    ("right" variable
+                       (:pointer 1
+                        :type ("Tny" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1537 1548]))                  
+                :type "int")
+                nil [1514 2477])
+            ("serialize_deserialize" function
+               (:arguments 
+                  ( ("tny" variable
+                       (:pointer 1
+                        :type ("Tny" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2505 2514]))                  
+                :type "int")
+                nil [2479 2907])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2918 2923]))                  
+                :type "int")
+                nil [2909 9346]))          
+    :file "tests.c"
+    :pointmax 9347
+    :fsize 9346
+    :lastmodtime '(21061 40036 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!git!Tny!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

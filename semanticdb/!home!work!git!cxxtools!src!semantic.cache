@@ -1,0 +1,2004 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("AM_CPPFLAGS" variable (:default-value ("-I$(top_srcdir)/src" "-I$(top_builddir)/include" "-I$(top_srcdir)/include")) nil [1 85])
+            ("lib_LTLIBRARIES" variable (:default-value ("libcxxtools.la")) nil [86 119])
+            ("libcxxtools_la_SOURCES" variable (:default-value ("addrinfo.cpp" "addrinfoimpl.cpp" "application.cpp" "applicationimpl.cpp" "base64codec.cpp" "csvdeserializer.cpp" "csvformatter.cpp" "csvparser.cpp" "char.cpp" "clock.cpp" "clockimpl.cpp" "condition.cpp" "conditionimpl.cpp" "connectable.cpp" "connection.cpp" "cgi.cpp" "conversionerror.cpp" "convert.cpp" "date.cpp" "datetime.cpp" "decomposer.cpp" "deserializer.cpp" "directory.cpp" "directoryimpl.cpp" "error.cpp" "eventloop.cpp" "eventsink.cpp" "eventsource.cpp" "fdstream.cpp" "file.cpp" "filedevice.cpp" "filedeviceimpl.cpp" "fileimpl.cpp" "fileinfo.cpp" "formatter.cpp" "hdstream.cpp" "inifile.cpp" "iniparser.cpp" "iodevice.cpp" "iodeviceimpl.cpp" "ioerror.cpp" "iostream.cpp" "jsondeserializer.cpp" "jsonformatter.cpp" "jsonparser.cpp" "jsonserializer.cpp" "library.cpp" "libraryimpl.cpp" "log.cpp" "md5.c" "md5stream.cpp" "mime.cpp" "multifstream.cpp" "mutex.cpp" "muteximpl.cpp" "pipe.cpp" "pipeimpl.cpp" "posix/commandinput.cpp" "posix/commandoutput.cpp" "posix/pipestream.cpp" "posix/posixpipe.cpp" "properties.cpp" "propertiesdeserializer.cpp" "query_params.cpp" "quotedprintablestream.cpp" "regex.cpp" "selectable.cpp" "selector.cpp" "selectorimpl.cpp" "semaphore.cpp" "semaphoreimpl.cpp" "serviceregistry.cpp" "settings.cpp" "settingsreader.cpp" "settingswriter.cpp" "serializationerror.cpp" "serializationinfo.cpp" "signal.cpp" "streambuffer.cpp" "string.cpp" "stringstream.cpp" "systemerror.cpp" "tee.cpp" "textbuffer.cpp" "textcodec.cpp" "textstream.cpp" "thread.cpp" "threadimpl.cpp" "threadpool.cpp" "threadpoolimpl.cpp" "time.cpp" "timer.cpp" "timespan.cpp" "uri.cpp" "utf8codec.cpp" "uuencode.cpp" "xmltag.cpp" "net.cpp" "tcpserverimpl.cpp" "tcpserver.cpp" "tcpsocket.cpp" "tcpsocketimpl.cpp" "tcpstream.cpp" "udp.cpp" "udpstream.cpp" "xml/characters.cpp" "xml/endelement.cpp" "xml/entityresolver.cpp" "xml/namespacecontext.cpp" "xml/startelement.cpp" "xml/xmldeserializer.cpp" "xml/xmlerror.cpp" "xml/xmlformatter.cpp" "xml/xmlreader.cpp" "xml/xmlserializer.cpp" "xml/xmlwriter.cpp")) nil [120 2266])
+            ("noinst_HEADERS" variable (:default-value ("addrinfoimpl.h" "applicationimpl.h" "clockimpl.h" "conditionimpl.h" "directoryimpl.h" "error.h" "facets.cpp" "fileimpl.h" "filedeviceimpl.h" "fileinfoimpl.h" "iodeviceimpl.h" "libraryimpl.h" "md5.h" "muteximpl.h" "pipeimpl.h" "selectableimpl.h" "selectorimpl.h" "semaphoreimpl.h" "settingsreader.h" "settingswriter.h" "threadimpl.h" "threadpoolimpl.h" "unicode.h" "tcpserverimpl.h" "tcpsocketimpl.h")) nil [2267 2710])
+            ("libcxxtools_la_SOURCES" variable (:default-value ("iconvwrap.cpp" "iconvstream.cpp")) nil [2731 2793])
+            ("libcxxtools_la_SOURCES" variable (:default-value ("atomicity.sun.cpp")) nil [2822 2869])
+            ("libcxxtools_la_SOURCES" variable (:default-value ("atomicity.windows.cpp")) nil [2902 2953])
+            ("libcxxtools_la_SOURCES" variable (:default-value ("atomicity.gcc.arm.cpp")) nil [2986 3037])
+            ("libcxxtools_la_SOURCES" variable (:default-value ("atomicity.gcc.mips.cpp")) nil [3071 3123])
+            ("libcxxtools_la_SOURCES" variable (:default-value ("atomicity.gcc.ppc.cpp")) nil [3156 3207])
+            ("libcxxtools_la_SOURCES" variable (:default-value ("atomicity.gcc.x86_64.cpp")) nil [3243 3297])
+            ("libcxxtools_la_SOURCES" variable (:default-value ("atomicity.gcc.x86.cpp")) nil [3330 3381])
+            ("libcxxtools_la_SOURCES" variable (:default-value ("atomicity.gcc.sparc32.cpp")) nil [3418 3473])
+            ("libcxxtools_la_SOURCES" variable (:default-value ("atomicity.gcc.sparc64.cpp")) nil [3510 3565])
+            ("libcxxtools_la_SOURCES" variable (:default-value ("atomicity.gcc.avr32.cpp")) nil [3600 3653])
+            ("libcxxtools_la_SOURCES" variable (:default-value ("atomicity.pthread.cpp")) nil [3686 3737])
+            ("libcxxtools_la_SOURCES" variable (:default-value ("atomicity.generic.cpp")) nil [3770 3821])
+            ("libcxxtools_la_LIBADD" variable (:default-value ("$(LIBICONV)")) nil [3828 3864])
+            ("libcxxtools_la_CXXFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [3864 3908])
+            ("libcxxtools_la_LDFLAGS" variable (:default-value ("-version-info" "@sonumber@" "$(PTHREAD_LIBS)" "@SHARED_LIB_FLAG@")) nil [3908 3992]))          
+    :file "Makefile.am"
+    :pointmax 3992
+    :fsize 3991
+    :lastmodtime '(20853 59033 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "serviceregistry.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cxxtools/serviceregistry.h" include (:system-flag t) nil [1362 1399])
+            ("cxxtools" type
+               (:members 
+                  ( ("ServiceRegistry" function
+                       (:destructor-flag t
+                        :parent "ServiceRegistry"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1423 1597])
+                    ("getProcedure" function
+                       (:pointer 1
+                        :parent "ServiceRegistry"
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1647 1671]))                          
+                        :type ("ServiceProcedure" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1599 1842])
+                    ("releaseProcedure" function
+                       (:parent "ServiceRegistry"
+                        :arguments 
+                          ( ("proc" variable
+                               (:pointer 1
+                                :type ("ServiceProcedure" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1884 1907]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1845 1934])
+                    ("getProcedureNames" function
+                       (:parent "ServiceRegistry"
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [1937 2207])
+                    ("registerProcedure" function
+                       (:parent "ServiceRegistry"
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2250 2274])
+                            ("proc" variable
+                               (:pointer 1
+                                :type ("ServiceProcedure" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2275 2298]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2210 2584]))                  
+                :type "namespace")
+                nil [1401 2588]))          
+    :file "serviceregistry.cpp"
+    :pointmax 2589
+    :fsize 2588
+    :lastmodtime '(20853 59039 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "serializationinfo.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cxxtools/serializationinfo.h" include (:system-flag t) nil [1418 1457])
+            ("stdexcept" include (:system-flag t) nil [1458 1478])
+            ("sstream" include (:system-flag t) nil [1479 1497])
+            ("cxxtools" type
+               (:members 
+                  ( ("SerializationInfo" function
+                       (:constructor-flag t
+                        :parent "SerializationInfo"
+                        :type ("SerializationInfo" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1521 1607])
+                    ("SerializationInfo" function
+                       (:constructor-flag t
+                        :parent "SerializationInfo"
+                        :arguments 
+                          ( ("si" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("SerializationInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1647 1675]))                          
+                        :type ("SerializationInfo" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1610 2067])
+                    ("=" function
+                       (:operator-flag t
+                        :parent "SerializationInfo"
+                        :arguments 
+                          ( ("si" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("SerializationInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2118 2146]))                          
+                        :type ("SerializationInfo" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2070 2514])
+                    ("reserve" function
+                       (:parent "SerializationInfo"
+                        :arguments 
+                          ( ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2549 2558]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2517 2585])
+                    ("addMember" function
+                       (:parent "SerializationInfo"
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2636 2660]))                          
+                        :type ("SerializationInfo" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2588 3229])
+                    ("begin" function
+                       (:parent "SerializationInfo"
+                        :type ("SerializationInfo::Iterator" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3232 3363])
+                    ("end" function
+                       (:parent "SerializationInfo"
+                        :type ("SerializationInfo::Iterator" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3366 3507])
+                    ("begin" function
+                       (:parent "SerializationInfo"
+                        :type ("SerializationInfo::ConstIterator" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3510 3652])
+                    ("end" function
+                       (:parent "SerializationInfo"
+                        :type ("SerializationInfo::ConstIterator" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3655 3807])
+                    ("getMember" function
+                       (:parent "SerializationInfo"
+                        :constant-flag t
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3864 3888]))                          
+                        :type ("SerializationInfo" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3810 4096])
+                    ("getMember" function
+                       (:parent "SerializationInfo"
+                        :constant-flag t
+                        :arguments 
+                          ( ("idx" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4153 4166]))                          
+                        :type ("SerializationInfo" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4099 4417])
+                    ("findMember" function
+                       (:pointer 1
+                        :parent "SerializationInfo"
+                        :constant-flag t
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4475 4499]))                          
+                        :type ("SerializationInfo" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4420 4679])
+                    ("findMember" function
+                       (:pointer 1
+                        :parent "SerializationInfo"
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4731 4755]))                          
+                        :type ("SerializationInfo" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4682 4923])
+                    ("clear" function
+                       (:parent "SerializationInfo"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4925 5205])
+                    ("swap" function
+                       (:parent "SerializationInfo"
+                        :arguments 
+                          ( ("si" variable
+                               (:reference 1
+                                :type ("SerializationInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5236 5258]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5207 7579])
+                    ("dump" function
+                       (:parent "SerializationInfo"
+                        :arguments 
+                          ( ("out" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7610 7628])
+                            ("praefix" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7629 7656]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7581 9228])
+                    ("_releaseValue" function
+                       (:parent "SerializationInfo"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [9230 9655])
+                    ("setNull" function
+                       (:parent "SerializationInfo"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [9657 9754])
+                    ("_setString" function
+                       (:parent "SerializationInfo"
+                        :arguments 
+                          ( ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9791 9811]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [9756 10019])
+                    ("_setString8" function
+                       (:parent "SerializationInfo"
+                        :arguments 
+                          ( ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10057 10082]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [10021 10299])
+                    ("_setString8" function
+                       (:parent "SerializationInfo"
+                        :arguments 
+                          ( ("value" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [10337 10355]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [10301 10572])
+                    ("_setChar" function
+                       (:parent "SerializationInfo"
+                        :arguments 
+                          ( ("value" variable (:type "char") (reparse-symbol arg-sub-list) [10607 10618]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [10574 10746])
+                    ("_setBool" function
+                       (:parent "SerializationInfo"
+                        :arguments 
+                          ( ("value" variable (:type "bool") (reparse-symbol arg-sub-list) [10781 10792]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [10748 10920])
+                    ("_setInt" function
+                       (:parent "SerializationInfo"
+                        :arguments 
+                          ( ("value" variable (:type ("int_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10954 10969]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [10922 11095])
+                    ("_setUInt" function
+                       (:parent "SerializationInfo"
+                        :arguments 
+                          ( ("value" variable (:type ("unsigned_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11130 11150]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [11097 11277])
+                    ("_setFloat" function
+                       (:parent "SerializationInfo"
+                        :arguments 
+                          ( ("value" variable (:type "long double") (reparse-symbol arg-sub-list) [11313 11331]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [11279 11461])
+                    ("getValue" function
+                       (:parent "SerializationInfo"
+                        :arguments 
+                          ( ("value" variable
+                               (:reference 1
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11497 11511]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [11464 11979])
+                    ("getValue" function
+                       (:parent "SerializationInfo"
+                        :arguments 
+                          ( ("value" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12014 12033]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [11981 12504])
+                    ("unnamed" type
+                       (:members 
+                          ( ("isFalse" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("c" variable (:type "char") (reparse-symbol arg-sub-list) [12542 12549]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [12522 12707]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [12506 12709])
+                    ("_getBool" function
+                       (:parent "SerializationInfo"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [12711 13230])
+                    ("_getWChar" function
+                       (:parent "SerializationInfo"
+                        :type "wchar_t")
+                        (reparse-symbol namespacesubparts) [13232 13751])
+                    ("_getChar" function
+                       (:parent "SerializationInfo"
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [13753 14321])
+                    ("_getInt" function
+                       (:parent "SerializationInfo"
+                        :arguments 
+                          ( ("type" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [14378 14395])
+                            ("min" variable (:type ("int_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14396 14409])
+                            ("max" variable (:type ("int_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14410 14423]))                          
+                        :type ("SerializationInfo::int_type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [14323 16076])
+                    ("_getUInt" function
+                       (:parent "SerializationInfo"
+                        :arguments 
+                          ( ("type" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [16139 16156])
+                            ("max" variable (:type ("unsigned_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16157 16175]))                          
+                        :type ("SerializationInfo::unsigned_type" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [16078 17652])
+                    ("_getFloat" function
+                       (:parent "SerializationInfo"
+                        :arguments 
+                          ( ("type" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [17695 17712])
+                            ("max" variable (:type "long double") (reparse-symbol arg-sub-list) [17713 17729]))                          
+                        :type "long double")
+                        (reparse-symbol namespacesubparts) [17654 19190]))                  
+                :type "namespace")
+                nil [1499 19194]))          
+    :file "serializationinfo.cpp"
+    :pointmax 19217
+    :fsize 19216
+    :lastmodtime '(20853 59039 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "deserializer.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cxxtools/deserializer.h" include nil nil [1365 1399])
+            ("stdexcept" include (:system-flag t) nil [1400 1420])
+            ("cxxtools" type
+               (:members 
+                  ( ("setCategory" function
+                       (:parent "DeserializerBase"
+                        :arguments 
+                          ( ("category" variable (:type ("SerializationInfo::Category" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1482 1519]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1447 1572])
+                    ("setName" function
+                       (:parent "DeserializerBase"
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1609 1633]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1578 1678])
+                    ("setTypeName" function
+                       (:parent "DeserializerBase"
+                        :arguments 
+                          ( ("type" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1719 1743]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1684 1792])
+                    ("setValue" function
+                       (:parent "DeserializerBase"
+                        :arguments 
+                          ( ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1830 1850]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1798 1897])
+                    ("setValue" function
+                       (:parent "DeserializerBase"
+                        :arguments 
+                          ( ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1935 1960]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1903 2007])
+                    ("setValue" function
+                       (:parent "DeserializerBase"
+                        :arguments 
+                          ( ("value" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2045 2063]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2013 2110])
+                    ("setValue" function
+                       (:parent "DeserializerBase"
+                        :arguments 
+                          ( ("value" variable (:type "bool") (reparse-symbol arg-sub-list) [2148 2159]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2116 2206])
+                    ("setValue" function
+                       (:parent "DeserializerBase"
+                        :arguments 
+                          ( ("value" variable (:type ("int_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2244 2259]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2212 2306])
+                    ("setValue" function
+                       (:parent "DeserializerBase"
+                        :arguments 
+                          ( ("value" variable (:type ("unsigned_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2344 2364]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2312 2411])
+                    ("setValue" function
+                       (:parent "DeserializerBase"
+                        :arguments 
+                          ( ("value" variable (:type "long double") (reparse-symbol arg-sub-list) [2449 2467]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2417 2514])
+                    ("setNull" function
+                       (:parent "DeserializerBase"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2520 2593])
+                    ("beginMember" function
+                       (:parent "DeserializerBase"
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2634 2658])
+                            ("type" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2659 2683])
+                            ("category" variable (:type ("SerializationInfo::Category" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2684 2721]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2599 2892])
+                    ("leaveMember" function
+                       (:parent "DeserializerBase"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2898 3096]))                  
+                :type "namespace")
+                nil [1422 3099]))          
+    :file "deserializer.cpp"
+    :pointmax 3122
+    :fsize 3121
+    :lastmodtime '(20853 59036 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "formatter.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cxxtools/formatter.h" include (:system-flag t) nil [1365 1396])
+            ("cxxtools/convert.h" include (:system-flag t) nil [1397 1426])
+            ("cxxtools" type
+               (:members 
+                  ( ("addValueStdString" function
+                       (:parent "Formatter"
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1483 1507])
+                            ("type" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1508 1532])
+                            ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1558 1583]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1449 1641])
+                    ("addValueBool" function
+                       (:parent "Formatter"
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1672 1696])
+                            ("type" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1697 1721])
+                            ("value" variable (:type "bool") (reparse-symbol arg-sub-list) [1747 1758]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1643 1818])
+                    ("addValueInt" function
+                       (:parent "Formatter"
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1848 1872])
+                            ("type" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1873 1897])
+                            ("value" variable (:type ("int_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1923 1938]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1820 1998])
+                    ("addValueUnsigned" function
+                       (:parent "Formatter"
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2033 2057])
+                            ("type" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2058 2082])
+                            ("value" variable (:type ("unsigned_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2108 2128]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2000 2188])
+                    ("addValueFloat" function
+                       (:parent "Formatter"
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2220 2244])
+                            ("type" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2245 2269])
+                            ("value" variable (:type "long double") (reparse-symbol arg-sub-list) [2295 2313]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2190 2373])
+                    ("addNull" function
+                       (:parent "Formatter"
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2399 2423])
+                            ("type" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2424 2448]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2375 2494]))                  
+                :type "namespace")
+                nil [1428 2497]))          
+    :file "formatter.cpp"
+    :pointmax 2499
+    :fsize 2498
+    :lastmodtime '(20853 59033 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "decomposer.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cxxtools/decomposer.h" include nil nil [1367 1399])
+            ("cxxtools/formatter.h" include nil nil [1400 1431])
+            ("cxxtools" type
+               (:members 
+                  ( ("formatEach" function
+                       (:parent "IDecomposer"
+                        :arguments 
+                          ( ("si" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("SerializationInfo" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1484 1512])
+                            ("formatter" variable
+                               (:reference 1
+                                :type ("Formatter" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1513 1534]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1455 3528]))                  
+                :type "namespace")
+                nil [1433 3532]))          
+    :file "decomposer.cpp"
+    :pointmax 3555
+    :fsize 3554
+    :lastmodtime '(20853 59033 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "convert.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cxxtools/convert.h" include (:system-flag t) nil [1362 1391])
+            ("iomanip" include (:system-flag t) nil [1392 1410])
+            ("limits" include (:system-flag t) nil [1411 1428])
+            ("cctype" include (:system-flag t) nil [1429 1446])
+            ("cxxtools" type
+               (:members 
+                  ( ("_skipws" function
+                       (:template 
+                          ( ("IterT" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("it" variable
+                               (:reference 1
+                                :type ("IterT" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1509 1519])
+                            ("end" variable (:type ("IterT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1520 1530]))                          )
+                        (reparse-symbol namespacesubparts) [1470 1586])
+                    ("nullterm_array_iterator" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1696 1703])
+                            ("nullterm_array_iterator" function
+                               (:constructor-flag t
+                                :type ("nullterm_array_iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1712 1767])
+                            ("nullterm_array_iterator" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("ptr" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1810 1823]))                                  
+                                :type ("nullterm_array_iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1786 1919])
+                            ("=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("it" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("nullterm_array_iterator" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1967 2004]))                                  
+                                :type ("nullterm_array_iterator" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [1929 2078])
+                            ("==" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("it" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("nullterm_array_iterator" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [2104 2141]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2088 2203])
+                            ("!=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("it" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("nullterm_array_iterator" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [2229 2266]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2213 2328])
+                            ("" variable
+                               (:functionpointer-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2338 2410])
+                            ("++" function
+                               (:operator-flag t
+                                :type ("nullterm_array_iterator" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [2420 2565])
+                            ("++" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [2613 2617]))                                  
+                                :type ("nullterm_array_iterator" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [2575 2722])
+                            ("private" label nil (reparse-symbol classsubparts) [2728 2736])
+                            ("_ptr" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2745 2759]))                          
+                        :superclasses 
+                          ( ("std::iterator" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1588 2762])
+                    ("convertInt" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("n" variable
+                               (:reference 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2802 2807])
+                            ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2808 2826])
+                            ("typeto" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2827 2846]))                          )
+                        (reparse-symbol namespacesubparts) [2764 3118])
+                    ("convertInt" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("n" variable
+                               (:reference 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3159 3164])
+                            ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3165 3188])
+                            ("typeto" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [3189 3208]))                          )
+                        (reparse-symbol namespacesubparts) [3121 3453])
+                    ("convertInt" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("n" variable
+                               (:reference 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3494 3499])
+                            ("str" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [3500 3516])
+                            ("typeto" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [3517 3536]))                          )
+                        (reparse-symbol namespacesubparts) [3456 3797])
+                    ("convertFloat" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("n" variable
+                               (:reference 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3839 3844])
+                            ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3845 3863])
+                            ("typeto" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [3864 3883]))                          )
+                        (reparse-symbol namespacesubparts) [3799 4152])
+                    ("convertFloat" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("n" variable
+                               (:reference 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4195 4200])
+                            ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4201 4224])
+                            ("typeto" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [4225 4244]))                          )
+                        (reparse-symbol namespacesubparts) [4155 4487])
+                    ("convertFloat" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("n" variable
+                               (:reference 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4530 4535])
+                            ("str" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [4536 4552])
+                            ("typeto" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [4553 4572]))                          )
+                        (reparse-symbol namespacesubparts) [4490 4840])
+                    ("convert" function
+                       (:arguments 
+                          ( ("s" variable
+                               (:reference 1
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4897 4907])
+                            ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4908 4933]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4884 4967])
+                    ("convert" function
+                       (:arguments 
+                          ( ("str" variable
+                               (:reference 1
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4982 4994])
+                            ("value" variable (:type "bool") (reparse-symbol arg-sub-list) [4995 5006]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4969 5148])
+                    ("convert" function
+                       (:arguments 
+                          ( ("str" variable
+                               (:reference 1
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5163 5175])
+                            ("value" variable (:type "char") (reparse-symbol arg-sub-list) [5176 5187]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5150 5225])
+                    ("convert" function
+                       (:arguments 
+                          ( ("str" variable
+                               (:reference 1
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5240 5252])
+                            ("value" variable (:type "wchar_t") (reparse-symbol arg-sub-list) [5253 5267]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5227 5305])
+                    ("convert" function
+                       (:arguments 
+                          ( ("str" variable
+                               (:reference 1
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5320 5332])
+                            ("value" variable (:type ("Char" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5333 5344]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5307 5376])
+                    ("convert" function
+                       (:arguments 
+                          ( ("str" variable
+                               (:reference 1
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5391 5403])
+                            ("value" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [5404 5424]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5378 5489])
+                    ("convert" function
+                       (:arguments 
+                          ( ("str" variable
+                               (:reference 1
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5505 5517])
+                            ("value" variable (:type "signed char") (reparse-symbol arg-sub-list) [5518 5536]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5492 5601])
+                    ("convert" function
+                       (:arguments 
+                          ( ("str" variable
+                               (:reference 1
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5617 5629])
+                            ("value" variable (:type "short") (reparse-symbol arg-sub-list) [5630 5642]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5604 5707])
+                    ("convert" function
+                       (:arguments 
+                          ( ("str" variable
+                               (:reference 1
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5723 5735])
+                            ("value" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [5736 5757]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5710 5822])
+                    ("convert" function
+                       (:arguments 
+                          ( ("str" variable
+                               (:reference 1
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5838 5850])
+                            ("value" variable (:type "int") (reparse-symbol arg-sub-list) [5851 5861]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5825 5926])
+                    ("convert" function
+                       (:arguments 
+                          ( ("str" variable
+                               (:reference 1
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5942 5954])
+                            ("value" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5955 5974]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5929 6039])
+                    ("convert" function
+                       (:arguments 
+                          ( ("str" variable
+                               (:reference 1
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6055 6067])
+                            ("value" variable (:type "long") (reparse-symbol arg-sub-list) [6068 6079]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6042 6144])
+                    ("convert" function
+                       (:arguments 
+                          ( ("str" variable
+                               (:reference 1
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6160 6172])
+                            ("value" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [6173 6193]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6147 6258])
+                    ("convert" function
+                       (:arguments 
+                          ( ("str" variable
+                               (:reference 1
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6274 6286])
+                            ("value" variable (:type "float") (reparse-symbol arg-sub-list) [6287 6299]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6261 6366])
+                    ("convert" function
+                       (:arguments 
+                          ( ("str" variable
+                               (:reference 1
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6382 6394])
+                            ("value" variable (:type "double") (reparse-symbol arg-sub-list) [6395 6408]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6369 6475])
+                    ("convert" function
+                       (:arguments 
+                          ( ("str" variable
+                               (:reference 1
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6491 6503])
+                            ("value" variable (:type "long double") (reparse-symbol arg-sub-list) [6504 6522]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6478 6589])
+                    ("convert" function
+                       (:arguments 
+                          ( ("n" variable
+                               (:reference 1
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [6648 6656])
+                            ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6657 6675]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6635 6883])
+                    ("convert" function
+                       (:arguments 
+                          ( ("c" variable
+                               (:reference 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [6898 6906])
+                            ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6907 6925]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6885 7030])
+                    ("convert" function
+                       (:arguments 
+                          ( ("c" variable
+                               (:reference 1
+                                :type "wchar_t")
+                                (reparse-symbol arg-sub-list) [7045 7056])
+                            ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7057 7075]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7032 7184])
+                    ("convert" function
+                       (:arguments 
+                          ( ("c" variable
+                               (:reference 1
+                                :type ("Char" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7199 7207])
+                            ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7208 7226]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7186 7320])
+                    ("convert" function
+                       (:arguments 
+                          ( ("n" variable
+                               (:reference 1
+                                :type "unsigned char")
+                                (reparse-symbol arg-sub-list) [7335 7352])
+                            ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7353 7371]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7322 7416])
+                    ("convert" function
+                       (:arguments 
+                          ( ("n" variable
+                               (:reference 1
+                                :type "signed char")
+                                (reparse-symbol arg-sub-list) [7432 7447])
+                            ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7448 7466]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7419 7509])
+                    ("convert" function
+                       (:arguments 
+                          ( ("n" variable
+                               (:reference 1
+                                :type "short")
+                                (reparse-symbol arg-sub-list) [7525 7534])
+                            ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7535 7553]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7512 7590])
+                    ("convert" function
+                       (:arguments 
+                          ( ("n" variable
+                               (:reference 1
+                                :type "unsigned short")
+                                (reparse-symbol arg-sub-list) [7606 7624])
+                            ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7625 7643]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7593 7689])
+                    ("convert" function
+                       (:arguments 
+                          ( ("n" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [7705 7712])
+                            ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7713 7731]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7692 7766])
+                    ("convert" function
+                       (:arguments 
+                          ( ("n" variable
+                               (:reference 1
+                                :type "unsigned int")
+                                (reparse-symbol arg-sub-list) [7782 7798])
+                            ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7799 7817]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7769 7861])
+                    ("convert" function
+                       (:arguments 
+                          ( ("n" variable
+                               (:reference 1
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [7877 7885])
+                            ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7886 7904]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7864 7940])
+                    ("convert" function
+                       (:arguments 
+                          ( ("n" variable
+                               (:reference 1
+                                :type "unsigned long")
+                                (reparse-symbol arg-sub-list) [7956 7973])
+                            ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7974 7992]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7943 8037])
+                    ("convert" function
+                       (:arguments 
+                          ( ("n" variable
+                               (:reference 1
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [8316 8325])
+                            ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8326 8344]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8303 8383])
+                    ("convert" function
+                       (:arguments 
+                          ( ("n" variable
+                               (:reference 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [8399 8409])
+                            ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8410 8428]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8386 8468])
+                    ("convert" function
+                       (:arguments 
+                          ( ("n" variable
+                               (:reference 1
+                                :type "long double")
+                                (reparse-symbol arg-sub-list) [8484 8499])
+                            ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8500 8518]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8471 8563])
+                    ("convert" function
+                       (:arguments 
+                          ( ("s" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8615 8630])
+                            ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8631 8649]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8602 8675])
+                    ("convert" function
+                       (:arguments 
+                          ( ("str" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8691 8708])
+                            ("value" variable (:type "bool") (reparse-symbol arg-sub-list) [8709 8720]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8678 8854])
+                    ("convert" function
+                       (:arguments 
+                          ( ("str" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8870 8887])
+                            ("value" variable (:type "char") (reparse-symbol arg-sub-list) [8888 8899]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8857 8938])
+                    ("convert" function
+                       (:arguments 
+                          ( ("str" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8954 8971])
+                            ("value" variable (:type "signed char") (reparse-symbol arg-sub-list) [8972 8990]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8941 9055])
+                    ("convert" function
+                       (:arguments 
+                          ( ("str" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9071 9088])
+                            ("value" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [9089 9109]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [9058 9174])
+                    ("convert" function
+                       (:arguments 
+                          ( ("str" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9190 9207])
+                            ("value" variable (:type "short") (reparse-symbol arg-sub-list) [9208 9220]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [9177 9285])
+                    ("convert" function
+                       (:arguments 
+                          ( ("str" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9301 9318])
+                            ("value" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [9319 9340]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [9288 9405])
+                    ("convert" function
+                       (:arguments 
+                          ( ("str" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9421 9438])
+                            ("value" variable (:type "int") (reparse-symbol arg-sub-list) [9439 9449]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [9408 9514])
+                    ("convert" function
+                       (:arguments 
+                          ( ("str" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9530 9547])
+                            ("value" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9548 9567]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [9517 9632])
+                    ("convert" function
+                       (:arguments 
+                          ( ("str" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9648 9665])
+                            ("value" variable (:type "long") (reparse-symbol arg-sub-list) [9666 9677]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [9635 9742])
+                    ("convert" function
+                       (:arguments 
+                          ( ("str" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9758 9775])
+                            ("value" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [9776 9796]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [9745 9861])
+                    ("convert" function
+                       (:arguments 
+                          ( ("str" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9877 9894])
+                            ("value" variable (:type "float") (reparse-symbol arg-sub-list) [9895 9907]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [9864 9974])
+                    ("convert" function
+                       (:arguments 
+                          ( ("str" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9990 10007])
+                            ("value" variable (:type "double") (reparse-symbol arg-sub-list) [10008 10021]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [9977 10088])
+                    ("convert" function
+                       (:arguments 
+                          ( ("str" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10104 10121])
+                            ("value" variable (:type "long double") (reparse-symbol arg-sub-list) [10122 10140]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [10091 10207])
+                    ("convert" function
+                       (:arguments 
+                          ( ("n" variable
+                               (:reference 1
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [10261 10269])
+                            ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10270 10293]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [10248 10488])
+                    ("convert" function
+                       (:arguments 
+                          ( ("c" variable
+                               (:reference 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [10504 10512])
+                            ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10513 10536]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [10491 10647])
+                    ("convert" function
+                       (:arguments 
+                          ( ("n" variable
+                               (:reference 1
+                                :type "signed char")
+                                (reparse-symbol arg-sub-list) [10663 10678])
+                            ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10679 10702]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [10650 10745])
+                    ("convert" function
+                       (:arguments 
+                          ( ("n" variable
+                               (:reference 1
+                                :type "unsigned char")
+                                (reparse-symbol arg-sub-list) [10761 10778])
+                            ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10779 10802]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [10748 10847])
+                    ("convert" function
+                       (:arguments 
+                          ( ("n" variable
+                               (:reference 1
+                                :type "short")
+                                (reparse-symbol arg-sub-list) [10863 10872])
+                            ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10873 10896]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [10850 10933])
+                    ("convert" function
+                       (:arguments 
+                          ( ("n" variable
+                               (:reference 1
+                                :type "unsigned short")
+                                (reparse-symbol arg-sub-list) [10949 10967])
+                            ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10968 10991]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [10936 11037])
+                    ("convert" function
+                       (:arguments 
+                          ( ("n" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [11053 11060])
+                            ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11061 11084]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [11040 11119])
+                    ("convert" function
+                       (:arguments 
+                          ( ("n" variable
+                               (:reference 1
+                                :type "unsigned int")
+                                (reparse-symbol arg-sub-list) [11135 11151])
+                            ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11152 11175]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [11122 11219])
+                    ("convert" function
+                       (:arguments 
+                          ( ("n" variable
+                               (:reference 1
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [11235 11243])
+                            ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11244 11267]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [11222 11303])
+                    ("convert" function
+                       (:arguments 
+                          ( ("n" variable
+                               (:reference 1
+                                :type "unsigned long")
+                                (reparse-symbol arg-sub-list) [11319 11336])
+                            ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11337 11360]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [11306 11405])
+                    ("convert" function
+                       (:arguments 
+                          ( ("n" variable
+                               (:reference 1
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [11696 11705])
+                            ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11706 11729]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [11683 11768])
+                    ("convert" function
+                       (:arguments 
+                          ( ("n" variable
+                               (:reference 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [11784 11794])
+                            ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11795 11818]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [11771 11858])
+                    ("convert" function
+                       (:arguments 
+                          ( ("n" variable
+                               (:reference 1
+                                :type "long double")
+                                (reparse-symbol arg-sub-list) [11874 11889])
+                            ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [11890 11913]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [11861 11958])
+                    ("convert" function
+                       (:arguments 
+                          ( ("n" variable
+                               (:reference 1
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [12012 12020])
+                            ("str" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [12021 12037]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [11999 12277])
+                    ("convert" function
+                       (:arguments 
+                          ( ("c" variable
+                               (:reference 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [12293 12301])
+                            ("str" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [12302 12318]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [12280 12414])
+                    ("convert" function
+                       (:arguments 
+                          ( ("n" variable
+                               (:reference 1
+                                :type "signed char")
+                                (reparse-symbol arg-sub-list) [12430 12445])
+                            ("str" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [12446 12462]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [12417 12505])
+                    ("convert" function
+                       (:arguments 
+                          ( ("n" variable
+                               (:reference 1
+                                :type "unsigned char")
+                                (reparse-symbol arg-sub-list) [12521 12538])
+                            ("str" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [12539 12555]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [12508 12600])
+                    ("convert" function
+                       (:arguments 
+                          ( ("n" variable
+                               (:reference 1
+                                :type "short")
+                                (reparse-symbol arg-sub-list) [12616 12625])
+                            ("str" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [12626 12642]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [12603 12679])
+                    ("convert" function
+                       (:arguments 
+                          ( ("n" variable
+                               (:reference 1
+                                :type "unsigned short")
+                                (reparse-symbol arg-sub-list) [12695 12713])
+                            ("str" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [12714 12730]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [12682 12776])
+                    ("convert" function
+                       (:arguments 
+                          ( ("n" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [12792 12799])
+                            ("str" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [12800 12816]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [12779 12851])
+                    ("convert" function
+                       (:arguments 
+                          ( ("n" variable
+                               (:reference 1
+                                :type "unsigned int")
+                                (reparse-symbol arg-sub-list) [12867 12883])
+                            ("str" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [12884 12900]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [12854 12944])
+                    ("convert" function
+                       (:arguments 
+                          ( ("n" variable
+                               (:reference 1
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [12960 12968])
+                            ("str" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [12969 12985]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [12947 13021])
+                    ("convert" function
+                       (:arguments 
+                          ( ("n" variable
+                               (:reference 1
+                                :type "unsigned long")
+                                (reparse-symbol arg-sub-list) [13037 13054])
+                            ("str" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [13055 13071]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [13024 13116])
+                    ("convert" function
+                       (:arguments 
+                          ( ("n" variable
+                               (:reference 1
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [13391 13400])
+                            ("str" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [13401 13417]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [13378 13456])
+                    ("convert" function
+                       (:arguments 
+                          ( ("n" variable
+                               (:reference 1
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [13472 13482])
+                            ("str" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [13483 13499]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [13459 13539])
+                    ("convert" function
+                       (:arguments 
+                          ( ("n" variable
+                               (:reference 1
+                                :type "long double")
+                                (reparse-symbol arg-sub-list) [13555 13570])
+                            ("str" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [13571 13587]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [13542 13632]))                  
+                :type "namespace")
+                nil [1448 13636]))          
+    :file "convert.cpp"
+    :pointmax 13637
+    :fsize 13636
+    :lastmodtime '(20853 59033 0 0)
+    :unmatched-syntax '((EXPLICIT 1777 . 1785))
+    )
+   (semanticdb-table "jsonformatter.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cxxtools/jsonformatter.h" include (:system-flag t) nil [1363 1398])
+            ("cxxtools/convert.h" include (:system-flag t) nil [1399 1428])
+            ("cxxtools/log.h" include (:system-flag t) nil [1429 1454])
+            ("limits" include (:system-flag t) nil [1455 1472])
+            ("cxxtools" type
+               (:members 
+                  ( ("unnamed" type
+                       (:members 
+                          ( ("checkTs" function
+                               (:arguments 
+                                  ( ("_ts" variable
+                                       (:pointer 1
+                                        :type ("std::basic_ostream" type
+                                             (:template-specifier 
+                                                ( ("Char" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1564 1594]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1551 1707]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1534 1710])
+                    ("begin" function
+                       (:parent "JsonFormatter"
+                        :arguments 
+                          ( ("ts" variable
+                               (:reference 1
+                                :type ("std::basic_ostream" type
+                                     (:template-specifier 
+                                        ( ("Char" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1738 1767]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1712 1823])
+                    ("finish" function
+                       (:parent "JsonFormatter"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1825 1961])
+                    ("addValueString" function
+                       (:parent "JsonFormatter"
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1998 2022])
+                            ("type" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2023 2047])
+                            ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2070 2090]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1963 2765])
+                    ("addValueStdString" function
+                       (:parent "JsonFormatter"
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2805 2829])
+                            ("type" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2830 2854])
+                            ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2877 2902]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2767 3583])
+                    ("addValueBool" function
+                       (:parent "JsonFormatter"
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3618 3642])
+                            ("type" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3643 3667])
+                            ("value" variable (:type "bool") (reparse-symbol arg-sub-list) [3690 3701]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3585 3900])
+                    ("addValueInt" function
+                       (:parent "JsonFormatter"
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3934 3958])
+                            ("type" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3959 3983])
+                            ("value" variable (:type ("int_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4006 4021]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3902 4270])
+                    ("addValueUnsigned" function
+                       (:parent "JsonFormatter"
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4309 4333])
+                            ("type" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4334 4358])
+                            ("value" variable (:type ("unsigned_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4381 4401]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4272 4655])
+                    ("addValueFloat" function
+                       (:parent "JsonFormatter"
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4691 4715])
+                            ("type" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4716 4740])
+                            ("value" variable (:type "long double") (reparse-symbol arg-sub-list) [4763 4781]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [4657 5201])
+                    ("addNull" function
+                       (:parent "JsonFormatter"
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5231 5255])
+                            ("type" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5256 5280]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5203 5346])
+                    ("beginArray" function
+                       (:parent "JsonFormatter"
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5379 5403])
+                            ("type" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5404 5428]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5348 5892])
+                    ("finishArray" function
+                       (:parent "JsonFormatter"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [5894 6079])
+                    ("beginObject" function
+                       (:parent "JsonFormatter"
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6113 6137])
+                            ("type" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6138 6162]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6081 6680])
+                    ("beginMember" function
+                       (:parent "JsonFormatter"
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6714 6738]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6682 6742])
+                    ("finishMember" function
+                       (:parent "JsonFormatter"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6744 6782])
+                    ("finishObject" function
+                       (:parent "JsonFormatter"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6784 7002])
+                    ("indent" function
+                       (:parent "JsonFormatter"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7004 7101])
+                    ("stringOut" function
+                       (:parent "JsonFormatter"
+                        :arguments 
+                          ( ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7133 7156]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7103 8279])
+                    ("stringOut" function
+                       (:parent "JsonFormatter"
+                        :arguments 
+                          ( ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("cxxtools::String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [8311 8339]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [8281 9408])
+                    ("beginValue" function
+                       (:parent "JsonFormatter"
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9441 9465]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [9410 10042])
+                    ("finishValue" function
+                       (:parent "JsonFormatter"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [10044 10095]))                  
+                :type "namespace")
+                nil [1512 10098]))          
+    :file "jsonformatter.cpp"
+    :pointmax 10099
+    :fsize 10098
+    :lastmodtime '(20853 59040 0 0)
+    :unmatched-syntax '((semantic-list 1484 . 1510) (symbol 1474 . 1484) (string 1485 . 1509))
+    )
+   (semanticdb-table "jsonparser.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cxxtools/jsonparser.h" include (:system-flag t) nil [1362 1394])
+            ("cxxtools/deserializerbase.h" include (:system-flag t) nil [1395 1433])
+            ("cxxtools/serializationerror.h" include (:system-flag t) nil [1434 1474])
+            ("cxxtools/utf8codec.h" include (:system-flag t) nil [1475 1506])
+            ("cxxtools/log.h" include (:system-flag t) nil [1507 1532])
+            ("cctype" include (:system-flag t) nil [1533 1550])
+            ("cxxtools" type
+               (:members 
+                  ( ("advance" function
+                       (:parent "JsonParser::JsonStringParser"
+                        :arguments 
+                          ( ("ch" variable (:type ("Char" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1652 1660]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [1609 3329])
+                    ("JsonParser" function
+                       (:constructor-flag t
+                        :parent "JsonParser"
+                        :type ("JsonParser" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3331 3398])
+                    ("advance" function
+                       (:parent "JsonParser"
+                        :arguments 
+                          ( ("ch" variable (:type ("Char" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3424 3432]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [3400 13093])
+                    ("finish" function
+                       (:parent "JsonParser"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [13095 14570]))                  
+                :type "namespace")
+                nil [1588 14573]))          
+    :file "jsonparser.cpp"
+    :pointmax 14574
+    :fsize 14573
+    :lastmodtime '(20853 59036 0 0)
+    :unmatched-syntax '((semantic-list 1562 . 1586) (symbol 1552 . 1562) (string 1563 . 1585))
+    )
+   )
+  :file "!home!work!git!cxxtools!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

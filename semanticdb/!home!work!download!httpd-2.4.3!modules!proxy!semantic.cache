@@ -1,0 +1,315 @@
+;; Object proxy/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "proxy/"
+  :tables (list 
+   (semanticdb-table "mod_proxy_fcgi.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("mod_proxy.h" include nil nil [801 823])
+            ("fcgi_protocol.h" include nil nil [824 850])
+            ("util_script.h" include nil nil [851 875])
+            ("proxy_fcgi_module" variable (:type ("AP_MODULE_DECLARE_DATA" type (:type "class") nil nil)) nil [884 925])
+            ("fcgi_header_to_array" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("h" variable
+                       (:pointer 1
+                        :type ("fcgi_header" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1298 1313])
+                    ("a" variable
+                       (:dereference 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [1314 1332]))                  
+                :type "void")
+                nil [1265 1780])
+            ("fcgi_header_from_array" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("h" variable
+                       (:pointer 1
+                        :type ("fcgi_header" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1817 1832])
+                    ("a" variable
+                       (:dereference 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [1833 1851]))                  
+                :type "void")
+                nil [1782 2307])
+            ("fcgi_begin_request_body_to_array" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("h" variable
+                       (:pointer 1
+                        :type ("fcgi_begin_request_body" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2354 2381])
+                    ("a" variable
+                       (:dereference 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [2427 2445]))                  
+                :type "void")
+                nil [2309 2841])
+            ("proxy_fcgi_canon" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("request_rec" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3041 3056])
+                    ("url" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3057 3067]))                  
+                :type "int")
+                nil [3013 4632])
+            ("fill_in_header" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("header" variable
+                       (:pointer 1
+                        :type ("fcgi_header" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4848 4868])
+                    ("type" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [4896 4915])
+                    ("request_id" variable (:type ("apr_uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4943 4967])
+                    ("content_len" variable (:type ("apr_uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4995 5020])
+                    ("padding_len" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [5048 5074]))                  
+                :type "void")
+                nil [4821 5427])
+            ("send_data" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("proxy_conn_rec" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5534 5555])
+                    ("vec" variable
+                       (:pointer 1
+                        :type ("iovec" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5586 5604])
+                    ("nvec" variable (:type "int") (reparse-symbol arg-sub-list) [5635 5644])
+                    ("len" variable
+                       (:pointer 1
+                        :type ("apr_size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5675 5691])
+                    ("blocking" variable (:type "int") (reparse-symbol arg-sub-list) [5722 5735]))                  
+                :type ("apr_status_t" type (:type "class") nil nil))
+                nil [5504 7247])
+            ("get_data" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("proxy_conn_rec" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7352 7373])
+                    ("buffer" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7403 7416])
+                    ("buflen" variable
+                       (:pointer 1
+                        :type ("apr_size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7446 7465]))                  
+                :type ("apr_status_t" type (:type "class") nil nil))
+                nil [7323 7630])
+            ("send_begin_request" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("proxy_conn_rec" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7671 7692])
+                    ("request_id" variable (:type "int") (reparse-symbol arg-sub-list) [7693 7708]))                  
+                :type ("apr_status_t" type (:type "class") nil nil))
+                nil [7632 8515])
+            ("send_environment" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("proxy_conn_rec" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8554 8575])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("request_rec" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8576 8591])
+                    ("request_id" variable (:type "int") (reparse-symbol arg-sub-list) [8629 8644]))                  
+                :type ("apr_status_t" type (:type "class") nil nil))
+                nil [8517 12264])
+            ("" type
+               (:members 
+                  ( ("HDR_STATE_READING_HEADERS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12275 12301])
+                    ("HDR_STATE_GOT_CR" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12304 12321])
+                    ("HDR_STATE_GOT_CRLF" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12324 12343])
+                    ("HDR_STATE_GOT_CRLFCR" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12346 12367])
+                    ("HDR_STATE_GOT_LF" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12370 12387])
+                    ("HDR_STATE_DONE_WITH_HEADERS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [12390 12419]))                  
+                :type "enum")
+                nil [12266 12420])
+            ("handle_headers" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("request_rec" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12717 12732])
+                    ("state" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [12759 12770])
+                    ("readbuf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12797 12811]))                  
+                :type "int")
+                nil [12691 13990])
+            ("dump_header_to_log" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("request_rec" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14023 14038])
+                    ("fheader" variable
+                       (:dereference 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [14039 14063])
+                    ("length" variable (:type ("apr_size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14095 14113]))                  
+                :type "void")
+                nil [13992 15458])
+            ("dispatch" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("conn" variable
+                       (:pointer 1
+                        :type ("proxy_conn_rec" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15489 15510])
+                    ("conf" variable
+                       (:pointer 1
+                        :type ("proxy_dir_conf" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15511 15532])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("request_rec" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15562 15577])
+                    ("request_id" variable (:type "int") (reparse-symbol arg-sub-list) [15578 15593]))                  
+                :type ("apr_status_t" type (:type "class") nil nil))
+                nil [15460 27180])
+            ("fcgi_do_request" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("apr_pool_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27263 27277])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("request_rec" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27278 27293])
+                    ("conn" variable
+                       (:pointer 1
+                        :type ("proxy_conn_rec" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27321 27342])
+                    ("origin" variable
+                       (:pointer 1
+                        :type ("conn_rec" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27370 27387])
+                    ("conf" variable
+                       (:pointer 1
+                        :type ("proxy_dir_conf" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27415 27436])
+                    ("uri" variable
+                       (:pointer 1
+                        :type ("apr_uri_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27464 27479])
+                    ("url" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [27507 27517])
+                    ("server_portstr" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [27518 27539]))                  
+                :type "int")
+                nil [27236 28919])
+            ("FCGI_SCHEME" variable (:constant-flag t) nil [28929 28940])
+            ("proxy_fcgi_handler" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("r" variable
+                       (:pointer 1
+                        :type ("request_rec" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29019 29034])
+                    ("worker" variable
+                       (:pointer 1
+                        :type ("proxy_worker" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29035 29056])
+                    ("conf" variable
+                       (:pointer 1
+                        :type ("proxy_server_conf" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29087 29111])
+                    ("url" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [29142 29152])
+                    ("proxyname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [29153 29175])
+                    ("proxyport" variable (:type ("apr_port_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29206 29227]))                  
+                :type "int")
+                nil [28989 31757])
+            ("register_hooks" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("apr_pool_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31786 31800]))                  
+                :type "void")
+                nil [31759 31959]))          
+    :file "mod_proxy_fcgi.c"
+    :pointmax 32436
+    :fsize 32435
+    :lastmodtime '(20378 39583 0 0)
+    :unmatched-syntax '((punctuation 32434 . 32435) (semantic-list 31993 . 32434) (punctuation 31991 . 31992) (semantic-list 31978 . 31990) (symbol 31961 . 31978) (symbol 877 . 883))
+    :lexical-table 
+        '(("FCGI_SCHEME" . ((string "\"FCGI\"" 28941 . 28947)))
+          )
+
+    )
+   (semanticdb-table "mod_proxy.h"
+    :file "mod_proxy.h"
+    :fsize 37692
+    :lastmodtime '(20499 63959 0 0)
+    )
+   (semanticdb-table "fcgi_protocol.h"
+    :file "fcgi_protocol.h"
+    :fsize 3064
+    :lastmodtime '(20263 55519 0 0)
+    )
+   )
+  :file "!home!work!download!httpd-2.4.3!modules!proxy!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

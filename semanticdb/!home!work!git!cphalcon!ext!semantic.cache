@@ -1,0 +1,1678 @@
+;; Object ext/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ext/"
+  :tables (list 
+   (semanticdb-table "db.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("phalcon_db_ce" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [1164 1203])
+            ("PHALCON_INIT_CLASS" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1224 1235]))                  
+                :type "int")
+                nil [1205 1236]))          
+    :file "db.h"
+    :pointmax 1237
+    :fsize 1523
+    :lastmodtime '(21046 50962 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "php_phalcon.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("PHP_PHALCON_H" variable (:constant-flag t) nil [1179 1192])
+            ("PHP_PHALCON_VERSION" variable (:constant-flag t) nil [1204 1223])
+            ("PHP_PHALCON_EXTNAME" variable (:constant-flag t) nil [1240 1259])
+            ("PHALCON_MAX_MEMORY_STACK" variable (:constant-flag t) nil [1279 1303])
+            ("phalcon_memory_entry" type
+               (:typedef ("_phalcon_memory_entry" type (:type "struct") nil nil)
+                :superclasses "_phalcon_memory_entry"
+                :type "typedef")
+                nil [1328 1523])
+            ("_phalcon_memory_entry" type
+               (:members 
+                  ( ("pointer" variable (:type "int") (reparse-symbol classsubparts) [1368 1380])
+                    ("addresses" variable
+                       (:pointer 2
+                        :dereference 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1382 1425])
+                    ("prev" variable
+                       (:pointer 1
+                        :type ("_phalcon_memory_entry" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1427 1462])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("_phalcon_memory_entry" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1464 1499]))                  
+                :type "struct")
+                nil [1328 1523])
+            ("phalcon_symbol_table" type
+               (:typedef ("_phalcon_symbol_table" type (:type "struct") nil nil)
+                :superclasses "_phalcon_symbol_table"
+                :type "typedef")
+                nil [1553 1716])
+            ("_phalcon_symbol_table" type
+               (:members 
+                  ( ("scope" variable
+                       (:pointer 1
+                        :type ("_phalcon_memory_entry" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1593 1629])
+                    ("symbol_table" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1631 1655])
+                    ("prev" variable
+                       (:pointer 1
+                        :type ("_phalcon_symbol_table" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1657 1692]))                  
+                :type "struct")
+                nil [1553 1716])
+            ("phalcon_orm_options" type
+               (:typedef ("_phalcon_orm_options" type (:type "struct") nil nil)
+                :superclasses "_phalcon_orm_options"
+                :type "typedef")
+                nil [1737 1910])
+            ("_phalcon_orm_options" type
+               (:members 
+                  ( ("events" variable (:type ("zend_bool" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1776 1793])
+                    ("virtual_foreign_keys" variable (:type ("zend_bool" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1795 1826])
+                    ("column_renaming" variable (:type ("zend_bool" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1828 1854])
+                    ("not_null_validations" variable (:type ("zend_bool" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1856 1887]))                  
+                :type "struct")
+                nil [1737 1910])
+            ("phalcon_db_options" type
+               (:typedef ("_phalcon_db_options" type (:type "struct") nil nil)
+                :superclasses "_phalcon_db_options"
+                :type "typedef")
+                nil [1930 2019])
+            ("_phalcon_db_options" type
+               (:members 
+                  ( ("escape_identifiers" variable (:type ("zend_bool" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1968 1997]))                  
+                :type "struct")
+                nil [1930 2019])
+            ("start_memory" variable
+               (:pointer 1
+                :type ("phalcon_memory_entry" type (:type "class") nil nil))
+                nil [2073 2108])
+            ("active_memory" variable
+               (:pointer 1
+                :type ("phalcon_memory_entry" type (:type "class") nil nil))
+                nil [2110 2146])
+            ("active_symbol_table" variable
+               (:pointer 1
+                :type ("phalcon_symbol_table" type (:type "class") nil nil))
+                nil [2179 2221])
+            ("function_cache" variable
+               (:pointer 1
+                :type ("HashTable" type (:type "class") nil nil))
+                nil [2247 2273])
+            ("phalcon_stack_stats" variable (:type "unsigned int") nil [2314 2347])
+            ("phalcon_number_grows" variable (:type "unsigned int") nil [2349 2383])
+            ("orm" variable (:type ("phalcon_orm_options" type (:type "class") nil nil)) nil [2405 2429])
+            ("db" variable (:type ("phalcon_db_options" type (:type "class") nil nil)) nil [2443 2465])
+            ("PHALCON_GLOBAL" variable (:constant-flag t) nil [2681 2695])
+            ("PHALCON_VGLOBAL" variable (:constant-flag t) nil [2873 2888])
+            ("phalcon_module_entry" variable
+               (:typemodifiers ("extern")
+                :type ("zend_module_entry" type (:type "class") nil nil))
+                nil [2916 2962])
+            ("phpext_phalcon_ptr" variable (:constant-flag t) nil [2971 2989])
+            ("PHALCON_INIT_FUNCS" variable (:constant-flag t) nil [3058 3076])
+            ("PHP_FE_END" variable (:constant-flag t) nil [3282 3292])
+            ("PHALCON_FASTCALL" variable (:constant-flag t) nil [3431 3447])
+            ("PHALCON_FASTCALL" variable (:constant-flag t) nil [3527 3543])
+            ("PHALCON_INIT_CLASS" variable (:constant-flag t) nil [3603 3621])
+            ("PHALCON_INIT" variable (:constant-flag t) nil [3684 3696])
+            ("PHALCON_EXPERIMENTAL_FCALL" variable (:constant-flag t) nil [3835 3861])
+            ("likely" variable (:constant-flag t) nil [4030 4036])
+            ("unlikely" variable (:constant-flag t) nil [4078 4086]))          
+    :file "php_phalcon.h"
+    :pointmax 4183
+    :fsize 4306
+    :lastmodtime '(21046 54063 0 0)
+    :unmatched-syntax '((semantic-list 2564 . 2573) (symbol 2538 . 2564) (semantic-list 2490 . 2499) (symbol 2467 . 2490) (semantic-list 2046 . 2055) (symbol 2021 . 2046))
+    :lexical-table 
+        '(("PHALCON_GLOBAL" (spp-arg-list ("v") 2695 . 2698) . ((semantic-list "(phalcon_globals.v)" 2699 . 2718)))
+          ("PHALCON_VGLOBAL" . ((punctuation "&" 2889 . 2890) (semantic-list "(phalcon_globals)" 2890 . 2907)))
+          ("PHALCON_FASTCALL" . ((symbol "__fastcall" 3544 . 3554)))
+          ("PHALCON_INIT_CLASS" (spp-arg-list ("name") 3621 . 3627) . 
+              ((INT "int" 3631 . 3634) (spp-symbol-merge ((spp-symbol-merge ((symbol "phalcon_" 3635 . 3643) (symbol "name" 3646 . 3650)) 3635 . 3650) (symbol "_init" 3653 . 3658)) 3635 . 3658) (semantic-list "(INIT_FUNC_ARGS)" 3658 . 3674)))
+          ("PHALCON_INIT" (spp-arg-list ("name") 3696 . 3702) . 
+              ((IF "if" 3706 . 3708) (semantic-list "(phalcon_ ##name## _init(INIT_FUNC_ARGS_PASSTHRU) == FAILURE)" 3709 . 3770) (semantic-list "{ \\
+		return FAILURE; \\
+	}" 3771 . 3797)))
+          ("PHP_PHALCON_VERSION" . ((string "\"0.9.0\"" 1224 . 1231)))
+          ("PHP_PHALCON_EXTNAME" . ((string "\"phalcon\"" 1260 . 1269)))
+          ("PHALCON_EXPERIMENTAL_FCALL" . ((number "0" 3862 . 3863)))
+          ("PHP_PHALCON_H" . ((number "1" 1193 . 1194)))
+          ("likely" (spp-arg-list ("x") 4036 . 4039) . ((symbol "__builtin_expect" 4046 . 4062) (semantic-list "((x),1)" 4062 . 4069)))
+          ("PHP_FE_END" . ((semantic-list "{ NULL, NULL, NULL, 0, 0 }" 3293 . 3319)))
+          ("PHALCON_MAX_MEMORY_STACK" . ((number "48" 1304 . 1306)))
+          ("PHALCON_INIT_FUNCS" (spp-arg-list ("class_functions") 3076 . 3093) . 
+              ((STATIC "static" 3094 . 3100) (CONST "const" 3101 . 3106) (symbol "zend_function_entry" 3107 . 3126) (symbol "class_functions" 3127 . 3142) (semantic-list "[]" 3142 . 3144) (punctuation "=" 3145 . 3146)))
+          ("phpext_phalcon_ptr" . ((punctuation "&" 2990 . 2991) (symbol "phalcon_module_entry" 2991 . 3011)))
+          ("unlikely" (spp-arg-list ("x") 4086 . 4089) . ((symbol "__builtin_expect" 4094 . 4110) (semantic-list "((x),0)" 4110 . 4117)))
+          )
+
+    )
+   (semanticdb-table "kernel.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("phalcon_kernel_ce" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [1164 1207])
+            ("PHALCON_INIT_CLASS" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Kernel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1228 1243]))                  
+                :type "int")
+                nil [1209 1244])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Kernel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1257 1272])
+                    ("" variable (:type ("preComputeHashKey" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1273 1291]))                  
+                :type "int")
+                nil [1246 1292])
+            ("PHALCON_INIT_FUNCS" function
+               (:arguments 
+                  ( ("" variable (:type ("phalcon_kernel_method_entry" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1434 1462]))                  
+                :type "int")
+                nil [1415 1596]))          
+    :file "kernel.h"
+    :pointmax 1599
+    :fsize 1598
+    :lastmodtime '(21046 54063 0 0)
+    :unmatched-syntax '((punctuation 1596 . 1597) (semantic-list 1411 . 1413) (symbol 1394 . 1411) (semantic-list 1382 . 1393) (symbol 1369 . 1382) (number 1383 . 1384) (semantic-list 1316 . 1367) (symbol 1294 . 1316) (number 1365 . 1366) (number 1362 . 1363) (number 1359 . 1360))
+    )
+   (semanticdb-table "version.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("phalcon_version_ce" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [1241 1285])
+            ("PHALCON_INIT_CLASS" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Version" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1306 1322]))                  
+                :type "int")
+                nil [1287 1323])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Version" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1336 1352])
+                    ("" variable (:type ("_getVersion" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1353 1365]))                  
+                :type "int")
+                nil [1325 1366])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Version" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1378 1394])
+                    ("" variable (:type ("get" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1395 1399]))                  
+                :type "int")
+                nil [1367 1400])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Version" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1412 1428])
+                    ("" variable (:type ("getId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1429 1435]))                  
+                :type "int")
+                nil [1401 1436])
+            ("PHALCON_INIT_FUNCS" function
+               (:arguments 
+                  ( ("" variable (:type ("phalcon_version_method_entry" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1457 1486]))                  
+                :type "int")
+                nil [1438 1724]))          
+    :file "version.h"
+    :pointmax 1727
+    :fsize 1726
+    :lastmodtime '(21046 50962 0 0)
+    :unmatched-syntax '((punctuation 1724 . 1725))
+    )
+   (semanticdb-table "version.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("php.h" include nil nil [1290 1306])
+            ("php_phalcon.h" include nil nil [1307 1331])
+            ("phalcon.h" include nil nil [1332 1352])
+            ("Zend/zend_operators.h" include nil nil [1354 1386])
+            ("Zend/zend_exceptions.h" include nil nil [1387 1420])
+            ("Zend/zend_interfaces.h" include nil nil [1421 1454])
+            ("kernel/main.h" include nil nil [1456 1480])
+            ("kernel/memory.h" include nil nil [1481 1507])
+            ("kernel/fcall.h" include nil nil [1509 1534])
+            ("kernel/array.h" include nil nil [1535 1560])
+            ("kernel/concat.h" include nil nil [1561 1587])
+            ("kernel/operators.h" include nil nil [1588 1617])
+            ("PHALCON_INIT_CLASS" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Version" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1764 1780]))                  
+                :type "int")
+                nil [1745 1887])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Version" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2190 2206])
+                    ("" variable (:type ("_getVersion" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2207 2219]))                  
+                :type "int")
+                nil [2179 2512])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Version" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2649 2665])
+                    ("" variable (:type ("get" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2666 2670]))                  
+                :type "int")
+                nil [2638 4075])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Version" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4210 4226])
+                    ("" variable (:type ("getId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4227 4233]))                  
+                :type "int")
+                nil [4199 5326]))          
+    :file "version.c"
+    :pointmax 5328
+    :fsize 5339
+    :lastmodtime '(21046 54063 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "phalcon.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("php.h" include nil nil [1213 1229])
+            ("php_phalcon.h" include nil nil [1230 1254])
+            ("phalcon.h" include nil nil [1255 1275])
+            ("Zend/zend_operators.h" include nil nil [1277 1309])
+            ("Zend/zend_exceptions.h" include nil nil [1310 1343])
+            ("Zend/zend_interfaces.h" include nil nil [1344 1377])
+            ("kernel/main.h" include nil nil [1379 1403])
+            ("kernel/memory.h" include nil nil [1404 1430])
+            ("phalcon_acl_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [1433 1466])
+            ("phalcon_text_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [1467 1501])
+            ("phalcon_db_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [1502 1534])
+            ("phalcon_tag_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [1535 1568])
+            ("phalcon_di_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [1569 1601])
+            ("phalcon_cache_exception_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [1602 1647])
+            ("phalcon_cache_backend_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [1648 1691])
+            ("phalcon_cache_multiple_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [1692 1736])
+            ("phalcon_cache_backend_mongo_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [1737 1786])
+            ("phalcon_cache_backend_memory_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [1787 1837])
+            ("phalcon_cache_backend_apc_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [1838 1885])
+            ("phalcon_cache_backend_file_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [1886 1934])
+            ("phalcon_cache_frontend_none_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [1935 1984])
+            ("phalcon_cache_frontend_data_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [1985 2034])
+            ("phalcon_cache_frontendinterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [2035 2088])
+            ("phalcon_cache_frontend_output_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [2089 2140])
+            ("phalcon_cache_backendinterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [2141 2193])
+            ("phalcon_cache_backend_memcache_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [2194 2246])
+            ("phalcon_cache_frontend_base64_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [2247 2298])
+            ("phalcon_tag_select_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [2299 2339])
+            ("phalcon_tag_exception_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [2340 2383])
+            ("phalcon_paginator_exception_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [2384 2433])
+            ("phalcon_paginator_adapter_model_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [2434 2487])
+            ("phalcon_paginator_adapterinterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [2488 2544])
+            ("phalcon_paginator_adapter_nativearray_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [2545 2604])
+            ("phalcon_validation_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [2605 2645])
+            ("phalcon_validation_exception_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [2646 2696])
+            ("phalcon_validation_validator_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [2697 2747])
+            ("phalcon_validation_message_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [2748 2796])
+            ("phalcon_validation_message_group_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [2797 2851])
+            ("phalcon_validation_validator_email_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [2852 2908])
+            ("phalcon_validation_validator_regex_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [2909 2965])
+            ("phalcon_validation_validator_presenceof_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [2966 3027])
+            ("phalcon_validation_validatorinterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [3028 3087])
+            ("phalcon_validation_validator_exclusionin_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [3088 3150])
+            ("phalcon_validation_validator_identical_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [3151 3211])
+            ("phalcon_validation_validator_inclusionin_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [3212 3274])
+            ("phalcon_validation_validator_stringlength_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [3275 3338])
+            ("phalcon_db_index_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [3339 3377])
+            ("phalcon_db_dialect_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [3378 3418])
+            ("phalcon_db_exception_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [3419 3461])
+            ("phalcon_db_profiler_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [3462 3503])
+            ("phalcon_db_adapter_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [3504 3544])
+            ("phalcon_db_rawvalue_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [3545 3586])
+            ("phalcon_db_reference_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [3587 3629])
+            ("phalcon_db_column_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [3630 3669])
+            ("phalcon_db_adapter_pdo_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [3670 3714])
+            ("phalcon_db_adapterinterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [3715 3764])
+            ("phalcon_db_adapter_pdo_mysql_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [3765 3815])
+            ("phalcon_db_adapter_pdo_sqlite_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [3816 3867])
+            ("phalcon_db_adapter_pdo_postgresql_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [3868 3923])
+            ("phalcon_db_columninterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [3924 3972])
+            ("phalcon_db_dialect_mysql_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [3973 4019])
+            ("phalcon_db_dialectinterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [4020 4069])
+            ("phalcon_db_dialect_sqlite_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [4070 4117])
+            ("phalcon_db_dialect_postgresql_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [4118 4169])
+            ("phalcon_db_indexinterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [4170 4217])
+            ("phalcon_db_profiler_item_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [4218 4264])
+            ("phalcon_db_result_pdo_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [4265 4308])
+            ("phalcon_db_resultinterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [4309 4357])
+            ("phalcon_db_referenceinterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [4358 4409])
+            ("phalcon_acl_role_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [4410 4448])
+            ("phalcon_acl_resource_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [4449 4491])
+            ("phalcon_acl_adapter_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [4492 4533])
+            ("phalcon_acl_exception_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [4534 4577])
+            ("phalcon_acl_adapterinterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [4578 4628])
+            ("phalcon_acl_adapter_memory_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [4629 4677])
+            ("phalcon_acl_roleinterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [4678 4725])
+            ("phalcon_acl_resourceinterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [4726 4777])
+            ("phalcon_security_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [4778 4816])
+            ("phalcon_kernel_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [4817 4853])
+            ("phalcon_version_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [4854 4891])
+            ("phalcon_session_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [4892 4929])
+            ("phalcon_security_exception_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [4930 4978])
+            ("phalcon_session_bag_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [4979 5020])
+            ("phalcon_session_adapter_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [5021 5066])
+            ("phalcon_session_exception_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [5067 5114])
+            ("phalcon_session_baginterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [5115 5165])
+            ("phalcon_session_adapterinterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [5166 5220])
+            ("phalcon_session_adapter_files_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [5221 5272])
+            ("phalcon_filter_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [5273 5309])
+            ("phalcon_di_exception_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [5310 5352])
+            ("phalcon_di_service_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [5353 5393])
+            ("phalcon_di_factorydefault_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [5394 5441])
+            ("phalcon_di_factorydefault_cli_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [5442 5493])
+            ("phalcon_di_injectable_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [5494 5537])
+            ("phalcon_di_injectionawareinterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [5538 5594])
+            ("phalcon_di_service_builder_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [5595 5643])
+            ("phalcon_di_serviceinterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [5644 5693])
+            ("phalcon_diinterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [5694 5735])
+            ("phalcon_filterinterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [5736 5781])
+            ("phalcon_filter_exception_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [5782 5828])
+            ("phalcon_dispatcher_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [5829 5869])
+            ("phalcon_dispatcherinterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [5870 5919])
+            ("phalcon_flash_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [5920 5955])
+            ("phalcon_cli_task_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [5956 5994])
+            ("phalcon_flash_direct_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [5995 6037])
+            ("phalcon_flash_session_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [6038 6081])
+            ("phalcon_flash_exception_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [6082 6127])
+            ("phalcon_flashinterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [6128 6172])
+            ("phalcon_cli_router_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [6173 6213])
+            ("phalcon_cli_console_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [6214 6255])
+            ("phalcon_cli_dispatcher_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [6256 6300])
+            ("phalcon_cli_console_exception_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [6301 6352])
+            ("phalcon_cli_dispatcher_exception_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [6353 6407])
+            ("phalcon_cli_router_exception_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [6408 6458])
+            ("phalcon_annotations_adapter_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [6459 6508])
+            ("phalcon_annotations_reader_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [6509 6557])
+            ("phalcon_annotations_annotation_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [6558 6610])
+            ("phalcon_annotations_adapter_apc_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [6611 6664])
+            ("phalcon_annotations_collection_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [6665 6717])
+            ("phalcon_annotations_exception_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [6718 6769])
+            ("phalcon_annotations_reflection_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [6770 6822])
+            ("phalcon_annotations_adapterinterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [6823 6881])
+            ("phalcon_annotations_adapter_files_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [6882 6937])
+            ("phalcon_annotations_adapter_memory_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [6938 6994])
+            ("phalcon_annotations_readerinterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [6995 7052])
+            ("phalcon_logger_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [7053 7089])
+            ("phalcon_loader_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [7090 7126])
+            ("phalcon_config_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [7127 7163])
+            ("phalcon_loader_exception_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [7164 7210])
+            ("phalcon_logger_item_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [7211 7252])
+            ("phalcon_logger_multiple_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [7253 7298])
+            ("phalcon_logger_exception_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [7299 7345])
+            ("phalcon_logger_formatter_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [7346 7392])
+            ("phalcon_logger_adapter_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [7393 7437])
+            ("phalcon_logger_adapter_file_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [7438 7487])
+            ("phalcon_logger_adapterinterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [7488 7541])
+            ("phalcon_logger_adapter_stream_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [7542 7593])
+            ("phalcon_logger_formatter_syslog_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [7594 7647])
+            ("phalcon_logger_adapter_syslog_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [7648 7699])
+            ("phalcon_logger_formatter_line_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [7700 7751])
+            ("phalcon_logger_formatter_json_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [7752 7803])
+            ("phalcon_logger_formatterinterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [7804 7859])
+            ("phalcon_config_exception_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [7860 7906])
+            ("phalcon_config_adapter_ini_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [7907 7955])
+            ("phalcon_forms_form_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [7956 7996])
+            ("phalcon_forms_element_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [7997 8040])
+            ("phalcon_forms_manager_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [8041 8084])
+            ("phalcon_forms_exception_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [8085 8130])
+            ("phalcon_forms_element_hidden_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [8131 8181])
+            ("phalcon_forms_element_select_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [8182 8232])
+            ("phalcon_forms_element_text_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [8233 8281])
+            ("phalcon_forms_element_submit_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [8282 8332])
+            ("phalcon_forms_element_file_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [8333 8381])
+            ("phalcon_forms_element_check_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [8382 8431])
+            ("phalcon_forms_element_textarea_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [8432 8484])
+            ("phalcon_forms_element_password_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [8485 8537])
+            ("phalcon_translate_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [8538 8577])
+            ("phalcon_translate_adapter_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [8578 8625])
+            ("phalcon_translate_exception_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [8626 8675])
+            ("phalcon_translate_adapterinterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [8676 8732])
+            ("phalcon_translate_adapter_nativearray_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [8733 8792])
+            ("phalcon_escaper_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [8793 8830])
+            ("phalcon_escaperinterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [8831 8877])
+            ("phalcon_escaper_exception_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [8878 8925])
+            ("phalcon_http_request_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [8926 8968])
+            ("phalcon_http_cookie_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [8969 9010])
+            ("phalcon_http_response_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [9011 9054])
+            ("phalcon_http_request_file_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [9055 9102])
+            ("phalcon_http_cookie_exception_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [9103 9154])
+            ("phalcon_http_responseinterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [9155 9207])
+            ("phalcon_http_requestinterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [9208 9259])
+            ("phalcon_http_response_cookies_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [9260 9311])
+            ("phalcon_http_response_headers_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [9312 9363])
+            ("phalcon_http_request_exception_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [9364 9416])
+            ("phalcon_http_response_exception_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [9417 9470])
+            ("phalcon_http_request_fileinterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [9471 9527])
+            ("phalcon_http_response_headersinterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [9528 9588])
+            ("phalcon_queue_beanstalk_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [9589 9634])
+            ("phalcon_queue_beanstalk_job_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [9635 9684])
+            ("phalcon_mvc_url_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [9685 9722])
+            ("phalcon_mvc_view_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [9723 9761])
+            ("phalcon_mvc_router_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [9762 9802])
+            ("phalcon_mvc_model_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [9803 9842])
+            ("phalcon_mvc_micro_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [9843 9882])
+            ("phalcon_mvc_controller_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [9883 9927])
+            ("phalcon_mvc_collection_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [9928 9972])
+            ("phalcon_mvc_application_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [9973 10018])
+            ("phalcon_mvc_view_engine_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [10019 10064])
+            ("phalcon_mvc_dispatcher_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [10065 10109])
+            ("phalcon_mvc_urlinterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [10110 10156])
+            ("phalcon_mvc_user_module_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [10157 10202])
+            ("phalcon_mvc_user_plugin_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [10203 10248])
+            ("phalcon_mvc_router_group_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [10249 10295])
+            ("phalcon_mvc_router_route_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [10296 10342])
+            ("phalcon_mvc_model_row_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [10343 10386])
+            ("phalcon_mvc_model_query_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [10387 10432])
+            ("phalcon_mvc_application_exception_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [10433 10488])
+            ("phalcon_mvc_controllerinterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [10489 10542])
+            ("phalcon_mvc_collection_manager_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [10543 10595])
+            ("phalcon_mvc_collection_exception_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [10596 10650])
+            ("phalcon_mvc_collectioninterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [10651 10704])
+            ("phalcon_mvc_collection_managerinterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [10705 10766])
+            ("phalcon_mvc_dispatcherinterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [10767 10820])
+            ("phalcon_mvc_dispatcher_exception_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [10821 10875])
+            ("phalcon_mvc_model_validator_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [10876 10925])
+            ("phalcon_mvc_model_resultset_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [10926 10975])
+            ("phalcon_mvc_model_metadata_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [10976 11024])
+            ("phalcon_mvc_model_relation_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [11025 11073])
+            ("phalcon_mvc_micro_exception_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [11074 11123])
+            ("phalcon_mvc_micro_collection_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [11124 11174])
+            ("phalcon_mvc_model_message_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [11175 11222])
+            ("phalcon_mvc_model_criteria_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [11223 11271])
+            ("phalcon_mvc_model_exception_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [11272 11321])
+            ("phalcon_mvc_modelinterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [11322 11370])
+            ("phalcon_mvc_model_behavior_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [11371 11419])
+            ("phalcon_mvc_model_query_lang_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [11420 11470])
+            ("phalcon_mvc_model_manager_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [11471 11518])
+            ("phalcon_mvc_model_metadata_files_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [11519 11573])
+            ("phalcon_mvc_model_transaction_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [11574 11625])
+            ("phalcon_mvc_model_queryinterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [11626 11680])
+            ("phalcon_mvc_model_metadata_apc_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [11681 11733])
+            ("phalcon_mvc_model_query_status_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [11734 11786])
+            ("phalcon_mvc_model_query_builder_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [11787 11840])
+            ("phalcon_mvc_model_validator_url_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [11841 11894])
+            ("phalcon_mvc_model_resultset_complex_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [11895 11952])
+            ("phalcon_mvc_model_resultinterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [11953 12008])
+            ("phalcon_mvc_model_managerinterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [12009 12065])
+            ("phalcon_mvc_model_metadata_memory_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [12066 12121])
+            ("phalcon_mvc_model_criteriainterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [12122 12179])
+            ("phalcon_mvc_model_metadata_session_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [12180 12236])
+            ("phalcon_mvc_model_resultset_simple_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [12237 12293])
+            ("phalcon_mvc_model_behaviorinterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [12294 12351])
+            ("phalcon_mvc_model_transaction_failed_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [12352 12410])
+            ("phalcon_mvc_model_validatorinterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [12411 12469])
+            ("phalcon_mvc_model_validator_email_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [12470 12525])
+            ("phalcon_mvc_model_relationinterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [12526 12583])
+            ("phalcon_mvc_model_validator_regex_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [12584 12639])
+            ("phalcon_mvc_model_messageinterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [12640 12696])
+            ("phalcon_mvc_model_metadatainterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [12697 12754])
+            ("phalcon_mvc_model_resultsetinterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [12755 12813])
+            ("phalcon_mvc_model_query_statusinterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [12814 12875])
+            ("phalcon_mvc_model_behavior_timestampable_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [12876 12938])
+            ("phalcon_mvc_model_validator_exclusionin_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [12939 13000])
+            ("phalcon_mvc_model_validator_inclusionin_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [13001 13062])
+            ("phalcon_mvc_model_validator_numericality_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [13063 13125])
+            ("phalcon_mvc_model_validator_stringlength_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [13126 13188])
+            ("phalcon_mvc_model_query_builderinterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [13189 13251])
+            ("phalcon_mvc_model_transaction_exception_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [13252 13313])
+            ("phalcon_mvc_model_transactioninterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [13314 13374])
+            ("phalcon_mvc_model_validator_presenceof_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [13375 13435])
+            ("phalcon_mvc_model_transaction_manager_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [13436 13495])
+            ("phalcon_mvc_model_validator_uniqueness_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [13496 13556])
+            ("phalcon_mvc_model_behavior_softdelete_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [13557 13616])
+            ("phalcon_mvc_model_transaction_managerinterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [13617 13685])
+            ("phalcon_mvc_model_metadata_strategy_annotations_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [13686 13755])
+            ("phalcon_mvc_model_metadata_strategy_introspection_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [13756 13827])
+            ("phalcon_mvc_moduledefinitioninterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [13828 13887])
+            ("phalcon_mvc_routerinterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [13888 13937])
+            ("phalcon_mvc_router_exception_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [13938 13988])
+            ("phalcon_mvc_router_annotations_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [13989 14041])
+            ("phalcon_mvc_router_routeinterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [14042 14097])
+            ("phalcon_mvc_user_component_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [14098 14146])
+            ("phalcon_mvc_url_exception_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [14147 14194])
+            ("phalcon_mvc_view_exception_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [14195 14243])
+            ("phalcon_mvc_view_engine_php_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [14244 14293])
+            ("phalcon_mvc_view_engine_volt_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [14294 14344])
+            ("phalcon_mvc_viewinterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [14345 14392])
+            ("phalcon_mvc_view_engineinterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [14393 14447])
+            ("phalcon_mvc_view_engine_volt_compiler_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [14448 14507])
+            ("phalcon_events_event_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [14508 14550])
+            ("phalcon_events_exception_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [14551 14597])
+            ("phalcon_events_manager_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [14598 14642])
+            ("phalcon_events_managerinterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [14643 14696])
+            ("phalcon_events_eventsawareinterface_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [14697 14754])
+            ("phalcon_exception_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [14755 14794])
+            ("PHP_MINIT_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("phalcon" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14853 14861]))                  
+                :type "int")
+                nil [14834 27339])
+            ("PHP_MSHUTDOWN_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("phalcon" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27365 27373]))                  
+                :type "int")
+                nil [27342 27681])
+            ("PHP_RINIT_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("phalcon" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27702 27710]))                  
+                :type "int")
+                nil [27683 27786])
+            ("PHP_RSHUTDOWN_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("phalcon" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27811 27819]))                  
+                :type "int")
+                nil [27788 28127])
+            ("phalcon_module_entry" variable (:type ("zend_module_entry" type (:type "class") nil nil)) nil [28129 28461]))          
+    :file "phalcon.c"
+    :pointmax 28522
+    :fsize 30972
+    :lastmodtime '(21046 54063 0 0)
+    :unmatched-syntax '((semantic-list 14823 . 14832) (symbol 14796 . 14823))
+    )
+   (semanticdb-table "phalcon.h"
+    :file "phalcon.h"
+    :fsize 10790
+    :lastmodtime '(21046 54063 0 0)
+    )
+   (semanticdb-table "config.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("php.h" include nil nil [1213 1229])
+            ("php_phalcon.h" include nil nil [1230 1254])
+            ("phalcon.h" include nil nil [1255 1275])
+            ("Zend/zend_operators.h" include nil nil [1277 1309])
+            ("Zend/zend_exceptions.h" include nil nil [1310 1343])
+            ("Zend/zend_interfaces.h" include nil nil [1344 1377])
+            ("kernel/main.h" include nil nil [1379 1403])
+            ("kernel/memory.h" include nil nil [1404 1430])
+            ("kernel/array.h" include nil nil [1432 1457])
+            ("kernel/fcall.h" include nil nil [1458 1483])
+            ("kernel/object.h" include nil nil [1484 1510])
+            ("kernel/exception.h" include nil nil [1511 1540])
+            ("kernel/operators.h" include nil nil [1541 1570])
+            ("PHALCON_INIT_CLASS" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Config" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2294 2309]))                  
+                :type "int")
+                nil [2275 2491])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Config" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2574 2589])
+                    ("" variable (:type ("__construct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2590 2602]))                  
+                :type "int")
+                nil [2563 3923])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Config" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4127 4142])
+                    ("" variable (:type ("offsetExists" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4143 4156]))                  
+                :type "int")
+                nil [4116 4313])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Config" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4671 4686])
+                    ("" variable (:type ("get" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4687 4691]))                  
+                :type "int")
+                nil [4660 5142])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Config" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5307 5322])
+                    ("" variable (:type ("offsetGet" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5323 5333]))                  
+                :type "int")
+                nil [5296 5537])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Config" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5726 5741])
+                    ("" variable (:type ("offsetSet" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5742 5752]))                  
+                :type "int")
+                nil [5715 6362])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Config" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6509 6524])
+                    ("" variable (:type ("offsetUnset" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6525 6537]))                  
+                :type "int")
+                nil [6498 6612])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Config" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6860 6875])
+                    ("" variable (:type ("merge" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6876 6882]))                  
+                :type "int")
+                nil [6849 8221])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Config" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8363 8378])
+                    ("" variable (:type ("toArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8379 8387]))                  
+                :type "int")
+                nil [8352 9314])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Config" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9435 9450])
+                    ("" variable (:type ("__set_state" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9451 9463]))                  
+                :type "int")
+                nil [9424 9716]))          
+    :file "config.c"
+    :pointmax 9718
+    :fsize 9717
+    :lastmodtime '(21046 54063 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "dispatcher.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("php.h" include nil nil [1290 1306])
+            ("php_phalcon.h" include nil nil [1307 1331])
+            ("phalcon.h" include nil nil [1332 1352])
+            ("Zend/zend_operators.h" include nil nil [1354 1386])
+            ("Zend/zend_exceptions.h" include nil nil [1387 1420])
+            ("Zend/zend_interfaces.h" include nil nil [1421 1454])
+            ("kernel/main.h" include nil nil [1456 1480])
+            ("kernel/memory.h" include nil nil [1481 1507])
+            ("kernel/object.h" include nil nil [1509 1535])
+            ("kernel/fcall.h" include nil nil [1536 1561])
+            ("kernel/array.h" include nil nil [1562 1587])
+            ("kernel/concat.h" include nil nil [1588 1614])
+            ("kernel/operators.h" include nil nil [1615 1644])
+            ("kernel/string.h" include nil nil [1645 1671])
+            ("PHALCON_INIT_CLASS" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Dispatcher" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1942 1961]))                  
+                :type "int")
+                nil [1923 4674])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Dispatcher" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4729 4748])
+                    ("" variable (:type ("__construct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4749 4761]))                  
+                :type "int")
+                nil [4718 4864])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Dispatcher" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4970 4989])
+                    ("" variable (:type ("setDI" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4990 4996]))                  
+                :type "int")
+                nil [4959 5186])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Dispatcher" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5285 5304])
+                    ("" variable (:type ("getDI" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5305 5311]))                  
+                :type "int")
+                nil [5274 5365])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Dispatcher" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5473 5492])
+                    ("" variable (:type ("setEventsManager" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5493 5510]))                  
+                :type "int")
+                nil [5462 5680])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Dispatcher" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5785 5804])
+                    ("" variable (:type ("getEventsManager" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5805 5822]))                  
+                :type "int")
+                nil [5774 5871])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Dispatcher" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5960 5979])
+                    ("" variable (:type ("setActionSuffix" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5980 5996]))                  
+                :type "int")
+                nil [5949 6162])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Dispatcher" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6277 6296])
+                    ("" variable (:type ("setModuleName" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6297 6311]))                  
+                :type "int")
+                nil [6266 6469])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Dispatcher" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6560 6579])
+                    ("" variable (:type ("getModuleName" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6580 6594]))                  
+                :type "int")
+                nil [6549 6640])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Dispatcher" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6748 6767])
+                    ("" variable (:type ("setNamespaceName" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6768 6785]))                  
+                :type "int")
+                nil [6737 6955])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Dispatcher" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7061 7080])
+                    ("" variable (:type ("getNamespaceName" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7081 7098]))                  
+                :type "int")
+                nil [7050 7147])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Dispatcher" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7229 7248])
+                    ("" variable (:type ("setDefaultNamespace" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7249 7269]))                  
+                :type "int")
+                nil [7218 7427])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Dispatcher" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7502 7521])
+                    ("" variable (:type ("getDefaultNamespace" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7522 7542]))                  
+                :type "int")
+                nil [7491 7594])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Dispatcher" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7679 7698])
+                    ("" variable (:type ("setDefaultAction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7699 7716]))                  
+                :type "int")
+                nil [7668 7877])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Dispatcher" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7971 7990])
+                    ("" variable (:type ("setActionName" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7991 8005]))                  
+                :type "int")
+                nil [7960 8163])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Dispatcher" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8248 8267])
+                    ("" variable (:type ("getActionName" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8268 8282]))                  
+                :type "int")
+                nil [8237 8328])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Dispatcher" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8415 8434])
+                    ("" variable (:type ("setParams" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8435 8445]))                  
+                :type "int")
+                nil [8404 8913])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Dispatcher" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8976 8995])
+                    ("" variable (:type ("getParams" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8996 9006]))                  
+                :type "int")
+                nil [8965 9048])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Dispatcher" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9164 9183])
+                    ("" variable (:type ("setParam" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9184 9193]))                  
+                :type "int")
+                nil [9153 9353])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Dispatcher" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9527 9546])
+                    ("" variable (:type ("getParam" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9547 9556]))                  
+                :type "int")
+                nil [9516 11215])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Dispatcher" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11320 11339])
+                    ("" variable (:type ("getActiveMethod" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11340 11356]))                  
+                :type "int")
+                nil [11309 11766])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Dispatcher" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11902 11921])
+                    ("" variable (:type ("isFinished" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11922 11933]))                  
+                :type "int")
+                nil [11891 11977])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Dispatcher" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12080 12099])
+                    ("" variable (:type ("setReturnedValue" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12100 12117]))                  
+                :type "int")
+                nil [12069 12260])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Dispatcher" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12360 12379])
+                    ("" variable (:type ("getReturnedValue" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12380 12397]))                  
+                :type "int")
+                nil [12349 12446])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Dispatcher" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12561 12580])
+                    ("" variable (:type ("dispatch" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12581 12590]))                  
+                :type "int")
+                nil [12550 26567])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Dispatcher" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26863 26882])
+                    ("" variable (:type ("forward" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26883 26891]))                  
+                :type "int")
+                nil [26852 29106])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Dispatcher" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29218 29237])
+                    ("" variable (:type ("wasForwarded" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29238 29251]))                  
+                :type "int")
+                nil [29207 29296]))          
+    :file "dispatcher.c"
+    :pointmax 29298
+    :fsize 29297
+    :lastmodtime '(21046 54063 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!git!cphalcon!ext!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

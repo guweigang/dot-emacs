@@ -1,0 +1,508 @@
+;; Object c/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "c/"
+  :tables (list 
+   (semanticdb-table "list.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("Node" type
+               (:prototype t
+                :type "struct")
+                nil [18 30])
+            ("PtrToNode" type
+               (:typedef ("Node" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :superclasses "Node"
+                :type "typedef")
+                nil [32 63])
+            ("List" type
+               (:typedef ("PtrToNode" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :superclasses "PtrToNode"
+                :type "typedef")
+                nil [64 94])
+            ("Position" type
+               (:typedef ("PtrToNode" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :superclasses "PtrToNode"
+                :type "typedef")
+                nil [95 129])
+            ("ElementType" type
+               (:typedef ("int")
+                :superclasses "int"
+                :type "typedef")
+                nil [130 154])
+            ("MakeEmpty" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable (:type ("List" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [171 178]))                  
+                :type ("List" type (:type "class") nil nil))
+                nil [156 179])
+            ("IsEmpty" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable (:type ("List" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [192 199]))                  
+                :type "int")
+                nil [180 200])
+            ("IsLast" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("P" variable (:type ("Position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [212 223])
+                    ("L" variable (:type ("List" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [224 231]))                  
+                :type "int")
+                nil [201 232])
+            ("Find" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable (:type ("ElementType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [247 261])
+                    ("L" variable (:type ("List" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [262 269]))                  
+                :type ("Position" type (:type "class") nil nil))
+                nil [233 270])
+            ("Delete" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable (:type ("ElementType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [283 297])
+                    ("L" variable (:type ("List" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [298 305]))                  
+                :type "void")
+                nil [271 306])
+            ("FindPrevious" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable (:type ("ElementType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [329 343])
+                    ("L" variable (:type ("List" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [344 351]))                  
+                :type ("Position" type (:type "class") nil nil))
+                nil [307 352])
+            ("Insert" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("X" variable (:type ("ElementType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [365 379])
+                    ("L" variable (:type ("List" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [380 387])
+                    ("P" variable (:type ("Position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [388 399]))                  
+                :type "void")
+                nil [353 400])
+            ("DeleteList" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable (:type ("List" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [417 424]))                  
+                :type "void")
+                nil [401 425])
+            ("Header" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable (:type ("List" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [442 449]))                  
+                :type ("Position" type (:type "class") nil nil))
+                nil [426 450])
+            ("First" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable (:type ("List" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [466 473]))                  
+                :type ("Position" type (:type "class") nil nil))
+                nil [451 474])
+            ("Advance" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("P" variable (:type ("Position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [492 503]))                  
+                :type ("Position" type (:type "class") nil nil))
+                nil [475 504])
+            ("Retrieve" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("P" variable (:type ("Position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [526 537]))                  
+                :type ("ElementType" type (:type "class") nil nil))
+                nil [505 538])
+            ("Node" type
+               (:members 
+                  ( ("Element" variable (:type ("ElementType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [566 586])
+                    ("Next" variable (:type ("Position" type (:type "class") nil nil)) (reparse-symbol classsubparts) [591 605]))                  
+                :type "struct")
+                nil [548 608]))          
+    :file "list.h"
+    :pointmax 609
+    :fsize 608
+    :lastmodtime '(20800 18987 0 0)
+    :unmatched-syntax '((symbol 591 . 599) (symbol 591 . 599))
+    )
+   (semanticdb-table "list.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("list.h" include nil nil [40 57])
+            ("IsEmpty" function
+               (:arguments 
+                  ( ("L" variable (:type ("List" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [71 78]))                  
+                :type "int")
+                nil [59 110])
+            ("IsLast" function
+               (:arguments 
+                  ( ("P" variable (:type ("Position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [123 134])
+                    ("L" variable (:type ("List" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [135 142]))                  
+                :type "int")
+                nil [112 174])
+            ("Find" function
+               (:arguments 
+                  ( ("X" variable (:type ("ElementType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [190 204])
+                    ("L" variable (:type ("List" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [205 212]))                  
+                :type ("Position" type (:type "class") nil nil))
+                nil [176 376])
+            ("Delete" function
+               (:arguments 
+                  ( ("X" variable (:type ("ElementType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [390 404])
+                    ("L" variable (:type ("List" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [405 412]))                  
+                :type "void")
+                nil [378 585])
+            ("DeleteList" function
+               (:arguments 
+                  ( ("L" variable (:type ("List" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [603 610]))                  
+                :type "void")
+                nil [587 759])
+            ("FindPrevious" function
+               (:arguments 
+                  ( ("X" variable (:type ("ElementType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [783 797])
+                    ("L" variable (:type ("List" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [798 805]))                  
+                :type ("Position" type (:type "class") nil nil))
+                nil [761 974])
+            ("Insert" function
+               (:arguments 
+                  ( ("X" variable (:type ("ElementType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [988 1002])
+                    ("L" variable (:type ("List" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1003 1010])
+                    ("P" variable (:type ("Position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1011 1022]))                  
+                :type "void")
+                nil [976 1243]))          
+    :file "list.c"
+    :pointmax 1069
+    :fsize 1244
+    :lastmodtime '(20801 46580 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "polynomial.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("MaxDegree" variable (:constant-flag t) nil [49 58])
+            ("Polynomial" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("CoeffArray" variable
+                             (:dereference 1
+                              :type "int")
+                              (reparse-symbol classsubparts) [85 113])
+                          ("HighPower" variable (:type "int") (reparse-symbol classsubparts) [118 132]))                        
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [64 148])
+            ("ZeroPolynomial" function
+               (:arguments 
+                  ( ("Poly" variable (:type ("Polynomial" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [170 186]))                  
+                :type "void")
+                nil [150 302])
+            ("AddPolynomial" function
+               (:arguments 
+                  ( ("Poly1" variable
+                       (:constant-flag t
+                        :type ("Polynomial" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [323 346])
+                    ("Poly2" variable
+                       (:constant-flag t
+                        :type ("Polynomial" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [366 389])
+                    ("PolySum" variable (:type ("Polynomial" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [409 428]))                  
+                :type "void")
+                nil [304 662])
+            ("MultPolynomial" function
+               (:arguments 
+                  ( ("Poly1" variable
+                       (:constant-flag t
+                        :type ("Polynomial" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [684 707])
+                    ("Poly2" variable
+                       (:constant-flag t
+                        :type ("Polynomial" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [728 751])
+                    ("PolyProd" variable (:type ("Polynomial" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [752 772]))                  
+                :type "void")
+                nil [664 999]))          
+    :file "polynomial.c"
+    :pointmax 1000
+    :fsize 999
+    :lastmodtime '(20801 48966 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("MaxDegree" . ((number "20" 59 . 61)))
+          )
+
+    )
+   (semanticdb-table "polynomial_list.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("PtrToNode" type
+               (:typedef ("Node" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :superclasses "Node"
+                :type "typedef")
+                nil [41 73])
+            ("Node" type
+               (:members 
+                  ( ("Coefficient" variable (:type "int") (reparse-symbol classsubparts) [93 109])
+                    ("Exponent" variable (:type "int") (reparse-symbol classsubparts) [114 127])
+                    ("Next" variable (:type ("PtrToNode" type (:type "class") nil nil)) (reparse-symbol classsubparts) [132 147]))                  
+                :type "struct")
+                nil [75 150])
+            ("Polynomial" type
+               (:typedef ("PtrToNode" type (:type "class") nil nil)
+                :superclasses "PtrToNode"
+                :type "typedef")
+                nil [152 181])
+            ("MultPolynomial" function
+               (:arguments 
+                  ( ("Poly1" variable
+                       (:constant-flag t
+                        :type ("Polynomial" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [203 226])
+                    ("Poly2" variable
+                       (:constant-flag t
+                        :type ("Polynomial" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [247 270])
+                    ("PolyProd" variable (:type ("Polynomial" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [271 291]))                  
+                :type "void")
+                nil [183 1651]))          
+    :file "polynomial_list.c"
+    :pointmax 1652
+    :fsize 1651
+    :lastmodtime '(20802 52722 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "dnotify.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_GNU_SOURCE" variable (:constant-flag t) nil [9 20])
+            ("fcntl.h" include (:system-flag t) nil [21 39])
+            ("signal.h" include (:system-flag t) nil [40 59])
+            ("stdio.h" include (:system-flag t) nil [60 78])
+            ("unistd.h" include (:system-flag t) nil [79 98])
+            ("event_fd" variable
+               (:typemodifiers ("static" "volatile")
+                :type "int")
+                nil [100 129])
+            ("event_sig" variable
+               (:typemodifiers ("static" "volatile")
+                :type "int")
+                nil [130 160])
+            ("event_data" variable
+               (:pointer 1
+                :typemodifiers ("static" "volatile")
+                :type "void")
+                nil [161 194])
+            ("handler" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("sig" variable (:type "int") (reparse-symbol arg-sub-list) [216 224])
+                    ("si" variable
+                       (:pointer 1
+                        :type ("siginfo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [225 239])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [240 251]))                  
+                :type "void")
+                nil [196 320])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [331 336]))                  
+                :type "int")
+                nil [322 887]))          
+    :file "dnotify.c"
+    :pointmax 888
+    :fsize 887
+    :lastmodtime '(21029 51473 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("_GNU_SOURCE")
+          )
+
+    )
+   (semanticdb-table "fcgi_client.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("FCGI_CLIENT_HANDLER_H" variable (:constant-flag t) nil [39 60])
+            ("iostream" include (:system-flag t) nil [62 81])
+            ("boost/asio.hpp" include (:system-flag t) nil [82 107])
+            ("vector" include (:system-flag t) nil [108 125])
+            ("sstream" include (:system-flag t) nil [126 144])
+            ("boost::asio" using (:type ("boost::asio" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [146 174])
+            ("FCGI_CLIENT" type
+               (:members 
+                  ( ("FCGI" type
+                       (:members 
+                          ( ("FCGI_Header" type
+                               (:typedef ("" type
+                                     (:members 
+                                        ( ("version" variable (:type "unsigned char") (reparse-symbol classsubparts) [354 376])
+                                          ("type" variable (:type "unsigned char") (reparse-symbol classsubparts) [383 402])
+                                          ("requestId1" variable (:type "unsigned char") (reparse-symbol classsubparts) [409 434])
+                                          ("requestId0" variable (:type "unsigned char") (reparse-symbol classsubparts) [441 466])
+                                          ("contentLength1" variable (:type "unsigned char") (reparse-symbol classsubparts) [473 502])
+                                          ("contentLength0" variable (:type "unsigned char") (reparse-symbol classsubparts) [509 538])
+                                          ("paddingLength" variable (:type "unsigned char") (reparse-symbol classsubparts) [545 573])
+                                          ("reserved" variable (:type "unsigned char") (reparse-symbol classsubparts) [580 603]))                                        
+                                      :type "struct")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [327 622])
+                            ("FCGI_BeginRequestBody" type
+                               (:typedef ("" type
+                                     (:members 
+                                        ( ("role1" variable (:type "unsigned char") (reparse-symbol classsubparts) [651 671])
+                                          ("role0" variable (:type "unsigned char") (reparse-symbol classsubparts) [678 698])
+                                          ("flags" variable (:type "unsigned char") (reparse-symbol classsubparts) [705 725])
+                                          ("reserved" variable
+                                             (:dereference 1
+                                              :type "unsigned char")
+                                              (reparse-symbol classsubparts) [732 758]))                                        
+                                      :type "struct")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [628 787])
+                            ("private" label nil (reparse-symbol classsubparts) [807 815])
+                            ("m_sock" variable (:type ("ip::tcp::socket" type (:type "class") nil nil)) (reparse-symbol classsubparts) [820 843])
+                            ("m_ec" variable (:type ("boost::system::error_code" type (:type "class") nil nil)) (reparse-symbol classsubparts) [848 879])
+                            ("m_request_uri" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [884 911])
+                            ("m_script_filename" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [916 947])
+                            ("m_query_string" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [952 980])
+                            ("m_ep" variable (:type ("ip::tcp::endpoint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [985 1008])
+                            ("m_is_pre" variable (:type "bool") (reparse-symbol classsubparts) [1013 1027])
+                            ("m_is_close" variable (:type "bool") (reparse-symbol classsubparts) [1041 1057])
+                            ("private" label nil (reparse-symbol classsubparts) [1061 1069])
+                            ("close" function (:type "void") (reparse-symbol classsubparts) [1083 1196])
+                            ("getEnv" function
+                               (:arguments 
+                                  ( ("env_buff" variable
+                                       (:pointer 1
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [1213 1228]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [1202 2781])
+                            ("getHeader" function
+                               (:arguments 
+                                  ( ("buff" variable
+                                       (:pointer 1
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [2801 2814])
+                                    ("c_data" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [2815 2835])
+                                    ("c_len" variable
+                                       (:constant-flag t
+                                        :type "unsigned short")
+                                        (reparse-symbol arg-sub-list) [2835 2862]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [2787 3359])
+                            ("beginRequest" function (:type "void") (reparse-symbol classsubparts) [3380 3675])
+                            ("beginBody" function (:type "int") (reparse-symbol classsubparts) [3694 4206])
+                            ("endRequest" function (:type "int") (reparse-symbol classsubparts) [4225 4530])
+                            ("unpackHeader" function
+                               (:arguments 
+                                  ( ("buff" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [4568 4586])
+                                    ("header" variable
+                                       (:pointer 1
+                                        :type ("FCGI_Header" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4586 4606]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4550 4906])
+                            ("public" label nil (reparse-symbol classsubparts) [4910 4917])
+                            ("FCGI" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("iosev" variable
+                                       (:reference 1
+                                        :type ("io_service" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4925 4943])
+                                    ("ip" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [4943 4959])
+                                    ("port" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [4960 4975]))                                  
+                                :type ("FCGI" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4920 5120])
+                            ("FCGI" function
+                               (:destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [5126 5160])
+                            ("start" function (:type "void") (reparse-symbol classsubparts) [5166 5223])
+                            ("GetContent" function
+                               (:arguments 
+                                  ( ("content" variable
+                                       (:reference 1
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5247 5268]))                                  
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5229 6453])
+                            ("DoSend" function (:type "void") (reparse-symbol classsubparts) [6459 7341])
+                            ("SetEnv" function
+                               (:arguments 
+                                  ( ("uri" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [7372 7388]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7360 7729]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [292 7734]))                  
+                :type "namespace")
+                nil [266 7736]))          
+    :file "fcgi_client.h"
+    :pointmax 7722
+    :fsize 8022
+    :lastmodtime '(21098 8759 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("FCGI_CLIENT_HANDLER_H")
+          )
+
+    )
+   (semanticdb-table "fcgi.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("fcgi_client.h" include nil nil [1 25])
+            ("main" function (:type "int") nil [26 530]))          
+    :file "fcgi.cpp"
+    :pointmax 523
+    :fsize 598
+    :lastmodtime '(21098 8684 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!source!test!c!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

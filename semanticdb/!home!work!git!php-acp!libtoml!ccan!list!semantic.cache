@@ -1,0 +1,215 @@
+;; Object list/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "list/"
+  :tables (list 
+   (semanticdb-table "list.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("CCAN_LIST_H" variable (:constant-flag t) nil [29 40])
+            ("stdbool.h" include (:system-flag t) nil [41 61])
+            ("assert.h" include (:system-flag t) nil [62 81])
+            ("ccan/container_of/container_of.h" include (:system-flag t) nil [82 125])
+            ("list_node" type
+               (:members 
+                  ( ("prev" variable
+                       (:pointer 1
+                        :type ("list_node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [461 491])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("list_node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [461 491]))                  
+                :type "struct")
+                nil [441 494])
+            ("list_head" type
+               (:members 
+                  ( ("n" variable (:type ("list_node" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [806 825]))                  
+                :type "struct")
+                nil [786 828])
+            ("list_check" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("h" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("list_head" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1719 1745])
+                    ("abortstr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1746 1767]))                  
+                :type ("list_head" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1690 1768])
+            ("list_check_node" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("list_node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2198 2224])
+                    ("abortstr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2231 2252]))                  
+                :type ("list_node" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2164 2253])
+            ("list_debug" variable (:constant-flag t) nil [2398 2408])
+            ("list_debug_node" variable (:constant-flag t) nil [2424 2439])
+            ("LIST_HEAD_INIT" variable (:constant-flag t) nil [2728 2742])
+            ("LIST_HEAD" variable (:constant-flag t) nil [3132 3141])
+            ("list_head_init" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("h" variable
+                       (:pointer 1
+                        :type ("list_head" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3472 3492]))                  
+                :type "void")
+                nil [3438 3528])
+            ("list_add" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("h" variable
+                       (:pointer 1
+                        :type ("list_head" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3946 3966])
+                    ("n" variable
+                       (:pointer 1
+                        :type ("list_node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3967 3987]))                  
+                :type "void")
+                nil [3918 4091])
+            ("list_add_tail" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("h" variable
+                       (:pointer 1
+                        :type ("list_head" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4443 4463])
+                    ("n" variable
+                       (:pointer 1
+                        :type ("list_node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4464 4484]))                  
+                :type "void")
+                nil [4410 4588])
+            ("list_empty" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("h" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("list_head" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4812 4838]))                  
+                :type "bool")
+                nil [4782 4892])
+            ("list_del" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("n" variable
+                       (:pointer 1
+                        :type ("list_node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5254 5274]))                  
+                :type "void")
+                nil [5226 5442])
+            ("list_del_from" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("h" variable
+                       (:pointer 1
+                        :type ("list_head" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5879 5899])
+                    ("n" variable
+                       (:pointer 1
+                        :type ("list_node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5900 5920]))                  
+                :type "void")
+                nil [5846 6221])
+            ("list_entry" variable (:constant-flag t) nil [6606 6616])
+            ("list_top" variable (:constant-flag t) nil [6964 6972])
+            ("list_top" variable (:constant-flag t) nil [6964 6972])
+            ("list_tail" variable (:constant-flag t) nil [7355 7364])
+            ("list_for_each" variable (:constant-flag t) nil [7861 7874])
+            ("list_for_each_safe" variable (:constant-flag t) nil [8693 8711]))          
+    :file "list.h"
+    :pointmax 8981
+    :fsize 8980
+    :lastmodtime '(21068 9886 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("LIST_HEAD_INIT" (spp-arg-list ("name") 2742 . 2748) . ((semantic-list "{ { &name.n, &name.n } }" 2749 . 2773)))
+          ("list_top" (spp-arg-list ("h" "type" "member") 6972 . 6989) . ((semantic-list "(list_empty(h) ? NULL : list_entry((h)->n.next, type, member))" 6993 . 7055)))
+          ("CCAN_LIST_H")
+          ("LIST_HEAD" (spp-arg-list ("name") 3141 . 3147) . 
+              ((STRUCT "struct" 3151 . 3157) (symbol "list_head" 3158 . 3167) (symbol "name" 3168 . 3172) (punctuation "=" 3173 . 3174) (symbol "LIST_HEAD_INIT" 3175 . 3189) (semantic-list "(name)" 3189 . 3195)))
+          ("list_for_each_safe" (spp-arg-list ("h" "i" "nxt" "member") 8711 . 8730) . ((FOR "for" 8737 . 8740) (semantic-list "(i = container_of_var(list_debug(h)->n.next, i, member),	\\
+		nxt = container_of_var(i->member.next, i, member);	\\
+	     &i->member != &(h)->n;					\\
+	     i = nxt, nxt = container_of_var(i->member.next, i, member))" 8741 . 8955)))
+          ("list_debug_node" (spp-arg-list ("n") 2439 . 2442) . ((semantic-list "(n)" 2443 . 2446)))
+          ("list_tail" (spp-arg-list ("h" "type" "member") 7364 . 7381) . ((semantic-list "(list_empty(h) ? NULL : list_entry((h)->n.prev, type, member))" 7385 . 7447)))
+          ("list_debug" (spp-arg-list ("h") 2408 . 2411) . ((semantic-list "(h)" 2412 . 2415)))
+          ("list_entry" (spp-arg-list ("n" "type" "member") 6616 . 6633) . ((symbol "container_of" 6634 . 6646) (semantic-list "(n, type, member)" 6646 . 6663)))
+          ("list_for_each" (spp-arg-list ("h" "i" "member") 7874 . 7888) . ((FOR "for" 7896 . 7899) (semantic-list "(i = container_of_var(list_debug(h)->n.next, i, member);	\\
+	     &i->member != &(h)->n;					\\
+	     i = container_of_var(i->member.next, i, member))" 7900 . 8048)))
+          )
+
+    )
+   )
+  :file "!home!work!git!php-acp!libtoml!ccan!list!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

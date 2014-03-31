@@ -1,0 +1,34 @@
+;; Object scripts/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "scripts/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("BUILT_SOURCES" variable (:default-value ("mysql_fix_privilege_tables.sql" "mysql_fix_privilege_tables_sql.c")) nil [796 880])
+            ("EXTRA_PROGRAMS" variable (:default-value ("comp_sql")) nil [881 908])
+            ("bin_SCRIPTS" variable (:default-value ("@server_scripts@" "msql2mysql" "mysql_config" "mysql_fix_privilege_tables" "mysql_fix_extensions" "mysql_setpermission" "mysql_secure_installation" "mysql_zap" "mysqlaccess" "mysqlbug" "mysql_convert_table_format" "mysql_find_rows" "mysqlhotcopy" "mysqldumpslow" "mysqld_multi")) nil [909 1243])
+            ("noinst_SCRIPTS" variable (:default-value ("make_binary_distribution" "make_sharedlib_distribution")) nil [1244 1319])
+            ("EXTRA_SCRIPTS" variable (:default-value ("make_binary_distribution.sh" "make_sharedlib_distribution.sh" "msql2mysql.sh" "mysql_config.sh" "mysql_config.pl.in" "mysql_fix_privilege_tables.sh" "mysql_fix_extensions.sh" "mysql_install_db.sh" "mysql_install_db.pl.in" "mysql_setpermission.sh" "mysql_secure_installation.sh" "mysql_secure_installation.pl.in" "mysql_zap.sh" "mysqlaccess.sh" "mysqlbug.sh" "mysql_convert_table_format.sh" "mysql_find_rows.sh" "mysqlhotcopy.sh" "mysqldumpslow.sh" "mysqld_multi.sh" "mysqld_safe.sh")) nil [1320 1879])
+            ("EXTRA_DIST" variable (:default-value ("$(EXTRA_SCRIPTS)" "mysqlaccess.conf" "mysqlbug" "make_win_bin_dist" "mysql_fix_privilege_tables_sql.c" "mysql_system_tables_fix.sql" "CMakeLists.txt")) nil [1880 2061])
+            ("dist_pkgdata_DATA" variable (:default-value ("fill_help_tables.sql" "mysql_fix_privilege_tables.sql" "mysql_system_tables.sql" "mysql_system_tables_data.sql" "mysql_test_data_timezone.sql")) nil [2062 2236])
+            ("CLEANFILES" variable (:default-value ("@server_scripts@" "make_binary_distribution" "make_sharedlib_distribution" "msql2mysql" "mysql_config" "mysql_fix_privilege_tables" "mysql_fix_extensions" "mysql_setpermission" "mysql_secure_installation" "mysql_zap" "mysqlaccess" "mysql_convert_table_format" "mysql_find_rows" "mysqlhotcopy" "mysqldumpslow" "mysqld_multi")) nil [2237 2619])
+            ("pkgplugindir" variable (:default-value ("$(pkglibdir)/plugin")) nil [2620 2656])
+            ("pkgsuppdir" variable (:default-value ("$(datadir)/@PACKAGE@")) nil [2712 2747])
+            ("DISTCLEANFILES" variable (:default-value ("$(BUILT_SOURCES)" "mysqlbug")) nil [2839 2889])
+            ("mysqlbug" function (:arguments ("${top_builddir}/config.status" "mysqlbug.sh")) nil [2956 3008])
+            ("mysql_fix_privilege_tables.sql" function (:arguments ("mysql_system_tables.sql" "mysql_system_tables_fix.sql")) nil [3200 3375])
+            ("mysql_fix_privilege_tables_sql.c" function (:arguments ("comp_sql.c" "mysql_fix_privilege_tables.sql")) nil [3620 3886])
+            ("SUFFIXES" variable (:default-value (".sh")) nil [3888 3903])
+            (".sh" function nil nil [3904 6505]))          
+    :file "Makefile.am"
+    :pointmax 6559
+    :fsize 6558
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax '((symbol 6550 . 6558) (punctuation 6549 . 6550) (punctuation 6548 . 6549) (symbol 6547 . 6548) (bol 6547 . 6547))
+    )
+   )
+  :file "!home!work!git!mm!mysql-5.1.71!scripts!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

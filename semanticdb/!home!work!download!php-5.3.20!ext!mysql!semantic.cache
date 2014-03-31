@@ -1,0 +1,30 @@
+;; Object mysql/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mysql/"
+  :tables (list 
+   (semanticdb-table "php_mysql.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("php.h" include nil nil [1409 1425])
+            ("php_globals.h" include nil nil [1426 1450])
+            ("ext/standard/info.h" include nil nil [1451 1481])
+            ("ext/standard/php_string.h" include nil nil [1482 1518])
+            ("ext/standard/basic_functions.h" include nil nil [1519 1560])
+            ("OnUpdateLong" variable (:constant-flag t) nil [1649 1661])
+            ("E_STRICT" variable (:constant-flag t) nil [1683 1691]))          
+    :file "php_mysql.c"
+    :pointmax 76655
+    :fsize 76654
+    :lastmodtime '(20689 55724 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("OnUpdateLong" . ((symbol "OnUpdateInt" 1662 . 1673)))
+          ("E_STRICT" . ((symbol "E_NOTICE" 1693 . 1701)))
+          )
+
+    )
+   )
+  :file "!home!work!download!php-5.3.20!ext!mysql!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

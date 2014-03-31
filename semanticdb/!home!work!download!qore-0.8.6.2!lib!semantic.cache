@@ -1,0 +1,66 @@
+;; Object lib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lib/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("libdir" variable (:default-value ("${exec_prefix}/lib${LIBSUFFIX}")) nil [1 41])
+            ("pkglibdir" variable (:default-value ("$(libdir)/$(mypkglibdir)")) nil [41 78])
+            ("SUBDIRS" variable nil nil [79 89])
+            ("BUILT_SOURCES" variable (:default-value ("dummy")) nil [90 112])
+            ("dummy" function nil nil [113 149])
+            ("EXTRA_INCLUDES" variable (:default-value ("-I$(top_srcdir)/include")) nil [150 191])
+            ("libqore_la_LDFLAGS" variable (:default-value ("-version-info" "14:1:9" "-no-undefined" "${QORE_LIB_LDFLAGS}")) nil [191 267])
+            ("AM_CPPFLAGS" variable (:default-value ("$(EXTRA_INCLUDES)" "${QORE_LIB_CPPFLAGS}")) nil [267 320])
+            ("AM_CXXFLAGS" variable (:default-value ("${QORE_LIB_CXXFLAGS}")) nil [320 355])
+            ("AM_YFLAGS" variable (:default-value ("-d")) nil [355 370])
+            ("lib_LTLIBRARIES" variable (:default-value ("libqore.la")) nil [371 400])
+            ("bin_PROGRAMS" variable (:default-value ("qpp$(EXEEXT)")) nil [401 429])
+            ("qpp_SOURCES" variable (:default-value ("qpp.cpp")) nil [430 452])
+            ("qpp_SOURCES" variable (:default-value ("getopt_long.cpp")) nil [478 509])
+            ("BUILT_SOURCES" variable (:default-value ("qpp_native")) nil [532 560])
+            ("QPP" variable (:default-value ("./qpp_native")) nil [560 577])
+            ("qpp_native" function (:arguments ("$(qpp_SOURCES)")) nil [577 695])
+            ("QPP" variable (:default-value ("./qpp$(EXEEXT)")) nil [700 719])
+            ("qpp" function (:arguments ("$(qpp_SOURCES)")) nil [726 846])
+            ("QORE_PSEUDO_SRC" variable (:default-value ("Pseudo_QC_All.cpp" "Pseudo_QC_Bool.cpp" "Pseudo_QC_Int.cpp" "Pseudo_QC_Float.cpp" "Pseudo_QC_Date.cpp" "Pseudo_QC_Object.cpp" "Pseudo_QC_Hash.cpp" "Pseudo_QC_String.cpp" "Pseudo_QC_Binary.cpp" "Pseudo_QC_List.cpp" "Pseudo_QC_Closure.cpp" "Pseudo_QC_Callref.cpp" "Pseudo_QC_Nothing.cpp" "Pseudo_QC_Number.cpp")) nil [847 1159])
+            ("QorePseudoMethods.cpp" function (:arguments ("$(QORE_PSEUDO_SRC)")) nil [1160 1202])
+            ("QORE_QPP_TARGETS" variable (:default-value ("QC_Queue.cpp" "QC_Socket.cpp" "QC_ReadOnlyFile.cpp" "QC_File.cpp" "QC_AbstractSmartLock.cpp" "QC_Mutex.cpp" "QC_AutoLock.cpp" "QC_Gate.cpp" "QC_AutoGate.cpp" "QC_RWLock.cpp" "QC_AutoReadLock.cpp" "QC_AutoWriteLock.cpp" "QC_Condition.cpp" "QC_Sequence.cpp" "QC_Counter.cpp" "QC_HTTPClient.cpp" "QC_FtpClient.cpp" "QC_AbstractIterator.cpp" "QC_AbstractQuantifiedIterator.cpp" "QC_AbstractBidirectionalIterator.cpp" "QC_AbstractQuantifiedBidirectionalIterator.cpp" "QC_ListIterator.cpp" "QC_ListReverseIterator.cpp" "QC_HashIterator.cpp" "QC_HashReverseIterator.cpp" "QC_HashKeyIterator.cpp" "QC_HashKeyReverseIterator.cpp" "QC_HashPairIterator.cpp" "QC_HashPairReverseIterator.cpp" "QC_ObjectIterator.cpp" "QC_ObjectReverseIterator.cpp" "QC_ObjectKeyIterator.cpp" "QC_ObjectKeyReverseIterator.cpp" "QC_ObjectPairIterator.cpp" "QC_ObjectPairReverseIterator.cpp" "QC_HashListIterator.cpp" "QC_HashListReverseIterator.cpp" "QC_ListHashIterator.cpp" "QC_ListHashReverseIterator.cpp" "QC_FileLineIterator.cpp" "QC_SingleValueIterator.cpp" "QC_RangeIterator.cpp" "QC_AbstractDatasource.cpp" "QC_Datasource.cpp" "QC_DatasourcePool.cpp" "QC_SQLStatement.cpp" "QC_Dir.cpp" "QC_Program.cpp" "QC_GetOpt.cpp" "QC_TermIOS.cpp" "QC_TimeZone.cpp" "QC_SSLCertificate.cpp" "QC_SSLPrivateKey.cpp" "ql_misc.cpp" "ql_compression.cpp" "ql_thread.cpp" "ql_crypto.cpp" "ql_lib.cpp" "ql_file.cpp" "ql_string.cpp" "ql_time.cpp" "ql_math.cpp" "ql_list.cpp" "ql_type.cpp" "ql_pwd.cpp" "ql_object.cpp" "ql_env.cpp" "ql_dbi.cpp" "ql_context.cpp" "qc_option.cpp" "qc_errno.cpp" "qc_qore.cpp")) nil [1203 2715])
+            ("QORE_GENERATED_SOURCES" variable (:default-value ("$(QORE_QPP_TARGETS)" "parser.cpp" "parser.hpp" "scanner.cpp")) nil [2716 2795])
+            ("dox-src" function (:arguments ("$(QORE_GENERATED_SOURCES)")) nil [2796 2831])
+            ("QORE_ALL_SRC" variable (:default-value ("$(QORE_GENERATED_SOURCES)" "$(QORE_PSEUDO_SRC)")) nil [2832 2892])
+            ("QORE_ALL_QPP_SRC" variable (:default-value ("$(subst cpp,qpp,$(QORE_QPP_TARGETS) $(QORE_PSEUDO_SRC))")) nil [2893 2968])
+            ("$(QORE_ALL_QPP_SRC)" function (:arguments ("$(QPP)")) nil [2969 2997])
+            ("$(QORE_QPP_TARGETS)" function (:arguments ("%.cpp:" "%.qpp")) nil [2998 3062])
+            ("$(QORE_PSEUDO_SRC)" function (:arguments ("%.cpp:" "%.qpp")) nil [2998 3062])
+            ("CLEANFILES" variable (:default-value ("$(QORE_ALL_SRC)")) nil [3063 3092])
+            ("parser.hpp" function (:arguments ("dummy")) nil [3195 3324])
+            ("parser.cpp" function (:arguments ("parser.ypp")) nil [3324 3347])
+            ("scanner.cpp" function (:arguments ("scanner.lpp")) nil [3347 3372])
+            ("libqore_la_SOURCES" variable (:default-value ("single-compilation-unit.cpp")) nil [3405 3457])
+            ("single-compilation-unit.cpp" function (:arguments ("parser.cpp" "parser.hpp" "scanner.cpp" "$(QORE_ALL_SRC)")) nil [3458 3537])
+            ("nodist_libqore_la_SOURCES" variable (:default-value ("$(QORE_GENERATED_SOURCES)")) nil [3543 3597])
+            ("libqore_la_SOURCES" variable (:default-value ("parser.ypp" "scanner.lpp" "Operator.cpp" "QoreTreeNode.cpp" "BarewordNode.cpp" "SelfVarrefNode.cpp" "StaticClassVarRefNode.cpp" "BackquoteNode.cpp" "ContextrefNode.cpp" "ComplexContextrefNode.cpp" "ContextRowNode.cpp" "VarRefNode.cpp" "FunctionCallNode.cpp" "ReferenceNode.cpp" "ScopedRefNode.cpp" "ClassRefNode.cpp" "AbstractQoreNode.cpp" "QoreStringNode.cpp" "DateTimeNode.cpp" "qore_date_private.cpp" "QoreHashNode.cpp" "BinaryNode.cpp" "QoreBigIntNode.cpp" "QoreBoolNode.cpp" "QoreFloatNode.cpp" "QoreNumberNode.cpp" "QoreNullNode.cpp" "QoreNothingNode.cpp" "Function.cpp" "BuiltinFunctionList.cpp" "GlobalVariableList.cpp" "FunctionList.cpp" "AbstractStatement.cpp" "OnBlockExitStatement.cpp" "ExpressionStatement.cpp" "ReturnStatement.cpp" "StatementBlock.cpp" "ContextStatement.cpp" "SummarizeStatement.cpp" "IfStatement.cpp" "WhileStatement.cpp" "DoWhileStatement.cpp" "ForStatement.cpp" "ForEachStatement.cpp" "TryStatement.cpp" "ThrowStatement.cpp" "SwitchStatement.cpp" "Variable.cpp" "support.cpp" "QoreType.cpp" "ModuleManager.cpp" "QoreException.cpp" "ExceptionSink.cpp" "QoreClass.cpp" "Context.cpp" "FindNode.cpp" "charset.cpp" "QoreProgram.cpp" "QoreNamespace.cpp" "QoreNet.cpp" "QoreURL.cpp" "QoreFile.cpp" "QoreDir.cpp" "QoreSocket.cpp" "DateTime.cpp" "QoreLib.cpp" "QoreTimeZoneManager.cpp" "QoreString.cpp" "QoreObject.cpp" "QoreListNode.cpp" "qore-main.cpp" "QoreGetOpt.cpp" "QoreFtpClient.cpp" "DBI.cpp" "Datasource.cpp" "DatasourcePool.cpp" "SQLStatement.cpp" "QoreSQLStatement.cpp" "ManagedDatasource.cpp" "ReferenceArgumentHelper.cpp" "ReferenceHelper.cpp" "ConstantList.cpp" "QoreClassList.cpp" "ThreadResourceList.cpp" "thread.cpp" "VRMutex.cpp" "VLock.cpp" "AbstractSmartLock.cpp" "ExecArgList.cpp" "NamedScope.cpp" "RWLock.cpp" "QoreSSLBase.cpp" "QoreSSLCertificate.cpp" "QoreSSLPrivateKey.cpp" "mySocket.cpp" "QoreCondition.cpp" "QoreQueue.cpp" "QoreRegexNode.cpp" "QoreRegexBase.cpp" "RegexSubstNode.cpp" "RegexTransNode.cpp" "Sequence.cpp" "QoreReferenceCounter.cpp" "SystemEnvironment.cpp" "SmartMutex.cpp" "QoreCounter.cpp" "CallReferenceNode.cpp" "QoreClosureParseNode.cpp" "QoreClosureNode.cpp" "QoreImplicitArgumentNode.cpp" "QoreImplicitElementNode.cpp" "ParseOptionMap.cpp" "QoreTypeInfo.cpp" "QoreDeleteOperatorNode.cpp" "QoreRemoveOperatorNode.cpp" "QoreSpliceOperatorNode.cpp" "QoreExtractOperatorNode.cpp" "QoreCastOperatorNode.cpp" "QoreUnaryMinusOperatorNode.cpp" "QoreDotEvalOperatorNode.cpp" "QoreLogicalEqualsOperatorNode.cpp" "QoreAssignmentOperatorNode.cpp" "QoreIntAssignmentOperatorNode.cpp" "QorePlusEqualsOperatorNode.cpp" "QoreIntPlusEqualsOperatorNode.cpp" "QoreMinusEqualsOperatorNode.cpp" "QoreIntMinusEqualsOperatorNode.cpp" "QoreOrEqualsOperatorNode.cpp" "QoreAndEqualsOperatorNode.cpp" "QoreModulaEqualsOperatorNode.cpp" "QoreMultiplyEqualsOperatorNode.cpp" "QoreDivideEqualsOperatorNode.cpp" "QoreXorEqualsOperatorNode.cpp" "QoreShiftLeftEqualsOperatorNode.cpp" "QoreShiftRightEqualsOperatorNode.cpp" "QorePostIncrementOperatorNode.cpp" "QorePostDecrementOperatorNode.cpp" "QorePreIncrementOperatorNode.cpp" "QorePreDecrementOperatorNode.cpp" "QoreIntPostIncrementOperatorNode.cpp" "QoreIntPostDecrementOperatorNode.cpp" "QoreIntPreIncrementOperatorNode.cpp" "QoreIntPreDecrementOperatorNode.cpp" "QoreLogicalLessThanOperatorNode.cpp" "QoreLogicalGreaterThanOperatorNode.cpp" "QorePseudoMethods.cpp" "QoreHTTPClient.cpp" "xxhash.cpp" "minitest.cpp")) nil [3598 7237])
+            ("libqore_la_SOURCES" variable (:default-value ("QoreSignal.cpp")) nil [7262 7299])
+            ("libqore_la_SOURCES" variable (:default-value ("ql_debug.cpp")) nil [7319 7354])
+            ("libqore_la_SOURCES" variable (:default-value ("CallStack.cpp")) nil [7380 7416])
+            ("libqore_la_SOURCES" variable (:default-value ("glob.cpp")) nil [7440 7471])
+            ("libqore_la_SOURCES" variable (:default-value ("inet_ntop.cpp")) nil [7500 7536])
+            ("libqore_la_SOURCES" variable (:default-value ("inet_pton.cpp")) nil [7565 7601])
+            ("libqore_la_SOURCES" variable (:default-value ("sunpro-x86_64.s")) nil [7640 7678])
+            ("libqore_la_SOURCES" variable (:default-value ("sunpro-i386.s")) nil [7708 7744])
+            ("libqore_la_SOURCES" variable (:default-value ("sunpro-sparc32.s")) nil [7777 7816])
+            ("libqore_la_SOURCES" variable (:default-value ("acc-parisc32.s")) nil [7923 7960])
+            ("libqore_la_SOURCES" variable (:default-value ("acc-64bit-ia64.s")) nil [7994 8033]))          
+    :file "Makefile.am"
+    :pointmax 8039
+    :fsize 8038
+    :lastmodtime '(20645 57890)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!download!qore-0.8.6.2!lib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

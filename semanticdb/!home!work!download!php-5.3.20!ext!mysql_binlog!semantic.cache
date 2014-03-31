@@ -1,0 +1,127 @@
+;; Object mysql_binlog/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mysql_binlog/"
+  :tables (list 
+   (semanticdb-table "php_mysql_binlog.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("PHP_MYSQL_BINLOG_H" variable (:constant-flag t) nil [1180 1198])
+            ("mysql_binlog_module_entry" variable
+               (:typemodifiers ("extern")
+                :type ("zend_module_entry" type (:type "class") nil nil))
+                nil [1200 1251])
+            ("phpext_mysql_binlog_ptr" variable (:constant-flag t) nil [1260 1283])
+            ("PHP_MYSQL_BINLOG_API" variable (:constant-flag t) nil [1431 1451])
+            ("C" extern nil nil [1536 1586])
+            ("PHP_MINIT_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("mysql_binlog" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1607 1620]))                  
+                :type "int")
+                nil [1588 1621])
+            ("PHP_MSHUTDOWN_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("mysql_binlog" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1645 1658]))                  
+                :type "int")
+                nil [1622 1659])
+            ("PHP_RINIT_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("mysql_binlog" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1679 1692]))                  
+                :type "int")
+                nil [1660 1693])
+            ("PHP_RSHUTDOWN_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("mysql_binlog" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1717 1730]))                  
+                :type "int")
+                nil [1694 1731])
+            ("PHP_MINFO_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("mysql_binlog" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1751 1764]))                  
+                :type "int")
+                nil [1732 1765])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("confirm_mysql_binlog_compiled" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1780 1810]))                  
+                :type "int")
+                nil [1767 1811])
+            ("MYSQL_BINLOG_G" variable (:constant-flag t) nil [2712 2726]))          
+    :file "php_mysql_binlog.h"
+    :pointmax 2918
+    :fsize 2932
+    :lastmodtime '(20742 32469)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("phpext_mysql_binlog_ptr" . ((punctuation "&" 1284 . 1285) (symbol "mysql_binlog_module_entry" 1285 . 1310)))
+          ("PHP_MYSQL_BINLOG_API" . ((symbol "__attribute__" 1452 . 1465) (semantic-list "((visibility(\"default\")))" 1466 . 1491)))
+          ("MYSQL_BINLOG_G" (spp-arg-list ("v") 2711 . 2714) . ((semantic-list "(mysql_binlog_globals.v)" 2715 . 2739)))
+          ("PHP_MYSQL_BINLOG_H")
+          )
+
+    )
+   (semanticdb-table "mysql_binlog.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("ext/standard/info.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [1245 1275])
+            ("php_ini.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [1224 1244])
+            ("php.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [1207 1223])
+            ("C" extern (:members 
+              ( ("php.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [1207 1223])
+                ("php_ini.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [1224 1244])
+                ("ext/standard/info.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [1245 1275]))              ) nil [1145 1277])
+            ("php_mysql_binlog.h" include nil nil [1279 1308])
+            ("le_mysql_binlog" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [1485 1512])
+            ("mysql_binlog_functions" variable
+               (:dereference 1
+                :constant-flag t
+                :type ("zend_function_entry" type (:type "class") nil nil))
+                nil [1632 1836])
+            ("mysql_binlog_module_entry" variable (:type ("zend_module_entry" type (:type "class") nil nil)) nil [1885 2444])
+            ("PHP_MINIT_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("mysql_binlog" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3330 3343]))                  
+                :type "int")
+                nil [3311 3445])
+            ("PHP_MSHUTDOWN_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("mysql_binlog" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3514 3527]))                  
+                :type "int")
+                nil [3491 3627])
+            ("PHP_RINIT_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("mysql_binlog" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3743 3756]))                  
+                :type "int")
+                nil [3724 3777])
+            ("PHP_RSHUTDOWN_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("mysql_binlog" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3899 3912]))                  
+                :type "int")
+                nil [3876 3933])
+            ("PHP_MINFO_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("mysql_binlog" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3994 4007]))                  
+                :type "int")
+                nil [3975 4219])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("confirm_mysql_binlog_compiled" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4620 4650]))                  
+                :type "int")
+                nil [4607 4999]))          
+    :file "mysql_binlog.cpp"
+    :pointmax 5462
+    :fsize 5461
+    :lastmodtime '(20742 32602)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!download!php-5.3.20!ext!mysql_binlog!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

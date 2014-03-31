@@ -1,0 +1,19 @@
+;; Object r/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "r/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("EXTRA_DIST" variable (:default-value ("bug_29494.result")) nil [1 39]))          
+    :file "Makefile.am"
+    :pointmax 39
+    :fsize 38
+    :lastmodtime '(21022 63839 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!git!mm!mysql-proxy-0.8.2!tests!suite!bugs!r!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

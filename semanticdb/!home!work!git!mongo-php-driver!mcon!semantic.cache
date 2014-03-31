@@ -1,0 +1,1029 @@
+;; Object mcon/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mcon/"
+  :tables (list 
+   (semanticdb-table "types.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("__MCON_TYPES_H__" variable (:constant-flag t) nil [641 657])
+            ("stdarg.h" include (:system-flag t) nil [659 678])
+            ("stdint.h" include (:system-flag t) nil [1077 1097])
+            ("netinet/in.h" include (:system-flag t) nil [1098 1122])
+            ("netinet/tcp.h" include (:system-flag t) nil [1123 1148])
+            ("fcntl.h" include (:system-flag t) nil [1149 1168])
+            ("netdb.h" include (:system-flag t) nil [1169 1188])
+            ("sys/un.h" include (:system-flag t) nil [1189 1209])
+            ("sys/socket.h" include (:system-flag t) nil [1210 1234])
+            ("unistd.h" include (:system-flag t) nil [1235 1255])
+            ("sys/time.h" include (:system-flag t) nil [1256 1278])
+            ("MONGO_CON_TYPE_STANDALONE" variable (:constant-flag t) nil [1295 1320])
+            ("MONGO_CON_TYPE_MULTIPLE" variable (:constant-flag t) nil [1331 1354])
+            ("MONGO_CON_TYPE_REPLSET" variable (:constant-flag t) nil [1367 1389])
+            ("MONGO_CON_FLAG_READ" variable (:constant-flag t) nil [1449 1468])
+            ("MONGO_CON_FLAG_WRITE" variable (:constant-flag t) nil [1493 1513])
+            ("MONGO_CON_FLAG_DONT_CONNECT" variable (:constant-flag t) nil [1537 1564])
+            ("MONGO_CON_FLAG_DONT_FILTER" variable (:constant-flag t) nil [1581 1607])
+            ("MONGO_NODE_INVALID" variable (:constant-flag t) nil [1956 1974])
+            ("MONGO_NODE_STANDALONE" variable (:constant-flag t) nil [1995 2016])
+            ("MONGO_NODE_PRIMARY" variable (:constant-flag t) nil [2034 2052])
+            ("MONGO_NODE_SECONDARY" variable (:constant-flag t) nil [2073 2093])
+            ("MONGO_NODE_ARBITER" variable (:constant-flag t) nil [2112 2130])
+            ("MONGO_NODE_MONGOS" variable (:constant-flag t) nil [2151 2168])
+            ("MONGO_STATE_STARTING1" variable (:constant-flag t) nil [2332 2353])
+            ("MONGO_STATE_PRIMARY" variable (:constant-flag t) nil [2371 2390])
+            ("MONGO_STATE_SECONDARY" variable (:constant-flag t) nil [2410 2431])
+            ("MONGO_STATE_RECOVERING" variable (:constant-flag t) nil [2449 2471])
+            ("MONGO_STATE_FATAL_ERROR" variable (:constant-flag t) nil [2488 2511])
+            ("MONGO_STATE_STARTING2" variable (:constant-flag t) nil [2527 2548])
+            ("MONGO_STATE_UNKNOWN" variable (:constant-flag t) nil [2566 2585])
+            ("MONGO_STATE_ARBITER" variable (:constant-flag t) nil [2605 2624])
+            ("MONGO_STATE_DOWN" variable (:constant-flag t) nil [2644 2660])
+            ("MONGO_STATE_ROLLBACK" variable (:constant-flag t) nil [2683 2703])
+            ("MONGO_STATE_REMOVED" variable (:constant-flag t) nil [2722 2741])
+            ("MLOG_WARN" variable (:constant-flag t) nil [2818 2827])
+            ("MLOG_INFO" variable (:constant-flag t) nil [2841 2850])
+            ("MLOG_FINE" variable (:constant-flag t) nil [2864 2873])
+            ("MLOG_RS" variable (:constant-flag t) nil [2902 2909])
+            ("MLOG_CON" variable (:constant-flag t) nil [2925 2933])
+            ("MLOG_IO" variable (:constant-flag t) nil [2948 2955])
+            ("MLOG_SERVER" variable (:constant-flag t) nil [2971 2982])
+            ("MLOG_PARSE" variable (:constant-flag t) nil [2994 3004])
+            ("MLOG_NONE" variable (:constant-flag t) nil [3018 3027])
+            ("MLOG_ALL" variable (:constant-flag t) nil [3041 3049])
+            ("MONGO_DEFAULT_MAX_DOCUMENT_SIZE" variable (:constant-flag t) nil [3119 3150])
+            ("MONGO_DEFAULT_MAX_MESSAGE_SIZE" variable (:constant-flag t) nil [3178 3208])
+            ("MAX_SERVERS_LIMIT" variable (:constant-flag t) nil [3406 3423])
+            ("MONGO_CLOSE_SHUTDOWN" variable (:constant-flag t) nil [3485 3505])
+            ("MONGO_CLOSE_BROKEN" variable (:constant-flag t) nil [3549 3567])
+            ("MONGO_SSL_DISABLE" variable (:constant-flag t) nil [3639 3656])
+            ("MONGO_SSL_ENABLE" variable (:constant-flag t) nil [3667 3683])
+            ("MONGO_SSL_PREFER" variable (:constant-flag t) nil [3694 3710])
+            ("mongo_cleanup_t" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("callback_data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3744 3764]))                  
+                :type "int")
+                nil [3722 3765])
+            ("mongo_connection_deregister_callback" type
+               (:typedef ("_mongo_connection_deregister_callback" type (:type "struct") nil nil)
+                :superclasses "_mongo_connection_deregister_callback"
+                :type "typedef")
+                nil [3767 4041])
+            ("_mongo_connection_deregister_callback" type
+               (:members 
+                  ( ("callback_data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [3823 3883])
+                    ("mongo_cleanup_cb" variable
+                       (:pointer 1
+                        :type ("mongo_cleanup_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3885 3948])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("_mongo_connection_deregister_callback" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [3950 4001]))                  
+                :type "struct")
+                nil [3767 4041])
+            ("mongo_connection" type
+               (:typedef ("_mongo_connection" type (:type "struct") nil nil)
+                :superclasses "_mongo_connection"
+                :type "typedef")
+                nil [4168 5087])
+            ("_mongo_connection" type
+               (:members 
+                  ( ("last_ping" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4204 4221])
+                    ("ping_ms" variable (:type "int") (reparse-symbol classsubparts) [4276 4291])
+                    ("last_ismaster" variable (:type "int") (reparse-symbol classsubparts) [4293 4314])
+                    ("last_reqid" variable (:type "int") (reparse-symbol classsubparts) [4386 4404])
+                    ("socket" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [4406 4420])
+                    ("connection_type" variable (:type "int") (reparse-symbol classsubparts) [4490 4513])
+                    ("version" variable (:type ("" type
+                         (:members 
+                            ( ("major" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4582 4596])
+                              ("minor" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4599 4613])
+                              ("mini" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4616 4629])
+                              ("build" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4632 4646]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [4571 4658])
+                    ("max_bson_size" variable (:type "int") (reparse-symbol classsubparts) [4660 4681])
+                    ("max_message_size" variable (:type "int") (reparse-symbol classsubparts) [4772 4796])
+                    ("tag_count" variable (:type "int") (reparse-symbol classsubparts) [4887 4904])
+                    ("tags" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol classsubparts) [4906 4918])
+                    ("hash" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [4920 4932])
+                    ("cleanup_list" variable
+                       (:pointer 1
+                        :type ("mongo_connection_deregister_callback" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5016 5067]))                  
+                :type "struct")
+                nil [4168 5087])
+            ("mongo_connection_blacklist" type
+               (:typedef ("_mongo_connection_blacklist" type (:type "struct") nil nil)
+                :superclasses "_mongo_connection_blacklist"
+                :type "typedef")
+                nil [5089 5182])
+            ("_mongo_connection_blacklist" type
+               (:members 
+                  ( ("last_ping" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5135 5152]))                  
+                :type "struct")
+                nil [5089 5182])
+            ("mongo_con_manager_item" type
+               (:typedef ("_mongo_con_manager_item" type (:type "struct") nil nil)
+                :superclasses "_mongo_con_manager_item"
+                :type "typedef")
+                nil [5184 5367])
+            ("_mongo_con_manager_item" type
+               (:members 
+                  ( ("hash" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [5226 5263])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [5265 5302])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("_mongo_con_manager_item" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [5304 5341]))                  
+                :type "struct")
+                nil [5184 5367])
+            ("mongo_log_callback_t" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("module" variable (:type "int") (reparse-symbol arg-sub-list) [5405 5416])
+                    ("level" variable (:type "int") (reparse-symbol arg-sub-list) [5417 5427])
+                    ("context" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [5428 5442])
+                    ("format" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5443 5456])
+                    ("arg" variable (:type ("va_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5457 5469]))                  
+                :type "void")
+                nil [5377 5470])
+            ("MONGO_MANAGER_DEFAULT_PING_INTERVAL" variable (:constant-flag t) nil [5480 5515])
+            ("MONGO_MANAGER_DEFAULT_PING_INTERVAL_S" variable (:constant-flag t) nil [5530 5567])
+            ("MONGO_MANAGER_DEFAULT_MASTER_INTERVAL" variable (:constant-flag t) nil [5582 5619])
+            ("MONGO_MANAGER_DEFAULT_MASTER_INTERVAL_S" variable (:constant-flag t) nil [5633 5672])
+            ("mongo_read_preference_tagset" type
+               (:typedef ("_mongo_read_preference_tagset" type (:type "struct") nil nil)
+                :superclasses "_mongo_read_preference_tagset"
+                :type "typedef")
+                nil [5679 5790])
+            ("_mongo_read_preference_tagset" type
+               (:members 
+                  ( ("tag_count" variable (:type "int") (reparse-symbol classsubparts) [5727 5744])
+                    ("tags" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol classsubparts) [5746 5758]))                  
+                :type "struct")
+                nil [5679 5790])
+            ("mongo_read_preference" type
+               (:typedef ("_mongo_read_preference" type (:type "struct") nil nil)
+                :superclasses "_mongo_read_preference"
+                :type "typedef")
+                nil [5792 6046])
+            ("_mongo_read_preference" type
+               (:members 
+                  ( ("type" variable (:type "int") (reparse-symbol classsubparts) [5833 5869])
+                    ("tagset_count" variable (:type "int") (reparse-symbol classsubparts) [5896 5940])
+                    ("tagsets" variable
+                       (:pointer 2
+                        :type ("mongo_read_preference_tagset" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5982 6021]))                  
+                :type "struct")
+                nil [5792 6046])
+            ("MONGO_AUTH_MECHANISM_MONGODB_CR" variable (:constant-flag t) nil [6056 6087])
+            ("MONGO_AUTH_MECHANISM_GSSAPI" variable (:constant-flag t) nil [6100 6127])
+            ("MONGO_AUTH_MECHANISM_PLAIN" variable (:constant-flag t) nil [6144 6170])
+            ("MONGO_AUTH_MECHANISM_MONGODB_X509" variable (:constant-flag t) nil [6188 6221])
+            ("mongo_server_def" type
+               (:typedef ("_mongo_server_def" type (:type "struct") nil nil)
+                :superclasses "_mongo_server_def"
+                :type "typedef")
+                nil [6225 6405])
+            ("_mongo_server_def" type
+               (:members 
+                  ( ("host" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [6261 6272])
+                    ("port" variable (:type "int") (reparse-symbol classsubparts) [6274 6285])
+                    ("repl_set_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [6287 6307])
+                    ("db" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [6309 6318])
+                    ("authdb" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [6320 6333])
+                    ("username" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [6335 6350])
+                    ("password" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [6352 6367])
+                    ("mechanism" variable (:type "int") (reparse-symbol classsubparts) [6369 6385]))                  
+                :type "struct")
+                nil [6225 6405])
+            ("mongo_server_options" type
+               (:typedef ("_mongo_server_options" type (:type "struct") nil nil)
+                :superclasses "_mongo_server_options"
+                :type "typedef")
+                nil [6507 7644])
+            ("_mongo_server_options" type
+               (:members 
+                  ( ("con_type" variable (:type "int") (reparse-symbol classsubparts) [6547 6562])
+                    ("repl_set_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [6662 6682])
+                    ("connectTimeoutMS" variable (:type "int") (reparse-symbol classsubparts) [6684 6707])
+                    ("socketTimeoutMS" variable (:type "int") (reparse-symbol classsubparts) [6774 6796])
+                    ("secondaryAcceptableLatencyMS" variable (:type "int") (reparse-symbol classsubparts) [6874 6909])
+                    ("default_w" variable (:type "int") (reparse-symbol classsubparts) [6980 6996])
+                    ("default_wstring" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [7060 7082])
+                    ("default_wtimeout" variable (:type "int") (reparse-symbol classsubparts) [7165 7188])
+                    ("default_fsync" variable (:type "int") (reparse-symbol classsubparts) [7255 7275])
+                    ("default_journal" variable (:type "int") (reparse-symbol classsubparts) [7321 7343])
+                    ("ssl" variable (:type "int") (reparse-symbol classsubparts) [7383 7393])
+                    ("gssapiServiceName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [7440 7464])
+                    ("ctx" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [7505 7515]))                  
+                :type "struct")
+                nil [6507 7644])
+            ("mongo_servers" type
+               (:typedef ("_mongo_servers" type (:type "struct") nil nil)
+                :superclasses "_mongo_servers"
+                :type "typedef")
+                nil [7646 7896])
+            ("_mongo_servers" type
+               (:members 
+                  ( ("count" variable (:type "int") (reparse-symbol classsubparts) [7679 7707])
+                    ("server" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type ("mongo_server_def" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7709 7757])
+                    ("options" variable (:type ("mongo_server_options" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7815 7845])
+                    ("read_pref" variable (:type ("mongo_read_preference" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7847 7879]))                  
+                :type "struct")
+                nil [7646 7896])
+            ("_mongo_con_manager" type
+               (:prototype t
+                :type "struct")
+                nil [7898 7924])
+            ("mongo_con_manager" type
+               (:typedef ("_mongo_con_manager" type (:type "struct") nil nil)
+                :superclasses "_mongo_con_manager"
+                :type "typedef")
+                nil [7925 9505])
+            ("_mongo_con_manager" type
+               (:members 
+                  ( ("connections" variable
+                       (:pointer 1
+                        :type ("mongo_con_manager_item" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7962 7998])
+                    ("blacklist" variable
+                       (:pointer 1
+                        :type ("mongo_con_manager_item" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8000 8034])
+                    ("log_context" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [8127 8163])
+                    ("log_function" variable
+                       (:pointer 1
+                        :type ("mongo_log_callback_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8165 8202])
+                    ("ping_interval" variable (:type "long") (reparse-symbol classsubparts) [8418 8456])
+                    ("ismaster_interval" variable (:type "long") (reparse-symbol classsubparts) [8489 8531])
+                    ("connect" variable
+                       (:functionpointer-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [8650 8787])
+                    ("recv_header" variable
+                       (:functionpointer-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [8789 8922])
+                    ("recv_data" variable
+                       (:functionpointer-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [8924 9057])
+                    ("send" variable
+                       (:functionpointer-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [9059 9179])
+                    ("close" variable
+                       (:functionpointer-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [9181 9235])
+                    ("forget" variable
+                       (:functionpointer-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [9237 9318])
+                    ("authenticate" variable
+                       (:functionpointer-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [9320 9484]))                  
+                :type "struct")
+                nil [7925 9505])
+            ("mongo_con_manager_item_destroy_t" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("manager" variable
+                       (:pointer 1
+                        :type ("mongo_con_manager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9555 9582])
+                    ("item" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9583 9594])
+                    ("why" variable (:type "int") (reparse-symbol arg-sub-list) [9595 9603]))                  
+                :type "void")
+                nil [9515 9604])
+            ("mcon_collection" type
+               (:typedef ("_mcon_collection" type (:type "struct") nil nil)
+                :superclasses "_mcon_collection"
+                :type "typedef")
+                nil [9606 9712])
+            ("_mcon_collection" type
+               (:members 
+                  ( ("count" variable (:type "int") (reparse-symbol classsubparts) [9641 9651])
+                    ("space" variable (:type "int") (reparse-symbol classsubparts) [9653 9663])
+                    ("data_size" variable (:type "int") (reparse-symbol classsubparts) [9665 9679])
+                    ("data" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol classsubparts) [9681 9693]))                  
+                :type "struct")
+                nil [9606 9712])
+            ("mcon_collection_callback_t" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("manager" variable
+                       (:pointer 1
+                        :type ("mongo_con_manager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9756 9783])
+                    ("elem" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9784 9795]))                  
+                :type "void")
+                nil [9722 9796]))          
+    :file "types.h"
+    :pointmax 9923
+    :fsize 9922
+    :lastmodtime '(21064 7699 0 0)
+    :unmatched-syntax '((TYPEDEF 9714 . 9721) (TYPEDEF 9507 . 9514) (TYPEDEF 5369 . 5376) (TYPEDEF 3714 . 3721))
+    :lexical-table 
+        '(("MLOG_NONE" . ((number "0" 3031 . 3032)))
+          ("MONGO_CLOSE_BROKEN" . ((number "2" 3568 . 3569)))
+          ("MONGO_SSL_DISABLE" . ((number "0" 3657 . 3658)))
+          ("MONGO_NODE_INVALID" . ((number "0x00" 1982 . 1986)))
+          ("MONGO_NODE_MONGOS" . ((number "0x10" 2177 . 2181)))
+          ("MONGO_STATE_PRIMARY" . ((number "0x01" 2397 . 2401)))
+          ("MONGO_STATE_SECONDARY" . ((number "0x02" 2436 . 2440)))
+          ("__MCON_TYPES_H__")
+          ("MONGO_CON_TYPE_STANDALONE" . ((number "1" 1321 . 1322)))
+          ("MLOG_FINE" . ((number "4" 2877 . 2878)))
+          ("MONGO_MANAGER_DEFAULT_MASTER_INTERVAL" . ((number "15" 5622 . 5624)))
+          ("MONGO_NODE_STANDALONE" . ((number "0x01" 2021 . 2025)))
+          ("MONGO_STATE_UNKNOWN" . ((number "0x06" 2592 . 2596)))
+          ("MONGO_STATE_REMOVED" . ((number "0x0a" 2748 . 2752)))
+          ("MLOG_RS" . ((number "1" 2915 . 2916)))
+          ("MONGO_CLOSE_SHUTDOWN" . ((number "1" 3506 . 3507)))
+          ("MONGO_NODE_PRIMARY" . ((number "0x02" 2060 . 2064)))
+          ("MLOG_ALL" . ((number "31" 3053 . 3055)))
+          ("MONGO_DEFAULT_MAX_MESSAGE_SIZE" . ((semantic-list "(32 * 1024 * 1024)" 3210 . 3228)))
+          ("MONGO_MANAGER_DEFAULT_MASTER_INTERVAL_S" . ((string "\"15\"" 5673 . 5677)))
+          ("MONGO_AUTH_MECHANISM_MONGODB_X509" . ((number "4" 6222 . 6223)))
+          ("MONGO_CON_FLAG_WRITE" . ((number "0x02" 1524 . 1528)))
+          ("MONGO_CON_FLAG_DONT_FILTER" . ((number "0x08" 1612 . 1616)))
+          ("MLOG_SERVER" . ((number "8" 2984 . 2985)))
+          ("MAX_SERVERS_LIMIT" . ((number "16" 3426 . 3428)))
+          ("MONGO_CON_TYPE_REPLSET" . ((number "3" 1393 . 1394)))
+          ("MONGO_CON_FLAG_READ" . ((number "0x01" 1480 . 1484)))
+          ("MONGO_STATE_RECOVERING" . ((number "0x03" 2475 . 2479)))
+          ("MONGO_DEFAULT_MAX_DOCUMENT_SIZE" . ((semantic-list "(16 * 1024 * 1024)" 3151 . 3169)))
+          ("MONGO_AUTH_MECHANISM_GSSAPI" . ((number "2" 6134 . 6135)))
+          ("MONGO_CON_FLAG_DONT_CONNECT" . ((number "0x04" 1568 . 1572)))
+          ("MONGO_STATE_DOWN" . ((number "0x08" 2670 . 2674)))
+          ("MLOG_WARN" . ((number "1" 2831 . 2832)))
+          ("MLOG_CON" . ((number "2" 2938 . 2939)))
+          ("MONGO_AUTH_MECHANISM_PLAIN" . ((number "3" 6178 . 6179)))
+          ("MONGO_STATE_STARTING1" . ((number "0x00" 2358 . 2362)))
+          ("MONGO_STATE_FATAL_ERROR" . ((number "0x04" 2514 . 2518)))
+          ("MONGO_STATE_ARBITER" . ((number "0x07" 2631 . 2635)))
+          ("MONGO_STATE_ROLLBACK" . ((number "0x09" 2709 . 2713)))
+          ("MLOG_PARSE" . ((number "16" 3006 . 3008)))
+          ("MONGO_AUTH_MECHANISM_MONGODB_CR" . ((number "1" 6090 . 6091)))
+          ("MONGO_NODE_SECONDARY" . ((number "0x04" 2099 . 2103)))
+          ("MONGO_STATE_STARTING2" . ((number "0x05" 2553 . 2557)))
+          ("MONGO_MANAGER_DEFAULT_PING_INTERVAL" . ((number "5" 5520 . 5521)))
+          ("MONGO_CON_TYPE_MULTIPLE" . ((number "2" 1357 . 1358)))
+          ("MLOG_INFO" . ((number "2" 2854 . 2855)))
+          ("MONGO_NODE_ARBITER" . ((number "0x08" 2138 . 2142)))
+          ("MLOG_IO" . ((number "4" 2961 . 2962)))
+          ("MONGO_SSL_ENABLE" . ((number "1" 3684 . 3685)))
+          ("MONGO_SSL_PREFER" . ((number "2" 3711 . 3712)))
+          ("MONGO_MANAGER_DEFAULT_PING_INTERVAL_S" . ((string "\"5\"" 5570 . 5573)))
+          )
+
+    )
+   (semanticdb-table "read_preference.h"
+    :major-mode 'c-mode
+    :tags nil
+    :file "read_preference.h"
+    :pointmax 2627
+    :fsize 2626
+    :lastmodtime '(21064 7699 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "manager.h"
+    :file "manager.h"
+    :fsize 2585
+    :lastmodtime '(21064 7699 0 0)
+    )
+   (semanticdb-table "io.h"
+    :file "io.h"
+    :fsize 1258
+    :lastmodtime '(21064 7699 0 0)
+    )
+   (semanticdb-table "io.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("string.h" include (:system-flag t) nil [608 627])
+            ("errno.h" include (:system-flag t) nil [628 646])
+            ("sys/types.h" include (:system-flag t) nil [647 669])
+            ("sys/socket.h" include (:system-flag t) nil [748 771])
+            ("sys/time.h" include (:system-flag t) nil [772 793])
+            ("unistd.h" include (:system-flag t) nil [794 813])
+            ("stdlib.h" include (:system-flag t) nil [821 840])
+            ("stdio.h" include (:system-flag t) nil [841 859])
+            ("types.h" include nil nil [860 878])
+            ("poll.h" include (:system-flag t) nil [894 911])
+            ("mongo_io_wait_with_timeout" function
+               (:arguments 
+                  ( ("sock" variable (:type "int") (reparse-symbol arg-sub-list) [1166 1175])
+                    ("to" variable (:type "int") (reparse-symbol arg-sub-list) [1176 1183])
+                    ("error_message" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1184 1205]))                  
+                :type "int")
+                nil [1135 2011])
+            ("mongo_io_send" function
+               (:arguments 
+                  ( ("con" variable
+                       (:pointer 1
+                        :type ("mongo_connection" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3660 3682])
+                    ("options" variable
+                       (:pointer 1
+                        :type ("mongo_server_options" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3683 3713])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3714 3725])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [3726 3735])
+                    ("error_message" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3736 3757]))                  
+                :type "int")
+                nil [3642 4080])
+            ("mongo_io_recv_header" function
+               (:arguments 
+                  ( ("con" variable
+                       (:pointer 1
+                        :type ("mongo_connection" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4380 4402])
+                    ("options" variable
+                       (:pointer 1
+                        :type ("mongo_server_options" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4403 4433])
+                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [4434 4446])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4447 4458])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [4459 4468])
+                    ("error_message" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4469 4490]))                  
+                :type "int")
+                nil [4355 5186])
+            ("mongo_io_recv_data" function
+               (:arguments 
+                  ( ("con" variable
+                       (:pointer 1
+                        :type ("mongo_connection" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5211 5233])
+                    ("options" variable
+                       (:pointer 1
+                        :type ("mongo_server_options" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5234 5264])
+                    ("timeout" variable (:type "int") (reparse-symbol arg-sub-list) [5265 5277])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [5278 5289])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [5290 5299])
+                    ("error_message" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5300 5321]))                  
+                :type "int")
+                nil [5188 5936])
+            ("received" variable (:type "int") nil [5945 5954]))          
+    :file "io.c"
+    :pointmax 6076
+    :fsize 6076
+    :lastmodtime '(21064 7699 0 0)
+    :unmatched-syntax '((close-paren 5955 . 5956) (RETURN 5938 . 5944) (close-paren 5955 . 5956) (RETURN 5938 . 5944))
+    )
+   (semanticdb-table "manager.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [608 627])
+            ("stdio.h" include (:system-flag t) nil [628 646])
+            ("string.h" include (:system-flag t) nil [647 666])
+            ("stdarg.h" include (:system-flag t) nil [667 686])
+            ("sys/time.h" include (:system-flag t) nil [747 768])
+            ("types.h" include nil nil [777 795])
+            ("utils.h" include nil nil [796 814])
+            ("manager.h" include nil nil [815 835])
+            ("connections.h" include nil nil [836 860])
+            ("collection.h" include nil nil [861 884])
+            ("parse.h" include nil nil [885 903])
+            ("read_preference.h" include nil nil [904 932])
+            ("io.h" include nil nil [933 948])
+            ("mongo_blacklist_destroy" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("manager" variable
+                       (:pointer 1
+                        :type ("mongo_con_manager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1014 1041])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1042 1053])
+                    ("why" variable (:type "int") (reparse-symbol arg-sub-list) [1054 1062]))                  
+                :type "void")
+                nil [978 1063])
+            ("mongo_get_connection_single" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("manager" variable
+                       (:pointer 1
+                        :type ("mongo_con_manager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1132 1159])
+                    ("server" variable
+                       (:pointer 1
+                        :type ("mongo_server_def" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1160 1185])
+                    ("options" variable
+                       (:pointer 1
+                        :type ("mongo_server_options" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1186 1216])
+                    ("connection_flags" variable (:type "int") (reparse-symbol arg-sub-list) [1217 1238])
+                    ("error_message" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1239 1260]))                  
+                :type ("mongo_connection" type (:type "class") nil nil))
+                nil [1079 4461])
+            ("mongo_discover_topology" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("manager" variable
+                       (:pointer 1
+                        :type ("mongo_con_manager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4541 4568])
+                    ("servers" variable
+                       (:pointer 1
+                        :type ("mongo_servers" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4569 4592]))                  
+                :type "void")
+                nil [4505 9512])
+            ("mongo_get_read_write_connection_replicaset" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("manager" variable
+                       (:pointer 1
+                        :type ("mongo_con_manager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9582 9609])
+                    ("servers" variable
+                       (:pointer 1
+                        :type ("mongo_servers" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9610 9633])
+                    ("connection_flags" variable (:type "int") (reparse-symbol arg-sub-list) [9634 9655])
+                    ("error_message" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9656 9677]))                  
+                :type ("mongo_connection" type (:type "class") nil nil))
+                nil [9514 12041])
+            ("mongo_get_connection_multiple" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("manager" variable
+                       (:pointer 1
+                        :type ("mongo_con_manager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12099 12126])
+                    ("servers" variable
+                       (:pointer 1
+                        :type ("mongo_servers" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12127 12150])
+                    ("connection_flags" variable (:type "int") (reparse-symbol arg-sub-list) [12151 12172])
+                    ("error_message" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12173 12194]))                  
+                :type ("mongo_connection" type (:type "class") nil nil))
+                nil [12044 15252])
+            ("mongo_deregister_callback_from_connection" function
+               (:arguments 
+                  ( ("connection" variable
+                       (:pointer 1
+                        :type ("mongo_connection" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15300 15329])
+                    ("cursor" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [15330 15343]))                  
+                :type "int")
+                nil [15254 15778])
+            ("mongo_get_read_write_connection" function
+               (:pointer 1
+                :arguments 
+                  ( ("manager" variable
+                       (:pointer 1
+                        :type ("mongo_con_manager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15872 15899])
+                    ("servers" variable
+                       (:pointer 1
+                        :type ("mongo_servers" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15900 15923])
+                    ("connection_flags" variable (:type "int") (reparse-symbol arg-sub-list) [15924 15945])
+                    ("error_message" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15946 15967]))                  
+                :type ("mongo_connection" type (:type "class") nil nil))
+                nil [15822 17476])
+            ("mongo_get_read_write_connection_with_callback" function
+               (:pointer 1
+                :arguments 
+                  ( ("manager" variable
+                       (:pointer 1
+                        :type ("mongo_con_manager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17542 17569])
+                    ("servers" variable
+                       (:pointer 1
+                        :type ("mongo_servers" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17570 17593])
+                    ("connection_flags" variable (:type "int") (reparse-symbol arg-sub-list) [17594 17615])
+                    ("callback_data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [17616 17636])
+                    ("cleanup_cb" variable (:type ("mongo_cleanup_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17637 17664])
+                    ("error_message" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17665 17686]))                  
+                :type ("mongo_connection" type (:type "class") nil nil))
+                nil [17478 18310])
+            ("create_new_manager_item" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [18412 18417]))                  
+                :type ("mongo_con_manager_item" type (:type "class") nil nil))
+                nil [18357 18555])
+            ("free_manager_item" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("manager" variable
+                       (:pointer 1
+                        :type ("mongo_con_manager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18587 18614])
+                    ("item" variable
+                       (:pointer 1
+                        :type ("mongo_con_manager_item" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18615 18644]))                  
+                :type "void")
+                nil [18557 18767])
+            ("destroy_manager_item" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("manager" variable
+                       (:pointer 1
+                        :type ("mongo_con_manager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18802 18829])
+                    ("item" variable
+                       (:pointer 1
+                        :type ("mongo_con_manager_item" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18830 18859])
+                    ("cleanup_cb" variable (:type ("mongo_con_manager_item_destroy_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18860 18904]))                  
+                :type "void")
+                nil [18769 19078])
+            ("mongo_manager_find_by_hash" function
+               (:pointer 1
+                :arguments 
+                  ( ("manager" variable
+                       (:pointer 1
+                        :type ("mongo_con_manager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19113 19140])
+                    ("ptr" variable
+                       (:pointer 1
+                        :type ("mongo_con_manager_item" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19141 19169])
+                    ("hash" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [19170 19181]))                  
+                :type "void")
+                nil [19080 19408])
+            ("mongo_manager_connection_find_by_server_definition" function
+               (:pointer 1
+                :arguments 
+                  ( ("manager" variable
+                       (:pointer 1
+                        :type ("mongo_con_manager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19479 19506])
+                    ("definition" variable
+                       (:pointer 1
+                        :type ("mongo_server_def" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19507 19536]))                  
+                :type ("mongo_connection" type (:type "class") nil nil))
+                nil [19410 19709])
+            ("mongo_manager_connection_find_by_hash" function
+               (:pointer 1
+                :arguments 
+                  ( ("manager" variable
+                       (:pointer 1
+                        :type ("mongo_con_manager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19767 19794])
+                    ("hash" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [19795 19806]))                  
+                :type ("mongo_connection" type (:type "class") nil nil))
+                nil [19711 19883])
+            ("mongo_manager_blacklist_find_by_hash" function
+               (:pointer 1
+                :arguments 
+                  ( ("manager" variable
+                       (:pointer 1
+                        :type ("mongo_con_manager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19950 19977])
+                    ("hash" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [19978 19989]))                  
+                :type ("mongo_connection_blacklist" type (:type "class") nil nil))
+                nil [19885 20064])
+            ("mongo_manager_register" function
+               (:pointer 1
+                :arguments 
+                  ( ("manager" variable
+                       (:pointer 1
+                        :type ("mongo_con_manager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20113 20140])
+                    ("ptr" variable
+                       (:pointer 2
+                        :type ("mongo_con_manager_item" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20141 20170])
+                    ("con" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [20171 20181])
+                    ("hash" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20182 20193]))                  
+                :type ("mongo_con_manager_item" type (:type "class") nil nil))
+                nil [20066 20630])
+            ("mongo_manager_connection_register" function
+               (:arguments 
+                  ( ("manager" variable
+                       (:pointer 1
+                        :type ("mongo_con_manager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20671 20698])
+                    ("con" variable
+                       (:pointer 1
+                        :type ("mongo_connection" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20699 20721]))                  
+                :type "void")
+                nil [20632 20798])
+            ("mongo_manager_blacklist_register" function
+               (:arguments 
+                  ( ("manager" variable
+                       (:pointer 1
+                        :type ("mongo_con_manager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20838 20865])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("mongo_connection" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20866 20889]))                  
+                :type "void")
+                nil [20800 21218])
+            ("mongo_manager_deregister" function
+               (:arguments 
+                  ( ("manager" variable
+                       (:pointer 1
+                        :type ("mongo_con_manager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21249 21276])
+                    ("ptr" variable
+                       (:pointer 2
+                        :type ("mongo_con_manager_item" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21277 21306])
+                    ("hash" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [21307 21318])
+                    ("con" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [21319 21329])
+                    ("cleanup_cb" variable (:type ("mongo_con_manager_item_destroy_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21330 21374]))                  
+                :type "int")
+                nil [21220 22115])
+            ("mongo_manager_connection_deregister" function
+               (:arguments 
+                  ( ("manager" variable
+                       (:pointer 1
+                        :type ("mongo_con_manager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22157 22184])
+                    ("con" variable
+                       (:pointer 1
+                        :type ("mongo_connection" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22185 22207]))                  
+                :type "int")
+                nil [22117 22319])
+            ("mongo_manager_blacklist_deregister" function
+               (:arguments 
+                  ( ("manager" variable
+                       (:pointer 1
+                        :type ("mongo_con_manager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22360 22387])
+                    ("blacklist_item" variable
+                       (:pointer 1
+                        :type ("mongo_connection_blacklist" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22388 22431])
+                    ("hash" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [22432 22443]))                  
+                :type "int")
+                nil [22321 22558])
+            ("mongo_manager_log" function
+               (:arguments 
+                  ( ("manager" variable
+                       (:pointer 1
+                        :type ("mongo_con_manager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22597 22624])
+                    ("module" variable (:type "int") (reparse-symbol arg-sub-list) [22625 22636])
+                    ("level" variable (:type "int") (reparse-symbol arg-sub-list) [22637 22647])
+                    ("format" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [22648 22661])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [22662 22666]))                  
+                :type "void")
+                nil [22574 22831])
+            ("mongo_log_null" function
+               (:arguments 
+                  ( ("module" variable (:type "int") (reparse-symbol arg-sub-list) [22890 22901])
+                    ("level" variable (:type "int") (reparse-symbol arg-sub-list) [22902 22912])
+                    ("context" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [22913 22927])
+                    ("format" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [22928 22941])
+                    ("arg" variable (:type ("va_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22942 22954]))                  
+                :type "void")
+                nil [22870 22958])
+            ("mongo_log_printf" function
+               (:arguments 
+                  ( ("module" variable (:type "int") (reparse-symbol arg-sub-list) [23018 23029])
+                    ("level" variable (:type "int") (reparse-symbol arg-sub-list) [23030 23040])
+                    ("context" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [23041 23055])
+                    ("format" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [23056 23069])
+                    ("arg" variable (:type ("va_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23070 23082]))                  
+                :type "void")
+                nil [22996 23264])
+            ("mongo_init" function
+               (:pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [23314 23319]))                  
+                :type ("mongo_con_manager" type (:type "class") nil nil))
+                nil [23284 23942])
+            ("mongo_blacklist_destroy" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("manager" variable
+                       (:pointer 1
+                        :type ("mongo_con_manager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23980 24007])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [24008 24019])
+                    ("why" variable (:type "int") (reparse-symbol arg-sub-list) [24020 24028]))                  
+                :type "void")
+                nil [23944 24115])
+            ("mongo_deinit" function
+               (:arguments 
+                  ( ("manager" variable
+                       (:pointer 1
+                        :type ("mongo_con_manager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24135 24162]))                  
+                :type "void")
+                nil [24117 24508]))          
+    :file "manager.c"
+    :pointmax 24627
+    :fsize 24626
+    :lastmodtime '(21064 7699 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "utils.h"
+    :file "utils.h"
+    :fsize 2938
+    :lastmodtime '(21064 7699 0 0)
+    )
+   (semanticdb-table "connections.h"
+    :file "connections.h"
+    :fsize 3700
+    :lastmodtime '(21064 7699 0 0)
+    )
+   (semanticdb-table "collection.h"
+    :file "collection.h"
+    :fsize 1081
+    :lastmodtime '(21064 7699 0 0)
+    )
+   (semanticdb-table "parse.h"
+    :file "parse.h"
+    :fsize 1506
+    :lastmodtime '(21064 7699 0 0)
+    )
+   )
+  :file "!home!work!git!mongo-php-driver!mcon!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,134 @@
+;; Object gd/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "gd/"
+  :tables (list 
+   (semanticdb-table "gdcache.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("php.h" include nil nil [1518 1534])
+            ("php_config.h" include (:system-flag t) nil [1611 1634]))          
+    :file "gdcache.c"
+    :pointmax 4958
+    :fsize 4957
+    :lastmodtime '(20689 55724 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "gd.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("php.h" include nil nil [1527 1543])
+            ("php_ini.h" include nil nil [1544 1564])
+            ("ext/standard/head.h" include nil nil [1565 1595])
+            ("math.h" include (:system-flag t) nil [1596 1613])
+            ("SAPI.h" include nil nil [1614 1631])
+            ("php_gd.h" include nil nil [1632 1651])
+            ("ext/standard/info.h" include nil nil [1652 1682])
+            ("php_open_temporary_file.h" include nil nil [1683 1719])
+            ("PHP_GD_SINGLE_RES" variable (:constant-flag t) nil [124923 124940])
+            ("php_image_filter_negate" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("INTERNAL_FUNCTION_PARAMETERS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [125222 125251]))                  
+                :type "void")
+                nil [125186 125344])
+            ("php_image_filter_grayscale" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("INTERNAL_FUNCTION_PARAMETERS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [125385 125414]))                  
+                :type "void")
+                nil [125346 125510])
+            ("php_image_filter_brightness" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("INTERNAL_FUNCTION_PARAMETERS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [125552 125581]))                  
+                :type "void")
+                nil [125512 125963])
+            ("php_image_filter_contrast" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("INTERNAL_FUNCTION_PARAMETERS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [126003 126032]))                  
+                :type "void")
+                nil [125965 126406])
+            ("php_image_filter_colorize" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("INTERNAL_FUNCTION_PARAMETERS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [126446 126475]))                  
+                :type "void")
+                nil [126408 126885])
+            ("php_image_filter_edgedetect" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("INTERNAL_FUNCTION_PARAMETERS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [126927 126956]))                  
+                :type "void")
+                nil [126887 127058])
+            ("php_image_filter_emboss" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("INTERNAL_FUNCTION_PARAMETERS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [127096 127125]))                  
+                :type "void")
+                nil [127060 127218])
+            ("php_image_filter_gaussian_blur" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("INTERNAL_FUNCTION_PARAMETERS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [127263 127292]))                  
+                :type "void")
+                nil [127220 127391])
+            ("php_image_filter_selective_blur" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("INTERNAL_FUNCTION_PARAMETERS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [127437 127466]))                  
+                :type "void")
+                nil [127393 127566])
+            ("php_image_filter_mean_removal" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("INTERNAL_FUNCTION_PARAMETERS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [127610 127639]))                  
+                :type "void")
+                nil [127568 127737])
+            ("php_image_filter_smooth" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("INTERNAL_FUNCTION_PARAMETERS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [127775 127804]))                  
+                :type "void")
+                nil [127739 128178])
+            ("php_image_filter_pixelate" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("INTERNAL_FUNCTION_PARAMETERS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [128218 128247]))                  
+                :type "void")
+                nil [128180 128658])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("imagefilter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [128796 128808]))                  
+                :type "int")
+                nil [128783 129610])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("imageconvolution" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [129806 129823]))                  
+                :type "int")
+                nil [129793 131154]))          
+    :file "gd.c"
+    :pointmax 131748
+    :fsize 131747
+    :lastmodtime '(20689 55724 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("PHP_GD_SINGLE_RES" . 
+              ((symbol "zval" 124944 . 124948) (punctuation "*" 124949 . 124950) (symbol "SIM" 124950 . 124953) (punctuation ";" 124953 . 124954) (symbol "gdImagePtr" 124958 . 124968) (symbol "im_src" 124969 . 124975) (punctuation ";" 124975 . 124976) (IF "if" 124980 . 124982) (semantic-list "(zend_parse_parameters(1 TSRMLS_CC, \"r\", &SIM) == FAILURE)" 124983 . 125041) (semantic-list "{	\\
+		RETURN_FALSE;	\\
+	}" 125042 . 125066) (symbol "ZEND_FETCH_RESOURCE" 125070 . 125089) (semantic-list "(im_src, gdImagePtr, &SIM, -1, \"Image\", le_gd)" 125089 . 125135) (punctuation ";" 125135 . 125136) (IF "if" 125140 . 125142) (semantic-list "(im_src == NULL)" 125143 . 125159) (semantic-list "{	\\
+		RETURN_FALSE;	\\
+	}" 125160 . 125184)))
+          )
+
+    )
+   (semanticdb-table "php_gd.h"
+    :file "php_gd.h"
+    :fsize 6182
+    :lastmodtime '(20689 55724 0 0)
+    )
+   )
+  :file "!home!work!download!php-5.3.20!ext!gd!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

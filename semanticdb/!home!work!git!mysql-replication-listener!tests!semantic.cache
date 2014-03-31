@@ -1,0 +1,317 @@
+;; Object tests/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tests/"
+  :tables (list 
+   (semanticdb-table "replaybinlog.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [714 733])
+            ("boost/foreach.hpp" include (:system-flag t) nil [734 762])
+            ("binlog_api.h" include nil nil [763 786])
+            ("is_text_field" function
+               (:arguments 
+                  ( ("val" variable
+                       (:reference 1
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [807 818]))                  
+                :type "bool")
+                nil [788 1084])
+            ("table_insert" function
+               (:arguments 
+                  ( ("table_name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1104 1134])
+                    ("fields" variable
+                       (:reference 1
+                        :type ("mysql::Row_of_fields" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1135 1164]))                  
+                :type "void")
+                nil [1086 1836])
+            ("table_update" function
+               (:arguments 
+                  ( ("table_name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1857 1887])
+                    ("old_fields" variable
+                       (:reference 1
+                        :type ("mysql::Row_of_fields" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1906 1939])
+                    ("new_fields" variable
+                       (:reference 1
+                        :type ("mysql::Row_of_fields" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1940 1973]))                  
+                :type "void")
+                nil [1839 3026])
+            ("table_delete" function
+               (:arguments 
+                  ( ("table_name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3047 3077])
+                    ("fields" variable
+                       (:reference 1
+                        :type ("mysql::Row_of_fields" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3078 3107]))                  
+                :type "void")
+                nil [3029 3708])
+            ("Incident_handler" type
+               (:superclasses 
+                  ( ("mysql::Content_handler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [3767 3774])
+                    ("Incident_handler" function
+                       (:constructor-flag t
+                        :type ("Incident_handler" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3776 3824])
+                    ("process_event" function
+                       (:pointer 1
+                        :arguments 
+                          ( ("incident" variable
+                               (:pointer 1
+                                :type ("mysql::Incident_event" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3866 3898]))                          
+                        :type ("mysql::Binary_log_event" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3827 4415]))                  
+                :type "class")
+                nil [3710 4418])
+            ("Replay_binlog" type
+               (:superclasses 
+                  ( ("mysql::Content_handler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [4474 4481])
+                    ("Replay_binlog" function
+                       (:constructor-flag t
+                        :type ("Replay_binlog" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4484 4529])
+                    ("process_event" function
+                       (:pointer 1
+                        :arguments 
+                          ( ("event" variable
+                               (:pointer 1
+                                :type ("mysql::Binary_log_event" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4571 4602]))                          
+                        :type ("mysql::Binary_log_event" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4532 7058]))                  
+                :type "class")
+                nil [4420 7061])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [7081 7090])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7091 7103]))                  
+                :type "int")
+                nil [7072 9643]))          
+    :file "replaybinlog.cpp"
+    :pointmax 9644
+    :fsize 9643
+    :lastmodtime '(20703 18278 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "test-basic.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("binlog_api.h" include nil nil [715 738])
+            ("gtest/gtest.h" include (:system-flag t) nil [739 763])
+            ("iostream" include (:system-flag t) nil [764 783])
+            ("stdlib.h" include (:system-flag t) nil [784 803])
+            ("testing::Test" variable (:type "int") nil [835 1442])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("TestBinaryLog" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1452 1466])
+                    ("" variable (:type ("ConnectTo_Bogus" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1467 1483]))                  
+                :type "int")
+                nil [1445 1664])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("TestBinaryLog" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1673 1687])
+                    ("" variable (:type ("ConnectTo_TcpIp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1688 1704]))                  
+                :type "int")
+                nil [1666 1902])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("TestBinaryLog" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1911 1925])
+                    ("" variable (:type ("Connected_TcpIp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1926 1942]))                  
+                :type "int")
+                nil [1904 2405])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("TestBinaryLog" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2414 2428])
+                    ("" variable (:type ("SetPosition" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2429 2441]))                  
+                :type "int")
+                nil [2407 2916])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2927 2936])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2937 2949]))                  
+                :type "int")
+                nil [2918 3382]))          
+    :file "test-basic.cpp"
+    :pointmax 3383
+    :fsize 3382
+    :lastmodtime '(20703 18278 0 0)
+    :unmatched-syntax '((punctuation 834 . 835) (punctuation 833 . 834) (PUBLIC 826 . 832) (punctuation 824 . 825) (symbol 810 . 823) (CLASS 804 . 809))
+    )
+   (semanticdb-table "test-transport.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("binlog_api.h" include nil nil [715 738])
+            ("gtest/gtest.h" include (:system-flag t) nil [739 763])
+            ("iostream" include (:system-flag t) nil [764 783])
+            ("stdlib.h" include (:system-flag t) nil [784 803])
+            ("mysql::system::create_transport" using (:type ("mysql::system::create_transport" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [805 843])
+            ("mysql::system::Binary_log_driver" using (:type ("mysql::system::Binary_log_driver" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [844 883])
+            ("mysql::system::Binlog_tcp_driver" using (:type ("mysql::system::Binlog_tcp_driver" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [884 923])
+            ("mysql::system::Binlog_file_driver" using (:type ("mysql::system::Binlog_file_driver" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [924 964])
+            ("testing::Test" variable (:type "int") nil [997 1079])
+            ("CheckTcpValues" function
+               (:arguments 
+                  ( ("tcp" variable
+                       (:pointer 1
+                        :type ("Binlog_tcp_driver" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1101 1124])
+                    ("user" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1145 1162])
+                    ("passwd" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1163 1182])
+                    ("host" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1203 1220])
+                    ("port" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [1221 1240]))                  
+                :type "void")
+                nil [1081 1378])
+            ("TestTcpTransport" function
+               (:arguments 
+                  ( ("uri" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1439 1455])
+                    ("user" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1478 1495])
+                    ("passwd" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1496 1515])
+                    ("host" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1538 1555])
+                    ("port" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [1556 1575]))                  
+                :type "void")
+                nil [1417 1797])
+            ("TestFileTransport" function
+               (:arguments 
+                  ( ("uri_arg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1978 1998])
+                    ("filename_arg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1999 2024]))                  
+                :type "void")
+                nil [1955 2337])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("TestTransport" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2347 2361])
+                    ("" variable (:type ("CreateTransport_TcpIp" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2362 2384]))                  
+                :type "int")
+                nil [2340 3357])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("TestTransport" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3366 3380])
+                    ("" variable (:type ("CreateTransport_File" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3381 3402]))                  
+                :type "int")
+                nil [3359 3960])
+            ("TEST_F" function
+               (:arguments 
+                  ( ("" variable (:type ("TestTransport" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3969 3983])
+                    ("" variable (:type ("CreateTransport_Bogus" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3984 4006]))                  
+                :type "int")
+                nil [3962 4245])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [4256 4265])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4266 4278]))                  
+                :type "int")
+                nil [4247 4350]))          
+    :file "test-transport.cpp"
+    :pointmax 4351
+    :fsize 4350
+    :lastmodtime '(20703 18278 0 0)
+    :unmatched-syntax '((punctuation 996 . 997) (punctuation 995 . 996) (PUBLIC 988 . 994) (punctuation 986 . 987) (symbol 972 . 985) (CLASS 966 . 971))
+    )
+   (semanticdb-table "replay_sys_vars.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cstdlib" include (:system-flag t) nil [715 733])
+            ("boost/foreach.hpp" include (:system-flag t) nil [734 762])
+            ("binlog_api.h" include nil nil [763 786])
+            ("utilities.h" include nil nil [787 809])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [821 830])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [831 844]))                  
+                :type "int")
+                nil [811 2822]))          
+    :file "replay_sys_vars.cpp"
+    :pointmax 2824
+    :fsize 2823
+    :lastmodtime '(20703 18278 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!git!mysql-replication-listener!tests!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

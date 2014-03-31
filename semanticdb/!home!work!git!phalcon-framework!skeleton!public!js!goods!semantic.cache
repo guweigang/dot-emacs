@@ -1,0 +1,18 @@
+;; Object goods/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "goods/"
+  :tables (list 
+   (semanticdb-table "publish.js"
+    :major-mode 'js-mode
+    :tags nil
+    :file "publish.js"
+    :pointmax 3513
+    :fsize 3594
+    :lastmodtime '(21255 30616 0 0)
+    :unmatched-syntax '((PAREN_BLOCK 3485 . 3511) (PAREN_BLOCK 1 . 3485) (PAREN_BLOCK 3485 . 3511) (PAREN_BLOCK 1 . 3485))
+    )
+   )
+  :file "!home!work!git!phalcon-framework!skeleton!public!js!goods!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

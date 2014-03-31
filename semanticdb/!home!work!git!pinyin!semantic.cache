@@ -1,0 +1,221 @@
+;; Object pinyin/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "pinyin/"
+  :tables (list 
+   (semanticdb-table "pinyin.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("php.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [1207 1223])
+            ("php_ini.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [1224 1244])
+            ("ext/standard/info.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [1245 1275])
+            ("php_pinyin.h" include nil nil [1279 1302])
+            ("pinyin_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [1341 1369])
+            ("Dict_Type" variable (:type "int") nil [1375 1385])
+            ("pinyin_methods" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("zend_function_entry" type (:type "class") nil nil))
+                nil [1489 1850])
+            ("pinyin_module_entry" variable (:type ("zend_module_entry" type (:type "class") nil nil)) nil [1893 2415])
+            ("PHP_MINIT_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("pinyin" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3200 3207]))                  
+                :type "int")
+                nil [3181 3862])
+            ("PHP_MSHUTDOWN_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("pinyin" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3931 3938]))                  
+                :type "int")
+                nil [3908 4038])
+            ("PHP_RINIT_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("pinyin" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4154 4161]))                  
+                :type "int")
+                nil [4135 4182])
+            ("PHP_RSHUTDOWN_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("pinyin" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4304 4311]))                  
+                :type "int")
+                nil [4281 4332])
+            ("PHP_MINFO_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("pinyin" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4393 4400]))                  
+                :type "int")
+                nil [4374 4606])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Pinyin" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4629 4636])
+                    ("" variable (:type ("__construct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4637 4649]))                  
+                :type "int")
+                nil [4618 4709])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Pinyin" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4722 4729])
+                    ("" variable (:type ("__destruct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4730 4741]))                  
+                :type "int")
+                nil [4711 4811])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Pinyin" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4824 4831])
+                    ("" variable (:type ("loadDict" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4832 4841]))                  
+                :type "int")
+                nil [4813 5747])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Pinyin" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5760 5767])
+                    ("" variable (:type ("convert" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5768 5776]))                  
+                :type "int")
+                nil [5749 6366])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Pinyin" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6379 6386])
+                    ("" variable (:type ("convert2Tone" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6387 6400]))                  
+                :type "int")
+                nil [6368 6998]))          
+    :file "pinyin.cpp"
+    :pointmax 7136
+    :fsize 7135
+    :lastmodtime '(20850 45507 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "php_pinyin.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("PHP_PINYIN_H" variable (:constant-flag t) nil [1174 1186])
+            ("pinyin_module_entry" variable
+               (:typemodifiers ("extern")
+                :type ("zend_module_entry" type (:type "class") nil nil))
+                nil [1188 1233])
+            ("phpext_pinyin_ptr" variable (:constant-flag t) nil [1242 1259])
+            ("PHP_PINYIN_API" variable (:constant-flag t) nil [1395 1409])
+            ("C" extern nil nil [1488 1538])
+            ("PHP_PINYIN_VERSION" variable (:constant-flag t) nil [1548 1566])
+            ("IPYFactory.h" include nil nil [1576 1599])
+            ("iostream" include (:system-flag t) nil [1600 1619])
+            ("sstream" include (:system-flag t) nil [1620 1638])
+            ("string" include (:system-flag t) nil [1639 1656])
+            ("stdio.h" include (:system-flag t) nil [1657 1675])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1676 1696])
+            ("NLP::Pinyin" using (:type ("NLP::Pinyin" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1697 1725])
+            ("Dict_Type" type
+               (:members 
+                  ( ("TONE_DICT" variable
+                       (:constant-flag t
+                        :default-value (1761 1762)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1749 1762])
+                    ("TONE_DYZ_DICT" variable
+                       (:constant-flag t
+                        :default-value (1784 1785)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1768 1785])
+                    ("TONE_DUOYONG_DICT" variable
+                       (:constant-flag t
+                        :default-value (1811 1812)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1791 1812])
+                    ("BME_DICT" variable
+                       (:constant-flag t
+                        :default-value (1829 1830)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1818 1830]))                  
+                :type "enum")
+                nil [1728 1833])
+            ("PHP_MINIT_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("pinyin" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1854 1861]))                  
+                :type "int")
+                nil [1835 1862])
+            ("PHP_MSHUTDOWN_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("pinyin" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1886 1893]))                  
+                :type "int")
+                nil [1863 1894])
+            ("PHP_RINIT_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("pinyin" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1914 1921]))                  
+                :type "int")
+                nil [1895 1922])
+            ("PHP_RSHUTDOWN_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("pinyin" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1946 1953]))                  
+                :type "int")
+                nil [1923 1954])
+            ("PHP_MINFO_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("pinyin" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1974 1981]))                  
+                :type "int")
+                nil [1955 1982])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Pinyin" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1995 2002])
+                    ("" variable (:type ("__construct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2003 2015]))                  
+                :type "int")
+                nil [1984 2016])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Pinyin" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2028 2035])
+                    ("" variable (:type ("__destruct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2036 2047]))                  
+                :type "int")
+                nil [2017 2048])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Pinyin" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2061 2068])
+                    ("" variable (:type ("loadDict" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2069 2078]))                  
+                :type "int")
+                nil [2050 2079])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Pinyin" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2091 2098])
+                    ("" variable (:type ("convert" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2099 2107]))                  
+                :type "int")
+                nil [2080 2108])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Pinyin" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2161 2168])
+                    ("" variable (:type ("convert2Tone" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2169 2182]))                  
+                :type "int")
+                nil [2150 2183])
+            ("pynotation" variable
+               (:pointer 1
+                :type ("IPYNotation" type (:type "class") nil nil))
+                nil [2373 2397])
+            ("PINYIN_G" variable (:constant-flag t) nil [3047 3055]))          
+    :file "php_pinyin.h"
+    :pointmax 3238
+    :fsize 3249
+    :lastmodtime '(20850 45290 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("phpext_pinyin_ptr" . ((punctuation "&" 1260 . 1261) (symbol "pinyin_module_entry" 1261 . 1280)))
+          ("PHP_PINYIN_H")
+          ("PINYIN_G" (spp-arg-list ("v") 3043 . 3046) . ((semantic-list "(pinyin_globals.v)" 3047 . 3065)))
+          ("PHP_PINYIN_API" . ((symbol "__attribute__" 1410 . 1423) (semantic-list "((visibility(\"default\")))" 1424 . 1449)))
+          ("PHP_PINYIN_VERSION" . ((string "\"0.1.0\"" 1567 . 1574)))
+          )
+
+    )
+   )
+  :file "!home!work!git!pinyin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

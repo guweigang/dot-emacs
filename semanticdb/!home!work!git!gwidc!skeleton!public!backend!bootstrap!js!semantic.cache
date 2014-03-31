@@ -1,0 +1,18 @@
+;; Object js/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "js/"
+  :tables (list 
+   (semanticdb-table "bootstrap-typeahead.js"
+    :major-mode 'js-mode
+    :tags nil
+    :file "bootstrap-typeahead.js"
+    :pointmax 18844
+    :fsize 18845
+    :lastmodtime '(20873 4228 0 0)
+    :unmatched-syntax '((PAREN_BLOCK 18826 . 18841) (PAREN_BLOCK 705 . 708) (punctuation 693 . 694))
+    )
+   )
+  :file "!home!work!git!gwidc!skeleton!public!backend!bootstrap!js!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

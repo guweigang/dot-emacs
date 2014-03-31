@@ -1,0 +1,283 @@
+;; Object asio/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "asio/"
+  :tables (list 
+   (semanticdb-table "basic_datagram_socket.hpp"
+    :file "basic_datagram_socket.hpp"
+    :fsize 35311
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "basic_deadline_timer.hpp"
+    :file "basic_deadline_timer.hpp"
+    :fsize 17546
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "basic_io_object.hpp"
+    :file "basic_io_object.hpp"
+    :fsize 6162
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "basic_raw_socket.hpp"
+    :file "basic_raw_socket.hpp"
+    :fsize 34869
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "basic_seq_packet_socket.hpp"
+    :file "basic_seq_packet_socket.hpp"
+    :fsize 20057
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "basic_serial_port.hpp"
+    :file "basic_serial_port.hpp"
+    :fsize 24378
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "basic_signal_set.hpp"
+    :file "basic_signal_set.hpp"
+    :fsize 12966
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "basic_socket_acceptor.hpp"
+    :file "basic_socket_acceptor.hpp"
+    :fsize 35381
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "basic_socket_iostream.hpp"
+    :file "basic_socket_iostream.hpp"
+    :fsize 7461
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "basic_socket_streambuf.hpp"
+    :file "basic_socket_streambuf.hpp"
+    :fsize 14912
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "basic_stream_socket.hpp"
+    :file "basic_stream_socket.hpp"
+    :fsize 31761
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "basic_streambuf.hpp"
+    :file "basic_streambuf.hpp"
+    :fsize 11209
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "buffer.hpp"
+    :file "buffer.hpp"
+    :fsize 64578
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "buffered_read_stream_fwd.hpp"
+    :file "buffered_read_stream_fwd.hpp"
+    :fsize 642
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "buffered_read_stream.hpp"
+    :file "buffered_read_stream.hpp"
+    :fsize 10960
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "buffered_stream_fwd.hpp"
+    :file "buffered_stream_fwd.hpp"
+    :fsize 612
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "buffered_stream.hpp"
+    :file "buffered_stream.hpp"
+    :fsize 7195
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "buffered_write_stream_fwd.hpp"
+    :file "buffered_write_stream_fwd.hpp"
+    :fsize 648
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "buffered_write_stream.hpp"
+    :file "buffered_write_stream.hpp"
+    :fsize 10310
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "buffers_iterator.hpp"
+    :file "buffers_iterator.hpp"
+    :fsize 12643
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "completion_condition.hpp"
+    :file "completion_condition.hpp"
+    :fsize 5310
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "connect.hpp"
+    :file "connect.hpp"
+    :fsize 30150
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "datagram_socket_service.hpp"
+    :file "datagram_socket_service.hpp"
+    :fsize 11427
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "deadline_timer_service.hpp"
+    :file "deadline_timer_service.hpp"
+    :fsize 4266
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "deadline_timer.hpp"
+    :file "deadline_timer.hpp"
+    :fsize 957
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "error.hpp"
+    :file "error.hpp"
+    :fsize 8237
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "error_code.hpp"
+    :file "error_code.hpp"
+    :fsize 4321
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "handler_alloc_hook.hpp"
+    :file "handler_alloc_hook.hpp"
+    :fsize 2315
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "handler_invoke_hook.hpp"
+    :file "handler_invoke_hook.hpp"
+    :fsize 2160
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "io_service.hpp"
+    :file "io_service.hpp"
+    :fsize 27731
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "is_read_buffered.hpp"
+    :file "is_read_buffered.hpp"
+    :fsize 1554
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "is_write_buffered.hpp"
+    :file "is_write_buffered.hpp"
+    :fsize 1575
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "placeholders.hpp"
+    :file "placeholders.hpp"
+    :fsize 2972
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "raw_socket_service.hpp"
+    :file "raw_socket_service.hpp"
+    :fsize 11311
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "read.hpp"
+    :file "read.hpp"
+    :fsize 24382
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "read_at.hpp"
+    :file "read_at.hpp"
+    :fsize 25271
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "read_until.hpp"
+    :file "read_until.hpp"
+    :fsize 36546
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "seq_packet_socket_service.hpp"
+    :file "seq_packet_socket_service.hpp"
+    :fsize 10153
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "serial_port.hpp"
+    :file "serial_port.hpp"
+    :fsize 929
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "serial_port_base.hpp"
+    :file "serial_port_base.hpp"
+    :fsize 4709
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "serial_port_service.hpp"
+    :file "serial_port_service.hpp"
+    :fsize 6803
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "signal_set.hpp"
+    :file "signal_set.hpp"
+    :fsize 679
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "signal_set_service.hpp"
+    :file "signal_set_service.hpp"
+    :fsize 3261
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "socket_acceptor_service.hpp"
+    :file "socket_acceptor_service.hpp"
+    :fsize 8140
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "socket_base.hpp"
+    :file "socket_base.hpp"
+    :fsize 14078
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "strand.hpp"
+    :file "strand.hpp"
+    :fsize 7648
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "stream_socket_service.hpp"
+    :file "stream_socket_service.hpp"
+    :fsize 9827
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "streambuf.hpp"
+    :file "streambuf.hpp"
+    :fsize 747
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "system_error.hpp"
+    :file "system_error.hpp"
+    :fsize 2885
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "thread.hpp"
+    :file "thread.hpp"
+    :fsize 2309
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "time_traits.hpp"
+    :file "time_traits.hpp"
+    :fsize 2093
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "version.hpp"
+    :file "version.hpp"
+    :fsize 643
+    :lastmodtime '(21029 35498 0 0)
+    )
+   (semanticdb-table "write.hpp"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "write.hpp"
+    :pointmax 24572
+    :fsize 24571
+    :lastmodtime '(21029 35498 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "write_at.hpp"
+    :file "write_at.hpp"
+    :fsize 25322
+    :lastmodtime '(21029 35498 0 0)
+    )
+   )
+  :file "!home!work!git!mm!mysql-replication-listener!include!asio!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

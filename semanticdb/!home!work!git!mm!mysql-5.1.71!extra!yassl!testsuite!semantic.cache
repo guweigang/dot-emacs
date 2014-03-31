@@ -1,0 +1,25 @@
+;; Object testsuite/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "testsuite/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("INCLUDES" variable (:default-value ("-I$(srcdir)/../include" "-I$(srcdir)/../taocrypt/include" "-I$(srcdir)/../taocrypt/mySTL")) nil [743 839])
+            ("noinst_PROGRAMS" variable (:default-value ("testsuite")) nil [839 873])
+            ("testsuite_SOURCES" variable (:default-value ("testsuite.cpp" "../taocrypt/test/test.cpp" "../examples/client/client.cpp" "../examples/server/server.cpp" "../examples/echoclient/echoclient.cpp" "../examples/echoserver/echoserver.cpp")) nil [873 1079])
+            ("testsuite_CXXFLAGS" variable (:default-value ("-DYASSL_PURE_C" "-DYASSL_PREFIX" "-DNO_MAIN_DRIVER" "@yassl_thread_cxxflags@")) nil [1079 1171])
+            ("testsuite_LDADD" variable (:default-value ("$(top_builddir)/extra/yassl/src/libyassl.la" "$(top_builddir)/extra/yassl/taocrypt/src/libtaocrypt.la")) nil [1171 1315])
+            ("EXTRA_DIST" variable (:default-value ("testsuite.dsp" "test.hpp" "input" "quit" "make.bat")) nil [1315 1371])
+            ("%" function (:arguments ("SCCS/s.%")) nil [1412 1424]))          
+    :file "Makefile.am"
+    :pointmax 1425
+    :fsize 1424
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!git!mm!mysql-5.1.71!extra!yassl!testsuite!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

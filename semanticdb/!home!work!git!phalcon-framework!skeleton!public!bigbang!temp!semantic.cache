@@ -1,0 +1,18 @@
+;; Object temp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "temp/"
+  :tables (list 
+   (semanticdb-table "goods.html"
+    :major-mode 'html-mode
+    :tags nil
+    :file "goods.html"
+    :pointmax 2103
+    :fsize 2376
+    :lastmodtime '(21141 27384 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!git!phalcon-framework!skeleton!public!bigbang!temp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

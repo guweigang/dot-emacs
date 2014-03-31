@@ -1,0 +1,570 @@
+;; Object pdo/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "pdo/"
+  :tables (list 
+   (semanticdb-table "pdo.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("ctype.h" include (:system-flag t) nil [1344 1362])
+            ("php.h" include nil nil [1363 1379])
+            ("php_ini.h" include nil nil [1380 1400])
+            ("ext/standard/info.h" include nil nil [1401 1431])
+            ("php_pdo.h" include nil nil [1432 1452])
+            ("php_pdo_driver.h" include nil nil [1453 1480])
+            ("php_pdo_int.h" include nil nil [1481 1505])
+            ("zend_exceptions.h" include nil nil [1506 1534])
+            ("spl_ce_RuntimeException" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [1536 1585])
+            ("PHP_GINIT_FUNCTION" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("pdo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1646 1650]))                  
+                :type "int")
+                nil [1620 1651])
+            ("pdo_driver_hash" variable (:type ("HashTable" type (:type "class") nil nil)) nil [1749 1775])
+            ("le_ppdo" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [1843 1862])
+            ("php_pdo_list_entry" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1887 1892]))                  
+                :type "int")
+                nil [1864 1913])
+            ("pdo_exception_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [1951 1986])
+            ("php_pdo_get_dbh_ce" function
+               (:pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2033 2038]))                  
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [1996 2062])
+            ("php_pdo_get_exception" function
+               (:pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2112 2117]))                  
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [2072 2147])
+            ("php_pdo_str_tolower_dup" function
+               (:pointer 1
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2187 2203])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [2204 2212]))                  
+                :type "char")
+                nil [2157 2302])
+            ("php_pdo_get_exception_base" function
+               (:pointer 1
+                :arguments 
+                  ( ("root" variable (:type "int") (reparse-symbol arg-sub-list) [2357 2375])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2366 2376]))                  
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [2312 2986])
+            ("pdo_row_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [2988 3046])
+            ("pdo_dbstmt_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [2988 3046])
+            ("pdo_dbh_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [2988 3046])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("pdo_drivers" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3136 3148]))                  
+                :type "int")
+                nil [3123 3604])
+            ("pdo_functions" variable
+               (:dereference 1
+                :constant-flag t
+                :type ("zend_function_entry" type (:type "class") nil nil))
+                nil [3735 3849])
+            ("pdo_module_entry" variable (:type ("zend_module_entry" type (:type "class") nil nil)) nil [4077 4430])
+            ("PHP_GINIT_FUNCTION" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("pdo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4664 4668]))                  
+                :type "int")
+                nil [4638 4704])
+            ("php_pdo_register_driver" function
+               (:arguments 
+                  ( ("driver" variable
+                       (:pointer 1
+                        :type ("pdo_driver_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4752 4773]))                  
+                :type "int")
+                nil [4724 5323])
+            ("php_pdo_unregister_driver" function
+               (:arguments 
+                  ( ("driver" variable
+                       (:pointer 1
+                        :type ("pdo_driver_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5364 5385]))                  
+                :type "void")
+                nil [5333 5556])
+            ("pdo_find_driver" function
+               (:pointer 1
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5588 5605])
+                    ("namelen" variable (:type "int") (reparse-symbol arg-sub-list) [5606 5618]))                  
+                :type ("pdo_driver_t" type (:type "class") nil nil))
+                nil [5558 5763])
+            ("php_pdo_parse_data_source" function
+               (:arguments 
+                  ( ("data_source" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5803 5827])
+                    ("data_source_len" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [5830 5860])
+                    ("parsed" variable
+                       (:pointer 1
+                        :type ("pdo_data_src_parser" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5861 5896])
+                    ("nparams" variable (:type "int") (reparse-symbol arg-sub-list) [5899 5911]))                  
+                :type "int")
+                nil [5773 7695])
+            ("digit_vec" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "char")
+                nil [7697 7742])
+            ("php_pdo_int64_to_str" function
+               (:pointer 1
+                :arguments 
+                  ( ("i64" variable (:type ("pdo_int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7778 7803])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7794 7804]))                  
+                :type "char")
+                nil [7751 8527])
+            ("PHP_MINIT_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("pdo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8577 8581]))                  
+                :type "int")
+                nil [8558 9228])
+            ("PHP_MSHUTDOWN_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("pdo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9296 9300]))                  
+                :type "int")
+                nil [9273 9393])
+            ("PHP_MINFO_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("pdo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9453 9457]))                  
+                :type "int")
+                nil [9434 10140]))          
+    :file "pdo.c"
+    :pointmax 10288
+    :fsize 10287
+    :lastmodtime '(20689 55724 0 0)
+    :unmatched-syntax '((symbol 7743 . 7750) (symbol 5765 . 5772) (symbol 5325 . 5332) (symbol 4716 . 4723) (semantic-list 3695 . 3697) (symbol 3678 . 3695) (semantic-list 3653 . 3677) (symbol 3634 . 3653) (number 3675 . 3676) (symbol 2304 . 2311) (symbol 2149 . 2156) (symbol 2064 . 2071) (symbol 1988 . 1995) (semantic-list 1614 . 1619) (symbol 1587 . 1614))
+    )
+   (semanticdb-table "php_pdo.h"
+    :file "php_pdo.h"
+    :fsize 3091
+    :lastmodtime '(20689 55724 0 0)
+    )
+   (semanticdb-table "php_pdo_driver.h"
+    :file "php_pdo_driver.h"
+    :fsize 24155
+    :lastmodtime '(20689 55724 0 0)
+    )
+   (semanticdb-table "php_pdo_int.h"
+    :file "php_pdo_int.h"
+    :fsize 3763
+    :lastmodtime '(20689 55724 0 0)
+    )
+   (semanticdb-table "pdo_dbh.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("php.h" include nil nil [1381 1397])
+            ("php_ini.h" include nil nil [1398 1418])
+            ("ext/standard/info.h" include nil nil [1419 1449])
+            ("php_pdo.h" include nil nil [1450 1470])
+            ("php_pdo_driver.h" include nil nil [1471 1498])
+            ("php_pdo_int.h" include nil nil [1499 1523])
+            ("zend_exceptions.h" include nil nil [1524 1552])
+            ("zend_object_handlers.h" include nil nil [1553 1586])
+            ("zend_hash.h" include nil nil [1587 1609])
+            ("pdo_dbh_attribute_set" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("dbh" variable
+                       (:pointer 1
+                        :type ("pdo_dbh_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1644 1659])
+                    ("attr" variable (:type "long") (reparse-symbol arg-sub-list) [1660 1670])
+                    ("value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1671 1692])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1683 1693]))                  
+                :type "int")
+                nil [1611 1694])
+            ("pdo_raise_impl_error" function
+               (:arguments 
+                  ( ("dbh" variable
+                       (:pointer 1
+                        :type ("pdo_dbh_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1722 1737])
+                    ("stmt" variable
+                       (:pointer 1
+                        :type ("pdo_stmt_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1738 1755])
+                    ("sqlstate" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1756 1777])
+                    ("supp" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1778 1804])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1795 1805]))                  
+                :type "void")
+                nil [1696 3365])
+            ("pdo_handle_error" function
+               (:arguments 
+                  ( ("dbh" variable
+                       (:pointer 1
+                        :type ("pdo_dbh_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3399 3414])
+                    ("stmt" variable
+                       (:pointer 1
+                        :type ("pdo_stmt_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3415 3441])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3432 3442]))                  
+                :type "void")
+                nil [3377 5298])
+            ("dsn_from_uri" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("uri" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5336 5346])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5347 5357])
+                    ("buflen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5358 5381])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5372 5382]))                  
+                :type "char")
+                nil [5310 5637])
+            ("PHP_METHOD" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("PDO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5770 5774])
+                    ("" variable (:type ("dbh_constructor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5775 5791]))                  
+                :type "int")
+                nil [5752 12259])
+            ("pdo_stmt_instantiate" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("dbh" variable
+                       (:pointer 1
+                        :type ("pdo_dbh_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12305 12320])
+                    ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12321 12334])
+                    ("dbstmt_ce" variable
+                       (:pointer 1
+                        :type ("zend_class_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12335 12363])
+                    ("ctor_args" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12364 12389])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12380 12390]))                  
+                :type ("zval" type (:type "class") nil nil))
+                nil [12271 12906])
+            ("pdo_stmt_construct" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("pdo_stmt_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12949 12966])
+                    ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12967 12980])
+                    ("dbstmt_ce" variable
+                       (:pointer 1
+                        :type ("zend_class_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12981 13009])
+                    ("ctor_args" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13010 13035])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13026 13036]))                  
+                :type "void")
+                nil [12918 14461])
+            ("PHP_METHOD" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("PDO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14631 14635])
+                    ("" variable (:type ("prepare" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14636 14644]))                  
+                :type "int")
+                nil [14613 17763])
+            ("PHP_METHOD" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("PDO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17865 17869])
+                    ("" variable (:type ("beginTransaction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17870 17887]))                  
+                :type "int")
+                nil [17847 18558])
+            ("PHP_METHOD" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("PDO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18647 18651])
+                    ("" variable (:type ("commit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18652 18659]))                  
+                :type "int")
+                nil [18629 19078])
+            ("PHP_METHOD" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("PDO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19172 19176])
+                    ("" variable (:type ("rollBack" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19177 19186]))                  
+                :type "int")
+                nil [19154 19608])
+            ("PHP_METHOD" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("PDO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19717 19721])
+                    ("" variable (:type ("inTransaction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19722 19736]))                  
+                :type "int")
+                nil [19699 19921])
+            ("pdo_dbh_attribute_set" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dbh" variable
+                       (:pointer 1
+                        :type ("pdo_dbh_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19966 19981])
+                    ("attr" variable (:type "long") (reparse-symbol arg-sub-list) [19982 19992])
+                    ("value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19993 20014])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20005 20015]))                  
+                :type "int")
+                nil [19933 24748])
+            ("PHP_METHOD" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("PDO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24867 24871])
+                    ("" variable (:type ("setAttribute" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24872 24885]))                  
+                :type "int")
+                nil [24849 25244])
+            ("PHP_METHOD" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("PDO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25350 25354])
+                    ("" variable (:type ("getAttribute" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25355 25368]))                  
+                :type "int")
+                nil [25332 26827])
+            ("PHP_METHOD" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("PDO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26991 26995])
+                    ("" variable (:type ("exec" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26996 27001]))                  
+                :type "int")
+                nil [26973 27580])
+            ("PHP_METHOD" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("PDO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27831 27835])
+                    ("" variable (:type ("lastInsertId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27836 27849]))                  
+                :type "int")
+                nil [27813 28500])
+            ("PHP_METHOD" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("PDO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28652 28656])
+                    ("" variable (:type ("errorCode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28657 28667]))                  
+                :type "int")
+                nil [28634 29108])
+            ("PHP_METHOD" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("PDO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29269 29273])
+                    ("" variable (:type ("errorInfo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29274 29284]))                  
+                :type "int")
+                nil [29251 30343])
+            ("PHP_METHOD" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("PDO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30529 30533])
+                    ("" variable (:type ("query" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30534 30540]))                  
+                :type "int")
+                nil [30511 32704])
+            ("PHP_METHOD" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("PDO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32961 32965])
+                    ("" variable (:type ("quote" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32966 32972]))                  
+                :type "int")
+                nil [32943 33593])
+            ("PHP_METHOD" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("PDO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33720 33724])
+                    ("" variable (:type ("__wakeup" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33725 33734]))                  
+                :type "int")
+                nil [33702 33855])
+            ("PHP_METHOD" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("PDO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33964 33968])
+                    ("" variable (:type ("__sleep" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33969 33977]))                  
+                :type "int")
+                nil [33946 34098])
+            ("PHP_METHOD" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("PDO" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34218 34222])
+                    ("" variable (:type ("getAvailableDrivers" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34223 34243]))                  
+                :type "int")
+                nil [34200 34699])
+            ("pdo_dbh_functions" variable
+               (:dereference 1
+                :constant-flag t
+                :type ("zend_function_entry" type (:type "class") nil nil))
+                nil [35680 37057])
+            ("pdo_hash_methods" function
+               (:arguments 
+                  ( ("dbh" variable
+                       (:pointer 1
+                        :type ("pdo_dbh_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37131 37146])
+                    ("kind" variable (:type "int") (reparse-symbol arg-sub-list) [37147 37165])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37156 37166]))                  
+                :type "int")
+                nil [37110 38940])
+            ("dbh_method_get" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39045 39058])
+                    ("method_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [39067 39085])
+                    ("method_len" variable (:type "int") (reparse-symbol arg-sub-list) [39086 39110])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39101 39111]))                  
+                :type ("_zend_function" type (:type "union") nil nil))
+                nil [38942 40048])
+            ("dbh_compare" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("object1" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [40073 40087])
+                    ("object2" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [40088 40111])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40102 40112]))                  
+                :type "int")
+                nil [40050 40128])
+            ("pdo_dbh_object_handlers" variable
+               (:typemodifiers ("static")
+                :type ("zend_object_handlers" type (:type "class") nil nil))
+                nil [40130 40182])
+            ("pdo_dbh_init" function
+               (:arguments 
+                  ( ("" variable (:type ("TSRMLS_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40202 40211]))                  
+                :type "void")
+                nil [40184 46813])
+            ("dbh_free" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dbh" variable
+                       (:pointer 1
+                        :type ("pdo_dbh_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46836 46860])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46851 46861]))                  
+                :type "void")
+                nil [46815 47679])
+            ("php_pdo_dbh_addref" function
+               (:arguments 
+                  ( ("dbh" variable
+                       (:pointer 1
+                        :type ("pdo_dbh_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [47713 47737])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47728 47738]))                  
+                :type "void")
+                nil [47689 47760])
+            ("php_pdo_dbh_delref" function
+               (:arguments 
+                  ( ("dbh" variable
+                       (:pointer 1
+                        :type ("pdo_dbh_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [47794 47818])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47809 47819]))                  
+                :type "void")
+                nil [47770 47849])
+            ("pdo_dbh_free_storage" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dbh" variable
+                       (:pointer 1
+                        :type ("pdo_dbh_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [47884 47908])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47899 47909]))                  
+                :type "void")
+                nil [47851 48319])
+            ("pdo_dbh_new" function
+               (:arguments 
+                  ( ("ce" variable
+                       (:pointer 1
+                        :type ("zend_class_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [48351 48381])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48372 48382]))                  
+                :type ("zend_object_value" type (:type "class") nil nil))
+                nil [48321 49040])
+            ("ZEND_RSRC_DTOR_FUNC" function
+               (:arguments 
+                  ( ("" variable (:type ("php_pdo_pdbh_dtor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49073 49091]))                  
+                :type "int")
+                nil [49053 49205]))          
+    :file "pdo_dbh.c"
+    :pointmax 49343
+    :fsize 49342
+    :lastmodtime '(20689 55724 0 0)
+    :unmatched-syntax '((symbol 47762 . 47769) (symbol 47681 . 47688) (semantic-list 35666 . 35668) (symbol 35649 . 35666) (semantic-list 35626 . 35648) (symbol 35607 . 35626) (number 35646 . 35647) (semantic-list 35603 . 35605) (symbol 35586 . 35603) (semantic-list 35571 . 35585) (symbol 35558 . 35571) (number 35572 . 35573) (semantic-list 35545 . 35556) (symbol 35532 . 35545) (number 35546 . 35547) (semantic-list 35502 . 35530) (symbol 35480 . 35502) (number 35528 . 35529) (number 35525 . 35526) (number 35522 . 35523) (semantic-list 35476 . 35478) (symbol 35459 . 35476) (semantic-list 35446 . 35458) (symbol 35433 . 35446) (number 35447 . 35448) (semantic-list 35396 . 35431) (symbol 35374 . 35396) (number 35429 . 35430) (number 35426 . 35427) (number 35423 . 35424) (semantic-list 35370 . 35372) (symbol 35353 . 35370) (semantic-list 35342 . 35352) (symbol 35329 . 35342) (number 35343 . 35344) (semantic-list 35306 . 35327) (symbol 35287 . 35306) (number 35325 . 35326) (semantic-list 35283 . 35285) (symbol 35266 . 35283) (semantic-list 35251 . 35265) (symbol 35238 . 35251) (number 35252 . 35253) (semantic-list 35207 . 35236) (symbol 35188 . 35207) (number 35234 . 35235) (semantic-list 35184 . 35186) (symbol 35167 . 35184) (semantic-list 35156 . 35166) (symbol 35143 . 35156) (number 35157 . 35158) (semantic-list 35127 . 35141) (symbol 35114 . 35127) (number 35128 . 35129) (semantic-list 35083 . 35112) (symbol 35064 . 35083) (number 35110 . 35111) (semantic-list 35060 . 35062) (symbol 35043 . 35060) (semantic-list 35018 . 35030) (symbol 35005 . 35018) (number 35019 . 35020) (semantic-list 34990 . 35003) (symbol 34977 . 34990) (number 34991 . 34992) (semantic-list 34945 . 34975) (symbol 34923 . 34945) (number 34973 . 34974) (number 34970 . 34971) (number 34967 . 34968) (semantic-list 34919 . 34921) (symbol 34902 . 34919) (semantic-list 34877 . 34889) (symbol 34864 . 34877) (number 34878 . 34879) (semantic-list 34851 . 34862) (symbol 34838 . 34851) (number 34852 . 34853) (semantic-list 34823 . 34836) (symbol 34810 . 34823) (number 34824 . 34825) (semantic-list 34800 . 34808) (symbol 34787 . 34800) (number 34801 . 34802) (semantic-list 34751 . 34785) (symbol 34729 . 34751) (number 34783 . 34784) (number 34780 . 34781) (number 34777 . 34778) (symbol 35329 . 35342) (number 35343 . 35344) (semantic-list 35306 . 35327) (symbol 35287 . 35306) (number 35325 . 35326) (semantic-list 35283 . 35285) (symbol 35266 . 35283) (semantic-list 35251 . 35265) (symbol 35238 . 35251) (number 35252 . 35253) (semantic-list 35207 . 35236) (symbol 35188 . 35207) (number 35234 . 35235) (semantic-list 35184 . 35186) (symbol 35167 . 35184) (semantic-list 35156 . 35166) (symbol 35143 . 35156) (number 35157 . 35158) (semantic-list 35127 . 35141) (symbol 35114 . 35127) (number 35128 . 35129) (semantic-list 35083 . 35112) (symbol 35064 . 35083) (number 35110 . 35111) (semantic-list 35060 . 35062) (symbol 35043 . 35060) (semantic-list 35018 . 35030) (symbol 35005 . 35018) (number 35019 . 35020) (semantic-list 34990 . 35003) (symbol 34977 . 34990) (number 34991 . 34992) (semantic-list 34945 . 34975) (symbol 34923 . 34945) (number 34973 . 34974) (number 34970 . 34971) (number 34967 . 34968) (semantic-list 34919 . 34921) (symbol 34902 . 34919) (semantic-list 34877 . 34889) (symbol 34864 . 34877) (number 34878 . 34879) (semantic-list 34851 . 34862) (symbol 34838 . 34851) (number 34852 . 34853) (semantic-list 34823 . 34836) (symbol 34810 . 34823) (number 34824 . 34825) (semantic-list 34800 . 34808) (symbol 34787 . 34800) (number 34801 . 34802) (semantic-list 34751 . 34785) (symbol 34729 . 34751) (number 34783 . 34784) (number 34780 . 34781) (number 34777 . 34778))
+    )
+   )
+  :file "!home!work!download!php-5.3.20!ext!pdo!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,22 @@
+;; Object mysys/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mysys/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("AM_CPPFLAGS" variable (:default-value ("@ZLIB_INCLUDES@" "-I$(top_builddir)/include")) nil [736 798])
+            ("AM_CPPFLAGS" variable (:default-value ("-I$(top_srcdir)/include" "-I$(top_srcdir)/unittest/mytap")) nil [798 872])
+            ("LDADD" variable (:default-value ("$(top_builddir)/unittest/mytap/libmytap.a" "$(top_builddir)/mysys/libmysys.a" "$(top_builddir)/dbug/libdbug.a" "$(top_builddir)/strings/libmystrings.a")) nil [873 1046])
+            ("noinst_PROGRAMS" variable (:default-value ("bitmap-t")) nil [1047 1084]))          
+    :file "Makefile.am"
+    :pointmax 1137
+    :fsize 1136
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax '((symbol 1128 . 1136) (punctuation 1127 . 1128) (punctuation 1126 . 1127) (symbol 1125 . 1126) (bol 1125 . 1125))
+    )
+   )
+  :file "!home!work!git!mm!mysql-5.1.71!unittest!mysys!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

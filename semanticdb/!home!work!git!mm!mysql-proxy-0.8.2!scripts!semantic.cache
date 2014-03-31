@@ -1,0 +1,20 @@
+;; Object scripts/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "scripts/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("bin_SCRIPTS" variable (:default-value ("mysql-binlog-dump" "mysql-myisam-dump" "mysql-proxy")) nil [87 161])
+            ("CLEANFILES" variable (:default-value ("$(bin_SCRIPTS)")) nil [162 190]))          
+    :file "Makefile.am"
+    :pointmax 196
+    :fsize 195
+    :lastmodtime '(21022 63839 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!git!mm!mysql-proxy-0.8.2!scripts!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

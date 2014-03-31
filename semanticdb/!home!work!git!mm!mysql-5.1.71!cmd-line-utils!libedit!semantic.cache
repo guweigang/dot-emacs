@@ -1,0 +1,63 @@
+;; Object libedit/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "libedit/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("ASRC" variable (:default-value ("$(srcdir)/vi.c" "$(srcdir)/emacs.c" "$(srcdir)/common.c")) nil [59 120])
+            ("AHDR" variable (:default-value ("vi.h" "emacs.h" "common.h")) nil [120 151])
+            ("INCLUDES" variable (:default-value ("-I$(top_builddir)/include" "-I$(top_srcdir)/include")) nil [152 214])
+            ("noinst_LIBRARIES" variable (:default-value ("libedit.a")) nil [215 244])
+            ("libedit_a_SOURCES" variable (:default-value ("chared.c" "el.c" "eln.c" "history.c" "historyn.c" "map.c" "prompt.c" "chartype.c" "readline.c" "search.c" "tokenizer.c" "tokenizern.c" "vi.c" "common.c" "emacs.c" "hist.c" "keymacro.c" "parse.c" "read.c" "refresh.c" "sig.c" "terminal.c" "tty.c" "help.c" "fcns.c" "filecomplete.c" "np/unvis.c" "np/strlcpy.c" "np/vis.c" "np/strlcat.c" "np/fgetln.c" "np/wcsdup.c")) nil [245 589])
+            ("libedit_a_LIBADD" variable (:default-value ("@LIBEDIT_LOBJECTS@")) nil [590 630])
+            ("libedit_a_DEPENDENCIES" variable (:default-value ("@LIBEDIT_LOBJECTS@")) nil [630 676])
+            ("pkginclude_HEADERS" variable (:default-value ("readline/readline.h")) nil [677 718])
+            ("noinst_HEADERS" variable (:default-value ("chared.h" "chartype.h" "el.h" "el_terminal.h" "histedit.h" "keymacro.h" "parse.h" "refresh.h" "sig.h" "sys.h" "config.h" "hist.h" "map.h" "prompt.h" "read.h" "search.h" "tty.h" "filecomplete.h" "np/vis.h")) nil [719 914])
+            ("EXTRA_DIST" variable (:default-value ("makelist.sh")) nil [915 940])
+            ("CLEANFILES" variable (:default-value ("makelist" "common.h" "emacs.h" "vi.h" "fcns.h" "help.h" "fcns.c" "help.c")) nil [941 1013])
+            ("SUFFIXES" variable (:default-value (".sh")) nil [1014 1029])
+            (".sh" function nil nil [1030 1115])
+            ("vi.h" function (:arguments ("$(srcdir)/vi.c" "makelist")) nil [1116 1207])
+            ("emacs.h" function (:arguments ("$(srcdir)/emacs.c" "makelist")) nil [1208 1308])
+            ("common.h" function (:arguments ("$(srcdir)/common.c" "makelist")) nil [1309 1412])
+            ("help.c" function (:arguments ("${ASRC}" "makelist")) nil [1413 1493])
+            ("help.h" function (:arguments ("${ASRC}" "makelist")) nil [1494 1574])
+            ("fcns.h" function (:arguments ("${AHDR}" "makelist")) nil [1575 1655])
+            ("fcns.c" function (:arguments ("${AHDR}" "fcns.h" "makelist")) nil [1656 1743])
+            ("chared.o" function (:arguments ("vi.h" "emacs.h" "common.h" "help.h" "fcns.h")) nil [1862 1908])
+            ("el.o" function (:arguments ("vi.h" "emacs.h" "common.h" "help.h" "fcns.h")) nil [1908 1950])
+            ("eln.o" function (:arguments ("vi.h" "emacs.h" "common.h" "help.h" "fcns.h")) nil [1950 1993])
+            ("history.o" function (:arguments ("vi.h" "emacs.h" "common.h" "help.h" "fcns.h")) nil [1993 2041])
+            ("historyn.o" function (:arguments ("vi.h" "emacs.h" "common.h" "help.h" "fcns.h")) nil [2041 2090])
+            ("map.o" function (:arguments ("vi.h" "emacs.h" "common.h" "help.h" "fcns.h")) nil [2090 2133])
+            ("chartype.o" function (:arguments ("vi.h" "emacs.h" "common.h" "help.h" "fcns.h")) nil [2133 2181])
+            ("prompt.o" function (:arguments ("vi.h" "emacs.h" "common.h" "help.h" "fcns.h")) nil [2181 2227])
+            ("readline.o" function (:arguments ("vi.h" "emacs.h" "common.h" "help.h" "fcns.h")) nil [2227 2275])
+            ("search.o" function (:arguments ("vi.h" "emacs.h" "common.h" "help.h" "fcns.h")) nil [2275 2321])
+            ("tokenizer.o" function (:arguments ("vi.h" "emacs.h" "common.h" "help.h" "fcns.h")) nil [2321 2370])
+            ("tokenizern.o" function (:arguments ("vi.h" "emacs.h" "common.h" "help.h" "fcns.h")) nil [2370 2420])
+            ("vi.o" function (:arguments ("vi.h" "emacs.h" "common.h" "help.h" "fcns.h")) nil [2420 2462])
+            ("common.o" function (:arguments ("vi.h" "emacs.h" "common.h" "help.h" "fcns.h")) nil [2462 2508])
+            ("emacs.o" function (:arguments ("vi.h" "emacs.h" "common.h" "help.h" "fcns.h")) nil [2508 2554])
+            ("hist.o" function (:arguments ("vi.h" "emacs.h" "common.h" "help.h" "fcns.h")) nil [2554 2599])
+            ("keymacro.o" function (:arguments ("vi.h" "emacs.h" "common.h" "help.h" "fcns.h")) nil [2599 2648])
+            ("parse.o" function (:arguments ("vi.h" "emacs.h" "common.h" "help.h" "fcns.h")) nil [2648 2693])
+            ("read.o" function (:arguments ("vi.h" "emacs.h" "common.h" "help.h" "fcns.h")) nil [2693 2737])
+            ("refresh.o" function (:arguments ("vi.h" "emacs.h" "common.h" "help.h" "fcns.h")) nil [2737 2784])
+            ("sig.o" function (:arguments ("vi.h" "emacs.h" "common.h" "help.h" "fcns.h")) nil [2784 2827])
+            ("terminal.o" function (:arguments ("vi.h" "emacs.h" "common.h" "help.h" "fcns.h")) nil [2827 2875])
+            ("tty.o" function (:arguments ("vi.h" "emacs.h" "common.h" "help.h" "fcns.h")) nil [2875 2919])
+            ("help.o" function (:arguments ("vi.h" "emacs.h" "common.h" "help.h" "fcns.h")) nil [2919 2963])
+            ("fcns.o" function (:arguments ("vi.h" "emacs.h" "common.h" "help.h" "fcns.h")) nil [2963 3007]))          
+    :file "Makefile.am"
+    :pointmax 3059
+    :fsize 3058
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax '((symbol 3052 . 3058) (symbol 3045 . 3051) (symbol 3036 . 3044) (symbol 3028 . 3035) (symbol 3023 . 3027) (punctuation 3021 . 3022) (symbol 3007 . 3021) (bol 3007 . 3007))
+    )
+   )
+  :file "!home!work!git!mm!mysql-5.1.71!cmd-line-utils!libedit!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

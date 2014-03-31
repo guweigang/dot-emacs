@@ -1,0 +1,20 @@
+;; Object server-tools/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "server-tools/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("SUBDIRS" variable (:default-value ("." "instance-manager")) nil [696 725])
+            ("DIST_SUBDIRS" variable (:default-value ("." "instance-manager")) nil [725 759]))          
+    :file "Makefile.am"
+    :pointmax 812
+    :fsize 811
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax '((symbol 803 . 811) (punctuation 802 . 803) (punctuation 801 . 802) (symbol 800 . 801) (bol 800 . 800))
+    )
+   )
+  :file "!home!work!git!mm!mysql-5.1.71!server-tools!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

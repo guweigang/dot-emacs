@@ -1,0 +1,32 @@
+ls
+rm hotelPrice.json\~ 
+ls
+md5sum hotelPrice.json 
+md5sum hotelPrice.json > hotelPrice.json.md5
+md5sum -c hotelPrice.json.md5 
+cd ~/source/vs-nexus/
+php skeleton/tools/console.php price hotel-qunar:price
+php skeleton/tools/console.php price hotel-qunar:price
+php skeleton/tools/console.php price hotel-qunar:price
+cd ~/var/data/hotel/
+ls
+cd -
+php skeleton/tools/console.php landmark hotel-qunar:landmark
+ls
+php skeleton/tools/console.php landmark hotel-qunar:landmark
+php skeleton/tools/console.php landmark hotel-qunar:landmark
+php skeleton/tools/console.php landmark hotel-qunar:landmark
+php skeleton/tools/console.php landmark hotel-qunar:landmark
+php skeleton/tools/console.php landmark hotel-qunar:landmark
+ls
+cd ~/local/httpd/htdocs/hotel/
+ls
+md5sum -c hotelLocation.json.md5
+cd -
+cd ~/var/data/hotel/
+ls
+ls
+cd -
+php skeleton/tools/console.php landmark hotel-qunar:landmark
+fg
+php skeleton/tools/console.php landmark hotel-qunar:landmark

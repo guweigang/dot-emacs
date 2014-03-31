@@ -1,0 +1,22 @@
+;; Object plugins/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "plugins/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("SUBDIRS" variable (:default-value ("admin" "proxy" "replicant" "debug")) nil [1 50])
+            ("EXTRA_DIST" variable (:default-value ("CMakeLists.txt")) nil [127 153])
+            ("check-local" function nil nil [154 469])
+            ("clean-local" function nil nil [470 547]))          
+    :file "Makefile.am"
+    :pointmax 547
+    :fsize 546
+    :lastmodtime '(21022 63839 0 0)
+    :unmatched-syntax '((shell-command 484 . 546) (bol 483 . 483))
+    )
+   )
+  :file "!home!work!git!mm!mysql-proxy-0.8.2!plugins!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,18 @@
+;; Object countdown/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "countdown/"
+  :tables (list 
+   (semanticdb-table "index.html"
+    :major-mode 'html-mode
+    :tags nil
+    :file "index.html"
+    :pointmax 0
+    :fsize 3107
+    :lastmodtime '(21278 36214 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!git!phalcon-framework!skeleton!public!countdown!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

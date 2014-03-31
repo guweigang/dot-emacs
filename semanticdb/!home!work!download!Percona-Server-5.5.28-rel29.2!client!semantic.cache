@@ -1,0 +1,2567 @@
+;; Object client/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "client/"
+  :tables (list 
+   (semanticdb-table "mysqlbinlog.cc"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("MYSQL_CLIENT" variable (:constant-flag t) nil [1185 1197])
+            ("client_priv.h" include nil nil [1218 1242])
+            ("my_time.h" include (:system-flag t) nil [1243 1263])
+            ("sql_priv.h" include nil nil [1340 1361])
+            ("log_event.h" include nil nil [1362 1384])
+            ("sql_common.h" include nil nil [1385 1408])
+            ("my_dir.h" include nil nil [1409 1428])
+            ("welcome_copyright_notice.h" include (:system-flag t) nil [1429 1466])
+            ("BIN_LOG_HEADER_SIZE" variable (:constant-flag t) nil [1511 1530])
+            ("PROBE_HEADER_LEN" variable (:constant-flag t) nil [1541 1557])
+            ("CLIENT_CAPABILITIES" variable (:constant-flag t) nil [1589 1608])
+            ("server_version" variable
+               (:dereference 1
+                :type "char")
+                nil [1673 1716])
+            ("server_id" variable (:type ("ulong" type (:type "class") nil nil)) nil [1717 1737])
+            ("bytes_received" variable (:type ("ulong" type (:type "class") nil nil)) nil [1763 1806])
+            ("bytes_sent" variable (:type ("ulong" type (:type "class") nil nil)) nil [1763 1806])
+            ("mysqld_net_retry_count" variable (:type ("ulong" type (:type "class") nil nil)) nil [1807 1842])
+            ("open_files_limit" variable (:type ("ulong" type (:type "class") nil nil)) nil [1843 1866])
+            ("test_flags" variable (:type ("uint" type (:type "class") nil nil)) nil [1867 1887])
+            ("opt_protocol" variable
+               (:typemodifiers ("static")
+                :type ("uint" type (:type "class") nil nil))
+                nil [1889 1917])
+            ("result_file" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("FILE" type (:type "class") nil nil))
+                nil [1918 1943])
+            ("default_dbug_option" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "char")
+                nil [1962 2034])
+            ("load_default_groups" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "char")
+                nil [2042 2113])
+            ("ATTRIBUTE_FORMAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("printf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2175 2182]))                  
+                :type "int")
+                nil [2158 2189])
+            ("ATTRIBUTE_FORMAT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("printf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2252 2259]))                  
+                :type "int")
+                nil [2235 2266])
+            ("disable_log_bin" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [2268 2338])
+            ("to_last_remote_log" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [2268 2338])
+            ("one_database" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [2268 2338])
+            ("opt_hexdump" variable
+               (:typemodifiers ("static")
+                :type "bool")
+                nil [2339 2366])
+            ("base64_output_mode_names" variable
+               (:pointer 1
+                :dereference 1
+                :constant-flag t
+                :type "char")
+                nil [2367 2467])
+            ("base64_output_mode_typelib" variable (:type ("TYPELIB" type (:type "class") nil nil)) nil [2468 2595])
+            ("opt_base64_output_mode" variable
+               (:typemodifiers ("static")
+                :type ("enum_base64_output_mode" type (:type "class") nil nil))
+                nil [2596 2672])
+            ("opt_base64_output_mode_str" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [2673 2720])
+            ("database" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [2721 2746])
+            ("remote_opt" variable
+               (:typemodifiers ("static")
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [2747 2805])
+            ("short_form" variable
+               (:typemodifiers ("static")
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [2747 2805])
+            ("force_opt" variable
+               (:typemodifiers ("static")
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [2747 2805])
+            ("debug_check_flag" variable
+               (:typemodifiers ("static")
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [2806 2855])
+            ("debug_info_flag" variable
+               (:typemodifiers ("static")
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [2806 2855])
+            ("force_if_open_opt" variable
+               (:typemodifiers ("static")
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [2856 2892])
+            ("offset" variable
+               (:typemodifiers ("static")
+                :type ("ulonglong" type (:type "class") nil nil))
+                nil [2893 2921])
+            ("host" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [2922 2944])
+            ("port" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [2945 2964])
+            ("my_end_arg" variable
+               (:typemodifiers ("static")
+                :type ("uint" type (:type "class") nil nil))
+                nil [2965 2988])
+            ("sock" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "char")
+                nil [2989 3016])
+            ("opt_default_auth" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [3017 3070])
+            ("opt_plugin_dir" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [3017 3070])
+            ("user" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [3137 3159])
+            ("pass" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [3160 3182])
+            ("charset" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [3183 3207])
+            ("verbose" variable
+               (:typemodifiers ("static")
+                :type ("uint" type (:type "class") nil nil))
+                nil [3209 3232])
+            ("stop_position" variable
+               (:typemodifiers ("static")
+                :type ("ulonglong" type (:type "class") nil nil))
+                nil [3234 3281])
+            ("start_position" variable
+               (:typemodifiers ("static")
+                :type ("ulonglong" type (:type "class") nil nil))
+                nil [3234 3281])
+            ("start_position_mot" variable (:constant-flag t) nil [3290 3308])
+            ("stop_position_mot" variable (:constant-flag t) nil [3344 3361])
+            ("stop_datetime_str" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [3390 3442])
+            ("start_datetime_str" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [3390 3442])
+            ("stop_datetime" variable
+               (:typemodifiers ("static")
+                :type ("my_time_t" type (:type "class") nil nil))
+                nil [3443 3508])
+            ("start_datetime" variable
+               (:typemodifiers ("static")
+                :type ("my_time_t" type (:type "class") nil nil))
+                nil [3443 3508])
+            ("rec_count" variable
+               (:typemodifiers ("static")
+                :type ("ulonglong" type (:type "class") nil nil))
+                nil [3509 3539])
+            ("binlog_flags" variable
+               (:typemodifiers ("static")
+                :type "short")
+                nil [3540 3570])
+            ("mysql" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("MYSQL" type (:type "class") nil nil))
+                nil [3572 3599])
+            ("dirname_for_local_load" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [3600 3639])
+            ("glob_description_event" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("Format_description_log_event" type (:type "class") nil nil))
+                nil [3869 3935])
+            ("Exit_status" type
+               (:members 
+                  ( ("OK_CONTINUE" variable
+                       (:constant-flag t
+                        :default-value (4078 4079)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4065 4079])
+                    ("ERROR_STOP" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4137 4148])
+                    ("OK_STOP" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [4205 4214]))                  
+                :type "enum")
+                nil [3986 4215])
+            ("dump_local_log_entries" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("print_event_info" variable
+                       (:pointer 1
+                        :type ("PRINT_EVENT_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4259 4294])
+                    ("logname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4337 4357]))                  
+                :type ("Exit_status" type (:type "class") nil nil))
+                nil [4217 4358])
+            ("dump_remote_log_entries" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("print_event_info" variable
+                       (:pointer 1
+                        :type ("PRINT_EVENT_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4402 4437])
+                    ("logname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4481 4501]))                  
+                :type ("Exit_status" type (:type "class") nil nil))
+                nil [4359 4502])
+            ("dump_log_entries" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("logname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4539 4559]))                  
+                :type ("Exit_status" type (:type "class") nil nil))
+                nil [4503 4560])
+            ("safe_connect" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :type ("Exit_status" type (:type "class") nil nil))
+                nil [4561 4595])
+            ("Load_log_processor" type
+               (:members 
+                  ( ("target_dir_name" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [4627 4659])
+                    ("target_dir_name_len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4662 4689])
+                    ("File_name_record" type
+                       (:members 
+                          ( ("fname" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol classsubparts) [5258 5270])
+                            ("event" variable
+                               (:pointer 1
+                                :type ("Create_file_log_event" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5275 5304]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [5226 5309])
+                    ("file_names" variable (:type ("DYNAMIC_ARRAY" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5642 5667])
+                    ("create_unique_file" function
+                       (:arguments 
+                          ( ("filename" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [6239 6254])
+                            ("file_name_end" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [6255 6275]))                          
+                        :type ("File" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6215 6611])
+                    ("public" label nil (reparse-symbol classsubparts) [6613 6620])
+                    ("Load_log_processor" function
+                       (:constructor-flag t
+                        :type ("Load_log_processor" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6623 6646])
+                    ("Load_log_processor" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [6649 6673])
+                    ("init" function (:type "int") (reparse-symbol classsubparts) [6677 6784])
+                    ("init_by_dir_name" function
+                       (:arguments 
+                          ( ("dir" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [6810 6826]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6788 6938])
+                    ("init_by_cur_dir" function (:type "void") (reparse-symbol classsubparts) [6941 7110])
+                    ("destroy" function (:type "void") (reparse-symbol classsubparts) [7113 7478])
+                    ("grab_event" function
+                       (:pointer 1
+                        :arguments 
+                          ( ("file_id" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8152 8165]))                          
+                        :type ("Create_file_log_event" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [8118 8471])
+                    ("grab_fname" function
+                       (:pointer 1
+                        :arguments 
+                          ( ("file_id" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9167 9180]))                          
+                        :type "char")
+                        (reparse-symbol classsubparts) [9150 9507])
+                    ("process" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ce" variable
+                               (:pointer 1
+                                :type ("Create_file_log_event" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9530 9556]))                          
+                        :type ("Exit_status" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9510 9557])
+                    ("process" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ce" variable
+                               (:pointer 1
+                                :type ("Begin_load_query_log_event" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9580 9611]))                          
+                        :type ("Exit_status" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9560 9612])
+                    ("process" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("ae" variable
+                               (:pointer 1
+                                :type ("Append_block_log_event" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9635 9662]))                          
+                        :type ("Exit_status" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9615 9663])
+                    ("prepare_new_file_for_old_format" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("le" variable
+                               (:pointer 1
+                                :type ("Load_log_event" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9703 9722])
+                            ("filename" variable
+                               (:pointer 1
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [9723 9738]))                          
+                        :type ("File" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9666 9739])
+                    ("load_old_format_file" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("net" variable
+                               (:pointer 1
+                                :type ("NET" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9775 9784])
+                            ("server_fname" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [9785 9810])
+                            ("server_fname_len" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9846 9868])
+                            ("file" variable (:type ("File" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9869 9879]))                          
+                        :type ("Exit_status" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9742 9880])
+                    ("process_first_event" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("bname" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [9915 9933])
+                            ("blen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9934 9946])
+                            ("block" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("uchar" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [9981 10000])
+                            ("block_len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10035 10052])
+                            ("file_id" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10053 10066])
+                            ("ce" variable
+                               (:pointer 1
+                                :type ("Create_file_log_event" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10101 10127]))                          
+                        :type ("Exit_status" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9883 10128]))                  
+                :type "class")
+                nil [4598 10131])
+            ("prepare_new_file_for_old_format" function
+               (:parent "Load_log_processor"
+                :arguments 
+                  ( ("le" variable
+                       (:pointer 1
+                        :type ("Load_log_event" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10564 10583])
+                    ("filename" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10592 10607]))                  
+                :type ("File" type (:type "class") nil nil))
+                nil [10507 11005])
+            ("load_old_format_file" function
+               (:parent "Load_log_processor"
+                :arguments 
+                  ( ("net" variable
+                       (:pointer 1
+                        :type ("NET" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11482 11491])
+                    ("server_fname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11545 11569])
+                    ("server_fname_len" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11623 11645])
+                    ("file" variable (:type ("File" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11699 11709]))                  
+                :type ("Exit_status" type (:type "class") nil nil))
+                nil [11429 12835])
+            ("process_first_event" function
+               (:parent "Load_log_processor"
+                :arguments 
+                  ( ("bname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13635 13653])
+                    ("blen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13706 13718])
+                    ("block" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13771 13790])
+                    ("block_len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13843 13860])
+                    ("file_id" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13913 13926])
+                    ("ce" variable
+                       (:pointer 1
+                        :type ("Create_file_log_event" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13979 14005]))                  
+                :type ("Exit_status" type (:type "class") nil nil))
+                nil [13583 15460])
+            ("process" function
+               (:parent "Load_log_processor"
+                :arguments 
+                  ( ("ce" variable
+                       (:pointer 1
+                        :type ("Create_file_log_event" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15845 15871]))                  
+                :type ("Exit_status" type (:type "class") nil nil))
+                nil [15804 16099])
+            ("process" function
+               (:parent "Load_log_processor"
+                :arguments 
+                  ( ("blqe" variable
+                       (:pointer 1
+                        :type ("Begin_load_query_log_event" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16493 16526]))                  
+                :type ("Exit_status" type (:type "class") nil nil))
+                nil [16453 16656])
+            ("process" function
+               (:parent "Load_log_processor"
+                :arguments 
+                  ( ("ae" variable
+                       (:pointer 1
+                        :type ("Append_block_log_event" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17589 17616]))                  
+                :type ("Exit_status" type (:type "class") nil nil))
+                nil [17549 18725])
+            ("load_processor" variable
+               (:typemodifiers ("static")
+                :type ("Load_log_processor" type (:type "class") nil nil))
+                nil [18728 18769])
+            ("convert_path_to_forward_slashes" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("fname" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [19264 19276]))                  
+                :type "void")
+                nil [19220 19361])
+            ("shall_skip_database" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("log_dbname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [19639 19662]))                  
+                :type "bool")
+                nil [19607 19763])
+            ("write_event_header_and_base64" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ev" variable
+                       (:pointer 1
+                        :type ("Log_event" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20430 20444])
+                    ("result_file" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20445 20463])
+                    ("print_event_info" variable
+                       (:pointer 1
+                        :type ("PRINT_EVENT_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20494 20529]))                  
+                :type ("Exit_status" type (:type "class") nil nil))
+                nil [20381 21118])
+            ("process_event" function
+               (:arguments 
+                  ( ("print_event_info" variable
+                       (:pointer 1
+                        :type ("PRINT_EVENT_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21958 21993])
+                    ("ev" variable
+                       (:pointer 1
+                        :type ("Log_event" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21994 22008])
+                    ("pos" variable (:type ("my_off_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22035 22048])
+                    ("logname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [22049 22069]))                  
+                :type ("Exit_status" type (:type "class") nil nil))
+                nil [21932 33328])
+            ("my_long_options" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("my_option" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [33331 41685])
+            ("error_or_warning" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [42053 42072])
+                    ("args" variable (:type ("va_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42073 42086])
+                    ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [42087 42103]))                  
+                :type "void")
+                nil [42024 42198])
+            ("error" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [42394 42413])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [42413 42417]))                  
+                :type "void")
+                nil [42376 42522])
+            ("sql_print_error" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [42693 42712])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [42712 42716]))                  
+                :type "void")
+                nil [42665 42821])
+            ("warning" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [43021 43040])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [43040 43044]))                  
+                :type "void")
+                nil [43001 43151])
+            ("cleanup" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [43210 43413])
+            ("print_version" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [43416 43526])
+            ("usage" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [43529 43877])
+            ("convert_str_to_timestamp" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [43922 43938]))                  
+                :type ("my_time_t" type (:type "class") nil nil))
+                nil [43880 44585])
+            ("get_one_option" function
+               (:arguments 
+                  ( ("optid" variable (:type "int") (reparse-symbol arg-sub-list) [44622 44632])
+                    ("opt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("my_option" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [44633 44685])
+                    ("argument" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [44694 44709]))                  
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [44599 46393])
+            ("parse_args" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("argc" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [46418 46428])
+                    ("argv" variable
+                       (:pointer 3
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [46429 46442]))                  
+                :type "int")
+                nil [46396 46723])
+            ("safe_connect" function
+               (:typemodifiers ("static")
+                :type ("Exit_status" type (:type "class") nil nil))
+                nil [46944 47749])
+            ("dump_log_entries" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("logname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [48253 48273]))                  
+                :type ("Exit_status" type (:type "class") nil nil))
+                nil [48217 48899])
+            ("check_master_version" function
+               (:typemodifiers ("static")
+                :type ("Exit_status" type (:type "class") nil nil))
+                nil [49305 50993])
+            ("dump_remote_log_entries" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("print_event_info" variable
+                       (:pointer 1
+                        :type ("PRINT_EVENT_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51532 51567])
+                    ("logname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [51611 51631]))                  
+                :type ("Exit_status" type (:type "class") nil nil))
+                nil [51489 57150])
+            ("check_header" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("IO_CACHE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [58237 58252])
+                    ("print_event_info" variable
+                       (:pointer 1
+                        :type ("PRINT_EVENT_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [58285 58320])
+                    ("logname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [58353 58373]))                  
+                :type ("Exit_status" type (:type "class") nil nil))
+                nil [58205 64066])
+            ("dump_local_log_entries" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("print_event_info" variable
+                       (:pointer 1
+                        :type ("PRINT_EVENT_INFO" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [64578 64613])
+                    ("logname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [64656 64676]))                  
+                :type ("Exit_status" type (:type "class") nil nil))
+                nil [64536 68036])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [68048 68057])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [68058 68070]))                  
+                :type "int")
+                nil [68039 71774])
+            ("my_decimal.h" include nil nil [71868 71891])
+            ("decimal.c" include nil nil [71892 71912])
+            ("my_decimal.cc" include nil nil [71913 71937])
+            ("log_event.cc" include nil nil [71938 71961])
+            ("log_event_old.cc" include nil nil [71962 71989])
+            ("rpl_utility.cc" include nil nil [71990 72015]))          
+    :file "mysqlbinlog.cc"
+    :pointmax 72016
+    :fsize 72015
+    :lastmodtime '(20667 6660 0 0)
+    :unmatched-syntax '((number 2263 . 2264) (number 2260 . 2261) (semantic-list 2209 . 2234) (symbol 2202 . 2209) (VOID 2197 . 2201) (STATIC 2190 . 2196) (number 2186 . 2187) (number 2183 . 2184) (semantic-list 2132 . 2157) (symbol 2127 . 2132) (VOID 2122 . 2126) (STATIC 2115 . 2121))
+    :lexical-table 
+        '(("CLIENT_CAPABILITIES" . ((semantic-list "(CLIENT_LONG_PASSWORD | CLIENT_LONG_FLAG | CLIENT_LOCAL_FILES)" 1609 . 1671)))
+          ("start_position_mot" . ((semantic-list "((my_off_t)start_position)" 3309 . 3335)))
+          ("PROBE_HEADER_LEN" . ((semantic-list "(EVENT_LEN_OFFSET+4)" 1558 . 1578)))
+          ("BIN_LOG_HEADER_SIZE" . ((number "4" 1531 . 1532)))
+          ("stop_position_mot" . ((semantic-list "((my_off_t)stop_position)" 3363 . 3388)))
+          ("MYSQL_CLIENT")
+          )
+
+    )
+   (semanticdb-table "client_priv.h"
+    :file "client_priv.h"
+    :fsize 3913
+    :lastmodtime '(20667 6660 0 0)
+    )
+   (semanticdb-table "mysql.cc"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("client_priv.h" include nil nil [1135 1159])
+            ("m_ctype.h" include (:system-flag t) nil [1160 1180])
+            ("stdarg.h" include (:system-flag t) nil [1181 1200])
+            ("my_dir.h" include (:system-flag t) nil [1201 1220])
+            ("__GNU_LIBRARY__" variable (:constant-flag t) nil [1253 1268])
+            ("my_readline.h" include nil nil [1312 1336])
+            ("signal.h" include (:system-flag t) nil [1337 1356])
+            ("violite.h" include (:system-flag t) nil [1357 1377])
+            ("syslog.h" include nil nil [1394 1413])
+            ("MAX_SYSLOG_MESSAGE" variable (:constant-flag t) nil [1430 1448])
+            ("VER" variable
+               (:pointer 1
+                :constant-flag t
+                :type "char")
+                nil [1543 1568])
+            ("MAX_COLUMN_LENGTH" variable (:constant-flag t) nil [1638 1655])
+            ("server_version" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [1720 1754])
+            ("MAX_SERVER_ARGS" variable (:constant-flag t) nil [1809 1824])
+            ("sql_string.h" include nil nil [1843 1866])
+            ("readline/readline.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [2535 2565])
+            ("HAVE_READLINE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2574 2587])
+            ("USE_POPEN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2596 2605])
+            ("vidattr" variable (:constant-flag t) nil [2737 2744])
+            ("cmp_database" variable (:constant-flag t) nil [2884 2896])
+            ("completion_hash.h" include nil nil [2929 2957])
+            ("welcome_copyright_notice.h" include (:system-flag t) nil [2958 2995])
+            ("PROMPT_CHAR" variable (:constant-flag t) nil [3040 3051])
+            ("DEFAULT_DELIMITER" variable (:constant-flag t) nil [3065 3082])
+            ("MAX_BATCH_BUFFER_SIZE" variable (:constant-flag t) nil [3096 3117])
+            ("STATUS" type
+               (:typedef ("st_status" type (:type "struct") nil nil)
+                :superclasses "st_status"
+                :type "typedef")
+                nil [3143 3298])
+            ("st_status" type
+               (:members 
+                  ( ("exit_status" variable (:type "int") (reparse-symbol classsubparts) [3172 3188])
+                    ("query_start_line" variable (:type ("ulong" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3191 3214])
+                    ("file_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [3217 3233])
+                    ("line_buff" variable
+                       (:pointer 1
+                        :type ("LINE_BUFFER" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3236 3259])
+                    ("add_to_history" variable (:type "bool") (reparse-symbol classsubparts) [3262 3288])
+                    ("batch" variable (:type "bool") (reparse-symbol classsubparts) [3262 3288]))                  
+                :type "struct")
+                nil [3143 3298])
+            ("ht" variable
+               (:typemodifiers ("static")
+                :type ("HashTable" type (:type "class") nil nil))
+                nil [3301 3321])
+            ("defaults_argv" variable
+               (:pointer 2
+                :typemodifiers ("static")
+                :type "char")
+                nil [3322 3350])
+            ("enum_info_type" type
+               (:members 
+                  ( ("INFO_INFO" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3374 3384])
+                    ("INFO_ERROR" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3384 3395])
+                    ("INFO_RESULT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3395 3407]))                  
+                :type "enum")
+                nil [3352 3408])
+            ("INFO_TYPE" type
+               (:typedef ("enum_info_type" type (:type "enum") nil nil)
+                :superclasses "enum_info_type"
+                :type "typedef")
+                nil [3409 3447])
+            ("opt_no_remove_eol_carret" variable (:type ("my_bool" type (:type "class") nil nil)) nil [3449 3484])
+            ("mysql" variable
+               (:typemodifiers ("static")
+                :type ("MYSQL" type (:type "class") nil nil))
+                nil [3486 3505])
+            ("opt_syslog" variable
+               (:typemodifiers ("static")
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [3529 4208])
+            ("ignore_spaces" variable
+               (:typemodifiers ("static")
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [3529 4208])
+            ("interrupted_query" variable
+               (:typemodifiers ("static")
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [3529 4208])
+            ("executing_query" variable
+               (:typemodifiers ("static")
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [3529 4208])
+            ("show_warnings" variable
+               (:typemodifiers ("static")
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [3529 4208])
+            ("auto_vertical_output" variable
+               (:typemodifiers ("static")
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [3529 4208])
+            ("opt_sigint_ignore" variable
+               (:typemodifiers ("static")
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [3529 4208])
+            ("default_pager_set" variable
+               (:typemodifiers ("static")
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [3529 4208])
+            ("opt_secure_auth" variable
+               (:typemodifiers ("static")
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [3529 4208])
+            ("opt_reconnect" variable
+               (:typemodifiers ("static")
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [3529 4208])
+            ("opt_nobeep" variable
+               (:typemodifiers ("static")
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [3529 4208])
+            ("tty_password" variable
+               (:typemodifiers ("static")
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [3529 4208])
+            ("named_cmds" variable
+               (:typemodifiers ("static")
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [3529 4208])
+            ("opt_outfile" variable
+               (:typemodifiers ("static")
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [3529 4208])
+            ("opt_nopager" variable
+               (:typemodifiers ("static")
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [3529 4208])
+            ("opt_xml" variable
+               (:typemodifiers ("static")
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [3529 4208])
+            ("opt_html" variable
+               (:typemodifiers ("static")
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [3529 4208])
+            ("column_names" variable
+               (:typemodifiers ("static")
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [3529 4208])
+            ("line_numbers" variable
+               (:typemodifiers ("static")
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [3529 4208])
+            ("vertical" variable
+               (:typemodifiers ("static")
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [3529 4208])
+            ("using_opt_local_infile" variable
+               (:typemodifiers ("static")
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [3529 4208])
+            ("opt_compress" variable
+               (:typemodifiers ("static")
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [3529 4208])
+            ("one_database" variable
+               (:typemodifiers ("static")
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [3529 4208])
+            ("safe_updates" variable
+               (:typemodifiers ("static")
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [3529 4208])
+            ("skip_updates" variable
+               (:typemodifiers ("static")
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [3529 4208])
+            ("opt_rehash" variable
+               (:typemodifiers ("static")
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [3529 4208])
+            ("output_tables" variable
+               (:typemodifiers ("static")
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [3529 4208])
+            ("unbuffered" variable
+               (:typemodifiers ("static")
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [3529 4208])
+            ("opt_raw_data" variable
+               (:typemodifiers ("static")
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [3529 4208])
+            ("connected" variable
+               (:typemodifiers ("static")
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [3529 4208])
+            ("quick" variable
+               (:typemodifiers ("static")
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [3529 4208])
+            ("wait_flag" variable
+               (:typemodifiers ("static")
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [3529 4208])
+            ("ignore_errors" variable
+               (:typemodifiers ("static")
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [3529 4208])
+            ("debug_check_flag" variable
+               (:typemodifiers ("static")
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [4209 4258])
+            ("debug_info_flag" variable
+               (:typemodifiers ("static")
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [4209 4258])
+            ("column_types_flag" variable
+               (:typemodifiers ("static")
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [4259 4292])
+            ("preserve_comments" variable
+               (:typemodifiers ("static")
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [4293 4329])
+            ("opt_net_buffer_length" variable
+               (:typemodifiers ("static")
+                :type ("ulong" type (:type "class") nil nil))
+                nil [4330 4389])
+            ("opt_max_allowed_packet" variable
+               (:typemodifiers ("static")
+                :type ("ulong" type (:type "class") nil nil))
+                nil [4330 4389])
+            ("opt_local_infile" variable
+               (:typemodifiers ("static")
+                :type ("uint" type (:type "class") nil nil))
+                nil [4390 4462])
+            ("opt_mysql_port" variable
+               (:typemodifiers ("static")
+                :type ("uint" type (:type "class") nil nil))
+                nil [4390 4462])
+            ("opt_silent" variable
+               (:typemodifiers ("static")
+                :type ("uint" type (:type "class") nil nil))
+                nil [4390 4462])
+            ("verbose" variable
+               (:typemodifiers ("static")
+                :type ("uint" type (:type "class") nil nil))
+                nil [4390 4462])
+            ("opt_enable_cleartext_plugin" variable
+               (:typemodifiers ("static")
+                :type ("uint" type (:type "class") nil nil))
+                nil [4463 4506])
+            ("using_opt_enable_cleartext_plugin" variable
+               (:typemodifiers ("static")
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [4507 4559])
+            ("my_end_arg" variable
+               (:typemodifiers ("static")
+                :type ("uint" type (:type "class") nil nil))
+                nil [4560 4583])
+            ("opt_mysql_unix_port" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [4584 4620])
+            ("connect_flag" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [4621 4664])
+            ("opt_init_command" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [4665 4888])
+            ("default_charset" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [4665 4888])
+            ("delimiter_str" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [4665 4888])
+            ("current_prompt" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [4665 4888])
+            ("opt_password" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [4665 4888])
+            ("current_user" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [4665 4888])
+            ("current_db" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [4665 4888])
+            ("current_host" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [4665 4888])
+            ("histfile" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [4889 4911])
+            ("histfile_tmp" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [4912 4938])
+            ("old_buffer" variable
+               (:typemodifiers ("static")
+                :type ("String" type (:type "class") nil nil))
+                nil [4939 4976])
+            ("glob_buffer" variable
+               (:typemodifiers ("static")
+                :type ("String" type (:type "class") nil nil))
+                nil [4939 4976])
+            ("processed_prompt" variable
+               (:typemodifiers ("static")
+                :type ("String" type (:type "class") nil nil))
+                nil [4977 5008])
+            ("default_prompt" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [5009 5073])
+            ("part_username" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [5009 5073])
+            ("full_username" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [5009 5073])
+            ("wait_time" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [5074 5099])
+            ("status" variable
+               (:typemodifiers ("static")
+                :type ("STATUS" type (:type "class") nil nil))
+                nil [5100 5121])
+            ("opt_connect_timeout" variable
+               (:typemodifiers ("static")
+                :type ("ulong" type (:type "class") nil nil))
+                nil [5122 5184])
+            ("max_join_size" variable
+               (:typemodifiers ("static")
+                :type ("ulong" type (:type "class") nil nil))
+                nil [5122 5184])
+            ("select_limit" variable
+               (:typemodifiers ("static")
+                :type ("ulong" type (:type "class") nil nil))
+                nil [5122 5184])
+            ("mysql_charsets_dir" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [5185 5229])
+            ("opt_default_auth" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [5230 5283])
+            ("opt_plugin_dir" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [5230 5283])
+            ("xmlmeta" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "char")
+                nil [5284 5477])
+            ("day_names" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "char")
+                nil [5478 5553])
+            ("month_names" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "char")
+                nil [5554 5669])
+            ("default_pager" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [5670 5707])
+            ("outfile" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [5708 5757])
+            ("pager" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [5708 5757])
+            ("OUTFILE" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("FILE" type (:type "class") nil nil))
+                nil [5758 5787])
+            ("PAGER" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("FILE" type (:type "class") nil nil))
+                nil [5758 5787])
+            ("hash_mem_root" variable
+               (:typemodifiers ("static")
+                :type ("MEM_ROOT" type (:type "class") nil nil))
+                nil [5788 5818])
+            ("prompt_counter" variable
+               (:typemodifiers ("static")
+                :type ("uint" type (:type "class") nil nil))
+                nil [5819 5846])
+            ("delimiter" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [5847 5892])
+            ("delimiter_length" variable
+               (:typemodifiers ("static")
+                :type ("uint" type (:type "class") nil nil))
+                nil [5893 5925])
+            ("terminal_width" variable (:type "unsigned short") nil [5926 5960])
+            ("opt_protocol" variable
+               (:typemodifiers ("static")
+                :type ("uint" type (:type "class") nil nil))
+                nil [6026 6053])
+            ("charset_info" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("CHARSET_INFO" type (:type "class") nil nil))
+                nil [6054 6108])
+            ("sslopt-vars.h" include nil nil [6110 6134])
+            ("default_dbug_option" variable
+               (:pointer 1
+                :constant-flag t
+                :type "char")
+                nil [6136 6193])
+            ("tee_fprintf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6212 6223])
+                    ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6224 6240])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [6241 6245]))                  
+                :type "void")
+                nil [6195 6246])
+            ("tee_fputs" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6262 6276])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6277 6288]))                  
+                :type "void")
+                nil [6247 6289])
+            ("tee_puts" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6304 6318])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6319 6330]))                  
+                :type "void")
+                nil [6290 6331])
+            ("tee_putc" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [6346 6352])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6353 6364]))                  
+                :type "void")
+                nil [6332 6365])
+            ("write_syslog" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6384 6399]))                  
+                :type "void")
+                nil [6366 6400])
+            ("tee_print_sized_data" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6434 6447])
+                    ("" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [6448 6461])
+                    ("" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [6462 6475])
+                    ("" variable (:type "bool") (reparse-symbol arg-sub-list) [6476 6481]))                  
+                :type "void")
+                nil [6401 6482])
+            ("get_options" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [6570 6579])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6579 6591]))                  
+                :type "int")
+                nil [6547 6592])
+            ("get_one_option" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("optid" variable (:type "int") (reparse-symbol arg-sub-list) [6627 6637])
+                    ("opt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("my_option" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6638 6666])
+                    ("argument" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6701 6716]))                  
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [6604 6717])
+            ("com_quit" function
+               (:prototype-flag t
+                :constructor-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6738 6750])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6750 6756]))                  
+                :type "int")
+                nil [6718 7336])
+            ("read_and_execute" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("interactive" variable (:type "bool") (reparse-symbol arg-sub-list) [7538 7555]))                  
+                :type "int")
+                nil [7510 7556])
+            ("sql_connect" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("host" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7580 7591])
+                    ("database" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7591 7606])
+                    ("user" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7606 7617])
+                    ("password" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7617 7632])
+                    ("silent" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7642 7654]))                  
+                :type "int")
+                nil [7557 7655])
+            ("server_version_string" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7697 7710]))                  
+                :type "char")
+                nil [7656 7711])
+            ("put_info" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7732 7748])
+                    ("info" variable (:type ("INFO_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7748 7763])
+                    ("error" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7763 7774])
+                    ("sql_state" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7783 7805]))                  
+                :type "int")
+                nil [7712 7808])
+            ("put_error" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7830 7843]))                  
+                :type "int")
+                nil [7809 7844])
+            ("safe_put_field" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("pos" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7872 7888])
+                    ("length" variable (:type ("ulong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7888 7901]))                  
+                :type "void")
+                nil [7845 7902])
+            ("xmlencode_print" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7931 7947])
+                    ("length" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7948 7960]))                  
+                :type "void")
+                nil [7903 7961])
+            ("init_pager" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :type "void")
+                nil [7962 7987])
+            ("end_pager" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :type "void")
+                nil [7988 8012])
+            ("init_tee" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8034 8047]))                  
+                :type "void")
+                nil [8013 8048])
+            ("end_tee" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :type "void")
+                nil [8049 8071])
+            ("construct_prompt" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "char")
+                nil [8072 8110])
+            ("get_arg" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("line" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8132 8143])
+                    ("get_next_arg" variable (:type ("my_bool" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8144 8165]))                  
+                :type "char")
+                nil [8111 8166])
+            ("init_username" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :type "void")
+                nil [8167 8195])
+            ("add_int_to_prompt" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("toadd" variable (:type "int") (reparse-symbol arg-sub-list) [8226 8236]))                  
+                :type "void")
+                nil [8196 8237])
+            ("get_result_width" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("res" variable
+                       (:pointer 1
+                        :type ("MYSQL_RES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8266 8281]))                  
+                :type "int")
+                nil [8238 8282])
+            ("get_field_disp_length" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("field" variable
+                       (:pointer 1
+                        :type ("MYSQL_FIELD" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8316 8336]))                  
+                :type "int")
+                nil [8283 8337])
+            ("COMMANDS" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("name" variable
+                             (:pointer 1
+                              :constant-flag t
+                              :type "char")
+                              (reparse-symbol classsubparts) [8452 8469])
+                          ("cmd_char" variable (:type "char") (reparse-symbol classsubparts) [8516 8530])
+                          ("func" variable
+                             (:functionpointer-flag t
+                              :type "int")
+                              (reparse-symbol classsubparts) [8563 8595])
+                          ("takes_params" variable (:type "bool") (reparse-symbol classsubparts) [8636 8654])
+                          ("doc" variable
+                             (:pointer 1
+                              :constant-flag t
+                              :type "char")
+                              (reparse-symbol classsubparts) [8691 8707]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [8433 8760])
+            ("commands" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("COMMANDS" type (:type "class") nil nil))
+                nil [8762 32320])
+            ("load_default_groups" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "char")
+                nil [32322 32387])
+            ("embedded_server_arg_count" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [32389 32437])
+            ("embedded_server_args" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [32438 32495])
+            ("embedded_server_groups" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "char")
+                nil [32496 32585])
+            ("find_command" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [33295 33306])
+                    ("cmd_name" variable (:type "char") (reparse-symbol arg-sub-list) [33306 33320]))                  
+                :type ("COMMANDS" type (:type "class") nil nil))
+                nil [33265 33321])
+            ("add_line" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("buffer" variable
+                       (:reference 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33343 33358])
+                    ("line" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [33358 33369])
+                    ("in_string" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [33369 33385])
+                    ("ml_comment" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [33407 33424])
+                    ("truncated" variable (:type "bool") (reparse-symbol arg-sub-list) [33425 33440]))                  
+                :type "bool")
+                nil [33322 33441])
+            ("remove_cntrl" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("buffer" variable
+                       (:reference 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33467 33482]))                  
+                :type "void")
+                nil [33442 33483])
+            ("print_table_data" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("result" variable
+                       (:pointer 1
+                        :type ("MYSQL_RES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33513 33531]))                  
+                :type "void")
+                nil [33484 33532])
+            ("print_table_data_html" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("result" variable
+                       (:pointer 1
+                        :type ("MYSQL_RES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33567 33585]))                  
+                :type "void")
+                nil [33533 33586])
+            ("print_table_data_xml" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("result" variable
+                       (:pointer 1
+                        :type ("MYSQL_RES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33620 33638]))                  
+                :type "void")
+                nil [33587 33639])
+            ("print_tab_data" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("result" variable
+                       (:pointer 1
+                        :type ("MYSQL_RES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33667 33685]))                  
+                :type "void")
+                nil [33640 33686])
+            ("print_table_data_vertically" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("result" variable
+                       (:pointer 1
+                        :type ("MYSQL_RES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33727 33745]))                  
+                :type "void")
+                nil [33687 33746])
+            ("print_warnings" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [33774 33779]))                  
+                :type "void")
+                nil [33747 33780])
+            ("start_timer" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [33806 33811]))                  
+                :type ("ulong" type (:type "class") nil nil))
+                nil [33781 33812])
+            ("end_timer" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("start_time" variable (:type ("ulong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33835 33852])
+                    ("buff" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [33852 33863]))                  
+                :type "void")
+                nil [33813 33864])
+            ("mysql_end_timer" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("start_time" variable (:type ("ulong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33893 33910])
+                    ("buff" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [33910 33921]))                  
+                :type "void")
+                nil [33865 33922])
+            ("nice_time" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("sec" variable (:type "double") (reparse-symbol arg-sub-list) [33945 33956])
+                    ("buff" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [33956 33967])
+                    ("part_second" variable (:type "bool") (reparse-symbol arg-sub-list) [33967 33984]))                  
+                :type "void")
+                nil [33923 33985])
+            ("mysql_end" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("sig" variable (:type "int") (reparse-symbol arg-sub-list) [34019 34027]))                  
+                :type ("sig_handler" type (:type "class") nil nil))
+                nil [33997 34028])
+            ("handle_sigint" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("sig" variable (:type "int") (reparse-symbol arg-sub-list) [34066 34074]))                  
+                :type ("sig_handler" type (:type "class") nil nil))
+                nil [34040 34075])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [34197 34206])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [34206 34219]))                  
+                :type "int")
+                nil [34188 39034])
+            ("mysql_end" function
+               (:arguments 
+                  ( ("sig" variable (:type "int") (reparse-symbol arg-sub-list) [39058 39066]))                  
+                :type ("sig_handler" type (:type "class") nil nil))
+                nil [39036 40237])
+            ("handle_sigint" function
+               (:arguments 
+                  ( ("sig" variable (:type "int") (reparse-symbol arg-sub-list) [40403 40411]))                  
+                :type ("sig_handler" type (:type "class") nil nil))
+                nil [40377 42064])
+            ("my_long_options" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("my_option" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [42304 54336])
+            ("usage" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("version" variable (:type "int") (reparse-symbol arg-sub-list) [54357 54369]))                  
+                :type "void")
+                nil [54339 55062])
+            ("get_one_option" function
+               (:arguments 
+                  ( ("optid" variable (:type "int") (reparse-symbol arg-sub-list) [55088 55098])
+                    ("opt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("my_option" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [55099 55151])
+                    ("argument" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [55160 55175]))                  
+                :type ("my_bool" type (:type "class") nil nil))
+                nil [55065 59189])
+            ("get_options" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [59215 59224])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [59225 59237]))                  
+                :type "int")
+                nil [59192 60687])
+            ("read_and_execute" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("interactive" variable (:type "bool") (reparse-symbol arg-sub-list) [60717 60734]))                  
+                :type "int")
+                nil [60689 64096])
+            ("find_command" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [64129 64140])
+                    ("cmd_char" variable (:type "char") (reparse-symbol arg-sub-list) [64140 64154]))                  
+                :type ("COMMANDS" type (:type "class") nil nil))
+                nil [64099 65706])
+            ("write_syslog" function
+               (:arguments 
+                  ( ("line" variable
+                       (:pointer 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [65726 65739]))                  
+                :type "void")
+                nil [65708 66755])
+            ("add_line" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("buffer" variable
+                       (:reference 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [66778 66793])
+                    ("line" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [66793 66804])
+                    ("in_string" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [66804 66820])
+                    ("ml_comment" variable
+                       (:pointer 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [66842 66859])
+                    ("truncated" variable (:type "bool") (reparse-symbol arg-sub-list) [66860 66875]))                  
+                :type "bool")
+                nil [66757 74633])
+            ("reconnect" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [84074 84079]))                  
+                :type "int")
+                nil [84053 84414])
+            ("get_current_db" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [84416 84908])
+            ("mysql_real_query_for_lazy" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [85119 85135])
+                    ("length" variable (:type "int") (reparse-symbol arg-sub-list) [85136 85147]))                  
+                :type "int")
+                nil [85089 85450])
+            ("mysql_store_result_for_lazy" function
+               (:arguments 
+                  ( ("result" variable
+                       (:pointer 2
+                        :type ("MYSQL_RES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [85484 85503]))                  
+                :type "int")
+                nil [85452 85638])
+            ("print_help_item" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cur" variable
+                       (:pointer 1
+                        :type ("MYSQL_ROW" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [85668 85683])
+                    ("num_name" variable (:type "int") (reparse-symbol arg-sub-list) [85684 85697])
+                    ("num_cat" variable (:type "int") (reparse-symbol arg-sub-list) [85698 85710])
+                    ("last_char" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [85711 85727]))                  
+                :type "void")
+                nil [85640 85937])
+            ("com_server_help" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [85967 86006])
+                    ("line" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [86013 86048])
+                    ("help_arg" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [86049 86064]))                  
+                :type "int")
+                nil [85940 88675])
+            ("com_help" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [88697 88736])
+                    ("line" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [88739 88774]))                  
+                :type "int")
+                nil [88677 90007])
+            ("com_clear" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [90047 90062])
+                    ("line" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [90062 90097]))                  
+                :type "int")
+                nil [90026 90216])
+            ("com_charset" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [90257 90296])
+                    ("line" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [90297 90308]))                  
+                :type "int")
+                nil [90234 90891])
+            ("com_go" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [91010 91025])
+                    ("line" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [91025 91060]))                  
+                :type "int")
+                nil [90992 95340])
+            ("init_pager" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [95343 95595])
+            ("end_pager" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [95597 95687])
+            ("init_tee" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("file_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [95711 95733]))                  
+                :type "void")
+                nil [95690 96114])
+            ("end_tee" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [96117 96214])
+            ("com_ego" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [96236 96251])
+                    ("line" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [96251 96262]))                  
+                :type "int")
+                nil [96217 96394])
+            ("fieldtype2str" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :arguments 
+                  ( ("type" variable (:type ("enum_field_types" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [96430 96457]))                  
+                :type "char")
+                nil [96397 97843])
+            ("fieldflags2str" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("f" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [97873 97880]))                  
+                :type "char")
+                nil [97845 98675])
+            ("print_field_types" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("result" variable
+                       (:pointer 1
+                        :type ("MYSQL_RES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [98707 98725]))                  
+                :type "void")
+                nil [98677 99662])
+            ("print_table_data" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("result" variable
+                       (:pointer 1
+                        :type ("MYSQL_RES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [99694 99712]))                  
+                :type "void")
+                nil [99665 103233])
+            ("get_field_disp_length" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("field" variable
+                       (:pointer 1
+                        :type ("MYSQL_FIELD" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [104011 104030]))                  
+                :type "int")
+                nil [103978 104300])
+            ("get_result_width" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("result" variable
+                       (:pointer 1
+                        :type ("MYSQL_RES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [104547 104565]))                  
+                :type "int")
+                nil [104519 104974])
+            ("tee_print_sized_data" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [105009 105026])
+                    ("data_length" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [105027 105052])
+                    ("total_bytes_to_send" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [105053 105086])
+                    ("right_justified" variable (:type "bool") (reparse-symbol arg-sub-list) [105087 105108]))                  
+                :type "void")
+                nil [104976 105739])
+            ("print_table_data_html" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("result" variable
+                       (:pointer 1
+                        :type ("MYSQL_RES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [105777 105795]))                  
+                :type "void")
+                nil [105743 106721])
+            ("print_table_data_xml" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("result" variable
+                       (:pointer 1
+                        :type ("MYSQL_RES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [106757 106775]))                  
+                :type "void")
+                nil [106724 107807])
+            ("print_table_data_vertically" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("result" variable
+                       (:pointer 1
+                        :type ("MYSQL_RES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [107850 107868]))                  
+                :type "void")
+                nil [107810 109017])
+            ("print_warnings" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [109093 110149])
+            ("array_value" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :arguments 
+                  ( ("array" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [110183 110202])
+                    ("key" variable (:type "char") (reparse-symbol arg-sub-list) [110203 110212]))                  
+                :type "char")
+                nil [110152 110303])
+            ("xmlencode_print" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [110334 110350])
+                    ("length" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [110351 110363]))                  
+                :type "void")
+                nil [110306 110607])
+            ("safe_put_field" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pos" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [110637 110653])
+                    ("length" variable (:type ("ulong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [110653 110666]))                  
+                :type "void")
+                nil [110610 111515])
+            ("print_tab_data" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("result" variable
+                       (:pointer 1
+                        :type ("MYSQL_RES" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [111545 111563]))                  
+                :type "void")
+                nil [111518 112200])
+            ("com_tee" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [112221 112260])
+                    ("line" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [112269 112304]))                  
+                :type "int")
+                nil [112202 113308])
+            ("com_notee" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [113332 113371])
+                    ("line" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [113375 113410]))                  
+                :type "int")
+                nil [113311 113506])
+            ("com_quit" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [116331 116370])
+                    ("line" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [116373 116408]))                  
+                :type "int")
+                nil [116311 116448])
+            ("com_rehash" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [116472 116511])
+                    ("line" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [116514 116549]))                  
+                :type "int")
+                nil [116450 116624])
+            ("com_print" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [117227 117242])
+                    ("line" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [117242 117277]))                  
+                :type "int")
+                nil [117206 117536])
+            ("com_connect" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [117577 117592])
+                    ("line" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [117593 117604]))                  
+                :type "int")
+                nil [117554 118768])
+            ("com_source" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [118793 118832])
+                    ("line" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [118855 118866]))                  
+                :type "int")
+                nil [118771 120398])
+            ("com_delimiter" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [120442 120481])
+                    ("line" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [120482 120493]))                  
+                :type "int")
+                nil [120417 121014])
+            ("com_use" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [121051 121090])
+                    ("line" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [121091 121102]))                  
+                :type "int")
+                nil [121032 123037])
+            ("com_warnings" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [123063 123102])
+                    ("line" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [123106 123141]))                  
+                :type "int")
+                nil [123039 123226])
+            ("com_nowarnings" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [123254 123293])
+                    ("line" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [123297 123332]))                  
+                :type "int")
+                nil [123228 123418])
+            ("get_arg" function
+               (:pointer 1
+                :arguments 
+                  ( ("line" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [123895 123906])
+                    ("get_next_arg" variable (:type ("my_bool" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [123907 123928]))                  
+                :type "char")
+                nil [123881 124895])
+            ("sql_real_connect" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("host" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [124926 124937])
+                    ("database" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [124937 124952])
+                    ("user" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [124952 124963])
+                    ("password" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [124963 124978])
+                    ("silent" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [124982 124994]))                  
+                :type "int")
+                nil [124898 127537])
+            ("sql_connect" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("host" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [127563 127574])
+                    ("database" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [127574 127589])
+                    ("user" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [127589 127600])
+                    ("password" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [127600 127615])
+                    ("silent" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [127615 127627]))                  
+                :type "int")
+                nil [127540 128183])
+            ("com_status" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [128209 128248])
+                    ("line" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [128253 128288]))                  
+                :type "int")
+                nil [128187 132439])
+            ("server_version_string" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :arguments 
+                  ( ("con" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [132483 132494]))                  
+                :type "char")
+                nil [132441 133563])
+            ("put_info" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [133585 133601])
+                    ("info_type" variable (:type ("INFO_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [133601 133621])
+                    ("error" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [133622 133633])
+                    ("sqlstate" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [133634 133655]))                  
+                :type "int")
+                nil [133565 135239])
+            ("put_error" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("con" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [135263 135274]))                  
+                :type "int")
+                nil [135242 135370])
+            ("remove_cntrl" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("buffer" variable
+                       (:reference 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [135400 135415]))                  
+                :type "void")
+                nil [135375 135598])
+            ("tee_fprintf" function
+               (:arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [135618 135629])
+                    ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [135630 135646])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [135647 135651]))                  
+                :type "void")
+                nil [135601 135859])
+            ("tee_fputs" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [135877 135891])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [135892 135903]))                  
+                :type "void")
+                nil [135862 135967])
+            ("tee_puts" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [135984 135998])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [135999 136010]))                  
+                :type "void")
+                nil [135970 136129])
+            ("tee_putc" function
+               (:arguments 
+                  ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [136145 136151])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [136152 136163]))                  
+                :type "void")
+                nil [136131 136225])
+            ("sys/times.h" include (:system-flag t) nil [136272 136294])
+            ("start_timer" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [136445 136450]))                  
+                :type ("ulong" type (:type "class") nil nil))
+                nil [136420 136554])
+            ("nice_time" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("sec" variable (:type "double") (reparse-symbol arg-sub-list) [136740 136751])
+                    ("buff" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [136751 136762])
+                    ("part_second" variable (:type "bool") (reparse-symbol arg-sub-list) [136762 136779]))                  
+                :type "void")
+                nil [136718 137426])
+            ("end_timer" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("start_time" variable (:type ("ulong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [137451 137468])
+                    ("buff" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [137468 137479]))                  
+                :type "void")
+                nil [137429 137564])
+            ("mysql_end_timer" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("start_time" variable (:type ("ulong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [137595 137612])
+                    ("buff" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [137612 137623]))                  
+                :type "void")
+                nil [137567 137717])
+            ("construct_prompt" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type "char")
+                nil [137719 141439])
+            ("add_int_to_prompt" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("toadd" variable (:type "int") (reparse-symbol arg-sub-list) [141472 141482]))                  
+                :type "void")
+                nil [141442 141573])
+            ("init_username" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [141575 141998])
+            ("com_prompt" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [142022 142061])
+                    ("line" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [142084 142095]))                  
+                :type "int")
+                nil [142000 142425]))          
+    :file "mysql.cc"
+    :pointmax 142426
+    :fsize 142425
+    :lastmodtime '(20667 6660 0 0)
+    :unmatched-syntax '((number 7805 . 7806) (punctuation 7804 . 7805) (number 7774 . 7775) (punctuation 7773 . 7774) (number 7805 . 7806) (punctuation 7804 . 7805) (number 7774 . 7775) (punctuation 7773 . 7774))
+    :lexical-table 
+        '(("HAVE_READLINE")
+          ("vidattr" (spp-arg-list ("A") 2744 . 2747) . ((semantic-list "{}" 2748 . 2750)))
+          ("MAX_COLUMN_LENGTH" . ((number "1024" 1661 . 1665)))
+          ("cmp_database" (spp-arg-list ("cs" "A" "B") 2896 . 2904) . ((symbol "strcmp" 2905 . 2911) (semantic-list "((A),(B))" 2911 . 2920)))
+          ("DEFAULT_DELIMITER" . ((string "\";\"" 3083 . 3086)))
+          ("MAX_BATCH_BUFFER_SIZE" . ((semantic-list "(1024L * 1024L * 1024L)" 3118 . 3141)))
+          ("MAX_SERVER_ARGS" . ((number "64" 1839 . 1841)))
+          ("__GNU_LIBRARY__")
+          ("MAX_SYSLOG_MESSAGE" . ((number "900" 1449 . 1452)))
+          ("PROMPT_CHAR" . ((string "'\\\\'" 3052 . 3056)))
+          ("USE_POPEN")
+          )
+
+    )
+   (semanticdb-table "my_readline.h"
+    :file "my_readline.h"
+    :fsize 1523
+    :lastmodtime '(20667 6660 0 0)
+    )
+   (semanticdb-table "sql_string.h"
+    :file "sql_string.h"
+    :fsize 10660
+    :lastmodtime '(20667 6660 0 0)
+    )
+   (semanticdb-table "completion_hash.h"
+    :file "completion_hash.h"
+    :fsize 1903
+    :lastmodtime '(20667 6660 0 0)
+    )
+   )
+  :file "!home!work!download!Percona-Server-5.5.28-rel29.2!client!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,18 @@
+;; Object htdocs/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "htdocs/"
+  :tables (list 
+   (semanticdb-table "test.html"
+    :major-mode 'html-mode
+    :tags nil
+    :file "test.html"
+    :pointmax 10767
+    :fsize 10766
+    :lastmodtime '(20847 47032 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!local!httpd!htdocs!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

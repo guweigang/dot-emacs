@@ -1,0 +1,85 @@
+;; Object json/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "json/"
+  :tables (list 
+   (semanticdb-table "php_json.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("PHP_JSON_H" variable (:constant-flag t) nil [1172 1182])
+            ("PHP_JSON_VERSION" variable (:constant-flag t) nil [1192 1208])
+            ("ext/standard/php_smart_str.h" include nil nil [1217 1256])
+            ("json_module_entry" variable
+               (:typemodifiers ("extern")
+                :type ("zend_module_entry" type (:type "class") nil nil))
+                nil [1258 1301])
+            ("phpext_json_ptr" variable (:constant-flag t) nil [1310 1325])
+            ("PHP_JSON_API" variable (:constant-flag t) nil [1451 1463])
+            ("error_code" variable (:type "int") nil [1549 1564])
+            ("JSON_G" variable (:constant-flag t) nil [1688 1694])
+            ("php_json_encode" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("smart_str" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1757 1772])
+                    ("val" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1773 1783])
+                    ("options" variable (:type "int") (reparse-symbol arg-sub-list) [1784 1805])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1796 1806]))                  
+                :type "void")
+                nil [1736 1807])
+            ("php_json_decode" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1842 1861])
+                    ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1862 1872])
+                    ("str_len" variable (:type "int") (reparse-symbol arg-sub-list) [1873 1885])
+                    ("assoc" variable (:type ("zend_bool" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1886 1902])
+                    ("depth" variable (:type "long") (reparse-symbol arg-sub-list) [1903 1923])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1914 1924]))                  
+                :type "void")
+                nil [1821 1925])
+            ("PHP_JSON_HEX_TAG" variable (:constant-flag t) nil [1935 1951])
+            ("PHP_JSON_HEX_AMP" variable (:constant-flag t) nil [1967 1983])
+            ("PHP_JSON_HEX_APOS" variable (:constant-flag t) nil [1999 2016])
+            ("PHP_JSON_HEX_QUOT" variable (:constant-flag t) nil [2032 2049])
+            ("PHP_JSON_FORCE_OBJECT" variable (:constant-flag t) nil [2065 2086])
+            ("PHP_JSON_NUMERIC_CHECK" variable (:constant-flag t) nil [2102 2124])
+            ("PHP_JSON_OUTPUT_ARRAY" variable (:constant-flag t) nil [2141 2162])
+            ("PHP_JSON_OUTPUT_OBJECT" variable (:constant-flag t) nil [2173 2195]))          
+    :file "php_json.h"
+    :pointmax 2361
+    :fsize 2360
+    :lastmodtime '(20957 40236 0 0)
+    :unmatched-syntax '((symbol "PHPAPI" 1808 . 1820) (symbol "PHPAPI" 1723 . 1735) (semantic-list 1588 . 1594) (symbol 1565 . 1588) (semantic-list 1541 . 1547) (symbol 1516 . 1541))
+    :lexical-table 
+        '(("PHP_JSON_HEX_QUOT" . ((semantic-list "(1<<3)" 2050 . 2056)))
+          ("PHP_JSON_NUMERIC_CHECK" . ((semantic-list "(1<<5)" 2125 . 2131)))
+          ("PHP_JSON_HEX_AMP" . ((semantic-list "(1<<1)" 1984 . 1990)))
+          ("PHP_JSON_HEX_APOS" . ((semantic-list "(1<<2)" 2017 . 2023)))
+          ("phpext_json_ptr" . ((punctuation "&" 1326 . 1327) (symbol "json_module_entry" 1327 . 1344)))
+          ("PHP_JSON_API" . ((symbol "PHPAPI" 1464 . 1470)))
+          ("PHP_JSON_FORCE_OBJECT" . ((semantic-list "(1<<4)" 2087 . 2093)))
+          ("PHP_JSON_OUTPUT_ARRAY" . ((number "0" 2163 . 2164)))
+          ("PHP_JSON_H")
+          ("PHP_JSON_VERSION" . ((string "\"1.2.1\"" 1209 . 1216)))
+          ("JSON_G" (spp-arg-list ("v") 1694 . 1697) . ((semantic-list "(json_globals.v)" 1698 . 1714)))
+          ("PHP_JSON_HEX_TAG" . ((semantic-list "(1<<0)" 1952 . 1958)))
+          ("PHP_JSON_OUTPUT_OBJECT" . ((number "1" 2196 . 2197)))
+          )
+
+    )
+   )
+  :file "!home!work!download!php-5.3.27!ext!json!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,23 @@
+;; Object user/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "user/"
+  :tables (list 
+   (semanticdb-table "user-center.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("login" section nil nil [260 439])
+            ("╃o再难如初οゞ" section nil nil [439 956])
+            ("╃o再难如初οゞ" section (:members 
+              ( ("关注他" anchor nil nil [2128 2131])
+                ("推荐新宝贝" anchor nil nil [2719 2722]))              ) nil [956 5975]))          
+    :file "user-center.html"
+    :pointmax 5975
+    :fsize 6263
+    :lastmodtime '(21270 46508 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!git!phalcon-framework!user!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

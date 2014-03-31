@@ -1,0 +1,47 @@
+;; Object bigbang/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bigbang/"
+  :tables (list 
+   (semanticdb-table "goods-publish-detail.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("index" section nil nil [654 679])
+            ("多彩生活" section nil nil [679 756])
+            ("多彩生活" section nil nil [756 834])
+            ("多彩生活" section (:members 
+              ( ("推荐商品" section nil nil [2075 4051]))              ) nil [834 4051]))          
+    :file "goods-publish-detail.html"
+    :pointmax 4051
+    :fsize 4375
+    :lastmodtime '(21141 27384 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "godds-detail.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("index" section nil nil [652 677])
+            ("多彩生活" section nil nil [677 754])
+            ("多彩生活" section nil nil [754 832])
+            ("多彩生活" section (:members 
+              ( ("现货 日本 京都老店豆政 代表之作 豆腐布丁~ 3种口味可选 单个~" anchor nil nil [2177 2180])
+                ("京东商城" anchor nil nil [2752 2755])
+                ("我是测试用户" anchor nil nil [2864 2867])
+                ("套一套" anchor nil nil [3443 3446])
+                ("Go>>" anchor nil nil [3662 3665])
+                ("套一套" anchor nil nil [3745 3748])
+                ("Go>>" anchor nil nil [3964 3967])
+                ("套一套" anchor nil nil [4047 4050])
+                ("Go>>" anchor nil nil [4266 4269])
+                ("套一套" anchor nil nil [4349 4352])
+                ("Go>>" anchor nil nil [4568 4571]))              ) nil [832 6124]))          
+    :file "godds-detail.html"
+    :pointmax 6124
+    :fsize 7126
+    :lastmodtime '(21141 27384 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!tmp!bigbang!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

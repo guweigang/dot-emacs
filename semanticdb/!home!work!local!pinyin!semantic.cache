@@ -1,0 +1,27 @@
+;; Object pinyin/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "pinyin/"
+  :tables (list 
+   (semanticdb-table "IPYNotation.h"
+    :major-mode 'c-mode
+    :tags nil
+    :file "IPYNotation.h"
+    :pointmax 2424
+    :fsize 2773
+    :lastmodtime '(20852 40035 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "IPYFactory.h"
+    :major-mode 'c-mode
+    :tags nil
+    :file "IPYFactory.h"
+    :pointmax 217
+    :fsize 216
+    :lastmodtime '(20852 40035 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!local!pinyin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

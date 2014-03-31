@@ -1,0 +1,641 @@
+;; Object Zend/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Zend/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-mode
+    :tags 
+        '( ("AUTOMAKE_OPTIONS" variable (:default-value ("foreign")) nil [268 293])
+            ("noinst_LTLIBRARIES" variable (:default-value ("libZend.la")) nil [293 323])
+            ("libZend_la_SOURCES" variable (:default-value ("zend_language_parser.y" "zend_language_scanner.l" "zend_ini_parser.y" "zend_ini_scanner.l" "zend_alloc.c" "zend_compile.c" "zend_constants.c" "zend_dynamic_array.c" "zend_execute.c" "zend_execute_API.c" "zend_highlight.c" "zend_llist.c" "zend_opcode.c" "zend_operators.c" "zend_ptr_stack.c" "zend_stack.c" "zend_variables.c" "zend.c" "zend_API.c" "zend_extensions.c" "zend_hash.c" "zend_list.c" "zend_indent.c" "zend_builtin_functions.c" "zend_sprintf.c" "zend_ini.c" "zend_qsort.c" "zend_objects.c" "zend_object_handlers.c" "zend_objects_API.c" "zend_ts_hash.c" "zend_stream.c" "zend_default_classes.c" "zend_iterators.c" "zend_interfaces.c" "zend_exceptions.c" "zend_strtod.c" "zend_closures.c" "zend_float.c" "zend_string.c" "zend_signal.c" "zend_generators.c")) nil [324 1063])
+            ("libZend_la_LDFLAGS" variable nil nil [1064 1085])
+            ("libZend_la_LIBADD" variable (:default-value ("@ZEND_EXTRA_LIBS@")) nil [1085 1123])
+            ("$(libZend_la_OBJECTS)" function (:arguments ("zend_language_parser.h")) nil [1194 1240])
+            ("zend_ini_scanner.lo" function (:arguments ("zend_ini_parser.h")) nil [1241 1280])
+            ("zend_language_scanner.c" function (:arguments ("$(srcdir)/zend_language_scanner.l")) nil [1314 1518])
+            ("zend_language_parser.h" function (:arguments ("zend_language_parser.c")) nil [1519 1566])
+            ("zend_language_parser.c" function (:arguments ("$(srcdir)/zend_language_parser.y")) nil [1566 1705])
+            ("zend_ini_parser.c" function (:arguments ("$(srcdir)/zend_ini_parser.y")) nil [1734 1853])
+            ("zend_ini_scanner.c" function (:arguments ("$(srcdir)/zend_ini_scanner.l")) nil [1854 2038])
+            ("zend_ini_parser.h" function (:arguments ("zend_ini_parser.c")) nil [2039 2076])
+            ("depend" function nil nil [2077 2085])
+            ("zend_execute.lo" function (:arguments ("$(srcdir)/zend_execute.c")) nil [2086 2258]))          
+    :file "Makefile.am"
+    :pointmax 2259
+    :fsize 2258
+    :lastmodtime '(21079 46637 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "zend_ini.c"
+    :major-mode 'c-mode
+    :tags nil
+    :file "zend_ini.c"
+    :pointmax 18007
+    :fsize 18006
+    :lastmodtime '(21079 46637 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "zend_ini.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("ZEND_INI_H" variable (:constant-flag t) nil [1187 1197])
+            ("ZEND_INI_USER" variable (:constant-flag t) nil [1207 1220])
+            ("ZEND_INI_PERDIR" variable (:constant-flag t) nil [1236 1251])
+            ("ZEND_INI_SYSTEM" variable (:constant-flag t) nil [1267 1282])
+            ("ZEND_INI_ALL" variable (:constant-flag t) nil [1299 1311])
+            ("XtOffset" variable (:constant-flag t) nil [1820 1828])
+            ("XtOffsetOf" variable (:constant-flag t) nil [2031 2041])
+            ("ZEND_INI_MH" variable (:constant-flag t) nil [2107 2118])
+            ("ZEND_INI_DISP" variable (:constant-flag t) nil [2271 2284])
+            ("_zend_ini_entry" type
+               (:members 
+                  ( ("module_number" variable (:type "int") (reparse-symbol classsubparts) [2365 2383])
+                    ("modifiable" variable (:type "int") (reparse-symbol classsubparts) [2385 2400])
+                    ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [2402 2413])
+                    ("name_length" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2415 2432])
+                    ("mh_arg1" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [2462 2476])
+                    ("mh_arg2" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [2478 2492])
+                    ("mh_arg3" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [2494 2508])
+                    ("value" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [2511 2523])
+                    ("value_length" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2525 2543])
+                    ("orig_value" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [2546 2563])
+                    ("orig_value_length" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2565 2588])
+                    ("orig_modifiable" variable (:type "int") (reparse-symbol classsubparts) [2590 2610])
+                    ("modified" variable (:type "int") (reparse-symbol classsubparts) [2612 2625])
+                    ("displayer" variable
+                       (:functionpointer-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2628 2683]))                  
+                :type "struct")
+                nil [2339 2686])
+            ("zend_ini_startup" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("TSRMLS_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2735 2744]))                  
+                :type "int")
+                nil [2714 2745])
+            ("zend_ini_shutdown" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("TSRMLS_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2777 2786]))                  
+                :type "int")
+                nil [2755 2787])
+            ("zend_ini_global_shutdown" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("TSRMLS_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2826 2835]))                  
+                :type "int")
+                nil [2797 2836])
+            ("zend_ini_deactivate" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("TSRMLS_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2870 2879]))                  
+                :type "int")
+                nil [2846 2880])
+            ("zend_copy_ini_directives" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("TSRMLS_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2920 2929]))                  
+                :type "int")
+                nil [2891 2930])
+            ("zend_ini_sort_entries" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("TSRMLS_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2968 2977]))                  
+                :type "void")
+                nil [2941 2978])
+            ("zend_register_ini_entries" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ini_entry" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("zend_ini_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3019 3051])
+                    ("module_number" variable (:type "int") (reparse-symbol arg-sub-list) [3052 3079])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3070 3080]))                  
+                :type "int")
+                nil [2989 3081])
+            ("zend_unregister_ini_entries" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("module_number" variable (:type "int") (reparse-symbol arg-sub-list) [3124 3151])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3142 3152]))                  
+                :type "void")
+                nil [3091 3153])
+            ("zend_ini_refresh_caches" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("stage" variable (:type "int") (reparse-symbol arg-sub-list) [3192 3211])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3202 3212]))                  
+                :type "void")
+                nil [3163 3213])
+            ("zend_alter_ini_entry" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3248 3259])
+                    ("name_length" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3260 3277])
+                    ("new_value" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3278 3294])
+                    ("new_value_length" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3295 3317])
+                    ("modify_type" variable (:type "int") (reparse-symbol arg-sub-list) [3318 3334])
+                    ("stage" variable (:type "int") (reparse-symbol arg-sub-list) [3335 3345]))                  
+                :type "int")
+                nil [3223 3346])
+            ("zend_alter_ini_entry_ex" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3384 3395])
+                    ("name_length" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3396 3413])
+                    ("new_value" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3414 3430])
+                    ("new_value_length" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3431 3453])
+                    ("modify_type" variable (:type "int") (reparse-symbol arg-sub-list) [3454 3470])
+                    ("stage" variable (:type "int") (reparse-symbol arg-sub-list) [3471 3481])
+                    ("force_change" variable (:type "int") (reparse-symbol arg-sub-list) [3482 3508])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3499 3509]))                  
+                :type "int")
+                nil [3356 3510])
+            ("zend_restore_ini_entry" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3547 3558])
+                    ("name_length" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3559 3576])
+                    ("stage" variable (:type "int") (reparse-symbol arg-sub-list) [3577 3587]))                  
+                :type "int")
+                nil [3520 3588])
+            ("display_ini_entries" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("module" variable
+                       (:pointer 1
+                        :type ("zend_module_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3623 3649]))                  
+                :type "void")
+                nil [3598 3650])
+            ("zend_ini_long" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3680 3691])
+                    ("name_length" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3692 3709])
+                    ("orig" variable (:type "int") (reparse-symbol arg-sub-list) [3710 3719]))                  
+                :type "long")
+                nil [3661 3720])
+            ("zend_ini_double" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3753 3764])
+                    ("name_length" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3765 3782])
+                    ("orig" variable (:type "int") (reparse-symbol arg-sub-list) [3783 3792]))                  
+                :type "double")
+                nil [3730 3793])
+            ("zend_ini_string" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3825 3836])
+                    ("name_length" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3837 3854])
+                    ("orig" variable (:type "int") (reparse-symbol arg-sub-list) [3855 3864]))                  
+                :type "char")
+                nil [3803 3865])
+            ("zend_ini_string_ex" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3900 3911])
+                    ("name_length" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3912 3929])
+                    ("orig" variable (:type "int") (reparse-symbol arg-sub-list) [3930 3939])
+                    ("exists" variable
+                       (:pointer 1
+                        :type ("zend_bool" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3940 3958]))                  
+                :type "char")
+                nil [3875 3959])
+            ("zend_ini_register_displayer" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4002 4013])
+                    ("name_length" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4014 4031])
+                    ("" variable (:type "void") (reparse-symbol arg-sub-list) [4032 4049]))                  
+                :type "int")
+                nil [3970 4088])
+            ("zend_ini_boolean_displayer_cb" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ini_entry" variable
+                       (:pointer 1
+                        :type ("zend_ini_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [4099 4144])
+            ("zend_ini_color_displayer_cb" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ini_entry" variable
+                       (:pointer 1
+                        :type ("zend_ini_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [4154 4197])
+            ("display_link_numbers" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ini_entry" variable
+                       (:pointer 1
+                        :type ("zend_ini_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [4207 4243])
+            ("ZEND_INI_BEGIN" variable (:constant-flag t) nil [4268 4282])
+            ("ZEND_INI_END" variable (:constant-flag t) nil [4340 4352])
+            ("ZEND_INI_ENTRY3_EX" variable (:constant-flag t) nil [4440 4458])
+            ("ZEND_INI_ENTRY3" variable (:constant-flag t) nil [4678 4693])
+            ("ZEND_INI_ENTRY2_EX" variable (:constant-flag t) nil [4855 4873])
+            ("ZEND_INI_ENTRY2" variable (:constant-flag t) nil [5045 5060])
+            ("ZEND_INI_ENTRY1_EX" variable (:constant-flag t) nil [5210 5228])
+            ("ZEND_INI_ENTRY1" variable (:constant-flag t) nil [5394 5409])
+            ("ZEND_INI_ENTRY_EX" variable (:constant-flag t) nil [5548 5565])
+            ("ZEND_INI_ENTRY" variable (:constant-flag t) nil [5725 5739])
+            ("STD_ZEND_INI_ENTRY" variable (:constant-flag t) nil [6701 6719])
+            ("STD_ZEND_INI_ENTRY_EX" variable (:constant-flag t) nil [6946 6967])
+            ("STD_ZEND_INI_BOOLEAN" variable (:constant-flag t) nil [7219 7239])
+            ("INI_INT" variable (:constant-flag t) nil [7514 7521])
+            ("INI_FLT" variable (:constant-flag t) nil [7575 7582])
+            ("INI_STR" variable (:constant-flag t) nil [7638 7645])
+            ("INI_BOOL" variable (:constant-flag t) nil [7710 7718])
+            ("INI_ORIG_INT" variable (:constant-flag t) nil [7762 7774])
+            ("INI_ORIG_FLT" variable (:constant-flag t) nil [7828 7840])
+            ("INI_ORIG_STR" variable (:constant-flag t) nil [7896 7908])
+            ("INI_ORIG_BOOL" variable (:constant-flag t) nil [7964 7977])
+            ("REGISTER_INI_ENTRIES" variable (:constant-flag t) nil [8026 8046])
+            ("UNREGISTER_INI_ENTRIES" variable (:constant-flag t) nil [8121 8143])
+            ("DISPLAY_INI_ENTRIES" variable (:constant-flag t) nil [8207 8226])
+            ("REGISTER_INI_DISPLAYER" variable (:constant-flag t) nil [8271 8293])
+            ("REGISTER_INI_BOOLEAN" variable (:constant-flag t) nil [8380 8400])
+            ("OnUpdateBool" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("entry" variable
+                       (:pointer 1
+                        :type ("zend_ini_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("new_value" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("new_value_length" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("mh_arg1" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("mh_arg2" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("mh_arg3" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("stage" variable (:type "int") (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "int")
+                nil [8526 8552])
+            ("OnUpdateLong" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("entry" variable
+                       (:pointer 1
+                        :type ("zend_ini_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("new_value" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("new_value_length" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("mh_arg1" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("mh_arg2" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("mh_arg3" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("stage" variable (:type "int") (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "int")
+                nil [8562 8588])
+            ("OnUpdateLongGEZero" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("entry" variable
+                       (:pointer 1
+                        :type ("zend_ini_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("new_value" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("new_value_length" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("mh_arg1" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("mh_arg2" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("mh_arg3" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("stage" variable (:type "int") (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "int")
+                nil [8598 8630])
+            ("OnUpdateReal" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("entry" variable
+                       (:pointer 1
+                        :type ("zend_ini_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("new_value" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("new_value_length" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("mh_arg1" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("mh_arg2" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("mh_arg3" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("stage" variable (:type "int") (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "int")
+                nil [8640 8666])
+            ("OnUpdateString" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("entry" variable
+                       (:pointer 1
+                        :type ("zend_ini_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("new_value" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("new_value_length" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("mh_arg1" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("mh_arg2" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("mh_arg3" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("stage" variable (:type "int") (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "int")
+                nil [8676 8704])
+            ("OnUpdateStringUnempty" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("entry" variable
+                       (:pointer 1
+                        :type ("zend_ini_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("new_value" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("new_value_length" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("mh_arg1" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("mh_arg2" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("mh_arg3" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) nil)
+                    ("stage" variable (:type "int") (reparse-symbol arg-sub-list) nil)
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "int")
+                nil [8714 8749])
+            ("ZEND_INI_DISPLAY_ORIG" variable (:constant-flag t) nil [8774 8795])
+            ("ZEND_INI_DISPLAY_ACTIVE" variable (:constant-flag t) nil [8806 8829])
+            ("ZEND_INI_STAGE_STARTUP" variable (:constant-flag t) nil [8841 8863])
+            ("ZEND_INI_STAGE_SHUTDOWN" variable (:constant-flag t) nil [8880 8903])
+            ("ZEND_INI_STAGE_ACTIVATE" variable (:constant-flag t) nil [8920 8943])
+            ("ZEND_INI_STAGE_DEACTIVATE" variable (:constant-flag t) nil [8960 8985])
+            ("ZEND_INI_STAGE_RUNTIME" variable (:constant-flag t) nil [9001 9023])
+            ("ZEND_INI_STAGE_HTACCESS" variable (:constant-flag t) nil [9040 9063])
+            ("zend_ini_parser_cb_t" variable
+               (:functionpointer-flag t
+                :type "void")
+                nil [9106 9211])
+            ("zend_parse_ini_file" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("fh" variable
+                       (:pointer 1
+                        :type ("zend_file_handle" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9262 9283])
+                    ("unbuffered_errors" variable (:type ("zend_bool" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9284 9312])
+                    ("scanner_mode" variable (:type "int") (reparse-symbol arg-sub-list) [9313 9330])
+                    ("ini_parser_cb" variable (:type ("zend_ini_parser_cb_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9331 9366])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9367 9386])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9377 9387]))                  
+                :type "int")
+                nil [9238 9388])
+            ("zend_parse_ini_string" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9424 9434])
+                    ("unbuffered_errors" variable (:type ("zend_bool" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9435 9463])
+                    ("scanner_mode" variable (:type "int") (reparse-symbol arg-sub-list) [9464 9481])
+                    ("ini_parser_cb" variable (:type ("zend_ini_parser_cb_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9482 9517])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9518 9537])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9528 9538]))                  
+                :type "int")
+                nil [9398 9539])
+            ("ZEND_INI_PARSER_ENTRY" variable (:constant-flag t) nil [9582 9603])
+            ("ZEND_INI_PARSER_SECTION" variable (:constant-flag t) nil [9648 9671])
+            ("ZEND_INI_PARSER_POP_ENTRY" variable (:constant-flag t) nil [9708 9733])
+            ("zend_ini_parser_param" type
+               (:typedef ("_zend_ini_parser_param" type (:type "struct") nil nil)
+                :superclasses "_zend_ini_parser_param"
+                :type "typedef")
+                nil [9769 9882])
+            ("_zend_ini_parser_param" type
+               (:members 
+                  ( ("ini_parser_cb" variable (:type ("zend_ini_parser_cb_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9810 9845])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [9847 9857]))                  
+                :type "struct")
+                nil [9769 9882]))          
+    :file "zend_ini.h"
+    :pointmax 10004
+    :fsize 10003
+    :lastmodtime '(21079 46637 0 0)
+    :unmatched-syntax '((semantic-list 9552 . 9554) (symbol 9540 . 9552) (symbol 9389 . 9397) (symbol 9229 . 9237) (semantic-list 9226 . 9228) (symbol 9212 . 9226) (TYPEDEF 9098 . 9105) (semantic-list 8762 . 8764) (symbol 8750 . 8762) (symbol 8705 . 8713) (symbol 8667 . 8675) (symbol 8631 . 8639) (symbol 8589 . 8597) (symbol 8553 . 8561) (symbol 8517 . 8525) (semantic-list 8514 . 8516) (symbol 8500 . 8514) (semantic-list 4256 . 4258) (symbol 4244 . 4256) (symbol 4198 . 4206) (symbol 4145 . 4153) (symbol 4090 . 4098) (semantic-list 4049 . 4086) (semantic-list 4037 . 4049) (symbol 3961 . 3969) (symbol 3866 . 3874) (symbol 3794 . 3802) (symbol 3721 . 3729) (symbol 3652 . 3660) (symbol 3589 . 3597) (symbol 3511 . 3519) (symbol 3347 . 3355) (symbol 3214 . 3222) (symbol 3154 . 3162) (symbol 3082 . 3090) (symbol 2980 . 2988) (symbol 2932 . 2940) (symbol 2882 . 2890) (symbol 2837 . 2845) (symbol 2788 . 2796) (symbol 2746 . 2754) (symbol 2705 . 2713) (semantic-list 2702 . 2704) (symbol 2688 . 2702) (punctuation 2459 . 2460) (semantic-list #("(zend_ini_entry *entry, char *new_value, uint new_value_length, void *mh_arg1, void *mh_arg2, void *mh_arg3, int stage TSRMLS_DC)" 0 1 (macros (("name" semantic-list "(*on_modify)" 2446 . 2458)))) 2434 . 2459) (semantic-list "(*on_modify)" 2434 . 2459) (INT "int" 2434 . 2459))
+    :lexical-table 
+        '(("ZEND_INI_END" (spp-arg-list nil 4352 . 4354) . 
+              ((semantic-list "{ 0, 0, NULL, 0, NULL, NULL, NULL, NULL, NULL, 0, NULL, 0, 0, 0, NULL }" 4356 . 4427) (close-paren "}" 4428 . 4429) (punctuation ";" 4429 . 4430)))
+          ("ZEND_INI_ENTRY3_EX" (spp-arg-list ("name" "default_value" "modifiable" "on_modify" "arg1" "arg2" "arg3" "displayer") 4458 . 4531) . ((semantic-list "{ 0, modifiable, name, sizeof(name), on_modify, arg1, arg2, arg3, default_value, sizeof(default_value)-1, NULL, 0, 0, 0, displayer }" 4535 . 4667) (punctuation "," 4667 . 4668)))
+          ("REGISTER_INI_ENTRIES" (spp-arg-list nil 8046 . 8048) . ((symbol "zend_register_ini_entries" 8049 . 8074) (semantic-list "(ini_entries, module_number TSRMLS_CC)" 8074 . 8112)))
+          ("ZEND_INI_STAGE_STARTUP" . ((semantic-list "(1<<0)" 8865 . 8871)))
+          ("ZEND_INI_DISP" (spp-arg-list ("name") 2284 . 2290) . 
+              ((VOID "void" 2291 . 2295) (symbol "name" 2296 . 2300) (semantic-list "(zend_ini_entry *ini_entry, int type)" 2300 . 2337)))
+          ("DISPLAY_INI_ENTRIES" (spp-arg-list nil 8226 . 8228) . ((symbol "display_ini_entries" 8229 . 8248) (semantic-list "(zend_module)" 8248 . 8261)))
+          ("ZEND_INI_PARSER_POP_ENTRY" . ((number "3" 9734 . 9735)))
+          ("XtOffset" (spp-arg-list ("p_type" "field") 1828 . 1843) . ((semantic-list "((long) (((char *) (&(((p_type)NULL)->field))) - ((char *) NULL)))" 1850 . 1916)))
+          ("INI_BOOL" (spp-arg-list ("name") 7718 . 7724) . ((semantic-list "((zend_bool) INI_INT(name))" 7725 . 7752)))
+          ("INI_ORIG_FLT" (spp-arg-list ("name") 7840 . 7846) . ((symbol "zend_ini_double" 7847 . 7862) (semantic-list "((name), sizeof(name), 1)" 7862 . 7887)))
+          ("ZEND_INI_DISPLAY_ORIG" . ((number "1" 8796 . 8797)))
+          ("ZEND_INI_USER" . ((semantic-list "(1<<0)" 1221 . 1227)))
+          ("INI_FLT" (spp-arg-list ("name") 7582 . 7588) . ((symbol "zend_ini_double" 7589 . 7604) (semantic-list "((name), sizeof(name), 0)" 7604 . 7629)))
+          ("ZEND_INI_PARSER_ENTRY" . ((number "1" 9608 . 9609)))
+          ("ZEND_INI_MH" (spp-arg-list ("name") 2118 . 2124) . 
+              ((INT "int" 2125 . 2128) (symbol "name" 2129 . 2133) (semantic-list "(zend_ini_entry *entry, char *new_value, uint new_value_length, void *mh_arg1, void *mh_arg2, void *mh_arg3, int stage TSRMLS_DC)" 2133 . 2262)))
+          ("ZEND_INI_ENTRY1" (spp-arg-list ("name" "default_value" "modifiable" "on_modify" "arg1") 5409 . 5459) . ((symbol "ZEND_INI_ENTRY1_EX" 5463 . 5481) (semantic-list "(name, default_value, modifiable, on_modify, arg1, NULL)" 5481 . 5537)))
+          ("ZEND_INI_STAGE_SHUTDOWN" . ((semantic-list "(1<<1)" 8905 . 8911)))
+          ("ZEND_INI_SYSTEM" . ((semantic-list "(1<<2)" 1283 . 1289)))
+          ("ZEND_INI_ALL" . ((semantic-list "(ZEND_INI_USER|ZEND_INI_PERDIR|ZEND_INI_SYSTEM)" 1312 . 1359)))
+          ("ZEND_INI_ENTRY2" (spp-arg-list ("name" "default_value" "modifiable" "on_modify" "arg1" "arg2") 5060 . 5116) . ((symbol "ZEND_INI_ENTRY2_EX" 5120 . 5138) (semantic-list "(name, default_value, modifiable, on_modify, arg1, arg2, NULL)" 5138 . 5200)))
+          ("STD_ZEND_INI_BOOLEAN" (spp-arg-list ("name" "default_value" "modifiable" "on_modify" "property_name" "struct_type" "struct_ptr") 7239 . 7323) . ((symbol "ZEND_INI_ENTRY3_EX" 7327 . 7345) (semantic-list "(name, default_value, modifiable, on_modify, (void *) XtOffsetOf(struct_type, property_name), (void *) &struct_ptr, NULL, zend_ini_boolean_displayer_cb)" 7345 . 7497)))
+          ("ZEND_INI_STAGE_DEACTIVATE" . ((semantic-list "(1<<3)" 8986 . 8992)))
+          ("ZEND_INI_STAGE_HTACCESS" . ((semantic-list "(1<<5)" 9065 . 9071)))
+          ("XtOffsetOf" (spp-arg-list ("s_type" "field") 2041 . 2056) . ((symbol "XtOffset" 2057 . 2065) (semantic-list "(s_type*, field)" 2065 . 2081)))
+          ("ZEND_INI_ENTRY3" (spp-arg-list ("name" "default_value" "modifiable" "on_modify" "arg1" "arg2" "arg3") 4693 . 4755) . ((symbol "ZEND_INI_ENTRY3_EX" 4759 . 4777) (semantic-list "(name, default_value, modifiable, on_modify, arg1, arg2, arg3, NULL)" 4777 . 4845)))
+          ("STD_ZEND_INI_ENTRY_EX" (spp-arg-list ("name" "default_value" "modifiable" "on_modify" "property_name" "struct_type" "struct_ptr" "displayer") 6967 . 7062) . ((symbol "ZEND_INI_ENTRY2_EX" 7066 . 7084) (semantic-list "(name, default_value, modifiable, on_modify, (void *) XtOffsetOf(struct_type, property_name), (void *) &struct_ptr, displayer)" 7084 . 7210)))
+          ("ZEND_INI_STAGE_RUNTIME" . ((semantic-list "(1<<4)" 9025 . 9031)))
+          ("ZEND_INI_H")
+          ("ZEND_INI_BEGIN" (spp-arg-list nil 4282 . 4284) . 
+              ((STATIC "static" 4286 . 4292) (CONST "const" 4293 . 4298) (symbol "zend_ini_entry" 4299 . 4313) (symbol "ini_entries" 4314 . 4325) (semantic-list "[]" 4325 . 4327) (punctuation "=" 4328 . 4329) (semantic-list "{" 4330 . 4331)))
+          ("REGISTER_INI_DISPLAYER" (spp-arg-list ("name" "displayer") 8293 . 8310) . ((symbol "zend_ini_register_displayer" 8311 . 8338) (semantic-list "((name), sizeof(name), displayer)" 8338 . 8371)))
+          ("ZEND_INI_PARSER_SECTION" . ((number "2" 9674 . 9675)))
+          ("INI_ORIG_INT" (spp-arg-list ("name") 7774 . 7780) . ((symbol "zend_ini_long" 7781 . 7794) (semantic-list "((name), sizeof(name), 1)" 7794 . 7819)))
+          ("INI_INT" (spp-arg-list ("name") 7521 . 7527) . ((symbol "zend_ini_long" 7528 . 7541) (semantic-list "((name), sizeof(name), 0)" 7541 . 7566)))
+          ("REGISTER_INI_BOOLEAN" (spp-arg-list ("name") 8400 . 8406) . ((symbol "REGISTER_INI_DISPLAYER" 8407 . 8429) (semantic-list "(name, zend_ini_boolean_displayer_cb)" 8429 . 8466)))
+          ("ZEND_INI_PERDIR" . ((semantic-list "(1<<1)" 1252 . 1258)))
+          ("ZEND_INI_ENTRY1_EX" (spp-arg-list ("name" "default_value" "modifiable" "on_modify" "arg1" "displayer") 5228 . 5289) . ((symbol "ZEND_INI_ENTRY3_EX" 5293 . 5311) (semantic-list "(name, default_value, modifiable, on_modify, arg1, NULL, NULL, displayer)" 5311 . 5384)))
+          ("ZEND_INI_ENTRY_EX" (spp-arg-list ("name" "default_value" "modifiable" "on_modify" "displayer") 5565 . 5620) . ((symbol "ZEND_INI_ENTRY3_EX" 5624 . 5642) (semantic-list "(name, default_value, modifiable, on_modify, NULL, NULL, NULL, displayer)" 5642 . 5715)))
+          ("ZEND_INI_ENTRY" (spp-arg-list ("name" "default_value" "modifiable" "on_modify") 5739 . 5783) . ((symbol "ZEND_INI_ENTRY_EX" 5787 . 5804) (semantic-list "(name, default_value, modifiable, on_modify, NULL)" 5804 . 5854)))
+          ("STD_ZEND_INI_ENTRY" (spp-arg-list ("name" "default_value" "modifiable" "on_modify" "property_name" "struct_type" "struct_ptr") 6719 . 6803) . ((symbol "ZEND_INI_ENTRY2" 6807 . 6822) (semantic-list "(name, default_value, modifiable, on_modify, (void *) XtOffsetOf(struct_type, property_name), (void *) &struct_ptr)" 6822 . 6937)))
+          ("INI_ORIG_STR" (spp-arg-list ("name") 7908 . 7914) . ((symbol "zend_ini_string" 7915 . 7930) (semantic-list "((name), sizeof(name), 1)" 7930 . 7955)))
+          ("UNREGISTER_INI_ENTRIES" (spp-arg-list nil 8143 . 8145) . ((symbol "zend_unregister_ini_entries" 8146 . 8173) (semantic-list "(module_number TSRMLS_CC)" 8173 . 8198)))
+          ("ZEND_INI_DISPLAY_ACTIVE" . ((number "2" 8830 . 8831)))
+          ("ZEND_INI_STAGE_ACTIVATE" . ((semantic-list "(1<<2)" 8945 . 8951)))
+          ("ZEND_INI_ENTRY2_EX" (spp-arg-list ("name" "default_value" "modifiable" "on_modify" "arg1" "arg2" "displayer") 4873 . 4940) . ((symbol "ZEND_INI_ENTRY3_EX" 4944 . 4962) (semantic-list "(name, default_value, modifiable, on_modify, arg1, arg2, NULL, displayer)" 4962 . 5035)))
+          ("INI_STR" (spp-arg-list ("name") 7645 . 7651) . ((symbol "zend_ini_string_ex" 7652 . 7670) (semantic-list "((name), sizeof(name), 0, NULL)" 7670 . 7701)))
+          ("INI_ORIG_BOOL" (spp-arg-list ("name") 7977 . 7983) . ((semantic-list "((zend_bool) INI_ORIG_INT(name))" 7984 . 8016)))
+          )
+
+    )
+   (semanticdb-table "zend_ini_parser.y"
+    :major-mode 'c-mode
+    :tags 
+        '( ("END_OF_LINE" variable (:type "int") nil [8302 8315])
+            ("END_OF_LINE" variable (:type "int") nil [8546 8595])
+            ("TC_WHITESPACE" variable (:type "int") nil [10589 10672])
+            ("TC_WHITESPACE" variable (:type "int") nil [10989 11072]))          
+    :file "zend_ini_parser.y"
+    :pointmax 11169
+    :fsize 11168
+    :lastmodtime '(21079 46637 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("YYERROR_VERBOSE")
+          ("YYSTYPE" . ((symbol "zval" 1457 . 1461)))
+          ("ZEND_INI_PARSER_CB" . 
+              ((semantic-list "(CG(ini_parser_param))" 1620 . 1642) (punctuation "-" 1642 . 1643) (punctuation ">" 1643 . 1644) (symbol "ini_parser_cb" 1644 . 1657)))
+          ("ZEND_INI_PARSER_ARG" . 
+              ((semantic-list "(CG(ini_parser_param))" 1686 . 1708) (punctuation "-" 1708 . 1709) (punctuation ">" 1709 . 1710) (symbol "arg" 1710 . 1713)))
+          ("DEBUG_CFG_PARSER" . ((number "0" 1264 . 1265)))
+          )
+
+    )
+   )
+  :file "!home!work!git!php-src!Zend!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

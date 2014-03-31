@@ -1,0 +1,293 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables (list 
+   (semanticdb-table "IPYNotation.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("IPYNOTATION_H" variable (:constant-flag t) nil [31 44])
+            ("vector" include (:system-flag t) nil [46 63])
+            ("string" include (:system-flag t) nil [64 81])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [83 103])
+            ("NLP" type
+               (:members 
+                  ( ("Pinyin" type
+                       (:members 
+                          ( ("IPYNotation" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [169 176])
+                                    ("loadDyzDict" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("path" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [276 293]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [250 298])
+                                    ("loadDYDict" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("path" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [388 405]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [364 410])
+                                    ("loadBMEDict" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("path" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [502 519]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [477 524])
+                                    ("loadToneDyzDict" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("path" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [622 639]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [593 645])
+                                    ("generateDict" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("oriPath" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [871 891])
+                                            ("binaryPath" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [891 914]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [845 920])
+                                    ("loadDict" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("path" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [997 1014]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [975 1019])
+                                    ("loadToneDict" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("path" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [1103 1120]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [1077 1125])
+                                    ("exactToPY" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("str" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [1251 1267])
+                                            ("_result" variable
+                                               (:pointer 1
+                                                :type ("vector" type
+                                                     (:template-specifier 
+                                                        ( ("string" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [1267 1291]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [1228 1296])
+                                    ("exactToTonePY" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("str" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [1429 1445])
+                                            ("_result" variable
+                                               (:pointer 1
+                                                :type ("vector" type
+                                                     (:template-specifier 
+                                                        ( ("string" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [1445 1469]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [1402 1474])
+                                    ("convertToPY" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("str" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [1617 1633])
+                                            ("_result" variable
+                                               (:pointer 1
+                                                :type ("vector" type
+                                                     (:template-specifier 
+                                                        ( ("string" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [1633 1657]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [1592 1662])
+                                    ("convertToTonePY" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("str" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [1813 1829])
+                                            ("_result" variable
+                                               (:pointer 1
+                                                :type ("vector" type
+                                                     (:template-specifier 
+                                                        ( ("string" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [1829 1853]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [1784 1858])
+                                    ("convertToPY" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("strs" variable
+                                               (:constant-flag t
+                                                :type ("vector" type
+                                                     (:template-specifier 
+                                                        ( ("string" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [2025 2051])
+                                            ("_results" variable
+                                               (:pointer 1
+                                                :type ("vector" type
+                                                     (:template-specifier 
+                                                        ( ("vector" type (:pointer 1) nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [2051 2086]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [2000 2091])
+                                    ("perNameCorrection" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [2230 2242])
+                                            ("_result" variable
+                                               (:pointer 1
+                                                :type ("vector" type
+                                                     (:template-specifier 
+                                                        ( ("string" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [2242 2266]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [2199 2271])
+                                    ("IPYNotation" function
+                                       (:destructor-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2277 2301]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [144 2313]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [122 2316]))                  
+                :type "namespace")
+                nil [105 2318]))          
+    :file "IPYNotation.h"
+    :pointmax 2328
+    :fsize 2677
+    :lastmodtime '(20852 43140 0 0)
+    :unmatched-syntax '((punctuation 2301 . 2302))
+    :lexical-table 
+        '(("IPYNOTATION_H")
+          )
+
+    )
+   (semanticdb-table "IPYFactory.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("IPYFACTORY_H" variable (:constant-flag t) nil [30 42])
+            ("IPYNotation.h" include nil nil [44 68])
+            ("NLP" type
+               (:members 
+                  ( ("Pinyin" type
+                       (:members 
+                          ( ("IPYFactory" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [133 140])
+                                    ("getPYInstance" function
+                                       (:prototype-flag t
+                                        :pointer 1
+                                        :typemodifiers ("static")
+                                        :type ("IPYNotation" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [144 180]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [109 185]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [87 188]))                  
+                :type "namespace")
+                nil [70 190]))          
+    :file "IPYFactory.h"
+    :pointmax 200
+    :fsize 199
+    :lastmodtime '(20852 43151 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("IPYFACTORY_H")
+          )
+
+    )
+   )
+  :file "!home!work!local!pinyin!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,237 @@
+;; Object php-hogdeer/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "php-hogdeer/"
+  :tables (list 
+   (semanticdb-table "php_hogdeer.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("PHP_HOGDEER_H" variable (:constant-flag t) nil [1175 1188])
+            ("PHP_HOGDEER_H" variable (:constant-flag t) nil [1175 1188])
+            ("hogdeer_module_entry" variable
+               (:typemodifiers ("extern")
+                :type ("zend_module_entry" type (:type "class") nil nil))
+                nil [1190 1236])
+            ("phpext_hogdeer_ptr" variable (:constant-flag t) nil [1245 1263])
+            ("PHP_HOGDEER_API" variable (:constant-flag t) nil [1401 1416])
+            ("CXXTOOLS_WITH_STD_LOCALE" variable (:constant-flag t) nil [1504 1528])
+            ("C" extern nil nil [1530 1580])
+            ("PHP_HOGDEER_VERSION" variable (:constant-flag t) nil [1590 1609])
+            ("PHP_MINIT_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("hogdeer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1638 1646]))                  
+                :type "int")
+                nil [1619 1647])
+            ("PHP_MSHUTDOWN_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("hogdeer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1671 1679]))                  
+                :type "int")
+                nil [1648 1680])
+            ("PHP_RINIT_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("hogdeer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1700 1708]))                  
+                :type "int")
+                nil [1681 1709])
+            ("PHP_RSHUTDOWN_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("hogdeer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1733 1741]))                  
+                :type "int")
+                nil [1710 1742])
+            ("PHP_MINFO_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("hogdeer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1762 1770]))                  
+                :type "int")
+                nil [1743 1771])
+            ("HOGDEER_G" variable (:constant-flag t) nil [2510 2519])
+            ("PHP_FE_END" variable (:constant-flag t) nil [2578 2588])
+            ("HOGDEER_INIT_FUNCS" variable (:constant-flag t) nil [2763 2781])
+            ("HOGDEER_INIT" variable (:constant-flag t) nil [2947 2959])
+            ("HOGDEER_INIT" variable (:constant-flag t) nil [2947 2959])
+            ("HOGDEER_INIT_CLASS" variable (:constant-flag t) nil [2863 2881])
+            ("HOGDEER_INIT" variable (:constant-flag t) nil [2947 2959]))          
+    :file "php_hogdeer.h"
+    :pointmax 3239
+    :fsize 3238
+    :lastmodtime '(20872 46853 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("PHP_HOGDEER_H")
+          )
+
+    )
+   (semanticdb-table "hogdeer.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("php.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [1207 1223])
+            ("php_ini.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [1224 1244])
+            ("ext/standard/info.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [1245 1275])
+            ("php_hogdeer.h" include nil nil [1278 1302])
+            ("hogdeer.h" include nil nil [1303 1323])
+            ("hogdeer_server_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [1363 1399])
+            ("hogdeer_client_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [1400 1436])
+            ("hogdeer_http_server_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [1438 1479])
+            ("hogdeer_http_client_ce" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [1480 1521])
+            ("hogdeer_functions" variable
+               (:dereference 1
+                :constant-flag t
+                :type ("zend_function_entry" type (:type "class") nil nil))
+                nil [1523 1587])
+            ("hogdeer_module_entry" variable (:type ("zend_module_entry" type (:type "class") nil nil)) nil [1590 1940])
+            ("PHP_MINIT_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("hogdeer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2247 2255]))                  
+                :type "int")
+                nil [2228 3622])
+            ("PHP_MSHUTDOWN_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("hogdeer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3647 3655]))                  
+                :type "int")
+                nil [3624 3676])
+            ("PHP_RINIT_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("hogdeer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3697 3705]))                  
+                :type "int")
+                nil [3678 3726])
+            ("PHP_RSHUTDOWN_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("hogdeer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3751 3759]))                  
+                :type "int")
+                nil [3728 3780])
+            ("PHP_MINFO_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("hogdeer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3801 3809]))                  
+                :type "int")
+                nil [3782 3936]))          
+    :file "hogdeer.cpp"
+    :pointmax 4074
+    :fsize 4073
+    :lastmodtime '(20895 17566 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "hogdeer.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("PHP_HOGDEER_H2" variable (:constant-flag t) nil [32 46])
+            ("include/server.h" include nil nil [48 75])
+            ("include/client.h" include nil nil [76 103])
+            ("include/http_server.h" include nil nil [104 136])
+            ("include/http_client.h" include nil nil [137 169])
+            ("Protocal_Type" type
+               (:members 
+                  ( ("HOGDEER_PROTOCAL_HTTP_XMLRPC" variable
+                       (:constant-flag t
+                        :default-value (227 228)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [194 228])
+                    ("HOGDEER_PROTOCAL_HTTP_JSONRPC" variable
+                       (:constant-flag t
+                        :default-value (265 266)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [232 266])
+                    ("HOGDEER_PROTOCAL_TCP_BINARYRPC" variable
+                       (:constant-flag t
+                        :default-value (303 304)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [270 304])
+                    ("HOGDEER_PROTOCAL_TCP_JSONRPC" variable
+                       (:constant-flag t
+                        :default-value (341 342)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [308 342]))                  
+                :type "enum")
+                nil [171 345])
+            ("HOGDEER_SERVER_DESC" variable (:constant-flag t) nil [416 435])
+            ("le_hogdeer_server" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [462 491])
+            ("HOGDEER_CLIENT_DESC" variable (:constant-flag t) nil [501 520])
+            ("le_hogdeer_client" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [547 576])
+            ("HOGDEER_SERVICE_DESC" variable (:constant-flag t) nil [586 606])
+            ("le_hogdeer_service" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [634 664])
+            ("HOGDEER_LOOP_DESC" variable (:constant-flag t) nil [674 691])
+            ("le_hogdeer_loop" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [716 743])
+            ("HOGDEER_HTTP_LOOP_DESC" variable (:constant-flag t) nil [753 775])
+            ("le_hogdeer_http_loop" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [805 837])
+            ("HOGDEER_HTTP_SERVER_DESC" variable (:constant-flag t) nil [847 871])
+            ("le_hogdeer_http_server" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [903 937])
+            ("HOGDEER_LISTEN_PORT" variable (:constant-flag t) nil [947 966])
+            ("HOGDEER_LISTEN_HOST" variable (:constant-flag t) nil [982 1001])
+            ("HOGDEER_LISTEN_PROTOCAL" variable (:constant-flag t) nil [1017 1040])
+            ("HOGDEER_LISTEN_AUTH" variable (:constant-flag t) nil [1060 1079])
+            ("HOGDEER_PROPERTY_SERVER" variable (:constant-flag t) nil [1098 1121])
+            ("HOGDEER_PROPERTY_SERVICE" variable (:constant-flag t) nil [1142 1166])
+            ("HOGDEER_PROPERTY_LOOP" variable (:constant-flag t) nil [1187 1208])
+            ("HOGDEER_PROPERTY_CLIENT" variable (:constant-flag t) nil [1229 1252])
+            ("HOGDEER_PROPERTY_PROTOCAL" variable (:constant-flag t) nil [1273 1298])
+            ("HOGDEER_PROPERTY_AUTH" variable (:constant-flag t) nil [1319 1340])
+            ("HOGDEER_REGISTER_CLASS" variable (:constant-flag t) nil [1363 1385]))          
+    :file "hogdeer.h"
+    :pointmax 1689
+    :fsize 1688
+    :lastmodtime '(20895 34237 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("HOGDEER_LISTEN_HOST" . ((string "\"host\"" 1002 . 1008)))
+          ("HOGDEER_PROPERTY_CLIENT" . ((string "\"_client\"" 1255 . 1264)))
+          ("HOGDEER_PROPERTY_AUTH" . ((string "\"_auth\"" 1345 . 1352)))
+          ("HOGDEER_CLIENT_DESC" . ((string "\"Hogdeer Client Resource\"" 521 . 546)))
+          ("HOGDEER_LISTEN_PROTOCAL" . ((string "\"protocal\"" 1041 . 1051)))
+          ("HOGDEER_PROPERTY_SERVICE" . ((string "\"_service\"" 1168 . 1178)))
+          ("HOGDEER_PROPERTY_LOOP" . ((string "\"_loop\"" 1213 . 1220)))
+          ("HOGDEER_SERVER_DESC" . ((string "\"Hogdeer Server Resource\"" 436 . 461)))
+          ("PHP_HOGDEER_H2")
+          ("HOGDEER_LISTEN_PORT" . ((string "\"port\"" 967 . 973)))
+          ("HOGDEER_LOOP_DESC" . ((string "\"Hogdeer Loop Resource\"" 692 . 715)))
+          ("HOGDEER_HTTP_SERVER_DESC" . ((string "\"Hogdeer Http Server Resource\"" 872 . 902)))
+          ("HOGDEER_PROPERTY_PROTOCAL" . ((string "\"_protocal\"" 1299 . 1310)))
+          ("HOGDEER_HTTP_LOOP_DESC" . ((string "\"Hogdeer Http Loop Resource\"" 776 . 804)))
+          ("HOGDEER_PROPERTY_SERVER" . ((string "\"_server\"" 1124 . 1133)))
+          ("HOGDEER_SERVICE_DESC" . ((string "\"Hogdeer Service Resource\"" 607 . 633)))
+          ("HOGDEER_REGISTER_CLASS" (spp-arg-list ("class_name" "name" "methods" "flags") 1385 . 1419) . ((semantic-list "{ \\
+    zend_class_entry ce; \\
+    memset(&ce, 0, sizeof(zend_class_entry)); \\
+    INIT_CLASS_ENTRY(ce, #class_name, methods); \\
+    hogdeer_ ##name## _ce = zend_register_internal_class(&ce TSRMLS_CC); \\
+    hogdeer_ ##name## _ce->ce_flags |= flags;  \\
+  }" 1424 . 1680)))
+          ("HOGDEER_LISTEN_AUTH" . ((string "\"auth\"" 1082 . 1088)))
+          )
+
+    )
+   )
+  :file "!home!work!git!php-hogdeer!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,25 @@
+;; Object system/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "system/"
+  :tables (list 
+   (semanticdb-table "api_config.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BOOST_SYSTEM_API_CONFIG_HPP" variable (:constant-flag t) nil [1136 1163])
+            ("BOOST_POSIX_API" variable (:constant-flag t) nil [1730 1745]))          
+    :file "api_config.hpp"
+    :pointmax 1833
+    :fsize 1832
+    :lastmodtime '(20738 38700 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("BOOST_SYSTEM_API_CONFIG_HPP")
+          ("BOOST_POSIX_API")
+          )
+
+    )
+   )
+  :file "!home!work!boost!include!boost!system!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

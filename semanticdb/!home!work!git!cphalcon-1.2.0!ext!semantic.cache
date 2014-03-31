@@ -1,0 +1,115 @@
+;; Object ext/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ext/"
+  :tables (list 
+   (semanticdb-table "config.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("php.h" include nil nil [1213 1229])
+            ("php_phalcon.h" include nil nil [1230 1254])
+            ("phalcon.h" include nil nil [1255 1275])
+            ("Zend/zend_operators.h" include nil nil [1277 1309])
+            ("Zend/zend_exceptions.h" include nil nil [1310 1343])
+            ("Zend/zend_interfaces.h" include nil nil [1344 1377])
+            ("kernel/main.h" include nil nil [1379 1403])
+            ("kernel/memory.h" include nil nil [1404 1430])
+            ("kernel/exception.h" include nil nil [1432 1461])
+            ("kernel/hash.h" include nil nil [1462 1486])
+            ("kernel/fcall.h" include nil nil [1487 1512])
+            ("kernel/object.h" include nil nil [1513 1539])
+            ("kernel/operators.h" include nil nil [1540 1569])
+            ("kernel/array.h" include nil nil [1570 1595])
+            ("PHALCON_INIT_CLASS" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Config" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2319 2334]))                  
+                :type "int")
+                nil [2300 2516])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Config" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2599 2614])
+                    ("" variable (:type ("__construct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2615 2627]))                  
+                :type "int")
+                nil [2588 4323])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Config" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4527 4542])
+                    ("" variable (:type ("offsetExists" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4543 4556]))                  
+                :type "int")
+                nil [4516 4713])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Config" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5071 5086])
+                    ("" variable (:type ("get" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5087 5091]))                  
+                :type "int")
+                nil [5060 5542])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Config" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5707 5722])
+                    ("" variable (:type ("offsetGet" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5723 5733]))                  
+                :type "int")
+                nil [5696 5937])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Config" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6126 6141])
+                    ("" variable (:type ("offsetSet" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6142 6152]))                  
+                :type "int")
+                nil [6115 6753])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Config" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6900 6915])
+                    ("" variable (:type ("offsetUnset" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6916 6928]))                  
+                :type "int")
+                nil [6889 7003])
+            ("array_merge_recursive_n" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("a1" variable
+                       (:pointer 2
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7041 7051])
+                    ("a2" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7052 7070])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7061 7071]))                  
+                :type "void")
+                nil [7005 7849])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Config" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8097 8112])
+                    ("" variable (:type ("merge" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8113 8119]))                  
+                :type "int")
+                nil [8086 10758])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Config" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10900 10915])
+                    ("" variable (:type ("toArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10916 10924]))                  
+                :type "int")
+                nil [10889 11799])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Config" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11920 11935])
+                    ("" variable (:type ("__set_state" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11936 11948]))                  
+                :type "int")
+                nil [11909 12192]))          
+    :file "config.c"
+    :pointmax 12193
+    :fsize 12192
+    :lastmodtime '(20955 42574 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "php_phalcon.h"
+    :file "php_phalcon.h"
+    :fsize 4825
+    :lastmodtime '(20955 42574 0 0)
+    )
+   (semanticdb-table "phalcon.h"
+    :file "phalcon.h"
+    :fsize 11196
+    :lastmodtime '(20955 42574 0 0)
+    )
+   )
+  :file "!home!work!git!cphalcon-1.2.0!ext!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

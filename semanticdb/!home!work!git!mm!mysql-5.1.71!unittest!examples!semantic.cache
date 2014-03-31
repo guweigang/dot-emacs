@@ -1,0 +1,22 @@
+;; Object examples/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "examples/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("AM_CPPFLAGS" variable (:default-value ("-I$(srcdir)" "-I$(top_builddir)/include" "-I$(top_srcdir)/unittest/mytap" "-I$(top_srcdir)/include")) nil [736 859])
+            ("AM_LDFLAGS" variable (:default-value ("-L$(top_builddir)/unittest/mytap")) nil [860 914])
+            ("LDADD" variable (:default-value ("-lmytap")) nil [915 944])
+            ("noinst_PROGRAMS" variable (:default-value ("simple-t")) nil [995 1060]))          
+    :file "Makefile.am"
+    :pointmax 1113
+    :fsize 1112
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax '((symbol 1104 . 1112) (punctuation 1103 . 1104) (punctuation 1102 . 1103) (symbol 1101 . 1102) (bol 1101 . 1101))
+    )
+   )
+  :file "!home!work!git!mm!mysql-5.1.71!unittest!examples!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

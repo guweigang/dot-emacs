@@ -1,0 +1,401 @@
+;; Object query/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "query/"
+  :tables (list 
+   (semanticdb-table "builder.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("php.h" include nil nil [1213 1229])
+            ("php_phalcon.h" include nil nil [1230 1254])
+            ("phalcon.h" include nil nil [1255 1275])
+            ("Zend/zend_operators.h" include nil nil [1277 1309])
+            ("Zend/zend_exceptions.h" include nil nil [1310 1343])
+            ("Zend/zend_interfaces.h" include nil nil [1344 1377])
+            ("kernel/main.h" include nil nil [1379 1403])
+            ("kernel/memory.h" include nil nil [1404 1430])
+            ("kernel/array.h" include nil nil [1432 1457])
+            ("kernel/object.h" include nil nil [1458 1484])
+            ("kernel/exception.h" include nil nil [1485 1514])
+            ("kernel/fcall.h" include nil nil [1515 1540])
+            ("kernel/concat.h" include nil nil [1541 1567])
+            ("kernel/operators.h" include nil nil [1568 1597])
+            ("kernel/string.h" include nil nil [1598 1624])
+            ("kernel/file.h" include nil nil [1625 1649])
+            ("kernel/hash.h" include nil nil [1650 1674])
+            ("PHALCON_INIT_CLASS" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Query_Builder" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2059 2091]))                  
+                :type "int")
+                nil [2040 4099])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Query_Builder" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4235 4267])
+                    ("" variable (:type ("__construct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4268 4280]))                  
+                :type "int")
+                nil [4224 7613])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Query_Builder" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7771 7803])
+                    ("" variable (:type ("setDI" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7804 7810]))                  
+                :type "int")
+                nil [7760 8190])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Query_Builder" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8289 8321])
+                    ("" variable (:type ("getDI" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8322 8328]))                  
+                :type "int")
+                nil [8278 8382])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Query_Builder" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8580 8612])
+                    ("" variable (:type ("columns" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8613 8621]))                  
+                :type "int")
+                nil [8569 8779])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Query_Builder" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8863 8895])
+                    ("" variable (:type ("getColumns" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8896 8907]))                  
+                :type "int")
+                nil [8852 8950])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Query_Builder" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9197 9229])
+                    ("" variable (:type ("from" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9230 9235]))                  
+                :type "int")
+                nil [9186 9389])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Query_Builder" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9604 9636])
+                    ("" variable (:type ("addFrom" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9637 9645]))                  
+                :type "int")
+                nil [9593 10549])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Query_Builder" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10646 10678])
+                    ("" variable (:type ("getFrom" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10679 10687]))                  
+                :type "int")
+                nil [10635 10729])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Query_Builder" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11182 11214])
+                    ("" variable (:type ("join" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11215 11220]))                  
+                :type "int")
+                nil [11171 11926])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Query_Builder" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12399 12431])
+                    ("" variable (:type ("innerJoin" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12432 12442]))                  
+                :type "int")
+                nil [12388 13148])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Query_Builder" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13417 13449])
+                    ("" variable (:type ("leftJoin" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13450 13459]))                  
+                :type "int")
+                nil [13406 14164])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Query_Builder" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14435 14467])
+                    ("" variable (:type ("rightJoin" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14468 14478]))                  
+                :type "int")
+                nil [14424 15176])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Query_Builder" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15506 15538])
+                    ("" variable (:type ("where" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15539 15545]))                  
+                :type "int")
+                nil [15495 17147])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Query_Builder" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17524 17556])
+                    ("" variable (:type ("andWhere" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17557 17566]))                  
+                :type "int")
+                nil [17513 19654])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Query_Builder" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20028 20060])
+                    ("" variable (:type ("orWhere" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20061 20069]))                  
+                :type "int")
+                nil [20017 22156])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Query_Builder" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22427 22459])
+                    ("" variable (:type ("betweenWhere" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22460 22473]))                  
+                :type "int")
+                nil [22416 24070])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Query_Builder" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24348 24380])
+                    ("" variable (:type ("notBetweenWhere" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24381 24397]))                  
+                :type "int")
+                nil [24337 25998])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Query_Builder" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26226 26258])
+                    ("" variable (:type ("inWhere" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26259 26267]))                  
+                :type "int")
+                nil [26215 28083])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Query_Builder" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28317 28349])
+                    ("" variable (:type ("notInWhere" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28350 28361]))                  
+                :type "int")
+                nil [28306 30181])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Query_Builder" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30268 30300])
+                    ("" variable (:type ("getWhere" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30301 30310]))                  
+                :type "int")
+                nil [30257 30356])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Query_Builder" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30593 30625])
+                    ("" variable (:type ("orderBy" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30626 30634]))                  
+                :type "int")
+                nil [30582 30793])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Query_Builder" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30876 30908])
+                    ("" variable (:type ("getOrderBy" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30909 30920]))                  
+                :type "int")
+                nil [30865 30961])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Query_Builder" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31220 31252])
+                    ("" variable (:type ("having" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31253 31260]))                  
+                :type "int")
+                nil [31209 31414])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Query_Builder" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31498 31530])
+                    ("" variable (:type ("getHaving" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31531 31541]))                  
+                :type "int")
+                nil [31487 31583])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Query_Builder" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31820 31852])
+                    ("" variable (:type ("limit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31853 31859]))                  
+                :type "int")
+                nil [31809 32298])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Query_Builder" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32382 32414])
+                    ("" variable (:type ("getLimit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32415 32424]))                  
+                :type "int")
+                nil [32371 32465])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Query_Builder" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32647 32679])
+                    ("" variable (:type ("offset" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32680 32687]))                  
+                :type "int")
+                nil [32636 32841])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Query_Builder" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32926 32958])
+                    ("" variable (:type ("getOffset" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32959 32969]))                  
+                :type "int")
+                nil [32915 33011])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Query_Builder" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33194 33226])
+                    ("" variable (:type ("groupBy" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33227 33235]))                  
+                :type "int")
+                nil [33183 33385])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Query_Builder" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33458 33490])
+                    ("" variable (:type ("getGroupBy" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33491 33502]))                  
+                :type "int")
+                nil [33447 33543])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Query_Builder" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33651 33683])
+                    ("" variable (:type ("getPhql" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33684 33692]))                  
+                :type "int")
+                nil [33640 41251])
+            ("PHALCON_OBS_VAR" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("joins" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42363 42369]))                  
+                :type "int")
+                nil [42347 42370])
+            ("phalcon_read_property_this" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("joins" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42400 42406])
+                    ("" variable (:type ("this_ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42407 42416])
+                    ("" variable (:type ("SL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42417 42429])
+                    ("" variable (:type ("PH_NOISY_CC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42431 42443]))                  
+                :type "int")
+                nil [42372 42444])
+            ("PHALCON_OBS_VAR" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("group" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44135 44141]))                  
+                :type "int")
+                nil [44119 44142])
+            ("phalcon_read_property_this" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("group" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44172 44178])
+                    ("" variable (:type ("this_ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44179 44188])
+                    ("" variable (:type ("SL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44189 44201])
+                    ("" variable (:type ("PH_NOISY_CC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44203 44215]))                  
+                :type "int")
+                nil [44144 44216])
+            ("PHALCON_OBS_VAR" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("order" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45825 45831]))                  
+                :type "int")
+                nil [45809 45832])
+            ("phalcon_read_property_this" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("order" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45862 45868])
+                    ("" variable (:type ("this_ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45869 45878])
+                    ("" variable (:type ("SL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45879 45891])
+                    ("" variable (:type ("PH_NOISY_CC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45893 45905]))                  
+                :type "int")
+                nil [45834 45906])
+            ("PHALCON_OBS_VAR" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("limit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47038 47044]))                  
+                :type "int")
+                nil [47022 47045])
+            ("phalcon_read_property_this" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("limit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47075 47081])
+                    ("" variable (:type ("this_ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47082 47091])
+                    ("" variable (:type ("SL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47092 47104])
+                    ("" variable (:type ("PH_NOISY_CC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47106 47118]))                  
+                :type "int")
+                nil [47047 47119])
+            ("RETURN_CTOR" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("phql" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48175 48180]))                  
+                :type "int")
+                nil [48163 48181])
+            ("bind_params" variable
+               (:pointer 1
+                :type ("zval" type (:type "class") nil nil))
+                nil [48315 48370])
+            ("query" variable
+               (:pointer 1
+                :type ("zval" type (:type "class") nil nil))
+                nil [48315 48370])
+            ("dependency_injector" variable
+               (:pointer 1
+                :type ("zval" type (:type "class") nil nil))
+                nil [48315 48370])
+            ("phql" variable
+               (:pointer 1
+                :type ("zval" type (:type "class") nil nil))
+                nil [48315 48370])
+            ("bind_types" variable
+               (:pointer 1
+                :type ("zval" type (:type "class") nil nil))
+                nil [48372 48389])
+            ("PHALCON_MM_GROW" function
+               (:prototype-flag t
+                :type "int")
+                nil [48392 48410])
+            ("PHALCON_INIT_VAR" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("phql" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48462 48467]))                  
+                :type "int")
+                nil [48445 48468])
+            ("phalcon_call_method" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("phql" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48490 48495])
+                    ("" variable (:type ("this_ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48496 48505]))                  
+                :type "int")
+                nil [48470 48517])
+            ("PHALCON_OBS_VAR" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("dependency_injector" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48537 48557]))                  
+                :type "int")
+                nil [48521 48558])
+            ("phalcon_read_property_this" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("dependency_injector" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48588 48608])
+                    ("" variable (:type ("this_ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48609 48618])
+                    ("" variable (:type ("SL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48619 48644])
+                    ("" variable (:type ("PH_NOISY_CC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48646 48658]))                  
+                :type "int")
+                nil [48560 48659])
+            ("PHALCON_INIT_VAR" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("query" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48680 48686]))                  
+                :type "int")
+                nil [48663 48687])
+            ("object_init_ex" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("query" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48704 48710])
+                    ("" variable (:type ("phalcon_mvc_model_query_ce" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48711 48738]))                  
+                :type "int")
+                nil [48689 48739])
+            ("phalcon_call_method_p2_noret" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("query" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48770 48776])
+                    ("" variable (:type ("phql" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48792 48797])
+                    ("" variable (:type ("dependency_injector" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48798 48818]))                  
+                :type "int")
+                nil [48741 48819])
+            ("PHALCON_OBS_VAR" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("bind_params" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48839 48851]))                  
+                :type "int")
+                nil [48823 48852])
+            ("phalcon_read_property_this" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("bind_params" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48882 48894])
+                    ("" variable (:type ("this_ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48895 48904])
+                    ("" variable (:type ("SL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48905 48922])
+                    ("" variable (:type ("PH_NOISY_CC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48924 48936]))                  
+                :type "int")
+                nil [48854 48937])
+            ("PHALCON_OBS_VAR" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("bind_types" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49113 49124]))                  
+                :type "int")
+                nil [49097 49125])
+            ("phalcon_read_property_this" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("bind_types" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49155 49166])
+                    ("" variable (:type ("this_ptr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49167 49176])
+                    ("" variable (:type ("SL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49177 49193])
+                    ("" variable (:type ("PH_NOISY_CC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49195 49207]))                  
+                :type "int")
+                nil [49127 49208])
+            ("RETURN_CTOR" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("query" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49377 49383]))                  
+                :type "int")
+                nil [49365 49384]))          
+    :file "builder.c"
+    :pointmax 49388
+    :fsize 49389
+    :lastmodtime '(20955 42574 0 0)
+    :unmatched-syntax '((close-paren 49385 . 49386) (semantic-list 49289 . 49361) (semantic-list 49254 . 49288) (IF 49251 . 49253) (semantic-list 49179 . 49193) (punctuation 49154 . 49155) (semantic-list 49019 . 49093) (semantic-list 48983 . 49018) (IF 48980 . 48982) (semantic-list 48907 . 48922) (punctuation 48881 . 48882) (string 48777 . 48790) (semantic-list 48621 . 48644) (punctuation 48587 . 48588) (string 48506 . 48515) (open-paren 48311 . 48312) (close-paren 48310 . 48311) (symbol 48302 . 48310) (punctuation 48300 . 48301) (symbol 48269 . 48300) (open-paren 48268 . 48269) (symbol 48258 . 48268) (close-paren 48182 . 48183) (semantic-list 47153 . 48159) (semantic-list 47124 . 47152) (IF 47121 . 47123) (semantic-list 47094 . 47104) (punctuation 47074 . 47075) (semantic-list 45940 . 46978) (semantic-list 45911 . 45939) (IF 45908 . 45910) (semantic-list 45881 . 45891) (punctuation 45861 . 45862) (semantic-list 44250 . 45769) (semantic-list 44221 . 44249) (IF 44218 . 44220) (semantic-list 44191 . 44201) (punctuation 44171 . 44172) (semantic-list 43973 . 44075) (semantic-list 43937 . 43972) (IF 43934 . 43936) (semantic-list 42479 . 43877) (semantic-list 42449 . 42478) (IF 42446 . 42448) (semantic-list 42419 . 42429) (punctuation 42399 . 42400) (semantic-list 42228 . 42285) (ELSE 42223 . 42227) (semantic-list 41363 . 42222) (semantic-list 41332 . 41362) (IF 41329 . 41331) (close-paren 48182 . 48183) (semantic-list 47153 . 48159) (semantic-list 47124 . 47152) (IF 47121 . 47123) (semantic-list 47094 . 47104) (punctuation 47074 . 47075) (semantic-list 45940 . 46978) (semantic-list 45911 . 45939) (IF 45908 . 45910) (semantic-list 45881 . 45891) (punctuation 45861 . 45862) (semantic-list 44250 . 45769) (semantic-list 44221 . 44249) (IF 44218 . 44220) (semantic-list 44191 . 44201) (punctuation 44171 . 44172) (semantic-list 43973 . 44075) (semantic-list 43937 . 43972) (IF 43934 . 43936) (semantic-list 42479 . 43877) (semantic-list 42449 . 42478) (IF 42446 . 42448) (semantic-list 42419 . 42429) (punctuation 42399 . 42400) (semantic-list 42228 . 42285) (ELSE 42223 . 42227) (semantic-list 41363 . 42222) (semantic-list 41332 . 41362) (IF 41329 . 41331))
+    )
+   )
+  :file "!home!work!git!cphalcon-1.2.0!ext!mvc!model!query!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

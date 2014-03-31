@@ -1,0 +1,343 @@
+;; Object model/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "model/"
+  :tables (list 
+   (semanticdb-table "transaction.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("php.h" include nil nil [1213 1229])
+            ("php_phalcon.h" include nil nil [1230 1254])
+            ("phalcon.h" include nil nil [1255 1275])
+            ("Zend/zend_operators.h" include nil nil [1277 1309])
+            ("Zend/zend_exceptions.h" include nil nil [1310 1343])
+            ("Zend/zend_interfaces.h" include nil nil [1344 1377])
+            ("kernel/main.h" include nil nil [1379 1403])
+            ("kernel/memory.h" include nil nil [1404 1430])
+            ("kernel/exception.h" include nil nil [1432 1461])
+            ("kernel/fcall.h" include nil nil [1462 1487])
+            ("kernel/object.h" include nil nil [1488 1514])
+            ("kernel/array.h" include nil nil [1515 1540])
+            ("PHALCON_INIT_CLASS" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Transaction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2652 2682]))                  
+                :type "int")
+                nil [2633 3876])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Transaction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4050 4080])
+                    ("" variable (:type ("__construct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4081 4093]))                  
+                :type "int")
+                nil [4039 5189])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Transaction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5334 5364])
+                    ("" variable (:type ("setTransactionManager" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5365 5387]))                  
+                :type "int")
+                nil [5323 5686])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Transaction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5755 5785])
+                    ("" variable (:type ("begin" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5786 5792]))                  
+                :type "int")
+                nil [5744 6067])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Transaction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6137 6167])
+                    ("" variable (:type ("commit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6168 6175]))                  
+                :type "int")
+                nil [6126 7057])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Transaction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7218 7248])
+                    ("" variable (:type ("rollback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7249 7258]))                  
+                :type "int")
+                nil [7207 9238])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Transaction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9350 9380])
+                    ("" variable (:type ("getConnection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9381 9395]))                  
+                :type "int")
+                nil [9339 10090])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Transaction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10186 10216])
+                    ("" variable (:type ("setIsNewTransaction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10217 10237]))                  
+                :type "int")
+                nil [10175 10386])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Transaction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10499 10529])
+                    ("" variable (:type ("setRollbackOnAbort" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10530 10549]))                  
+                :type "int")
+                nil [10488 10730])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Transaction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10839 10869])
+                    ("" variable (:type ("isManaged" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10870 10880]))                  
+                :type "int")
+                nil [10828 11202])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Transaction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11294 11324])
+                    ("" variable (:type ("getMessages" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11325 11337]))                  
+                :type "int")
+                nil [11283 11381])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Transaction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11493 11523])
+                    ("" variable (:type ("isValid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11524 11532]))                  
+                :type "int")
+                nil [11482 11824])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Transaction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11940 11970])
+                    ("" variable (:type ("setRollbackedRecord" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11971 11991]))                  
+                :type "int")
+                nil [11929 12138])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Transaction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12151 12181])
+                    ("" variable (:type ("getService" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12182 12193]))                  
+                :type "int")
+                nil [12140 12236]))          
+    :file "transaction.c"
+    :pointmax 12237
+    :fsize 12237
+    :lastmodtime '(20912 24301 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "exception.h"
+    :file "exception.h"
+    :fsize 1270
+    :lastmodtime '(20911 24049 0 0)
+    )
+   (semanticdb-table "transactioninterface.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("php.h" include nil nil [1213 1229])
+            ("php_phalcon.h" include nil nil [1230 1254])
+            ("phalcon.h" include nil nil [1255 1275])
+            ("kernel/main.h" include nil nil [1277 1301])
+            ("PHALCON_INIT_CLASS" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_TransactionInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1384 1423]))                  
+                :type "int")
+                nil [1365 1602])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_TransactionInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1784 1823])
+                    ("" variable (:type ("__construct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1824 1836]))                  
+                :type "int")
+                nil [1765 1837])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_TransactionInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1990 2029])
+                    ("" variable (:type ("setTransactionManager" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2030 2052]))                  
+                :type "int")
+                nil [1971 2053])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_TransactionInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2130 2169])
+                    ("" variable (:type ("begin" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2170 2176]))                  
+                :type "int")
+                nil [2111 2177])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_TransactionInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2255 2294])
+                    ("" variable (:type ("commit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2295 2302]))                  
+                :type "int")
+                nil [2236 2303])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_TransactionInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2472 2511])
+                    ("" variable (:type ("rollback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2512 2521]))                  
+                :type "int")
+                nil [2453 2522])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_TransactionInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2617 2656])
+                    ("" variable (:type ("getConnection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2657 2671]))                  
+                :type "int")
+                nil [2598 2672])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_TransactionInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2776 2815])
+                    ("" variable (:type ("setIsNewTransaction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2816 2836]))                  
+                :type "int")
+                nil [2757 2837])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_TransactionInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2958 2997])
+                    ("" variable (:type ("setRollbackOnAbort" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2998 3017]))                  
+                :type "int")
+                nil [2939 3018])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_TransactionInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3135 3174])
+                    ("" variable (:type ("isManaged" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3175 3185]))                  
+                :type "int")
+                nil [3116 3186])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_TransactionInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3286 3325])
+                    ("" variable (:type ("getMessages" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3326 3338]))                  
+                :type "int")
+                nil [3267 3339])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_TransactionInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3443 3482])
+                    ("" variable (:type ("getService" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3483 3494]))                  
+                :type "int")
+                nil [3424 3495])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_TransactionInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3615 3654])
+                    ("" variable (:type ("isValid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3655 3663]))                  
+                :type "int")
+                nil [3596 3664])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_TransactionInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3788 3827])
+                    ("" variable (:type ("setRollbackedRecord" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3828 3848]))                  
+                :type "int")
+                nil [3769 3849]))          
+    :file "transactioninterface.c"
+    :pointmax 3695
+    :fsize 3694
+    :lastmodtime '(20912 8435 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "transaction.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("phalcon_mvc_model_transaction_ce" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [1164 1222])
+            ("PHALCON_INIT_CLASS" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Transaction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1243 1273]))                  
+                :type "int")
+                nil [1224 1274])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Transaction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1287 1317])
+                    ("" variable (:type ("__construct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1318 1330]))                  
+                :type "int")
+                nil [1276 1331])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Transaction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1343 1373])
+                    ("" variable (:type ("setTransactionManager" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1374 1396]))                  
+                :type "int")
+                nil [1332 1397])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Transaction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1409 1439])
+                    ("" variable (:type ("begin" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1440 1446]))                  
+                :type "int")
+                nil [1398 1447])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Transaction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1459 1489])
+                    ("" variable (:type ("commit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1490 1497]))                  
+                :type "int")
+                nil [1448 1498])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Transaction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1510 1540])
+                    ("" variable (:type ("rollback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1541 1550]))                  
+                :type "int")
+                nil [1499 1551])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Transaction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1563 1593])
+                    ("" variable (:type ("getConnection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1594 1608]))                  
+                :type "int")
+                nil [1552 1609])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Transaction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1621 1651])
+                    ("" variable (:type ("setIsNewTransaction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1652 1672]))                  
+                :type "int")
+                nil [1610 1673])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Transaction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1685 1715])
+                    ("" variable (:type ("setRollbackOnAbort" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1716 1735]))                  
+                :type "int")
+                nil [1674 1736])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Transaction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1748 1778])
+                    ("" variable (:type ("isManaged" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1779 1789]))                  
+                :type "int")
+                nil [1737 1790])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Transaction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1802 1832])
+                    ("" variable (:type ("getMessages" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1833 1845]))                  
+                :type "int")
+                nil [1791 1846])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Transaction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1858 1888])
+                    ("" variable (:type ("getService" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1889 1900]))                  
+                :type "int")
+                nil [1847 1901])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Transaction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1913 1943])
+                    ("" variable (:type ("isValid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1944 1952]))                  
+                :type "int")
+                nil [1902 1953])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model_Transaction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1965 1995])
+                    ("" variable (:type ("setRollbackedRecord" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1996 2016]))                  
+                :type "int")
+                nil [1954 2017])
+            ("PHALCON_INIT_FUNCS" function
+               (:arguments 
+                  ( ("" variable (:type ("phalcon_mvc_model_transaction_method_entry" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2968 3011]))                  
+                :type "int")
+                nil [2949 4340]))          
+    :file "transaction.h"
+    :pointmax 4343
+    :fsize 4342
+    :lastmodtime '(20912 22374 0 0)
+    :unmatched-syntax '((punctuation 4340 . 4341) (semantic-list 2945 . 2947) (symbol 2928 . 2945) (semantic-list 2916 . 2927) (symbol 2903 . 2916) (number 2917 . 2918) (semantic-list 2833 . 2901) (symbol 2811 . 2833) (number 2899 . 2900) (number 2896 . 2897) (number 2893 . 2894) (semantic-list 2807 . 2809) (symbol 2790 . 2807) (semantic-list 2769 . 2789) (symbol 2756 . 2769) (number 2770 . 2771) (semantic-list 2687 . 2754) (symbol 2665 . 2687) (number 2752 . 2753) (number 2749 . 2750) (number 2746 . 2747) (semantic-list 2661 . 2663) (symbol 2644 . 2661) (semantic-list 2633 . 2643) (symbol 2620 . 2633) (number 2634 . 2635) (semantic-list 2550 . 2618) (symbol 2528 . 2550) (number 2616 . 2617) (number 2613 . 2614) (number 2610 . 2611) (semantic-list 2524 . 2526) (symbol 2507 . 2524) (semantic-list 2487 . 2506) (symbol 2474 . 2487) (number 2488 . 2489) (semantic-list 2452 . 2472) (symbol 2439 . 2452) (number 2453 . 2454) (semantic-list 2380 . 2437) (symbol 2358 . 2380) (number 2435 . 2436) (number 2432 . 2433) (number 2429 . 2430) (semantic-list 2354 . 2356) (symbol 2337 . 2354) (semantic-list 2324 . 2336) (symbol 2311 . 2324) (number 2325 . 2326) (semantic-list 2239 . 2309) (symbol 2217 . 2239) (number 2307 . 2308) (number 2304 . 2305) (number 2301 . 2302) (semantic-list 2213 . 2215) (symbol 2196 . 2213) (semantic-list 2183 . 2195) (symbol 2170 . 2183) (number 2184 . 2185) (semantic-list 2154 . 2168) (symbol 2141 . 2154) (number 2155 . 2156) (semantic-list 2116 . 2139) (symbol 2103 . 2116) (number 2117 . 2118) (semantic-list 2041 . 2101) (symbol 2019 . 2041) (number 2099 . 2100) (number 2096 . 2097) (number 2093 . 2094) (semantic-list 2524 . 2526) (symbol 2507 . 2524) (semantic-list 2487 . 2506) (symbol 2474 . 2487) (number 2488 . 2489) (semantic-list 2452 . 2472) (symbol 2439 . 2452) (number 2453 . 2454) (semantic-list 2380 . 2437) (symbol 2358 . 2380) (number 2435 . 2436) (number 2432 . 2433) (number 2429 . 2430) (semantic-list 2354 . 2356) (symbol 2337 . 2354) (semantic-list 2324 . 2336) (symbol 2311 . 2324) (number 2325 . 2326) (semantic-list 2239 . 2309) (symbol 2217 . 2239) (number 2307 . 2308) (number 2304 . 2305) (number 2301 . 2302) (semantic-list 2213 . 2215) (symbol 2196 . 2213) (semantic-list 2183 . 2195) (symbol 2170 . 2183) (number 2184 . 2185) (semantic-list 2154 . 2168) (symbol 2141 . 2154) (number 2155 . 2156) (semantic-list 2116 . 2139) (symbol 2103 . 2116) (number 2117 . 2118) (semantic-list 2041 . 2101) (symbol 2019 . 2041) (number 2099 . 2100) (number 2096 . 2097) (number 2093 . 2094))
+    )
+   )
+  :file "!home!work!git!bullsoft!cphalcon!ext!mvc!model!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

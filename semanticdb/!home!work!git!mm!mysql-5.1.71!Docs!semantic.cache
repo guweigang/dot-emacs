@@ -1,0 +1,21 @@
+;; Object Docs/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Docs/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("EXTRA_DIST" variable (:default-value ("mysql.info" "INSTALL-BINARY" "@extra_docs@")) nil [699 752])
+            ("install-data-hook" function (:arguments ("$(srcdir)/mysql.info")) nil [925 1495])
+            ("uninstall-local" function nil nil [1496 1771]))          
+    :file "Makefile.am"
+    :pointmax 1824
+    :fsize 1823
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax '((symbol 1815 . 1823) (punctuation 1814 . 1815) (punctuation 1813 . 1814) (symbol 1812 . 1813) (bol 1812 . 1812))
+    )
+   )
+  :file "!home!work!git!mm!mysql-5.1.71!Docs!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

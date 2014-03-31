@@ -1,0 +1,134 @@
+;; Object examples/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "examples/"
+  :tables (list 
+   (semanticdb-table "basic-1.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("binlog_api.h" include nil nil [1 24])
+            ("mysql::Binary_log" using (:type ("mysql::Binary_log" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [312 336])
+            ("mysql::system::create_transport" using (:type ("mysql::system::create_transport" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [337 375])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [386 395])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [396 408]))                  
+                :type "int")
+                nil [377 826]))          
+    :file "basic-1.cpp"
+    :pointmax 827
+    :fsize 824
+    :lastmodtime '(20703 18278 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "basic-2.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("binlog_api.h" include nil nil [1 24])
+            ("iostream" include (:system-flag t) nil [26 45])
+            ("map" include (:system-flag t) nil [46 60])
+            ("string" include (:system-flag t) nil [61 78])
+            ("mysql::Binary_log" using (:type ("mysql::Binary_log" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [199 223])
+            ("mysql::system::create_transport" using (:type ("mysql::system::create_transport" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [224 262])
+            ("mysql::system::get_event_type_str" using (:type ("mysql::system::get_event_type_str" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [263 303])
+            ("mysql::User_var_event" using (:type ("mysql::User_var_event" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [304 332])
+            ("Save_variables" type
+               (:template 
+                  ( ("AssociativeContainer" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [466 473])
+                    ("m_var" function
+                       (:arguments 
+                          ( ("" variable (:type ("container" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [534 544]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [528 552])
+                    ("process_event" function
+                       (:pointer 1
+                        :arguments 
+                          ( ("event" variable
+                               (:pointer 1
+                                :type ("User_var_event" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [588 610]))                          
+                        :type ("Binary_log_event" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [556 672])
+                    ("private" label nil (reparse-symbol classsubparts) [674 682])
+                    ("m_var" variable (:type ("AssociativeContainer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [685 713]))                  
+                :superclasses 
+                  ( ("Content_handler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [380 716])
+            ("Replace_variables" type
+               (:template 
+                  ( ("AssociativeContainer" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [808 815])
+                    ("Replace_variables" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("variables" variable
+                               (:reference 1
+                                :type ("AssociativeContainer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [836 868]))                          
+                        :type ("Replace_variables" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [818 899])
+                    ("process_event" function
+                       (:pointer 1
+                        :arguments 
+                          ( ("event" variable
+                               (:pointer 1
+                                :type ("Query_event" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [935 954]))                          
+                        :type ("Binary_log_event" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [903 1379])
+                    ("private" label nil (reparse-symbol classsubparts) [1380 1388])
+                    ("m_var" variable (:type ("AssociativeContainer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1391 1419]))                  
+                :superclasses 
+                  ( ("Content_handler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [719 1422])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1434 1443])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1444 1456]))                  
+                :type "int")
+                nil [1425 2265]))          
+    :file "basic-2.cpp"
+    :pointmax 2266
+    :fsize 2265
+    :lastmodtime '(20703 18278 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!git!mysql-replication-listener!examples!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

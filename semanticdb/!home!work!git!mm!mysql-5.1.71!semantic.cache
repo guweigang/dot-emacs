@@ -1,0 +1,67 @@
+;; Object mysql-5.1.71/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mysql-5.1.71/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("AUTOMAKE_OPTIONS" variable (:default-value ("foreign")) nil [800 827])
+            ("EXTRA_DIST" variable (:default-value ("INSTALL-SOURCE" "INSTALL-WIN-SOURCE" "README" "COPYING" "CMakeLists.txt")) nil [880 963])
+            ("DISTCLEANFILES" variable (:default-value ("ac_available_languages_fragment")) nil [1490 1539])
+            ("init-db" function (:arguments ("all")) nil [1570 1626])
+            ("bin-dist" function (:arguments ("all")) nil [1627 1727])
+            ("dist-hook" function nil nil [1863 2175])
+            ("all-local" function (:arguments ("@ABI_CHECK@")) nil [2176 2201])
+            ("tags" function nil nil [2202 2234])
+            (".PHONY" function (:arguments ("init-db" "bin-dist" "test" "test-force" "test-full" "test-force-full" "test-force-mem" "test-pl" "test-force-pl" "test-full-pl" "test-force-full-pl" "test-force-pl-mem" "test-unit" "test-ps" "test-nr" "test-pr" "test-ns" "test-binlog-statement" "test-ext-funcs" "test-ext-rpl" "test-ext-partitions" "test-ext-jp" "test-ext-stress" "test-ext" "test-embedded" "test-reprepare" "test-fast" "test-fast-cursor" "test-fast-view" "test-fast-prepare" "test-full-qa")) nil [2235 2680])
+            ("test-unit" function nil nil [3075 3115])
+            ("test-ps" function nil nil [3116 3230])
+            ("test-nr" function nil nil [3231 3329])
+            ("test-pr" function nil nil [3330 3449])
+            ("test-ns" function nil nil [3450 3557])
+            ("test-binlog-statement" function nil nil [3558 3676])
+            ("test-embedded" function nil nil [3758 4118])
+            ("test-reprepare" function nil nil [4119 4265])
+            ("test" function (:arguments ("test-unit" "test-ns" "test-pr")) nil [4266 4298])
+            ("smoke" function nil nil [4299 4369])
+            ("test-full" function (:arguments ("test" "test-nr" "test-ps")) nil [4370 4402])
+            ("test-force" function nil nil [4403 4443])
+            ("test-force-full" function nil nil [4444 4494])
+            ("test-force-mem" function nil nil [4542 4596])
+            ("test-bt" function nil nil [4597 6665])
+            ("test-bt-fast" function nil nil [6666 7264])
+            ("test-bt-debug" function nil nil [7265 7445])
+            ("test-bt-debug-fast" function nil nil [7446 7466])
+            ("test-bt-debug-fast" function nil nil [7467 7487])
+            ("test-pl" function (:arguments ("test")) nil [7513 7527])
+            ("test-full-pl" function (:arguments ("test-full")) nil [7527 7551])
+            ("test-force-pl" function (:arguments ("test-force")) nil [7551 7577])
+            ("test-force-pl-mem" function (:arguments ("test-force-mem")) nil [7577 7612])
+            ("test-force-full-pl" function (:arguments ("test-force-full")) nil [7612 7648])
+            ("test-ext-funcs" function nil nil [7649 7810])
+            ("test-ext-rpl" function nil nil [7811 7896])
+            ("test-ext-partitions" function nil nil [7897 7991])
+            ("test-ext-jp" function nil nil [7992 8075])
+            ("test-ext-stress" function nil nil [8076 8178])
+            ("test-ext" function (:arguments ("test-ext-funcs" "test-ext-rpl" "test-ext-partitions" "test-ext-jp" "test-ext-stress")) nil [8179 8265])
+            ("test-fast" function nil nil [8266 8570])
+            ("test-fast-view" function nil nil [8571 8629])
+            ("test-fast-cursor" function nil nil [8630 8692])
+            ("test-fast-prepare" function nil nil [8693 8752])
+            ("test-full-qa" function nil nil [8753 8889])
+            ("API_PREPROCESSOR_HEADER" variable (:default-value ("$(top_srcdir)/include/mysql/plugin.h" "$(top_srcdir)/include/mysql.h")) nil [9078 9200])
+            ("TEST_PREPROCESSOR_HEADER" variable (:default-value ("$(top_srcdir)/include/mysql/plugin.h" "$(top_srcdir)/sql/mysql_priv.h" "$(top_srcdir)/include/mysql.h")) nil [9201 9386])
+            ("abi_check" function (:arguments ("$(API_PREPROCESSOR_HEADER)")) nil [10965 11042])
+            ("abi_check_all" function (:arguments ("$(TEST_PREPROCESSOR_HEADER)")) nil [11043 11125])
+            ("do_abi_check" function nil nil [11126 11985]))          
+    :file "Makefile.am"
+    :pointmax 12038
+    :fsize 12037
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax '((symbol 12029 . 12037) (punctuation 12028 . 12029) (punctuation 12027 . 12028) (symbol 12026 . 12027) (bol 12026 . 12026) (symbol 1484 . 1489) (symbol 1475 . 1478) (symbol 1457 . 1469) (symbol 1447 . 1456) (symbol 1433 . 1446) (symbol 1422 . 1432) (symbol 1407 . 1416) (symbol 1399 . 1406) (symbol 1388 . 1393) (symbol 1384 . 1387) (symbol 1380 . 1383) (symbol 1376 . 1379) (symbol 1364 . 1370) (symbol 1356 . 1363) (symbol 1347 . 1355) (symbol 1340 . 1346) (symbol 1329 . 1339) (symbol 1320 . 1328) (symbol 1314 . 1319) (symbol 1308 . 1313) (symbol 1303 . 1307) (symbol 1297 . 1302) (symbol 1289 . 1296) (symbol 1276 . 1283) (symbol 1265 . 1275) (symbol 1250 . 1264) (symbol 1240 . 1244) (symbol 1235 . 1239) (INCLUDE 1227 . 1234) (symbol 1225 . 1226) (punctuation 1222 . 1223) (symbol 1209 . 1221) (bol 1209 . 1209) (symbol 1204 . 1207) (punctuation 1197 . 1198) (symbol 1187 . 1197) (punctuation 1186 . 1187) (symbol 1176 . 1185) (symbol 1162 . 1175) (symbol 1151 . 1161) (punctuation 1144 . 1145) (symbol 1130 . 1144) (punctuation 1129 . 1130) (symbol 1121 . 1128) (symbol 1110 . 1115) (punctuation 1108 . 1109) (symbol 1100 . 1108) (punctuation 1099 . 1100) (punctuation 1097 . 1098) (symbol 1087 . 1097) (punctuation 1086 . 1087) (symbol 1072 . 1080) (punctuation 1070 . 1071) (symbol 1056 . 1070) (punctuation 1055 . 1056) (symbol 1042 . 1049) (symbol 1031 . 1041) (punctuation 1029 . 1030) (symbol 1014 . 1029) (punctuation 1013 . 1014) (punctuation 1006 . 1007) (symbol 998 . 1006) (punctuation 997 . 998) (punctuation 995 . 996) (symbol 986 . 995) (punctuation 985 . 986) (INCLUDE 977 . 984) (symbol 975 . 976) (punctuation 972 . 973) (symbol 964 . 971) (bol 964 . 964))
+    )
+   )
+  :file "!home!work!git!mm!mysql-5.1.71!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

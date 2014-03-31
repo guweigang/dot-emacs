@@ -1,0 +1,132 @@
+;; Object backend/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "backend/"
+  :tables (list 
+   (semanticdb-table "index.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("管理员平台 | 港湾云主机平台" section nil nil [319 440])
+            ("Uncomment to use LESS The dynamic stylesheet language. | http://lesscss.org/ -->
+	<!-- <link rel="stylesheet/less" type="text/css" href="css/main.less" /> -->
+	<!-- <script type="text/javascript" src="js/less-1.3.0.min.js">" section nil nil [440 513])
+            ("Uncomment to use LESS The dynamic stylesheet language. | http://lesscss.org/ -->
+	<!-- <link rel="stylesheet/less" type="text/css" href="css/main.less" /> -->
+	<!-- <script type="text/javascript" src="js/less-1.3.0.min.js">" section nil nil [513 581])
+            ("Uncomment to use LESS The dynamic stylesheet language. | http://lesscss.org/ -->
+	<!-- <link rel="stylesheet/less" type="text/css" href="css/main.less" /> -->
+	<!-- <script type="text/javascript" src="js/less-1.3.0.min.js">" section nil nil [581 653])
+            ("Uncomment to use LESS The dynamic stylesheet language. | http://lesscss.org/ -->
+	<!-- <link rel="stylesheet/less" type="text/css" href="css/main.less" /> -->
+	<!-- <script type="text/javascript" src="js/less-1.3.0.min.js">" section nil nil [653 728])
+            ("Uncomment to use LESS The dynamic stylesheet language. | http://lesscss.org/ -->
+	<!-- <link rel="stylesheet/less" type="text/css" href="css/main.less" /> -->
+	<!-- <script type="text/javascript" src="js/less-1.3.0.min.js">" section nil nil [728 808])
+            ("Uncomment to use LESS The dynamic stylesheet language. | http://lesscss.org/ -->
+	<!-- <link rel="stylesheet/less" type="text/css" href="css/main.less" /> -->
+	<!-- <script type="text/javascript" src="js/less-1.3.0.min.js">" section nil nil [808 889])
+            ("Uncomment to use LESS The dynamic stylesheet language. | http://lesscss.org/ -->
+	<!-- <link rel="stylesheet/less" type="text/css" href="css/main.less" /> -->
+	<!-- <script type="text/javascript" src="js/less-1.3.0.min.js">" section nil nil [889 972])
+            ("Uncomment to use LESS The dynamic stylesheet language. | http://lesscss.org/ -->
+	<!-- <link rel="stylesheet/less" type="text/css" href="css/main.less" /> -->
+	<!-- <script type="text/javascript" src="js/less-1.3.0.min.js">" section nil nil [972 1055])
+            ("Uncomment to use LESS The dynamic stylesheet language. | http://lesscss.org/ -->
+	<!-- <link rel="stylesheet/less" type="text/css" href="css/main.less" /> -->
+	<!-- <script type="text/javascript" src="js/less-1.3.0.min.js">" section nil nil [1055 1138])
+            ("Uncomment to use LESS The dynamic stylesheet language. | http://lesscss.org/ -->
+	<!-- <link rel="stylesheet/less" type="text/css" href="css/main.less" /> -->
+	<!-- <script type="text/javascript" src="js/less-1.3.0.min.js">" section nil nil [1138 1218])
+            ("Uncomment to use LESS The dynamic stylesheet language. | http://lesscss.org/ -->
+	<!-- <link rel="stylesheet/less" type="text/css" href="css/main.less" /> -->
+	<!-- <script type="text/javascript" src="js/less-1.3.0.min.js">" section nil nil [1218 1300])
+            ("Uncomment to use LESS The dynamic stylesheet language. | http://lesscss.org/ -->
+	<!-- <link rel="stylesheet/less" type="text/css" href="css/main.less" /> -->
+	<!-- <script type="text/javascript" src="js/less-1.3.0.min.js">" section nil nil [1300 1382])
+            ("Uncomment to use LESS The dynamic stylesheet language. | http://lesscss.org/ -->
+	<!-- <link rel="stylesheet/less" type="text/css" href="css/main.less" /> -->
+	<!-- <script type="text/javascript" src="js/less-1.3.0.min.js">" section nil nil [1382 1466])
+            ("Uncomment to use LESS The dynamic stylesheet language. | http://lesscss.org/ -->
+	<!-- <link rel="stylesheet/less" type="text/css" href="css/main.less" /> -->
+	<!-- <script type="text/javascript" src="js/less-1.3.0.min.js">" section nil nil [1466 1544])
+            ("Uncomment to use LESS The dynamic stylesheet language. | http://lesscss.org/ -->
+	<!-- <link rel="stylesheet/less" type="text/css" href="css/main.less" /> -->
+	<!-- <script type="text/javascript" src="js/less-1.3.0.min.js">" section nil nil [1544 1629])
+            ("Uncomment to use LESS The dynamic stylesheet language. | http://lesscss.org/ -->
+	<!-- <link rel="stylesheet/less" type="text/css" href="css/main.less" /> -->
+	<!-- <script type="text/javascript" src="js/less-1.3.0.min.js">" section nil nil [1629 1884])
+            ("-->
+
+	<!-- Uncomment to use CSS -->
+	<link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css" />
+
+	<!-- DEMO SCRIPTS -->
+	<script type="text/javascript" src="js/demo.js">" section nil nil [1884 2096])
+            ("BEGIN #navbar -->
+	<div class="navbar" id="navbar">
+		<div class="navbar-inner">
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				<span class="icon-user icon-white">" section nil nil [2096 2162])
+            ("BEGIN #navbar -->
+	<div class="navbar" id="navbar">
+		<div class="navbar-inner">
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				<span class="icon-user icon-white">" section (:members 
+              ( ("故障单 <span class="notify">15" anchor nil nil [2667 2670])
+                ("个人设置" anchor nil nil [2773 2776])
+                ("退出" anchor nil nil [2860 2863])
+                ("港湾人" anchor nil nil [3060 3063])
+                ("控制面板 <span class="badge badge-warning">10" anchor nil nil [3344 3347])
+                ("网站设置 <span class="badge badge-info">1" anchor nil nil [3520 3523])
+                ("系统设置" anchor nil nil [3775 3778])
+                ("客服设置" anchor nil nil [3845 3848])
+                ("邮件设置" anchor nil nil [3915 3918])
+                ("短信设置" anchor nil nil [3985 3988])
+                ("支付设置" anchor nil nil [4055 4058])
+                ("内容管理" anchor nil nil [4159 4162])
+                ("新闻管理" anchor nil nil [4392 4395])
+                ("帮助文档管理" anchor nil nil [4462 4465])
+                ("公告管理" anchor nil nil [4534 4537])
+                ("会员管理" anchor nil nil [4665 4668])
+                ("会员" anchor nil nil [4892 4895])
+                ("代理商" anchor nil nil [4960 4963])
+                ("管理员" anchor nil nil [5029 5032])
+                ("产品管理" anchor nil nil [5159 5162])
+                ("云产品管理" anchor nil nil [5401 5404])
+                ("云配件管理" anchor nil nil [5472 5475])
+                ("财务管理" anchor nil nil [5604 5607])
+                ("云产品管理" anchor nil nil [5839 5842])
+                ("云配件管理" anchor nil nil [5910 5913])
+                ("故障管理" anchor nil nil [6042 6045])
+                ("云产品管理" anchor nil nil [6282 6285])
+                ("云配件管理" anchor nil nil [6353 6356])
+                ("快速导航" anchor nil nil [6815 6818])
+                ("登录信息" anchor nil nil [6881 6884])
+                ("密码修改" anchor nil nil [6949 6952])
+                ("会员管理" anchor nil nil [7180 7183])
+                ("产品管理" anchor nil nil [7341 7344])
+                ("用户反馈" anchor nil nil [7503 7506])
+                ("订单管理" anchor nil nil [7663 7666])
+                ("财务报表" anchor nil nil [7829 7832])
+                ("安全检查" anchor nil nil [7995 7998])
+                ("统计信息" section nil nil [10789 11364])
+                ("Pie example" section nil nil [11364 11639])
+                ("Line graph" section nil nil [11639 12039])
+                ("Basic form" section nil nil [12039 14337])
+                ("Example markup" section (:members 
+                  ( ("Users" anchor nil nil [16289 16292])
+                    ("Entries" anchor nil nil [16333 16336])
+                    ("Comments" anchor nil nil [16379 16382])
+                    ("Images" anchor nil nil [16423 16426])
+                    ("Stats" anchor nil nil [16468 16471])
+                    ("Security" anchor nil nil [16516 16519]))                  ) nil [14337 16637]))              ) nil [2162 16637]))          
+    :file "index.html"
+    :pointmax 16637
+    :fsize 17527
+    :lastmodtime '(20814 61345)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!local!httpd!htdocs!cloud!skeleton!public!backend!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

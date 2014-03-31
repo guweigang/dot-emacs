@@ -1,0 +1,36 @@
+;; Object instance-manager/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "instance-manager/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("INCLUDES" variable (:default-value ("@ZLIB_INCLUDES@" "-I$(top_srcdir)/include" "@openssl_includes@" "-I$(top_builddir)/include")) nil [696 794])
+            ("DEFS" variable (:default-value ("-DMYSQL_INSTANCE_MANAGER" "-DMYSQL_SERVER")) nil [795 841])
+            ("noinst_LTLIBRARIES" variable (:default-value ("liboptions.la")) nil [1091 1125])
+            ("noinst_LIBRARIES" variable (:default-value ("libnet.a")) nil [1125 1154])
+            ("liboptions_la_CXXFLAGS" variable (:default-value ("$(CXXFLAGS)" "-DDEFAULT_PID_FILE_NAME=\"$(localstatedir)/mysqlmanager.pid\"" "-DDEFAULT_LOG_FILE_NAME=\"$(localstatedir)/mysqlmanager.log\"" "-DDEFAULT_SOCKET_FILE_NAME=\"/tmp/mysqlmanager.sock\"" "-DDEFAULT_PASSWORD_FILE_NAME=\"/etc/mysqlmanager.passwd\"" "-DDEFAULT_MYSQLD_PATH=\"$(libexecdir)/mysqld$(EXEEXT)\"" "-DDEFAULT_CONFIG_FILE=\"my.cnf\"" "-DPROTOCOL_VERSION=@PROTOCOL_VERSION@")) nil [1155 1563])
+            ("liboptions_la_SOURCES" variable (:default-value ("options.h" "options.cc" "priv.h" "priv.cc")) nil [1564 1623])
+            ("liboptions_la_LIBADD" variable (:default-value ("$(top_builddir)/libmysql/get_password.lo")) nil [1623 1686])
+            ("nodist_libnet_a_SOURCES" variable (:default-value ("net_serv.cc" "client_settings.h")) nil [1781 1836])
+            ("libnet_a_LIBADD" variable (:default-value ("$(top_builddir)/sql/password.$(OBJEXT)" "$(top_builddir)/sql/pack.$(OBJEXT)" "$(top_builddir)/sql/sql_state.$(OBJEXT)" "$(top_builddir)/sql/mini_client_errors.$(OBJEXT)" "$(top_builddir)/sql/client.$(OBJEXT)")) nil [1836 2064])
+            ("CLEANFILES" variable (:default-value ("net_serv.cc" "client_settings.h")) nil [2065 2107])
+            ("net_serv.cc" function nil nil [2108 2193])
+            ("client_settings.h" function nil nil [2194 2303])
+            ("libexec_PROGRAMS" variable (:default-value ("mysqlmanager")) nil [2304 2335])
+            ("mysqlmanager_CXXFLAGS" variable nil nil [2336 2361])
+            ("mysqlmanager_SOURCES" variable (:default-value ("command.cc" "command.h" "mysqlmanager.cc" "manager.h" "manager.cc" "log.h" "log.cc" "thread_registry.h" "thread_registry.cc" "listener.h" "listener.cc" "protocol.h" "protocol.cc" "mysql_connection.h" "mysql_connection.cc" "user_map.h" "user_map.cc" "messages.h" "messages.cc" "commands.h" "commands.cc" "instance.h" "instance.cc" "instance_map.h" "instance_map.cc" "instance_options.h" "instance_options.cc" "buffer.h" "buffer.cc" "parse.cc" "parse.h" "guardian.cc" "guardian.h" "parse_output.cc" "parse_output.h" "mysql_manager_error.h" "portability.h" "exit_codes.h" "user_management_commands.h" "user_management_commands.cc" "angel.h" "angel.cc")) nil [2362 3091])
+            ("mysqlmanager_LDADD" variable (:default-value ("@CLIENT_EXTRA_LDFLAGS@" "liboptions.la" "libnet.a" "$(top_builddir)/vio/libvio.a" "$(top_builddir)/mysys/libmysys.a" "$(top_builddir)/strings/libmystrings.a" "$(top_builddir)/dbug/libdbug.a" "@openssl_libs@" "@yassl_libs@" "@ZLIB_LIBS@")) nil [3092 3365])
+            ("EXTRA_DIST" variable (:default-value ("WindowsService.cpp" "WindowsService.h" "IMService.cpp" "IMService.h" "CMakeLists.txt")) nil [3366 3462])
+            ("tags" function nil nil [3463 3488]))          
+    :file "Makefile.am"
+    :pointmax 3541
+    :fsize 3540
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax '((symbol 3532 . 3540) (punctuation 3531 . 3532) (punctuation 3530 . 3531) (symbol 3529 . 3530) (bol 3529 . 3529))
+    )
+   )
+  :file "!home!work!git!mm!mysql-5.1.71!server-tools!instance-manager!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

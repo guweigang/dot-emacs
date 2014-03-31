@@ -1,0 +1,122 @@
+;; Object main/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "main/"
+  :tables (list 
+   (semanticdb-table "php_variables.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("PHP_VARIABLES_H" variable (:constant-flag t) nil [1268 1283])
+            ("php.h" include nil nil [1285 1301])
+            ("SAPI.h" include nil nil [1302 1319])
+            ("PARSE_POST" variable (:constant-flag t) nil [1329 1339])
+            ("PARSE_GET" variable (:constant-flag t) nil [1350 1359])
+            ("PARSE_COOKIE" variable (:constant-flag t) nil [1370 1382])
+            ("PARSE_STRING" variable (:constant-flag t) nil [1393 1405])
+            ("PARSE_ENV" variable (:constant-flag t) nil [1416 1425])
+            ("PARSE_SERVER" variable (:constant-flag t) nil [1436 1448])
+            ("PARSE_SESSION" variable (:constant-flag t) nil [1459 1472])
+            ("php_startup_auto_globals" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("TSRMLS_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1523 1532]))                  
+                :type "void")
+                nil [1493 1533])
+            ("php_import_environment_variables" variable
+               (:functionpointer-flag t
+                :type "void")
+                nil [1548 1616])
+            ("php_register_variable" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("var" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1651 1661])
+                    ("val" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1662 1672])
+                    ("track_vars_array" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1673 1705])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1696 1706]))                  
+                :type "void")
+                nil [1624 1707])
+            ("php_register_variable_safe" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("var" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1773 1783])
+                    ("val" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1784 1794])
+                    ("val_len" variable (:type "int") (reparse-symbol arg-sub-list) [1795 1807])
+                    ("track_vars_array" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1808 1840])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1831 1841]))                  
+                :type "void")
+                nil [1741 1842])
+            ("php_register_variable_ex" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("var" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1880 1890])
+                    ("val" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1891 1901])
+                    ("track_vars_array" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1902 1934])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1925 1935]))                  
+                :type "void")
+                nil [1850 1936])
+            ("php_hash_environment" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("TSRMLS_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1963 1972]))                  
+                :type "int")
+                nil [1938 1973])
+            ("NUM_TRACK_VARS" variable (:constant-flag t) nil [1998 2012]))          
+    :file "php_variables.h"
+    :pointmax 2045
+    :fsize 2044
+    :lastmodtime '(20689 55724 0 0)
+    :unmatched-syntax '((semantic-list 1986 . 1988) (symbol 1974 . 1986) (symbol 1843 . 1849) (symbol 1734 . 1740) (symbol 1617 . 1623) (symbol 1541 . 1547) (EXTERN 1534 . 1540) (semantic-list 1490 . 1492) (symbol 1476 . 1490))
+    :lexical-table 
+        '(("PARSE_COOKIE" . ((number "2" 1383 . 1384)))
+          ("PARSE_STRING" . ((number "3" 1406 . 1407)))
+          ("PARSE_POST" . ((number "0" 1340 . 1341)))
+          ("PARSE_SESSION" . ((number "6" 1473 . 1474)))
+          ("PARSE_ENV" . ((number "4" 1426 . 1427)))
+          ("PHP_VARIABLES_H")
+          ("PARSE_SERVER" . ((number "5" 1449 . 1450)))
+          ("PARSE_GET" . ((number "1" 1360 . 1361)))
+          ("NUM_TRACK_VARS" . ((number "6" 2013 . 2014)))
+          )
+
+    )
+   (semanticdb-table "php.h"
+    :file "php.h"
+    :fsize 12195
+    :lastmodtime '(20689 55724 0 0)
+    )
+   (semanticdb-table "SAPI.h"
+    :file "SAPI.h"
+    :fsize 9721
+    :lastmodtime '(20689 55724 0 0)
+    )
+   )
+  :file "!home!work!download!php-5.3.20!main!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

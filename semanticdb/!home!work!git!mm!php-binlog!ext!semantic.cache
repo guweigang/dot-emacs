@@ -1,0 +1,279 @@
+;; Object ext/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ext/"
+  :tables (list 
+   (semanticdb-table "php_mysqlbinlog.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("PHP_MYSQLBINLOG_H" variable (:constant-flag t) nil [1179 1196])
+            ("mysqlbinlog_module_entry" variable
+               (:typemodifiers ("extern")
+                :type ("zend_module_entry" type (:type "class") nil nil))
+                nil [1198 1248])
+            ("phpext_mysqlbinlog_ptr" variable (:constant-flag t) nil [1257 1279])
+            ("C" extern nil nil [1307 1357])
+            ("PHP_MYSQLBINLOG_VERSION" variable (:constant-flag t) nil [1367 1390])
+            ("PHP_MYSQLBINLOG_API" variable (:constant-flag t) nil [1518 1537])
+            ("PHP_MINIT_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("mysqlbinlog" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1677 1689]))                  
+                :type "int")
+                nil [1658 1690])
+            ("PHP_MSHUTDOWN_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("mysqlbinlog" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1714 1726]))                  
+                :type "int")
+                nil [1691 1727])
+            ("PHP_RINIT_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("mysqlbinlog" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1747 1759]))                  
+                :type "int")
+                nil [1728 1760])
+            ("PHP_RSHUTDOWN_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("mysqlbinlog" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1784 1796]))                  
+                :type "int")
+                nil [1761 1797])
+            ("PHP_MINFO_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("mysqlbinlog" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1817 1829]))                  
+                :type "int")
+                nil [1798 1830])
+            ("binlog_api.h" include (:system-flag t) nil [1832 1855])
+            ("binlog_destruction_handler" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("rsrc" variable
+                       (:pointer 1
+                        :type ("zend_rsrc_list_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1889 1925])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1916 1926]))                  
+                :type "void")
+                nil [1857 1927])
+            ("proc_event" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("fields" variable
+                       (:reference 1
+                        :type ("mysql::Row_of_fields" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1944 1973])
+                    ("mysql_fields" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1974 1993]))                  
+                :type "void")
+                nil [1928 1994])
+            ("in_watch_wild_tables" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("tbl" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2021 2031])
+                    ("tbl_len" variable (:type "int") (reparse-symbol arg-sub-list) [2032 2044])
+                    ("tbl_given" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2045 2076])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2067 2077]))                  
+                :type "bool")
+                nil [1995 2078])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("binlog_connect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2093 2108]))                  
+                :type "int")
+                nil [2080 2109])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("binlog_disconnect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2123 2141]))                  
+                :type "int")
+                nil [2110 2142])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("binlog_wait_for_next_event" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2156 2183]))                  
+                :type "int")
+                nil [2143 2184])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("binlog_set_position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2198 2218]))                  
+                :type "int")
+                nil [2185 2219])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("binlog_get_position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2233 2253]))                  
+                :type "int")
+                nil [2220 2254])
+            ("tbl_map_evt" type
+               (:typedef ("mysql::Table_map_event" type (:type "class") nil nil)
+                :pointer 1
+                :superclasses "mysql::Table_map_event"
+                :type "typedef")
+                nil [2256 2300])
+            ("tmev" variable (:type ("tbl_map_evt" type (:type "class") nil nil)) nil [2345 2362])
+            ("MYSQLBINLOG_G" variable (:constant-flag t) nil [3042 3055]))          
+    :file "php_mysqlbinlog.h"
+    :pointmax 3260
+    :fsize 3259
+    :lastmodtime '(21082 50305 0 0)
+    :unmatched-syntax '((semantic-list 2386 . 2399) (symbol 2363 . 2386) (semantic-list 2327 . 2340) (symbol 2302 . 2327))
+    :lexical-table 
+        '(("PHP_MYSQLBINLOG_H")
+          ("PHP_MYSQLBINLOG_VERSION" . ((string "\"0.1.0\"" 1391 . 1398)))
+          ("PHP_MYSQLBINLOG_API" . ((symbol "__attribute__" 1538 . 1551) (semantic-list "((visibility(\"default\")))" 1552 . 1577)))
+          ("phpext_mysqlbinlog_ptr" . ((punctuation "&" 1280 . 1281) (symbol "mysqlbinlog_module_entry" 1281 . 1305)))
+          ("MYSQLBINLOG_G" (spp-arg-list ("v") 3055 . 3058) . ((semantic-list "(mysqlbinlog_globals.v)" 3059 . 3082)))
+          )
+
+    )
+   (semanticdb-table "mysqlbinlog.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("php.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [1207 1223])
+            ("php_ini.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [1224 1244])
+            ("ext/standard/info.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [1245 1275])
+            ("php_mysqlbinlog.h" include nil nil [1279 1307])
+            ("zend_exceptions.h" include nil nil [1308 1336])
+            ("iostream" include (:system-flag t) nil [1338 1357])
+            ("map" include (:system-flag t) nil [1358 1372])
+            ("string" include (:system-flag t) nil [1373 1390])
+            ("mysql::Binary_log" using (:type ("mysql::Binary_log" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1392 1416])
+            ("mysql::system::create_transport" using (:type ("mysql::system::create_transport" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1417 1455])
+            ("mysql::system::get_event_type_str" using (:type ("mysql::system::get_event_type_str" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1456 1496])
+            ("mysql::User_var_event" using (:type ("mysql::User_var_event" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1497 1525])
+            ("BINLOG_LINK_DESC" variable (:constant-flag t) nil [2317 2333])
+            ("php_mysqlbinlog_init_globals" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("mysqlbinlog_globals" variable
+                       (:pointer 1
+                        :type ("zend_mysqlbinlog_globals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2395 2441]))                  
+                :type "void")
+                nil [2354 2483])
+            ("le_binloglink" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [2486 2511])
+            ("mysqlbinlog_functions" variable
+               (:dereference 1
+                :constant-flag t
+                :type ("zend_function_entry" type (:type "class") nil nil))
+                nil [2629 3029])
+            ("mysqlbinlog_module_entry" variable (:type ("zend_module_entry" type (:type "class") nil nil)) nil [3077 3646])
+            ("PHP_MINIT_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("mysqlbinlog" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4501 4513]))                  
+                :type "int")
+                nil [4482 8392])
+            ("PHP_MSHUTDOWN_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("mysqlbinlog" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8461 8473]))                  
+                :type "int")
+                nil [8438 8573])
+            ("PHP_RINIT_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("mysqlbinlog" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8689 8701]))                  
+                :type "int")
+                nil [8670 8722])
+            ("PHP_RSHUTDOWN_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("mysqlbinlog" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8844 8856]))                  
+                :type "int")
+                nil [8821 8877])
+            ("PHP_MINFO_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("mysqlbinlog" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8938 8950]))                  
+                :type "int")
+                nil [8919 9450])
+            ("binlog_destruction_handler" function
+               (:arguments 
+                  ( ("rsrc" variable
+                       (:pointer 1
+                        :type ("zend_rsrc_list_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9584 9620])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9611 9621]))                  
+                :type "void")
+                nil [9552 9736])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("binlog_connect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9761 9776]))                  
+                :type "int")
+                nil [9748 10331])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("binlog_disconnect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10346 10364]))                  
+                :type "int")
+                nil [10333 10860])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("binlog_wait_for_next_event" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10875 10902]))                  
+                :type "int")
+                nil [10862 19360])
+            ("proc_event" function
+               (:arguments 
+                  ( ("fields" variable
+                       (:reference 1
+                        :type ("mysql::Row_of_fields" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19378 19407])
+                    ("" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19408 19426])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19426 19427]))                  
+                :type "void")
+                nil [19362 20541])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("binlog_set_position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20556 20576]))                  
+                :type "int")
+                nil [20543 21568])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("binlog_get_position" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21583 21603]))                  
+                :type "int")
+                nil [21570 22338])
+            ("in_watch_wild_tables" function
+               (:arguments 
+                  ( ("tbl" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [22366 22376])
+                    ("tbl_len" variable (:type "int") (reparse-symbol arg-sub-list) [22377 22389])
+                    ("tbl_given" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22390 22421])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22412 22422]))                  
+                :type "bool")
+                nil [22340 22982]))          
+    :file "mysqlbinlog.cpp"
+    :pointmax 23089
+    :fsize 23096
+    :lastmodtime '(21082 50593 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("BINLOG_LINK_DESC" . ((string "\"MySQL Binlog 连接句柄\"" 2334 . 2353)))
+          )
+
+    )
+   )
+  :file "!home!work!git!mm!php-binlog!ext!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

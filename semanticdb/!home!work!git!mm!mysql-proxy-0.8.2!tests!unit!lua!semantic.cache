@@ -1,0 +1,26 @@
+;; Object lua/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lua/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("TESTS" variable (:default-value ("proxy-test.lua" "active-queries.lua" "proxy-auto-config.lua" "proxy-commands.lua" "proxy-tokenizer.lua" "proxy-parser.lua" "mysql-proto.lua" "chassis.lua")) nil [1 203])
+            ("TESTS_ENVIRONMENT" variable (:default-value ("LUA_PATH=\"${top_srcdir}/lib/?.lua\"" "LUA_CPATH=\".libs/?.@DYNLIB_LUA_SUFFIX@;${top_builddir}/lib/.libs/?.@DYNLIB_LUA_SUFFIX@\"" "@DYNLIB_PATH_VAR@=\"${top_builddir}/src/.libs/:${@DYNLIB_PATH_VAR@}\"" "${builddir}/lua-runner")) nil [204 450])
+            ("check_PROGRAMS" variable (:default-value ("lua-runner")) nil [452 478])
+            ("lua_runner_SOURCES" variable (:default-value ("lua_runner.c")) nil [479 511])
+            ("lua_runner_LDFLAGS" variable (:default-value ("${LUA_LDFLAGS}")) nil [511 545])
+            ("lua_runner_LDADD" variable (:default-value ("${LUA_LIBS}")) nil [545 574])
+            ("lua_runner_CFLAGS" variable (:default-value ("${LUA_CFLAGS}")) nil [574 606])
+            ("EXTRA_DIST" variable (:default-value ("$(TESTS)" "CMakeLists.txt")) nil [607 642]))          
+    :file "Makefile.am"
+    :pointmax 642
+    :fsize 641
+    :lastmodtime '(21022 63839 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!git!mm!mysql-proxy-0.8.2!tests!unit!lua!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,27 @@
+;; Object global/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "global/"
+  :tables (list 
+   (semanticdb-table "config.js"
+    :major-mode 'js-mode
+    :tags nil
+    :file "config.js"
+    :pointmax 462
+    :fsize 469
+    :lastmodtime '(21255 30669 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "init.js"
+    :major-mode 'js-mode
+    :tags nil
+    :file "init.js"
+    :pointmax 496
+    :fsize 531
+    :lastmodtime '(21255 25766 0 0)
+    :unmatched-syntax '((VARIABLE 367 . 373) (FUNCTION 391 . 399) (PAREN_BLOCK 399 . 401) (VARIABLE 228 . 229) (PAREN_BLOCK 247 . 301) (VARIABLE 185 . 193) (PAREN_BLOCK 203 . 225) (PAREN_BLOCK 24 . 167) (DOT 21 . 22) (PAREN_BLOCK 13 . 21) (VARIABLE 366 . 372) (FUNCTION 390 . 398) (PAREN_BLOCK 398 . 400) (VARIABLE 305 . 306) (PAREN_BLOCK 324 . 361) (VARIABLE 185 . 193) (PAREN_BLOCK 203 . 225) (PAREN_BLOCK 24 . 167) (DOT 21 . 22) (PAREN_BLOCK 13 . 21))
+    )
+   )
+  :file "!home!work!git!phalcon-framework!skeleton!public!js!global!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

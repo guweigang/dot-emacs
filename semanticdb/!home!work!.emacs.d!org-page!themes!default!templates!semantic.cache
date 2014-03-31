@@ -1,0 +1,54 @@
+;; Object templates/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "templates/"
+  :tables (list 
+   (semanticdb-table "template.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("{{page-title}}" section nil nil [37 396])
+            ("}}" section nil nil [396 466])
+            ("{{site-main-title}}" section (:members 
+              ( ("{{site-main-title}}" section (:members 
+                  ( ("{{site-main-title}}" anchor nil nil [536 539])
+                    ("{{site-sub-title}}" section (:members 
+                      ( ("Blog" anchor nil nil [701 704])
+                        ("Wiki" anchor nil nil [765 768])
+                        ("Tags" anchor nil nil [829 832])
+                        ("About" anchor nil nil [893 896]))                      ) nil [585 1582]))                  ) nil [532 1582])
+                ("{{title}}" section nil nil [1582 2134])
+                ("Comments" section nil nil [2134 2213]))              ) nil [466 2213])
+            ("//var disqus_developer = 1;
+          var disqus_identifier = \"{{disqus-id}}\";
+          var disqus_url = \"{{disqus-url}}\";
+          var disqus_shortname = '{{disqus-shortname}}';
+
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();" section (:members 
+              ( ("comments powered by Disqus." anchor nil nil [2893 2896])
+                ("comments powered by <span class=\"logo-disqus\">Disqus" anchor nil nil [2986 2989]))              ) nil [2213 3173])
+            ("var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', '{{google-analytics-id}}']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();" section (:members 
+              ( ("{{author}}" anchor nil nil [3921 3924])
+                ("org-page" anchor nil nil [4020 4023]))              ) nil [3173 4150]))          
+    :file "template.html"
+    :pointmax 4150
+    :fsize 4149
+    :lastmodtime '(20914 51178 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!.emacs.d!org-page!themes!default!templates!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

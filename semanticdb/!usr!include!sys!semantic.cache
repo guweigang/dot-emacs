@@ -1,0 +1,98 @@
+;; Object sys/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "sys/"
+  :tables (list 
+   (semanticdb-table "cdefs.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_SYS_CDEFS_H" variable (:constant-flag t) nil [898 910])
+            ("features.h" include (:system-flag t) nil [987 1009])
+            ("__THROW" variable (:constant-flag t) nil [2032 2039])
+            ("__NTH" variable (:constant-flag t) nil [2051 2056])
+            ("__P" variable (:constant-flag t) nil [2447 2450])
+            ("__PMT" variable (:constant-flag t) nil [2470 2475])
+            ("__CONCAT" variable (:constant-flag t) nil [2601 2609])
+            ("__STRING" variable (:constant-flag t) nil [2630 2638])
+            ("__ptr_t" variable (:constant-flag t) nil [2724 2731])
+            ("__long_double_t" variable (:constant-flag t) nil [2747 2762])
+            ("__BEGIN_DECLS" variable (:constant-flag t) nil [2875 2888])
+            ("__END_DECLS" variable (:constant-flag t) nil [2911 2922])
+            ("__BEGIN_NAMESPACE_STD" variable (:constant-flag t) nil [3800 3821])
+            ("__END_NAMESPACE_STD" variable (:constant-flag t) nil [3831 3850])
+            ("__USING_NAMESPACE_STD" variable (:constant-flag t) nil [3860 3881])
+            ("__BEGIN_NAMESPACE_C99" variable (:constant-flag t) nil [3897 3918])
+            ("__END_NAMESPACE_C99" variable (:constant-flag t) nil [3928 3947])
+            ("__USING_NAMESPACE_C99" variable (:constant-flag t) nil [3957 3978])
+            ("__bounded" variable (:constant-flag t) nil [4069 4078])
+            ("__unbounded" variable (:constant-flag t) nil [4102 4113])
+            ("__ptrvalue" variable (:constant-flag t) nil [4137 4147])
+            ("__bos" variable (:constant-flag t) nil [4203 4208])
+            ("__bos0" variable (:constant-flag t) nil [4275 4281])
+            ("__flexarr" variable (:constant-flag t) nil [4489 4498])
+            ("__REDIRECT" variable (:constant-flag t) nil [5234 5244])
+            ("__REDIRECT_NTH" variable (:constant-flag t) nil [5335 5349])
+            ("__ASMNAME" variable (:constant-flag t) nil [5549 5558])
+            ("__ASMNAME2" variable (:constant-flag t) nil [5618 5628])
+            ("__attribute_malloc__" variable (:constant-flag t) nil [6401 6421])
+            ("__attribute_pure__" variable (:constant-flag t) nil [6752 6770])
+            ("__attribute_used__" variable (:constant-flag t) nil [7162 7180])
+            ("__attribute_noinline__" variable (:constant-flag t) nil [7219 7241])
+            ("__attribute_deprecated__" variable (:constant-flag t) nil [7417 7441])
+            ("__attribute_format_arg__" variable (:constant-flag t) nil [7985 8009])
+            ("__attribute_format_strfmon__" variable (:constant-flag t) nil [8397 8425])
+            ("__nonnull" variable (:constant-flag t) nil [8653 8662])
+            ("__restrict_arr" variable (:constant-flag t) nil [9339 9353]))          
+    :file "cdefs.h"
+    :pointmax 9634
+    :fsize 9633
+    :lastmodtime '(20681 8975 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("__ptrvalue")
+          ("__ASMNAME" (spp-arg-list ("cname") 5558 . 5565) . ((symbol "__ASMNAME2" 5567 . 5577) (semantic-list "(__USER_LABEL_PREFIX__, cname)" 5578 . 5608)))
+          ("__flexarr" . ((semantic-list "[0]" 4499 . 4502)))
+          ("__nonnull" (spp-arg-list ("params") 8662 . 8670))
+          ("__NTH" (spp-arg-list ("fct") 2056 . 2061) . ((symbol "fct" 2062 . 2065)))
+          ("__long_double_t" . ((LONG "long" 2764 . 2768) (DOUBLE "double" 2769 . 2775)))
+          ("__REDIRECT" (spp-arg-list ("name" "proto" "alias") 5244 . 5264) . 
+              ((symbol "name" 5265 . 5269) (symbol "proto" 5270 . 5275) (symbol "__asm__" 5276 . 5283) (semantic-list "(__ASMNAME (#alias))" 5284 . 5304)))
+          ("__END_DECLS" . ((close-paren "}" 2923 . 2924)))
+          ("__bos0" (spp-arg-list ("ptr") 4281 . 4286) . ((symbol "__builtin_object_size" 4287 . 4308) (semantic-list "(ptr, 0)" 4309 . 4317)))
+          ("__attribute_pure__")
+          ("__STRING" (spp-arg-list ("x") 2638 . 2641) . ((punctuation "#" 2642 . 2643) (symbol "x" 2643 . 2644)))
+          ("__attribute_noinline__")
+          ("__bos" (spp-arg-list ("ptr") 4208 . 4213) . ((symbol "__builtin_object_size" 4214 . 4235) (semantic-list "(ptr, __USE_FORTIFY_LEVEL > 1)" 4236 . 4266)))
+          ("_SYS_CDEFS_H" . ((number "1" 911 . 912)))
+          ("__ptr_t" . ((VOID "void" 2732 . 2736) (punctuation "*" 2737 . 2738)))
+          ("__attribute_used__" . ((symbol "__attribute__" 7181 . 7194) (semantic-list "((__unused__))" 7195 . 7209)))
+          ("__THROW")
+          ("__CONCAT" (spp-arg-list ("x" "y") 2609 . 2614) . ((spp-symbol-merge ((symbol "x" 2615 . 2616) (symbol "y" 2620 . 2621)) 2615 . 2621)))
+          ("__BEGIN_DECLS" . 
+              ((EXTERN "extern" 2889 . 2895) (string "\"C\"" 2896 . 2899) (semantic-list "{" 2900 . 2901)))
+          ("__USING_NAMESPACE_C99" (spp-arg-list ("name") 3978 . 3984))
+          ("__unbounded")
+          ("__BEGIN_NAMESPACE_C99")
+          ("__END_NAMESPACE_C99")
+          ("__bounded")
+          ("__attribute_deprecated__")
+          ("__attribute_format_strfmon__" (spp-arg-list ("a" "b") 8425 . 8430))
+          ("__P" (spp-arg-list ("args") 2450 . 2456) . ((symbol "args" 2457 . 2461)))
+          ("__PMT" (spp-arg-list ("args") 2475 . 2481) . ((symbol "args" 2482 . 2486)))
+          ("__USING_NAMESPACE_STD" (spp-arg-list ("name") 3881 . 3887))
+          ("__ASMNAME2" (spp-arg-list ("prefix" "cname") 5628 . 5643) . 
+              ((symbol "__STRING" 5644 . 5652) (semantic-list "(prefix)" 5653 . 5661) (symbol "cname" 5662 . 5667)))
+          ("__attribute_malloc__")
+          ("__attribute_format_arg__" (spp-arg-list ("x") 8009 . 8012))
+          ("__restrict_arr")
+          ("__BEGIN_NAMESPACE_STD")
+          ("__END_NAMESPACE_STD")
+          ("__REDIRECT_NTH" (spp-arg-list ("name" "proto" "alias") 5349 . 5369) . 
+              ((symbol "name" 5377 . 5381) (symbol "proto" 5382 . 5387) (symbol "__THROW" 5388 . 5395) (symbol "__asm__" 5396 . 5403) (semantic-list "(__ASMNAME (#alias))" 5404 . 5424)))
+          )
+
+    )
+   )
+  :file "!usr!include!sys!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

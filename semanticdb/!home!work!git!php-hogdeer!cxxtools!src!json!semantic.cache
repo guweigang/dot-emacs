@@ -1,0 +1,24 @@
+;; Object json/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "json/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("AM_CPPFLAGS" variable (:default-value ("-I$(top_srcdir)/src" "-I$(top_builddir)/include" "-I$(top_srcdir)/include")) nil [1 85])
+            ("lib_LTLIBRARIES" variable (:default-value ("libcxxtools-json.la")) nil [86 124])
+            ("noinst_HEADERS" variable (:default-value ("httpclientimpl.h" "httpresponder.h" "responder.h" "rpcclientimpl.h" "rpcserverimpl.h" "scanner.h" "socket.h" "worker.h")) nil [125 271])
+            ("libcxxtools_json_la_SOURCES" variable (:default-value ("httpclient.cpp" "httpclientimpl.cpp" "httpresponder.cpp" "httpservice.cpp" "rpcclient.cpp" "rpcclientimpl.cpp" "responder.cpp" "rpcserver.cpp" "rpcserverimpl.cpp" "scanner.cpp" "socket.cpp" "worker.cpp")) nil [272 518])
+            ("libcxxtools_json_la_LIBADD" variable (:default-value ("$(top_builddir)/src/libcxxtools.la" "$(top_builddir)/src/http/libcxxtools-http.la")) nil [519 628])
+            ("libcxxtools_json_la_LDFLAGS" variable (:default-value ("-version-info" "@sonumber@" "@SHARED_LIB_FLAG@")) nil [629 702]))          
+    :file "Makefile.am"
+    :pointmax 703
+    :fsize 702
+    :lastmodtime '(20859 30360 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!git!php-hogdeer!cxxtools!src!json!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,444 @@
+;; Object user/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "user/"
+  :tables (list 
+   (semanticdb-table "changeinfo.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("DNT_ACCESS" variable (:constant-flag t) nil [9 19])
+            ("DNT_MODIFY" variable (:constant-flag t) nil [30 40])
+            ("DNT_CREATE" variable (:constant-flag t) nil [51 61])
+            ("DNT_DELETE" variable (:constant-flag t) nil [72 82])
+            ("DNT_RENAME" variable (:constant-flag t) nil [93 103])
+            ("DNT_ATTRIB" variable (:constant-flag t) nil [114 124])
+            ("DNT_REGISTER" variable (:constant-flag t) nil [135 147])
+            ("DNT_UNREGISTER" variable (:constant-flag t) nil [158 172])
+            ("DNT_MMAP" variable (:constant-flag t) nil [183 191])
+            ("DNT_MUNMAP" variable (:constant-flag t) nil [202 212])
+            ("DNT_MOUNT" variable (:constant-flag t) nil [223 232])
+            ("DNT_UNMOUNT" variable (:constant-flag t) nil [244 255])
+            ("block" type
+               (:members 
+                  ( ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [276 288])
+                    ("data" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [290 320]))                  
+                :type "struct")
+                nil [260 323])
+            ("changeinfo" type
+               (:members 
+                  ( ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [562 574])
+                    ("type" variable (:type "unsigned long") (reparse-symbol classsubparts) [576 595])
+                    ("pid" variable (:type ("pid_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [597 607])
+                    ("id" variable (:type "unsigned long") (reparse-symbol classsubparts) [609 626]))                  
+                :type "struct")
+                nil [529 629])
+            ("registerinfo" type
+               (:members 
+                  ( ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [845 857])
+                    ("type" variable (:type "unsigned long") (reparse-symbol classsubparts) [859 878])
+                    ("pid" variable (:type ("pid_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [880 890])
+                    ("id" variable (:type "unsigned long") (reparse-symbol classsubparts) [892 909])
+                    ("parentid" variable (:type "unsigned long") (reparse-symbol classsubparts) [911 934])
+                    ("text" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [936 1007]))                  
+                :type "struct")
+                nil [805 1010])
+            ("createinfo" type
+               (:members 
+                  ( ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1074 1086])
+                    ("type" variable (:type "unsigned long") (reparse-symbol classsubparts) [1088 1107])
+                    ("pid" variable (:type ("pid_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1109 1119])
+                    ("id" variable (:type "unsigned long") (reparse-symbol classsubparts) [1121 1138])
+                    ("mode" variable (:type "int") (reparse-symbol classsubparts) [1140 1149])
+                    ("dev" variable (:type ("dev_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1151 1161]))                  
+                :type "struct")
+                nil [1053 1164])
+            ("attribinfo" type
+               (:members 
+                  ( ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1283 1295])
+                    ("type" variable (:type "unsigned long") (reparse-symbol classsubparts) [1297 1316])
+                    ("pid" variable (:type ("pid_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1318 1328])
+                    ("id" variable (:type "unsigned long") (reparse-symbol classsubparts) [1330 1347])
+                    ("ia_valid" variable (:type "unsigned int") (reparse-symbol classsubparts) [1349 1371]))                  
+                :type "struct")
+                nil [1262 1374])
+            ("rwinfo" type
+               (:members 
+                  ( ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1443 1455])
+                    ("type" variable (:type "unsigned long") (reparse-symbol classsubparts) [1457 1476])
+                    ("pid" variable (:type ("pid_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1478 1488])
+                    ("id" variable (:type "unsigned long") (reparse-symbol classsubparts) [1490 1507])
+                    ("foff" variable (:type ("loff_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1509 1521])
+                    ("fsize" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1523 1536]))                  
+                :type "struct")
+                nil [1426 1539]))          
+    :file "changeinfo.h"
+    :pointmax 3648
+    :fsize 3647
+    :lastmodtime '(16478 4568 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("DNT_MMAP" . ((number "8" 192 . 193)))
+          ("DNT_MODIFY" . ((number "1" 41 . 42)))
+          ("DNT_CREATE" . ((number "2" 62 . 63)))
+          ("DNT_DELETE" . ((number "3" 83 . 84)))
+          ("DNT_REGISTER" . ((number "6" 148 . 149)))
+          ("DNT_UNREGISTER" . ((number "7" 173 . 174)))
+          ("DNT_MUNMAP" . ((number "9" 213 . 214)))
+          ("DNT_ATTRIB" . ((number "5" 125 . 126)))
+          ("DNT_MOUNT" . ((number "10" 233 . 235)))
+          ("DNT_UNMOUNT" . ((number "11" 256 . 258)))
+          ("DNT_RENAME" . ((number "4" 104 . 105)))
+          ("DNT_ACCESS" . ((number "0" 20 . 21)))
+          )
+
+    )
+   (semanticdb-table "dnotify.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("DNT_ACCESS" variable (:constant-flag t) nil [206 216])
+            ("DNT_MODIFY" variable (:constant-flag t) nil [227 237])
+            ("DNT_CREATE" variable (:constant-flag t) nil [248 258])
+            ("DNT_DELETE" variable (:constant-flag t) nil [269 279])
+            ("DNT_RENAME" variable (:constant-flag t) nil [290 300])
+            ("DNT_ATTRIB" variable (:constant-flag t) nil [311 321])
+            ("DNT_REGISTER" variable (:constant-flag t) nil [332 344])
+            ("DNT_UNREGISTER" variable (:constant-flag t) nil [355 369])
+            ("DNT_MMAP" variable (:constant-flag t) nil [380 388])
+            ("DNT_MUNMAP" variable (:constant-flag t) nil [399 409])
+            ("DNT_MOUNT" variable (:constant-flag t) nil [420 429])
+            ("DNT_UMOUNT" variable (:constant-flag t) nil [441 451])
+            ("DN_ACCESS" variable (:constant-flag t) nil [464 473])
+            ("DN_MODIFY" variable (:constant-flag t) nil [513 522])
+            ("DN_CREATE" variable (:constant-flag t) nil [562 571])
+            ("DN_DELETE" variable (:constant-flag t) nil [610 619])
+            ("DN_RENAME" variable (:constant-flag t) nil [658 667])
+            ("DN_ATTRIB" variable (:constant-flag t) nil [706 715])
+            ("DN_REGISTER" variable (:constant-flag t) nil [765 776])
+            ("DN_UNREGISTER" variable (:constant-flag t) nil [832 845])
+            ("DN_MMAP" variable (:constant-flag t) nil [889 896])
+            ("DN_MUNMAP" variable (:constant-flag t) nil [920 929])
+            ("DN_MOUNT" variable (:constant-flag t) nil [954 962])
+            ("DN_UMOUNT" variable (:constant-flag t) nil [986 995])
+            ("DN_EXTENDED" variable (:constant-flag t) nil [1021 1032])
+            ("DN_RECURSIVE" variable (:constant-flag t) nil [1080 1092])
+            ("DN_MULTISHOT" variable (:constant-flag t) nil [1141 1153])
+            ("BUFFER_SIZE" variable (:constant-flag t) nil [1202 1213]))          
+    :file "dnotify.h"
+    :pointmax 1222
+    :fsize 1222
+    :lastmodtime '(16478 2227 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("DN_RECURSIVE" . ((number "0x40000000" 1093 . 1103)))
+          ("DN_MULTISHOT" . ((number "0x80000000" 1154 . 1164)))
+          ("DNT_MMAP" . ((number "8" 389 . 390)))
+          ("DN_RENAME" . ((number "0x00000010" 668 . 678)))
+          ("DNT_MODIFY" . ((number "1" 238 . 239)))
+          ("DNT_CREATE" . ((number "2" 259 . 260)))
+          ("DNT_DELETE" . ((number "3" 280 . 281)))
+          ("DNT_REGISTER" . ((number "6" 345 . 346)))
+          ("DNT_UNREGISTER" . ((number "7" 370 . 371)))
+          ("DNT_MUNMAP" . ((number "9" 410 . 411)))
+          ("DN_ACCESS" . ((number "0x00000001" 474 . 484)))
+          ("DN_UMOUNT" . ((semantic-list "(1<<DNT_UMOUNT)" 996 . 1011)))
+          ("BUFFER_SIZE" . 
+              ((number "4096" 1214 . 1218) (punctuation "*" 1218 . 1219) (number "10" 1219 . 1221)))
+          ("DNT_ATTRIB" . ((number "5" 322 . 323)))
+          ("DNT_MOUNT" . ((number "10" 430 . 432)))
+          ("DN_REGISTER" . ((number "0x00000040" 777 . 787)))
+          ("DN_EXTENDED" . ((number "0x20000000" 1033 . 1043)))
+          ("DN_MMAP" . ((semantic-list "(1<<DNT_MMAP)" 898 . 911)))
+          ("DN_MOUNT" . ((semantic-list "(1<<DNT_MOUNT)" 963 . 977)))
+          ("DNT_RENAME" . ((number "4" 301 . 302)))
+          ("DN_MODIFY" . ((number "0x00000002" 523 . 533)))
+          ("DN_CREATE" . ((number "0x00000004" 572 . 582)))
+          ("DN_DELETE" . ((number "0x00000008" 620 . 630)))
+          ("DN_UNREGISTER" . ((number "0x00000080" 846 . 856)))
+          ("DN_MUNMAP" . ((semantic-list "(1<<DNT_MUNMAP)" 930 . 945)))
+          ("DNT_ACCESS" . ((number "0" 217 . 218)))
+          ("DNT_UMOUNT" . ((number "11" 452 . 454)))
+          ("DN_ATTRIB" . ((number "0x00000020" 716 . 726)))
+          )
+
+    )
+   (semanticdb-table "dnotify.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("map" include (:system-flag t) nil [1 15])
+            ("iostream" include (:system-flag t) nil [16 35])
+            ("string" include (:system-flag t) nil [36 53])
+            ("sstream" include (:system-flag t) nil [54 72])
+            ("fcntl.h" include (:system-flag t) nil [73 91])
+            ("signal.h" include (:system-flag t) nil [92 111])
+            ("stdio.h" include (:system-flag t) nil [112 130])
+            ("dnotify.h" include nil nil [131 151])
+            ("changeinfo.h" include nil nil [152 175])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [177 197])
+            ("changecb" variable
+               (:functionpointer-flag t
+                :type "void")
+                nil [207 244])
+            ("names" variable (:type ("map" type
+                 (:template-specifier 
+                    ( ("int" type nil nil nil)
+                      ("string" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [246 268])
+            ("parents" variable (:type ("map" type
+                 (:template-specifier 
+                    ( ("int" type nil nil nil)
+                      ("int" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [269 290])
+            ("cblist" variable (:type ("map" type
+                 (:template-specifier 
+                    ( ("int" type nil nil nil)
+                      ("changecb" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [291 316])
+            ("handler" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("sig" variable (:type "int") (reparse-symbol arg-sub-list) [338 346])
+                    ("si" variable
+                       (:pointer 1
+                        :type ("siginfo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [347 361])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [362 373]))                  
+                :type "void")
+                nil [318 376])
+            ("inttostring" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [404 411]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [378 475])
+            ("getnumericpath" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [506 513]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [477 710])
+            ("getpath" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("id" variable (:type "int") (reparse-symbol arg-sub-list) [734 741]))                  
+                :type ("string" type (:type "class") nil nil))
+                nil [712 1003])
+            ("register_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("changeinfo" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1029 1053]))                  
+                :type "void")
+                nil [1005 1283])
+            ("create_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("changeinfo" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1307 1331]))                  
+                :type "void")
+                nil [1285 1429])
+            ("delete_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("changeinfo" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1453 1477]))                  
+                :type "void")
+                nil [1431 1575])
+            ("mount_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("changeinfo" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1598 1622]))                  
+                :type "void")
+                nil [1577 1718])
+            ("umount_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("changeinfo" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1742 1766]))                  
+                :type "void")
+                nil [1720 1864])
+            ("mmap_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("changeinfo" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1886 1910]))                  
+                :type "void")
+                nil [1866 2006])
+            ("access_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("changeinfo" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2030 2054]))                  
+                :type "void")
+                nil [2008 2263])
+            ("modify_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("changeinfo" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2287 2311]))                  
+                :type "void")
+                nil [2265 2521])
+            ("attrib_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("changeinfo" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2545 2569]))                  
+                :type "void")
+                nil [2523 2767])
+            ("unregister_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("changeinfo" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2795 2819]))                  
+                :type "void")
+                nil [2769 2921])
+            ("default_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("info" variable
+                       (:pointer 1
+                        :type ("changeinfo" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2946 2970]))                  
+                :type "void")
+                nil [2923 3070])
+            ("main" function
+               (:arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [3081 3087])
+                    ("args" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3087 3105]))                  
+                :type "int")
+                nil [3072 4526]))          
+    :file "dnotify.cpp"
+    :pointmax 4450
+    :fsize 4526
+    :lastmodtime '(21030 38382 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "fcntl.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_LINUX_FCNTL_H" variable (:constant-flag t) nil [32 46])
+            ("asm/fcntl.h" include (:system-flag t) nil [48 70])
+            ("F_SETLEASE" variable (:constant-flag t) nil [80 90])
+            ("F_GETLEASE" variable (:constant-flag t) nil [125 135])
+            ("F_NOTIFY" variable (:constant-flag t) nil [263 271])
+            ("F_GETNOTIFY" variable (:constant-flag t) nil [306 317])
+            ("DN_ACCESS" variable (:constant-flag t) nil [419 428])
+            ("DN_MODIFY" variable (:constant-flag t) nil [468 477])
+            ("DN_CREATE" variable (:constant-flag t) nil [517 526])
+            ("DN_DELETE" variable (:constant-flag t) nil [565 574])
+            ("DN_RENAME" variable (:constant-flag t) nil [613 622])
+            ("DN_ATTRIB" variable (:constant-flag t) nil [661 670])
+            ("DN_REGISTER" variable (:constant-flag t) nil [719 730])
+            ("DN_UNREGISTER" variable (:constant-flag t) nil [751 764])
+            ("DN_MMAP" variable (:constant-flag t) nil [784 791])
+            ("DN_MUNMAP" variable (:constant-flag t) nil [812 821])
+            ("DN_MOUNT" variable (:constant-flag t) nil [841 849])
+            ("DN_UNMOUNT" variable (:constant-flag t) nil [869 879])
+            ("DN_EXTENDED" variable (:constant-flag t) nil [900 911])
+            ("DN_RECURSIVE" variable (:constant-flag t) nil [958 970])
+            ("DN_MULTISHOT" variable (:constant-flag t) nil [1019 1031]))          
+    :file "fcntl.h"
+    :pointmax 1862
+    :fsize 1861
+    :lastmodtime '(16478 2062 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("_LINUX_FCNTL_H")
+          ("F_SETLEASE" . ((semantic-list "(F_LINUX_SPECIFIC_BASE+0)" 91 . 116)))
+          ("DN_RECURSIVE" . ((number "0x40000000" 971 . 981)))
+          ("DN_MULTISHOT" . ((number "0x80000000" 1032 . 1042)))
+          ("DN_RENAME" . ((number "0x00000010" 623 . 633)))
+          ("F_GETNOTIFY" . ((semantic-list "(F_LINUX_SPECIFIC_BASE+3)" 318 . 343)))
+          ("F_GETLEASE" . ((semantic-list "(F_LINUX_SPECIFIC_BASE+1)" 136 . 161)))
+          ("DN_ACCESS" . ((number "0x00000001" 429 . 439)))
+          ("DN_REGISTER" . ((number "0x00000040" 731 . 741)))
+          ("DN_EXTENDED" . ((number "0x20000000" 912 . 922)))
+          ("DN_MMAP" . ((number "0x00000100" 793 . 803)))
+          ("DN_MOUNT" . ((number "0x00000400" 850 . 860)))
+          ("F_NOTIFY" . ((semantic-list "(F_LINUX_SPECIFIC_BASE+2)" 272 . 297)))
+          ("DN_MODIFY" . ((number "0x00000002" 478 . 488)))
+          ("DN_CREATE" . ((number "0x00000004" 527 . 537)))
+          ("DN_DELETE" . ((number "0x00000008" 575 . 585)))
+          ("DN_UNREGISTER" . ((number "0x00000080" 765 . 775)))
+          ("DN_MUNMAP" . ((number "0x00000200" 822 . 832)))
+          ("DN_UNMOUNT" . ((number "0x00000800" 880 . 890)))
+          ("DN_ATTRIB" . ((number "0x00000020" 671 . 681)))
+          )
+
+    )
+   )
+  :file "!home!work!source!test!c!user!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,37 @@
+;; Object libmysql/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "libmysql/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("target" variable (:default-value ("libmysqlclient.la")) nil [915 942])
+            ("target_defs" variable (:default-value ("-DMYSQL_CLIENT_NO_THREADS" "-DDONT_USE_RAID" "@LIB_EXTRA_CCFLAGS@")) nil [942 1018])
+            ("LIBS" variable (:default-value ("@CLIENT_LIBS@")) nil [1018 1041])
+            ("INCLUDES" variable (:default-value ("-I$(top_builddir)/include" "-I$(top_srcdir)/include" "$(openssl_includes)" "@ZLIB_INCLUDES@")) nil [1041 1142])
+            ("$(srcdir)/Makefile.shared" include nil nil [1143 1177])
+            ("libmysqlclient_la_SOURCES" variable (:default-value ("$(target_sources)")) nil [1178 1224])
+            ("libmysqlclient_la_LIBADD" variable (:default-value ("$(target_libadd)" "$(yassl_las)")) nil [1224 1281])
+            ("libmysqlclient_la_LDFLAGS" variable (:default-value ("$(target_ldflags)")) nil [1281 1327])
+            ("EXTRA_DIST" variable (:default-value ("Makefile.shared" "libmysql.def" "dll.c" "CMakeLists.txt")) nil [1327 1390])
+            ("noinst_HEADERS" variable (:default-value ("client_settings.h")) nil [1390 1425])
+            ("link_sources" function nil nil [1426 2537])
+            ("nh" variable (:default-value ("my_global.h" "config-win32.h" "dbug.h" "errmsg.h" "m_ctype.h" "m_string.h" "my_alarm.h" "my_config.h" "my_dir.h" "my_list.h" "my_net.h" "my_sys.h" "mysql.h" "mysql_com.h" "mysql_version.h" "mysqld_error.h" "mysys_err.h" "my_pthread.h" "thr_alarm.h" "violite.h" "hash.h" "sql_common.h" "../libmysql/client_settings.h")) nil [2868 3181])
+            ("lobjs" variable (:default-value ("$(mysysobjects1)" "$(dbugobjects)" "$(mystringsobjects)" "$(sqlobjects)")) nil [3218 3292])
+            ("do-lib-dist" function nil nil [3293 4223]))          
+    :file "Makefile.am"
+    :pointmax 4276
+    :fsize 4275
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax '((symbol 4267 . 4275) (punctuation 4266 . 4267) (punctuation 4265 . 4266) (symbol 4264 . 4265) (bol 4264 . 4264))
+    )
+   (semanticdb-table "Makefile.shared"
+    :file "Makefile.shared"
+    :fsize 4746
+    :lastmodtime '(20958 46488 0 0)
+    )
+   )
+  :file "!home!work!git!mm!mysql-5.1.71!libmysql!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

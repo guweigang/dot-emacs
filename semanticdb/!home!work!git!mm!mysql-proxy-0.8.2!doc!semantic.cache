@@ -1,0 +1,25 @@
+;; Object doc/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "doc/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("SUBDIRS" variable (:default-value ("chapter")) nil [1 17])
+            ("EXTRA_DIST" variable (:default-value ("lua-classes.dot" "architecture.dot" "architecture-overview.dot" "architecture.txt" "core.txt" "chassis.txt" "plugins.txt" "protocol.txt" "tests.txt" "scripting.txt" "lifecycle.msc")) nil [18 279])
+            ("clean-local" function nil nil [280 307])
+            ("html-local" function (:arguments ("book.html" "protocol.html" "scripting.html")) nil [308 359])
+            ("book.html" function (:arguments ("book.txt" "chapter/scripting.txt" "chapter/protocol.txt")) nil [432 514])
+            ("protocol.html" function (:arguments ("protocol.txt" "chapter/protocol.txt")) nil [515 583])
+            ("scripting.html" function (:arguments ("scripting.txt" "chapter/scripting.txt")) nil [584 655]))          
+    :file "Makefile.am"
+    :pointmax 656
+    :fsize 655
+    :lastmodtime '(21022 63839 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!git!mm!mysql-proxy-0.8.2!doc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

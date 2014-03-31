@@ -1,0 +1,1473 @@
+;; Object sqlite/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "sqlite/"
+  :tables (list 
+   (semanticdb-table "sqlite.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("PHP_SQLITE_MODULE_VERSION" variable (:constant-flag t) nil [1366 1391])
+            ("php.h" include nil nil [1403 1419])
+            ("php_ini.h" include nil nil [1420 1440])
+            ("ext/standard/info.h" include nil nil [1441 1471])
+            ("php_sqlite.h" include nil nil [1569 1592])
+            ("sqlite.h" include (:system-flag t) nil [1682 1701])
+            ("zend_exceptions.h" include nil nil [1703 1731])
+            ("zend_interfaces.h" include nil nil [1732 1760])
+            ("safe_emalloc" variable (:constant-flag t) nil [2144 2156])
+            ("PHP_GINIT_FUNCTION" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("sqlite" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2255 2262]))                  
+                :type "int")
+                nil [2229 2263])
+            ("sqlite_encode_binary" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("in" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [2427 2451])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [2452 2458])
+                    ("out" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [2459 2478]))                  
+                :type "int")
+                nil [2395 2479])
+            ("sqlite_decode_binary" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("in" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [2512 2536])
+                    ("out" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [2537 2556]))                  
+                :type "int")
+                nil [2480 2557])
+            ("php_sqlite_encode_binary" variable (:constant-flag t) nil [2567 2591])
+            ("php_sqlite_decode_binary" variable (:constant-flag t) nil [2685 2709])
+            ("sqlite_count_elements" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2839 2852])
+                    ("count" variable
+                       (:pointer 1
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [2853 2874])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2865 2875]))                  
+                :type "int")
+                nil [2806 2876])
+            ("le_sqlite_pdb" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [2878 2935])
+            ("le_sqlite_result" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [2878 2935])
+            ("le_sqlite_db" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [2878 2935])
+            ("php_sqlite_strtoupper" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2978 2986]))                  
+                :type "void")
+                nil [2937 3040])
+            ("php_sqlite_strtolower" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3083 3091]))                  
+                :type "void")
+                nil [3042 3145])
+            ("DB_FROM_ZVAL" variable (:constant-flag t) nil [3360 3372])
+            ("DB_FROM_OBJECT" variable (:constant-flag t) nil [3495 3509])
+            ("RES_FROM_OBJECT_RESTORE_ERH" variable (:constant-flag t) nil [3772 3799])
+            ("RES_FROM_OBJECT" variable (:constant-flag t) nil [4165 4180])
+            ("PHP_SQLITE_EMPTY_QUERY" variable (:constant-flag t) nil [4250 4272])
+            ("php_sqlite_result" type
+               (:members 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type ("php_sqlite_db" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4433 4458])
+                    ("vm" variable
+                       (:pointer 1
+                        :type ("sqlite_vm" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4460 4474])
+                    ("buffered" variable (:type "int") (reparse-symbol classsubparts) [4476 4489])
+                    ("ncolumns" variable (:type "int") (reparse-symbol classsubparts) [4491 4504])
+                    ("nrows" variable (:type "int") (reparse-symbol classsubparts) [4506 4516])
+                    ("curr_row" variable (:type "int") (reparse-symbol classsubparts) [4518 4531])
+                    ("col_names" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol classsubparts) [4533 4550])
+                    ("alloc_rows" variable (:type "int") (reparse-symbol classsubparts) [4552 4567])
+                    ("mode" variable (:type "int") (reparse-symbol classsubparts) [4569 4578])
+                    ("table" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol classsubparts) [4580 4593]))                  
+                :type "struct")
+                nil [4405 4596])
+            ("php_sqlite_db" type
+               (:members 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type ("sqlite" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4622 4633])
+                    ("last_err_code" variable (:type "int") (reparse-symbol classsubparts) [4635 4653])
+                    ("is_persistent" variable (:type ("zend_bool" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4655 4679])
+                    ("rsrc_id" variable (:type "long") (reparse-symbol classsubparts) [4681 4694])
+                    ("callbacks" variable (:type ("HashTable" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4697 4717]))                  
+                :type "struct")
+                nil [4598 4720])
+            ("php_sqlite_agg_functions" type
+               (:members 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type ("php_sqlite_db" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4757 4782])
+                    ("is_valid" variable (:type "int") (reparse-symbol classsubparts) [4784 4797])
+                    ("step" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4799 4810])
+                    ("fini" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4812 4823]))                  
+                :type "struct")
+                nil [4722 4826])
+            ("php_sqlite_fetch_array" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("res" variable
+                       (:pointer 1
+                        :type ("php_sqlite_result" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4863 4893])
+                    ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [4894 4903])
+                    ("decode_binary" variable (:type ("zend_bool" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4904 4928])
+                    ("move_next" variable (:type "int") (reparse-symbol arg-sub-list) [4929 4943])
+                    ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4944 4972])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4963 4973]))                  
+                :type "void")
+                nil [4828 4974])
+            ("php_sqlite_fetch" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("rres" variable
+                       (:pointer 1
+                        :type ("php_sqlite_result" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5003 5043])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5034 5044]))                  
+                :type "int")
+                nil [4975 5045])
+            ("" type
+               (:members 
+                  ( ("PHPSQLITE_ASSOC" variable
+                       (:constant-flag t
+                        :default-value (5072 5073)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5054 5073])
+                    ("PHPSQLITE_NUM" variable
+                       (:constant-flag t
+                        :default-value (5091 5092)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5075 5092])
+                    ("PHPSQLITE_BOTH" variable
+                       (:constant-flag t
+                        :default-value (5111 5142)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [5094 5142]))                  
+                :type "enum")
+                nil [5047 5143])
+            ("sqlite_functions" variable
+               (:dereference 1
+                :constant-flag t
+                :type ("zend_function_entry" type (:type "class") nil nil))
+                nil [13838 16140])
+            ("sqlite_funcs_db" variable
+               (:dereference 1
+                :constant-flag t
+                :type ("zend_function_entry" type (:type "class") nil nil))
+                nil [16142 17545])
+            ("sqlite_funcs_query" variable
+               (:dereference 1
+                :constant-flag t
+                :type ("zend_function_entry" type (:type "class") nil nil))
+                nil [17547 18954])
+            ("sqlite_funcs_ub_query" variable
+               (:dereference 1
+                :constant-flag t
+                :type ("zend_function_entry" type (:type "class") nil nil))
+                nil [18956 19835])
+            ("sqlite_funcs_exception" variable
+               (:dereference 1
+                :constant-flag t
+                :type ("zend_function_entry" type (:type "class") nil nil))
+                nil [19837 19914])
+            ("sqlite_deps" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type ("zend_module_dep" type (:type "class") nil nil))
+                nil [19935 20293])
+            ("sqlite_module_entry" variable (:type ("zend_module_entry" type (:type "class") nil nil)) nil [20295 20856])
+            ("php_sqlite_callback_invalidator" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("funcs" variable
+                       (:pointer 1
+                        :type ("php_sqlite_agg_functions" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20959 21007])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20998 21008]))                  
+                :type "int")
+                nil [20916 21241])
+            ("php_sqlite_callback_dtor" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pDest" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [21281 21293]))                  
+                :type "void")
+                nil [21244 21479])
+            ("ZEND_RSRC_DTOR_FUNC" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("php_sqlite_db_dtor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21508 21527]))                  
+                :type "int")
+                nil [21481 21733])
+            ("real_result_dtor" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("res" variable
+                       (:pointer 1
+                        :type ("php_sqlite_result" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [21764 21803])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21794 21804]))                  
+                :type "void")
+                nil [21735 22404])
+            ("_clean_unfinished_results" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("le" variable
+                       (:pointer 1
+                        :type ("zend_rsrc_list_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22443 22468])
+                    ("db" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [22469 22487])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22478 22488]))                  
+                :type "int")
+                nil [22406 22741])
+            ("ZEND_RSRC_DTOR_FUNC" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("php_sqlite_result_dtor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22770 22793]))                  
+                :type "int")
+                nil [22743 22903])
+            ("php_sqlite_forget_persistent_id_numbers" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("rsrc" variable
+                       (:pointer 1
+                        :type ("zend_rsrc_list_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22956 22992])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22983 22993]))                  
+                :type "int")
+                nil [22905 23448])
+            ("PHP_RSHUTDOWN_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("sqlite" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23473 23480]))                  
+                :type "int")
+                nil [23450 23606])
+            ("php_sqlite_generic_function_callback" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("func" variable
+                       (:pointer 1
+                        :type ("sqlite_func" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23690 23708])
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [23709 23718])
+                    ("argv" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [23719 23737]))                  
+                :type "void")
+                nil [23641 25559])
+            ("php_sqlite_function_callback" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("func" variable
+                       (:pointer 1
+                        :type ("sqlite_func" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25658 25676])
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [25677 25686])
+                    ("argv" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [25687 25705]))                  
+                :type "void")
+                nil [25617 27245])
+            ("php_sqlite_agg_step_function_callback" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("func" variable
+                       (:pointer 1
+                        :type ("sqlite_func" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27369 27387])
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [27388 27397])
+                    ("argv" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [27398 27416]))                  
+                :type "void")
+                nil [27319 28772])
+            ("php_sqlite_agg_fini_function_callback" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("func" variable
+                       (:pointer 1
+                        :type ("sqlite_func" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28900 28918]))                  
+                :type "void")
+                nil [28850 30137])
+            ("php_sqlite_authorizer" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("autharg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [30215 30229])
+                    ("access_type" variable (:type "int") (reparse-symbol arg-sub-list) [30230 30246])
+                    ("arg3" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [30247 30264])
+                    ("arg4" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [30265 30282])
+                    ("arg5" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [30285 30302])
+                    ("arg6" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [30303 30320]))                  
+                :type "int")
+                nil [30182 31086])
+            ("REGISTER_SQLITE_CLASS" variable (:constant-flag t) nil [31140 31161])
+            ("sqlite_ce_exception" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [31656 31709])
+            ("sqlite_ce_db" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [31656 31709])
+            ("sqlite_ce_ub_query" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [31710 31765])
+            ("sqlite_ce_query" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [31710 31765])
+            ("sqlite_object_handlers_db" variable
+               (:typemodifiers ("static")
+                :type ("zend_object_handlers" type (:type "class") nil nil))
+                nil [31767 31821])
+            ("sqlite_object_handlers_query" variable
+               (:typemodifiers ("static")
+                :type ("zend_object_handlers" type (:type "class") nil nil))
+                nil [31822 31879])
+            ("sqlite_object_handlers_ub_query" variable
+               (:typemodifiers ("static")
+                :type ("zend_object_handlers" type (:type "class") nil nil))
+                nil [31880 31940])
+            ("sqlite_object_handlers_exception" variable
+               (:typemodifiers ("static")
+                :type ("zend_object_handlers" type (:type "class") nil nil))
+                nil [31941 32002])
+            ("sqlite_obj_type" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("is_db" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [32020 32026])
+                          ("is_result" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [32028 32039]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [32004 32056])
+            ("sqlite_object" type
+               (:typedef ("_sqlite_object" type (:type "struct") nil nil)
+                :superclasses "_sqlite_object"
+                :type "typedef")
+                nil [32058 32248])
+            ("_sqlite_object" type
+               (:members 
+                  ( ("std" variable (:type ("zend_object" type (:type "class") nil nil)) (reparse-symbol classsubparts) [32091 32113])
+                    ("type" variable (:type ("sqlite_obj_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [32115 32138])
+                    ("u" variable (:type ("" type
+                         (:members 
+                            ( ("db" variable
+                                 (:pointer 1
+                                  :type ("php_sqlite_db" type
+                                       (:prototype t
+                                        :type "struct")
+                                        nil nil))
+                                  (reparse-symbol classsubparts) [32150 32179])
+                              ("res" variable
+                                 (:pointer 1
+                                  :type ("php_sqlite_result" type
+                                       (:prototype t
+                                        :type "struct")
+                                        nil nil))
+                                  (reparse-symbol classsubparts) [32182 32212])
+                              ("ptr" variable
+                                 (:pointer 1
+                                  :type "void")
+                                  (reparse-symbol classsubparts) [32215 32225]))                            
+                          :type "union")
+                          nil nil)) (reparse-symbol classsubparts) [32140 32231]))                  
+                :type "struct")
+                nil [32058 32248])
+            ("sqlite_free_persistent" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("le" variable
+                       (:pointer 1
+                        :type ("zend_rsrc_list_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32284 32309])
+                    ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [32310 32329])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32320 32330]))                  
+                :type "int")
+                nil [32250 32406])
+            ("sqlite_object_free_storage" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [32447 32469])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32460 32470]))                  
+                :type "void")
+                nil [32408 32915])
+            ("sqlite_object_new" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("class_type" variable
+                       (:pointer 1
+                        :type ("zend_class_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32947 32976])
+                    ("handlers" variable
+                       (:pointer 1
+                        :type ("zend_object_handlers" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32977 33008])
+                    ("retval" variable
+                       (:pointer 1
+                        :type ("zend_object_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33009 33044])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33035 33045]))                  
+                :type "void")
+                nil [32917 33593])
+            ("sqlite_object_new_db" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("class_type" variable
+                       (:pointer 1
+                        :type ("zend_class_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33641 33679])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33670 33680]))                  
+                :type ("zend_object_value" type (:type "class") nil nil))
+                nil [33595 33807])
+            ("sqlite_object_new_query" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("class_type" variable
+                       (:pointer 1
+                        :type ("zend_class_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33858 33896])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33887 33897]))                  
+                :type ("zend_object_value" type (:type "class") nil nil))
+                nil [33809 34027])
+            ("sqlite_object_new_ub_query" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("class_type" variable
+                       (:pointer 1
+                        :type ("zend_class_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34081 34119])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34110 34120]))                  
+                :type ("zend_object_value" type (:type "class") nil nil))
+                nil [34029 34253])
+            ("sqlite_object_new_exception" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("class_type" variable
+                       (:pointer 1
+                        :type ("zend_class_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34308 34346])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34337 34347]))                  
+                :type ("zend_object_value" type (:type "class") nil nil))
+                nil [34255 34481])
+            ("SQLITE_REGISTER_OBJECT" variable (:constant-flag t) nil [34491 34513])
+            ("sqlite_get_ce_query" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34746 34774])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34765 34775]))                  
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [34701 34804])
+            ("sqlite_get_ce_ub_query" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34854 34882])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34873 34883]))                  
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [34806 34915])
+            ("sqlite_instanciate" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("pce" variable
+                       (:pointer 1
+                        :type ("zend_class_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34950 34972])
+                    ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34973 34995])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34986 34996]))                  
+                :type ("zval" type (:type "class") nil nil))
+                nil [34917 35172])
+            ("sqlite_object_iterator" type
+               (:typedef ("_sqlite_object_iterator" type (:type "struct") nil nil)
+                :superclasses "_sqlite_object_iterator"
+                :type "typedef")
+                nil [35174 35316])
+            ("_sqlite_object_iterator" type
+               (:members 
+                  ( ("it" variable (:type ("zend_object_iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [35216 35244])
+                    ("res" variable
+                       (:pointer 1
+                        :type ("php_sqlite_result" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [35246 35276])
+                    ("value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [35278 35290]))                  
+                :type "struct")
+                nil [35174 35316])
+            ("sqlite_iterator_dtor" function
+               (:arguments 
+                  ( ("iter" variable
+                       (:pointer 1
+                        :type ("zend_object_iterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35344 35380])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35371 35381]))                  
+                :type "void")
+                nil [35318 35647])
+            ("sqlite_iterator_rewind" function
+               (:arguments 
+                  ( ("iter" variable
+                       (:pointer 1
+                        :type ("zend_object_iterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35677 35713])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35704 35714]))                  
+                :type "void")
+                nil [35649 35983])
+            ("sqlite_iterator_valid" function
+               (:arguments 
+                  ( ("iter" variable
+                       (:pointer 1
+                        :type ("zend_object_iterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36011 36047])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36038 36048]))                  
+                :type "int")
+                nil [35985 36254])
+            ("sqlite_iterator_get_current_data" function
+               (:arguments 
+                  ( ("iter" variable
+                       (:pointer 1
+                        :type ("zend_object_iterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36294 36321])
+                    ("data" variable
+                       (:pointer 3
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36322 36344])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36335 36345]))                  
+                :type "void")
+                nil [36256 36589])
+            ("sqlite_iterator_get_current_key" function
+               (:arguments 
+                  ( ("iter" variable
+                       (:pointer 1
+                        :type ("zend_object_iterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36627 36654])
+                    ("str_key" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [36655 36670])
+                    ("str_key_len" variable
+                       (:pointer 1
+                        :type ("uint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36671 36689])
+                    ("int_key" variable
+                       (:pointer 1
+                        :type ("ulong" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36690 36714])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36705 36715]))                  
+                :type "int")
+                nil [36591 36891])
+            ("sqlite_iterator_move_forward" function
+               (:arguments 
+                  ( ("iter" variable
+                       (:pointer 1
+                        :type ("zend_object_iterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36927 36963])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36954 36964]))                  
+                :type "void")
+                nil [36893 37439])
+            ("sqlite_ub_query_iterator_funcs" variable (:type ("zend_object_iterator_funcs" type (:type "class") nil nil)) nil [37441 37658])
+            ("sqlite_query_iterator_funcs" variable (:type ("zend_object_iterator_funcs" type (:type "class") nil nil)) nil [37660 37892])
+            ("sqlite_get_iterator" function
+               (:pointer 1
+                :arguments 
+                  ( ("ce" variable
+                       (:pointer 1
+                        :type ("zend_class_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37936 37957])
+                    ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37958 37971])
+                    ("by_ref" variable (:type "int") (reparse-symbol arg-sub-list) [37972 37992])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37983 37993]))                  
+                :type ("zend_object_iterator" type (:type "class") nil nil))
+                nil [37894 38472])
+            ("PHP_GINIT_FUNCTION" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("sqlite" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38510 38517]))                  
+                :type "int")
+                nil [38484 38554])
+            ("PHP_MINIT_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("sqlite" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38575 38582]))                  
+                :type "int")
+                nil [38556 43196])
+            ("PHP_MSHUTDOWN_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("sqlite" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43221 43228]))                  
+                :type "int")
+                nil [43198 43365])
+            ("PHP_MINFO_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("sqlite" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43386 43393]))                  
+                :type "int")
+                nil [43367 43772])
+            ("php_sqlite_open" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [43819 43834])
+                    ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [43835 43844])
+                    ("persistent_id" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [43845 43865])
+                    ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43866 43885])
+                    ("errmsg" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43886 43899])
+                    ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43900 43922])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43913 43923]))                  
+                :type ("php_sqlite_db" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [43774 46027])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("sqlite_popen" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46234 46247]))                  
+                :type "int")
+                nil [46221 48363])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("sqlite_open" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48556 48568]))                  
+                :type "int")
+                nil [48543 50047])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("sqlite_factory" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50270 50285]))                  
+                :type "int")
+                nil [50257 51622])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("sqlite_busy_timeout" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51783 51803]))                  
+                :type "int")
+                nil [51770 52198])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("sqlite_close" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [52305 52318]))                  
+                :type "int")
+                nil [52292 52786])
+            ("php_sqlite_fetch" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("rres" variable
+                       (:pointer 1
+                        :type ("php_sqlite_result" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [52853 52893])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [52884 52894]))                  
+                :type "int")
+                nil [52825 55024])
+            ("sqlite_query" function
+               (:arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [55077 55090])
+                    ("db" variable
+                       (:pointer 1
+                        :type ("php_sqlite_db" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [55091 55116])
+                    ("sql" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [55117 55127])
+                    ("sql_len" variable (:type "long") (reparse-symbol arg-sub-list) [55128 55141])
+                    ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [55142 55151])
+                    ("buffered" variable (:type "int") (reparse-symbol arg-sub-list) [55152 55165])
+                    ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [55166 55185])
+                    ("prres" variable
+                       (:pointer 2
+                        :type ("php_sqlite_result" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [55186 55219])
+                    ("errmsg" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [55220 55242])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55233 55243]))                  
+                :type "void")
+                nil [55059 56758])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("sqlite_unbuffered_query" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [56970 56994]))                  
+                :type "int")
+                nil [56957 58173])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("sqlite_fetch_column_types" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [58361 58387]))                  
+                :type "int")
+                nil [58348 60287])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("sqlite_query" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [60497 60510]))                  
+                :type "int")
+                nil [60484 61689])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("sqlite_exec" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [61859 61871]))                  
+                :type "int")
+                nil [61846 62840])
+            ("php_sqlite_fetch_array" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("res" variable
+                       (:pointer 1
+                        :type ("php_sqlite_result" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [62920 62950])
+                    ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [62951 62960])
+                    ("decode_binary" variable (:type ("zend_bool" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [62961 62985])
+                    ("move_next" variable (:type "int") (reparse-symbol arg-sub-list) [62986 63000])
+                    ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [63001 63029])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [63020 63030]))                  
+                :type "void")
+                nil [62885 64587])
+            ("php_sqlite_fetch_column" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("res" variable
+                       (:pointer 1
+                        :type ("php_sqlite_result" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [64669 64699])
+                    ("which" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [64700 64712])
+                    ("decode_binary" variable (:type ("zend_bool" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [64713 64737])
+                    ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [64738 64766])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [64757 64767]))                  
+                :type "void")
+                nil [64633 65938])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("sqlite_fetch_all" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [66123 66140]))                  
+                :type "int")
+                nil [66110 67223])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("sqlite_fetch_array" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [67404 67423]))                  
+                :type "int")
+                nil [67391 68141])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("sqlite_fetch_object" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [68419 68439]))                  
+                :type "int")
+                nil [68406 72241])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("sqlite_array_query" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [72455 72474]))                  
+                :type "int")
+                nil [72442 73984])
+            ("php_sqlite_fetch_single" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("res" variable
+                       (:pointer 1
+                        :type ("php_sqlite_result" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [74066 74096])
+                    ("decode_binary" variable (:type ("zend_bool" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [74097 74121])
+                    ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [74122 74150])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [74141 74151]))                  
+                :type "void")
+                nil [74030 75227])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("sqlite_single_query" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [75470 75490]))                  
+                :type "int")
+                nil [75457 77350])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("sqlite_fetch_single" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [77516 77536]))                  
+                :type "int")
+                nil [77503 78096])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("sqlite_current" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [78276 78291]))                  
+                :type "int")
+                nil [78263 79028])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("sqlite_column" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [79208 79222]))                  
+                :type "int")
+                nil [79195 79821])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("sqlite_libversion" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [79942 79960]))                  
+                :type "int")
+                nil [79929 80072])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("sqlite_libencoding" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [80214 80233]))                  
+                :type "int")
+                nil [80201 80346])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("sqlite_changes" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [80501 80516]))                  
+                :type "int")
+                nil [80488 80869])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("sqlite_last_insert_rowid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [81008 81033]))                  
+                :type "int")
+                nil [80995 81396])
+            ("sqlite_count_elements" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [81441 81454])
+                    ("count" variable
+                       (:pointer 1
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [81455 81476])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [81467 81477]))                  
+                :type "int")
+                nil [81408 81951])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("sqlite_num_rows" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [82085 82101]))                  
+                :type "int")
+                nil [82072 82679])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("sqlite_valid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [82799 82812]))                  
+                :type "int")
+                nil [82786 83293])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("sqlite_has_prev" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [83420 83436]))                  
+                :type "int")
+                nil [83407 84009])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("sqlite_num_fields" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [84138 84156]))                  
+                :type "int")
+                nil [84125 84585])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("sqlite_field_name" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [84744 84762]))                  
+                :type "int")
+                nil [84731 85403])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("sqlite_seek" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [85548 85560]))                  
+                :type "int")
+                nil [85535 86308])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("sqlite_rewind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [86443 86457]))                  
+                :type "int")
+                nil [86430 87129])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("sqlite_next" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [87252 87264]))                  
+                :type "int")
+                nil [87239 87899])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("sqlite_key" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [88026 88037]))                  
+                :type "int")
+                nil [88013 88466])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("sqlite_prev" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [88593 88605]))                  
+                :type "int")
+                nil [88580 89302])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("sqlite_escape_string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [89434 89455]))                  
+                :type "int")
+                nil [89421 90079])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("sqlite_last_error" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [90215 90233]))                  
+                :type "int")
+                nil [90202 90581])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("sqlite_error_string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [90718 90738]))                  
+                :type "int")
+                nil [90705 90976])
+            ("callback_prep_t" type
+               (:members 
+                  ( ("DO_REG" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [91150 91157])
+                    ("SKIP_REG" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [91158 91167])
+                    ("ERR" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [91168 91173]))                  
+                :type "enum")
+                nil [91127 91174])
+            ("prep_callback_struct" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("db" variable
+                       (:pointer 1
+                        :type ("php_sqlite_db" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [91225 91250])
+                    ("is_agg" variable (:type "int") (reparse-symbol arg-sub-list) [91251 91262])
+                    ("funcname" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [91265 91280])
+                    ("step" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [91283 91294])
+                    ("fini" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [91295 91306])
+                    ("funcs" variable
+                       (:pointer 2
+                        :type ("php_sqlite_agg_functions" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [91307 91347]))                  
+                :type ("callback_prep_t" type (:type "enum") nil nil))
+                nil [91176 92626])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("sqlite_create_aggregate" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [92821 92845]))                  
+                :type "int")
+                nil [92808 94092])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("sqlite_create_function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [94272 94295]))                  
+                :type "int")
+                nil [94259 95239])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("sqlite_udf_encode_binary" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [95399 95424]))                  
+                :type "int")
+                nil [95386 95949])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("sqlite_udf_decode_binary" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [96101 96126]))                  
+                :type "int")
+                nil [96088 96580]))          
+    :file "sqlite.c"
+    :pointmax 96719
+    :fsize 96718
+    :lastmodtime '(20689 55724 0 0)
+    :unmatched-syntax '((semantic-list 13824 . 13826) (symbol 13807 . 13824) (semantic-list 13797 . 13806) (symbol 13784 . 13797) (number 13798 . 13799) (semantic-list 13739 . 13782) (symbol 13717 . 13739) (number 13780 . 13781) (number 13777 . 13778) (number 13774 . 13775) (semantic-list 13713 . 13715) (symbol 13696 . 13713) (semantic-list 13686 . 13695) (symbol 13673 . 13686) (number 13687 . 13688) (semantic-list 13628 . 13671) (symbol 13606 . 13628) (number 13669 . 13670) (number 13666 . 13667) (number 13663 . 13664) (semantic-list 13602 . 13604) (symbol 13585 . 13602) (semantic-list 13571 . 13584) (symbol 13558 . 13571) (number 13572 . 13573) (semantic-list 13543 . 13556) (symbol 13530 . 13543) (number 13544 . 13545) (semantic-list 13515 . 13528) (symbol 13502 . 13515) (number 13516 . 13517) (semantic-list 13452 . 13500) (symbol 13430 . 13452) (number 13498 . 13499) (number 13495 . 13496) (number 13492 . 13493) (semantic-list 13426 . 13428) (symbol 13409 . 13426) (semantic-list 13395 . 13408) (symbol 13382 . 13395) (number 13396 . 13397) (semantic-list 13367 . 13380) (symbol 13354 . 13367) (number 13368 . 13369) (semantic-list 13339 . 13352) (symbol 13326 . 13339) (number 13340 . 13341) (semantic-list 13317 . 13324) (symbol 13304 . 13317) (number 13318 . 13319) (semantic-list 13261 . 13302) (symbol 13239 . 13261) (number 13300 . 13301) (number 13297 . 13298) (number 13294 . 13295) (semantic-list 13235 . 13237) (symbol 13218 . 13235) (semantic-list 13204 . 13217) (symbol 13191 . 13204) (number 13205 . 13206) (semantic-list 13171 . 13189) (symbol 13158 . 13171) (number 13172 . 13173) (semantic-list 13142 . 13156) (symbol 13129 . 13142) (number 13143 . 13144) (semantic-list 13114 . 13127) (symbol 13101 . 13114) (number 13115 . 13116) (semantic-list 13050 . 13099) (symbol 13028 . 13050) (number 13097 . 13098) (number 13094 . 13095) (number 13091 . 13092) (semantic-list 13024 . 13026) (symbol 13007 . 13024) (semantic-list 12993 . 13006) (symbol 12980 . 12993) (number 12994 . 12995) (semantic-list 12960 . 12978) (symbol 12947 . 12960) (number 12961 . 12962) (semantic-list 12931 . 12945) (symbol 12918 . 12931) (number 12932 . 12933) (semantic-list 12903 . 12916) (symbol 12890 . 12903) (number 12904 . 12905) (semantic-list 12881 . 12888) (symbol 12868 . 12881) (number 12882 . 12883) (semantic-list 12824 . 12866) (symbol 12802 . 12824) (number 12864 . 12865) (number 12861 . 12862) (number 12858 . 12859) (semantic-list 12798 . 12800) (symbol 12781 . 12798) (semantic-list 12765 . 12780) (symbol 12752 . 12765) (number 12766 . 12767) (semantic-list 12712 . 12750) (symbol 12690 . 12712) (number 12748 . 12749) (number 12745 . 12746) (number 12742 . 12743) (semantic-list 12686 . 12688) (symbol 12669 . 12686) (semantic-list 12631 . 12668) (symbol 12612 . 12631) (number 12666 . 12667) (semantic-list 12608 . 12610) (symbol 12591 . 12608) (semantic-list 12583 . 12590) (symbol 12570 . 12583) (number 12584 . 12585) (semantic-list 12532 . 12568) (symbol 12510 . 12532) (number 12566 . 12567) (number 12563 . 12564) (number 12560 . 12561) (semantic-list 12506 . 12508) (symbol 12489 . 12506) (semantic-list 12479 . 12488) (symbol 12466 . 12479) (number 12480 . 12481) (semantic-list 12425 . 12464) (symbol 12403 . 12425) (number 12462 . 12463) (number 12459 . 12460) (number 12456 . 12457) (semantic-list 12399 . 12401) (symbol 12382 . 12399) (semantic-list 12350 . 12381) (symbol 12331 . 12350) (number 12379 . 12380) (semantic-list 12327 . 12329) (symbol 12310 . 12327) (semantic-list 12298 . 12309) (symbol 12285 . 12298) (number 12299 . 12300) (semantic-list 12253 . 12283) (symbol 12231 . 12253) (number 12281 . 12282) (number 12278 . 12279) (number 12275 . 12276) (semantic-list 12227 . 12229) (symbol 12210 . 12227) (semantic-list 12179 . 12209) (symbol 12160 . 12179) (number 12207 . 12208) (semantic-list 12156 . 12158) (symbol 12139 . 12156) (semantic-list 12127 . 12138) (symbol 12114 . 12127) (number 12128 . 12129) (semantic-list 12083 . 12112) (symbol 12061 . 12083) (number 12110 . 12111) (number 12107 . 12108) (number 12104 . 12105) (semantic-list 12057 . 12059) (symbol 12040 . 12057) (semantic-list 12008 . 12039) (symbol 11989 . 12008) (number 12037 . 12038) (semantic-list 11985 . 11987) (symbol 11968 . 11985) (semantic-list 11956 . 11967) (symbol 11943 . 11956) (number 11957 . 11958) (semantic-list 11911 . 11941) (symbol 11889 . 11911) (number 11939 . 11940) (number 11936 . 11937) (number 11933 . 11934) (semantic-list 11885 . 11887) (symbol 11868 . 11885) (semantic-list 11834 . 11867) (symbol 11815 . 11834) (number 11865 . 11866) (semantic-list 11811 . 11813) (symbol 11794 . 11811) (semantic-list 11782 . 11793) (symbol 11769 . 11782) (number 11783 . 11784) (semantic-list 11735 . 11767) (symbol 11713 . 11735) (number 11765 . 11766) (number 11762 . 11763) (number 11759 . 11760) (semantic-list 11709 . 11711) (symbol 11692 . 11709) (semantic-list 11683 . 11691) (symbol 11670 . 11683) (number 11684 . 11685) (semantic-list 11631 . 11668) (symbol 11609 . 11631) (number 11666 . 11667) (number 11663 . 11664) (number 11660 . 11661) (semantic-list 11605 . 11607) (symbol 11588 . 11605) (semantic-list 11579 . 11587) (symbol 11566 . 11579) (number 11580 . 11581) (semantic-list 11553 . 11564) (symbol 11540 . 11553) (number 11554 . 11555) (semantic-list 11508 . 11538) (symbol 11486 . 11508) (number 11536 . 11537) (number 11533 . 11534) (number 11530 . 11531) (semantic-list 11482 . 11484) (symbol 11465 . 11482) (semantic-list 11448 . 11464) (symbol 11435 . 11448) (number 11449 . 11450) (semantic-list 11390 . 11433) (symbol 11368 . 11390) (number 11431 . 11432) (number 11428 . 11429) (number 11425 . 11426) (semantic-list 11364 . 11366) (symbol 11347 . 11364) (semantic-list 11330 . 11346) (symbol 11317 . 11330) (number 11331 . 11332) (semantic-list 11304 . 11315) (symbol 11291 . 11304) (number 11305 . 11306) (semantic-list 11253 . 11289) (symbol 11231 . 11253) (number 11287 . 11288) (number 11284 . 11285) (number 11281 . 11282) (semantic-list 11227 . 11229) (symbol 11210 . 11227) (semantic-list 11172 . 11209) (symbol 11153 . 11172) (number 11207 . 11208) (semantic-list 11149 . 11151) (symbol 11132 . 11149) (semantic-list 11120 . 11131) (symbol 11107 . 11120) (number 11121 . 11122) (semantic-list 11069 . 11105) (symbol 11047 . 11069) (number 11103 . 11104) (number 11100 . 11101) (number 11097 . 11098) (semantic-list 11043 . 11045) (symbol 11026 . 11043) (semantic-list 10990 . 11025) (symbol 10971 . 10990) (number 11023 . 11024) (semantic-list 10967 . 10969) (symbol 10950 . 10967) (semantic-list 10938 . 10949) (symbol 10925 . 10938) (number 10939 . 10940) (semantic-list 10889 . 10923) (symbol 10867 . 10889) (number 10921 . 10922) (number 10918 . 10919) (number 10915 . 10916) (semantic-list 10863 . 10865) (symbol 10846 . 10863) (semantic-list 10813 . 10845) (symbol 10794 . 10813) (number 10843 . 10844) (semantic-list 10790 . 10792) (symbol 10773 . 10790) (semantic-list 10761 . 10772) (symbol 10748 . 10761) (number 10762 . 10763) (semantic-list 10715 . 10746) (symbol 10693 . 10715) (number 10744 . 10745) (number 10741 . 10742) (number 10738 . 10739) (semantic-list 10689 . 10691) (symbol 10672 . 10689) (semantic-list 10636 . 10671) (symbol 10617 . 10636) (number 10669 . 10670) (semantic-list 10613 . 10615) (symbol 10596 . 10613) (semantic-list 10584 . 10595) (symbol 10571 . 10584) (number 10585 . 10586) (semantic-list 10535 . 10569) (symbol 10513 . 10535) (number 10567 . 10568) (number 10564 . 10565) (number 10561 . 10562) (semantic-list 10509 . 10511) (symbol 10492 . 10509) (semantic-list 10447 . 10491) (symbol 10428 . 10447) (number 10489 . 10490) (semantic-list 10424 . 10426) (symbol 10407 . 10424) (semantic-list 10399 . 10406) (symbol 10386 . 10399) (number 10400 . 10401) (semantic-list 10341 . 10384) (symbol 10319 . 10341) (number 10382 . 10383) (number 10379 . 10380) (number 10376 . 10377) (semantic-list 10315 . 10317) (symbol 10298 . 10315) (semantic-list 10263 . 10297) (symbol 10244 . 10263) (number 10295 . 10296) (semantic-list 10240 . 10242) (symbol 10223 . 10240) (semantic-list 10215 . 10222) (symbol 10202 . 10215) (number 10216 . 10217) (semantic-list 10167 . 10200) (symbol 10145 . 10167) (number 10198 . 10199) (number 10195 . 10196) (number 10192 . 10193) (semantic-list 10141 . 10143) (symbol 10124 . 10141) (semantic-list 10092 . 10123) (symbol 10073 . 10092) (number 10121 . 10122) (semantic-list 10069 . 10071) (symbol 10052 . 10069) (semantic-list 10021 . 10051) (symbol 10002 . 10021) (number 10049 . 10050) (semantic-list 9998 . 10000) (symbol 9981 . 9998) (semantic-list 9962 . 9980) (symbol 9949 . 9962) (number 9963 . 9964) (semantic-list 9929 . 9947) (symbol 9916 . 9929) (number 9930 . 9931) (semantic-list 9875 . 9914) (symbol 9853 . 9875) (number 9912 . 9913) (number 9909 . 9910) (number 9906 . 9907) (semantic-list 9849 . 9851) (symbol 9832 . 9849) (semantic-list 9813 . 9831) (symbol 9800 . 9813) (number 9814 . 9815) (semantic-list 9780 . 9798) (symbol 9767 . 9780) (number 9781 . 9782) (semantic-list 9754 . 9765) (symbol 9741 . 9754) (number 9755 . 9756) (semantic-list 9707 . 9739) (symbol 9685 . 9707) (number 9737 . 9738) (number 9734 . 9735) (number 9731 . 9732) (semantic-list 9681 . 9683) (symbol 9664 . 9681) (semantic-list 9645 . 9663) (symbol 9632 . 9645) (number 9646 . 9647) (semantic-list 9614 . 9630) (symbol 9601 . 9614) (number 9615 . 9616) (semantic-list 9559 . 9599) (symbol 9537 . 9559) (number 9597 . 9598) (number 9594 . 9595) (number 9591 . 9592) (semantic-list 9533 . 9535) (symbol 9516 . 9533) (semantic-list 9497 . 9515) (symbol 9484 . 9497) (number 9498 . 9499) (semantic-list 9466 . 9482) (symbol 9453 . 9466) (number 9467 . 9468) (semantic-list 9440 . 9451) (symbol 9427 . 9440) (number 9441 . 9442) (semantic-list 9392 . 9425) (symbol 9370 . 9392) (number 9423 . 9424) (number 9420 . 9421) (number 9417 . 9418) (semantic-list 9366 . 9368) (symbol 9349 . 9366) (semantic-list 9330 . 9348) (symbol 9317 . 9330) (number 9331 . 9332) (semantic-list 9270 . 9315) (symbol 9248 . 9270) (number 9313 . 9314) (number 9310 . 9311) (number 9307 . 9308) (semantic-list 9244 . 9246) (symbol 9227 . 9244) (semantic-list 9208 . 9226) (symbol 9195 . 9208) (number 9209 . 9210) (semantic-list 9182 . 9193) (symbol 9169 . 9182) (number 9183 . 9184) (semantic-list 9129 . 9167) (symbol 9107 . 9129) (number 9165 . 9166) (number 9162 . 9163) (number 9159 . 9160) (semantic-list 9103 . 9105) (symbol 9086 . 9103) (semantic-list 9067 . 9085) (symbol 9054 . 9067) (number 9068 . 9069) (semantic-list 9033 . 9052) (symbol 9020 . 9033) (number 9034 . 9035) (semantic-list 9008 . 9018) (symbol 8995 . 9008) (number 9009 . 9010) (semantic-list 8948 . 8993) (symbol 8926 . 8948) (number 8991 . 8992) (number 8988 . 8989) (number 8985 . 8986) (semantic-list 8922 . 8924) (symbol 8905 . 8922) (semantic-list 8886 . 8904) (symbol 8873 . 8886) (number 8887 . 8888) (semantic-list 8852 . 8871) (symbol 8839 . 8852) (number 8853 . 8854) (semantic-list 8827 . 8837) (symbol 8814 . 8827) (number 8828 . 8829) (semantic-list 8805 . 8812) (symbol 8792 . 8805) (number 8806 . 8807) (semantic-list 8752 . 8790) (symbol 8730 . 8752) (number 8788 . 8789) (number 8785 . 8786) (number 8782 . 8783) (semantic-list 8726 . 8728) (symbol 8709 . 8726) (semantic-list 8690 . 8708) (symbol 8677 . 8690) (number 8691 . 8692) (semantic-list 8659 . 8675) (symbol 8646 . 8659) (number 8660 . 8661) (semantic-list 8634 . 8644) (symbol 8621 . 8634) (number 8635 . 8636) (semantic-list 8575 . 8619) (symbol 8553 . 8575) (number 8617 . 8618) (number 8614 . 8615) (number 8611 . 8612) (semantic-list 8549 . 8551) (symbol 8532 . 8549) (semantic-list 8513 . 8531) (symbol 8500 . 8513) (number 8514 . 8515) (semantic-list 8482 . 8498) (symbol 8469 . 8482) (number 8483 . 8484) (semantic-list 8457 . 8467) (symbol 8444 . 8457) (number 8458 . 8459) (semantic-list 8435 . 8442) (symbol 8422 . 8435) (number 8436 . 8437) (semantic-list 8383 . 8420) (symbol 8361 . 8383) (number 8418 . 8419) (number 8415 . 8416) (number 8412 . 8413) (semantic-list 8357 . 8359) (symbol 8340 . 8357) (semantic-list 8321 . 8339) (symbol 8308 . 8321) (number 8322 . 8323) (semantic-list 8290 . 8306) (symbol 8277 . 8290) (number 8291 . 8292) (semantic-list 8260 . 8275) (symbol 8247 . 8260) (number 8261 . 8262) (semantic-list 8200 . 8245) (symbol 8178 . 8200) (number 8243 . 8244) (number 8240 . 8241) (number 8237 . 8238) (semantic-list 8174 . 8176) (symbol 8157 . 8174) (semantic-list 8138 . 8156) (symbol 8125 . 8138) (number 8139 . 8140) (semantic-list 8107 . 8123) (symbol 8094 . 8107) (number 8108 . 8109) (semantic-list 8077 . 8092) (symbol 8064 . 8077) (number 8078 . 8079) (semantic-list 8051 . 8062) (symbol 8038 . 8051) (number 8052 . 8053) (semantic-list 7998 . 8036) (symbol 7976 . 7998) (number 8034 . 8035) (number 8031 . 8032) (number 8028 . 8029) (semantic-list 7972 . 7974) (symbol 7955 . 7972) (semantic-list 7936 . 7954) (symbol 7923 . 7936) (number 7937 . 7938) (semantic-list 7905 . 7921) (symbol 7892 . 7905) (number 7906 . 7907) (semantic-list 7846 . 7890) (symbol 7824 . 7846) (number 7888 . 7889) (number 7885 . 7886) (number 7882 . 7883) (semantic-list 7820 . 7822) (symbol 7803 . 7820) (semantic-list 7784 . 7802) (symbol 7771 . 7784) (number 7785 . 7786) (semantic-list 7753 . 7769) (symbol 7740 . 7753) (number 7754 . 7755) (semantic-list 7727 . 7738) (symbol 7714 . 7727) (number 7728 . 7729) (semantic-list 7675 . 7712) (symbol 7653 . 7675) (number 7710 . 7711) (number 7707 . 7708) (number 7704 . 7705) (semantic-list 7649 . 7651) (symbol 7632 . 7649) (semantic-list 7613 . 7631) (symbol 7600 . 7613) (number 7614 . 7615) (semantic-list 7582 . 7598) (symbol 7569 . 7582) (number 7583 . 7584) (semantic-list 7525 . 7567) (symbol 7503 . 7525) (number 7565 . 7566) (number 7562 . 7563) (number 7559 . 7560) (semantic-list 7499 . 7501) (symbol 7482 . 7499) (semantic-list 7463 . 7481) (symbol 7450 . 7463) (number 7464 . 7465) (semantic-list 7432 . 7448) (symbol 7419 . 7432) (number 7433 . 7434) (semantic-list 7406 . 7417) (symbol 7393 . 7406) (number 7407 . 7408) (semantic-list 7356 . 7391) (symbol 7334 . 7356) (number 7389 . 7390) (number 7386 . 7387) (number 7383 . 7384) (semantic-list 7330 . 7332) (symbol 7313 . 7330) (semantic-list 7294 . 7312) (symbol 7281 . 7294) (number 7295 . 7296) (semantic-list 7269 . 7279) (symbol 7256 . 7269) (number 7270 . 7271) (semantic-list 7217 . 7254) (symbol 7195 . 7217) (number 7252 . 7253) (number 7249 . 7250) (number 7246 . 7247) (semantic-list 7191 . 7193) (symbol 7174 . 7191) (semantic-list 7155 . 7173) (symbol 7142 . 7155) (number 7156 . 7157) (semantic-list 7133 . 7140) (symbol 7120 . 7133) (number 7134 . 7135) (semantic-list 7108 . 7118) (symbol 7095 . 7108) (number 7109 . 7110) (semantic-list 7063 . 7093) (symbol 7041 . 7063) (number 7091 . 7092) (number 7088 . 7089) (number 7085 . 7086) (semantic-list 7037 . 7039) (symbol 7020 . 7037) (semantic-list 7001 . 7019) (symbol 6988 . 7001) (number 7002 . 7003) (semantic-list 6970 . 6986) (symbol 6957 . 6970) (number 6971 . 6972) (semantic-list 6945 . 6955) (symbol 6932 . 6945) (number 6946 . 6947) (semantic-list 6892 . 6930) (symbol 6870 . 6892) (number 6928 . 6929) (number 6925 . 6926) (number 6922 . 6923) (semantic-list 6866 . 6868) (symbol 6849 . 6866) (semantic-list 6830 . 6848) (symbol 6817 . 6830) (number 6831 . 6832) (semantic-list 6799 . 6815) (symbol 6786 . 6799) (number 6800 . 6801) (semantic-list 6777 . 6784) (symbol 6764 . 6777) (number 6778 . 6779) (semantic-list 6752 . 6762) (symbol 6739 . 6752) (number 6753 . 6754) (semantic-list 6706 . 6737) (symbol 6684 . 6706) (number 6735 . 6736) (number 6732 . 6733) (number 6729 . 6730) (semantic-list 6680 . 6682) (symbol 6663 . 6680) (semantic-list 6646 . 6662) (symbol 6633 . 6646) (number 6647 . 6648) (semantic-list 6616 . 6631) (symbol 6603 . 6616) (number 6617 . 6618) (semantic-list 6550 . 6601) (symbol 6528 . 6550) (number 6599 . 6600) (number 6596 . 6597) (number 6593 . 6594) (semantic-list 6524 . 6526) (symbol 6507 . 6524) (semantic-list 6490 . 6506) (symbol 6477 . 6490) (number 6491 . 6492) (semantic-list 6468 . 6475) (symbol 6455 . 6468) (number 6469 . 6470) (semantic-list 6438 . 6453) (symbol 6425 . 6438) (number 6439 . 6440) (semantic-list 6379 . 6423) (symbol 6357 . 6379) (number 6421 . 6422) (number 6418 . 6419) (number 6415 . 6416) (semantic-list 6353 . 6355) (symbol 6336 . 6353) (semantic-list 6317 . 6335) (symbol 6304 . 6317) (number 6318 . 6319) (semantic-list 6286 . 6302) (symbol 6273 . 6286) (number 6287 . 6288) (semantic-list 6261 . 6271) (symbol 6248 . 6261) (number 6262 . 6263) (semantic-list 6197 . 6246) (symbol 6175 . 6197) (number 6244 . 6245) (number 6241 . 6242) (number 6238 . 6239) (semantic-list 6171 . 6173) (symbol 6154 . 6171) (semantic-list 6135 . 6153) (symbol 6122 . 6135) (number 6136 . 6137) (semantic-list 6104 . 6120) (symbol 6091 . 6104) (number 6105 . 6106) (semantic-list 6082 . 6089) (symbol 6069 . 6082) (number 6083 . 6084) (semantic-list 6057 . 6067) (symbol 6044 . 6057) (number 6058 . 6059) (semantic-list 6000 . 6042) (symbol 5978 . 6000) (number 6040 . 6041) (number 6037 . 6038) (number 6034 . 6035) (semantic-list 5974 . 5976) (symbol 5957 . 5974) (semantic-list 5949 . 5956) (symbol 5936 . 5949) (number 5950 . 5951) (semantic-list 5903 . 5934) (symbol 5881 . 5903) (number 5932 . 5933) (number 5929 . 5930) (number 5926 . 5927) (semantic-list 5877 . 5879) (symbol 5860 . 5877) (semantic-list 5852 . 5859) (symbol 5839 . 5852) (number 5853 . 5854) (semantic-list 5792 . 5837) (symbol 5770 . 5792) (number 5835 . 5836) (number 5832 . 5833) (number 5829 . 5830) (semantic-list 5766 . 5768) (symbol 5749 . 5766) (semantic-list 5741 . 5748) (symbol 5728 . 5741) (number 5742 . 5743) (semantic-list 5719 . 5726) (symbol 5706 . 5719) (number 5720 . 5721) (semantic-list 5666 . 5704) (symbol 5644 . 5666) (number 5702 . 5703) (number 5699 . 5700) (number 5696 . 5697) (semantic-list 5640 . 5642) (symbol 5623 . 5640) (semantic-list 5604 . 5622) (symbol 5591 . 5604) (number 5605 . 5606) (semantic-list 5580 . 5589) (symbol 5567 . 5580) (number 5581 . 5582) (semantic-list 5552 . 5565) (symbol 5539 . 5552) (number 5553 . 5554) (semantic-list 5504 . 5537) (symbol 5482 . 5504) (number 5535 . 5536) (number 5532 . 5533) (number 5529 . 5530) (semantic-list 5478 . 5480) (symbol 5461 . 5478) (semantic-list 5442 . 5460) (symbol 5429 . 5442) (number 5443 . 5444) (semantic-list 5418 . 5427) (symbol 5405 . 5418) (number 5419 . 5420) (semantic-list 5390 . 5403) (symbol 5377 . 5390) (number 5391 . 5392) (semantic-list 5345 . 5375) (symbol 5323 . 5345) (number 5373 . 5374) (number 5370 . 5371) (number 5367 . 5368) (semantic-list 5319 . 5321) (symbol 5302 . 5319) (semantic-list 5283 . 5301) (symbol 5270 . 5283) (number 5284 . 5285) (semantic-list 5259 . 5268) (symbol 5246 . 5259) (number 5260 . 5261) (semantic-list 5231 . 5244) (symbol 5218 . 5231) (number 5232 . 5233) (semantic-list 5185 . 5216) (symbol 5163 . 5185) (number 5214 . 5215) (number 5211 . 5212) (number 5208 . 5209) (semantic-list 3338 . 3340) (symbol 3327 . 3338) (semantic-list 3202 . 3326) (symbol 3182 . 3202) (string 3224 . 3227) (string 3203 . 3222) (semantic-list 3179 . 3181) (symbol 3166 . 3179) (semantic-list 2220 . 2228) (symbol 2193 . 2220) (symbol 5461 . 5478) (semantic-list 5442 . 5460) (symbol 5429 . 5442) (number 5443 . 5444) (semantic-list 5418 . 5427) (symbol 5405 . 5418) (number 5419 . 5420) (semantic-list 5390 . 5403) (symbol 5377 . 5390) (number 5391 . 5392) (semantic-list 5345 . 5375) (symbol 5323 . 5345) (number 5373 . 5374) (number 5370 . 5371) (number 5367 . 5368) (semantic-list 5319 . 5321) (symbol 5302 . 5319) (semantic-list 5283 . 5301) (symbol 5270 . 5283) (number 5284 . 5285) (semantic-list 5259 . 5268) (symbol 5246 . 5259) (number 5260 . 5261) (semantic-list 5231 . 5244) (symbol 5218 . 5231) (number 5232 . 5233) (semantic-list 5185 . 5216) (symbol 5163 . 5185) (number 5214 . 5215) (number 5211 . 5212) (number 5208 . 5209) (semantic-list 3338 . 3340) (symbol 3327 . 3338) (semantic-list 3202 . 3326) (symbol 3182 . 3202) (string 3224 . 3227) (string 3203 . 3222) (semantic-list 3179 . 3181) (symbol 3166 . 3179) (semantic-list 2220 . 2228) (symbol 2193 . 2220))
+    :lexical-table 
+        '(("DB_FROM_OBJECT" (spp-arg-list ("db" "object") 3509 . 3521) . ((semantic-list "{ \\
+		sqlite_object *obj = (sqlite_object*) zend_object_store_get_object(object TSRMLS_CC); \\
+		db = obj->u.db; \\
+		if (!db) { \\
+			php_error_docref(NULL TSRMLS_CC, E_WARNING, \"The database wasn't opened\"); \\
+			RETURN_NULL(); \\
+		} \\
+	}" 3525 . 3762)))
+          ("REGISTER_SQLITE_CLASS" (spp-arg-list ("name" "c_name" "parent") 31161 . 31183) . ((semantic-list "{ \\
+		zend_class_entry ce; \\
+		INIT_CLASS_ENTRY(ce, \"SQLite\" # name, sqlite_funcs_ ## c_name); \\
+		ce.create_object = sqlite_object_new_ ## c_name; \\
+		sqlite_ce_ ## c_name = zend_register_internal_class_ex(&ce, parent, NULL TSRMLS_CC); \\
+		memcpy(&sqlite_object_handlers_ ## c_name, zend_get_std_object_handlers(), sizeof(zend_object_handlers)); \\
+		sqlite_object_handlers_ ## c_name.clone_obj = NULL; \\
+		sqlite_ce_ ## c_name->ce_flags |= ZEND_ACC_FINAL_CLASS; \\
+	}" 31187 . 31654)))
+          ("PHP_SQLITE_MODULE_VERSION" . ((string "\"2.0-dev\"" 1392 . 1401)))
+          ("php_sqlite_decode_binary" (spp-arg-list ("in" "out") 2709 . 2718) . 
+              ((symbol "in" 2719 . 2721) (punctuation "&" 2722 . 2723) (punctuation "&" 2723 . 2724) (punctuation "*" 2725 . 2726) (symbol "in" 2726 . 2728) (punctuation "?" 2729 . 2730) (symbol "sqlite_decode_binary" 2731 . 2751) (semantic-list "((const unsigned char *)in, (unsigned char *)out)" 2751 . 2800) (punctuation ":" 2801 . 2802) (number "0" 2803 . 2804)))
+          ("SQLITE_REGISTER_OBJECT" (spp-arg-list ("_type" "_object" "_ptr") 34513 . 34535) . ((semantic-list "{ \\
+		sqlite_object *obj; \\
+		obj = (sqlite_object*)zend_object_store_get_object(_object TSRMLS_CC); \\
+		obj->type = is_ ## _type; \\
+		obj->u._type = _ptr; \\
+	}" 34539 . 34699)))
+          ("RES_FROM_OBJECT" (spp-arg-list ("res" "object") 4180 . 4193) . ((symbol "RES_FROM_OBJECT_RESTORE_ERH" 4194 . 4221) (semantic-list "(res, object, NULL)" 4221 . 4240)))
+          ("PHP_SQLITE_EMPTY_QUERY" . 
+              ((IF "if" 4276 . 4278) (semantic-list "(!sql_len || !*sql)" 4279 . 4298) (semantic-list "{ \\
+		php_error_docref(NULL TSRMLS_CC, E_WARNING, \"Cannot execute empty query.\"); \\
+		RETURN_FALSE; \\
+	}" 4299 . 4403)))
+          ("php_sqlite_encode_binary" (spp-arg-list ("in" "n" "out") 2591 . 2603) . ((symbol "sqlite_encode_binary" 2604 . 2624) (semantic-list "((const unsigned char *)in, n, (unsigned char *)out)" 2624 . 2676)))
+          ("safe_emalloc" (spp-arg-list ("a" "b" "c") 2156 . 2163) . ((symbol "emalloc" 2164 . 2171) (semantic-list "((a)*(b)+(c))" 2171 . 2184)))
+          ("DB_FROM_ZVAL" (spp-arg-list ("db" "zv") 3372 . 3380) . ((symbol "ZEND_FETCH_RESOURCE2" 3381 . 3401) (semantic-list "(db, struct php_sqlite_db *, zv, -1, \"sqlite database\", le_sqlite_db, le_sqlite_pdb)" 3401 . 3485)))
+          ("RES_FROM_OBJECT_RESTORE_ERH" (spp-arg-list ("res" "object" "error_handling") 3799 . 3828) . ((semantic-list "{ \\
+		sqlite_object *obj = (sqlite_object*) zend_object_store_get_object(object TSRMLS_CC); \\
+		res = obj->u.res; \\
+		if (!res) { \\
+			php_error_docref(NULL TSRMLS_CC, E_WARNING, \"No result set available\"); \\
+			if (error_handling) \\
+				zend_restore_error_handling(error_handling TSRMLS_CC); \\
+			RETURN_NULL(); \\
+		} \\
+	}" 3832 . 4155)))
+          )
+
+    )
+   (semanticdb-table "php_sqlite.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("PHP_SQLITE_H" variable (:constant-flag t) nil [1339 1351])
+            ("sqlite_module_entry" variable
+               (:typemodifiers ("extern")
+                :type ("zend_module_entry" type (:type "class") nil nil))
+                nil [1353 1398])
+            ("phpext_sqlite_ptr" variable (:constant-flag t) nil [1407 1424])
+            ("PHP_MINIT_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlite" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1503 1510]))                  
+                :type "int")
+                nil [1484 1511])
+            ("PHP_MSHUTDOWN_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlite" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1535 1542]))                  
+                :type "int")
+                nil [1512 1543])
+            ("PHP_RSHUTDOWN_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlite" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1567 1574]))                  
+                :type "int")
+                nil [1544 1575])
+            ("PHP_MINFO_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlite" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1595 1602]))                  
+                :type "int")
+                nil [1576 1603])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlite_open" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1618 1630]))                  
+                :type "int")
+                nil [1605 1631])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlite_popen" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1645 1658]))                  
+                :type "int")
+                nil [1632 1659])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlite_close" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1673 1686]))                  
+                :type "int")
+                nil [1660 1687])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlite_query" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1701 1714]))                  
+                :type "int")
+                nil [1688 1715])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlite_exec" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1729 1741]))                  
+                :type "int")
+                nil [1716 1742])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlite_unbuffered_query" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1756 1780]))                  
+                :type "int")
+                nil [1743 1781])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlite_array_query" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1795 1814]))                  
+                :type "int")
+                nil [1782 1815])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlite_single_query" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1829 1849]))                  
+                :type "int")
+                nil [1816 1850])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlite_fetch_array" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1865 1884]))                  
+                :type "int")
+                nil [1852 1885])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlite_fetch_object" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1899 1919]))                  
+                :type "int")
+                nil [1886 1920])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlite_fetch_single" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1934 1954]))                  
+                :type "int")
+                nil [1921 1955])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlite_fetch_all" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1969 1986]))                  
+                :type "int")
+                nil [1956 1987])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlite_current" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2001 2016]))                  
+                :type "int")
+                nil [1988 2017])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlite_column" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2031 2045]))                  
+                :type "int")
+                nil [2018 2046])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlite_num_rows" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2061 2077]))                  
+                :type "int")
+                nil [2048 2078])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlite_num_fields" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2092 2110]))                  
+                :type "int")
+                nil [2079 2111])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlite_field_name" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2125 2143]))                  
+                :type "int")
+                nil [2112 2144])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlite_seek" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2158 2170]))                  
+                :type "int")
+                nil [2145 2171])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlite_rewind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2185 2199]))                  
+                :type "int")
+                nil [2172 2200])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlite_next" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2214 2226]))                  
+                :type "int")
+                nil [2201 2227])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlite_prev" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2241 2253]))                  
+                :type "int")
+                nil [2228 2254])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlite_key" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2268 2279]))                  
+                :type "int")
+                nil [2255 2280])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlite_valid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2295 2308]))                  
+                :type "int")
+                nil [2282 2309])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlite_has_prev" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2323 2339]))                  
+                :type "int")
+                nil [2310 2340])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlite_libversion" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2355 2373]))                  
+                :type "int")
+                nil [2342 2374])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlite_libencoding" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2388 2407]))                  
+                :type "int")
+                nil [2375 2408])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlite_changes" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2423 2438]))                  
+                :type "int")
+                nil [2410 2439])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlite_last_insert_rowid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2453 2478]))                  
+                :type "int")
+                nil [2440 2479])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlite_escape_string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2494 2515]))                  
+                :type "int")
+                nil [2481 2516])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlite_busy_timeout" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2531 2551]))                  
+                :type "int")
+                nil [2518 2552])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlite_last_error" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2567 2585]))                  
+                :type "int")
+                nil [2554 2586])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlite_error_string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2600 2620]))                  
+                :type "int")
+                nil [2587 2621])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlite_create_aggregate" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2636 2660]))                  
+                :type "int")
+                nil [2623 2661])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlite_create_function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2675 2698]))                  
+                :type "int")
+                nil [2662 2699])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlite_udf_decode_binary" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2713 2738]))                  
+                :type "int")
+                nil [2700 2739])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlite_udf_encode_binary" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2753 2778]))                  
+                :type "int")
+                nil [2740 2779])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlite_factory" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2794 2809]))                  
+                :type "int")
+                nil [2781 2810])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sqlite_fetch_column_types" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2825 2851]))                  
+                :type "int")
+                nil [2812 2852])
+            ("assoc_case" variable (:type "long") nil [2890 2906])
+            ("SQLITE_G" variable (:constant-flag t) nil [3036 3044]))          
+    :file "php_sqlite.h"
+    :pointmax 3179
+    :fsize 3178
+    :lastmodtime '(20689 55724 0 0)
+    :unmatched-syntax '((semantic-list 2930 . 2938) (symbol 2907 . 2930) (semantic-list 2879 . 2887) (symbol 2854 . 2879))
+    :lexical-table 
+        '(("phpext_sqlite_ptr" . ((punctuation "&" 1425 . 1426) (symbol "sqlite_module_entry" 1426 . 1445)))
+          ("PHP_SQLITE_H")
+          ("SQLITE_G" (spp-arg-list ("v") 3044 . 3047) . ((semantic-list "(sqlite_globals.v)" 3048 . 3066)))
+          )
+
+    )
+   )
+  :file "!home!work!download!php-5.3.20!ext!sqlite!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

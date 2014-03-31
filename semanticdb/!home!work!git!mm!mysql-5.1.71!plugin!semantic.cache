@@ -1,0 +1,22 @@
+;; Object plugin/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "plugin/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("AUTOMAKE_OPTIONS" variable (:default-value ("foreign")) nil [813 840])
+            ("EXTRA_DIST" variable (:default-value ("fulltext/configure.in")) nil [935 971])
+            ("SUBDIRS" variable (:default-value ("@mysql_pg_dirs@")) nil [972 998])
+            ("DIST_SUBDIRS" variable (:default-value ("@mysql_pg_distdirs@")) nil [998 1033]))          
+    :file "Makefile.am"
+    :pointmax 1086
+    :fsize 1085
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax '((symbol 1077 . 1085) (punctuation 1076 . 1077) (punctuation 1075 . 1076) (symbol 1074 . 1075) (bol 1074 . 1074))
+    )
+   )
+  :file "!home!work!git!mm!mysql-5.1.71!plugin!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

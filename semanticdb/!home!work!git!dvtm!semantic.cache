@@ -1,0 +1,400 @@
+;; Object dvtm/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "dvtm/"
+  :tables (list 
+   (semanticdb-table "vt.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("VT_VT_H" variable (:constant-flag t) nil [891 898])
+            ("curses.h" include (:system-flag t) nil [900 919])
+            ("stdbool.h" include (:system-flag t) nil [920 940])
+            ("stdint.h" include (:system-flag t) nil [941 960])
+            ("stdlib.h" include (:system-flag t) nil [961 980])
+            ("sys/types.h" include (:system-flag t) nil [981 1003])
+            ("unistd.h" include (:system-flag t) nil [1004 1023])
+            ("wchar.h" include (:system-flag t) nil [1024 1042])
+            ("mmask_t" variable (:constant-flag t) nil [1082 1089])
+            ("" type
+               (:members 
+                  ( ("VT_ESCSEQ_HANDLER_OK" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1167 1188])
+                    ("VT_ESCSEQ_HANDLER_NOTYET" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1538 1563])
+                    ("VT_ESCSEQ_HANDLER_NOWAY" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1721 1746]))                  
+                :type "enum")
+                nil [1112 1747])
+            ("Vt" type
+               (:typedef ("Vt" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :superclasses "Vt"
+                :type "typedef")
+                nil [1749 1770])
+            ("vt_escseq_handler_t" variable
+               (:functionpointer-flag t
+                :type "int")
+                nil [1779 1822])
+            ("" type
+               (:members 
+                  ( ("VT_EVENT_TITLE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1832 1847])
+                    ("VT_EVENT_COPY_TEXT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1849 1868]))                  
+                :type "enum")
+                nil [1824 1871])
+            ("vt_event_handler_t" variable
+               (:functionpointer-flag t
+                :type "void")
+                nil [1881 1937])
+            ("vt_init" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1952 1957]))                  
+                :type "void")
+                nil [1939 1958])
+            ("vt_set_keytable" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("keytable_overlay" variable
+                       (:pointer 1
+                        :dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1980 2018])
+                    ("count" variable (:type "int") (reparse-symbol arg-sub-list) [2019 2029]))                  
+                :type "void")
+                nil [1959 2030])
+            ("vt_shutdown" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2048 2053]))                  
+                :type "void")
+                nil [2031 2054])
+            ("vt_set_escseq_handler" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("Vt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2082 2087])
+                    ("" variable (:type ("vt_escseq_handler_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2088 2108]))                  
+                :type "void")
+                nil [2055 2109])
+            ("vt_set_event_handler" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("Vt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2136 2141])
+                    ("" variable (:type ("vt_event_handler_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2142 2161]))                  
+                :type "void")
+                nil [2110 2162])
+            ("vt_set_data" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("Vt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2180 2185])
+                    ("" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2186 2193]))                  
+                :type "void")
+                nil [2163 2194])
+            ("vt_get_data" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("Vt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2213 2218]))                  
+                :type "void")
+                nil [2195 2219])
+            ("vt_set_default_colors" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("Vt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2247 2252])
+                    ("attrs" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2253 2268])
+                    ("fg" variable (:type "short") (reparse-symbol arg-sub-list) [2269 2278])
+                    ("bg" variable (:type "short") (reparse-symbol arg-sub-list) [2279 2288]))                  
+                :type "void")
+                nil [2220 2289])
+            ("vt_create" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("rows" variable (:type "int") (reparse-symbol arg-sub-list) [2305 2314])
+                    ("cols" variable (:type "int") (reparse-symbol arg-sub-list) [2315 2324])
+                    ("scroll_buf_sz" variable (:type "int") (reparse-symbol arg-sub-list) [2325 2343]))                  
+                :type ("Vt" type (:type "class") nil nil))
+                nil [2291 2344])
+            ("vt_resize" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("Vt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2360 2365])
+                    ("rows" variable (:type "int") (reparse-symbol arg-sub-list) [2366 2375])
+                    ("cols" variable (:type "int") (reparse-symbol arg-sub-list) [2376 2385]))                  
+                :type "void")
+                nil [2345 2386])
+            ("vt_destroy" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("Vt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2403 2408]))                  
+                :type "void")
+                nil [2387 2409])
+            ("vt_forkpty" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("Vt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2427 2432])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2433 2446])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2447 2466])
+                    ("cwd" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2467 2483])
+                    ("envp" variable
+                       (:pointer 1
+                        :dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2484 2503])
+                    ("pty" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2504 2513]))                  
+                :type ("pid_t" type (:type "class") nil nil))
+                nil [2410 2514])
+            ("vt_getpty" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("Vt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2529 2534]))                  
+                :type "int")
+                nil [2515 2535])
+            ("vt_cursor" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("t" variable
+                       (:pointer 1
+                        :type ("Vt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2555 2561]))                  
+                :type "unsigned int")
+                nil [2536 2562])
+            ("vt_process" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("Vt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2579 2584]))                  
+                :type "int")
+                nil [2564 2585])
+            ("vt_keypress" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("Vt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2603 2608])
+                    ("keycode" variable (:type "int") (reparse-symbol arg-sub-list) [2609 2621]))                  
+                :type "void")
+                nil [2586 2622])
+            ("vt_write" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("t" variable
+                       (:pointer 1
+                        :type ("Vt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2636 2642])
+                    ("buf" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2643 2659])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [2660 2668]))                  
+                :type "int")
+                nil [2623 2669])
+            ("vt_mouse" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("t" variable
+                       (:pointer 1
+                        :type ("Vt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2684 2690])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [2691 2697])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [2698 2704])
+                    ("mask" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2705 2718]))                  
+                :type "void")
+                nil [2670 2719])
+            ("vt_dirty" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("t" variable
+                       (:pointer 1
+                        :type ("Vt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2734 2740]))                  
+                :type "void")
+                nil [2720 2741])
+            ("vt_draw" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("Vt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2755 2760])
+                    ("win" variable
+                       (:pointer 1
+                        :type ("WINDOW" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2761 2773])
+                    ("startrow" variable (:type "int") (reparse-symbol arg-sub-list) [2774 2787])
+                    ("startcol" variable (:type "int") (reparse-symbol arg-sub-list) [2788 2801]))                  
+                :type "void")
+                nil [2742 2802])
+            ("vt_color_get" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("t" variable
+                       (:pointer 1
+                        :type ("Vt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2822 2828])
+                    ("fg" variable (:type "short") (reparse-symbol arg-sub-list) [2829 2838])
+                    ("bg" variable (:type "short") (reparse-symbol arg-sub-list) [2839 2848]))                  
+                :type "short")
+                nil [2803 2849])
+            ("vt_color_reserve" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("fg" variable (:type "short") (reparse-symbol arg-sub-list) [2873 2882])
+                    ("bg" variable (:type "short") (reparse-symbol arg-sub-list) [2883 2892]))                  
+                :type "short")
+                nil [2850 2893])
+            ("vt_scroll" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("Vt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2910 2915])
+                    ("rows" variable (:type "int") (reparse-symbol arg-sub-list) [2916 2925]))                  
+                :type "void")
+                nil [2895 2926])
+            ("vt_noscroll" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("Vt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2944 2949]))                  
+                :type "void")
+                nil [2927 2950])
+            ("vt_bell" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("Vt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2965 2970])
+                    ("bell" variable (:type "bool") (reparse-symbol arg-sub-list) [2971 2981]))                  
+                :type "void")
+                nil [2952 2982])
+            ("vt_togglebell" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("Vt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3002 3007]))                  
+                :type "void")
+                nil [2983 3008])
+            ("vt_copymode_enter" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("t" variable
+                       (:pointer 1
+                        :type ("Vt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3033 3039]))                  
+                :type "void")
+                nil [3010 3040])
+            ("vt_copymode_leave" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("t" variable
+                       (:pointer 1
+                        :type ("Vt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3064 3070]))                  
+                :type "void")
+                nil [3041 3071])
+            ("vt_copymode" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("t" variable
+                       (:pointer 1
+                        :type ("Vt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3093 3099]))                  
+                :type "unsigned int")
+                nil [3072 3100])
+            ("vt_copymode_keypress" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("t" variable
+                       (:pointer 1
+                        :type ("Vt" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3127 3133])
+                    ("keycode" variable (:type "int") (reparse-symbol arg-sub-list) [3134 3146]))                  
+                :type "void")
+                nil [3101 3147]))          
+    :file "vt.h"
+    :pointmax 3170
+    :fsize 3173
+    :lastmodtime '(21120 25883 0 0)
+    :unmatched-syntax '((TYPEDEF 1873 . 1880) (TYPEDEF 1771 . 1778))
+    :lexical-table 
+        '(("mmask_t" . ((UNSIGNED "unsigned" 1090 . 1098) (LONG "long" 1099 . 1103)))
+          ("VT_VT_H")
+          )
+
+    )
+   )
+  :file "!home!work!git!dvtm!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

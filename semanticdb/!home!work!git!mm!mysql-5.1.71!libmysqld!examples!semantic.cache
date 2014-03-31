@@ -1,0 +1,38 @@
+;; Object examples/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "examples/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("noinst_PROGRAMS" variable (:default-value ("mysql")) nil [738 762])
+            ("bin_PROGRAMS" variable (:default-value ("mysqltest_embedded")) nil [762 826])
+            ("client_sources" variable (:default-value ("$(nodist_mysqltest_embedded_SOURCES)" "$(nodist_mysql_SOURCES)")) nil [826 905])
+            ("tests_sources" variable (:default-value ("$(nodist_mysql_client_test_embedded_SOURCES)")) nil [905 968])
+            ("BUILT_SOURCES" variable (:default-value ("link_sources")) nil [968 999])
+            ("CLEANFILES" variable (:default-value ("$(client_sources)" "$(tests_sources)" "$(BUILT_SOURCES)")) nil [999 1069])
+            ("EXTRA_DIST" variable (:default-value ("CMakeLists.txt")) nil [1069 1102])
+            ("link_sources" function nil nil [1103 1351])
+            ("DEFS" variable (:default-value ("-DEMBEDDED_LIBRARY")) nil [1352 1380])
+            ("INCLUDES" variable (:default-value ("-I$(top_builddir)/include" "-I$(top_srcdir)/include" "-I$(srcdir)" "-I$(top_srcdir)" "-I$(top_srcdir)/client" "-I$(top_srcdir)/regex" "-I$(top_srcdir)/tests" "$(openssl_includes)")) nil [1380 1564])
+            ("LIBS" variable (:default-value ("@LIBS@" "@WRAPLIBS@" "@CLIENT_LIBS@" "$(yassl_libs)")) nil [1564 1618])
+            ("LDADD" variable (:default-value ("@CLIENT_EXTRA_LDFLAGS@" "../libmysqld.a" "@LIBDL@" "$(CXXLDFLAGS)" "@NDB_SCI_LIBS@")) nil [1618 1720])
+            ("mysqltest_embedded_LINK" variable (:default-value ("$(CXXLINK)")) nil [1721 1758])
+            ("nodist_mysqltest_embedded_SOURCES" variable (:default-value ("mysqltest.cc")) nil [1758 1807])
+            ("mysqltest_embedded_LDADD" variable (:default-value ("$(LDADD)" "$(top_builddir)/regex/libregex.a" "@MYSQLD_EXTRA_LDFLAGS@")) nil [1807 1905])
+            ("nodist_mysql_SOURCES" variable (:default-value ("mysql.cc" "readline.cc" "completion_hash.cc" "my_readline.h" "sql_string.h" "completion_hash.h")) nil [1906 2032])
+            ("mysql_LDADD" variable (:default-value ("@readline_link@" "@TERMCAP_LIB@" "$(LDADD)")) nil [2032 2085])
+            ("mysql_client_test_embedded_LINK" variable (:default-value ("$(CXXLINK)")) nil [2086 2131])
+            ("nodist_mysql_client_test_embedded_SOURCES" variable (:default-value ("mysql_client_test.c")) nil [2131 2195])
+            ("mysql_client_test.o" function (:arguments ("$(top_srcdir)/tests/mysql_client_fw.c")) nil [2195 2254]))          
+    :file "Makefile.am"
+    :pointmax 2307
+    :fsize 2306
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax '((symbol 2298 . 2306) (punctuation 2297 . 2298) (punctuation 2296 . 2297) (symbol 2295 . 2296) (bol 2295 . 2295))
+    )
+   )
+  :file "!home!work!git!mm!mysql-5.1.71!libmysqld!examples!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

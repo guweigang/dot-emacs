@@ -1,0 +1,287 @@
+;; Object mysql2lucene/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mysql2lucene/"
+  :tables (list 
+   (semanticdb-table "table_insert.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("globals.h" include nil nil [715 735])
+            ("table_insert.h" include nil nil [736 761])
+            ("stdlib.h" include (:system-flag t) nil [763 782])
+            ("CLucene.h" include (:system-flag t) nil [783 803])
+            ("boost/foreach.hpp" include (:system-flag t) nil [804 832])
+            ("table_insert" function
+               (:arguments 
+                  ( ("table_name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1014 1037])
+                    ("fields" variable
+                       (:reference 1
+                        :type ("mysql::Row_of_fields" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1038 1067]))                  
+                :type "void")
+                nil [996 4625]))          
+    :file "table_insert.cpp"
+    :pointmax 4626
+    :fsize 4625
+    :lastmodtime '(20703 18278 0 0)
+    :unmatched-syntax '((semantic-list 975 . 994) (symbol 965 . 975) (semantic-list 954 . 964) (symbol 945 . 954) (semantic-list 931 . 944) (symbol 922 . 931) (semantic-list 911 . 921) (symbol 902 . 911) (semantic-list 893 . 901) (symbol 884 . 893) (semantic-list 876 . 883) (symbol 867 . 876) (semantic-list 860 . 866) (symbol 851 . 860) (semantic-list 843 . 850) (symbol 834 . 843))
+    )
+   (semanticdb-table "globals.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_GLOBALS_H" variable (:constant-flag t) nil [828 838])
+            ("string" include (:system-flag t) nil [839 856])
+            ("binlog_api.h" include nil nil [857 880])
+            ("cl_index_file" variable
+               (:typemodifiers ("extern")
+                :type ("std::string" type (:type "class") nil nil))
+                nil [881 914]))          
+    :file "globals.h"
+    :pointmax 940
+    :fsize 939
+    :lastmodtime '(20703 18278 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("_GLOBALS_H")
+          )
+
+    )
+   (semanticdb-table "table_insert.h"
+    :file "table_insert.h"
+    :fsize 1000
+    :lastmodtime '(20703 18278 0 0)
+    )
+   (semanticdb-table "main.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [799 818])
+            ("boost/foreach.hpp" include (:system-flag t) nil [819 847])
+            ("binlog_api.h" include nil nil [848 871])
+            ("table_update.h" include nil nil [873 898])
+            ("table_delete.h" include nil nil [899 924])
+            ("table_insert.h" include nil nil [925 950])
+            ("table_index.h" include nil nil [952 976])
+            ("mysql::system::create_transport" using (:type ("mysql::system::create_transport" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [978 1016])
+            ("mysql::Binary_log" using (:type ("mysql::Binary_log" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1017 1041])
+            ("cl_index_file" variable (:type ("std::string" type (:type "class") nil nil)) nil [1043 1069])
+            ("Incident_handler" type
+               (:superclasses 
+                  ( ("mysql::Content_handler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1128 1135])
+                    ("Incident_handler" function
+                       (:constructor-flag t
+                        :type ("Incident_handler" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1137 1185])
+                    ("process_event" function
+                       (:pointer 1
+                        :arguments 
+                          ( ("incident" variable
+                               (:pointer 1
+                                :type ("mysql::Incident_event" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1220 1252]))                          
+                        :type ("Binary_log_event" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1188 1769]))                  
+                :type "class")
+                nil [1071 1772])
+            ("Applier" type
+               (:superclasses 
+                  ( ("mysql::Content_handler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1822 1829])
+                    ("Applier" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("index" variable
+                               (:pointer 1
+                                :type ("Table_index" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1839 1858]))                          
+                        :type ("Applier" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1831 1889])
+                    ("process_event" function
+                       (:pointer 1
+                        :arguments 
+                          ( ("rev" variable
+                               (:pointer 1
+                                :type ("mysql::Row_event" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1931 1953]))                          
+                        :type ("mysql::Binary_log_event" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1892 3184])
+                    ("private" label nil (reparse-symbol classsubparts) [3185 3193])
+                    ("m_table_index" variable
+                       (:pointer 1
+                        :type ("Table_index" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3196 3223]))                  
+                :type "class")
+                nil [1774 3227])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3248 3257])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3258 3270]))                  
+                :type "int")
+                nil [3239 5558]))          
+    :file "main.cpp"
+    :pointmax 5559
+    :fsize 5558
+    :lastmodtime '(20703 18278 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "table_update.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_TABLE_UPDATE_H" variable (:constant-flag t) nil [838 853])
+            ("string" include (:system-flag t) nil [854 871])
+            ("binlog_api.h" include nil nil [872 895])
+            ("table_update" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("table_name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [914 937])
+                    ("old_fields" variable
+                       (:reference 1
+                        :type ("mysql::Row_of_fields" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [938 971])
+                    ("new_fields" variable
+                       (:reference 1
+                        :type ("mysql::Row_of_fields" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [972 1005]))                  
+                :type "void")
+                nil [896 1006]))          
+    :file "table_update.h"
+    :pointmax 1037
+    :fsize 1036
+    :lastmodtime '(20703 18278 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("_TABLE_UPDATE_H")
+          )
+
+    )
+   (semanticdb-table "table_delete.h"
+    :file "table_delete.h"
+    :fsize 999
+    :lastmodtime '(20703 18278 0 0)
+    )
+   (semanticdb-table "table_index.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("TABLE_INDEX_H" variable (:constant-flag t) nil [839 852])
+            ("binlog_event.h" include nil nil [853 878])
+            ("map" include (:system-flag t) nil [879 893])
+            ("basic_content_handler.h" include nil nil [894 928])
+            ("Event_index_element" type
+               (:typedef ("std::pair" type
+                     (:template-specifier 
+                        ( ("boost::uint64_t" type nil nil nil)
+                          ("mysql::Table_map_event" type (:pointer 1) nil nil))                        
+                      :type "class")
+                      nil nil)
+                :superclasses "std::pair"
+                :type "typedef")
+                nil [930 1011])
+            ("Int2event_map" type
+               (:typedef ("std::map" type
+                     (:template-specifier 
+                        ( ("boost::uint64_t" type nil nil nil)
+                          ("mysql::Table_map_event" type (:pointer 1) nil nil))                        
+                      :type "class")
+                      nil nil)
+                :superclasses "std::map"
+                :type "typedef")
+                nil [1012 1086])
+            ("Table_index" type
+               (:superclasses 
+                  ( ("mysql::Content_handler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("Int2event_map" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1162 1169])
+                    ("process_event" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :arguments 
+                          ( ("tm" variable
+                               (:pointer 1
+                                :type ("mysql::Table_map_event" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1210 1237]))                          
+                        :type ("mysql::Binary_log_event" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1171 1238])
+                    ("Table_index" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1241 1256])
+                    ("get_table_name" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("table_id" variable (:type "int") (reparse-symbol arg-sub-list) [1278 1291])
+                            ("out" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1292 1308]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1259 1309]))                  
+                :type "class")
+                nil [1088 1313]))          
+    :file "table_index.h"
+    :pointmax 1343
+    :fsize 1342
+    :lastmodtime '(20703 18278 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("TABLE_INDEX_H")
+          )
+
+    )
+   (semanticdb-table "table_index.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("table_index.h" include nil nil [715 739])
+            ("process_event" function
+               (:pointer 1
+                :parent "Table_index"
+                :arguments 
+                  ( ("tm" variable
+                       (:pointer 1
+                        :type ("mysql::Table_map_event" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [793 820]))                  
+                :type ("mysql::Binary_log_event" type (:type "class") nil nil))
+                nil [741 989])
+            ("Table_index" function
+               (:destructor-flag t
+                :parent "Table_index"
+                :type "void")
+                nil [991 1121])
+            ("get_table_name" function
+               (:parent "Table_index"
+                :arguments 
+                  ( ("table_id" variable (:type "int") (reparse-symbol arg-sub-list) [1155 1168])
+                    ("out" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1169 1185]))                  
+                :type "int")
+                nil [1123 1406]))          
+    :file "table_index.cpp"
+    :pointmax 1407
+    :fsize 1406
+    :lastmodtime '(20703 18278 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!git!mysql-replication-listener!examples!mysql2lucene!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

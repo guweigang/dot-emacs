@@ -1,0 +1,36 @@
+;; Object spider/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "spider/"
+  :tables (list 
+   (semanticdb-table "item.jd.com.js"
+    :major-mode 'js-mode
+    :tags nil
+    :file "item.jd.com.js"
+    :pointmax 1525
+    :fsize 1524
+    :lastmodtime '(21243 22196 0 0)
+    :unmatched-syntax '((FUNCTION 18 . 26) (PAREN_BLOCK 27 . 36))
+    )
+   (semanticdb-table "item.yixun.com.js"
+    :major-mode 'js-mode
+    :tags nil
+    :file "item.yixun.com.js"
+    :pointmax 1541
+    :fsize 1540
+    :lastmodtime '(21243 22128 0 0)
+    :unmatched-syntax '((FUNCTION 18 . 26) (PAREN_BLOCK 27 . 36))
+    )
+   (semanticdb-table "www.amazon.com.js"
+    :major-mode 'js-mode
+    :tags nil
+    :file "www.amazon.com.js"
+    :pointmax 2147
+    :fsize 2146
+    :lastmodtime '(21243 22177 0 0)
+    :unmatched-syntax '((FUNCTION 18 . 26) (PAREN_BLOCK 27 . 36))
+    )
+   )
+  :file "!home!work!git!bigbang_phantomjs!spider!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,1886 @@
+;; Object kernel/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "kernel/"
+  :tables (list 
+   (semanticdb-table "main.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("php.h" include nil nil [1213 1229])
+            ("php_phalcon.h" include nil nil [1230 1254])
+            ("php_main.h" include nil nil [1255 1276])
+            ("kernel/main.h" include nil nil [1278 1302])
+            ("kernel/memory.h" include nil nil [1303 1329])
+            ("kernel/fcall.h" include nil nil [1330 1355])
+            ("Zend/zend_exceptions.h" include nil nil [1357 1390])
+            ("Zend/zend_interfaces.h" include nil nil [1391 1424])
+            ("php_phalcon_init_globals" function
+               (:arguments 
+                  ( ("phalcon_globals" variable
+                       (:pointer 1
+                        :type ("zend_phalcon_globals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1525 1572])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1563 1573]))                  
+                :type "void")
+                nil [1495 2216])
+            ("phalcon_register_internal_interface_ex" function
+               (:pointer 1
+                :arguments 
+                  ( ("orig_class_entry" variable
+                       (:pointer 1
+                        :type ("zend_class_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2330 2365])
+                    ("parent_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2366 2393])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2384 2394]))                  
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [2273 2692])
+            ("phalcon_init_global" function
+               (:arguments 
+                  ( ("global" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2777 2790])
+                    ("global_length" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2791 2827])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2818 2828]))                  
+                :type "int")
+                nil [2753 3196])
+            ("phalcon_get_global" function
+               (:arguments 
+                  ( ("arr" variable
+                       (:pointer 2
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3267 3278])
+                    ("global" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3279 3292])
+                    ("global_length" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3293 3329])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3320 3330]))                  
+                :type "int")
+                nil [3244 3817])
+            ("phalcon_fast_count" function
+               (:arguments 
+                  ( ("result" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3895 3908])
+                    ("value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3909 3930])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3921 3931]))                  
+                :type "void")
+                nil [3871 4858])
+            ("phalcon_fast_count_ev" function
+               (:arguments 
+                  ( ("value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4975 4996])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4987 4997]))                  
+                :type "int")
+                nil [4949 5810])
+            ("phalcon_function_exists_ex" function
+               (:arguments 
+                  ( ("method_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5921 5939])
+                    ("method_len" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5940 5973])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5964 5974]))                  
+                :type "int")
+                nil [5890 6088])
+            ("phalcon_function_quick_exists_ex" function
+               (:arguments 
+                  ( ("method_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6234 6252])
+                    ("method_len" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [6253 6277])
+                    ("key" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [6278 6305])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6296 6306]))                  
+                :type "int")
+                nil [6197 6431])
+            ("phalcon_is_callable" function
+               (:arguments 
+                  ( ("var" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6497 6516])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6507 6517]))                  
+                :type "int")
+                nil [6473 6700])
+            ("phalcon_is_iterable" function
+               (:arguments 
+                  ( ("arr" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6787 6797])
+                    ("arr_hash" variable
+                       (:pointer 2
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6798 6819])
+                    ("hash_position" variable
+                       (:pointer 1
+                        :type ("HashPosition" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6820 6848])
+                    ("duplicate" variable (:type "int") (reparse-symbol arg-sub-list) [6849 6863])
+                    ("reverse" variable (:type "int") (reparse-symbol arg-sub-list) [6864 6885])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6876 6886]))                  
+                :type "int")
+                nil [6763 7454])
+            ("phalcon_inherit_not_found" function
+               (:arguments 
+                  ( ("class_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7547 7564])
+                    ("inherit_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7565 7584]))                  
+                :type "void")
+                nil [7516 7715]))          
+    :file "main.c"
+    :pointmax 7716
+    :fsize 7715
+    :lastmodtime '(20741 65278)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "fcall.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("php.h" include nil nil [1213 1229])
+            ("php_phalcon.h" include nil nil [1230 1254])
+            ("Zend/zend_API.h" include nil nil [1256 1282])
+            ("Zend/zend_exceptions.h" include nil nil [1283 1316])
+            ("Zend/zend_execute.h" include nil nil [1317 1347])
+            ("kernel/main.h" include nil nil [1349 1373])
+            ("kernel/fcall.h" include nil nil [1374 1399])
+            ("kernel/memory.h" include nil nil [1400 1426])
+            ("kernel/exception.h" include nil nil [1427 1456])
+            ("kernel/experimental/fcall.h" include nil nil [1458 1496])
+            ("phalcon_find_scope" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("ce" variable
+                       (:pointer 1
+                        :type ("zend_class_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1587 1608])
+                    ("method_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1609 1627])
+                    ("method_len" variable (:type "int") (reparse-symbol arg-sub-list) [1628 1652])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1643 1653]))                  
+                :type "int")
+                nil [1557 2019])
+            ("phalcon_find_parent_scope" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("ce" variable
+                       (:pointer 1
+                        :type ("zend_class_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2115 2136])
+                    ("active_class" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2137 2156])
+                    ("active_class_len" variable (:type "int") (reparse-symbol arg-sub-list) [2157 2178])
+                    ("method_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2179 2197])
+                    ("method_len" variable (:type "int") (reparse-symbol arg-sub-list) [2198 2222])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2213 2223]))                  
+                :type "int")
+                nil [2078 2746])
+            ("phalcon_has_constructor" function
+               (:arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2824 2846])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2837 2847]))                  
+                :type "int")
+                nil [2796 2985])
+            ("phalcon_call_func_internal" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3110 3129])
+                    ("func_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3130 3146])
+                    ("func_length" variable (:type "int") (reparse-symbol arg-sub-list) [3147 3163])
+                    ("noreturn" variable (:type "int") (reparse-symbol arg-sub-list) [3164 3186])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3177 3187]))                  
+                :type "int")
+                nil [3065 3828])
+            ("phalcon_call_func_params_internal" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3989 4008])
+                    ("func_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4009 4025])
+                    ("func_length" variable (:type "int") (reparse-symbol arg-sub-list) [4026 4042])
+                    ("param_count" variable (:type ("zend_uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4043 4065])
+                    ("params" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4066 4081])
+                    ("noreturn" variable (:type "int") (reparse-symbol arg-sub-list) [4082 4104])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4095 4105]))                  
+                :type "int")
+                nil [3937 4758])
+            ("phalcon_call_func" function
+               (:arguments 
+                  ( ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4844 4863])
+                    ("func_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4864 4880])
+                    ("func_length" variable (:type "int") (reparse-symbol arg-sub-list) [4881 4897])
+                    ("noreturn" variable (:type "int") (reparse-symbol arg-sub-list) [4898 4920])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4911 4921]))                  
+                :type "int")
+                nil [4822 5018])
+            ("phalcon_call_method_internal" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5144 5163])
+                    ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5164 5177])
+                    ("method_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5178 5196])
+                    ("method_len" variable (:type "int") (reparse-symbol arg-sub-list) [5197 5212])
+                    ("noreturn" variable (:type "int") (reparse-symbol arg-sub-list) [5213 5237])
+                    ("TSRMLS_DC" variable (:type ("PH_MEHASH_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5226 5248]))                  
+                :type "int")
+                nil [5097 6520])
+            ("phalcon_call_func_params" function
+               (:arguments 
+                  ( ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6629 6648])
+                    ("func_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6649 6665])
+                    ("func_length" variable (:type "int") (reparse-symbol arg-sub-list) [6666 6682])
+                    ("param_count" variable (:type ("zend_uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6683 6705])
+                    ("params" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6706 6721])
+                    ("noreturn" variable (:type "int") (reparse-symbol arg-sub-list) [6722 6744])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6735 6745]))                  
+                :type "int")
+                nil [6600 6870])
+            ("phalcon_call_func_one_param" function
+               (:arguments 
+                  ( ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6968 6987])
+                    ("func_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6988 7004])
+                    ("func_length" variable (:type "int") (reparse-symbol arg-sub-list) [7005 7021])
+                    ("param1" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7022 7035])
+                    ("noreturn" variable (:type "int") (reparse-symbol arg-sub-list) [7036 7058])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7049 7059]))                  
+                :type "int")
+                nil [6936 7195])
+            ("phalcon_call_func_two_params" function
+               (:arguments 
+                  ( ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7295 7314])
+                    ("func_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7315 7331])
+                    ("func_length" variable (:type "int") (reparse-symbol arg-sub-list) [7332 7348])
+                    ("param1" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7349 7362])
+                    ("param2" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7363 7376])
+                    ("noreturn" variable (:type "int") (reparse-symbol arg-sub-list) [7377 7399])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7390 7400]))                  
+                :type "int")
+                nil [7262 7544])
+            ("phalcon_call_func_three_params" function
+               (:arguments 
+                  ( ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7646 7665])
+                    ("func_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7666 7682])
+                    ("func_length" variable (:type "int") (reparse-symbol arg-sub-list) [7683 7699])
+                    ("param1" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7700 7713])
+                    ("param2" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7714 7727])
+                    ("param3" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7728 7741])
+                    ("noreturn" variable (:type "int") (reparse-symbol arg-sub-list) [7742 7764])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7755 7765]))                  
+                :type "int")
+                nil [7611 7917])
+            ("phalcon_call_method_params_internal" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8047 8066])
+                    ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8067 8080])
+                    ("method_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8081 8099])
+                    ("method_len" variable (:type "int") (reparse-symbol arg-sub-list) [8100 8115])
+                    ("param_count" variable (:type ("zend_uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8116 8138])
+                    ("params" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8139 8154])
+                    ("noreturn" variable (:type "int") (reparse-symbol arg-sub-list) [8155 8179])
+                    ("TSRMLS_DC" variable (:type ("PH_MEHASH_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8168 8190]))                  
+                :type "int")
+                nil [7993 9579])
+            ("phalcon_call_method" function
+               (:arguments 
+                  ( ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9673 9692])
+                    ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9693 9706])
+                    ("method_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9707 9725])
+                    ("method_len" variable (:type "int") (reparse-symbol arg-sub-list) [9726 9741])
+                    ("noreturn" variable (:type "int") (reparse-symbol arg-sub-list) [9742 9766])
+                    ("TSRMLS_DC" variable (:type ("PH_MEHASH_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9755 9777]))                  
+                :type "int")
+                nil [9649 9897])
+            ("phalcon_call_method_params" function
+               (:arguments 
+                  ( ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10017 10036])
+                    ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10037 10050])
+                    ("method_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10051 10069])
+                    ("method_len" variable (:type "int") (reparse-symbol arg-sub-list) [10070 10085])
+                    ("param_count" variable (:type ("zend_uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10086 10108])
+                    ("params" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10109 10124])
+                    ("noreturn" variable (:type "int") (reparse-symbol arg-sub-list) [10125 10149])
+                    ("TSRMLS_DC" variable (:type ("PH_MEHASH_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10138 10160]))                  
+                :type "int")
+                nil [9986 10308])
+            ("phalcon_call_method_one_param" function
+               (:arguments 
+                  ( ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10414 10433])
+                    ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10434 10447])
+                    ("method_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10448 10466])
+                    ("method_len" variable (:type "int") (reparse-symbol arg-sub-list) [10467 10482])
+                    ("param1" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10483 10496])
+                    ("noreturn" variable (:type "int") (reparse-symbol arg-sub-list) [10497 10521])
+                    ("TSRMLS_DC" variable (:type ("PH_MEHASH_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10510 10532]))                  
+                :type "int")
+                nil [10380 10691])
+            ("phalcon_call_method_two_params" function
+               (:arguments 
+                  ( ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10799 10818])
+                    ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10819 10832])
+                    ("method_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10833 10851])
+                    ("method_len" variable (:type "int") (reparse-symbol arg-sub-list) [10852 10867])
+                    ("param1" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10868 10881])
+                    ("param2" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10882 10895])
+                    ("noreturn" variable (:type "int") (reparse-symbol arg-sub-list) [10896 10920])
+                    ("TSRMLS_DC" variable (:type ("PH_MEHASH_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10909 10931]))                  
+                :type "int")
+                nil [10764 11098])
+            ("phalcon_call_method_three_params" function
+               (:arguments 
+                  ( ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11208 11227])
+                    ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11228 11241])
+                    ("method_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11242 11260])
+                    ("method_len" variable (:type "int") (reparse-symbol arg-sub-list) [11261 11276])
+                    ("param1" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11277 11290])
+                    ("param2" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11291 11304])
+                    ("param3" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11305 11318])
+                    ("noreturn" variable (:type "int") (reparse-symbol arg-sub-list) [11319 11343])
+                    ("TSRMLS_DC" variable (:type ("PH_MEHASH_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11332 11354]))                  
+                :type "int")
+                nil [11171 11529])
+            ("phalcon_call_method_four_params" function
+               (:arguments 
+                  ( ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11638 11657])
+                    ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11658 11671])
+                    ("method_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11672 11690])
+                    ("method_len" variable (:type "int") (reparse-symbol arg-sub-list) [11691 11706])
+                    ("param1" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11707 11720])
+                    ("param2" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11721 11734])
+                    ("param3" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11735 11748])
+                    ("param4" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11749 11762])
+                    ("noreturn" variable (:type "int") (reparse-symbol arg-sub-list) [11763 11787])
+                    ("TSRMLS_DC" variable (:type ("PH_MEHASH_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11776 11798]))                  
+                :type "int")
+                nil [11602 11981])
+            ("phalcon_call_method_five_params" function
+               (:arguments 
+                  ( ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12090 12109])
+                    ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12110 12123])
+                    ("method_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12124 12142])
+                    ("method_len" variable (:type "int") (reparse-symbol arg-sub-list) [12143 12158])
+                    ("param1" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12159 12172])
+                    ("param2" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12173 12186])
+                    ("param3" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12187 12200])
+                    ("param4" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12201 12214])
+                    ("param5" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12215 12228])
+                    ("noreturn" variable (:type "int") (reparse-symbol arg-sub-list) [12229 12253])
+                    ("TSRMLS_DC" variable (:type ("PH_MEHASH_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12242 12264]))                  
+                :type "int")
+                nil [12054 12455])
+            ("phalcon_call_static_func_params" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12587 12606])
+                    ("class_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12607 12624])
+                    ("class_length" variable (:type "int") (reparse-symbol arg-sub-list) [12625 12642])
+                    ("method_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12643 12661])
+                    ("method_length" variable (:type "int") (reparse-symbol arg-sub-list) [12662 12680])
+                    ("param_count" variable (:type ("zend_uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12681 12703])
+                    ("params" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12704 12719])
+                    ("noreturn" variable (:type "int") (reparse-symbol arg-sub-list) [12720 12742])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12733 12743]))                  
+                :type "int")
+                nil [12544 13669])
+            ("phalcon_call_static_func" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13776 13795])
+                    ("class_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13796 13813])
+                    ("class_length" variable (:type "int") (reparse-symbol arg-sub-list) [13814 13831])
+                    ("method_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13832 13850])
+                    ("method_length" variable (:type "int") (reparse-symbol arg-sub-list) [13851 13869])
+                    ("noreturn" variable (:type "int") (reparse-symbol arg-sub-list) [13870 13892])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13883 13893]))                  
+                :type "int")
+                nil [13740 14817])
+            ("phalcon_call_parent_func" function
+               (:arguments 
+                  ( ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14917 14936])
+                    ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14937 14950])
+                    ("active_class" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14951 14970])
+                    ("active_class_len" variable (:type "int") (reparse-symbol arg-sub-list) [14971 14992])
+                    ("method_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14993 15011])
+                    ("method_len" variable (:type "int") (reparse-symbol arg-sub-list) [15012 15027])
+                    ("noreturn" variable (:type "int") (reparse-symbol arg-sub-list) [15028 15050])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15041 15051]))                  
+                :type "int")
+                nil [14888 15446])
+            ("phalcon_call_parent_func_params" function
+               (:arguments 
+                  ( ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15571 15590])
+                    ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15591 15604])
+                    ("active_class" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15605 15624])
+                    ("active_class_len" variable (:type "int") (reparse-symbol arg-sub-list) [15625 15646])
+                    ("method_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15647 15665])
+                    ("method_len" variable (:type "int") (reparse-symbol arg-sub-list) [15666 15681])
+                    ("param_count" variable (:type ("zend_uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15682 15704])
+                    ("params" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15705 15720])
+                    ("noreturn" variable (:type "int") (reparse-symbol arg-sub-list) [15721 15743])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15734 15744]))                  
+                :type "int")
+                nil [15535 16168])
+            ("phalcon_call_parent_func_one_param" function
+               (:arguments 
+                  ( ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16276 16295])
+                    ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16296 16309])
+                    ("active_class" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16310 16329])
+                    ("active_class_len" variable (:type "int") (reparse-symbol arg-sub-list) [16330 16351])
+                    ("method_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16352 16370])
+                    ("method_len" variable (:type "int") (reparse-symbol arg-sub-list) [16371 16386])
+                    ("param1" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16387 16400])
+                    ("noreturn" variable (:type "int") (reparse-symbol arg-sub-list) [16401 16423])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16414 16424]))                  
+                :type "int")
+                nil [16237 16608])
+            ("phalcon_call_parent_func_two_params" function
+               (:arguments 
+                  ( ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16718 16737])
+                    ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16738 16751])
+                    ("active_class" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16752 16771])
+                    ("active_class_len" variable (:type "int") (reparse-symbol arg-sub-list) [16772 16793])
+                    ("method_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16794 16812])
+                    ("method_len" variable (:type "int") (reparse-symbol arg-sub-list) [16813 16828])
+                    ("param1" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16829 16842])
+                    ("param2" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16843 16856])
+                    ("noreturn" variable (:type "int") (reparse-symbol arg-sub-list) [16857 16879])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16870 16880]))                  
+                :type "int")
+                nil [16678 17072])
+            ("phalcon_call_parent_func_three_params" function
+               (:arguments 
+                  ( ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17184 17203])
+                    ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17204 17217])
+                    ("active_class" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17218 17237])
+                    ("active_class_len" variable (:type "int") (reparse-symbol arg-sub-list) [17238 17259])
+                    ("method_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17260 17278])
+                    ("method_len" variable (:type "int") (reparse-symbol arg-sub-list) [17279 17294])
+                    ("param1" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17295 17308])
+                    ("param2" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17309 17322])
+                    ("param3" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17323 17336])
+                    ("noreturn" variable (:type "int") (reparse-symbol arg-sub-list) [17337 17359])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17350 17360]))                  
+                :type "int")
+                nil [17142 17560])
+            ("phalcon_call_self_func" function
+               (:arguments 
+                  ( ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17662 17681])
+                    ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17682 17695])
+                    ("method_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17696 17714])
+                    ("method_len" variable (:type "int") (reparse-symbol arg-sub-list) [17715 17730])
+                    ("noreturn" variable (:type "int") (reparse-symbol arg-sub-list) [17731 17753])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17744 17754]))                  
+                :type "int")
+                nil [17635 18150])
+            ("phalcon_call_self_func_params" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18262 18281])
+                    ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18282 18295])
+                    ("method_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [18296 18314])
+                    ("method_len" variable (:type "int") (reparse-symbol arg-sub-list) [18315 18330])
+                    ("param_count" variable (:type ("zend_uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18331 18353])
+                    ("params" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18354 18369])
+                    ("noreturn" variable (:type "int") (reparse-symbol arg-sub-list) [18370 18392])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18383 18393]))                  
+                :type "int")
+                nil [18221 18816])
+            ("phalcon_call_self_func_one_param" function
+               (:arguments 
+                  ( ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18855 18874])
+                    ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18875 18888])
+                    ("method_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [18889 18907])
+                    ("method_len" variable (:type "int") (reparse-symbol arg-sub-list) [18908 18923])
+                    ("param1" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18924 18937])
+                    ("noreturn" variable (:type "int") (reparse-symbol arg-sub-list) [18938 18960])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18951 18961]))                  
+                :type "int")
+                nil [18818 19111])
+            ("phalcon_call_self_func_two_params" function
+               (:arguments 
+                  ( ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19151 19170])
+                    ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19171 19184])
+                    ("method_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [19185 19203])
+                    ("method_len" variable (:type "int") (reparse-symbol arg-sub-list) [19204 19219])
+                    ("param1" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19220 19233])
+                    ("param2" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19234 19247])
+                    ("noreturn" variable (:type "int") (reparse-symbol arg-sub-list) [19248 19270])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19261 19271]))                  
+                :type "int")
+                nil [19113 19429])
+            ("phalcon_call_self_func_three_params" function
+               (:arguments 
+                  ( ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19471 19490])
+                    ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19491 19504])
+                    ("method_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [19505 19523])
+                    ("method_len" variable (:type "int") (reparse-symbol arg-sub-list) [19524 19539])
+                    ("param1" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19540 19553])
+                    ("param2" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19554 19567])
+                    ("param3" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19568 19581])
+                    ("noreturn" variable (:type "int") (reparse-symbol arg-sub-list) [19582 19604])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19595 19605]))                  
+                :type "int")
+                nil [19431 19771])
+            ("phalcon_call_self_func_four_params" function
+               (:arguments 
+                  ( ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19812 19831])
+                    ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19832 19845])
+                    ("method_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [19846 19864])
+                    ("method_len" variable (:type "int") (reparse-symbol arg-sub-list) [19865 19880])
+                    ("param1" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19881 19894])
+                    ("param2" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19895 19908])
+                    ("param3" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19909 19922])
+                    ("param4" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19923 19936])
+                    ("noreturn" variable (:type "int") (reparse-symbol arg-sub-list) [19937 19959])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19950 19960]))                  
+                :type "int")
+                nil [19773 20134])
+            ("phalcon_call_static_func_one_param" function
+               (:arguments 
+                  ( ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20242 20261])
+                    ("class_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20262 20279])
+                    ("class_length" variable (:type "int") (reparse-symbol arg-sub-list) [20280 20297])
+                    ("method_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20298 20316])
+                    ("method_len" variable (:type "int") (reparse-symbol arg-sub-list) [20317 20332])
+                    ("param1" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20333 20346])
+                    ("noreturn" variable (:type "int") (reparse-symbol arg-sub-list) [20347 20369])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20360 20370]))                  
+                :type "int")
+                nil [20203 20540])
+            ("phalcon_call_static_func_two_params" function
+               (:arguments 
+                  ( ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20650 20669])
+                    ("class_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20670 20687])
+                    ("class_length" variable (:type "int") (reparse-symbol arg-sub-list) [20688 20705])
+                    ("method_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20706 20724])
+                    ("method_len" variable (:type "int") (reparse-symbol arg-sub-list) [20725 20740])
+                    ("param1" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20741 20754])
+                    ("param2" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20755 20768])
+                    ("noreturn" variable (:type "int") (reparse-symbol arg-sub-list) [20769 20791])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20782 20792]))                  
+                :type "int")
+                nil [20610 20970])
+            ("phalcon_call_static_func_three_params" function
+               (:arguments 
+                  ( ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21084 21103])
+                    ("class_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [21104 21121])
+                    ("class_length" variable (:type "int") (reparse-symbol arg-sub-list) [21122 21139])
+                    ("method_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [21140 21158])
+                    ("method_len" variable (:type "int") (reparse-symbol arg-sub-list) [21159 21174])
+                    ("param1" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21175 21188])
+                    ("param2" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21189 21202])
+                    ("param3" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21203 21216])
+                    ("noreturn" variable (:type "int") (reparse-symbol arg-sub-list) [21217 21239])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21230 21240]))                  
+                :type "int")
+                nil [21042 21426])
+            ("phalcon_call_static_zval_func" function
+               (:arguments 
+                  ( ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21544 21563])
+                    ("mixed_name" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21564 21581])
+                    ("method_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [21582 21600])
+                    ("method_len" variable (:type "int") (reparse-symbol arg-sub-list) [21601 21616])
+                    ("noreturn" variable (:type "int") (reparse-symbol arg-sub-list) [21617 21639])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21630 21640]))                  
+                :type "int")
+                nil [21510 22541])
+            ("phalcon_call_static_zval_func_params" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22666 22685])
+                    ("mixed_name" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22686 22703])
+                    ("method_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [22704 22722])
+                    ("method_len" variable (:type "int") (reparse-symbol arg-sub-list) [22723 22738])
+                    ("param_count" variable (:type ("zend_uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22739 22761])
+                    ("params" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22762 22777])
+                    ("noreturn" variable (:type "int") (reparse-symbol arg-sub-list) [22778 22800])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22791 22801]))                  
+                :type "int")
+                nil [22618 23714])
+            ("phalcon_call_static_zval_func_one_param" function
+               (:arguments 
+                  ( ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23837 23856])
+                    ("mixed_name" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23857 23874])
+                    ("method_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [23875 23893])
+                    ("method_len" variable (:type "int") (reparse-symbol arg-sub-list) [23894 23909])
+                    ("param1" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23910 23923])
+                    ("noreturn" variable (:type "int") (reparse-symbol arg-sub-list) [23924 23946])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23937 23947]))                  
+                :type "int")
+                nil [23793 24108])
+            ("phalcon_call_static_zval_func_two_params" function
+               (:arguments 
+                  ( ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24232 24251])
+                    ("mixed_name" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24252 24269])
+                    ("method_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [24270 24288])
+                    ("method_len" variable (:type "int") (reparse-symbol arg-sub-list) [24289 24304])
+                    ("param1" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24305 24318])
+                    ("param2" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24319 24332])
+                    ("noreturn" variable (:type "int") (reparse-symbol arg-sub-list) [24333 24355])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24346 24356]))                  
+                :type "int")
+                nil [24187 24525])
+            ("phalcon_call_static_zval_func_three_params" function
+               (:arguments 
+                  ( ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24651 24670])
+                    ("mixed_name" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24671 24688])
+                    ("method_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [24689 24707])
+                    ("method_len" variable (:type "int") (reparse-symbol arg-sub-list) [24708 24723])
+                    ("param1" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24724 24737])
+                    ("param2" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24738 24751])
+                    ("param3" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24752 24765])
+                    ("noreturn" variable (:type "int") (reparse-symbol arg-sub-list) [24766 24788])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24779 24789]))                  
+                :type "int")
+                nil [24604 24966])
+            ("phalcon_call_static_ce_func_params" function
+               (:arguments 
+                  ( ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25101 25120])
+                    ("ce" variable
+                       (:pointer 1
+                        :type ("zend_class_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25121 25142])
+                    ("method_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [25143 25161])
+                    ("method_len" variable (:type "int") (reparse-symbol arg-sub-list) [25162 25177])
+                    ("param_count" variable (:type ("zend_uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25178 25200])
+                    ("params" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25201 25216])
+                    ("noreturn" variable (:type "int") (reparse-symbol arg-sub-list) [25217 25239])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25230 25240]))                  
+                :type "int")
+                nil [25062 25947])
+            ("phalcon_call_user_func_array" function
+               (:arguments 
+                  ( ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26048 26067])
+                    ("handler" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26068 26082])
+                    ("params" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26083 26105])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26096 26106]))                  
+                :type "int")
+                nil [26015 27354])
+            ("phalcon_call_user_func" function
+               (:arguments 
+                  ( ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27485 27504])
+                    ("handler" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27505 27528])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27519 27529]))                  
+                :type "int")
+                nil [27458 28530])
+            ("phalcon_call_user_function" function
+               (:arguments 
+                  ( ("function_table" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28618 28644])
+                    ("object_pp" variable
+                       (:pointer 2
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28645 28662])
+                    ("function_name" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28663 28683])
+                    ("retval_ptr" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28684 28701])
+                    ("param_count" variable (:type ("zend_uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28702 28724])
+                    ("params" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28725 28749])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28740 28750]))                  
+                :type "int")
+                nil [28587 29473])
+            ("phalcon_call_user_function_ex" function
+               (:arguments 
+                  ( ("function_table" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29538 29564])
+                    ("object_pp" variable
+                       (:pointer 2
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29565 29582])
+                    ("function_name" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29583 29603])
+                    ("retval_ptr_ptr" variable
+                       (:pointer 2
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29604 29626])
+                    ("param_count" variable (:type ("zend_uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29627 29649])
+                    ("params" variable
+                       (:pointer 2
+                        :dereference 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29650 29666])
+                    ("no_separation" variable (:type "int") (reparse-symbol arg-sub-list) [29667 29685])
+                    ("symbol_table" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29686 29719])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29710 29720]))                  
+                :type "int")
+                nil [29504 30124])
+            ("phalcon_call_function" function
+               (:arguments 
+                  ( ("fci" variable
+                       (:pointer 1
+                        :type ("zend_fcall_info" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30152 30173])
+                    ("fci_cache" variable
+                       (:pointer 1
+                        :type ("zend_fcall_info_cache" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30174 30216])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30207 30217]))                  
+                :type "int")
+                nil [30126 38976])
+            ("phalcon_lookup_class_ex" function
+               (:arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [39006 39023])
+                    ("name_length" variable (:type "int") (reparse-symbol arg-sub-list) [39024 39040])
+                    ("use_autoload" variable (:type "int") (reparse-symbol arg-sub-list) [39041 39058])
+                    ("ce" variable
+                       (:pointer 3
+                        :type ("zend_class_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39059 39091])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39082 39092]))                  
+                :type "int")
+                nil [38978 41822])
+            ("phalcon_lookup_class" function
+               (:arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [41849 41866])
+                    ("name_length" variable (:type "int") (reparse-symbol arg-sub-list) [41867 41883])
+                    ("ce" variable
+                       (:pointer 3
+                        :type ("zend_class_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [41884 41916])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41907 41917]))                  
+                :type "int")
+                nil [41824 41989]))          
+    :file "fcall.c"
+    :pointmax 41998
+    :fsize 41997
+    :lastmodtime '(20741 65278)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "object.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("php.h" include nil nil [1213 1229])
+            ("php_phalcon.h" include nil nil [1280 1304])
+            ("phalcon.h" include nil nil [1305 1325])
+            ("kernel/main.h" include nil nil [1327 1351])
+            ("kernel/memory.h" include nil nil [1352 1378])
+            ("kernel/object.h" include nil nil [1379 1405])
+            ("kernel/exception.h" include nil nil [1406 1435])
+            ("kernel/fcall.h" include nil nil [1436 1461])
+            ("kernel/array.h" include nil nil [1462 1487])
+            ("phalcon_get_class_constant" function
+               (:arguments 
+                  ( ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1591 1610])
+                    ("ce" variable
+                       (:pointer 1
+                        :type ("zend_class_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1611 1632])
+                    ("constant_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1633 1653])
+                    ("constant_length" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1654 1692])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1683 1693]))                  
+                :type "int")
+                nil [1560 2063])
+            ("phalcon_instance_of" function
+               (:arguments 
+                  ( ("result" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2130 2143])
+                    ("object" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2144 2163])
+                    ("ce" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("zend_class_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2164 2200])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2191 2201]))                  
+                :type "int")
+                nil [2106 2503])
+            ("phalcon_is_instance_of" function
+               (:arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2585 2598])
+                    ("class_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2599 2616])
+                    ("class_length" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2617 2652])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2643 2653]))                  
+                :type "int")
+                nil [2558 2894])
+            ("phalcon_get_class" function
+               (:arguments 
+                  ( ("result" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2970 2983])
+                    ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2984 2997])
+                    ("lower" variable (:type "int") (reparse-symbol arg-sub-list) [2998 3017])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3008 3018]))                  
+                :type "void")
+                nil [2947 3551])
+            ("phalcon_get_class_ns" function
+               (:arguments 
+                  ( ("result" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3630 3643])
+                    ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3644 3657])
+                    ("lower" variable (:type "int") (reparse-symbol arg-sub-list) [3658 3677])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3668 3678]))                  
+                :type "void")
+                nil [3604 4834])
+            ("phalcon_get_ns_class" function
+               (:arguments 
+                  ( ("result" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4911 4924])
+                    ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4925 4938])
+                    ("lower" variable (:type "int") (reparse-symbol arg-sub-list) [4939 4958])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4949 4959]))                  
+                :type "void")
+                nil [4885 6170])
+            ("phalcon_get_called_class" function
+               (:arguments 
+                  ( ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6262 6290])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6281 6291]))                  
+                :type "void")
+                nil [6232 6530])
+            ("phalcon_fetch_class" function
+               (:pointer 1
+                :arguments 
+                  ( ("class_name" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6626 6652])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6643 6653]))                  
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [6588 6986])
+            ("phalcon_class_exists" function
+               (:arguments 
+                  ( ("class_name" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7048 7074])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7065 7075]))                  
+                :type "int")
+                nil [7023 7401])
+            ("phalcon_clone" function
+               (:arguments 
+                  ( ("destiny" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7469 7483])
+                    ("obj" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7484 7503])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7494 7504]))                  
+                :type "int")
+                nil [7451 8428])
+            ("phalcon_isset_property" function
+               (:arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8504 8517])
+                    ("property_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8518 8538])
+                    ("property_length" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8539 8577])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8568 8578]))                  
+                :type "int")
+                nil [8477 8983])
+            ("phalcon_isset_property_zval" function
+               (:arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9071 9084])
+                    ("property" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9085 9109])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9100 9110]))                  
+                :type "int")
+                nil [9039 9610])
+            ("phalcon_lookup_class_ce" function
+               (:pointer 1
+                :typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("ce" variable
+                       (:pointer 1
+                        :type ("zend_class_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9729 9750])
+                    ("property_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9751 9771])
+                    ("property_length" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9772 9810])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9801 9811]))                  
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [9673 10124])
+            ("phalcon_read_property" function
+               (:arguments 
+                  ( ("result" variable
+                       (:pointer 2
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10195 10209])
+                    ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10210 10223])
+                    ("property_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10224 10244])
+                    ("property_length" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [10245 10274])
+                    ("silent" variable (:type "int") (reparse-symbol arg-sub-list) [10275 10295])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10286 10296]))                  
+                :type "int")
+                nil [10169 11440])
+            ("phalcon_return_property" function
+               (:arguments 
+                  ( ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11508 11527])
+                    ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11528 11541])
+                    ("property_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11542 11562])
+                    ("property_length" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [11563 11601])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11592 11602]))                  
+                :type "int")
+                nil [11480 12663])
+            ("phalcon_read_property_zval" function
+               (:arguments 
+                  ( ("result" variable
+                       (:pointer 2
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12739 12753])
+                    ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12754 12767])
+                    ("property" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12768 12783])
+                    ("silent" variable (:type "int") (reparse-symbol arg-sub-list) [12784 12804])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12795 12805]))                  
+                :type "int")
+                nil [12708 14014])
+            ("phalcon_update_property_long" function
+               (:arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14129 14142])
+                    ("property_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14143 14163])
+                    ("property_length" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [14164 14193])
+                    ("value" variable (:type "long") (reparse-symbol arg-sub-list) [14194 14214])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14205 14215]))                  
+                :type "int")
+                nil [14096 14637])
+            ("phalcon_update_property_string" function
+               (:arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14756 14769])
+                    ("property_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14770 14790])
+                    ("property_length" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [14791 14820])
+                    ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14821 14831])
+                    ("str_length" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [14832 14865])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14856 14866]))                  
+                :type "int")
+                nil [14721 15880])
+            ("phalcon_update_property_bool" function
+               (:arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15995 16008])
+                    ("property_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16009 16029])
+                    ("property_length" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [16030 16059])
+                    ("value" variable (:type "int") (reparse-symbol arg-sub-list) [16060 16079])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16070 16080]))                  
+                :type "int")
+                nil [15962 16503])
+            ("phalcon_update_property_null" function
+               (:arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16618 16631])
+                    ("property_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16632 16652])
+                    ("property_length" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [16653 16691])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16682 16692]))                  
+                :type "int")
+                nil [16585 17108])
+            ("phalcon_update_property_zval" function
+               (:arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17225 17238])
+                    ("property_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17239 17259])
+                    ("property_length" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [17260 17289])
+                    ("value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17290 17311])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17302 17312]))                  
+                :type "int")
+                nil [17192 18251])
+            ("phalcon_update_property_zval_zval" function
+               (:arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18378 18391])
+                    ("property" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18392 18407])
+                    ("value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18408 18429])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18420 18430]))                  
+                :type "int")
+                nil [18340 19372])
+            ("phalcon_update_property_array" function
+               (:arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19445 19458])
+                    ("property" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [19459 19474])
+                    ("property_length" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [19475 19504])
+                    ("index" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19505 19517])
+                    ("value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19518 19539])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19530 19540]))                  
+                :type "int")
+                nil [19411 20650])
+            ("phalcon_update_property_array_string" function
+               (:arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20751 20764])
+                    ("property" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20765 20780])
+                    ("property_length" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [20781 20810])
+                    ("index" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20811 20823])
+                    ("index_length" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [20824 20850])
+                    ("value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20851 20872])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20863 20873]))                  
+                :type "int")
+                nil [20710 21776])
+            ("phalcon_update_property_array_append" function
+               (:arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21872 21885])
+                    ("property" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [21886 21901])
+                    ("property_length" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [21902 21931])
+                    ("value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21932 21953])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21944 21954]))                  
+                :type "int")
+                nil [21831 22792])
+            ("phalcon_update_property_empty_array" function
+               (:arguments 
+                  ( ("ce" variable
+                       (:pointer 1
+                        :type ("zend_class_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22895 22916])
+                    ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22917 22930])
+                    ("property_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [22931 22951])
+                    ("property_length" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [22952 22990])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22981 22991]))                  
+                :type "int")
+                nil [22855 23758])
+            ("phalcon_method_exists" function
+               (:arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23848 23861])
+                    ("method_name" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23862 23889])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23880 23890]))                  
+                :type "int")
+                nil [23822 24626])
+            ("phalcon_method_exists_ex" function
+               (:arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24735 24748])
+                    ("method_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [24749 24767])
+                    ("method_len" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [24768 24801])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24792 24802]))                  
+                :type "int")
+                nil [24706 25347])
+            ("phalcon_read_static_property" function
+               (:arguments 
+                  ( ("result" variable
+                       (:pointer 2
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25447 25461])
+                    ("class_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [25462 25479])
+                    ("class_length" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [25480 25506])
+                    ("property_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [25507 25527])
+                    ("property_length" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [25528 25566])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25557 25567]))                  
+                :type "int")
+                nil [25414 25855])
+            ("phalcon_update_static_property" function
+               (:arguments 
+                  ( ("class_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [25928 25945])
+                    ("class_length" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [25946 25972])
+                    ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [25973 25984])
+                    ("name_length" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [25985 26010])
+                    ("value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26011 26032])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26023 26033]))                  
+                :type "int")
+                nil [25893 26237])
+            ("phalcon_create_instance" function
+               (:arguments 
+                  ( ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26350 26369])
+                    ("class_name" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26370 26396])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26387 26397]))                  
+                :type "int")
+                nil [26322 26962])
+            ("phalcon_create_instance_params" function
+               (:arguments 
+                  ( ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27081 27100])
+                    ("class_name" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27101 27118])
+                    ("params" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27119 27141])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27132 27142]))                  
+                :type "int")
+                nil [27046 28731])
+            ("phalcon_property_incr" function
+               (:arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28800 28813])
+                    ("property_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [28814 28834])
+                    ("property_length" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [28835 28873])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28864 28874]))                  
+                :type "int")
+                nil [28774 29342])
+            ("phalcon_property_decr" function
+               (:arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29411 29424])
+                    ("property_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [29425 29445])
+                    ("property_length" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [29446 29484])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29475 29485]))                  
+                :type "int")
+                nil [29385 29953]))          
+    :file "object.c"
+    :pointmax 29954
+    :fsize 29953
+    :lastmodtime '(20741 65278)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!git!cphalcon!ext!kernel!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

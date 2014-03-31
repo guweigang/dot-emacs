@@ -1,0 +1,2449 @@
+;; Object standard/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "standard/"
+  :tables (list 
+   (semanticdb-table "var.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1330 1348])
+            ("stdlib.h" include (:system-flag t) nil [1349 1368])
+            ("errno.h" include (:system-flag t) nil [1369 1387])
+            ("php.h" include nil nil [1388 1404])
+            ("php_string.h" include nil nil [1405 1428])
+            ("php_var.h" include nil nil [1429 1449])
+            ("php_smart_str.h" include nil nil [1450 1476])
+            ("basic_functions.h" include nil nil [1477 1505])
+            ("php_incomplete_class.h" include nil nil [1506 1539])
+            ("COMMON" variable (:constant-flag t) nil [1549 1555])
+            ("php_array_element_dump" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("zv" variable
+                       (:pointer 2
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1632 1651])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1642 1652])
+                    ("num_args" variable (:type "int") (reparse-symbol arg-sub-list) [1653 1666])
+                    ("args" variable (:type ("va_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1667 1680])
+                    ("hash_key" variable
+                       (:pointer 1
+                        :type ("zend_hash_key" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1681 1705]))                  
+                :type "int")
+                nil [1598 2073])
+            ("php_object_property_dump" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("zv" variable
+                       (:pointer 2
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2121 2140])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2131 2141])
+                    ("num_args" variable (:type "int") (reparse-symbol arg-sub-list) [2142 2155])
+                    ("args" variable (:type ("va_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2156 2169])
+                    ("hash_key" variable
+                       (:pointer 1
+                        :type ("zend_hash_key" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2170 2194]))                  
+                :type "int")
+                nil [2085 2963])
+            ("php_var_dump" function
+               (:arguments 
+                  ( ("struc" variable
+                       (:pointer 2
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3000 3013])
+                    ("level" variable (:type "int") (reparse-symbol arg-sub-list) [3014 3033])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3024 3034]))                  
+                :type "void")
+                nil [2982 5150])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("var_dump" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5271 5280]))                  
+                :type "int")
+                nil [5258 5505])
+            ("zval_array_element_dump" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("zv" variable
+                       (:pointer 2
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5552 5571])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5562 5572])
+                    ("num_args" variable (:type "int") (reparse-symbol arg-sub-list) [5573 5586])
+                    ("args" variable (:type ("va_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5587 5600])
+                    ("hash_key" variable
+                       (:pointer 1
+                        :type ("zend_hash_key" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5601 5625]))                  
+                :type "int")
+                nil [5517 6187])
+            ("zval_object_property_dump" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("zv" variable
+                       (:pointer 2
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6236 6255])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6246 6256])
+                    ("num_args" variable (:type "int") (reparse-symbol arg-sub-list) [6257 6270])
+                    ("args" variable (:type ("va_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6271 6284])
+                    ("hash_key" variable
+                       (:pointer 1
+                        :type ("zend_hash_key" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6285 6309]))                  
+                :type "int")
+                nil [6199 6985])
+            ("php_debug_zval_dump" function
+               (:arguments 
+                  ( ("struc" variable
+                       (:pointer 2
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7029 7042])
+                    ("level" variable (:type "int") (reparse-symbol arg-sub-list) [7043 7062])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7053 7063]))                  
+                :type "void")
+                nil [7004 9657])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("debug_zval_dump" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9800 9816]))                  
+                :type "int")
+                nil [9787 10048])
+            ("buffer_append_spaces" variable (:constant-flag t) nil [10068 10088])
+            ("php_array_element_export" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("zv" variable
+                       (:pointer 2
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10361 10380])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10371 10381])
+                    ("num_args" variable (:type "int") (reparse-symbol arg-sub-list) [10382 10395])
+                    ("args" variable (:type ("va_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10396 10409])
+                    ("hash_key" variable
+                       (:pointer 1
+                        :type ("zend_hash_key" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10410 10434]))                  
+                :type "int")
+                nil [10325 11305])
+            ("php_object_element_export" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("zv" variable
+                       (:pointer 2
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11354 11373])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11364 11374])
+                    ("num_args" variable (:type "int") (reparse-symbol arg-sub-list) [11375 11388])
+                    ("args" variable (:type ("va_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11389 11402])
+                    ("hash_key" variable
+                       (:pointer 1
+                        :type ("zend_hash_key" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11403 11427]))                  
+                :type "int")
+                nil [11317 12273])
+            ("php_var_export_ex" function
+               (:arguments 
+                  ( ("struc" variable
+                       (:pointer 2
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12315 12328])
+                    ("level" variable (:type "int") (reparse-symbol arg-sub-list) [12329 12339])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("smart_str" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12340 12364])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12355 12365]))                  
+                :type "void")
+                nil [12292 14412])
+            ("php_var_export" function
+               (:arguments 
+                  ( ("struc" variable
+                       (:pointer 2
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14513 14526])
+                    ("level" variable (:type "int") (reparse-symbol arg-sub-list) [14527 14546])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14537 14547]))                  
+                :type "void")
+                nil [14493 14704])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("var_export" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14849 14860]))                  
+                :type "int")
+                nil [14836 15230])
+            ("php_var_serialize_intern" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("smart_str" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15279 15294])
+                    ("struc" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15295 15307])
+                    ("var_hash" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15308 15337])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15328 15338]))                  
+                :type "void")
+                nil [15242 15339])
+            ("php_add_var_hash" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("var_hash" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15376 15396])
+                    ("var" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15397 15407])
+                    ("var_old" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [15408 15431])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15422 15432]))                  
+                :type "int")
+                nil [15341 16520])
+            ("php_var_serialize_long" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("smart_str" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16574 16589])
+                    ("val" variable (:type "long") (reparse-symbol arg-sub-list) [16590 16599]))                  
+                :type "void")
+                nil [16532 16711])
+            ("php_var_serialize_string" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("smart_str" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16767 16782])
+                    ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16783 16793])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [16794 16802]))                  
+                :type "void")
+                nil [16723 16989])
+            ("php_var_serialize_class_name" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("smart_str" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17054 17069])
+                    ("struc" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17070 17091])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17082 17092]))                  
+                :type ("zend_bool" type (:type "class") nil nil))
+                nil [17001 17418])
+            ("php_var_serialize_class" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("smart_str" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17466 17481])
+                    ("struc" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17482 17494])
+                    ("retval_ptr" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17495 17512])
+                    ("var_hash" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17513 17542])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17533 17543]))                  
+                :type "void")
+                nil [17430 20890])
+            ("php_var_serialize_intern" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("smart_str" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20939 20954])
+                    ("struc" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20955 20967])
+                    ("var_hash" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20968 20997])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20988 20998]))                  
+                :type "void")
+                nil [20902 26283])
+            ("php_var_serialize" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("smart_str" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26325 26340])
+                    ("struc" variable
+                       (:pointer 2
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26341 26354])
+                    ("var_hash" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26355 26384])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26375 26385]))                  
+                :type "void")
+                nil [26302 26478])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("serialize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26633 26643]))                  
+                :type "int")
+                nil [26620 27124])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("unserialize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27277 27289]))                  
+                :type "int")
+                nil [27264 27929])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("memory_get_usage" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28044 28061]))                  
+                :type "int")
+                nil [28031 28255])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("memory_get_peak_usage" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28380 28402]))                  
+                :type "int")
+                nil [28367 28601]))          
+    :file "var.c"
+    :pointmax 28739
+    :fsize 28739
+    :lastmodtime '(20689 55724 0 0)
+    :unmatched-syntax '((symbol 26295 . 26301) (symbol 14486 . 14492) (symbol 12285 . 12291) (symbol 6997 . 7003) (symbol 2975 . 2981))
+    :lexical-table 
+        '(("COMMON" . ((semantic-list "(Z_ISREF_PP(struc) ? \"&\" : \"\")" 1556 . 1586)))
+          ("buffer_append_spaces" (spp-arg-list ("buf" "num_spaces") 10088 . 10105) . 
+              ((DO "do" 10109 . 10111) (semantic-list "{ \\
+		char *tmp_spaces; \\
+		int tmp_spaces_len; \\
+		tmp_spaces_len = spprintf(&tmp_spaces, 0,\"%*c\", num_spaces, ' '); \\
+		smart_str_appendl(buf, tmp_spaces, tmp_spaces_len); \\
+		efree(tmp_spaces); \\
+	}" 10112 . 10313) (WHILE "while" 10314 . 10319) (semantic-list "(0)" 10319 . 10322) (punctuation ";" 10322 . 10323)))
+          )
+
+    )
+   (semanticdb-table "php_string.h"
+    :file "php_string.h"
+    :fsize 6120
+    :lastmodtime '(20689 55724 0 0)
+    )
+   (semanticdb-table "php_var.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("PHP_VAR_H" variable (:constant-flag t) nil [1186 1195])
+            ("ext/standard/php_smart_str_public.h" include nil nil [1197 1243])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("var_dump" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1258 1267]))                  
+                :type "int")
+                nil [1245 1268])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("var_export" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1282 1293]))                  
+                :type "int")
+                nil [1269 1294])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("debug_zval_dump" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1308 1324]))                  
+                :type "int")
+                nil [1295 1325])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("serialize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1339 1349]))                  
+                :type "int")
+                nil [1326 1350])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("unserialize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1364 1376]))                  
+                :type "int")
+                nil [1351 1377])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("memory_get_usage" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1391 1408]))                  
+                :type "int")
+                nil [1378 1409])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("memory_get_peak_usage" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1423 1445]))                  
+                :type "int")
+                nil [1410 1446])
+            ("php_var_dump" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("struc" variable
+                       (:pointer 2
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1473 1486])
+                    ("level" variable (:type "int") (reparse-symbol arg-sub-list) [1487 1506])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1497 1507]))                  
+                :type "void")
+                nil [1455 1508])
+            ("php_var_export" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("struc" variable
+                       (:pointer 2
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1536 1549])
+                    ("level" variable (:type "int") (reparse-symbol arg-sub-list) [1550 1569])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1560 1570]))                  
+                :type "void")
+                nil [1516 1571])
+            ("php_var_export_ex" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("struc" variable
+                       (:pointer 2
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1602 1615])
+                    ("level" variable (:type "int") (reparse-symbol arg-sub-list) [1616 1626])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("smart_str" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1627 1651])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1642 1652]))                  
+                :type "void")
+                nil [1579 1653])
+            ("php_debug_zval_dump" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("struc" variable
+                       (:pointer 2
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1687 1700])
+                    ("level" variable (:type "int") (reparse-symbol arg-sub-list) [1701 1720])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1711 1721]))                  
+                :type "void")
+                nil [1662 1722])
+            ("php_serialize_data_t" variable (:constant-flag t) nil [1777 1797])
+            ("php_unserialize_data" type
+               (:members 
+                  ( ("first" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [1840 1852])
+                    ("first_dtor" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [1854 1871]))                  
+                :type "struct")
+                nil [1809 1874])
+            ("php_unserialize_data_t" type
+               (:typedef ("php_unserialize_data" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :superclasses "php_unserialize_data"
+                :type "typedef")
+                nil [1876 1935])
+            ("php_var_serialize" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("smart_str" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1967 1982])
+                    ("struc" variable
+                       (:pointer 2
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1983 1996])
+                    ("var_hash" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1997 2037])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2028 2038]))                  
+                :type "void")
+                nil [1944 2039])
+            ("php_var_unserialize" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("rval" variable
+                       (:pointer 2
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2071 2083])
+                    ("p" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [2084 2108])
+                    ("max" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [2109 2134])
+                    ("var_hash" variable
+                       (:pointer 1
+                        :type ("php_unserialize_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2135 2177])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2168 2178]))                  
+                :type "int")
+                nil [2047 2179])
+            ("PHP_VAR_SERIALIZE_INIT" variable (:constant-flag t) nil [2189 2211])
+            ("PHP_VAR_SERIALIZE_DESTROY" variable (:constant-flag t) nil [2282 2307])
+            ("PHP_VAR_UNSERIALIZE_INIT" variable (:constant-flag t) nil [2363 2387])
+            ("PHP_VAR_UNSERIALIZE_DESTROY" variable (:constant-flag t) nil [2460 2487])
+            ("var_replace" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("var_hash" variable
+                       (:pointer 1
+                        :type ("php_unserialize_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2551 2584])
+                    ("ozval" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2585 2597])
+                    ("nzval" variable
+                       (:pointer 2
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2598 2611]))                  
+                :type "void")
+                nil [2534 2612])
+            ("var_push_dtor" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("var_hash" variable
+                       (:pointer 1
+                        :type ("php_unserialize_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2639 2672])
+                    ("val" variable
+                       (:pointer 2
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2673 2684]))                  
+                :type "void")
+                nil [2620 2685])
+            ("var_destroy" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("var_hash" variable
+                       (:pointer 1
+                        :type ("php_unserialize_data_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2710 2743]))                  
+                :type "void")
+                nil [2693 2744])
+            ("PHP_VAR_UNSERIALIZE_ZVAL_CHANGED" variable (:constant-flag t) nil [2754 2786])
+            ("php_create_empty_class" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("class_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2907 2924])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [2925 2933]))                  
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [2866 2934])
+            ("php_varname_check" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2972 2983])
+                    ("name_len" variable (:type "int") (reparse-symbol arg-sub-list) [2984 2997])
+                    ("silent" variable (:type ("zend_bool" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2998 3024])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3015 3025]))                  
+                :type "int")
+                nil [2936 5557]))          
+    :file "php_var.h"
+    :pointmax 5592
+    :fsize 5592
+    :lastmodtime '(20689 55724 0 0)
+    :unmatched-syntax '((symbol 2859 . 2865) (symbol 2686 . 2692) (symbol 2613 . 2619) (symbol 2527 . 2533) (symbol 2040 . 2046) (symbol 1937 . 1943) (symbol 1655 . 1661) (symbol 1572 . 1578) (symbol 1509 . 1515) (symbol 1448 . 1454))
+    :lexical-table 
+        '(("PHP_VAR_H")
+          ("PHP_VAR_UNSERIALIZE_INIT" (spp-arg-list ("var_hash") 2387 . 2397) . 
+              ((semantic-list "(var_hash)" 2401 . 2411) (punctuation "." 2411 . 2412) (symbol "first" 2412 . 2417) (punctuation "=" 2418 . 2419) (number "0" 2420 . 2421) (punctuation ";" 2421 . 2422) (semantic-list "(var_hash)" 2426 . 2436) (punctuation "." 2436 . 2437) (symbol "first_dtor" 2437 . 2447) (punctuation "=" 2448 . 2449) (number "0" 2450 . 2451)))
+          ("PHP_VAR_SERIALIZE_INIT" (spp-arg-list ("var_hash") 2211 . 2221) . ((symbol "zend_hash_init" 2227 . 2241) (semantic-list "(&(var_hash), 10, NULL, NULL, 0)" 2241 . 2273)))
+          ("PHP_VAR_UNSERIALIZE_DESTROY" (spp-arg-list ("var_hash") 2487 . 2497) . ((symbol "var_destroy" 2501 . 2512) (semantic-list "(&(var_hash))" 2512 . 2525)))
+          ("php_serialize_data_t" . ((symbol "HashTable" 1798 . 1807)))
+          ("PHP_VAR_SERIALIZE_DESTROY" (spp-arg-list ("var_hash") 2307 . 2317) . ((symbol "zend_hash_destroy" 2323 . 2340) (semantic-list "(&(var_hash))" 2340 . 2353)))
+          ("PHP_VAR_UNSERIALIZE_ZVAL_CHANGED" (spp-arg-list ("var_hash" "ozval" "nzval") 2786 . 2810) . ((symbol "var_replace" 2814 . 2825) (semantic-list "((var_hash), (ozval), &(nzval))" 2825 . 2856)))
+          )
+
+    )
+   (semanticdb-table "php_smart_str.h"
+    :file "php_smart_str.h"
+    :fsize 6531
+    :lastmodtime '(20689 55724 0 0)
+    )
+   (semanticdb-table "basic_functions.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("BASIC_FUNCTIONS_H" variable (:constant-flag t) nil [1270 1287])
+            ("sys/stat.h" include (:system-flag t) nil [1289 1310])
+            ("php_filestat.h" include nil nil [1359 1384])
+            ("zend_highlight.h" include nil nil [1386 1413])
+            ("url_scanner_ex.h" include nil nil [1415 1442])
+            ("basic_functions_module" variable
+               (:typemodifiers ("extern")
+                :type ("zend_module_entry" type (:type "class") nil nil))
+                nil [1444 1492])
+            ("basic_functions_module_ptr" variable (:constant-flag t) nil [1501 1527])
+            ("PHP_MINIT_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("basic" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1572 1578]))                  
+                :type "int")
+                nil [1553 1579])
+            ("PHP_MSHUTDOWN_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("basic" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1603 1609]))                  
+                :type "int")
+                nil [1580 1610])
+            ("PHP_RINIT_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("basic" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1630 1636]))                  
+                :type "int")
+                nil [1611 1637])
+            ("PHP_RSHUTDOWN_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("basic" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1661 1667]))                  
+                :type "int")
+                nil [1638 1668])
+            ("PHP_MINFO_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("basic" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1688 1694]))                  
+                :type "int")
+                nil [1669 1695])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("constant" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1710 1719]))                  
+                :type "int")
+                nil [1697 1720])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sleep" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1734 1740]))                  
+                :type "int")
+                nil [1721 1741])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("usleep" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1755 1762]))                  
+                :type "int")
+                nil [1742 1763])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("flush" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1865 1871]))                  
+                :type "int")
+                nil [1852 1872])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("ip2long" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2014 2022]))                  
+                :type "int")
+                nil [2001 2023])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("long2ip" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2037 2045]))                  
+                :type "int")
+                nil [2024 2046])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("getenv" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2084 2091]))                  
+                :type "int")
+                nil [2071 2092])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("putenv" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2106 2113]))                  
+                :type "int")
+                nil [2093 2114])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("getopt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2129 2136]))                  
+                :type "int")
+                nil [2116 2137])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("get_current_user" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2152 2169]))                  
+                :type "int")
+                nil [2139 2170])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("set_time_limit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2184 2199]))                  
+                :type "int")
+                nil [2171 2200])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("get_cfg_var" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2215 2227]))                  
+                :type "int")
+                nil [2202 2228])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("set_magic_quotes_runtime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2242 2267]))                  
+                :type "int")
+                nil [2229 2268])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("get_magic_quotes_runtime" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2282 2307]))                  
+                :type "int")
+                nil [2269 2308])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("get_magic_quotes_gpc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2322 2343]))                  
+                :type "int")
+                nil [2309 2344])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("import_request_variables" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2359 2384]))                  
+                :type "int")
+                nil [2346 2385])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("error_log" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2400 2410]))                  
+                :type "int")
+                nil [2387 2411])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("error_get_last" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2425 2440]))                  
+                :type "int")
+                nil [2412 2441])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("call_user_func" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2456 2471]))                  
+                :type "int")
+                nil [2443 2472])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("call_user_func_array" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2486 2507]))                  
+                :type "int")
+                nil [2473 2508])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("call_user_method" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2522 2539]))                  
+                :type "int")
+                nil [2509 2540])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("call_user_method_array" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2554 2577]))                  
+                :type "int")
+                nil [2541 2578])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("forward_static_call" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2592 2612]))                  
+                :type "int")
+                nil [2579 2613])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("forward_static_call_array" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2627 2653]))                  
+                :type "int")
+                nil [2614 2654])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("register_shutdown_function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2669 2696]))                  
+                :type "int")
+                nil [2656 2697])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("highlight_file" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2711 2726]))                  
+                :type "int")
+                nil [2698 2727])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("highlight_string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2741 2758]))                  
+                :type "int")
+                nil [2728 2759])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("php_strip_whitespace" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2773 2794]))                  
+                :type "int")
+                nil [2760 2795])
+            ("php_get_highlight_struct" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("syntax_highlighter_ini" variable
+                       (:pointer 1
+                        :type ("zend_syntax_highlighter_ini" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2835 2887]))                  
+                :type "void")
+                nil [2805 2888])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("ini_get" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2903 2911]))                  
+                :type "int")
+                nil [2890 2912])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("ini_get_all" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2926 2938]))                  
+                :type "int")
+                nil [2913 2939])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("ini_set" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2953 2961]))                  
+                :type "int")
+                nil [2940 2962])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("ini_restore" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2976 2988]))                  
+                :type "int")
+                nil [2963 2989])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("get_include_path" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3003 3020]))                  
+                :type "int")
+                nil [2990 3021])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("set_include_path" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3035 3052]))                  
+                :type "int")
+                nil [3022 3053])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("restore_include_path" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3067 3088]))                  
+                :type "int")
+                nil [3054 3089])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("print_r" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3104 3112]))                  
+                :type "int")
+                nil [3091 3113])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("fprintf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3127 3135]))                  
+                :type "int")
+                nil [3114 3136])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("vfprintf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3150 3159]))                  
+                :type "int")
+                nil [3137 3160])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("connection_aborted" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3175 3194]))                  
+                :type "int")
+                nil [3162 3195])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("connection_status" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3209 3227]))                  
+                :type "int")
+                nil [3196 3228])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("ignore_user_abort" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3242 3260]))                  
+                :type "int")
+                nil [3229 3261])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("getservbyname" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3276 3290]))                  
+                :type "int")
+                nil [3263 3291])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("getservbyport" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3305 3319]))                  
+                :type "int")
+                nil [3292 3320])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("getprotobyname" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3334 3349]))                  
+                :type "int")
+                nil [3321 3350])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("getprotobynumber" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3364 3381]))                  
+                :type "int")
+                nil [3351 3382])
+            ("PHP_NAMED_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("php_if_crc32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3403 3416]))                  
+                :type "int")
+                nil [3384 3417])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("register_tick_function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3432 3455]))                  
+                :type "int")
+                nil [3419 3456])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("unregister_tick_function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3470 3495]))                  
+                :type "int")
+                nil [3457 3496])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("is_uploaded_file" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3571 3588]))                  
+                :type "int")
+                nil [3558 3589])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("move_uploaded_file" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3603 3622]))                  
+                :type "int")
+                nil [3590 3623])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("parse_ini_file" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3664 3679]))                  
+                :type "int")
+                nil [3651 3680])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("parse_ini_string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3694 3711]))                  
+                :type "int")
+                nil [3681 3712])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("str_rot13" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3780 3790]))                  
+                :type "int")
+                nil [3767 3791])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("stream_get_filters" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3805 3824]))                  
+                :type "int")
+                nil [3792 3825])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("stream_filter_register" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3839 3862]))                  
+                :type "int")
+                nil [3826 3863])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("stream_bucket_make_writeable" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3877 3906]))                  
+                :type "int")
+                nil [3864 3907])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("stream_bucket_prepend" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3921 3943]))                  
+                :type "int")
+                nil [3908 3944])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("stream_bucket_append" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3958 3979]))                  
+                :type "int")
+                nil [3945 3980])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("stream_bucket_new" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3994 4012]))                  
+                :type "int")
+                nil [3981 4013])
+            ("PHP_MINIT_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("user_filters" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4033 4046]))                  
+                :type "int")
+                nil [4014 4047])
+            ("PHP_RSHUTDOWN_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("user_filters" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4071 4084]))                  
+                :type "int")
+                nil [4048 4085])
+            ("PHP_RSHUTDOWN_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("browscap" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4109 4118]))                  
+                :type "int")
+                nil [4086 4119])
+            ("_php_error_log" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("opt_err" variable (:type "int") (reparse-symbol arg-sub-list) [4184 4196])
+                    ("message" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4197 4211])
+                    ("opt" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4212 4222])
+                    ("headers" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4223 4246])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4237 4247]))                  
+                :type "int")
+                nil [4165 4248])
+            ("_php_error_log_ex" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("opt_err" variable (:type "int") (reparse-symbol arg-sub-list) [4278 4290])
+                    ("message" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4291 4305])
+                    ("message_len" variable (:type "int") (reparse-symbol arg-sub-list) [4306 4322])
+                    ("opt" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4323 4333])
+                    ("headers" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4334 4357])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4348 4358]))                  
+                :type "int")
+                nil [4256 4359])
+            ("php_prefix_varname" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("result" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4390 4403])
+                    ("prefix" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4404 4417])
+                    ("var_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4418 4433])
+                    ("var_name_len" variable (:type "int") (reparse-symbol arg-sub-list) [4434 4451])
+                    ("add_underscore" variable (:type ("zend_bool" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4452 4486])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4477 4487]))                  
+                :type "int")
+                nil [4367 4488])
+            ("MT_N" variable (:constant-flag t) nil [4796 4800])
+            ("php_basic_globals" type
+               (:typedef ("_php_basic_globals" type (:type "struct") nil nil)
+                :superclasses "_php_basic_globals"
+                :type "typedef")
+                nil [4808 6424])
+            ("_php_basic_globals" type
+               (:members 
+                  ( ("user_shutdown_function_names" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4845 4885])
+                    ("putenv_ht" variable (:type ("HashTable" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4887 4907])
+                    ("strtok_zval" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4909 4927])
+                    ("strtok_string" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [4929 4949])
+                    ("locale_string" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [4951 4971])
+                    ("strtok_last" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [4973 4991])
+                    ("strtok_table" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [4993 5016])
+                    ("strtok_len" variable (:type ("ulong" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5018 5035])
+                    ("str_ebuf" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [5037 5055])
+                    ("array_walk_fci" variable (:type ("zend_fcall_info" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5057 5088])
+                    ("array_walk_fci_cache" variable (:type ("zend_fcall_info_cache" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5090 5133])
+                    ("user_compare_fci" variable (:type ("zend_fcall_info" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5135 5168])
+                    ("user_compare_fci_cache" variable (:type ("zend_fcall_info_cache" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5170 5215])
+                    ("user_tick_functions" variable
+                       (:pointer 1
+                        :type ("zend_llist" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5217 5249])
+                    ("active_ini_file_section" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5252 5282])
+                    ("sm_protected_env_vars" variable (:type ("HashTable" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5285 5317])
+                    ("sm_allowed_env_vars" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [5319 5345])
+                    ("page_uid" variable (:type "long") (reparse-symbol classsubparts) [5367 5381])
+                    ("page_gid" variable (:type "long") (reparse-symbol classsubparts) [5383 5397])
+                    ("page_inode" variable (:type "long") (reparse-symbol classsubparts) [5399 5415])
+                    ("page_mtime" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5417 5435])
+                    ("CurrentLStatFile" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [5482 5523])
+                    ("CurrentStatFile" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [5482 5523])
+                    ("lssb" variable (:type ("php_stream_statbuf" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5525 5554])
+                    ("ssb" variable (:type ("php_stream_statbuf" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5525 5554])
+                    ("state" variable
+                       (:dereference 1
+                        :type ("php_uint32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5571 5598])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("php_uint32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5652 5671])
+                    ("left" variable (:type "int") (reparse-symbol classsubparts) [5725 5739])
+                    ("rand_seed" variable (:type "unsigned int") (reparse-symbol classsubparts) [5800 5823])
+                    ("rand_is_seeded" variable (:type ("zend_bool" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5863 5888])
+                    ("mt_rand_is_seeded" variable (:type ("zend_bool" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5927 5955])
+                    ("syslog_started" variable (:type "int") (reparse-symbol classsubparts) [6018 6037])
+                    ("syslog_device" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [6039 6059])
+                    ("incomplete_class" variable
+                       (:pointer 1
+                        :type ("zend_class_entry" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6075 6110])
+                    ("url_adapt_state_ex" variable (:type ("url_adapt_state_ex_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6138 6178])
+                    ("user_filter_map" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6242 6269])
+                    ("umask" variable (:type "int") (reparse-symbol classsubparts) [6393 6403]))                  
+                :type "struct")
+                nil [4808 6424])
+            ("BG" variable (:constant-flag t) nil [6549 6551])
+            ("basic_globals" variable
+               (:typemodifiers ("extern")
+                :type ("php_basic_globals" type (:type "class") nil nil))
+                nil [6580 6619])
+            ("SAFE_MODE_PROTECTED_ENV_VARS" variable (:constant-flag t) nil [6798 6826])
+            ("SAFE_MODE_ALLOWED_ENV_VARS" variable (:constant-flag t) nil [6853 6879])
+            ("php_get_nan" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6915 6920]))                  
+                :type "double")
+                nil [6896 6921])
+            ("php_get_inf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6948 6953]))                  
+                :type "double")
+                nil [6929 6954]))          
+    :file "basic_functions.h"
+    :pointmax 6987
+    :fsize 6986
+    :lastmodtime '(20689 55724 0 0)
+    :unmatched-syntax '((symbol 6922 . 6928) (symbol 6889 . 6895) (symbol 6573 . 6579) (symbol 4775 . 4779) (number 4772 . 4774) (symbol 4766 . 4771) (symbol 4760 . 4765) (symbol 4755 . 4759) (symbol 4750 . 4754) (symbol 4744 . 4749) (punctuation 4743 . 4744) (symbol 4360 . 4366) (symbol 4249 . 4255) (symbol 4158 . 4164) (symbol 2796 . 2804))
+    :lexical-table 
+        '(("BASIC_FUNCTIONS_H")
+          ("MT_N" . ((semantic-list "(624)" 4801 . 4806)))
+          ("basic_functions_module_ptr" . ((punctuation "&" 1528 . 1529) (symbol "basic_functions_module" 1529 . 1551)))
+          ("SAFE_MODE_PROTECTED_ENV_VARS" . ((string "\"LD_LIBRARY_PATH\"" 6827 . 6844)))
+          ("BG" (spp-arg-list ("v") 6551 . 6554) . ((semantic-list "(basic_globals.v)" 6555 . 6572)))
+          ("SAFE_MODE_ALLOWED_ENV_VARS" . ((string "\"PHP_\"" 6881 . 6887)))
+          )
+
+    )
+   (semanticdb-table "php_incomplete_class.h"
+    :file "php_incomplete_class.h"
+    :fsize 2511
+    :lastmodtime '(20689 55724 0 0)
+    )
+   (semanticdb-table "php_standard.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("basic_functions.h" include nil nil [1160 1188])
+            ("php_math.h" include nil nil [1189 1210])
+            ("php_string.h" include nil nil [1211 1234])
+            ("base64.h" include nil nil [1235 1254])
+            ("php_dir.h" include nil nil [1255 1275])
+            ("php_dns.h" include nil nil [1276 1296])
+            ("php_mail.h" include nil nil [1297 1318])
+            ("md5.h" include nil nil [1319 1335])
+            ("sha1.h" include nil nil [1336 1353])
+            ("html.h" include nil nil [1354 1371])
+            ("exec.h" include nil nil [1372 1389])
+            ("file.h" include nil nil [1390 1407])
+            ("php_ext_syslog.h" include nil nil [1408 1435])
+            ("php_filestat.h" include nil nil [1436 1461])
+            ("php_browscap.h" include nil nil [1462 1487])
+            ("pack.h" include nil nil [1488 1505])
+            ("datetime.h" include nil nil [1506 1527])
+            ("microtime.h" include nil nil [1528 1550])
+            ("url.h" include nil nil [1551 1567])
+            ("pageinfo.h" include nil nil [1568 1589])
+            ("cyr_convert.h" include nil nil [1590 1614])
+            ("php_link.h" include nil nil [1615 1636])
+            ("fsock.h" include nil nil [1637 1655])
+            ("php_image.h" include nil nil [1656 1678])
+            ("php_iptc.h" include nil nil [1679 1700])
+            ("info.h" include nil nil [1701 1718])
+            ("uniqid.h" include nil nil [1719 1738])
+            ("php_var.h" include nil nil [1739 1759])
+            ("quot_print.h" include nil nil [1760 1783])
+            ("dl.h" include nil nil [1784 1799])
+            ("php_crypt.h" include nil nil [1800 1822])
+            ("head.h" include nil nil [1823 1840])
+            ("php_lcg.h" include nil nil [1841 1861])
+            ("php_metaphone.h" include nil nil [1862 1888])
+            ("php_output.h" include nil nil [1889 1912])
+            ("php_array.h" include nil nil [1913 1935])
+            ("php_assert.h" include nil nil [1936 1959])
+            ("php_versioning.h" include nil nil [1960 1987])
+            ("php_ftok.h" include nil nil [1988 2009])
+            ("php_type.h" include nil nil [2010 2031])
+            ("phpext_standard_ptr" variable (:constant-flag t) nil [2041 2060])
+            ("PHP_MINIT_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("standard_filters" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2107 2124]))                  
+                :type "int")
+                nil [2088 2125])
+            ("PHP_MSHUTDOWN_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("standard_filters" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2149 2166]))                  
+                :type "int")
+                nil [2126 2167]))          
+    :file "php_standard.h"
+    :pointmax 2242
+    :fsize 2241
+    :lastmodtime '(20689 55724 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("phpext_standard_ptr" . ((symbol "basic_functions_module_ptr" 2061 . 2087)))
+          )
+
+    )
+   (semanticdb-table "php_math.h"
+    :file "php_math.h"
+    :fsize 4639
+    :lastmodtime '(20689 55724 0 0)
+    )
+   (semanticdb-table "base64.h"
+    :file "base64.h"
+    :fsize 1612
+    :lastmodtime '(20689 55724 0 0)
+    )
+   (semanticdb-table "php_dir.h"
+    :file "php_dir.h"
+    :fsize 1606
+    :lastmodtime '(20689 55724 0 0)
+    )
+   (semanticdb-table "php_dns.h"
+    :file "php_dns.h"
+    :fsize 2885
+    :lastmodtime '(20689 55724 0 0)
+    )
+   (semanticdb-table "php_mail.h"
+    :file "php_mail.h"
+    :fsize 1407
+    :lastmodtime '(20689 55724 0 0)
+    )
+   (semanticdb-table "md5.h"
+    :file "md5.h"
+    :fsize 2169
+    :lastmodtime '(20689 55724 0 0)
+    )
+   (semanticdb-table "sha1.h"
+    :file "sha1.h"
+    :fsize 1751
+    :lastmodtime '(20689 55724 0 0)
+    )
+   (semanticdb-table "html.h"
+    :file "html.h"
+    :fsize 2216
+    :lastmodtime '(20689 55724 0 0)
+    )
+   (semanticdb-table "exec.h"
+    :file "exec.h"
+    :fsize 1704
+    :lastmodtime '(20689 55724 0 0)
+    )
+   (semanticdb-table "file.h"
+    :file "file.h"
+    :fsize 4495
+    :lastmodtime '(20689 55724 0 0)
+    )
+   (semanticdb-table "php_ext_syslog.h"
+    :file "php_ext_syslog.h"
+    :fsize 1549
+    :lastmodtime '(20689 55724 0 0)
+    )
+   (semanticdb-table "php_filestat.h"
+    :file "php_filestat.h"
+    :fsize 3358
+    :lastmodtime '(20689 55724 0 0)
+    )
+   (semanticdb-table "php_browscap.h"
+    :file "php_browscap.h"
+    :fsize 1328
+    :lastmodtime '(20689 55724 0 0)
+    )
+   (semanticdb-table "pack.h"
+    :file "pack.h"
+    :fsize 1279
+    :lastmodtime '(20689 55724 0 0)
+    )
+   (semanticdb-table "datetime.h"
+    :file "datetime.h"
+    :fsize 1398
+    :lastmodtime '(20689 55724 0 0)
+    )
+   (semanticdb-table "microtime.h"
+    :file "microtime.h"
+    :fsize 1365
+    :lastmodtime '(20689 55724 0 0)
+    )
+   (semanticdb-table "url.h"
+    :file "url.h"
+    :fsize 2275
+    :lastmodtime '(20689 55724 0 0)
+    )
+   (semanticdb-table "pageinfo.h"
+    :file "pageinfo.h"
+    :fsize 1465
+    :lastmodtime '(20689 55724 0 0)
+    )
+   (semanticdb-table "cyr_convert.h"
+    :file "cyr_convert.h"
+    :fsize 1269
+    :lastmodtime '(20689 55724 0 0)
+    )
+   (semanticdb-table "php_link.h"
+    :file "php_link.h"
+    :fsize 1371
+    :lastmodtime '(20689 55724 0 0)
+    )
+   (semanticdb-table "fsock.h"
+    :file "fsock.h"
+    :fsize 1610
+    :lastmodtime '(20689 55724 0 0)
+    )
+   (semanticdb-table "php_image.h"
+    :file "php_image.h"
+    :fsize 2386
+    :lastmodtime '(20689 55724 0 0)
+    )
+   (semanticdb-table "php_iptc.h"
+    :file "php_iptc.h"
+    :fsize 1274
+    :lastmodtime '(20689 55724 0 0)
+    )
+   (semanticdb-table "info.h"
+    :file "info.h"
+    :fsize 3709
+    :lastmodtime '(20689 55724 0 0)
+    )
+   (semanticdb-table "uniqid.h"
+    :file "uniqid.h"
+    :fsize 1272
+    :lastmodtime '(20689 55724 0 0)
+    )
+   (semanticdb-table "quot_print.h"
+    :file "quot_print.h"
+    :fsize 1542
+    :lastmodtime '(20689 55724 0 0)
+    )
+   (semanticdb-table "dl.h"
+    :file "dl.h"
+    :fsize 1610
+    :lastmodtime '(20689 55724 0 0)
+    )
+   (semanticdb-table "php_crypt.h"
+    :file "php_crypt.h"
+    :fsize 1561
+    :lastmodtime '(20689 55724 0 0)
+    )
+   (semanticdb-table "head.h"
+    :file "head.h"
+    :fsize 1629
+    :lastmodtime '(20689 55724 0 0)
+    )
+   (semanticdb-table "php_lcg.h"
+    :file "php_lcg.h"
+    :fsize 1536
+    :lastmodtime '(20689 55724 0 0)
+    )
+   (semanticdb-table "php_metaphone.h"
+    :file "php_metaphone.h"
+    :fsize 1243
+    :lastmodtime '(20689 55724 0 0)
+    )
+   (semanticdb-table "php_array.h"
+    :major-mode 'c-mode
+    :tags nil
+    :file "php_array.h"
+    :pointmax 4382
+    :fsize 4381
+    :lastmodtime '(20689 55724 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "php_assert.h"
+    :file "php_assert.h"
+    :fsize 1429
+    :lastmodtime '(20689 55724 0 0)
+    )
+   (semanticdb-table "php_versioning.h"
+    :file "php_versioning.h"
+    :fsize 1406
+    :lastmodtime '(20689 55724 0 0)
+    )
+   (semanticdb-table "php_ftok.h"
+    :file "php_ftok.h"
+    :fsize 1264
+    :lastmodtime '(20689 55724 0 0)
+    )
+   (semanticdb-table "php_type.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("PHP_TYPE_H" variable (:constant-flag t) nil [1187 1197])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("intval" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1212 1219]))                  
+                :type "int")
+                nil [1199 1220])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("floatval" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1234 1243]))                  
+                :type "int")
+                nil [1221 1244])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("strval" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1258 1265]))                  
+                :type "int")
+                nil [1245 1266])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("gettype" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1280 1288]))                  
+                :type "int")
+                nil [1267 1289])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("settype" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1303 1311]))                  
+                :type "int")
+                nil [1290 1312])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("is_null" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1326 1334]))                  
+                :type "int")
+                nil [1313 1335])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("is_resource" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1349 1361]))                  
+                :type "int")
+                nil [1336 1362])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("is_bool" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1376 1384]))                  
+                :type "int")
+                nil [1363 1385])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("is_long" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1399 1407]))                  
+                :type "int")
+                nil [1386 1408])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("is_float" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1422 1431]))                  
+                :type "int")
+                nil [1409 1432])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("is_numeric" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1446 1457]))                  
+                :type "int")
+                nil [1433 1458])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("is_string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1472 1482]))                  
+                :type "int")
+                nil [1459 1483])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("is_array" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1497 1506]))                  
+                :type "int")
+                nil [1484 1507])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("is_object" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1521 1531]))                  
+                :type "int")
+                nil [1508 1532])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("is_scalar" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1546 1556]))                  
+                :type "int")
+                nil [1533 1557])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("is_callable" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1571 1583]))                  
+                :type "int")
+                nil [1558 1584]))          
+    :file "php_type.h"
+    :pointmax 1593
+    :fsize 1592
+    :lastmodtime '(20689 55724 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("PHP_TYPE_H")
+          )
+
+    )
+   (semanticdb-table "url_scanner_ex.h"
+    :file "url_scanner_ex.h"
+    :fsize 2141
+    :lastmodtime '(20689 55724 0 0)
+    )
+   (semanticdb-table "php_smart_str_public.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("PHP_SMART_STR_PUBLIC_H" variable (:constant-flag t) nil [1200 1222])
+            ("sys/types.h" include (:system-flag t) nil [1224 1246])
+            ("smart_str" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("c" variable
+                             (:pointer 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [1266 1274])
+                          ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1276 1287])
+                          ("a" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1289 1298]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [1248 1311]))          
+    :file "php_smart_str_public.h"
+    :pointmax 1320
+    :fsize 1319
+    :lastmodtime '(20689 55724 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("PHP_SMART_STR_PUBLIC_H")
+          )
+
+    )
+   (semanticdb-table "array.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("php.h" include nil nil [1541 1557])
+            ("php_ini.h" include nil nil [1558 1578])
+            ("stdarg.h" include (:system-flag t) nil [1579 1598])
+            ("stdlib.h" include (:system-flag t) nil [1599 1618])
+            ("math.h" include (:system-flag t) nil [1619 1636])
+            ("time.h" include (:system-flag t) nil [1637 1654])
+            ("stdio.h" include (:system-flag t) nil [1655 1673])
+            ("strings.h" include (:system-flag t) nil [1718 1738])
+            ("zend_globals.h" include nil nil [1796 1821])
+            ("zend_interfaces.h" include nil nil [1822 1850])
+            ("php_globals.h" include nil nil [1851 1875])
+            ("php_array.h" include nil nil [1876 1898])
+            ("basic_functions.h" include nil nil [1899 1927])
+            ("php_string.h" include nil nil [1928 1951])
+            ("php_rand.h" include nil nil [1952 1973])
+            ("php_smart_str.h" include nil nil [1974 2000])
+            ("EXTR_OVERWRITE" variable (:constant-flag t) nil [2082 2096])
+            ("EXTR_SKIP" variable (:constant-flag t) nil [2109 2118])
+            ("EXTR_PREFIX_SAME" variable (:constant-flag t) nil [2132 2148])
+            ("EXTR_PREFIX_ALL" variable (:constant-flag t) nil [2160 2175])
+            ("EXTR_PREFIX_INVALID" variable (:constant-flag t) nil [2188 2207])
+            ("EXTR_PREFIX_IF_EXISTS" variable (:constant-flag t) nil [2219 2240])
+            ("EXTR_IF_EXISTS" variable (:constant-flag t) nil [2251 2265])
+            ("EXTR_REFS" variable (:constant-flag t) nil [2279 2288])
+            ("CASE_LOWER" variable (:constant-flag t) nil [2307 2317])
+            ("CASE_UPPER" variable (:constant-flag t) nil [2331 2341])
+            ("COUNT_NORMAL" variable (:constant-flag t) nil [2356 2368])
+            ("COUNT_RECURSIVE" variable (:constant-flag t) nil [2381 2396])
+            ("DIFF_NORMAL" variable (:constant-flag t) nil [2410 2421])
+            ("DIFF_KEY" variable (:constant-flag t) nil [2434 2442])
+            ("DIFF_ASSOC" variable (:constant-flag t) nil [2455 2465])
+            ("DIFF_COMP_DATA_NONE" variable (:constant-flag t) nil [2478 2497])
+            ("DIFF_COMP_DATA_INTERNAL" variable (:constant-flag t) nil [2512 2535])
+            ("DIFF_COMP_DATA_USER" variable (:constant-flag t) nil [2546 2565])
+            ("DIFF_COMP_KEY_INTERNAL" variable (:constant-flag t) nil [2580 2602])
+            ("DIFF_COMP_KEY_USER" variable (:constant-flag t) nil [2614 2632])
+            ("INTERSECT_NORMAL" variable (:constant-flag t) nil [2649 2665])
+            ("INTERSECT_KEY" variable (:constant-flag t) nil [2677 2690])
+            ("INTERSECT_ASSOC" variable (:constant-flag t) nil [2703 2718])
+            ("INTERSECT_COMP_DATA_NONE" variable (:constant-flag t) nil [2731 2755])
+            ("INTERSECT_COMP_DATA_INTERNAL" variable (:constant-flag t) nil [2770 2798])
+            ("INTERSECT_COMP_DATA_USER" variable (:constant-flag t) nil [2809 2833])
+            ("INTERSECT_COMP_KEY_INTERNAL" variable (:constant-flag t) nil [2848 2875])
+            ("INTERSECT_COMP_KEY_USER" variable (:constant-flag t) nil [2887 2910])
+            ("DOUBLE_DRIFT_FIX" variable (:constant-flag t) nil [2927 2943])
+            ("php_array_init_globals" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("array_globals" variable
+                       (:pointer 1
+                        :type ("zend_array_globals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3077 3111]))                  
+                :type "void")
+                nil [3042 3170])
+            ("PHP_MINIT_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("array" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3201 3207]))                  
+                :type "int")
+                nil [3182 4880])
+            ("PHP_MSHUTDOWN_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("array" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4915 4921]))                  
+                :type "int")
+                nil [4892 5002])
+            ("php_set_compare_func" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("sort_type" variable (:type "int") (reparse-symbol arg-sub-list) [5047 5070])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5061 5071]))                  
+                :type "void")
+                nil [5014 5498])
+            ("php_array_key_compare" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [5543 5557])
+                    ("b" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [5558 5581])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5572 5582]))                  
+                :type "int")
+                nil [5510 6473])
+            ("php_array_reverse_key_compare" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6526 6540])
+                    ("b" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6541 6564])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6555 6565]))                  
+                :type "int")
+                nil [6485 6631])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("krsort" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6768 6775]))                  
+                :type "int")
+                nil [6755 7132])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("ksort" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7245 7251]))                  
+                :type "int")
+                nil [7232 7600])
+            ("php_count_recursive" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("array" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7643 7655])
+                    ("mode" variable (:type "long") (reparse-symbol arg-sub-list) [7656 7675])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7666 7676]))                  
+                :type "int")
+                nil [7612 8391])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("count" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8531 8537]))                  
+                :type "int")
+                nil [8518 9622])
+            ("php_array_data_compare" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9926 9940])
+                    ("b" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9941 9964])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9955 9965]))                  
+                :type "int")
+                nil [9892 10537])
+            ("php_array_reverse_data_compare" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [10591 10605])
+                    ("b" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [10606 10629])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10620 10630]))                  
+                :type "int")
+                nil [10549 10697])
+            ("php_array_natural_general_compare" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [10754 10768])
+                    ("b" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [10769 10783])
+                    ("fold_case" variable (:type "int") (reparse-symbol arg-sub-list) [10784 10798]))                  
+                :type "int")
+                nil [10709 11463])
+            ("php_array_natural_compare" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [11512 11526])
+                    ("b" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [11527 11550])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11541 11551]))                  
+                :type "int")
+                nil [11475 11617])
+            ("php_array_natural_case_compare" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [11671 11685])
+                    ("b" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [11686 11709])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11700 11710]))                  
+                :type "int")
+                nil [11629 11776])
+            ("php_natsort" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("INTERNAL_FUNCTION_PARAMETERS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11812 11841])
+                    ("fold_case" variable (:type "int") (reparse-symbol arg-sub-list) [11842 11856]))                  
+                :type "void")
+                nil [11788 12273])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("natsort" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12381 12389]))                  
+                :type "int")
+                nil [12368 12444])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("natcasesort" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12573 12585]))                  
+                :type "int")
+                nil [12560 12640])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("asort" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12777 12783]))                  
+                :type "int")
+                nil [12764 13133])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("arsort" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13288 13295]))                  
+                :type "int")
+                nil [13275 13653])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("sort" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13758 13763]))                  
+                :type "int")
+                nil [13745 14113])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("rsort" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14236 14242]))                  
+                :type "int")
+                nil [14223 14600])
+            ("php_array_user_compare" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [14646 14660])
+                    ("b" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [14661 14684])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14675 14685]))                  
+                :type "int")
+                nil [14612 15346])
+            ("PHP_ARRAY_CMP_FUNC_CHECK" variable (:constant-flag t) nil [15410 15434])
+            ("PHP_ARRAY_CMP_FUNC_VARS" variable (:constant-flag t) nil [16087 16110])
+            ("PHP_ARRAY_CMP_FUNC_BACKUP" variable (:constant-flag t) nil [16215 16240])
+            ("PHP_ARRAY_CMP_FUNC_RESTORE" variable (:constant-flag t) nil [16418 16444])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("usort" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16704 16710]))                  
+                :type "int")
+                nil [16691 17774])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("uasort" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17953 17960]))                  
+                :type "int")
+                nil [17940 19023])
+            ("php_array_user_key_compare" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [19073 19087])
+                    ("b" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [19088 19111])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19102 19112]))                  
+                :type "int")
+                nil [19035 20279])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("uksort" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20436 20443]))                  
+                :type "int")
+                nil [20423 21510])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("end" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21658 21662]))                  
+                :type "int")
+                nil [21645 21989])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("prev" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22138 22143]))                  
+                :type "int")
+                nil [22125 22464])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("next" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22609 22614]))                  
+                :type "int")
+                nil [22596 22933])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("reset" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23079 23085]))                  
+                :type "int")
+                nil [23066 23414])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("current" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23559 23567]))                  
+                :type "int")
+                nil [23546 23819])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("key" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23971 23975]))                  
+                :type "int")
+                nil [23958 24440])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("min" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24596 24600]))                  
+                :type "int")
+                nil [24583 25665])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("max" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25822 25826]))                  
+                :type "int")
+                nil [25809 26898])
+            ("php_array_walk" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("target_hash" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26936 26959])
+                    ("userdata" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26960 26975])
+                    ("recursive" variable (:type "int") (reparse-symbol arg-sub-list) [26976 26999])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26990 27000]))                  
+                :type "int")
+                nil [26910 29343])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("array_walk" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29502 29513]))                  
+                :type "int")
+                nil [29489 30165])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("array_walk_recursive" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30346 30367]))                  
+                :type "int")
+                nil [30333 31019])
+            ("php_search_array" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("INTERNAL_FUNCTION_PARAMETERS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31173 31202])
+                    ("behavior" variable (:type "int") (reparse-symbol arg-sub-list) [31203 31216]))                  
+                :type "void")
+                nil [31144 32465])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("in_array" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32615 32624]))                  
+                :type "int")
+                nil [32602 32684])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("array_search" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32878 32891]))                  
+                :type "int")
+                nil [32865 32951])
+            ("php_valid_var_name" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("var_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [32993 33008])
+                    ("var_name_len" variable (:type "int") (reparse-symbol arg-sub-list) [33009 33026]))                  
+                :type "int")
+                nil [32963 33841])
+            ("php_prefix_varname" function
+               (:arguments 
+                  ( ("result" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33883 33896])
+                    ("prefix" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33897 33910])
+                    ("var_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [33911 33926])
+                    ("var_name_len" variable (:type "int") (reparse-symbol arg-sub-list) [33927 33944])
+                    ("add_underscore" variable (:type ("zend_bool" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33945 33979])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33970 33980]))                  
+                :type "int")
+                nil [33860 34432])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("extract" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34594 34602]))                  
+                :type "int")
+                nil [34581 39220])
+            ("php_compact_var" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("eg_active_symbol_table" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39260 39294])
+                    ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39295 39314])
+                    ("entry" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39315 39336])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39327 39337]))                  
+                :type "void")
+                nil [39232 40338])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("compact" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40480 40488]))                  
+                :type "int")
+                nil [40467 41295])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("array_fill" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41485 41496]))                  
+                :type "int")
+                nil [41472 42295])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("array_fill_keys" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42474 42490]))                  
+                :type "int")
+                nil [42461 43512])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("range" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43695 43701]))                  
+                :type "int")
+                nil [43682 47415])
+            ("php_array_data_shuffle" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("array" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [47462 47483])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47474 47484]))                  
+                :type "void")
+                nil [47427 48657])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("shuffle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48773 48781]))                  
+                :type "int")
+                nil [48760 48958])
+            ("php_splice" function
+               (:pointer 1
+                :arguments 
+                  ( ("in_hash" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [48999 49018])
+                    ("offset" variable (:type "int") (reparse-symbol arg-sub-list) [49019 49030])
+                    ("length" variable (:type "int") (reparse-symbol arg-sub-list) [49031 49042])
+                    ("list" variable
+                       (:pointer 3
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49043 49056])
+                    ("list_count" variable (:type "int") (reparse-symbol arg-sub-list) [49057 49072])
+                    ("removed" variable
+                       (:pointer 2
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49073 49093]))                  
+                :type ("HashTable" type (:type "class") nil nil))
+                nil [48977 51959])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("array_push" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [52098 52109]))                  
+                :type "int")
+                nil [52085 53029])
+            ("_phpi_pop" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("INTERNAL_FUNCTION_PARAMETERS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [53135 53164])
+                    ("off_the_end" variable (:type "int") (reparse-symbol arg-sub-list) [53165 53181]))                  
+                :type "void")
+                nil [53113 54792])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("array_pop" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54906 54916]))                  
+                :type "int")
+                nil [54893 54969])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("array_shift" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55091 55103]))                  
+                :type "int")
+                nil [55078 55156])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("array_unshift" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55304 55318]))                  
+                :type "int")
+                nil [55291 56184])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("array_splice" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [56399 56412]))                  
+                :type "int")
+                nil [56386 58652])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("array_slice" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [58825 58837]))                  
+                :type "int")
+                nil [58812 61394])
+            ("php_array_merge" function
+               (:arguments 
+                  ( ("dest" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [61433 61449])
+                    ("src" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [61450 61465])
+                    ("recursive" variable (:type "int") (reparse-symbol arg-sub-list) [61466 61489])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [61480 61490]))                  
+                :type "int")
+                nil [61413 63361])
+            ("php_array_replace_recursive" function
+               (:arguments 
+                  ( ("dest" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [63412 63428])
+                    ("src" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [63429 63453])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [63444 63454]))                  
+                :type "int")
+                nil [63380 65231])
+            ("php_array_merge_or_replace_wrapper" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("INTERNAL_FUNCTION_PARAMETERS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [65290 65319])
+                    ("recursive" variable (:type "int") (reparse-symbol arg-sub-list) [65320 65334])
+                    ("replace" variable (:type "int") (reparse-symbol arg-sub-list) [65335 65347]))                  
+                :type "void")
+                nil [65243 66377])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("array_merge" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [66527 66539]))                  
+                :type "int")
+                nil [66514 66620])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("array_merge_recursive" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [66792 66814]))                  
+                :type "int")
+                nil [66779 66895])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("array_replace" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [67049 67063]))                  
+                :type "int")
+                nil [67036 67144])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("array_replace_recursive" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [67320 67344]))                  
+                :type "int")
+                nil [67307 67425])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("array_keys" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [67627 67638]))                  
+                :type "int")
+                nil [67614 69522])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("array_values" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [69642 69655]))                  
+                :type "int")
+                nil [69629 70350])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("array_count_values" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [70506 70525]))                  
+                :type "int")
+                nil [70493 71926])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("array_reverse" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [72093 72107]))                  
+                :type "int")
+                nil [72080 73320])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("array_pad" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [73493 73503]))                  
+                :type "int")
+                nil [73480 75490])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("array_flip" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [75604 75615]))                  
+                :type "int")
+                nil [75591 76907])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("array_change_key_case" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [77080 77102]))                  
+                :type "int")
+                nil [77067 78263])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("array_unique" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [78394 78407]))                  
+                :type "int")
+                nil [78381 80283])
+            ("zval_compare" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 2
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [80319 80328])
+                    ("b" variable
+                       (:pointer 2
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [80329 80347])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [80338 80348]))                  
+                :type "int")
+                nil [80295 80838])
+            ("zval_user_compare" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 2
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [80879 80888])
+                    ("b" variable
+                       (:pointer 2
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [80889 80907])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [80898 80908]))                  
+                :type "int")
+                nil [80850 81479])
+            ("php_array_intersect_key" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("INTERNAL_FUNCTION_PARAMETERS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [81527 81556])
+                    ("data_compare_type" variable (:type "int") (reparse-symbol arg-sub-list) [81557 81579]))                  
+                :type "void")
+                nil [81491 83886])
+            ("php_array_intersect" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("INTERNAL_FUNCTION_PARAMETERS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [83930 83959])
+                    ("behavior" variable (:type "int") (reparse-symbol arg-sub-list) [83960 83973])
+                    ("data_compare_type" variable (:type "int") (reparse-symbol arg-sub-list) [83974 83996])
+                    ("key_compare_type" variable (:type "int") (reparse-symbol arg-sub-list) [83997 84018]))                  
+                :type "void")
+                nil [83898 93454])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("array_intersect_key" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [93816 93836]))                  
+                :type "int")
+                nil [93803 93926])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("array_intersect_ukey" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [94386 94407]))                  
+                :type "int")
+                nil [94373 94537])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("array_intersect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [94731 94747]))                  
+                :type "int")
+                nil [94718 94884])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("array_uintersect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [95161 95178]))                  
+                :type "int")
+                nil [95148 95311])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("array_intersect_assoc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [95555 95577]))                  
+                :type "int")
+                nil [95542 95671])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("array_intersect_uassoc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [96003 96026]))                  
+                :type "int")
+                nil [95990 96158])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("array_uintersect_assoc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [96487 96510]))                  
+                :type "int")
+                nil [96474 96600])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("array_uintersect_uassoc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [96968 96992]))                  
+                :type "int")
+                nil [96955 97120])
+            ("php_array_diff_key" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("INTERNAL_FUNCTION_PARAMETERS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [97163 97192])
+                    ("data_compare_type" variable (:type "int") (reparse-symbol arg-sub-list) [97193 97215]))                  
+                :type "void")
+                nil [97132 99431])
+            ("php_array_diff" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("INTERNAL_FUNCTION_PARAMETERS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [99470 99499])
+                    ("behavior" variable (:type "int") (reparse-symbol arg-sub-list) [99500 99513])
+                    ("data_compare_type" variable (:type "int") (reparse-symbol arg-sub-list) [99514 99536])
+                    ("key_compare_type" variable (:type "int") (reparse-symbol arg-sub-list) [99537 99558]))                  
+                :type "void")
+                nil [99443 108484])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("array_diff_key" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [108796 108811]))                  
+                :type "int")
+                nil [108783 108891])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("array_diff_ukey" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [109284 109300]))                  
+                :type "int")
+                nil [109271 109410])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("array_diff" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [109608 109619]))                  
+                :type "int")
+                nil [109595 109736])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("array_udiff" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [110009 110021]))                  
+                :type "int")
+                nil [109996 110134])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("array_diff_assoc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [110389 110406]))                  
+                :type "int")
+                nil [110376 110490])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("array_diff_uassoc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [110821 110839]))                  
+                :type "int")
+                nil [110808 110951])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("array_udiff_assoc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [111277 111295]))                  
+                :type "int")
+                nil [111264 111375])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("array_udiff_uassoc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [111741 111760]))                  
+                :type "int")
+                nil [111728 111868])
+            ("MULTISORT_ORDER" variable (:constant-flag t) nil [111888 111903])
+            ("MULTISORT_TYPE" variable (:constant-flag t) nil [111914 111928])
+            ("MULTISORT_LAST" variable (:constant-flag t) nil [111939 111953])
+            ("php_multisort_compare" function
+               (:arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [111990 112004])
+                    ("b" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [112005 112028])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [112019 112029]))                  
+                :type "int")
+                nil [111964 112493])
+            ("MULTISORT_ABORT" variable (:constant-flag t) nil [112513 112528])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("array_multisort" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [112963 112979]))                  
+                :type "int")
+                nil [112950 118600])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("array_rand" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [118744 118755]))                  
+                :type "int")
+                nil [118731 120469])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("array_sum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [120579 120589]))                  
+                :type "int")
+                nil [120566 121578])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("array_product" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [121696 121710]))                  
+                :type "int")
+                nil [121683 122763])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("array_reduce" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [122938 122951]))                  
+                :type "int")
+                nil [122925 124460])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("array_filter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [124605 124618]))                  
+                :type "int")
+                nil [124592 126340])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("array_map" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [126506 126516]))                  
+                :type "int")
+                nil [126493 130037])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("array_key_exists" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [130181 130198]))                  
+                :type "int")
+                nil [130168 130896])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("array_chunk" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [131028 131040]))                  
+                :type "int")
+                nil [131015 132832])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("array_combine" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [133051 133065]))                  
+                :type "int")
+                nil [133038 134748]))          
+    :file "array.c"
+    :pointmax 134896
+    :fsize 134895
+    :lastmodtime '(20689 55724 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "php_rand.h"
+    :file "php_rand.h"
+    :fsize 2603
+    :lastmodtime '(20689 55724 0 0)
+    )
+   )
+  :file "!home!work!download!php-5.3.20!ext!standard!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

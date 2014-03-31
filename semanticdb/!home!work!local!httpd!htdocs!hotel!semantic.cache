@@ -1,0 +1,36 @@
+;; Object hotel/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "hotel/"
+  :tables (list 
+   (semanticdb-table "hotelInfoList.json"
+    :major-mode 'js-mode
+    :tags nil
+    :file "hotelInfoList.json"
+    :pointmax 393
+    :fsize 392
+    :lastmodtime '(20791 5746)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "hotelPrice.json"
+    :major-mode 'js-mode
+    :tags nil
+    :file "hotelPrice.json"
+    :pointmax 165
+    :fsize 164
+    :lastmodtime '(20792 22112)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "hotelLocation.json"
+    :major-mode 'js-mode
+    :tags nil
+    :file "hotelLocation.json"
+    :pointmax 1251338
+    :fsize 1401380
+    :lastmodtime '(20792 22809)
+    :unmatched-syntax '((BRACK_BLOCK 1 . 1251338))
+    )
+   )
+  :file "!home!work!local!httpd!htdocs!hotel!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

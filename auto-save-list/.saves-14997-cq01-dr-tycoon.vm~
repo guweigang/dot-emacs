@@ -1,0 +1,14 @@
+/home/work/source/adpipe/insurance/confs/product.ini
+/home/work/source/adpipe/insurance/confs/#product.ini#
+/home/work/source/adpipe/loan/confs/product.ini
+/home/work/source/adpipe/loan/confs/#product.ini#
+/home/work/source/adpipe/skeleton/confs/dev.ini
+/home/work/source/adpipe/skeleton/confs/#dev.ini#
+/home/work/source/adpipe/insurance/confs/dev.ini
+/home/work/source/adpipe/insurance/confs/#dev.ini#
+/home/work/source/adpipe/insurance/tasks/ChangelogTask.php
+/home/work/source/adpipe/insurance/tasks/#ChangelogTask.php#
+/home/work/source/adpipe/loan/tasks/ChangelogTask.php
+/home/work/source/adpipe/loan/tasks/#ChangelogTask.php#
+/home/work/source/adpipe/manager/tasks/ServiceTask.php
+/home/work/source/adpipe/manager/tasks/#ServiceTask.php#

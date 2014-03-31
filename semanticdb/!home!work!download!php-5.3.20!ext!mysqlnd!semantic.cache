@@ -1,0 +1,18 @@
+;; Object mysqlnd/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mysqlnd/"
+  :tables (list 
+   (semanticdb-table "mysqlnd.c"
+    :major-mode 'c-mode
+    :tags nil
+    :file "mysqlnd.c"
+    :pointmax 72773
+    :fsize 72772
+    :lastmodtime '(20689 55724 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!download!php-5.3.20!ext!mysqlnd!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

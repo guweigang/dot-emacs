@@ -1,0 +1,29 @@
+;; Object sql-bench/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "sql-bench/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("benchdir_root" variable (:default-value ("$(prefix)")) nil [787 813])
+            ("benchdir" variable (:default-value ("$(benchdir_root)/sql-bench")) nil [813 852])
+            ("bench_SCRIPTS" variable (:default-value ("test-ATIS" "test-connect" "test-create" "test-insert" "test-big-tables" "test-select" "test-wisconsin" "test-alter-table" "test-transactions" "graph-compare-results" "bench-init.pl" "compare-results" "run-all-tests" "server-cfg" "crash-me" "copy-db" "innotest1" "innotest1a" "innotest1b" "innotest2" "innotest2a" "innotest2b" "bench-count-distinct")) nil [852 1208])
+            ("CLEANFILES" variable (:default-value ("$(bench_SCRIPTS)")) nil [1208 1239])
+            ("EXTRA_SCRIPTS" variable (:default-value ("test-ATIS.sh" "test-connect.sh" "test-create.sh" "test-insert.sh" "test-big-tables.sh" "test-select.sh" "test-alter-table.sh" "test-wisconsin.sh" "test-transactions.sh" "bench-init.pl.sh" "compare-results.sh" "server-cfg.sh" "run-all-tests.sh" "crash-me.sh" "copy-db.sh" "graph-compare-results.sh" "innotest1.sh" "innotest1a.sh" "innotest1b.sh" "innotest2.sh" "innotest2a.sh" "innotest2b.sh" "bench-count-distinct.sh")) nil [1239 1669])
+            ("EXTRA_DIST" variable (:default-value ("$(EXTRA_SCRIPTS)")) nil [1669 1700])
+            ("dist-hook" function nil nil [1701 2160])
+            ("install-data-local" function nil nil [2161 2829])
+            ("uninstall-local" function nil nil [2830 2881])
+            ("SUFFIXES" variable (:default-value (".sh")) nil [2882 2897])
+            (".sh" function nil nil [2898 3392]))          
+    :file "Makefile.am"
+    :pointmax 3445
+    :fsize 3444
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax '((symbol 3436 . 3444) (punctuation 3435 . 3436) (punctuation 3434 . 3435) (symbol 3433 . 3434) (bol 3433 . 3433))
+    )
+   )
+  :file "!home!work!git!mm!mysql-5.1.71!sql-bench!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

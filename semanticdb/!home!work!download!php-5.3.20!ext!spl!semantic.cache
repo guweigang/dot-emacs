@@ -1,0 +1,1140 @@
+;; Object spl/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "spl/"
+  :tables (list 
+   (semanticdb-table "spl_directory.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("php.h" include nil nil [1211 1227])
+            ("php_ini.h" include nil nil [1228 1248])
+            ("ext/standard/info.h" include nil nil [1249 1279])
+            ("ext/standard/file.h" include nil nil [1280 1310])
+            ("ext/standard/php_string.h" include nil nil [1311 1347])
+            ("zend_compile.h" include nil nil [1348 1373])
+            ("zend_exceptions.h" include nil nil [1374 1402])
+            ("zend_interfaces.h" include nil nil [1403 1431])
+            ("php_spl.h" include nil nil [1433 1453])
+            ("spl_functions.h" include nil nil [1454 1480])
+            ("spl_engine.h" include nil nil [1481 1504])
+            ("spl_iterators.h" include nil nil [1505 1531])
+            ("spl_directory.h" include nil nil [1532 1558])
+            ("spl_exceptions.h" include nil nil [1559 1586])
+            ("php.h" include nil nil [1588 1604])
+            ("fopen_wrappers.h" include nil nil [1605 1632])
+            ("ext/standard/basic_functions.h" include nil nil [1634 1675])
+            ("ext/standard/php_filestat.h" include nil nil [1676 1714])
+            ("SPL_HAS_FLAG" variable (:constant-flag t) nil [1724 1736])
+            ("spl_filesystem_object_handlers" variable
+               (:typemodifiers ("static")
+                :type ("zend_object_handlers" type (:type "class") nil nil))
+                nil [1819 1878])
+            ("spl_filesystem_object_check_handlers" variable
+               (:typemodifiers ("static")
+                :type ("zend_object_handlers" type (:type "class") nil nil))
+                nil [1951 2016])
+            ("spl_ce_SplFileInfo" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [2055 2092])
+            ("spl_ce_DirectoryIterator" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [2100 2143])
+            ("spl_ce_FilesystemIterator" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [2151 2195])
+            ("spl_ce_RecursiveDirectoryIterator" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [2203 2255])
+            ("spl_ce_GlobIterator" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [2263 2301])
+            ("spl_ce_SplFileObject" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [2309 2348])
+            ("spl_ce_SplTempFileObject" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [2356 2399])
+            ("spl_filesystem_file_free_line" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("intern" variable
+                       (:pointer 1
+                        :type ("spl_filesystem_object" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2443 2482])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2473 2483]))                  
+                :type "void")
+                nil [2401 2736])
+            ("spl_filesystem_object_free_storage" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2795 2817])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2808 2818]))                  
+                :type "void")
+                nil [2748 4227])
+            ("spl_filesystem_object_new_ex" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("class_type" variable
+                       (:pointer 1
+                        :type ("zend_class_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4504 4533])
+                    ("obj" variable
+                       (:pointer 2
+                        :type ("spl_filesystem_object" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4534 4571])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4562 4572]))                  
+                :type ("zend_object_value" type (:type "class") nil nil))
+                nil [4450 5377])
+            ("spl_filesystem_object_new" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("class_type" variable
+                       (:pointer 1
+                        :type ("zend_class_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5515 5553])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5544 5554]))                  
+                :type ("zend_object_value" type (:type "class") nil nil))
+                nil [5464 5624])
+            ("spl_filesystem_object_new_check" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("class_type" variable
+                       (:pointer 1
+                        :type ("zend_class_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5732 5770])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5761 5771]))                  
+                :type ("zend_object_value" type (:type "class") nil nil))
+                nil [5675 5926])
+            ("spl_filesystem_object_get_path" function
+               (:pointer 1
+                :arguments 
+                  ( ("intern" variable
+                       (:pointer 1
+                        :type ("spl_filesystem_object" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5983 6013])
+                    ("len" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [6014 6032])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6023 6033]))                  
+                :type "char")
+                nil [5946 6308])
+            ("spl_filesystem_object_get_file_name" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("intern" variable
+                       (:pointer 1
+                        :type ("spl_filesystem_object" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6375 6414])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6405 6415]))                  
+                :type "void")
+                nil [6320 6963])
+            ("spl_filesystem_dir_read" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("intern" variable
+                       (:pointer 1
+                        :type ("spl_filesystem_object" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7010 7049])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7040 7050]))                  
+                :type "int")
+                nil [6975 7234])
+            ("IS_SLASH_AT" variable (:constant-flag t) nil [7254 7265])
+            ("spl_filesystem_is_dot" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("d_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7336 7356]))                  
+                :type "int")
+                nil [7296 7425])
+            ("spl_filesystem_dir_open" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("intern" variable
+                       (:pointer 1
+                        :type ("spl_filesystem_object" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7539 7569])
+                    ("path" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7570 7590])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7581 7591]))                  
+                :type "void")
+                nil [7503 8489])
+            ("spl_filesystem_file_open" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("intern" variable
+                       (:pointer 1
+                        :type ("spl_filesystem_object" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8537 8567])
+                    ("use_include_path" variable (:type "int") (reparse-symbol arg-sub-list) [8568 8589])
+                    ("silent" variable (:type "int") (reparse-symbol arg-sub-list) [8590 8610])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8601 8611]))                  
+                :type "int")
+                nil [8501 10540])
+            ("spl_filesystem_object_clone" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("zobject" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10844 10867])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10858 10868]))                  
+                :type ("zend_object_value" type (:type "class") nil nil))
+                nil [10791 12588])
+            ("spl_filesystem_info_set_filename" function
+               (:arguments 
+                  ( ("intern" variable
+                       (:pointer 1
+                        :type ("spl_filesystem_object" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12638 12668])
+                    ("path" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12669 12680])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [12681 12689])
+                    ("use_copy" variable (:type "int") (reparse-symbol arg-sub-list) [12690 12712])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12703 12713]))                  
+                :type "void")
+                nil [12600 13435])
+            ("spl_filesystem_object_create_info" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("source" variable
+                       (:pointer 1
+                        :type ("spl_filesystem_object" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13512 13542])
+                    ("file_path" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13543 13559])
+                    ("file_path_len" variable (:type "int") (reparse-symbol arg-sub-list) [13560 13578])
+                    ("use_copy" variable (:type "int") (reparse-symbol arg-sub-list) [13579 13592])
+                    ("ce" variable
+                       (:pointer 1
+                        :type ("zend_class_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13593 13614])
+                    ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13615 13643])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13634 13644]))                  
+                :type ("spl_filesystem_object" type (:type "class") nil nil))
+                nil [13447 14830])
+            ("spl_filesystem_object_create_type" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ht" variable (:type "int") (reparse-symbol arg-sub-list) [14907 14914])
+                    ("source" variable
+                       (:pointer 1
+                        :type ("spl_filesystem_object" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14915 14945])
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) [14946 14955])
+                    ("ce" variable
+                       (:pointer 1
+                        :type ("zend_class_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14956 14977])
+                    ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14978 15006])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14997 15007]))                  
+                :type ("spl_filesystem_object" type (:type "class") nil nil))
+                nil [14842 18320])
+            ("spl_filesystem_is_invalid_or_dot" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("d_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [18376 18396]))                  
+                :type "int")
+                nil [18332 18470])
+            ("spl_filesystem_object_get_pathname" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("intern" variable
+                       (:pointer 1
+                        :type ("spl_filesystem_object" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18530 18560])
+                    ("len" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [18561 18579])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18570 18580]))                  
+                :type "char")
+                nil [18482 18926])
+            ("spl_filesystem_object_get_debug_info" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18993 19003])
+                    ("is_temp" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [19004 19026])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19017 19027]))                  
+                :type ("HashTable" type (:type "class") nil nil))
+                nil [18938 21775])
+            ("spl_filesystem_object_get_method_check" function
+               (:pointer 1
+                :arguments 
+                  ( ("object_ptr" variable
+                       (:pointer 2
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21841 21859])
+                    ("method" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [21860 21873])
+                    ("method_len" variable (:type "int") (reparse-symbol arg-sub-list) [21874 21898])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21889 21899]))                  
+                :type ("zend_function" type (:type "class") nil nil))
+                nil [21787 22244])
+            ("DIT_CTOR_FLAGS" variable (:constant-flag t) nil [22264 22278])
+            ("DIT_CTOR_GLOB" variable (:constant-flag t) nil [22299 22312])
+            ("spl_filesystem_object_construct" function
+               (:arguments 
+                  ( ("" variable (:type ("INTERNAL_FUNCTION_PARAMETERS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22364 22393])
+                    ("ctor_flags" variable (:type "long") (reparse-symbol arg-sub-list) [22394 22410]))                  
+                :type "void")
+                nil [22327 24051])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("DirectoryIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24184 24202])
+                    ("" variable (:type ("__construct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24203 24215]))                  
+                :type "int")
+                nil [24173 24290])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("DirectoryIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24394 24412])
+                    ("" variable (:type ("rewind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24413 24420]))                  
+                :type "int")
+                nil [24383 24740])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("DirectoryIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24839 24857])
+                    ("" variable (:type ("key" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24858 24862]))                  
+                :type "int")
+                nil [24828 25130])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("DirectoryIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25263 25281])
+                    ("" variable (:type ("current" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25282 25290]))                  
+                :type "int")
+                nil [25252 25386])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("DirectoryIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25478 25496])
+                    ("" variable (:type ("next" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25497 25502]))                  
+                :type "int")
+                nil [25467 25982])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("DirectoryIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26094 26112])
+                    ("" variable (:type ("seek" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26113 26118]))                  
+                :type "int")
+                nil [26083 27057])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("DirectoryIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27173 27191])
+                    ("" variable (:type ("valid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27192 27198]))                  
+                :type "int")
+                nil [27162 27427])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("SplFileInfo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27515 27527])
+                    ("" variable (:type ("getPath" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27528 27536]))                  
+                :type "int")
+                nil [27504 27847])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("SplFileInfo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27944 27956])
+                    ("" variable (:type ("getFilename" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27957 27969]))                  
+                :type "int")
+                nil [27933 28448])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("DirectoryIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28567 28585])
+                    ("" variable (:type ("getFilename" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28586 28598]))                  
+                :type "int")
+                nil [28556 28821])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("SplFileInfo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28939 28951])
+                    ("" variable (:type ("getExtension" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28952 28965]))                  
+                :type "int")
+                nil [28928 29778])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("DirectoryIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29905 29923])
+                    ("" variable (:type ("getExtension" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29924 29937]))                  
+                :type "int")
+                nil [29894 30507])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("SplFileInfo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30636 30648])
+                    ("" variable (:type ("getBasename" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30649 30661]))                  
+                :type "int")
+                nil [30625 31329])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("DirectoryIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31479 31497])
+                    ("" variable (:type ("getBasename" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31498 31510]))                  
+                :type "int")
+                nil [31468 31936])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("SplFileInfo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32037 32049])
+                    ("" variable (:type ("getPathname" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32050 32062]))                  
+                :type "int")
+                nil [32026 32424])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("FilesystemIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32556 32575])
+                    ("" variable (:type ("key" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32576 32580]))                  
+                :type "int")
+                nil [32545 33000])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("FilesystemIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33143 33162])
+                    ("" variable (:type ("current" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33163 33171]))                  
+                :type "int")
+                nil [33132 33861])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("DirectoryIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33981 33999])
+                    ("" variable (:type ("isDot" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34000 34006]))                  
+                :type "int")
+                nil [33970 34247])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("SplFileInfo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34690 34702])
+                    ("" variable (:type ("__construct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34703 34715]))                  
+                :type "int")
+                nil [34679 35324])
+            ("FileInfoFunction" variable (:constant-flag t) nil [35371 35387])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("SplFileInfo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37929 37941])
+                    ("" variable (:type ("getLinkTarget" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37942 37956]))                  
+                :type "int")
+                nil [37918 39415])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("SplFileInfo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39595 39607])
+                    ("" variable (:type ("getRealPath" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39608 39620]))                  
+                :type "int")
+                nil [39584 40465])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("SplFileInfo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40641 40653])
+                    ("" variable (:type ("openFile" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40654 40663]))                  
+                :type "int")
+                nil [40630 40867])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("SplFileInfo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40988 41000])
+                    ("" variable (:type ("setFileClass" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41001 41014]))                  
+                :type "int")
+                nil [40977 41479])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("SplFileInfo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41618 41630])
+                    ("" variable (:type ("setInfoClass" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41631 41644]))                  
+                :type "int")
+                nil [41607 42108])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("SplFileInfo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42228 42240])
+                    ("" variable (:type ("getFileInfo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42241 42253]))                  
+                :type "int")
+                nil [42217 42779])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("SplFileInfo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42899 42911])
+                    ("" variable (:type ("getPathInfo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42912 42924]))                  
+                :type "int")
+                nil [42888 43672])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("SplFileInfo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43705 43717])
+                    ("" variable (:type ("_bad_state_ex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43718 43732]))                  
+                :type "int")
+                nil [43694 43882])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("FilesystemIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44030 44049])
+                    ("" variable (:type ("__construct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44050 44062]))                  
+                :type "int")
+                nil [44019 44174])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("FilesystemIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44279 44298])
+                    ("" variable (:type ("rewind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44299 44306]))                  
+                :type "int")
+                nil [44268 44694])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("FilesystemIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44790 44809])
+                    ("" variable (:type ("getFlags" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44810 44819]))                  
+                :type "int")
+                nil [44779 45115])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("FilesystemIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45223 45242])
+                    ("" variable (:type ("setFlags" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45243 45252]))                  
+                :type "int")
+                nil [45212 45692])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("RecursiveDirectoryIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45873 45900])
+                    ("" variable (:type ("hasChildren" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45901 45913]))                  
+                :type "int")
+                nil [45862 46630])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("RecursiveDirectoryIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46795 46822])
+                    ("" variable (:type ("getChildren" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46823 46835]))                  
+                :type "int")
+                nil [46784 48215])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("RecursiveDirectoryIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48316 48343])
+                    ("" variable (:type ("getSubPath" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48344 48355]))                  
+                :type "int")
+                nil [48305 48676])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("RecursiveDirectoryIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48795 48822])
+                    ("" variable (:type ("getSubPathname" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48823 48838]))                  
+                :type "int")
+                nil [48784 49359])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("RecursiveDirectoryIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49514 49541])
+                    ("" variable (:type ("__construct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49542 49554]))                  
+                :type "int")
+                nil [49503 49642])
+            ("spl_filesystem_dir_it_dtor" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("iter" variable
+                       (:pointer 1
+                        :type ("zend_object_iterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50661 50697])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50688 50698]))                  
+                :type "void")
+                nil [50622 50699])
+            ("spl_filesystem_dir_it_valid" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("iter" variable
+                       (:pointer 1
+                        :type ("zend_object_iterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50739 50775])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50766 50776]))                  
+                :type "int")
+                nil [50700 50777])
+            ("spl_filesystem_dir_it_current_data" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("iter" variable
+                       (:pointer 1
+                        :type ("zend_object_iterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50825 50852])
+                    ("data" variable
+                       (:pointer 3
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50853 50875])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50866 50876]))                  
+                :type "void")
+                nil [50778 50877])
+            ("spl_filesystem_dir_it_current_key" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("iter" variable
+                       (:pointer 1
+                        :type ("zend_object_iterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50923 50950])
+                    ("str_key" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [50951 50966])
+                    ("str_key_len" variable
+                       (:pointer 1
+                        :type ("uint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50967 50985])
+                    ("int_key" variable
+                       (:pointer 1
+                        :type ("ulong" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50986 51010])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51001 51011]))                  
+                :type "int")
+                nil [50878 51012])
+            ("spl_filesystem_dir_it_move_forward" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("iter" variable
+                       (:pointer 1
+                        :type ("zend_object_iterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51060 51096])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51087 51097]))                  
+                :type "void")
+                nil [51013 51098])
+            ("spl_filesystem_dir_it_rewind" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("iter" variable
+                       (:pointer 1
+                        :type ("zend_object_iterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51140 51176])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51167 51177]))                  
+                :type "void")
+                nil [51099 51178])
+            ("spl_filesystem_dir_it_funcs" variable (:type ("zend_object_iterator_funcs" type (:type "class") nil nil)) nil [51209 51469])
+            ("spl_filesystem_dir_get_iterator" function
+               (:pointer 1
+                :arguments 
+                  ( ("ce" variable
+                       (:pointer 1
+                        :type ("zend_class_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51569 51590])
+                    ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51591 51604])
+                    ("by_ref" variable (:type "int") (reparse-symbol arg-sub-list) [51605 51625])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51616 51626]))                  
+                :type ("zend_object_iterator" type (:type "class") nil nil))
+                nil [51515 52340])
+            ("spl_filesystem_dir_it_dtor" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("iter" variable
+                       (:pointer 1
+                        :type ("zend_object_iterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [52428 52464])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [52455 52465]))                  
+                :type "void")
+                nil [52389 52889])
+            ("spl_filesystem_dir_it_valid" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("iter" variable
+                       (:pointer 1
+                        :type ("zend_object_iterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [52978 53014])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [53005 53015]))                  
+                :type "int")
+                nil [52939 53188])
+            ("spl_filesystem_dir_it_current_data" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("iter" variable
+                       (:pointer 1
+                        :type ("zend_object_iterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [53292 53319])
+                    ("data" variable
+                       (:pointer 3
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [53320 53342])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [53333 53343]))                  
+                :type "void")
+                nil [53245 53448])
+            ("spl_filesystem_dir_it_current_key" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("iter" variable
+                       (:pointer 1
+                        :type ("zend_object_iterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [53549 53576])
+                    ("str_key" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [53577 53592])
+                    ("str_key_len" variable
+                       (:pointer 1
+                        :type ("uint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [53593 53611])
+                    ("int_key" variable
+                       (:pointer 1
+                        :type ("ulong" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [53612 53636])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [53627 53637]))                  
+                :type "int")
+                nil [53504 53803])
+            ("spl_filesystem_dir_it_move_forward" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("iter" variable
+                       (:pointer 1
+                        :type ("zend_object_iterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [53907 53943])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [53934 53944]))                  
+                :type "void")
+                nil [53860 54204])
+            ("spl_filesystem_dir_it_rewind" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("iter" variable
+                       (:pointer 1
+                        :type ("zend_object_iterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [54296 54332])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54323 54333]))                  
+                :type "void")
+                nil [54255 54584])
+            ("spl_filesystem_tree_it_dtor" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("iter" variable
+                       (:pointer 1
+                        :type ("zend_object_iterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [54674 54710])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54701 54711]))                  
+                :type "void")
+                nil [54634 54965])
+            ("spl_filesystem_tree_it_current_data" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("iter" variable
+                       (:pointer 1
+                        :type ("zend_object_iterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [55071 55098])
+                    ("data" variable
+                       (:pointer 3
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [55099 55121])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55112 55122]))                  
+                :type "void")
+                nil [55023 55979])
+            ("spl_filesystem_tree_it_current_key" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("iter" variable
+                       (:pointer 1
+                        :type ("zend_object_iterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [56082 56109])
+                    ("str_key" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [56110 56125])
+                    ("str_key_len" variable
+                       (:pointer 1
+                        :type ("uint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [56126 56144])
+                    ("int_key" variable
+                       (:pointer 1
+                        :type ("ulong" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [56145 56169])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [56160 56170]))                  
+                :type "int")
+                nil [56036 56673])
+            ("spl_filesystem_tree_it_move_forward" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("iter" variable
+                       (:pointer 1
+                        :type ("zend_object_iterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [56779 56815])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [56806 56816]))                  
+                :type "void")
+                nil [56731 57290])
+            ("spl_filesystem_tree_it_rewind" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("iter" variable
+                       (:pointer 1
+                        :type ("zend_object_iterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [57384 57420])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [57411 57421]))                  
+                :type "void")
+                nil [57342 57886])
+            ("spl_filesystem_tree_it_funcs" variable (:type ("zend_object_iterator_funcs" type (:type "class") nil nil)) nil [57931 58197])
+            ("spl_filesystem_tree_get_iterator" function
+               (:pointer 1
+                :arguments 
+                  ( ("ce" variable
+                       (:pointer 1
+                        :type ("zend_class_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [58298 58319])
+                    ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [58320 58333])
+                    ("by_ref" variable (:type "int") (reparse-symbol arg-sub-list) [58334 58354])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [58345 58355]))                  
+                :type ("zend_object_iterator" type (:type "class") nil nil))
+                nil [58243 58928])
+            ("spl_filesystem_object_cast" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("readobj" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [59015 59029])
+                    ("writeobj" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [59030 59045])
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) [59046 59064])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [59055 59065]))                  
+                :type "int")
+                nil [58977 60018])
+            ("spl_SplFileInfo_functions" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type ("zend_function_entry" type (:type "class") nil nil))
+                nil [60757 63518])
+            ("ZEND_END_ARG_INFO" function
+               (:prototype-flag t
+                :type "int")
+                nil [63687 63707])
+            ("spl_DirectoryIterator_functions" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type ("zend_function_entry" type (:type "class") nil nil))
+                nil [63793 64918])
+            ("spl_FilesystemIterator_functions" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type ("zend_function_entry" type (:type "class") nil nil))
+                nil [65263 65950])
+            ("spl_RecursiveDirectoryIterator_functions" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type ("zend_function_entry" type (:type "class") nil nil))
+                nil [65952 66518])
+            ("spl_filesystem_file_read" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("intern" variable
+                       (:pointer 1
+                        :type ("spl_filesystem_object" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [66834 66864])
+                    ("silent" variable (:type "int") (reparse-symbol arg-sub-list) [66865 66885])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [66876 66886]))                  
+                :type "int")
+                nil [66798 68171])
+            ("spl_filesystem_file_call" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("intern" variable
+                       (:pointer 1
+                        :type ("spl_filesystem_object" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [68219 68249])
+                    ("func_ptr" variable
+                       (:pointer 1
+                        :type ("zend_function" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [68250 68274])
+                    ("pass_num_args" variable (:type "int") (reparse-symbol arg-sub-list) [68275 68293])
+                    ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [68294 68313])
+                    ("arg2" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [68314 68334])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [68325 68335]))                  
+                :type "int")
+                nil [68183 69385])
+            ("FileFunctionCall" variable (:constant-flag t) nil [69405 69421])
+            ("spl_filesystem_file_read_csv" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("intern" variable
+                       (:pointer 1
+                        :type ("spl_filesystem_object" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [69932 69962])
+                    ("delimiter" variable (:type "char") (reparse-symbol arg-sub-list) [69963 69978])
+                    ("enclosure" variable (:type "char") (reparse-symbol arg-sub-list) [69979 69994])
+                    ("escape" variable (:type "char") (reparse-symbol arg-sub-list) [69995 70007])
+                    ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [70008 70036])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [70027 70037]))                  
+                :type "int")
+                nil [69892 70867])
+            ("spl_filesystem_file_read_line_ex" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("this_ptr" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [70923 70939])
+                    ("intern" variable
+                       (:pointer 1
+                        :type ("spl_filesystem_object" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [70940 70970])
+                    ("silent" variable (:type "int") (reparse-symbol arg-sub-list) [70971 70991])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [70982 70992]))                  
+                :type "int")
+                nil [70879 72423])
+            ("spl_filesystem_file_is_empty_line" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("intern" variable
+                       (:pointer 1
+                        :type ("spl_filesystem_object" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [72480 72519])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [72510 72520]))                  
+                :type "int")
+                nil [72435 73261])
+            ("spl_filesystem_file_read_line" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("this_ptr" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [73314 73330])
+                    ("intern" variable
+                       (:pointer 1
+                        :type ("spl_filesystem_object" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [73331 73361])
+                    ("silent" variable (:type "int") (reparse-symbol arg-sub-list) [73362 73382])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [73373 73383]))                  
+                :type "int")
+                nil [73273 73766])
+            ("spl_filesystem_file_rewind" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("this_ptr" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [73817 73833])
+                    ("intern" variable
+                       (:pointer 1
+                        :type ("spl_filesystem_object" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [73834 73873])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [73864 73874]))                  
+                :type "void")
+                nil [73778 74286])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("SplFileObject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [74476 74490])
+                    ("" variable (:type ("__construct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [74491 74503]))                  
+                :type "int")
+                nil [74465 76129])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("SplTempFileObject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [76258 76276])
+                    ("" variable (:type ("__construct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [76277 76289]))                  
+                :type "int")
+                nil [76247 77383])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("SplFileObject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [77494 77508])
+                    ("" variable (:type ("rewind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [77509 77516]))                  
+                :type "int")
+                nil [77483 77750])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("SplFileObject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [77856 77870])
+                    ("" variable (:type ("eof" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [77871 77875]))                  
+                :type "int")
+                nil [77845 78104])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("SplFileObject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [78188 78202])
+                    ("" variable (:type ("valid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [78203 78209]))                  
+                :type "int")
+                nil [78177 78592])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("SplFileObject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [78690 78704])
+                    ("" variable (:type ("fgets" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [78705 78711]))                  
+                :type "int")
+                nil [78679 79053])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("SplFileObject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [79157 79171])
+                    ("" variable (:type ("current" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [79172 79180]))                  
+                :type "int")
+                nil [79146 79815])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("SplFileObject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [79901 79915])
+                    ("" variable (:type ("key" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [79916 79920]))                  
+                :type "int")
+                nil [79890 80314])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("SplFileObject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [80398 80412])
+                    ("" variable (:type ("next" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [80413 80418]))                  
+                :type "int")
+                nil [80387 80812])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("SplFileObject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [80918 80932])
+                    ("" variable (:type ("setFlags" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [80933 80942]))                  
+                :type "int")
+                nil [80907 81127])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("SplFileObject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [81223 81237])
+                    ("" variable (:type ("getFlags" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [81238 81247]))                  
+                :type "int")
+                nil [81212 81474])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("SplFileObject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [81587 81601])
+                    ("" variable (:type ("setMaxLineLen" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [81602 81616]))                  
+                :type "int")
+                nil [81576 82039])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("SplFileObject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [82140 82154])
+                    ("" variable (:type ("getMaxLineLen" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [82155 82169]))                  
+                :type "int")
+                nil [82129 82394])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("SplFileObject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [82483 82497])
+                    ("" variable (:type ("hasChildren" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [82498 82510]))                  
+                :type "int")
+                nil [82472 82592])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("SplFileObject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [82678 82692])
+                    ("" variable (:type ("getChildren" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [82693 82705]))                  
+                :type "int")
+                nil [82667 82789])
+            ("FileFunction" variable (:constant-flag t) nil [82832 82844])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("SplFileObject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [83224 83238])
+                    ("" variable (:type ("fgetcsv" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [83239 83247]))                  
+                :type "int")
+                nil [83213 84370])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("SplFileObject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [84582 84596])
+                    ("" variable (:type ("setCsvControl" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [84597 84611]))                  
+                :type "int")
+                nil [84571 85696])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("SplFileObject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [85833 85847])
+                    ("" variable (:type ("getCsvControl" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [85848 85862]))                  
+                :type "int")
+                nil [85822 86271])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("SplFileObject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [86490 86504])
+                    ("" variable (:type ("fflush" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [86505 86512]))                  
+                :type "int")
+                nil [86479 86681])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("SplFileObject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [86779 86793])
+                    ("" variable (:type ("ftell" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [86794 86800]))                  
+                :type "int")
+                nil [86768 87033])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("SplFileObject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [87164 87178])
+                    ("" variable (:type ("fseek" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [87179 87185]))                  
+                :type "int")
+                nil [87153 87549])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("SplFileObject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [87648 87662])
+                    ("" variable (:type ("fgetc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [87663 87669]))                  
+                :type "int")
+                nil [87637 88094])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("SplFileObject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [88239 88253])
+                    ("" variable (:type ("fgetss" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [88254 88261]))                  
+                :type "int")
+                nil [88228 88704])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("SplFileObject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [88823 88837])
+                    ("" variable (:type ("fpassthru" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [88838 88848]))                  
+                :type "int")
+                nil [88812 89019])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("SplFileObject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [89163 89177])
+                    ("" variable (:type ("fscanf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [89178 89185]))                  
+                :type "int")
+                nil [89152 89435])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("SplFileObject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [89555 89569])
+                    ("" variable (:type ("fwrite" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [89570 89577]))                  
+                :type "int")
+                nil [89544 90250])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("SplFileObject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [90464 90478])
+                    ("" variable (:type ("ftruncate" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [90479 90489]))                  
+                :type "int")
+                nil [90453 90978])
+            ("SPL_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("SplFileObject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [91082 91096])
+                    ("" variable (:type ("seek" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [91097 91102]))                  
+                :type "int")
+                nil [91071 91720])
+            ("spl_SplFileObject_functions" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type ("zend_function_entry" type (:type "class") nil nil))
+                nil [93169 96123])
+            ("spl_SplTempFileObject_functions" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type ("zend_function_entry" type (:type "class") nil nil))
+                nil [96246 96427])
+            ("PHP_MINIT_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("spl_directory" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [96503 96517]))                  
+                :type "int")
+                nil [96484 100198]))          
+    :file "spl_directory.c"
+    :pointmax 100346
+    :fsize 100345
+    :lastmodtime '(20689 55724)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!download!php-5.3.20!ext!spl!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

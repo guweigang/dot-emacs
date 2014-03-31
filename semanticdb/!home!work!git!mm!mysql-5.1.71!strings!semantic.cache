@@ -1,0 +1,69 @@
+;; Object strings/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "strings/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("INCLUDES" variable (:default-value ("-I$(top_builddir)/include" "-I$(top_srcdir)/include")) nil [807 869])
+            ("pkglib_LIBRARIES" variable (:default-value ("libmystrings.a")) nil [869 903])
+            ("ASRCS" variable (:default-value ("strings-x86.s" "longlong2str-x86.s" "my_strtoll10-x86.s")) nil [948 1009])
+            ("CSRCS" variable (:default-value ("bfill.c" "bmove.c" "bmove512.c" "bchange.c" "strxnmov.c" "int2str.c" "str2int.c" "r_strinstr.c" "strtod.c" "strtol.c" "strtoul.c" "strtoll.c" "strtoull.c" "llstr.c" "strnlen.c" "ctype.c" "ctype-simple.c" "ctype-mb.c" "ctype-big5.c" "ctype-cp932.c" "ctype-czech.c" "ctype-eucjpms.c" "ctype-euc_kr.c" "ctype-gb2312.c" "ctype-gbk.c" "ctype-sjis.c" "ctype-tis620.c" "ctype-ujis.c" "ctype-utf8.c" "ctype-ucs2.c" "ctype-uca.c" "ctype-win1250ch.c" "ctype-bin.c" "ctype-latin1.c" "my_vsnprintf.c" "xml.c" "decimal.c" "ctype-extra.c" "str_alloc.c" "longlong2str_asm.c" "my_strchr.c" "strmov.c")) nil [1009 1520])
+            ("ASRCS" variable (:default-value ("bmove_upp-sparc.s" "strappend-sparc.s" "strend-sparc.s" "strinstr-sparc.s" "strmake-sparc.s" "strmov-sparc.s" "strnmov-sparc.s" "strstr-sparc.s")) nil [1643 1782])
+            ("CSRCS" variable (:default-value ("strcont.c" "strfill.c" "strcend.c" "is_prefix.c" "longlong2str.c" "bfill.c" "bmove.c" "bmove512.c" "bchange.c" "strxnmov.c" "int2str.c" "str2int.c" "r_strinstr.c" "strtod.c" "strtol.c" "strtoul.c" "strtoll.c" "strtoull.c" "llstr.c" "strnlen.c" "strxmov.c" "ctype.c" "ctype-simple.c" "ctype-mb.c" "ctype-big5.c" "ctype-cp932.c" "ctype-czech.c" "ctype-eucjpms.c" "ctype-euc_kr.c" "ctype-gb2312.c" "ctype-gbk.c" "ctype-sjis.c" "ctype-tis620.c" "ctype-ujis.c" "ctype-utf8.c" "ctype-ucs2.c" "ctype-uca.c" "ctype-win1250ch.c" "ctype-bin.c" "ctype-latin1.c" "my_vsnprintf.c" "xml.c" "decimal.c" "ctype-extra.c" "my_strtoll10.c" "str_alloc.c" "my_strchr.c" "strmov.c")) nil [1782 2356])
+            ("ASRCS" variable nil nil [2375 2384])
+            ("CSRCS" variable (:default-value ("strxmov.c" "bmove_upp.c" "strappend.c" "strcont.c" "strend.c" "strfill.c" "strcend.c" "is_prefix.c" "strstr.c" "strinstr.c" "strmake.c" "strnmov.c" "strmov.c" "longlong2str.c" "bfill.c" "bmove.c" "bmove512.c" "bchange.c" "strxnmov.c" "int2str.c" "str2int.c" "r_strinstr.c" "strtod.c" "strtol.c" "strtoul.c" "strtoll.c" "strtoull.c" "llstr.c" "strnlen.c" "ctype.c" "ctype-simple.c" "ctype-mb.c" "ctype-big5.c" "ctype-cp932.c" "ctype-czech.c" "ctype-eucjpms.c" "ctype-euc_kr.c" "ctype-gb2312.c" "ctype-gbk.c" "ctype-sjis.c" "ctype-tis620.c" "ctype-ujis.c" "ctype-utf8.c" "ctype-ucs2.c" "ctype-uca.c" "ctype-win1250ch.c" "ctype-bin.c" "ctype-latin1.c" "my_vsnprintf.c" "xml.c" "decimal.c" "ctype-extra.c" "my_strtoll10.c" "str_alloc.c" "my_strchr.c")) nil [2481 3128])
+            ("libmystrings_a_SOURCES" variable (:default-value ("$(ASRCS)" "$(CSRCS)")) nil [3141 3184])
+            ("noinst_PROGRAMS" variable (:default-value ("conf_to_src")) nil [3184 3214])
+            ("CLEANFILES" variable (:default-value ("str_test" "uctypedump" "test_decimal")) nil [3214 3260])
+            ("EXTRA_DIST" variable (:default-value ("ctype-big5.c" "ctype-cp932.c" "ctype-czech.c" "ctype-eucjpms.c" "ctype-euc_kr.c" "ctype-win1250ch.c" "ctype-gb2312.c" "ctype-gbk.c" "ctype-sjis.c" "ctype-utf8.c" "ctype-ucs2.c" "ctype-uca.c" "ctype-tis620.c" "ctype-ujis.c" "xml.c" "decimal.c" "strto.c" "strings-x86.s" "longlong2str.c" "longlong2str-x86.s" "longlong2str_asm.c" "my_strtoll10.c" "my_strtoll10-x86.s" "strxmov.c" "bmove_upp.c" "strappend.c" "strcont.c" "strend.c" "strfill.c" "strcend.c" "is_prefix.c" "strstr.c" "strinstr.c" "strmake.c" "strnmov.c" "strmov.c" "strnlen.c" "bmove_upp-sparc.s" "strappend-sparc.s" "strend-sparc.s" "strinstr-sparc.s" "strmake-sparc.s" "strmov-sparc.s" "strnmov-sparc.s" "strstr-sparc.s" "strxmov-sparc.s" "t_ctype.h" "my_strchr.c" "CMakeLists.txt" "CHARSET_INFO.txt")) nil [3290 4034])
+            ("libmystrings_a_LIBADD" variable nil nil [4035 4058])
+            ("conf_to_src_SOURCES" variable (:default-value ("conf_to_src.c" "xml.c" "ctype.c")) nil [4058 4108])
+            ("conf_to_src_LDADD" variable nil nil [4108 4127])
+            ("conf_to_src_LDFLAGS" variable (:default-value ("@NOINST_LDFLAGS@")) nil [4226 4264])
+            ("FLAGS" variable (:default-value ("$(DEFS)" "$(INCLUDES)" "$(CPPFLAGS)" "$(CFLAGS)" "@NOINST_LDFLAGS@")) nil [4368 4433])
+            ("str_test" function (:arguments ("str_test.c" "$(pkglib_LIBRARIES)")) nil [4434 4562])
+            ("uctypedump" function (:arguments ("uctypedump.c")) nil [4563 4632])
+            ("test_decimal" function (:arguments ("decimal.c" "$(pkglib_LIBRARIES)")) nil [4633 4829])
+            ("%" function (:arguments ("SCCS/s.%")) nil [4870 4882]))          
+    :file "Makefile.am"
+    :pointmax 4883
+    :fsize 4882
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ctype-gbk.c"
+    :major-mode 'c-mode
+    :tags nil
+    :file "ctype-gbk.c"
+    :pointmax 556219
+    :fsize 556218
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ctype-utf8.c"
+    :major-mode 'c-mode
+    :tags nil
+    :file "ctype-utf8.c"
+    :pointmax 198257
+    :fsize 198273
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ctype-gb2312.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("my_global.h" include (:system-flag t) nil [1014 1036])
+            ("m_string.h" include nil nil [1037 1058])
+            ("m_ctype.h" include nil nil [1059 1079]))          
+    :file "ctype-gb2312.c"
+    :pointmax 323728
+    :fsize 323727
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!git!mm!mysql-5.1.71!strings!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

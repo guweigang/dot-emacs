@@ -1,0 +1,24 @@
+;; Object my_decimal/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "my_decimal/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("AM_CPPFLAGS" variable (:default-value ("@ZLIB_INCLUDES@" "-I$(top_builddir)/include")) nil [730 792])
+            ("AM_CPPFLAGS" variable (:default-value ("-I$(top_srcdir)/include" "-I$(top_srcdir)/unittest/mytap")) nil [792 866])
+            ("AM_CPPFLAGS" variable (:default-value ("-I$(top_srcdir)/sql")) nil [866 905])
+            ("LDADD" variable (:default-value ("$(top_builddir)/unittest/mytap/libmytap.a" "$(top_builddir)/mysys/libmysys.a" "$(top_builddir)/strings/libmystrings.a" "$(top_builddir)/dbug/libdbug.a" "$(top_builddir)/mysys/libmysys.a" "$(top_builddir)/strings/libmystrings.a")) nil [906 1163])
+            ("my_decimal_t_SOURCES" variable (:default-value ("my_decimal-t.cc")) nil [1164 1203])
+            ("noinst_PROGRAMS" variable (:default-value ("my_decimal-t")) nil [1204 1236]))          
+    :file "Makefile.am"
+    :pointmax 1289
+    :fsize 1288
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax '((symbol 1280 . 1288) (punctuation 1279 . 1280) (punctuation 1278 . 1279) (symbol 1277 . 1278) (bol 1277 . 1277))
+    )
+   )
+  :file "!home!work!git!mm!mysql-5.1.71!unittest!my_decimal!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

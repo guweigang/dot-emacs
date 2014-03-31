@@ -1,0 +1,16 @@
+/home/work/git/mysql-replication-listener/src/tcp_driver.cpp
+/home/work/git/mysql-replication-listener/src/#tcp_driver.cpp#
+/home/work/git/mysql-replication-listener/include/bounded_buffer.h
+/home/work/git/mysql-replication-listener/include/#bounded_buffer.h#
+/home/work/git/mysql-replication-listener/src/binlog_driver.cpp
+/home/work/git/mysql-replication-listener/src/#binlog_driver.cpp#
+/home/work/git/mysql-replication-listener/src/binary_log.cpp
+/home/work/git/mysql-replication-listener/src/#binary_log.cpp#
+/home/work/git/mysql-replication-listener/include/binlog_driver.h
+/home/work/git/mysql-replication-listener/include/#binlog_driver.h#
+/home/work/git/mysql-replication-listener/include/binlog_api.h
+/home/work/git/mysql-replication-listener/include/#binlog_api.h#
+/home/work/git/php-binlog/ext/mysqlbinlog.cpp
+/home/work/git/php-binlog/ext/#mysqlbinlog.cpp#
+/home/work/tmp/binlog.php
+/home/work/tmp/#binlog.php#

@@ -1,0 +1,19 @@
+;; Object win/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "win/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("EXTRA_DIST" variable (:default-value ("build-vs71.bat" "build-vs8.bat" "build-vs8_x64.bat" "build-vs9.bat" "build-vs9_x64.bat" "configure.js" "README" "mysql_manifest.cmake" "create_manifest.js" "create_def_file.js")) nil [814 1015]))          
+    :file "Makefile.am"
+    :pointmax 1068
+    :fsize 1067
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax '((symbol 1059 . 1067) (punctuation 1058 . 1059) (punctuation 1057 . 1058) (symbol 1056 . 1057) (bol 1056 . 1056))
+    )
+   )
+  :file "!home!work!git!mm!mysql-5.1.71!win!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

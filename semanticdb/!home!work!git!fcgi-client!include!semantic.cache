@@ -1,0 +1,184 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables (list 
+   (semanticdb-table "fcgi_defs.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("FCGI_DEFS_H" variable (:constant-flag t) nil [29 40])
+            ("stdio.h" include (:system-flag t) nil [42 60])
+            ("string.h" include (:system-flag t) nil [61 80])
+            ("stdlib.h" include (:system-flag t) nil [81 100])
+            ("stdint.h" include (:system-flag t) nil [101 120])
+            ("FCGI_LISTENSOCK_FILENO" variable (:constant-flag t) nil [130 152])
+            ("FCGI_VERSION_1" variable (:constant-flag t) nil [163 177])
+            ("FCGI_BEGIN_REQUEST" variable (:constant-flag t) nil [197 215])
+            ("FCGI_ABORT_REQUEST" variable (:constant-flag t) nil [232 250])
+            ("FCGI_END_REQUEST" variable (:constant-flag t) nil [267 283])
+            ("FCGI_PARAMS" variable (:constant-flag t) nil [302 313])
+            ("FCGI_STDIN" variable (:constant-flag t) nil [337 347])
+            ("FCGI_STDOUT" variable (:constant-flag t) nil [372 383])
+            ("FCGI_STDERR" variable (:constant-flag t) nil [407 418])
+            ("FCGI_DATA" variable (:constant-flag t) nil [442 451])
+            ("FCGI_GET_VALUES" variable (:constant-flag t) nil [477 492])
+            ("FCGI_GET_VALUES_RESULT" variable (:constant-flag t) nil [512 534])
+            ("FCGI_UNKNOWN_TYPE" variable (:constant-flag t) nil [547 564])
+            ("FCGI_MAXTYPE" variable (:constant-flag t) nil [582 594])
+            ("FCGI_NULL_REQUEST_ID" variable (:constant-flag t) nil [624 644])
+            ("fcgi_header" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("version" variable (:type "unsigned char") (reparse-symbol classsubparts) [673 695])
+                          ("type" variable (:type "unsigned char") (reparse-symbol classsubparts) [700 719])
+                          ("request_id_hi" variable (:type "unsigned char") (reparse-symbol classsubparts) [724 752])
+                          ("request_id_lo" variable (:type "unsigned char") (reparse-symbol classsubparts) [757 785])
+                          ("content_len_hi" variable (:type "unsigned char") (reparse-symbol classsubparts) [790 819])
+                          ("content_len_lo" variable (:type "unsigned char") (reparse-symbol classsubparts) [824 853])
+                          ("padding_len" variable (:type "unsigned char") (reparse-symbol classsubparts) [858 884])
+                          ("reserved" variable (:type "unsigned char") (reparse-symbol classsubparts) [889 912]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [652 927])
+            ("fcgi_name_value" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("value" variable
+                             (:pointer 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [1043 1062])
+                          ("name" variable
+                             (:pointer 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [1043 1062]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [1022 1081])
+            ("fcgi_unknown_type_body" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("type" variable (:type "unsigned char") (reparse-symbol classsubparts) [1129 1148])
+                          ("reserved" variable
+                             (:dereference 1
+                              :type "unsigned char")
+                              (reparse-symbol classsubparts) [1157 1183]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [1108 1209])
+            ("fcgi_unknown_type" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("header" variable (:type ("fcgi_header" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1232 1251])
+                          ("body" variable (:type ("fcgi_unknown_type_body" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1256 1284]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [1211 1305])
+            ("FCGI_MAX_CONNS" variable (:constant-flag t) nil [1381 1395])
+            ("FCGI_MAX_REQS" variable (:constant-flag t) nil [1422 1435])
+            ("FCGI_MPXS_CONNS" variable (:constant-flag t) nil [1462 1477])
+            ("FCGI_KEEP_CONN" variable (:constant-flag t) nil [1580 1594])
+            ("FCGI_RESPONDER" variable (:constant-flag t) nil [1664 1678])
+            ("FCGI_AUTHORIZER" variable (:constant-flag t) nil [1690 1705])
+            ("FCGI_FILTER" variable (:constant-flag t) nil [1716 1727])
+            ("fcgi_begin_request_body" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("role_hi" variable (:type "unsigned char") (reparse-symbol classsubparts) [1756 1779])
+                          ("role_lo" variable (:type "unsigned char") (reparse-symbol classsubparts) [1784 1807])
+                          ("flags" variable (:type "unsigned char") (reparse-symbol classsubparts) [1812 1833])
+                          ("reserved" variable
+                             (:dereference 1
+                              :type "unsigned char")
+                              (reparse-symbol classsubparts) [1838 1865]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [1735 1892])
+            ("fcgi_begin_request" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("header" variable
+                             (:pointer 1
+                              :type ("fcgi_header" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [1915 1935])
+                          ("body" variable
+                             (:pointer 1
+                              :type ("fcgi_begin_request_body" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [1940 1970]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [1894 1992])
+            ("fcgi_end_request_body" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("app_status" variable (:type "unsigned char") (reparse-symbol classsubparts) [2016 2041])
+                          ("appStatusB2" variable (:type "unsigned char") (reparse-symbol classsubparts) [2046 2072])
+                          ("appStatusB1" variable (:type "unsigned char") (reparse-symbol classsubparts) [2077 2103])
+                          ("appStatusB0" variable (:type "unsigned char") (reparse-symbol classsubparts) [2108 2134])
+                          ("protocol_status" variable (:type "unsigned char") (reparse-symbol classsubparts) [2139 2169])
+                          ("reserved" variable
+                             (:dereference 1
+                              :type "unsigned char")
+                              (reparse-symbol classsubparts) [2174 2200]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [1995 2225])
+            ("fcgi_end_request" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("header" variable (:type ("fcgi_header" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2248 2267])
+                          ("body" variable (:type ("fcgi_end_request_body" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2272 2299]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [2227 2319])
+            ("FCGI_REQUEST_COMPLETE" variable (:constant-flag t) nil [2398 2419])
+            ("FCGI_CANT_MPX_CONN" variable (:constant-flag t) nil [2430 2448])
+            ("FCGI_OVERLOADED" variable (:constant-flag t) nil [2462 2477])
+            ("FCGI_UNKNOWN_ROLE" variable (:constant-flag t) nil [2494 2511]))          
+    :file "fcgi_defs.h"
+    :pointmax 2526
+    :fsize 2525
+    :lastmodtime '(21160 16155 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("FCGI_LISTENSOCK_FILENO" . ((number "0" 153 . 154)))
+          ("FCGI_BEGIN_REQUEST" . ((number "1" 222 . 223)))
+          ("FCGI_STDIN" . ((number "5" 362 . 363)))
+          ("FCGI_FILTER" . ((number "3" 1732 . 1733)))
+          ("FCGI_GET_VALUES" . ((number "9" 502 . 503)))
+          ("FCGI_MAX_REQS" . ((string "\"FCGI_MAX_REQS\"" 1438 . 1453)))
+          ("FCGI_MAX_CONNS" . ((string "\"FCGI_MAX_CONNS\"" 1397 . 1413)))
+          ("FCGI_AUTHORIZER" . ((number "2" 1706 . 1707)))
+          ("FCGI_VERSION_1" . ((number "1" 186 . 187)))
+          ("FCGI_PARAMS" . ((number "4" 327 . 328)))
+          ("FCGI_STDOUT" . ((number "6" 397 . 398)))
+          ("FCGI_DATA" . ((number "8" 467 . 468)))
+          ("FCGI_END_REQUEST" . ((number "3" 292 . 293)))
+          ("FCGI_UNKNOWN_TYPE" . ((number "11" 571 . 573)))
+          ("FCGI_MPXS_CONNS" . ((string "\"FCGI_MPXS_CONNS\"" 1478 . 1495)))
+          ("FCGI_UNKNOWN_ROLE" . ((number "3" 2516 . 2517)))
+          ("FCGI_ABORT_REQUEST" . ((number "2" 257 . 258)))
+          ("FCGI_RESPONDER" . ((number "1" 1680 . 1681)))
+          ("FCGI_CANT_MPX_CONN" . ((number "1" 2452 . 2453)))
+          ("FCGI_STDERR" . ((number "7" 432 . 433)))
+          ("FCGI_NULL_REQUEST_ID" . ((number "0" 649 . 650)))
+          ("FCGI_OVERLOADED" . ((number "2" 2484 . 2485)))
+          ("FCGI_DEFS_H")
+          ("FCGI_GET_VALUES_RESULT" . ((number "10" 536 . 538)))
+          ("FCGI_MAXTYPE" . ((semantic-list "(FCGI_UNKNOWN_TYPE)" 595 . 614)))
+          ("FCGI_KEEP_CONN" . ((number "1" 1596 . 1597)))
+          ("FCGI_REQUEST_COMPLETE" . ((number "0" 2420 . 2421)))
+          )
+
+    )
+   )
+  :file "!home!work!git!fcgi-client!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

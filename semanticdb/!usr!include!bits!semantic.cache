@@ -1,0 +1,48 @@
+;; Object bits/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bits/"
+  :tables (list 
+   (semanticdb-table "fcntl.h"
+    :file "fcntl.h"
+    :fsize 7550
+    :lastmodtime '(20681 8977 0 0)
+    )
+   (semanticdb-table "sigset.h"
+    :major-mode 'c-mode
+    :tags nil
+    :file "sigset.h"
+    :pointmax 4644
+    :fsize 4643
+    :lastmodtime '(20681 8977 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "types.h"
+    :file "types.h"
+    :fsize 7546
+    :lastmodtime '(20681 8977 0 0)
+    )
+   (semanticdb-table "signum.h"
+    :file "signum.h"
+    :fsize 3484
+    :lastmodtime '(20681 8977 0 0)
+    )
+   (semanticdb-table "siginfo.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("bits/wordsize.h" include (:system-flag t) nil [1081 1107]))          
+    :file "siginfo.h"
+    :pointmax 9126
+    :fsize 9125
+    :lastmodtime '(20681 8977 0 0)
+    :unmatched-syntax '((string 1013 . 1072) (symbol 1007 . 1012) (punctuation 1005 . 1006) (symbol 987 . 1004) (symbol 979 . 986) (punctuation 978 . 979) (punctuation 976 . 977) (punctuation 975 . 976))
+    )
+   (semanticdb-table "wordsize.h"
+    :file "wordsize.h"
+    :fsize 175
+    :lastmodtime '(20681 8977 0 0)
+    )
+   )
+  :file "!usr!include!bits!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

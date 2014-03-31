@@ -1,0 +1,83 @@
+;; Object xmlrpc/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "xmlrpc/"
+  :tables (list 
+   (semanticdb-table "service.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("cxxtools_xmlrpc_Service_h" variable (:constant-flag t) nil [1454 1479])
+            ("cxxtools/xmlrpc/api.h" include (:system-flag t) nil [1481 1513])
+            ("cxxtools/http/service.h" include (:system-flag t) nil [1514 1548])
+            ("cxxtools/serviceregistry.h" include (:system-flag t) nil [1549 1586])
+            ("cxxtools" type
+               (:members 
+                  ( ("xmlrpc" type
+                       (:members 
+                          ( ("ServiceRegistry" variable (:type "int") (reparse-symbol namespacesubparts) [1695 1977]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1610 1980]))                  
+                :type "namespace")
+                nil [1588 1983]))          
+    :file "service.h"
+    :pointmax 1992
+    :fsize 1991
+    :lastmodtime '(20853 58963 0 0)
+    :unmatched-syntax '((PUBLIC 1688 . 1694) (punctuation 1686 . 1687) (symbol 1679 . 1686) (punctuation 1678 . 1679) (punctuation 1677 . 1678) (symbol 1673 . 1677) (PUBLIC 1666 . 1672) (punctuation 1664 . 1665) (symbol 1656 . 1663) (symbol 1636 . 1655) (CLASS 1630 . 1635))
+    :lexical-table 
+        '(("cxxtools_xmlrpc_Service_h")
+          )
+
+    )
+   (semanticdb-table "responder.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("cxxtools_xmlrpc_Responder_h" variable (:constant-flag t) nil [1456 1483])
+            ("cxxtools/xmlrpc/api.h" include (:system-flag t) nil [1485 1517])
+            ("cxxtools/remoteexception.h" include (:system-flag t) nil [1518 1555])
+            ("cxxtools/xmlrpc/scanner.h" include (:system-flag t) nil [1556 1592])
+            ("cxxtools/xmlrpc/formatter.h" include (:system-flag t) nil [1593 1631])
+            ("cxxtools/xml/xmlreader.h" include (:system-flag t) nil [1632 1667])
+            ("cxxtools/xml/xmlwriter.h" include (:system-flag t) nil [1668 1703])
+            ("cxxtools/http/responder.h" include (:system-flag t) nil [1704 1740])
+            ("cxxtools/deserializerbase.h" include (:system-flag t) nil [1741 1779])
+            ("cxxtools/textstream.h" include (:system-flag t) nil [1780 1812])
+            ("cxxtools" type
+               (:members 
+                  ( ("ServiceProcedure" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1836 1859])
+                    ("IComposer" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1860 1876])
+                    ("IDecomposer" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1877 1895])
+                    ("xmlrpc" type
+                       (:members 
+                          ( ("Service" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1917 1931])
+                            ("http::Responder" variable (:type "int") (reparse-symbol namespacesubparts) [1984 3105]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1897 3108]))                  
+                :type "namespace")
+                nil [1814 3111]))          
+    :file "responder.h"
+    :pointmax 3120
+    :fsize 3119
+    :lastmodtime '(20853 58963 0 0)
+    :unmatched-syntax '((PUBLIC 1977 . 1983) (punctuation 1975 . 1976) (symbol 1959 . 1974) (symbol 1939 . 1958) (CLASS 1933 . 1938))
+    :lexical-table 
+        '(("cxxtools_xmlrpc_Responder_h")
+          )
+
+    )
+   )
+  :file "!home!work!git!cxxtools!include!cxxtools!xmlrpc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

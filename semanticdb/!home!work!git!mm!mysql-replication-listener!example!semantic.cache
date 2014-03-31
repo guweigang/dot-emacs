@@ -1,0 +1,32 @@
+;; Object example/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "example/"
+  :tables (list 
+   (semanticdb-table "basic-1.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("binlog_api.h" include nil nil [1 24])
+            ("mysql::system::create_transport" using (:type ("mysql::system::create_transport" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [505 543])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [554 563])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [564 576]))                  
+                :type "int")
+                nil [545 1766]))          
+    :file "basic-1.cpp"
+    :pointmax 1767
+    :fsize 1774
+    :lastmodtime '(21029 35498 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!git!mm!mysql-replication-listener!example!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

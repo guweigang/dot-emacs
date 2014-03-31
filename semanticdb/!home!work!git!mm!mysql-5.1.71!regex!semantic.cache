@@ -1,0 +1,28 @@
+;; Object regex/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "regex/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("INCLUDES" variable (:default-value ("-I$(top_builddir)/include" "-I$(top_srcdir)/include")) nil [738 800])
+            ("noinst_LIBRARIES" variable (:default-value ("libregex.a")) nil [800 830])
+            ("LDADD" variable (:default-value ("libregex.a" "$(top_builddir)/strings/libmystrings.a")) nil [830 889])
+            ("noinst_HEADERS" variable (:default-value ("cclass.h" "cname.h" "regex2.h" "utils.h" "engine.c" "my_regex.h")) nil [889 960])
+            ("libregex_a_SOURCES" variable (:default-value ("regerror.c" "regcomp.c" "regexec.c" "regfree.c" "reginit.c")) nil [960 1032])
+            ("noinst_PROGRAMS" variable (:default-value ("re")) nil [1032 1053])
+            ("re_SOURCES" variable (:default-value ("split.c" "debug.c" "main.c")) nil [1053 1090])
+            ("re_LDFLAGS" variable (:default-value ("@NOINST_LDFLAGS@")) nil [1090 1119])
+            ("EXTRA_DIST" variable (:default-value ("tests" "CHANGES" "COPYRIGHT" "WHATSNEW" "regexp.c" "debug.ih" "engine.ih" "main.ih" "regcomp.ih" "regerror.ih" "regex.3" "regex.7" "CMakeLists.txt")) nil [1119 1266])
+            ("test" function (:arguments ("re" "tests")) nil [1267 1332]))          
+    :file "Makefile.am"
+    :pointmax 1385
+    :fsize 1384
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax '((symbol 1376 . 1384) (punctuation 1375 . 1376) (punctuation 1374 . 1375) (symbol 1373 . 1374) (bol 1373 . 1373))
+    )
+   )
+  :file "!home!work!git!mm!mysql-5.1.71!regex!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

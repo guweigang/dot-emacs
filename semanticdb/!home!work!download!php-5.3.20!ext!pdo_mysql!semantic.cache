@@ -1,0 +1,70 @@
+;; Object pdo_mysql/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "pdo_mysql/"
+  :tables (list 
+   (semanticdb-table "pdo_mysql.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("php.h" include nil nil [1269 1285])
+            ("php_ini.h" include nil nil [1286 1306])
+            ("ext/standard/info.h" include nil nil [1307 1337])
+            ("pdo/php_pdo.h" include nil nil [1338 1362])
+            ("pdo/php_pdo_driver.h" include nil nil [1363 1394])
+            ("php_pdo_mysql.h" include nil nil [1395 1421])
+            ("php_pdo_mysql_int.h" include nil nil [1422 1452])
+            ("PDO_MYSQL_UNIX_ADDR" variable (:constant-flag t) nil [2083 2102])
+            ("PHP_MINIT_FUNCTION" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("pdo_mysql" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2690 2700]))                  
+                :type "int")
+                nil [2664 4214])
+            ("PHP_MSHUTDOWN_FUNCTION" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("pdo_mysql" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4290 4300]))                  
+                :type "int")
+                nil [4260 4423])
+            ("PHP_MINFO_FUNCTION" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("pdo_mysql" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4491 4501]))                  
+                :type "int")
+                nil [4465 4762])
+            ("PHP_GINIT_FUNCTION" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("pdo_mysql" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5473 5483]))                  
+                :type "int")
+                nil [5447 5692])
+            ("pdo_mysql_functions" variable
+               (:dereference 1
+                :constant-flag t
+                :type ("zend_function_entry" type (:type "class") nil nil))
+                nil [5736 5802])
+            ("pdo_mysql_module_entry" variable (:type ("zend_module_entry" type (:type "class") nil nil)) nil [6080 6513]))          
+    :file "pdo_mysql.c"
+    :pointmax 6662
+    :fsize 6661
+    :lastmodtime '(20689 55724 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("PDO_MYSQL_UNIX_ADDR" . ((string "\"/tmp/mysql.sock\"" 2103 . 2120)))
+          )
+
+    )
+   (semanticdb-table "php_pdo_mysql.h"
+    :file "php_pdo_mysql.h"
+    :fsize 1606
+    :lastmodtime '(20689 55724 0 0)
+    )
+   (semanticdb-table "php_pdo_mysql_int.h"
+    :file "php_pdo_mysql_int.h"
+    :fsize 6113
+    :lastmodtime '(20689 55724 0 0)
+    )
+   )
+  :file "!home!work!download!php-5.3.20!ext!pdo_mysql!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

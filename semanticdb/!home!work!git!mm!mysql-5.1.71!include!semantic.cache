@@ -1,0 +1,260 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("BUILT_SOURCES" variable (:default-value ("$(HEADERS_GEN_MAKE)" "link_sources")) nil [763 813])
+            ("HEADERS_GEN_CONFIGURE" variable (:default-value ("mysql_version.h")) nil [813 854])
+            ("HEADERS_GEN_MAKE" variable (:default-value ("my_config.h")) nil [854 886])
+            ("HEADERS_ABI" variable (:default-value ("mysql.h" "mysql_com.h" "mysql_time.h" "my_list.h" "my_alloc.h" "typelib.h" "mysql/plugin.h")) nil [886 985])
+            ("pkginclude_HEADERS" variable (:default-value ("$(HEADERS_ABI)" "my_dbug.h" "m_string.h" "my_sys.h" "my_xml.h" "mysql_embed.h" "my_pthread.h" "my_no_pthread.h" "decimal.h" "errmsg.h" "my_global.h" "my_net.h" "my_getopt.h" "sslopt-longopts.h" "my_dir.h" "sslopt-vars.h" "sslopt-case.h" "sql_common.h" "keycache.h" "m_ctype.h" "my_attribute.h" "my_compiler.h" "$(HEADERS_GEN_CONFIGURE)" "$(HEADERS_GEN_MAKE)")) nil [985 1360])
+            ("noinst_HEADERS" variable (:default-value ("config-win.h" "config-netware.h" "my_bit.h" "heap.h" "my_bitmap.h" "my_uctype.h" "myisam.h" "myisampack.h" "myisammrg.h" "ft_global.h" "mysys_err.h" "my_base.h" "help_start.h" "help_end.h" "my_nosys.h" "my_alarm.h" "queues.h" "rijndael.h" "sha1.h" "my_aes.h" "my_tree.h" "my_trie.h" "hash.h" "thr_alarm.h" "thr_lock.h" "t_ctype.h" "violite.h" "my_md5.h" "base64.h" "my_compare.h" "my_time.h" "my_vle.h" "my_user.h" "my_libwrap.h" "my_stacktrace.h" "welcome_copyright_notice.h")) nil [1361 1823])
+            ("EXTRA_DIST" variable (:default-value ("mysql.h.pp" "mysql/plugin.h.pp")) nil [1824 1873])
+            ("CLEANFILES" variable (:default-value ("$(BUILT_SOURCES)" "readline" "openssl")) nil [1925 1983])
+            ("DISTCLEANFILES" variable (:default-value ("sched.h" "$(CLEANFILES)" "$(HEADERS_GEN_CONFIGURE)")) nil [2049 2113])
+            ("link_sources" function nil nil [2114 2226])
+            ("my_config.h" function (:arguments ("config.h")) nil [2395 2445])
+            ("dist-hook" function nil nil [2561 2632]))          
+    :file "Makefile.am"
+    :pointmax 2685
+    :fsize 2684
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax '((symbol 2676 . 2684) (punctuation 2675 . 2676) (punctuation 2674 . 2675) (symbol 2673 . 2674) (bol 2673 . 2673))
+    )
+   (semanticdb-table "sql_common.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("unknown_sqlstate" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type "char")
+                nil [764 800])
+            ("cant_connect_sqlstate" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type "char")
+                nil [801 842])
+            ("not_error_sqlstate" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type "char")
+                nil [843 881])
+            ("default_client_charset_info" variable
+               (:type ("CHARSET_INFO" type (:type "class") nil nil)
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [923 972])
+            ("unpack_fields" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("MYSQL_FIELD" type (:type "class") nil nil)
+                :arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1000 1013])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("MYSQL_DATA" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1014 1031])
+                    ("alloc" variable
+                       (:pointer 1
+                        :type ("MEM_ROOT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1031 1047])
+                    ("fields" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1075 1087])
+                    ("default_value" variable (:type ("my_bool" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1088 1110])
+                    ("server_capabilities" variable (:type ("uint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1139 1164]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [973 1165])
+            ("free_rows" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("cur" variable
+                       (:pointer 1
+                        :type ("MYSQL_DATA" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1181 1197]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1166 1198])
+            ("free_old_query" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1219 1232]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1199 1233])
+            ("end_server" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1250 1263]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1234 1264])
+            ("mysql_reconnect" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("my_bool" type (:type "class") nil nil)
+                :arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1289 1302]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1265 1303])
+            ("mysql_read_default_options" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("options" variable
+                       (:pointer 1
+                        :type ("st_mysql_options" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1336 1369])
+                    ("filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1374 1395])
+                    ("group" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1395 1413]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1304 1414])
+            ("cli_advanced_command" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("my_bool" type (:type "class") nil nil)
+                :arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1444 1457])
+                    ("command" variable (:type ("enum_server_command" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [1458 1491])
+                    ("header" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [1499 1527])
+                    ("header_length" variable (:type ("ulong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1528 1548])
+                    ("arg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [1556 1581])
+                    ("arg_length" variable (:type ("ulong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1582 1599])
+                    ("skip_check" variable (:type ("my_bool" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1621 1640])
+                    ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1641 1658]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1415 1659])
+            ("cli_safe_read" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "unsigned long"
+                :arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1688 1701]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1660 1702])
+            ("net_clear_error" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("net" variable
+                       (:pointer 1
+                        :type ("NET" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1724 1733]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1703 1734])
+            ("set_stmt_errmsg" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1756 1773])
+                    ("net" variable
+                       (:pointer 1
+                        :type ("NET" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1774 1783]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1735 1784])
+            ("set_stmt_error" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("stmt" variable
+                       (:pointer 1
+                        :type ("MYSQL_STMT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1805 1822])
+                    ("errcode" variable (:type "int") (reparse-symbol arg-sub-list) [1823 1835])
+                    ("sqlstate" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1836 1857])
+                    ("err" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1878 1894]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1785 1895])
+            ("set_mysql_error" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1917 1930])
+                    ("errcode" variable (:type "int") (reparse-symbol arg-sub-list) [1931 1943])
+                    ("sqlstate" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1944 1965]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1896 1966])
+            ("protocol_41" variable (:constant-flag t) nil [2004 2015]))          
+    :file "sql_common.h"
+    :pointmax 2068
+    :fsize 2067
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("protocol_41" (spp-arg-list ("A") 2015 . 2018) . ((semantic-list "((A)->server_capabilities & CLIENT_PROTOCOL_41)" 2019 . 2066)))
+          )
+
+    )
+   (semanticdb-table "sql_state.h"
+    :major-mode 'c-mode
+    :tags nil
+    :file "sql_state.h"
+    :pointmax 12333
+    :fsize 12332
+    :lastmodtime '(20958 46709 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!git!mm!mysql-5.1.71!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

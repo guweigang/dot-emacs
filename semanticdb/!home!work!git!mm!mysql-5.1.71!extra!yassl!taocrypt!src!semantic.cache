@@ -1,0 +1,24 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("INCLUDES" variable (:default-value ("-I$(srcdir)/../include" "-I$(srcdir)/../mySTL")) nil [743 798])
+            ("noinst_LTLIBRARIES" variable (:default-value ("libtaocrypt.la")) nil [799 835])
+            ("libtaocrypt_la_SOURCES" variable (:default-value ("aes.cpp" "aestables.cpp" "algebra.cpp" "arc4.cpp" "asn.cpp" "bftables.cpp" "blowfish.cpp" "coding.cpp" "des.cpp" "dh.cpp" "dsa.cpp" "file.cpp" "hash.cpp" "integer.cpp" "md2.cpp" "md4.cpp" "md5.cpp" "misc.cpp" "random.cpp" "ripemd.cpp" "rsa.cpp" "sha.cpp" "template_instnt.cpp" "tftables.cpp" "twofish.cpp" "rabbit.cpp" "hc128.cpp")) nil [836 1180])
+            ("libtaocrypt_la_CXXFLAGS" variable (:default-value ("@yassl_taocrypt_extra_cxxflags@" "-DYASSL_PURE_C" "@yassl_thread_cxxflags@")) nil [1181 1285])
+            ("EXTRA_DIST" variable (:default-value ("$(wildcard ../include/*.hpp)")) nil [1286 1328])
+            ("%" function (:arguments ("SCCS/s.%")) nil [1369 1381]))          
+    :file "Makefile.am"
+    :pointmax 1382
+    :fsize 1381
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!git!mm!mysql-5.1.71!extra!yassl!taocrypt!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,554 @@
+;; Object notation/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "notation/"
+  :tables (list 
+   (semanticdb-table "PYNotation.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("PYNotation.h" include nil nil [1 24])
+            ("iostream" include (:system-flag t) nil [26 45])
+            ("fstream" include (:system-flag t) nil [46 64])
+            ("string" include (:system-flag t) nil [65 82])
+            ("sstream" include (:system-flag t) nil [83 101])
+            ("vector" include (:system-flag t) nil [103 120])
+            ("algorithm" include (:system-flag t) nil [122 142])
+            ("NLP::Pinyin" using (:type ("NLP::Pinyin" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [146 174])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [176 196])
+            ("CHARACTERS_MAX_LENGTH" variable (:constant-flag t) nil [219 240])
+            ("MAX_RESULTS_NUM" variable (:constant-flag t) nil [325 340])
+            ("datrie_data_t" type
+               (:members 
+                  ( ("key" variable
+                       (:pointer 1
+                        :type ("DoubleArray::key_type" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [619 646])
+                    ("value" variable (:type ("DoubleArray::result_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [651 682]))                  
+                :type "struct")
+                nil [592 685])
+            ("PyComp" type
+               (:members 
+                  ( ("()" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("a" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("py_result_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [726 747])
+                            ("b" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("py_result_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [748 769]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [709 804]))                  
+                :type "struct")
+                nil [689 807])
+            ("KeyComp" type
+               (:members 
+                  ( ("()" function
+                       (:operator-flag t
+                        :arguments 
+                          ( ("a" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("datrie_data_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [849 872])
+                            ("b" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("datrie_data_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [873 896]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [832 944]))                  
+                :type "struct")
+                nil [811 947])
+            ("loadDyzDict" function
+               (:parent "PYNotation"
+                :arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [980 997])
+                    ("tmp_dyz_pro_map" variable
+                       (:reference 1
+                        :type ("map" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil)
+                                  ("map" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [997 1043]))                  
+                :type "bool")
+                nil [951 1643])
+            ("loadDyzDict" function
+               (:parent "PYNotation"
+                :arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1676 1693]))                  
+                :type "bool")
+                nil [1647 1746])
+            ("loadToneDyzDict" function
+               (:parent "PYNotation"
+                :arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1783 1800]))                  
+                :type "bool")
+                nil [1750 1858])
+            ("loadDYDict" function
+               (:parent "PYNotation"
+                :arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1890 1907])
+                    ("tmp_dy_py_map" variable
+                       (:reference 1
+                        :type ("map" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil)
+                                  ("map" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1907 1954]))                  
+                :type "bool")
+                nil [1862 2653])
+            ("loadDYDict" function
+               (:parent "PYNotation"
+                :arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2685 2702]))                  
+                :type "bool")
+                nil [2657 2752])
+            ("loadBMEDict" function
+               (:parent "PYNotation"
+                :arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2785 2802])
+                    ("tmp_bme_map" variable
+                       (:reference 1
+                        :type ("std::map" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil)
+                                  ("vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2803 2846]))                  
+                :type "bool")
+                nil [2756 3806])
+            ("loadBMEDict" function
+               (:parent "PYNotation"
+                :arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3839 3856]))                  
+                :type "bool")
+                nil [3810 3908])
+            ("generateDict" function
+               (:parent "PYNotation"
+                :arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3942 3959])
+                    ("binaryPath" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3959 3982]))                  
+                :type "bool")
+                nil [3912 8340])
+            ("loadDict" function
+               (:parent "PYNotation"
+                :arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8372 8389])
+                    ("tmp_trie" variable
+                       (:reference 1
+                        :type ("DoubleArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8389 8411])
+                    ("tmp_py_buff" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8411 8430]))                  
+                :type "bool")
+                nil [8346 9336])
+            ("loadDict" function
+               (:parent "PYNotation"
+                :arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9364 9381]))                  
+                :type "bool")
+                nil [9338 9431])
+            ("loadToneDict" function
+               (:parent "PYNotation"
+                :arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9463 9480]))                  
+                :type "bool")
+                nil [9433 9540])
+            ("findPY" function
+               (:parent "PYNotation"
+                :arguments 
+                  ( ("tmp_dyz_pro_map" variable
+                       (:reference 1
+                        :type ("map" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil)
+                                  ("map" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9566 9612])
+                    ("tmp_py_buff" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9612 9631])
+                    ("py_buff_offset" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [9631 9659])
+                    ("cur_text" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9659 9680])
+                    ("fore_context" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9680 9705])
+                    ("tail_context" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9712 9737])
+                    ("py_results_v" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("py_result_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9737 9771]))                  
+                :type "bool")
+                nil [9542 11244])
+            ("findPY" function
+               (:parent "PYNotation"
+                :arguments 
+                  ( ("tmp_dyz_pro_map" variable
+                       (:reference 1
+                        :type ("map" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil)
+                                  ("map" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11270 11316])
+                    ("tmp_py_buff" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11316 11335])
+                    ("py_buff_offset" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [11335 11363])
+                    ("cur_text" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11363 11384])
+                    ("py_results_v" variable
+                       (:reference 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("py_result_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11384 11418]))                  
+                :type "bool")
+                nil [11246 11514])
+            ("findSpacialPY" function
+               (:parent "PYNotation"
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11547 11563])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [11563 11571])
+                    ("_result" variable
+                       (:reference 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11571 11587]))                  
+                :type "bool")
+                nil [11516 11885])
+            ("exactToPY" function
+               (:parent "PYNotation"
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11915 11931])
+                    ("_results" variable
+                       (:pointer 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11931 11956])
+                    ("tmp_trie" variable
+                       (:reference 1
+                        :type ("DoubleArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11956 11978])
+                    ("tmp_py_buff" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11978 11997])
+                    ("tmp_dyz_pro_map" variable
+                       (:reference 1
+                        :type ("map" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil)
+                                  ("map" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12007 12053]))                  
+                :type "bool")
+                nil [11888 12883])
+            ("exactToPY" function
+               (:parent "PYNotation"
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12912 12928])
+                    ("_results" variable
+                       (:pointer 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12928 12953]))                  
+                :type "bool")
+                nil [12885 13036])
+            ("exactToTonePY" function
+               (:parent "PYNotation"
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13069 13085])
+                    ("_results" variable
+                       (:pointer 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13085 13110]))                  
+                :type "bool")
+                nil [13038 13208])
+            ("copyStrToSelf" function
+               (:arguments 
+                  ( ("strDes" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13249 13262])
+                    ("start_offset" variable (:type "int") (reparse-symbol arg-sub-list) [13262 13279]))                  
+                :type "bool")
+                nil [13230 13892])
+            ("convertToPY" function
+               (:parent "PYNotation"
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13924 13940])
+                    ("_results" variable
+                       (:pointer 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13940 13965])
+                    ("tmp_trie" variable
+                       (:reference 1
+                        :type ("DoubleArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13965 13987])
+                    ("tmp_py_buff" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13998 14016])
+                    ("tmp_dyz_pro_map" variable
+                       (:reference 1
+                        :type ("map" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil)
+                                  ("map" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14016 14062]))                  
+                :type "bool")
+                nil [13895 19892])
+            ("convertToPY" function
+               (:parent "PYNotation"
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [19923 19939])
+                    ("_results" variable
+                       (:pointer 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19939 19964]))                  
+                :type "bool")
+                nil [19894 20180])
+            ("convertToPY" function
+               (:parent "PYNotation"
+                :arguments 
+                  ( ("strs" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("string" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [20211 20231])
+                    ("_results" variable
+                       (:pointer 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("vector" type (:pointer 1) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20231 20266]))                  
+                :type "bool")
+                nil [20182 20595])
+            ("perNameCorrection" function
+               (:parent "PYNotation"
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20632 20648])
+                    ("_results" variable
+                       (:pointer 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20648 20673])
+                    ("tmp_dy_map" variable
+                       (:reference 1
+                        :type ("map" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil)
+                                  ("map" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20673 20716])
+                    ("tmp_dz_map" variable
+                       (:reference 1
+                        :type ("map" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil)
+                                  ("vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20716 20752]))                  
+                :type "bool")
+                nil [20597 24386])
+            ("perNameCorrection" function
+               (:parent "PYNotation"
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [24423 24439])
+                    ("_results" variable
+                       (:pointer 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [24440 24470]))                  
+                :type "bool")
+                nil [24388 24556])
+            ("convertToTonePY" function
+               (:parent "PYNotation"
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [24591 24607])
+                    ("_results" variable
+                       (:pointer 1
+                        :type ("vector" type
+                             (:template-specifier 
+                                ( ("string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [24607 24632]))                  
+                :type "bool")
+                nil [24558 24742]))          
+    :file "PYNotation.cpp"
+    :pointmax 24745
+    :fsize 25678
+    :lastmodtime '(20851 18803 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("MAX_RESULTS_NUM" . ((number "100" 341 . 344)))
+          ("CHARACTERS_MAX_LENGTH" . ((number "150" 241 . 244)))
+          )
+
+    )
+   (semanticdb-table "PYNotation.h"
+    :file "PYNotation.h"
+    :fsize 5749
+    :lastmodtime '(20851 18803 0 0)
+    )
+   )
+  :file "!home!work!tmp!notation!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

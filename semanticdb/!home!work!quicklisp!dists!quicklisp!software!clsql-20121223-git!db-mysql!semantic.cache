@@ -1,0 +1,35 @@
+;; Object db-mysql/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "db-mysql/"
+  :tables (list 
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("SUBDIRS" variable nil nil [468 477])
+            ("../Makefile.common" include nil nil [478 505])
+            ("base" variable (:default-value ("clsql_mysql")) nil [506 523])
+            ("source" variable (:default-value ("$(base).c")) nil [523 540])
+            ("object" variable (:default-value ("$(base).o")) nil [540 557])
+            ("shared_lib" variable (:default-value ("$(base).so")) nil [557 579])
+            ("shared64_lib" variable (:default-value ("$(base)64.so")) nil [579 605])
+            ("dylib" variable (:default-value ("$(base).dylib")) nil [605 625])
+            (".PHONY" function (:arguments ("all")) nil [626 638])
+            ("all" function (:arguments ("$(shared_lib)")) nil [638 657])
+            ("CFLAGS" variable (:default-value ("-I" "/home/work/local/mysql/include" "-I" "/usr/local/include/mysql" "-I" "/usr/include/mysql" "-I" "/sw/include/mysql" "-I" "/opt/local/include/mysql" "-I" "/opt/local/include/mysql5/mysql" "-I" "/usr/local/mysql/include")) nil [658 861])
+            ("LDFLAGS" variable (:default-value ("-L/home/work/local/mysql/lib" "-L/usr/local/lib64/mysql" "-L/usr/local/lib/mysql" "-L/usr/lib64/mysql" "-L/usr/lib/mysql" "-L/sw/lib" "-L/opt/local/lib/mysql" "-L/opt/local/lib/mysql5/mysql" "-L/usr/local/mysql/lib" "-L/usr/lib/gcc/i686-pc-cygwin/3.4.4" "-lmysqlclient" "-lz" "-lc")) nil [861 1126])
+            ("CFLAGS32" variable (:default-value ("-I" "/usr/local/include/mysql" "-I" "/usr/include/mysql" "-I" "/sw/include/mysql" "-I" "/opt/local/include/mysql" "-I" "/opt/local/include/mysql5/mysql" "-I" "/usr/local/mysql/include" "-m32")) nil [1127 1303])
+            ("LDFLAGS32" variable (:default-value ("-L/lib32" "-L/usr/lib32" "-melf_i386" "-lmysqlclient" "-lz" "-lc")) nil [1303 1368])
+            ("$(shared_lib)" function (:arguments ("$(source)" "Makefile")) nil [1657 1691])
+            (".PHONY" function (:arguments ("distclean")) nil [3303 3321])
+            ("distclean" function (:arguments ("clean")) nil [3321 3403]))          
+    :file "Makefile"
+    :pointmax 3403
+    :fsize 3402
+    :lastmodtime '(20737 24977)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!quicklisp!dists!quicklisp!software!clsql-20121223-git!db-mysql!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

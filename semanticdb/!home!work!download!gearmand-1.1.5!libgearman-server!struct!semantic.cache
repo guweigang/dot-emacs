@@ -1,0 +1,276 @@
+;; Object struct/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "struct/"
+  :tables (list 
+   (semanticdb-table "gearmand.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("libgearman-server/struct/server.h" include nil nil [1715 1759])
+            ("event.h" include nil nil [1760 1760])
+            ("libgearman-server/struct/port.h" include nil nil [1761 1803])
+            ("vector" include (:system-flag t) nil [1805 1822])
+            ("cstring" include (:system-flag t) nil [1823 1841])
+            ("gearmand_st" type
+               (:members 
+                  ( ("verbose" variable (:type ("gearmand_verbose_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1866 1893])
+                    ("ret" variable (:type ("gearmand_error_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1896 1917])
+                    ("backlog" variable (:type "int") (reparse-symbol classsubparts) [1920 1932])
+                    ("is_listen_event" variable (:type "bool") (reparse-symbol classsubparts) [1982 2003])
+                    ("is_wakeup_event" variable (:type "bool") (reparse-symbol classsubparts) [2006 2027])
+                    ("_exceptions" variable (:type "bool") (reparse-symbol classsubparts) [2030 2047])
+                    ("timeout" variable (:type "int") (reparse-symbol classsubparts) [2050 2062])
+                    ("threads" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2065 2082])
+                    ("thread_count" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2085 2107])
+                    ("free_dcon_count" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2110 2135])
+                    ("max_thread_free_dcon_count" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2138 2174])
+                    ("wakeup_fd" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [2177 2194])
+                    ("host" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [2197 2208])
+                    ("log_fn" variable
+                       (:pointer 1
+                        :type ("gearmand_log_fn" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2211 2235])
+                    ("log_context" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [2238 2256])
+                    ("base" variable
+                       (:pointer 1
+                        :type ("event_base" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2259 2283])
+                    ("thread_list" variable
+                       (:pointer 1
+                        :type ("gearmand_thread_st" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2286 2318])
+                    ("thread_add_next" variable
+                       (:pointer 1
+                        :type ("gearmand_thread_st" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2321 2357])
+                    ("free_dcon_list" variable
+                       (:pointer 1
+                        :type ("gearmand_con_st" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2360 2392])
+                    ("server" variable (:type ("gearman_server_st" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2395 2420])
+                    ("wakeup_event" variable (:type ("event" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [2423 2449])
+                    ("_port_list" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("gearmand_port_st" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2452 2493])
+                    ("gearmand_st" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("host_" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2509 2527])
+                            ("threads_" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2542 2560])
+                            ("backlog_" variable (:type "int") (reparse-symbol arg-sub-list) [2575 2588])
+                            ("verbose_" variable
+                               (:constant-flag t
+                                :type ("gearmand_verbose_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2603 2637])
+                            ("exceptions_" variable (:type "bool") (reparse-symbol arg-sub-list) [2652 2669]))                          
+                        :type ("gearmand_st" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [2497 3202])
+                    ("gearmand_st" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3206 3272])
+                    ("exceptions" function (:type "bool") (reparse-symbol classsubparts) [3278 3333]))                  
+                :type "struct")
+                nil [1843 3336]))          
+    :file "gearmand.h"
+    :pointmax 3337
+    :fsize 3336
+    :lastmodtime '(20810 60709)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "server.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("queue_st" type
+               (:members 
+                  ( ("_context" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [1735 1750])
+                    ("_add_fn" variable
+                       (:pointer 1
+                        :type ("gearman_queue_add_fn" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1753 1783])
+                    ("_flush_fn" variable
+                       (:pointer 1
+                        :type ("gearman_queue_flush_fn" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1786 1820])
+                    ("_done_fn" variable
+                       (:pointer 1
+                        :type ("gearman_queue_done_fn" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1823 1855])
+                    ("_replay_fn" variable
+                       (:pointer 1
+                        :type ("gearman_queue_replay_fn" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1858 1894])
+                    ("queue_st" function
+                       (:constructor-flag t
+                        :type ("queue_st" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [1898 2019]))                  
+                :type "struct")
+                nil [1715 2022])
+            ("queue_version_t" type
+               (:members 
+                  ( ("QUEUE_VERSION_NONE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2049 2068])
+                    ("QUEUE_VERSION_FUNCTION" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2071 2094])
+                    ("QUEUE_VERSION_CLASS" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [2097 2118]))                  
+                :type "enum")
+                nil [2024 2119])
+            ("gearmand" type
+               (:members 
+                  ( ("queue" type
+                       (:members 
+                          ( ("Context" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [2160 2174]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2142 2176]))                  
+                :type "namespace")
+                nil [2121 2178])
+            ("Queue_st" type
+               (:members 
+                  ( ("functions" variable
+                       (:pointer 1
+                        :type ("queue_st" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2200 2227])
+                    ("object" variable
+                       (:pointer 1
+                        :type ("gearmand::queue::Context" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2230 2263]))                  
+                :type "struct")
+                nil [2180 2266])
+            ("gearman_server_st" type
+               (:members 
+                  ( ("Flags" type
+                       (:members 
+                          ( ("round_robin" variable (:type "bool") (reparse-symbol classsubparts) [2534 2551])
+                            ("threaded" variable (:type "bool") (reparse-symbol classsubparts) [2556 2570]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [2297 2581])
+                    ("flags" variable (:type ("Flags" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [2297 2581])
+                    ("State" type
+                       (:members 
+                          ( ("queue_startup" variable (:type "bool") (reparse-symbol classsubparts) [2603 2622]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [2584 2633])
+                    ("state" variable (:type ("State" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [2584 2633])
+                    ("shutdown" variable (:type "bool") (reparse-symbol classsubparts) [2636 2650])
+                    ("shutdown_graceful" variable (:type "bool") (reparse-symbol classsubparts) [2653 2676])
+                    ("proc_wakeup" variable (:type "bool") (reparse-symbol classsubparts) [2679 2696])
+                    ("proc_shutdown" variable (:type "bool") (reparse-symbol classsubparts) [2699 2718])
+                    ("job_retries" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2721 2742])
+                    ("worker_wakeup" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2777 2799])
+                    ("job_handle_count" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2855 2881])
+                    ("thread_count" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2884 2906])
+                    ("function_count" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2909 2933])
+                    ("job_count" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2936 2955])
+                    ("unique_count" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2958 2980])
+                    ("free_packet_count" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2983 3010])
+                    ("free_job_count" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3013 3037])
+                    ("free_client_count" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3040 3067])
+                    ("free_worker_count" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3070 3097])
+                    ("thread_list" variable
+                       (:pointer 1
+                        :type ("gearman_server_thread_st" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3100 3138])
+                    ("function_list" variable
+                       (:pointer 1
+                        :type ("gearman_server_function_st" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3141 3183])
+                    ("free_packet_list" variable
+                       (:pointer 1
+                        :type ("gearman_server_packet_st" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3186 3229])
+                    ("free_job_list" variable
+                       (:pointer 1
+                        :type ("gearman_server_job_st" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3232 3269])
+                    ("free_client_list" variable
+                       (:pointer 1
+                        :type ("gearman_server_client_st" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3272 3315])
+                    ("free_worker_list" variable
+                       (:pointer 1
+                        :type ("gearman_server_worker_st" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3318 3361])
+                    ("queue_version" variable (:type ("queue_version_t" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [3364 3399])
+                    ("queue" variable (:type ("Queue_st" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [3402 3424])
+                    ("proc_lock" variable (:type ("pthread_mutex_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3427 3453])
+                    ("proc_cond" variable (:type ("pthread_cond_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3456 3481])
+                    ("proc_id" variable (:type ("pthread_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3484 3502])
+                    ("job_handle_prefix" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [3505 3554])
+                    ("hashtable_buckets" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3557 3584])
+                    ("job_hash" variable
+                       (:pointer 2
+                        :type ("gearman_server_job_st" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3587 3620])
+                    ("unique_hash" variable
+                       (:pointer 2
+                        :type ("gearman_server_job_st" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3623 3659])
+                    ("gearman_server_st" function
+                       (:constructor-flag t
+                        :type ("gearman_server_st" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [3663 3690])
+                    ("gearman_server_st" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3694 3722]))                  
+                :type "struct")
+                nil [2268 3725]))          
+    :file "server.h"
+    :pointmax 3726
+    :fsize 3725
+    :lastmodtime '(20746 498)
+    :unmatched-syntax '((symbol 1709 . 1713) (symbol 1702 . 1708) (punctuation 1701 . 1702))
+    )
+   )
+  :file "!home!work!download!gearmand-1.1.5!libgearman-server!struct!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

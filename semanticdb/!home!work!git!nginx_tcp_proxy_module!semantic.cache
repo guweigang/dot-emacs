@@ -1,0 +1,922 @@
+;; Object nginx_tcp_proxy_module/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "nginx_tcp_proxy_module/"
+  :tables (list 
+   (semanticdb-table "ngx_tcp_core_module.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("ngx_config.h" include (:system-flag t) nil [2 25])
+            ("ngx_core.h" include (:system-flag t) nil [26 47])
+            ("ngx_event.h" include (:system-flag t) nil [48 70])
+            ("ngx_tcp.h" include (:system-flag t) nil [71 91])
+            ("nginx.h" include (:system-flag t) nil [92 110])
+            ("ngx_tcp_core_create_main_conf" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [156 171]))                  
+                :type "void")
+                nil [113 172])
+            ("ngx_tcp_core_create_srv_conf" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [215 230]))                  
+                :type "void")
+                nil [173 231])
+            ("ngx_tcp_core_merge_srv_conf" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [273 288])
+                    ("parent" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [289 302])
+                    ("child" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [307 319]))                  
+                :type "char")
+                nil [232 320])
+            ("ngx_tcp_core_server" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [354 369])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [370 389])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [394 405]))                  
+                :type "char")
+                nil [321 406])
+            ("ngx_tcp_core_listen" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [440 455])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [456 475])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [480 491]))                  
+                :type "char")
+                nil [407 492])
+            ("ngx_tcp_core_server_name" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [531 546])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [547 566])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [571 582]))                  
+                :type "char")
+                nil [493 583])
+            ("ngx_tcp_core_location" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [619 634])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [635 654])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [659 670]))                  
+                :type "char")
+                nil [584 671])
+            ("ngx_tcp_core_protocol" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [707 722])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [723 742])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [747 758]))                  
+                :type "char")
+                nil [672 759])
+            ("ngx_tcp_core_resolver" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [795 810])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [811 830])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [835 846]))                  
+                :type "char")
+                nil [760 847])
+            ("ngx_tcp_access_rule" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [881 896])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [897 916])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [921 932]))                  
+                :type "char")
+                nil [848 933])
+            ("ngx_tcp_log_set_access_log" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [974 989])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [990 1009])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1014 1025]))                  
+                :type "char")
+                nil [934 1026])
+            ("ngx_tcp_core_commands" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("ngx_command_t" type (:type "class") nil nil))
+                nil [1028 3815])
+            ("ngx_tcp_core_module_ctx" variable
+               (:typemodifiers ("static")
+                :type ("ngx_tcp_module_t" type (:type "class") nil nil))
+                nil [3818 4234])
+            ("ngx_tcp_core_module" variable (:type ("ngx_module_t" type (:type "class") nil nil)) nil [4237 4943])
+            ("ngx_tcp_access_log" variable
+               (:typemodifiers ("static")
+                :type ("ngx_str_t" type (:type "class") nil nil))
+                nil [4946 5019])
+            ("ngx_tcp_core_create_main_conf" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5066 5081]))                  
+                :type "void")
+                nil [5022 5718])
+            ("ngx_tcp_core_create_srv_conf" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5764 5779]))                  
+                :type "void")
+                nil [5721 7019])
+            ("ngx_tcp_core_merge_srv_conf" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7064 7079])
+                    ("parent" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7080 7093])
+                    ("child" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7094 7106]))                  
+                :type "char")
+                nil [7022 9450])
+            ("ngx_tcp_core_server" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9487 9502])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9503 9522])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9523 9534]))                  
+                :type "char")
+                nil [9453 11131])
+            ("ngx_tcp_core_listen" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11168 11183])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11184 11203])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [11204 11215]))                  
+                :type "char")
+                nil [11134 15733])
+            ("ngx_tcp_core_server_name" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15775 15790])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15791 15810])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [15811 15822]))                  
+                :type "char")
+                nil [15736 16377])
+            ("ngx_tcp_core_location" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16416 16431])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16432 16451])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [16452 16463]))                  
+                :type "char")
+                nil [16380 16946])
+            ("ngx_tcp_core_protocol" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16985 17000])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17001 17020])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [17021 17032]))                  
+                :type "char")
+                nil [16949 17712])
+            ("ngx_tcp_core_resolver" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17751 17766])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17767 17786])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [17787 17798]))                  
+                :type "char")
+                nil [17715 18803])
+            ("ngx_tcp_access_rule" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18840 18855])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18856 18875])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [18876 18887]))                  
+                :type "char")
+                nil [18806 20310])
+            ("ngx_tcp_log_set_access_log" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20354 20369])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20370 20389])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [20390 20401]))                  
+                :type "char")
+                nil [20313 23706]))          
+    :file "ngx_tcp_core_module.c"
+    :pointmax 23707
+    :fsize 23706
+    :lastmodtime '(21094 12539 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ngx_tcp.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_NGX_TCP_H_INCLUDED_" variable (:constant-flag t) nil [39 59])
+            ("nginx.h" include (:system-flag t) nil [62 80])
+            ("ngx_config.h" include (:system-flag t) nil [81 104])
+            ("ngx_core.h" include (:system-flag t) nil [105 126])
+            ("ngx_event.h" include (:system-flag t) nil [127 149])
+            ("ngx_event_connect.h" include (:system-flag t) nil [150 180])
+            ("ngx_tcp_protocol_t" type
+               (:typedef ("ngx_tcp_protocol_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :superclasses "ngx_tcp_protocol_s"
+                :type "typedef")
+                nil [183 237])
+            ("ngx_tcp_upstream_t" type
+               (:typedef ("ngx_tcp_upstream_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :superclasses "ngx_tcp_upstream_s"
+                :type "typedef")
+                nil [238 292])
+            ("ngx_tcp_cleanup_t" type
+               (:typedef ("ngx_tcp_cleanup_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :superclasses "ngx_tcp_cleanup_s"
+                :type "typedef")
+                nil [293 345])
+            ("ngx_tcp_core_srv_conf_t" type
+               (:typedef ("ngx_tcp_core_srv_conf_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :superclasses "ngx_tcp_core_srv_conf_s"
+                :type "typedef")
+                nil [347 410])
+            ("ngx_tcp_upstream_srv_conf_t" type
+               (:typedef ("ngx_tcp_upstream_srv_conf_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :superclasses "ngx_tcp_upstream_srv_conf_s"
+                :type "typedef")
+                nil [412 484])
+            ("ngx_tcp_upstream_resolved_t" type
+               (:typedef ("ngx_tcp_upstream_resolved_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :superclasses "ngx_tcp_upstream_resolved_s"
+                :type "typedef")
+                nil [485 557])
+            ("ngx_tcp_check_peer_conf_t" type
+               (:typedef ("ngx_tcp_check_peer_conf_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :superclasses "ngx_tcp_check_peer_conf_s"
+                :type "typedef")
+                nil [559 626])
+            ("ngx_tcp_check_peers_conf_t" type
+               (:typedef ("ngx_tcp_check_peers_conf_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :superclasses "ngx_tcp_check_peers_conf_s"
+                :type "typedef")
+                nil [627 696])
+            ("check_conf_t" type
+               (:typedef ("check_conf_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :superclasses "check_conf_s"
+                :type "typedef")
+                nil [697 738])
+            ("ngx_tcp_session.h" include (:system-flag t) nil [868 896])
+            ("ngx_tcp_upstream.h" include (:system-flag t) nil [897 926])
+            ("ngx_tcp_upstream_check.h" include (:system-flag t) nil [927 962])
+            ("ngx_tcp_upstream_round_robin.h" include (:system-flag t) nil [963 1004])
+            ("ngx_tcp_conf_ctx_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("main_conf" variable
+                             (:pointer 2
+                              :type "void")
+                              (reparse-symbol classsubparts) [1086 1120])
+                          ("srv_conf" variable
+                             (:pointer 2
+                              :type "void")
+                              (reparse-symbol classsubparts) [1125 1158])
+                          ("loc_conf" variable
+                             (:pointer 2
+                              :type "void")
+                              (reparse-symbol classsubparts) [1163 1196]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [1065 1218])
+            ("ngx_tcp_listen_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("sockaddr" variable
+                             (:dereference 1
+                              :type ("u_char" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [1242 1292])
+                          ("socklen" variable (:type ("socklen_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1297 1329])
+                          ("ctx" variable
+                             (:pointer 1
+                              :type ("ngx_tcp_conf_ctx_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [1356 1384])
+                          ("default_port" variable
+                             (:suffix ":1"
+                              :type "unsigned int")
+                              (reparse-symbol classsubparts) [1390 1429])
+                          ("bind" variable
+                             (:suffix ":1"
+                              :type "unsigned int")
+                              (reparse-symbol classsubparts) [1434 1465])
+                          ("wildcard" variable
+                             (:suffix ":1"
+                              :type "unsigned int")
+                              (reparse-symbol classsubparts) [1470 1505])
+                          ("conf" variable
+                             (:pointer 1
+                              :type ("ngx_tcp_core_srv_conf_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [1661 1691]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [1221 1711])
+            ("ngx_tcp_server_name_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("name" variable (:type ("ngx_str_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1735 1765]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [1714 1790])
+            ("ngx_tcp_virtual_server_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("hash" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1814 1844])
+                          ("name" variable (:type ("ngx_str_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1849 1879])
+                          ("listen" variable
+                             (:pointer 1
+                              :type ("ngx_tcp_listen_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [1884 1916])
+                          ("ctx" variable
+                             (:pointer 1
+                              :type ("ngx_tcp_conf_ctx_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [1921 1950]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [1793 1978])
+            ("ngx_tcp_core_loc_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("name" variable (:type ("ngx_str_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2002 2032]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [1981 2054])
+            ("ngx_tcp_addr_conf_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("ctx" variable
+                             (:pointer 1
+                              :type ("ngx_tcp_conf_ctx_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [2078 2107])
+                          ("default_ctx" variable
+                             (:pointer 1
+                              :type ("ngx_tcp_conf_ctx_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [2112 2149])
+                          ("addr_text" variable (:type ("ngx_str_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2154 2189]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [2057 2298])
+            ("ngx_tcp_in_addr_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("addr" variable (:type ("in_addr_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2321 2351])
+                          ("conf" variable (:type ("ngx_tcp_addr_conf_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2356 2386]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [2300 2407])
+            ("ngx_tcp_port_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("addrs" variable
+                             (:pointer 1
+                              :type "void")
+                              (reparse-symbol classsubparts) [2623 2654])
+                          ("naddrs" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2659 2691]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [2552 2709])
+            ("ngx_tcp_conf_port_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("family" variable (:type "int") (reparse-symbol classsubparts) [2733 2765])
+                          ("port" variable (:type ("in_port_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2770 2800])
+                          ("addrs" variable (:type ("ngx_array_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2805 2836]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [2712 2900])
+            ("ngx_tcp_conf_addr_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("sockaddr" variable
+                             (:pointer 1
+                              :type ("sockaddr" type
+                                   (:prototype t
+                                    :type "struct")
+                                    nil nil))
+                              (reparse-symbol classsubparts) [2924 2958])
+                          ("socklen" variable (:type ("socklen_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2963 2996])
+                          ("ctx" variable
+                             (:pointer 1
+                              :type ("ngx_tcp_conf_ctx_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [3002 3031])
+                          ("default_ctx" variable
+                             (:pointer 1
+                              :type ("ngx_tcp_conf_ctx_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [3036 3073])
+                          ("bind" variable
+                             (:suffix ":1"
+                              :type "unsigned int")
+                              (reparse-symbol classsubparts) [3079 3111])
+                          ("wildcard" variable
+                             (:suffix ":1"
+                              :type "unsigned int")
+                              (reparse-symbol classsubparts) [3116 3152]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [2903 3328])
+            ("ngx_tcp_access_rule_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("mask" variable (:type ("in_addr_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3351 3381])
+                          ("addr" variable (:type ("in_addr_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3386 3416])
+                          ("deny" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3421 3451]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [3330 3505])
+            ("ngx_tcp_core_main_conf_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("servers" variable (:type ("ngx_array_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3528 3561])
+                          ("listen" variable (:type ("ngx_array_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3604 3636])
+                          ("virtual_servers" variable (:type ("ngx_array_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3673 3714]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [3507 3773])
+            ("ngx_tcp_log_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("file" variable
+                             (:pointer 1
+                              :type ("ngx_open_file_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [3796 3826])
+                          ("disk_full_time" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3831 3871])
+                          ("error_log_time" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3876 3916]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [3775 3933])
+            ("ngx_tcp_log_buf_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("start" variable
+                             (:pointer 1
+                              :type ("u_char" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [3956 3987])
+                          ("pos" variable
+                             (:pointer 1
+                              :type ("u_char" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [3992 4021])
+                          ("last" variable
+                             (:pointer 1
+                              :type ("u_char" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [4026 4056]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [3935 4077])
+            ("ngx_tcp_log_srv_conf_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("logs" variable
+                             (:pointer 1
+                              :type ("ngx_array_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [4100 4130])
+                          ("open_file_cache" variable
+                             (:pointer 1
+                              :type ("ngx_open_file_cache_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [4171 4212])
+                          ("open_file_cache_valid" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4217 4264])
+                          ("open_file_cache_min_uses" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4269 4319])
+                          ("off" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4325 4354]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [4079 4409])
+            ("NGX_TCP_GENERIC_PROTOCOL" variable (:constant-flag t) nil [4420 4444])
+            ("NGX_TCP_WEBSOCKET_PROTOCOL" variable (:constant-flag t) nil [4458 4484])
+            ("NGX_TCP_FASTCGI_PROTOCOL" variable (:constant-flag t) nil [4496 4520])
+            ("ngx_tcp_core_srv_conf_s" type
+               (:members 
+                  ( ("server_names" variable (:type ("ngx_array_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4635 4673])
+                    ("locations" variable (:type ("ngx_array_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4743 4778])
+                    ("protocol" variable
+                       (:pointer 1
+                        :type ("ngx_tcp_protocol_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4784 4818])
+                    ("timeout" variable (:type ("ngx_msec_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4824 4857])
+                    ("resolver_timeout" variable (:type ("ngx_msec_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4862 4904])
+                    ("so_keepalive" variable (:type ("ngx_flag_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4910 4948])
+                    ("tcp_nodelay" variable (:type ("ngx_flag_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4953 4990])
+                    ("server_name" variable (:type ("ngx_str_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4996 5033])
+                    ("file_name" variable
+                       (:pointer 1
+                        :type ("u_char" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5039 5074])
+                    ("line" variable (:type ("ngx_int_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5079 5109])
+                    ("resolver" variable
+                       (:pointer 1
+                        :type ("ngx_resolver_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5115 5149])
+                    ("rules" variable
+                       (:pointer 1
+                        :type ("ngx_array_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5173 5204])
+                    ("access_log" variable
+                       (:pointer 1
+                        :type ("ngx_tcp_log_srv_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5210 5246])
+                    ("ctx" variable
+                       (:pointer 1
+                        :type ("ngx_tcp_conf_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5273 5302]))                  
+                :type "struct")
+                nil [4528 5305])
+            ("ngx_tcp_log_ctx_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("client" variable
+                             (:pointer 1
+                              :type ("ngx_str_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [5329 5360])
+                          ("session" variable
+                             (:pointer 1
+                              :type ("ngx_tcp_session_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [5365 5397]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [5308 5418])
+            ("ngx_tcp_init_session_pt" variable
+               (:functionpointer-flag t
+                :type "void")
+                nil [5429 5483])
+            ("ngx_tcp_init_protocol_pt" variable
+               (:functionpointer-flag t
+                :type "void")
+                nil [5492 5543])
+            ("ngx_tcp_parse_protocol_pt" variable
+               (:functionpointer-flag t
+                :type "void")
+                nil [5552 5604])
+            ("ngx_tcp_protocol_s" type
+               (:members 
+                  ( ("name" variable (:type ("ngx_str_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5639 5672])
+                    ("port" variable
+                       (:dereference 1
+                        :type ("in_port_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5677 5713])
+                    ("type" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5718 5751])
+                    ("init_session" variable (:type ("ngx_tcp_init_session_pt" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5757 5798])
+                    ("init_protocol" variable (:type ("ngx_tcp_init_protocol_pt" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5803 5845])
+                    ("parse_protocol" variable (:type ("ngx_tcp_parse_protocol_pt" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5850 5893])
+                    ("internal_server_error" variable (:type ("ngx_str_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5899 5949]))                  
+                :type "struct")
+                nil [5607 5952])
+            ("ngx_tcp_module_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("protocol" variable
+                             (:pointer 1
+                              :type ("ngx_tcp_protocol_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [5976 6013])
+                          ("create_main_conf" variable
+                             (:functionpointer-flag t
+                              :type "void")
+                              (reparse-symbol classsubparts) [6019 6083])
+                          ("init_main_conf" variable
+                             (:functionpointer-flag t
+                              :type "char")
+                              (reparse-symbol classsubparts) [6088 6162])
+                          ("create_srv_conf" variable
+                             (:functionpointer-flag t
+                              :type "void")
+                              (reparse-symbol classsubparts) [6168 6231])
+                          ("merge_srv_conf" variable
+                             (:functionpointer-flag t
+                              :type "char")
+                              (reparse-symbol classsubparts) [6236 6360]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [5955 6380])
+            ("NGX_TCP_MODULE" variable (:constant-flag t) nil [6391 6405])
+            ("NGX_TCP_MAIN_CONF" variable (:constant-flag t) nil [6450 6467])
+            ("NGX_TCP_SRV_CONF" variable (:constant-flag t) nil [6492 6508])
+            ("NGX_TCP_LOC_CONF" variable (:constant-flag t) nil [6534 6550])
+            ("NGX_TCP_UPS_CONF" variable (:constant-flag t) nil [6576 6592])
+            ("NGX_TCP_MAIN_CONF_OFFSET" variable (:constant-flag t) nil [6620 6644])
+            ("NGX_TCP_SRV_CONF_OFFSET" variable (:constant-flag t) nil [6694 6717])
+            ("NGX_TCP_LOC_CONF_OFFSET" variable (:constant-flag t) nil [6767 6790])
+            ("ngx_tcp_get_module_ctx" variable (:constant-flag t) nil [6842 6864])
+            ("ngx_tcp_get_module_ctx" variable (:constant-flag t) nil [6842 6864])
+            ("ngx_tcp_set_ctx" variable (:constant-flag t) nil [6915 6930])
+            ("ngx_tcp_delete_ctx" variable (:constant-flag t) nil [6991 7009])
+            ("ngx_tcp_get_module_main_conf" variable (:constant-flag t) nil [7072 7100])
+            ("ngx_tcp_get_module_srv_conf" variable (:constant-flag t) nil [7187 7214])
+            ("ngx_tcp_get_module_loc_conf" variable (:constant-flag t) nil [7267 7294])
+            ("ngx_tcp_conf_get_module_main_conf" variable (:constant-flag t) nil [7351 7384])
+            ("ngx_tcp_conf_get_module_main_conf" variable (:constant-flag t) nil [7351 7384])
+            ("ngx_tcp_conf_get_module_srv_conf" variable (:constant-flag t) nil [7495 7527])
+            ("ngx_tcp_conf_get_module_loc_conf" variable (:constant-flag t) nil [7638 7670])
+            ("ngx_tcp_max_module" variable
+               (:typemodifiers ("extern")
+                :type ("ngx_uint_t" type (:type "class") nil nil))
+                nil [7775 7815])
+            ("ngx_tcp_core_module" variable
+               (:typemodifiers ("extern")
+                :type ("ngx_module_t" type (:type "class") nil nil))
+                nil [7816 7857]))          
+    :file "ngx_tcp.h"
+    :pointmax 7893
+    :fsize 7892
+    :lastmodtime '(21106 14517 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("ngx_tcp_get_module_main_conf" (spp-arg-list ("s" "module") 7101 . 7112) . 
+              ((semantic-list "(s)" 7147 . 7150) (punctuation "-" 7150 . 7151) (punctuation ">" 7151 . 7152) (symbol "main_conf" 7152 . 7161) (semantic-list "[module.ctx_index]" 7161 . 7179)))
+          ("ngx_tcp_set_ctx" (spp-arg-list ("s" "c" "module") 6931 . 6945) . 
+              ((symbol "s" 6954 . 6955) (punctuation "-" 6955 . 6956) (punctuation ">" 6956 . 6957) (symbol "ctx" 6957 . 6960) (semantic-list "[module.ctx_index]" 6960 . 6978) (punctuation "=" 6979 . 6980) (symbol "c" 6981 . 6982) (punctuation ";" 6982 . 6983)))
+          ("_NGX_TCP_H_INCLUDED_")
+          ("ngx_tcp_conf_get_module_main_conf" (spp-arg-list ("cf" "module") 7384 . 7396) . 
+              ((semantic-list "((ngx_tcp_conf_ctx_t *) cf->ctx)" 7425 . 7457) (punctuation "-" 7457 . 7458) (punctuation ">" 7458 . 7459) (symbol "main_conf" 7459 . 7468) (semantic-list "[module.ctx_index]" 7468 . 7486)))
+          ("NGX_TCP_MODULE" . ((number "0x00504354" 6414 . 6424)))
+          ("NGX_TCP_MAIN_CONF" . ((number "0x02000000" 6473 . 6483)))
+          ("ngx_tcp_conf_get_module_srv_conf" (spp-arg-list ("cf" "module") 7527 . 7539) . 
+              ((semantic-list "((ngx_tcp_conf_ctx_t *) cf->ctx)" 7569 . 7601) (punctuation "-" 7601 . 7602) (punctuation ">" 7602 . 7603) (symbol "srv_conf" 7603 . 7611) (semantic-list "[module.ctx_index]" 7611 . 7629)))
+          ("ngx_tcp_conf_get_module_loc_conf" (spp-arg-list ("cf" "module") 7670 . 7682) . 
+              ((semantic-list "((ngx_tcp_conf_ctx_t *) cf->ctx)" 7712 . 7744) (punctuation "-" 7744 . 7745) (punctuation ">" 7745 . 7746) (symbol "loc_conf" 7746 . 7754) (semantic-list "[module.ctx_index]" 7754 . 7772)))
+          ("NGX_TCP_WEBSOCKET_PROTOCOL" . ((number "1" 4486 . 4487)))
+          ("ngx_tcp_get_module_ctx" (spp-arg-list ("s" "module") 6864 . 6875) . 
+              ((semantic-list "(s)" 6880 . 6883) (punctuation "-" 6883 . 6884) (punctuation ">" 6884 . 6885) (symbol "ctx" 6885 . 6888) (semantic-list "[module.ctx_index]" 6888 . 6906)))
+          ("NGX_TCP_SRV_CONF" . ((number "0x04000000" 6515 . 6525)))
+          ("NGX_TCP_LOC_CONF" . ((number "0x08000000" 6557 . 6567)))
+          ("ngx_tcp_get_module_srv_conf" (spp-arg-list ("s" "module") 7215 . 7226) . 
+              ((semantic-list "(s)" 7228 . 7231) (punctuation "-" 7231 . 7232) (punctuation ">" 7232 . 7233) (symbol "srv_conf" 7233 . 7241) (semantic-list "[module.ctx_index]" 7241 . 7259)))
+          ("ngx_tcp_get_module_loc_conf" (spp-arg-list ("s" "module") 7295 . 7306) . 
+              ((semantic-list "(s)" 7307 . 7310) (punctuation "-" 7310 . 7311) (punctuation ">" 7311 . 7312) (symbol "loc_conf" 7312 . 7320) (semantic-list "[module.ctx_index]" 7320 . 7338)))
+          ("NGX_TCP_GENERIC_PROTOCOL" . ((number "0" 4448 . 4449)))
+          ("NGX_TCP_MAIN_CONF_OFFSET" . ((symbol "offsetof" 6646 . 6654) (semantic-list "(ngx_tcp_conf_ctx_t, main_conf)" 6654 . 6685)))
+          ("NGX_TCP_SRV_CONF_OFFSET" . ((symbol "offsetof" 6720 . 6728) (semantic-list "(ngx_tcp_conf_ctx_t, srv_conf)" 6728 . 6758)))
+          ("NGX_TCP_LOC_CONF_OFFSET" . ((symbol "offsetof" 6793 . 6801) (semantic-list "(ngx_tcp_conf_ctx_t, loc_conf)" 6801 . 6831)))
+          ("NGX_TCP_FASTCGI_PROTOCOL" . ((number "2" 4524 . 4525)))
+          ("ngx_tcp_delete_ctx" (spp-arg-list ("s" "module") 7010 . 7021) . 
+              ((symbol "s" 7030 . 7031) (punctuation "-" 7031 . 7032) (punctuation ">" 7032 . 7033) (symbol "ctx" 7033 . 7036) (semantic-list "[module.ctx_index]" 7036 . 7054) (punctuation "=" 7055 . 7056) (symbol "NULL" 7057 . 7061) (punctuation ";" 7061 . 7062)))
+          ("NGX_TCP_UPS_CONF" . ((number "0x10000000" 6599 . 6609)))
+          )
+
+    )
+   (semanticdb-table "ngx_tcp_session.h"
+    :file "ngx_tcp_session.h"
+    :fsize 1814
+    :lastmodtime '(21094 12539 0 0)
+    )
+   (semanticdb-table "ngx_tcp_upstream.h"
+    :file "ngx_tcp_upstream.h"
+    :fsize 6412
+    :lastmodtime '(21094 12539 0 0)
+    )
+   (semanticdb-table "ngx_tcp_upstream_check.h"
+    :file "ngx_tcp_upstream_check.h"
+    :fsize 5198
+    :lastmodtime '(21094 12539 0 0)
+    )
+   (semanticdb-table "ngx_tcp_upstream_round_robin.h"
+    :file "ngx_tcp_upstream_round_robin.h"
+    :fsize 2399
+    :lastmodtime '(21094 12539 0 0)
+    )
+   )
+  :file "!home!work!git!nginx_tcp_proxy_module!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

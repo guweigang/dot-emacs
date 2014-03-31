@@ -1,0 +1,584 @@
+;; Object demo/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "demo/"
+  :tables (list 
+   (semanticdb-table "httpserver.cpp"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "httpserver.cpp"
+    :pointmax 4042
+    :fsize 4041
+    :lastmodtime '(20853 59015 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("noinst_PROGRAMS" variable (:default-value ("arg")) nil [1 294])
+            ("arg_SOURCES" variable (:default-value ("arg.cpp")) nil [295 317])
+            ("arg_set_SOURCES" variable (:default-value ("arg-set.cpp")) nil [317 347])
+            ("cgi_SOURCES" variable (:default-value ("cgi.cpp")) nil [347 369])
+            ("dir_SOURCES" variable (:default-value ("dir.cpp")) nil [369 391])
+            ("dlloader_SOURCES" variable (:default-value ("dlloader.cpp")) nil [391 423])
+            ("getini_SOURCES" variable (:default-value ("getini.cpp")) nil [423 451])
+            ("hd_SOURCES" variable (:default-value ("hd.cpp")) nil [451 471])
+            ("httprequest_SOURCES" variable (:default-value ("httprequest.cpp")) nil [471 509])
+            ("httpserver_SOURCES" variable (:default-value ("httpserver.cpp")) nil [509 545])
+            ("log_SOURCES" variable (:default-value ("log.cpp")) nil [545 567])
+            ("logbench_SOURCES" variable (:default-value ("logbench.cpp")) nil [567 599])
+            ("logsh_SOURCES" variable (:default-value ("logsh.cpp")) nil [599 625])
+            ("md5sum_SOURCES" variable (:default-value ("md5sum.cpp")) nil [625 653])
+            ("mime_SOURCES" variable (:default-value ("mime.cpp")) nil [653 677])
+            ("multifstream_SOURCES" variable (:default-value ("multifstream.cpp")) nil [677 717])
+            ("netcat_SOURCES" variable (:default-value ("netcat.cpp")) nil [717 745])
+            ("netio_SOURCES" variable (:default-value ("netio.cpp")) nil [745 771])
+            ("netmsg_SOURCES" variable (:default-value ("netmsg.cpp")) nil [771 799])
+            ("pipestream_SOURCES" variable (:default-value ("pipestream.cpp")) nil [799 835])
+            ("pool_SOURCES" variable (:default-value ("pool.cpp")) nil [835 859])
+            ("signals_SOURCES" variable (:default-value ("signals.cpp")) nil [859 889])
+            ("thread_SOURCES" variable (:default-value ("thread.cpp")) nil [889 917])
+            ("threadpool_SOURCES" variable (:default-value ("threadpool.cpp")) nil [917 953])
+            ("uuencode_SOURCES" variable (:default-value ("uuencode.cpp")) nil [953 985])
+            ("cxxlog_SOURCES" variable (:default-value ("cxxlog.cpp")) nil [985 1013])
+            ("rpcserver_SOURCES" variable (:default-value ("rpcserver.cpp")) nil [1013 1047])
+            ("rpcechoclient_SOURCES" variable (:default-value ("rpcechoclient.cpp")) nil [1047 1089])
+            ("rpcaddclient_SOURCES" variable (:default-value ("rpcaddclient.cpp")) nil [1089 1129])
+            ("splitter_SOURCES" variable (:default-value ("splitter.cpp")) nil [1129 1161])
+            ("json_SOURCES" variable (:default-value ("json.cpp")) nil [1161 1185])
+            ("regex_SOURCES" variable (:default-value ("regex.cpp")) nil [1185 1211])
+            ("execLs_SOURCES" variable (:default-value ("execLs.cpp")) nil [1211 1239])
+            ("rpcasyncaddclient_SOURCES" variable (:default-value ("rpcasyncaddclient.cpp")) nil [1239 1289])
+            ("noinst_PROGRAMS" variable (:default-value ("iconv")) nil [1310 1335])
+            ("iconv_SOURCES" variable (:default-value ("iconv.cpp")) nil [1335 1361])
+            ("BASE_LIBS" variable (:default-value ("$(top_builddir)/src/libcxxtools.la")) nil [1368 1415])
+            ("HTTP_LIBS" variable (:default-value ("$(BASE_LIBS)")) nil [1415 1485])
+            ("XMLRPC_LIBS" variable (:default-value ("$(BASE_LIBS)")) nil [1485 1561])
+            ("BIN_LIBS" variable (:default-value ("$(HTTP_LIBS)")) nil [1561 1628])
+            ("JSON_LIBS" variable (:default-value ("$(HTTP_LIBS)")) nil [1628 1698])
+            ("AM_CPPFLAGS" variable (:default-value ("-I$(top_srcdir)/src" "-I$(top_builddir)/include" "-I$(top_srcdir)/include")) nil [1699 1783])
+            ("LDADD" variable (:default-value ("$(top_builddir)/src/libcxxtools.la")) nil [1783 1826])
+            ("AM_CXXFLAGS" variable (:default-value ("$(PTHREAD_CFLAGS)")) nil [1826 1858])
+            ("httpserver_LDADD" variable (:default-value ("$(HTTP_LIBS)")) nil [1859 1892])
+            ("httprequest_LDADD" variable (:default-value ("$(HTTP_LIBS)")) nil [1892 1925])
+            ("rpcserver_LDADD" variable (:default-value ("$(XMLRPC_LIBS)" "$(BIN_LIBS)" "$(JSON_LIBS)")) nil [1925 1983])
+            ("rpcechoclient_LDADD" variable (:default-value ("$(XMLRPC_LIBS)" "$(BIN_LIBS)" "$(JSON_LIBS)")) nil [1983 2045])
+            ("rpcaddclient_LDADD" variable (:default-value ("$(XMLRPC_LIBS)" "$(BIN_LIBS)" "$(JSON_LIBS)")) nil [2045 2106])
+            ("json_LDADD" variable (:default-value ("$(HTTP_LIBS)")) nil [2106 2132])
+            ("rpcasyncaddclient_LDADD" variable (:default-value ("$(XMLRPC_LIBS)" "$(BIN_LIBS)" "$(JSON_LIBS)")) nil [2132 2198])
+            ("log.xml" function nil nil [2199 2271])
+            ("noinst_DATA" variable (:default-value ("log.xml")) nil [2272 2294])
+            ("CLEANFILES" variable (:default-value ("log.xml")) nil [2294 2315])
+            ("EXTRA_DIST" variable (:default-value ("README")) nil [2315 2335]))          
+    :file "Makefile.am"
+    :pointmax 2335
+    :fsize 2334
+    :lastmodtime '(20853 59015 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "json.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1362 1381])
+            ("fstream" include (:system-flag t) nil [1382 1400])
+            ("cxxtools/log.h" include (:system-flag t) nil [1401 1426])
+            ("cxxtools/arg.h" include (:system-flag t) nil [1427 1452])
+            ("cxxtools/jsonserializer.h" include (:system-flag t) nil [1453 1489])
+            ("cxxtools/serializationinfo.h" include (:system-flag t) nil [1490 1529])
+            ("cxxtools/thread.h" include (:system-flag t) nil [1530 1558])
+            ("cxxtools/http/server.h" include (:system-flag t) nil [1559 1592])
+            ("cxxtools/http/service.h" include (:system-flag t) nil [1593 1627])
+            ("cxxtools/http/responder.h" include (:system-flag t) nil [1628 1664])
+            ("cxxtools/http/reply.h" include (:system-flag t) nil [1665 1697])
+            ("cxxtools/eventloop.h" include (:system-flag t) nil [1698 1729])
+            ("ProcStat" type
+               (:members 
+                  ( ("ProcStat" function
+                       (:constructor-flag t
+                        :type ("ProcStat" type (:type "struct") nil nil))
+                        (reparse-symbol classsubparts) [1751 1881])
+                    ("cpu" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1885 1901])
+                    ("user" variable (:type "unsigned int") (reparse-symbol classsubparts) [1904 1918])
+                    ("nice" variable (:type "unsigned int") (reparse-symbol classsubparts) [1921 1935])
+                    ("system" variable (:type "unsigned int") (reparse-symbol classsubparts) [1938 1954])
+                    ("idle" variable (:type "unsigned int") (reparse-symbol classsubparts) [1957 1971])
+                    ("iowait" variable (:type "unsigned int") (reparse-symbol classsubparts) [1974 1990])
+                    ("irq" variable (:type "unsigned int") (reparse-symbol classsubparts) [1993 2006])
+                    ("softirq" variable (:type "unsigned int") (reparse-symbol classsubparts) [2009 2026]))                  
+                :type "struct")
+                nil [1731 2029])
+            (">>" function
+               (:operator-flag t
+                :arguments 
+                  ( ("in" variable
+                       (:reference 1
+                        :type ("std::istream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2057 2074])
+                    ("p" variable
+                       (:reference 1
+                        :type ("ProcStat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2075 2087]))                  
+                :type ("std::istream" type (:type "class") nil nil))
+                nil [2031 2195])
+            ("<<" function
+               (:operator-flag t
+                :arguments 
+                  ( ("out" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2223 2241])
+                    ("p" variable
+                       (:reference 1
+                        :type ("ProcStat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2242 2254]))                  
+                :type ("std::ostream" type (:type "class") nil nil))
+                nil [2197 2413])
+            ("<<=" function
+               (:operator-flag t
+                :arguments 
+                  ( ("si" variable
+                       (:reference 1
+                        :type ("cxxtools::SerializationInfo" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2433 2465])
+                    ("p" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ProcStat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2466 2484]))                  
+                :type "void")
+                nil [2415 2778])
+            ("-" function
+               (:operator-flag t
+                :arguments 
+                  ( ("p1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ProcStat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2800 2819])
+                    ("p2" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ProcStat" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2820 2839]))                  
+                :type ("ProcStat" type (:type "class") nil nil))
+                nil [2780 3165])
+            ("currentStat" variable (:type ("ProcStat" type (:type "class") nil nil)) nil [3167 3188])
+            ("statMutex" variable (:type ("cxxtools::Mutex" type (:type "class") nil nil)) nil [3189 3215])
+            ("statThread" function (:type "void") nil [3217 3514])
+            ("MainResponder" type
+               (:superclasses 
+                  ( ("cxxtools::http::Responder" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [3575 3582])
+                    ("MainResponder" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("service" variable
+                               (:reference 1
+                                :type ("cxxtools::http::Service" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3610 3643]))                          
+                        :type ("MainResponder" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3596 3696])
+                    ("reply" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3721 3735])
+                            ("request" variable
+                               (:reference 1
+                                :type ("cxxtools::http::Request" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3736 3769])
+                            ("reply" variable
+                               (:reference 1
+                                :type ("cxxtools::http::Reply" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3770 3799]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3702 3800]))                  
+                :type "class")
+                nil [3516 3803])
+            ("reply" function
+               (:parent "MainResponder"
+                :arguments 
+                  ( ("out" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3831 3849])
+                    ("request" variable
+                       (:reference 1
+                        :type ("cxxtools::http::Request" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3850 3883])
+                    ("reply" variable
+                       (:reference 1
+                        :type ("cxxtools::http::Reply" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3884 3913]))                  
+                :type "void")
+                nil [3805 6746])
+            ("StatResponder" type
+               (:superclasses 
+                  ( ("cxxtools::http::Responder" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [6807 6814])
+                    ("StatResponder" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("service" variable
+                               (:reference 1
+                                :type ("cxxtools::http::Service" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6842 6875]))                          
+                        :type ("StatResponder" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6828 6928])
+                    ("reply" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6953 6967])
+                            ("request" variable
+                               (:reference 1
+                                :type ("cxxtools::http::Request" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6968 7001])
+                            ("reply" variable
+                               (:reference 1
+                                :type ("cxxtools::http::Reply" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7002 7031]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [6934 7032]))                  
+                :type "class")
+                nil [6748 7035])
+            ("reply" function
+               (:parent "StatResponder"
+                :arguments 
+                  ( ("out" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7063 7081])
+                    ("request" variable
+                       (:reference 1
+                        :type ("cxxtools::http::Request" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7082 7115])
+                    ("reply" variable
+                       (:reference 1
+                        :type ("cxxtools::http::Reply" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7116 7145]))                  
+                :type "void")
+                nil [7037 7347])
+            ("StatService" type
+               (:typedef ("cxxtools::http::CachedService" type
+                     (:template-specifier 
+                        ( ("StatResponder" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :superclasses "cxxtools::http::CachedService"
+                :type "typedef")
+                nil [7349 7414])
+            ("MainService" type
+               (:typedef ("cxxtools::http::CachedService" type
+                     (:template-specifier 
+                        ( ("MainResponder" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :superclasses "cxxtools::http::CachedService"
+                :type "typedef")
+                nil [7415 7480])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [7491 7500])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7501 7514]))                  
+                :type "int")
+                nil [7482 8104]))          
+    :file "json.cpp"
+    :pointmax 8106
+    :fsize 8105
+    :lastmodtime '(20853 59015 0 0)
+    :unmatched-syntax '((EXPLICIT 6819 . 6827) (EXPLICIT 3587 . 3595))
+    )
+   (semanticdb-table "pool.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1362 1381])
+            ("cxxtools/thread.h" include (:system-flag t) nil [1382 1410])
+            ("cxxtools/pool.h" include (:system-flag t) nil [1411 1437])
+            ("cxxtools/log.h" include (:system-flag t) nil [1438 1463])
+            ("unistd.h" include (:system-flag t) nil [1464 1483])
+            ("Connection" type
+               (:members 
+                  ( ("db" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1570 1585])
+                    ("public" label nil (reparse-symbol classsubparts) [1588 1595])
+                    ("Connection" function
+                       (:constructor-flag t
+                        :type ("Connection" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1600 1661])
+                    ("Connection" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("db_" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1687 1710]))                          
+                        :type ("Connection" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1676 1794])
+                    ("Connection" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1800 1863])
+                    ("doSomething" function (:type "void") (reparse-symbol classsubparts) [1869 1915]))                  
+                :type "class")
+                nil [1547 1918])
+            ("Connector" type
+               (:members 
+                  ( ("db" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2005 2020])
+                    ("public" label nil (reparse-symbol classsubparts) [2024 2031])
+                    ("Connector" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("db_" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2055 2078]))                          
+                        :type ("Connector" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2045 2104])
+                    ("()" function
+                       (:operator-flag t
+                        :pointer 1
+                        :type ("Connection" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2109 2171]))                  
+                :type "class")
+                nil [1983 2174])
+            ("ConnectionPoolType" type
+               (:typedef ("cxxtools::Pool" type
+                     (:template-specifier 
+                        ( ("Connection" type nil nil nil)
+                          ("Connector" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :superclasses "cxxtools::Pool"
+                :type "typedef")
+                nil [2209 2274])
+            ("MyThread" type
+               (:members 
+                  ( ("thread" variable (:type ("cxxtools::AttachedThread" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2378 2410])
+                    ("pool" variable (:type ("ConnectionPoolType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2415 2440])
+                    ("threadNum" variable (:type "unsigned int") (reparse-symbol classsubparts) [2445 2464])
+                    ("sec" variable (:type "unsigned int") (reparse-symbol classsubparts) [2469 2482])
+                    ("public" label nil (reparse-symbol classsubparts) [2486 2493])
+                    ("MyThread" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("pool_" variable
+                               (:reference 1
+                                :type ("ConnectionPoolType" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2517 2543])
+                            ("threadNum_" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2544 2564])
+                            ("sec_" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2565 2580]))                          
+                        :type ("MyThread" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2507 2724])
+                    ("create" function (:type "void") (reparse-symbol classsubparts) [2732 2771])
+                    ("join" function (:type "void") (reparse-symbol classsubparts) [2779 2815])
+                    ("run" function (:type "void") (reparse-symbol classsubparts) [2821 3751]))                  
+                :type "class")
+                nil [2357 3754])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3765 3774])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3775 3788]))                  
+                :type "int")
+                nil [3756 4633]))          
+    :file "pool.cpp"
+    :pointmax 4635
+    :fsize 4634
+    :lastmodtime '(20853 59015 0 0)
+    :unmatched-syntax '((number 2581 . 2582) (punctuation 2579 . 2580) (EXPLICIT 2498 . 2506) (EXPLICIT 2036 . 2044) (EXPLICIT 1667 . 1675) (semantic-list 1495 . 1507) (symbol 1485 . 1495) (string 1496 . 1506) (EXPLICIT 1667 . 1675) (EXPLICIT 1667 . 1675))
+    )
+   (semanticdb-table "rpcserver.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1367 1386])
+            ("cxxtools/arg.h" include (:system-flag t) nil [1387 1412])
+            ("cxxtools/log.h" include (:system-flag t) nil [1413 1438])
+            ("cxxtools/xmlrpc/service.h" include (:system-flag t) nil [1439 1475])
+            ("cxxtools/http/server.h" include (:system-flag t) nil [1476 1509])
+            ("cxxtools/bin/rpcserver.h" include (:system-flag t) nil [1510 1545])
+            ("cxxtools/json/rpcserver.h" include (:system-flag t) nil [1546 1582])
+            ("cxxtools/json/httpservice.h" include (:system-flag t) nil [1583 1621])
+            ("cxxtools/eventloop.h" include (:system-flag t) nil [1622 1653])
+            ("echo" function
+               (:arguments 
+                  ( ("message" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1812 1839]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [1795 1898])
+            ("add" function
+               (:arguments 
+                  ( ("a1" variable (:type "double") (reparse-symbol arg-sub-list) [1911 1921])
+                    ("a2" variable (:type "double") (reparse-symbol arg-sub-list) [1922 1932]))                  
+                :type "double")
+                nil [1900 1954])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2049 2058])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2059 2072]))                  
+                :type "int")
+                nil [2040 3974]))          
+    :file "rpcserver.cpp"
+    :pointmax 3976
+    :fsize 3975
+    :lastmodtime '(20853 59015 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "rpcaddclient.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1362 1381])
+            ("cxxtools/arg.h" include (:system-flag t) nil [1382 1407])
+            ("cxxtools/log.h" include (:system-flag t) nil [1408 1433])
+            ("cxxtools/remoteprocedure.h" include (:system-flag t) nil [1434 1471])
+            ("cxxtools/xmlrpc/httpclient.h" include (:system-flag t) nil [1472 1511])
+            ("cxxtools/bin/rpcclient.h" include (:system-flag t) nil [1512 1547])
+            ("cxxtools/json/rpcclient.h" include (:system-flag t) nil [1548 1584])
+            ("cxxtools/json/httpclient.h" include (:system-flag t) nil [1585 1622])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1717 1726])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1727 1740]))                  
+                :type "int")
+                nil [1708 3211]))          
+    :file "rpcaddclient.cpp"
+    :pointmax 3213
+    :fsize 3212
+    :lastmodtime '(20853 59015 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "rpcechoclient.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1362 1381])
+            ("cxxtools/arg.h" include (:system-flag t) nil [1382 1407])
+            ("cxxtools/log.h" include (:system-flag t) nil [1408 1433])
+            ("cxxtools/remoteprocedure.h" include (:system-flag t) nil [1434 1471])
+            ("cxxtools/xmlrpc/httpclient.h" include (:system-flag t) nil [1472 1511])
+            ("cxxtools/bin/rpcclient.h" include (:system-flag t) nil [1512 1547])
+            ("cxxtools/json/rpcclient.h" include (:system-flag t) nil [1548 1584])
+            ("cxxtools/json/httpclient.h" include (:system-flag t) nil [1585 1622])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1717 1726])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1727 1740]))                  
+                :type "int")
+                nil [1708 3236]))          
+    :file "rpcechoclient.cpp"
+    :pointmax 3238
+    :fsize 3237
+    :lastmodtime '(20853 59015 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "thread.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("cxxtools/function.h" include (:system-flag t) nil [1362 1392])
+            ("cxxtools/thread.h" include (:system-flag t) nil [1393 1421])
+            ("cxxtools/mutex.h" include (:system-flag t) nil [1422 1449])
+            ("cxxtools/condition.h" include (:system-flag t) nil [1450 1481])
+            ("iostream" include (:system-flag t) nil [1482 1501])
+            ("string" include (:system-flag t) nil [1502 1519])
+            ("unistd.h" include (:system-flag t) nil [1520 1539])
+            ("coutMutex" variable (:type ("cxxtools::Mutex" type (:type "class") nil nil)) nil [1541 1567])
+            ("conditionMutex" variable (:type ("cxxtools::Mutex" type (:type "class") nil nil)) nil [1568 1599])
+            ("running" variable (:type ("cxxtools::Condition" type (:type "class") nil nil)) nil [1600 1628])
+            ("PRINTLN" variable (:constant-flag t) nil [1638 1645])
+            ("myDetachedThread" type
+               (:superclasses 
+                  ( ("cxxtools::DetachedThread" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("myDetachedThread" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1844 1864])
+                    ("protected" label nil (reparse-symbol classsubparts) [1868 1878])
+                    ("run" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1883 1894]))                  
+                :type "class")
+                nil [1781 1897])
+            ("myDetachedThread" function
+               (:destructor-flag t
+                :parent "myDetachedThread"
+                :type "void")
+                nil [1899 1999])
+            ("run" function
+               (:parent "myDetachedThread"
+                :type "void")
+                nil [2001 2267])
+            ("someFunction" function (:type "void") nil [2269 2369])
+            ("AClass" type
+               (:members 
+                  ( ("id" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2390 2405])
+                    ("public" label nil (reparse-symbol classsubparts) [2409 2416])
+                    ("AClass" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("id_" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2428 2451]))                          
+                        :type ("AClass" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2421 2477])
+                    ("AClass" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [2482 2555])
+                    ("run" function (:type "void") (reparse-symbol classsubparts) [2561 2719]))                  
+                :type "class")
+                nil [2371 2722])
+            ("main" function (:type "int") nil [2724 3912]))          
+    :file "thread.cpp"
+    :pointmax 3914
+    :fsize 3912
+    :lastmodtime '(20853 59015 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!git!cxxtools!demo!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

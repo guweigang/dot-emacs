@@ -1,0 +1,1152 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables (list 
+   (semanticdb-table "ul_url.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [36 54])
+            ("vector" include (:system-flag t) nil [55 72])
+            ("string" include (:system-flag t) nil [73 90])
+            ("map" include (:system-flag t) nil [91 105])
+            ("__UL_URL_H__" variable (:constant-flag t) nil [136 148])
+            ("UL_MAX_URL_LEN_EX" variable (:constant-flag t) nil [158 175])
+            ("UL_MAX_SITE_LEN_EX" variable (:constant-flag t) nil [189 207])
+            ("UL_MAX_PATH_LEN_EX" variable (:constant-flag t) nil [220 238])
+            ("UL_MAX_URL_LEN" variable (:constant-flag t) nil [252 266])
+            ("UL_MAX_SITE_LEN" variable (:constant-flag t) nil [285 300])
+            ("UL_MAX_PORT_LEN" variable (:constant-flag t) nil [317 332])
+            ("UL_MAX_PATH_LEN" variable (:constant-flag t) nil [359 374])
+            ("UL_MAX_FRAG_LEN" variable (:constant-flag t) nil [387 402])
+            ("UL_MAX_URL_LEN_EX2" variable (:constant-flag t) nil [416 434])
+            ("UL_MAX_SITE_LEN_EX2" variable (:constant-flag t) nil [448 467])
+            ("UL_MAX_PATH_LEN_EX2" variable (:constant-flag t) nil [480 499])
+            ("ul_parse_url" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("input" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [674 692])
+                    ("site" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [692 703])
+                    ("port" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [703 714])
+                    ("path" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [714 725]))                  
+                :type "int")
+                nil [657 726])
+            ("ul_single_path" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [820 831]))                  
+                :type "int")
+                nil [801 832])
+            ("ul_get_path" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("url" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [957 973])
+                    ("path" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [974 985]))                  
+                :type "char")
+                nil [939 986])
+            ("ul_get_site" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("url" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1164 1180])
+                    ("site" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1181 1192]))                  
+                :type "char")
+                nil [1146 1193])
+            ("ul_normalize_path" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1322 1333]))                  
+                :type "void")
+                nil [1299 1334])
+            ("ul_get_port" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("url" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1442 1458])
+                    ("pport" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1458 1469]))                  
+                :type "int")
+                nil [1426 1470])
+            ("ul_get_static_part" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("url" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1588 1604])
+                    ("staticurl" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1605 1621]))                  
+                :type "void")
+                nil [1564 1622])
+            ("ul_parse_url" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("input" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1755 1767])
+                    ("site" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1767 1778])
+                    ("port" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1778 1789])
+                    ("path" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1789 1800]))                  
+                :type "int")
+                nil [1738 1801])
+            ("ul_get_path" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("url" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1820 1830])
+                    ("path" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1831 1842]))                  
+                :type "char")
+                nil [1802 1843])
+            ("ul_get_site" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("url" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1862 1872])
+                    ("site" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1873 1884]))                  
+                :type "char")
+                nil [1844 1885])
+            ("ul_get_port" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("url" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1902 1912])
+                    ("pport" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1912 1923]))                  
+                :type "int")
+                nil [1886 1924])
+            ("ul_get_static_part" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("url" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1949 1959])
+                    ("staticurl" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1960 1976]))                  
+                :type "void")
+                nil [1925 1977])
+            ("ul_isdyn" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2069 2079]))                  
+                :type "int")
+                nil [2056 2080])
+            ("ul_check_url" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("url" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2164 2174]))                  
+                :type "int")
+                nil [2147 2175])
+            ("ul_fetch_trunk" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("site" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2373 2390])
+                    ("trunk" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2390 2402])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [2402 2411]))                  
+                :type "int")
+                nil [2354 2412])
+            ("ul_is_dotip" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("sitename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2499 2520]))                  
+                :type "int")
+                nil [2483 2521])
+            ("ul_fetch_maindomain" function
+               (:prototype-flag t
+                :pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("site" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2715 2732])
+                    ("domain" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2732 2745])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [2745 2754]))                  
+                :type "char")
+                nil [2683 2755])
+            ("ul_isnormalized_url" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("url" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2845 2861]))                  
+                :type "int")
+                nil [2821 2862])
+            ("ul_normalize_url" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("url" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3158 3174])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3175 3185]))                  
+                :type "int")
+                nil [3137 3186])
+            ("ul_normalize_site" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("site" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3280 3291]))                  
+                :type "int")
+                nil [3258 3292])
+            ("ul_normalize_port" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("port" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3408 3419]))                  
+                :type "int")
+                nil [3386 3420])
+            ("ul_parse_url_ex" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("input" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4094 4112])
+                    ("site" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4113 4124])
+                    ("site_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4124 4141])
+                    ("port" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4160 4171])
+                    ("port_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4172 4189])
+                    ("path" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4189 4200])
+                    ("max_path_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4201 4222]))                  
+                :type "int")
+                nil [4074 4223])
+            ("ul_get_path_ex" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("url" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4747 4763])
+                    ("path" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4764 4775])
+                    ("path_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4775 4792]))                  
+                :type "char")
+                nil [4726 4793])
+            ("ul_get_site_ex" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("url" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5201 5217])
+                    ("site" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5218 5229])
+                    ("site_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5231 5248]))                  
+                :type "char")
+                nil [5180 5249])
+            ("ul_get_port_ex" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("url" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5517 5533])
+                    ("pport" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [5534 5545]))                  
+                :type "int")
+                nil [5498 5546])
+            ("ul_normalize_url_ex" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("url" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5995 6011])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6012 6022])
+                    ("buf_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6022 6038]))                  
+                :type "int")
+                nil [5971 6039])
+            ("ul_get_static_part_ex" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("url" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6341 6358])
+                    ("staticurl" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6359 6376])
+                    ("staticurl_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6376 6398]))                  
+                :type "void")
+                nil [6314 6399])
+            ("ul_isnormalized_url_ex" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("url" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6609 6625]))                  
+                :type "int")
+                nil [6582 6626])
+            ("ul_normalize_path_ex" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6867 6878]))                  
+                :type "void")
+                nil [6841 6879])
+            ("ul_single_path_ex" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7100 7111]))                  
+                :type "int")
+                nil [7078 7112])
+            ("ul_check_url_vhplink" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("url" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7275 7291]))                  
+                :type "int")
+                nil [7250 7292])
+            ("ul_parse_url_vhplink" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("input" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7517 7535])
+                    ("site" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7535 7546])
+                    ("port" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7546 7557])
+                    ("path" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7557 7568])
+                    ("frag" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7568 7579]))                  
+                :type "int")
+                nil [7492 7580])
+            ("ul_normalize_path_vhplink" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7743 7754]))                  
+                :type "void")
+                nil [7712 7756])
+            ("ul_check_url_ex" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("url" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7951 7961]))                  
+                :type "int")
+                nil [7931 7962])
+            ("ul_parse_url_ex2" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("input" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8742 8760])
+                    ("site" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8761 8772])
+                    ("site_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8772 8789])
+                    ("port" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8797 8808])
+                    ("port_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8809 8826])
+                    ("path" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8826 8837])
+                    ("max_path_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8838 8859]))                  
+                :type "int")
+                nil [8721 8860])
+            ("ul_get_path_ex2" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("url" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9387 9403])
+                    ("path" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9404 9415])
+                    ("path_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9415 9432]))                  
+                :type "char")
+                nil [9365 9433])
+            ("ul_get_site_ex2" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("url" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9843 9859])
+                    ("site" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9860 9871])
+                    ("site_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9873 9890]))                  
+                :type "char")
+                nil [9821 9891])
+            ("ul_get_port_ex2" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("url" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10161 10177])
+                    ("pport" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [10178 10189]))                  
+                :type "int")
+                nil [10141 10190])
+            ("ul_normalize_url_ex2" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("url" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10638 10654])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10655 10665])
+                    ("buf_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10665 10681]))                  
+                :type "int")
+                nil [10613 10682])
+            ("ul_get_static_part_ex2" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("url" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10986 11003])
+                    ("staticurl" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11004 11021])
+                    ("staticurl_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11021 11043]))                  
+                :type "void")
+                nil [10958 11044])
+            ("ul_isnormalized_url_ex2" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("url" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11256 11272]))                  
+                :type "int")
+                nil [11228 11273])
+            ("ul_normalize_path_ex2" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11515 11526]))                  
+                :type "void")
+                nil [11488 11527])
+            ("ul_single_path_ex2" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11750 11761]))                  
+                :type "int")
+                nil [11727 11762])
+            ("ul_check_url_ex2" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("url" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11959 11969]))                  
+                :type "int")
+                nil [11938 11970])
+            ("ul_normalize_site_ip" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("site" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12207 12224])
+                    ("result" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12224 12237])
+                    ("result_size" variable (:type "int") (reparse-symbol arg-sub-list) [12237 12253]))                  
+                :type "int")
+                nil [12182 12254])
+            ("ul_fetch_maindomain_ex" function
+               (:prototype-flag t
+                :pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("site" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12503 12520])
+                    ("trunk" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12520 12532])
+                    ("trunk_size" variable (:type "int") (reparse-symbol arg-sub-list) [12532 12547])
+                    ("recoveryMode" variable (:type "bool") (reparse-symbol arg-sub-list) [12583 12601])
+                    ("" variable (:type ("true" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12601 12606]))                  
+                :type "char")
+                nil [12468 12607])
+            ("DomainDict" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [12629 12636])
+                    ("DomainList" type
+                       (:typedef ("std::vector" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::vector"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [12641 12687])
+                    ("DomainListMap" type
+                       (:typedef ("std::map" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil)
+                                  ("DomainList" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::map"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [12692 12750])
+                    ("private" label nil (reparse-symbol classsubparts) [12753 12761])
+                    ("top_domain_" variable (:type ("DomainList" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12766 12789])
+                    ("top_country_" variable (:type ("DomainList" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12794 12818])
+                    ("general_2nd_domain_" variable (:type ("DomainList" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12823 12854])
+                    ("country_domain_map_" variable (:type ("DomainListMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [12859 12893])
+                    ("public" label nil (reparse-symbol classsubparts) [12896 12903])
+                    ("clear" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [12944 12957])
+                    ("load_default" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [13006 13026])
+                    ("load_file" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("path" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [13183 13200])
+                            ("file_name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [13200 13222]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [13169 13223])
+                    ("add_top_domain" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("s" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [13307 13321]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [13287 13322])
+                    ("add_top_country" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("s" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [13409 13423]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [13388 13424])
+                    ("add_general_2nd_domain" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("s" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [13520 13534]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [13492 13535])
+                    ("add_country_domain" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("s" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [13683 13697])
+                            ("w" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [13697 13711]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [13659 13712])
+                    ("public" label nil (reparse-symbol classsubparts) [13715 13722])
+                    ("get_top_domain" function
+                       (:constant-flag t
+                        :type ("DomainList" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13753 13828])
+                    ("get_top_country" function
+                       (:constant-flag t
+                        :type ("DomainList" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13833 13910])
+                    ("get_general_2nd_domain" function
+                       (:constant-flag t
+                        :type ("DomainList" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [13915 14006])
+                    ("get_country_domain_map" function
+                       (:constant-flag t
+                        :type ("DomainListMap" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [14011 14105])
+                    ("private" label nil (reparse-symbol classsubparts) [14108 14116])
+                    ("readline" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("str" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [14135 14158]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [14121 14159]))                  
+                :type "class")
+                nil [12609 14162])
+            ("ul_fetch_maindomain_ex2" function
+               (:prototype-flag t
+                :pointer 1
+                :constant-flag t
+                :arguments 
+                  ( ("site" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14453 14470])
+                    ("trunk" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14470 14482])
+                    ("trunk_size" variable (:type "int") (reparse-symbol arg-sub-list) [14482 14497])
+                    ("dict" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("DomainDict" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14534 14557])
+                    ("recoveryMode" variable (:type "bool") (reparse-symbol arg-sub-list) [14557 14575])
+                    ("" variable (:type ("true" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14575 14580]))                  
+                :type "char")
+                nil [14417 14581]))          
+    :file "ul_url.h"
+    :pointmax 14591
+    :fsize 16917
+    :lastmodtime '(20958 21133 0 0)
+    :unmatched-syntax '((punctuation 14574 . 14575) (punctuation 12600 . 12601))
+    :lexical-table 
+        '(("__UL_URL_H__")
+          ("UL_MAX_URL_LEN_EX2" . ((number "2048" 435 . 439)))
+          ("UL_MAX_PORT_LEN" . ((number "7" 337 . 338)))
+          ("UL_MAX_URL_LEN_EX" . ((number "1024" 176 . 180)))
+          ("UL_MAX_PATH_LEN_EX" . ((number "800" 239 . 242)))
+          ("UL_MAX_SITE_LEN" . ((number "48" 305 . 307)))
+          ("UL_MAX_FRAG_LEN" . ((number "203" 403 . 406)))
+          ("UL_MAX_URL_LEN" . ((number "256" 272 . 275)))
+          ("UL_MAX_PATH_LEN" . ((number "203" 375 . 378)))
+          ("UL_MAX_SITE_LEN_EX2" . ((number "256" 468 . 471)))
+          ("UL_MAX_SITE_LEN_EX" . ((number "128" 208 . 211)))
+          ("UL_MAX_PATH_LEN_EX2" . ((number "1600" 500 . 504)))
+          )
+
+    )
+   (semanticdb-table "ul_thr.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("__UL_THRWRAPLIB_H__" variable (:constant-flag t) nil [852 871])
+            ("stdio.h" include (:system-flag t) nil [873 891])
+            ("errno.h" include (:system-flag t) nil [892 910])
+            ("string.h" include (:system-flag t) nil [911 930])
+            ("pthread.h" include (:system-flag t) nil [931 951])
+            ("ul_pthread_attr_destroy" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("attr" variable
+                       (:pointer 1
+                        :type ("pthread_attr_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1143 1164]))                  
+                :type "int")
+                nil [1115 1165])
+            ("ul_pthread_attr_init" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("attr" variable
+                       (:pointer 1
+                        :type ("pthread_attr_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1351 1372]))                  
+                :type "int")
+                nil [1326 1373])
+            ("ul_pthread_attr_setdetachstate" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("attr" variable
+                       (:pointer 1
+                        :type ("pthread_attr_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1579 1600])
+                    ("detach" variable (:type "int") (reparse-symbol arg-sub-list) [1601 1612]))                  
+                :type "int")
+                nil [1544 1613])
+            ("ul_pthread_attr_setscope" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("attr" variable
+                       (:pointer 1
+                        :type ("pthread_attr_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1807 1828])
+                    ("scope" variable (:type "int") (reparse-symbol arg-sub-list) [1829 1839]))                  
+                :type "int")
+                nil [1778 1840])
+            ("ul_pthread_create" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("tid" variable
+                       (:pointer 1
+                        :type ("pthread_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2020 2035])
+                    ("attr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("pthread_attr_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2036 2063])
+                    ("" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2070 2084])
+                    ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2094 2104]))                  
+                :type "int")
+                nil [1998 2105])
+            ("ul_pthread_join" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("tid" variable (:type ("pthread_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2281 2295])
+                    ("status" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2296 2310]))                  
+                :type "int")
+                nil [2261 2311])
+            ("ul_pthread_detach" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("tid" variable (:type ("pthread_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2491 2505]))                  
+                :type "int")
+                nil [2469 2506])
+            ("ul_pthread_kill" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("tid" variable (:type ("pthread_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2682 2696])
+                    ("signo" variable (:type "int") (reparse-symbol arg-sub-list) [2697 2707]))                  
+                :type "int")
+                nil [2662 2708])
+            ("ul_pthread_self" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2890 2895]))                  
+                :type ("pthread_t" type (:type "class") nil nil))
+                nil [2864 2896])
+            ("ul_pthread_exit" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("status" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3073 3086]))                  
+                :type "void")
+                nil [3052 3087])
+            ("ul_pthread_setcancelstate" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("state" variable (:type "int") (reparse-symbol arg-sub-list) [3272 3282])
+                    ("oldstate" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [3283 3297]))                  
+                :type "int")
+                nil [3242 3298])
+            ("ul_pthread_mutex_init" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("mptr" variable
+                       (:pointer 1
+                        :type ("pthread_mutex_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3486 3508])
+                    ("attr" variable
+                       (:pointer 1
+                        :type ("pthread_mutexattr_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3509 3535]))                  
+                :type "int")
+                nil [3460 3536])
+            ("ul_pthread_mutex_destroy" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("mptr" variable
+                       (:pointer 1
+                        :type ("pthread_mutex_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3730 3752]))                  
+                :type "int")
+                nil [3701 3753])
+            ("ul_pthread_mutex_lock" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("mptr" variable
+                       (:pointer 1
+                        :type ("pthread_mutex_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3941 3963]))                  
+                :type "int")
+                nil [3915 3964])
+            ("ul_pthread_mutex_unlock" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("mptr" variable
+                       (:pointer 1
+                        :type ("pthread_mutex_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4156 4178]))                  
+                :type "int")
+                nil [4128 4179])
+            ("ul_pthread_cond_init" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("cptr" variable
+                       (:pointer 1
+                        :type ("pthread_cond_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4365 4386])
+                    ("cond_attr" variable
+                       (:pointer 1
+                        :type ("pthread_condattr_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4387 4417]))                  
+                :type "int")
+                nil [4340 4418])
+            ("ul_pthread_cond_destroy" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("cptr" variable
+                       (:pointer 1
+                        :type ("pthread_cond_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4610 4631]))                  
+                :type "int")
+                nil [4582 4632])
+            ("ul_pthread_cond_broadcast" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("cptr" variable
+                       (:pointer 1
+                        :type ("pthread_cond_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4828 4849]))                  
+                :type "int")
+                nil [4798 4850])
+            ("ul_pthread_cond_signal" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("cptr" variable
+                       (:pointer 1
+                        :type ("pthread_cond_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5040 5061]))                  
+                :type "int")
+                nil [5013 5062])
+            ("ul_pthread_cond_wait" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("cptr" variable
+                       (:pointer 1
+                        :type ("pthread_cond_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5248 5269])
+                    ("mptr" variable
+                       (:pointer 1
+                        :type ("pthread_mutex_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5270 5292]))                  
+                :type "int")
+                nil [5223 5293])
+            ("ul_pthread_cond_timedwait" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("cptr" variable
+                       (:pointer 1
+                        :type ("pthread_cond_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5489 5510])
+                    ("mptr" variable
+                       (:pointer 1
+                        :type ("pthread_mutex_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5511 5533])
+                    ("tsptr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("timespec" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5542 5571]))                  
+                :type "int")
+                nil [5459 5572])
+            ("ul_pthread_mutexattr_init" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("attr" variable
+                       (:pointer 1
+                        :type ("pthread_mutexattr_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5768 5794]))                  
+                :type "int")
+                nil [5738 5795])
+            ("ul_pthread_mutexattr_destroy" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("attr" variable
+                       (:pointer 1
+                        :type ("pthread_mutexattr_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5993 6019]))                  
+                :type "int")
+                nil [5960 6020])
+            ("ul_pthread_condattr_init" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("attr" variable
+                       (:pointer 1
+                        :type ("pthread_condattr_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6214 6239]))                  
+                :type "int")
+                nil [6185 6240])
+            ("ul_pthread_condattr_destroy" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("attr" variable
+                       (:pointer 1
+                        :type ("pthread_condattr_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6440 6465]))                  
+                :type "int")
+                nil [6408 6466])
+            ("ul_pthread_once" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :type ("pthread_once_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6642 6662])
+                    ("" variable (:type "void") (reparse-symbol arg-sub-list) [6663 6675]))                  
+                :type "int")
+                nil [6622 6683])
+            ("ul_pthread_key_create" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :type ("pthread_key_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6871 6890])
+                    ("" variable (:type "void") (reparse-symbol arg-sub-list) [6891 6903]))                  
+                :type "int")
+                nil [6845 6913])
+            ("ul_pthread_setspecific" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("key" variable (:type ("pthread_key_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7103 7121])
+                    ("value" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7122 7140]))                  
+                :type "int")
+                nil [7076 7141])
+            ("ul_pthread_getspecific" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("key" variable (:type ("pthread_key_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7333 7351]))                  
+                :type "void")
+                nil [7304 7352]))          
+    :file "ul_thr.h"
+    :pointmax 7406
+    :fsize 7462
+    :lastmodtime '(20958 21133 0 0)
+    :unmatched-syntax '((semantic-list 6903 . 6911) (semantic-list 6896 . 6903) (semantic-list 6675 . 6681) (semantic-list 6668 . 6675) (semantic-list 2084 . 2092) (semantic-list 2077 . 2084))
+    :lexical-table 
+        '(("__UL_THRWRAPLIB_H__")
+          )
+
+    )
+   (semanticdb-table "ul_file.h"
+    :major-mode 'c-mode
+    :tags nil
+    :file "ul_file.h"
+    :pointmax 3093
+    :fsize 3501
+    :lastmodtime '(20958 21133 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!source!php-sign_1-0-2-1_PD_BL!output!ullib!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

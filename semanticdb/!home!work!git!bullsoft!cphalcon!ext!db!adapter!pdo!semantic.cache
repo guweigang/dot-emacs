@@ -1,0 +1,49 @@
+;; Object pdo/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "pdo/"
+  :tables (list 
+   (semanticdb-table "mysql.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("php.h" include nil nil [1213 1229])
+            ("php_phalcon.h" include nil nil [1230 1254])
+            ("phalcon.h" include nil nil [1255 1275])
+            ("Zend/zend_operators.h" include nil nil [1277 1309])
+            ("Zend/zend_exceptions.h" include nil nil [1310 1343])
+            ("Zend/zend_interfaces.h" include nil nil [1344 1377])
+            ("kernel/main.h" include nil nil [1379 1403])
+            ("kernel/memory.h" include nil nil [1404 1430])
+            ("kernel/array.h" include nil nil [1432 1457])
+            ("kernel/concat.h" include nil nil [1458 1484])
+            ("kernel/object.h" include nil nil [1485 1511])
+            ("kernel/fcall.h" include nil nil [1512 1537])
+            ("kernel/string.h" include nil nil [1538 1564])
+            ("kernel/operators.h" include nil nil [1565 1594])
+            ("PHALCON_INIT_CLASS" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter_Pdo_Mysql" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2008 2037]))                  
+                :type "int")
+                nil [1989 2561])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter_Pdo_Mysql" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2670 2699])
+                    ("" variable (:type ("escapeIdentifier" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2700 2717]))                  
+                :type "int")
+                nil [2659 3525])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter_Pdo_Mysql" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3775 3804])
+                    ("" variable (:type ("describeColumns" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3805 3821]))                  
+                :type "int")
+                nil [3764 10498]))          
+    :file "mysql.c"
+    :pointmax 10500
+    :fsize 10499
+    :lastmodtime '(20910 42138 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!git!bullsoft!cphalcon!ext!db!adapter!pdo!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

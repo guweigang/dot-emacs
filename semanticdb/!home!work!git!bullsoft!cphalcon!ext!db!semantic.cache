@@ -1,0 +1,820 @@
+;; Object db/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "db/"
+  :tables (list 
+   (semanticdb-table "adapter.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("php.h" include nil nil [1213 1229])
+            ("php_phalcon.h" include nil nil [1230 1254])
+            ("phalcon.h" include nil nil [1255 1275])
+            ("Zend/zend_operators.h" include nil nil [1277 1309])
+            ("Zend/zend_exceptions.h" include nil nil [1310 1343])
+            ("Zend/zend_interfaces.h" include nil nil [1344 1377])
+            ("kernel/main.h" include nil nil [1379 1403])
+            ("kernel/memory.h" include nil nil [1404 1430])
+            ("kernel/operators.h" include nil nil [1432 1461])
+            ("kernel/object.h" include nil nil [1462 1488])
+            ("kernel/array.h" include nil nil [1489 1514])
+            ("kernel/concat.h" include nil nil [1515 1541])
+            ("kernel/fcall.h" include nil nil [1542 1567])
+            ("kernel/exception.h" include nil nil [1568 1597])
+            ("kernel/file.h" include nil nil [1598 1622])
+            ("kernel/string.h" include nil nil [1623 1649])
+            ("PHALCON_INIT_CLASS" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1785 1804]))                  
+                :type "int")
+                nil [1766 3327])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3413 3432])
+                    ("" variable (:type ("__construct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3433 3445]))                  
+                :type "int")
+                nil [3402 5423])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5530 5549])
+                    ("" variable (:type ("setEventsManager" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5550 5567]))                  
+                :type "int")
+                nil [5519 5737])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5842 5861])
+                    ("" variable (:type ("getEventsManager" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5862 5879]))                  
+                :type "int")
+                nil [5831 5928])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6034 6053])
+                    ("" variable (:type ("setDialect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6054 6065]))                  
+                :type "int")
+                nil [6023 6208])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6308 6327])
+                    ("" variable (:type ("getDialect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6328 6339]))                  
+                :type "int")
+                nil [6297 6382])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6865 6884])
+                    ("" variable (:type ("fetchOne" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6885 6894]))                  
+                :type "int")
+                nil [6854 7767])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8467 8486])
+                    ("" variable (:type ("fetchAll" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8487 8496]))                  
+                :type "int")
+                nil [8456 9534])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10036 10055])
+                    ("" variable (:type ("insert" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10056 10063]))                  
+                :type "int")
+                nil [10025 14494])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15029 15048])
+                    ("" variable (:type ("update" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15049 15056]))                  
+                :type "int")
+                nil [15018 20474])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20902 20921]))                  
+                :type "int")
+                nil [20891 22020])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22116 22135])
+                    ("" variable (:type ("getColumnList" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22136 22150]))                  
+                :type "int")
+                nil [22105 22532])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22755 22774])
+                    ("" variable (:type ("limit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22775 22781]))                  
+                :type "int")
+                nil [22744 23123])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23365 23384])
+                    ("" variable (:type ("tableExists" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23385 23397]))                  
+                :type "int")
+                nil [23354 24098])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24342 24361])
+                    ("" variable (:type ("viewExists" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24362 24373]))                  
+                :type "int")
+                nil [24331 25070])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25190 25209])
+                    ("" variable (:type ("forUpdate" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25210 25220]))                  
+                :type "int")
+                nil [25179 25540])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25668 25687])
+                    ("" variable (:type ("sharedLock" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25688 25699]))                  
+                :type "int")
+                nil [25657 26020])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26167 26186])
+                    ("" variable (:type ("createTable" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26187 26199]))                  
+                :type "int")
+                nil [26156 27476])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27646 27665])
+                    ("" variable (:type ("dropTable" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27666 27676]))                  
+                :type "int")
+                nil [27635 28340])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28486 28505])
+                    ("" variable (:type ("createView" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28506 28517]))                  
+                :type "int")
+                nil [28475 29561])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29706 29725])
+                    ("" variable (:type ("dropView" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29726 29735]))                  
+                :type "int")
+                nil [29695 30395])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30569 30588])
+                    ("" variable (:type ("addColumn" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30589 30599]))                  
+                :type "int")
+                nil [30558 31099])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31294 31313])
+                    ("" variable (:type ("modifyColumn" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31314 31327]))                  
+                :type "int")
+                nil [31283 31830])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31991 32010])
+                    ("" variable (:type ("dropColumn" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32011 32022]))                  
+                :type "int")
+                nil [31980 32538])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32710 32729])
+                    ("" variable (:type ("addIndex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32730 32739]))                  
+                :type "int")
+                nil [32699 33235])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33394 33413])
+                    ("" variable (:type ("dropIndex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33414 33424]))                  
+                :type "int")
+                nil [33383 33936])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34113 34132])
+                    ("" variable (:type ("addPrimaryKey" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34133 34147]))                  
+                :type "int")
+                nil [34102 34648])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34780 34799])
+                    ("" variable (:type ("dropPrimaryKey" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34800 34815]))                  
+                :type "int")
+                nil [34769 35294])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35483 35502])
+                    ("" variable (:type ("addForeignKey" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35503 35517]))                  
+                :type "int")
+                nil [35472 36030])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36203 36222])
+                    ("" variable (:type ("dropForeignKey" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36223 36238]))                  
+                :type "int")
+                nil [36192 36767])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36905 36924])
+                    ("" variable (:type ("getColumnDefinition" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36925 36945]))                  
+                :type "int")
+                nil [36894 37294])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37465 37484])
+                    ("" variable (:type ("listTables" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37485 37496]))                  
+                :type "int")
+                nil [37454 38768])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38939 38958])
+                    ("" variable (:type ("listViews" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38959 38969]))                  
+                :type "int")
+                nil [38928 40240])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40446 40465])
+                    ("" variable (:type ("describeIndexes" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40466 40482]))                  
+                :type "int")
+                nil [40435 42909])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43125 43144])
+                    ("" variable (:type ("describeReferences" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43145 43164]))                  
+                :type "int")
+                nil [43114 47957])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48164 48183])
+                    ("" variable (:type ("tableOptions" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48184 48197]))                  
+                :type "int")
+                nil [48153 49056])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49149 49168])
+                    ("" variable (:type ("createSavepoint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49169 49185]))                  
+                :type "int")
+                nil [49138 49878])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49972 49991])
+                    ("" variable (:type ("releaseSavepoint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49992 50009]))                  
+                :type "int")
+                nil [49961 50890])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50985 51004])
+                    ("" variable (:type ("rollbackSavepoint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51005 51023]))                  
+                :type "int")
+                nil [50974 51717])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51884 51903])
+                    ("" variable (:type ("setNestedTransactionsWithSavepoints" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51904 51940]))                  
+                :type "int")
+                nil [51873 52985])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [53084 53103])
+                    ("" variable (:type ("isNestedTransactionsWithSavepoints" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [53104 53139]))                  
+                :type "int")
+                nil [53073 53201])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [53304 53323])
+                    ("" variable (:type ("getNestedTransactionSavepointName" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [53324 53358]))                  
+                :type "int")
+                nil [53293 53685])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54071 54090])
+                    ("" variable (:type ("getDefaultIdValue" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54091 54109]))                  
+                :type "int")
+                nil [54060 54434])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54565 54584])
+                    ("" variable (:type ("supportSequences" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54585 54602]))                  
+                :type "int")
+                nil [54554 54622])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54750 54769])
+                    ("" variable (:type ("useExplicitIdValue" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54770 54789]))                  
+                :type "int")
+                nil [54739 54809])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54910 54929])
+                    ("" variable (:type ("getDescriptor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54930 54944]))                  
+                :type "int")
+                nil [54899 54990])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55080 55099])
+                    ("" variable (:type ("getConnectionId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55100 55116]))                  
+                :type "int")
+                nil [55069 55164])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55244 55263])
+                    ("" variable (:type ("getSQLStatement" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55264 55280]))                  
+                :type "int")
+                nil [55233 55328])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55440 55459])
+                    ("" variable (:type ("getRealSQLStatement" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55460 55480]))                  
+                :type "int")
+                nil [55429 55528])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55607 55626])
+                    ("" variable (:type ("getSQLVariables" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55627 55643]))                  
+                :type "int")
+                nil [55596 55691])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55770 55789])
+                    ("" variable (:type ("getSQLBindTypes" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55790 55806]))                  
+                :type "int")
+                nil [55759 55854])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55955 55974])
+                    ("" variable (:type ("getType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55975 55983]))                  
+                :type "int")
+                nil [55944 56023])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [56105 56124])
+                    ("" variable (:type ("getDialectType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [56125 56140]))                  
+                :type "int")
+                nil [56094 56187]))          
+    :file "adapter.c"
+    :pointmax 56189
+    :fsize 56188
+    :lastmodtime '(20912 8435 0 0)
+    :unmatched-syntax '((DELETE 20922 . 20928))
+    )
+   (semanticdb-table "exception.h"
+    :file "exception.h"
+    :fsize 1256
+    :lastmodtime '(20911 24049 0 0)
+    )
+   (semanticdb-table "adapterinterface.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("php.h" include nil nil [1213 1229])
+            ("php_phalcon.h" include nil nil [1230 1254])
+            ("phalcon.h" include nil nil [1255 1275])
+            ("kernel/main.h" include nil nil [1277 1301])
+            ("PHALCON_INIT_CLASS" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1373 1401]))                  
+                :type "int")
+                nil [1354 1546])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1644 1672])
+                    ("" variable (:type ("__construct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1673 1685]))                  
+                :type "int")
+                nil [1625 1686])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1862 1890])
+                    ("" variable (:type ("fetchOne" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1891 1900]))                  
+                :type "int")
+                nil [1843 1901])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2084 2112])
+                    ("" variable (:type ("fetchAll" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2113 2122]))                  
+                :type "int")
+                nil [2065 2123])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2336 2364])
+                    ("" variable (:type ("insert" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2365 2372]))                  
+                :type "int")
+                nil [2317 2373])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2618 2646])
+                    ("" variable (:type ("update" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2647 2654]))                  
+                :type "int")
+                nil [2599 2655])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2882 2910]))                  
+                :type "int")
+                nil [2863 2919])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3023 3051])
+                    ("" variable (:type ("getColumnList" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3052 3066]))                  
+                :type "int")
+                nil [3004 3067])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3218 3246])
+                    ("" variable (:type ("limit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3247 3253]))                  
+                :type "int")
+                nil [3199 3254])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3423 3451])
+                    ("" variable (:type ("tableExists" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3452 3464]))                  
+                :type "int")
+                nil [3404 3465])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3632 3660])
+                    ("" variable (:type ("viewExists" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3661 3672]))                  
+                :type "int")
+                nil [3613 3673])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3801 3829])
+                    ("" variable (:type ("forUpdate" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3830 3840]))                  
+                :type "int")
+                nil [3782 3841])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3977 4005])
+                    ("" variable (:type ("sharedLock" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4006 4017]))                  
+                :type "int")
+                nil [3958 4018])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4173 4201])
+                    ("" variable (:type ("createTable" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4202 4214]))                  
+                :type "int")
+                nil [4154 4215])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4393 4421])
+                    ("" variable (:type ("dropTable" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4422 4432]))                  
+                :type "int")
+                nil [4374 4433])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4587 4615])
+                    ("" variable (:type ("createView" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4616 4627]))                  
+                :type "int")
+                nil [4568 4628])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4781 4809])
+                    ("" variable (:type ("dropView" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4810 4819]))                  
+                :type "int")
+                nil [4762 4820])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5002 5030])
+                    ("" variable (:type ("addColumn" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5031 5041]))                  
+                :type "int")
+                nil [4983 5042])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5245 5273])
+                    ("" variable (:type ("modifyColumn" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5274 5287]))                  
+                :type "int")
+                nil [5226 5288])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5457 5485])
+                    ("" variable (:type ("dropColumn" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5486 5497]))                  
+                :type "int")
+                nil [5438 5498])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5678 5706])
+                    ("" variable (:type ("addIndex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5707 5716]))                  
+                :type "int")
+                nil [5659 5717])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5884 5912])
+                    ("" variable (:type ("dropIndex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5913 5923]))                  
+                :type "int")
+                nil [5865 5924])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6109 6137])
+                    ("" variable (:type ("addPrimaryKey" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6138 6152]))                  
+                :type "int")
+                nil [6090 6153])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6296 6324])
+                    ("" variable (:type ("dropPrimaryKey" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6325 6340]))                  
+                :type "int")
+                nil [6277 6341])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6538 6566])
+                    ("" variable (:type ("addForeignKey" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6567 6581]))                  
+                :type "int")
+                nil [6519 6582])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6763 6791])
+                    ("" variable (:type ("dropForeignKey" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6792 6807]))                  
+                :type "int")
+                nil [6744 6808])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6954 6982])
+                    ("" variable (:type ("getColumnDefinition" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6983 7003]))                  
+                :type "int")
+                nil [6935 7004])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7115 7143])
+                    ("" variable (:type ("listTables" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7144 7155]))                  
+                :type "int")
+                nil [7096 7156])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7266 7294])
+                    ("" variable (:type ("listViews" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7295 7305]))                  
+                :type "int")
+                nil [7247 7306])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7415 7443])
+                    ("" variable (:type ("getDescriptor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7444 7458]))                  
+                :type "int")
+                nil [7396 7459])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7557 7585])
+                    ("" variable (:type ("getConnectionId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7586 7602]))                  
+                :type "int")
+                nil [7538 7603])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7691 7719])
+                    ("" variable (:type ("getSQLStatement" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7720 7736]))                  
+                :type "int")
+                nil [7672 7737])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7857 7885])
+                    ("" variable (:type ("getRealSQLStatement" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7886 7906]))                  
+                :type "int")
+                nil [7838 7907])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7994 8022])
+                    ("" variable (:type ("getSQLVariables" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8023 8039]))                  
+                :type "int")
+                nil [7975 8040])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8127 8155])
+                    ("" variable (:type ("getSQLBindTypes" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8156 8172]))                  
+                :type "int")
+                nil [8108 8173])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8282 8310])
+                    ("" variable (:type ("getType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8311 8319]))                  
+                :type "int")
+                nil [8263 8320])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8410 8438])
+                    ("" variable (:type ("getDialectType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8439 8454]))                  
+                :type "int")
+                nil [8391 8455])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8563 8591])
+                    ("" variable (:type ("getDialect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8592 8603]))                  
+                :type "int")
+                nil [8544 8604])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8821 8849])
+                    ("" variable (:type ("connect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8850 8858]))                  
+                :type "int")
+                nil [8802 8859])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9174 9202])
+                    ("" variable (:type ("query" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9203 9209]))                  
+                :type "int")
+                nil [9155 9210])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9515 9543])
+                    ("" variable (:type ("execute" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9544 9552]))                  
+                :type "int")
+                nil [9496 9553])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9704 9732])
+                    ("" variable (:type ("affectedRows" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9733 9746]))                  
+                :type "int")
+                nil [9685 9747])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9929 9957])
+                    ("" variable (:type ("close" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9958 9964]))                  
+                :type "int")
+                nil [9910 9965])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10082 10110])
+                    ("" variable (:type ("escapeIdentifier" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10111 10128]))                  
+                :type "int")
+                nil [10063 10129])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10244 10272])
+                    ("" variable (:type ("escapeString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10273 10286]))                  
+                :type "int")
+                nil [10225 10287])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10453 10481])
+                    ("" variable (:type ("convertBoundParams" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10482 10501]))                  
+                :type "int")
+                nil [10434 10502])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10666 10694])
+                    ("" variable (:type ("lastInsertId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10695 10708]))                  
+                :type "int")
+                nil [10647 10709])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10802 10830])
+                    ("" variable (:type ("begin" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10831 10837]))                  
+                :type "int")
+                nil [10783 10838])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10943 10971])
+                    ("" variable (:type ("rollback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10972 10981]))                  
+                :type "int")
+                nil [10924 10982])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11085 11113])
+                    ("" variable (:type ("commit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11114 11121]))                  
+                :type "int")
+                nil [11066 11122])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11232 11260])
+                    ("" variable (:type ("isUnderTransaction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11261 11280]))                  
+                :type "int")
+                nil [11213 11281])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11360 11388])
+                    ("" variable (:type ("getInternalHandler" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11389 11408]))                  
+                :type "int")
+                nil [11341 11409])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11552 11580])
+                    ("" variable (:type ("describeIndexes" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11581 11597]))                  
+                :type "int")
+                nil [11533 11598])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11748 11776])
+                    ("" variable (:type ("describeReferences" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11777 11796]))                  
+                :type "int")
+                nil [11729 11797])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11941 11969])
+                    ("" variable (:type ("tableOptions" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11970 11983]))                  
+                :type "int")
+                nil [11922 11984])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12120 12148])
+                    ("" variable (:type ("useExplicitIdValue" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12149 12168]))                  
+                :type "int")
+                nil [12101 12169])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12301 12329])
+                    ("" variable (:type ("getDefaultIdValue" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12330 12348]))                  
+                :type "int")
+                nil [12282 12349])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12488 12516])
+                    ("" variable (:type ("supportSequences" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12517 12534]))                  
+                :type "int")
+                nil [12469 12535])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12636 12664])
+                    ("" variable (:type ("createSavepoint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12665 12681]))                  
+                :type "int")
+                nil [12617 12682])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12784 12812])
+                    ("" variable (:type ("releaseSavepoint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12813 12830]))                  
+                :type "int")
+                nil [12765 12831])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12934 12962])
+                    ("" variable (:type ("rollbackSavepoint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12963 12981]))                  
+                :type "int")
+                nil [12915 12982])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13157 13185])
+                    ("" variable (:type ("setNestedTransactionsWithSavepoints" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13186 13222]))                  
+                :type "int")
+                nil [13138 13223])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13330 13358])
+                    ("" variable (:type ("isNestedTransactionsWithSavepoints" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13359 13394]))                  
+                :type "int")
+                nil [13311 13395])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13506 13534])
+                    ("" variable (:type ("getNestedTransactionSavepointName" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13535 13569]))                  
+                :type "int")
+                nil [13487 13570])
+            ("PHALCON_DOC_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_AdapterInterface" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13759 13787])
+                    ("" variable (:type ("describeColumns" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13788 13804]))                  
+                :type "int")
+                nil [13740 13805]))          
+    :file "adapterinterface.c"
+    :pointmax 13807
+    :fsize 13806
+    :lastmodtime '(20912 8435 0 0)
+    :unmatched-syntax '((DELETE 2911 . 2917) (DELETE 2911 . 2917))
+    )
+   )
+  :file "!home!work!git!bullsoft!cphalcon!ext!db!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

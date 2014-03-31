@@ -1,0 +1,1715 @@
+;; Object modules/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "modules/"
+  :tables (list 
+   (semanticdb-table "ngx_tcp_websocket_proxy_module.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("ngx_config.h" include (:system-flag t) nil [2 25])
+            ("ngx_core.h" include (:system-flag t) nil [26 47])
+            ("ngx_tcp.h" include (:system-flag t) nil [48 68])
+            ("http_request_parser.h" include (:system-flag t) nil [69 101])
+            ("ngx_tcp_websocket_ctx_t" type
+               (:typedef ("ngx_tcp_websocket_s" type (:type "struct") nil nil)
+                :superclasses "ngx_tcp_websocket_s"
+                :type "typedef")
+                nil [104 399])
+            ("ngx_tcp_websocket_s" type
+               (:members 
+                  ( ("upstream" variable
+                       (:pointer 1
+                        :type ("ngx_peer_connection_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [146 189])
+                    ("buffer" variable
+                       (:pointer 1
+                        :type ("ngx_buf_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [194 235])
+                    ("parser" variable
+                       (:pointer 1
+                        :type ("http_request_parser" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [241 282])
+                    ("path" variable (:type ("ngx_str_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [288 327])
+                    ("host" variable (:type ("ngx_str_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [332 371]))                  
+                :type "struct")
+                nil [104 399])
+            ("ngx_tcp_path_upstream_t" type
+               (:typedef ("ngx_tcp_path_upstream_s" type (:type "struct") nil nil)
+                :superclasses "ngx_tcp_path_upstream_s"
+                :type "typedef")
+                nil [402 563])
+            ("ngx_tcp_path_upstream_s" type
+               (:members 
+                  ( ("path" variable (:type ("ngx_str_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [448 487])
+                    ("upstream" variable
+                       (:pointer 1
+                        :type ("ngx_tcp_upstream_srv_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [492 535]))                  
+                :type "struct")
+                nil [402 563])
+            ("ngx_tcp_websocket_conf_t" type
+               (:typedef ("ngx_tcp_websocket_conf_s" type (:type "struct") nil nil)
+                :superclasses "ngx_tcp_websocket_conf_s"
+                :type "typedef")
+                nil [566 1120])
+            ("ngx_tcp_websocket_conf_s" type
+               (:members 
+                  ( ("upstream" variable (:type ("ngx_tcp_upstream_conf_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [631 674])
+                    ("buffer_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [682 728])
+                    ("scheme" variable (:type ("ngx_str_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [733 774])
+                    ("url" variable (:type ("ngx_str_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [779 817])
+                    ("path_upstreams" variable (:type ("ngx_array_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [866 915])
+                    ("websocket_lengths" variable
+                       (:pointer 1
+                        :type ("ngx_array_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [983 1035])
+                    ("websocket_values" variable
+                       (:pointer 1
+                        :type ("ngx_array_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1040 1091]))                  
+                :type "struct")
+                nil [566 1120])
+            ("ngx_tcp_websocket_init_session" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("ngx_tcp_session_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1166 1187]))                  
+                :type "void")
+                nil [1123 1188])
+            ("ngx_tcp_websocket_find_virtual_server" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("ngx_tcp_session_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1266 1287])
+                    ("ctx" variable
+                       (:pointer 1
+                        :type ("ngx_tcp_websocket_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1288 1317]))                  
+                :type ("ngx_tcp_virtual_server_t" type (:type "class") nil nil))
+                nil [1189 1318])
+            ("ngx_tcp_websocket_find_path_upstream" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("ngx_tcp_session_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1394 1415])
+                    ("ctx" variable
+                       (:pointer 1
+                        :type ("ngx_tcp_websocket_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1416 1445]))                  
+                :type ("ngx_tcp_path_upstream_t" type (:type "class") nil nil))
+                nil [1319 1446])
+            ("ngx_tcp_websocket_init_upstream" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("ngx_connection_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1492 1512])
+                    ("s" variable
+                       (:pointer 1
+                        :type ("ngx_tcp_session_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1518 1539]))                  
+                :type "void")
+                nil [1447 1540])
+            ("ngx_tcp_upstream_websocket_proxy_init_handler" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("ngx_tcp_session_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1599 1620])
+                    ("u" variable
+                       (:pointer 1
+                        :type ("ngx_tcp_upstream_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1626 1648]))                  
+                :type "void")
+                nil [1541 1649])
+            ("ngx_tcp_websocket_pass" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1686 1701])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1702 1721])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1727 1738]))                  
+                :type "char")
+                nil [1650 1739])
+            ("ngx_tcp_websocket_dummy_read_handler" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ev" variable
+                       (:pointer 1
+                        :type ("ngx_event_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1789 1805]))                  
+                :type "void")
+                nil [1740 1806])
+            ("ngx_tcp_websocket_dummy_write_handler" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ev" variable
+                       (:pointer 1
+                        :type ("ngx_event_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1857 1873]))                  
+                :type "void")
+                nil [1807 1874])
+            ("ngx_tcp_websocket_init_protocol" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ev" variable
+                       (:pointer 1
+                        :type ("ngx_event_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1919 1935]))                  
+                :type "void")
+                nil [1875 1936])
+            ("websocket_http_request_parser_init" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("hp" variable
+                       (:pointer 1
+                        :type ("http_request_parser" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1984 2008])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2014 2025]))                  
+                :type "void")
+                nil [1937 2026])
+            ("request_method" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2056 2067])
+                    ("at" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "signed char")
+                        (reparse-symbol arg-sub-list) [2068 2090])
+                    ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2091 2105]))                  
+                :type "void")
+                nil [2029 2106])
+            ("request_uri" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2131 2142])
+                    ("at" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "signed char")
+                        (reparse-symbol arg-sub-list) [2143 2165])
+                    ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2166 2180]))                  
+                :type "void")
+                nil [2107 2181])
+            ("fragment" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2203 2214])
+                    ("at" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "signed char")
+                        (reparse-symbol arg-sub-list) [2215 2237])
+                    ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2238 2252]))                  
+                :type "void")
+                nil [2182 2253])
+            ("request_path" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2279 2290])
+                    ("at" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "signed char")
+                        (reparse-symbol arg-sub-list) [2291 2313])
+                    ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2314 2328]))                  
+                :type "void")
+                nil [2254 2329])
+            ("query_string" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2355 2366])
+                    ("at" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "signed char")
+                        (reparse-symbol arg-sub-list) [2367 2389])
+                    ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2390 2404]))                  
+                :type "void")
+                nil [2330 2405])
+            ("http_version" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2431 2442])
+                    ("at" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "signed char")
+                        (reparse-symbol arg-sub-list) [2443 2465])
+                    ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2466 2480]))                  
+                :type "void")
+                nil [2406 2481])
+            ("header_done" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2506 2517])
+                    ("at" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "signed char")
+                        (reparse-symbol arg-sub-list) [2518 2540])
+                    ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2541 2555]))                  
+                :type "void")
+                nil [2482 2556])
+            ("http_field" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2580 2591])
+                    ("field" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "signed char")
+                        (reparse-symbol arg-sub-list) [2592 2617])
+                    ("flen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2618 2630])
+                    ("value" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "signed char")
+                        (reparse-symbol arg-sub-list) [2636 2661])
+                    ("vlen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2662 2674]))                  
+                :type "void")
+                nil [2557 2675])
+            ("ngx_tcp_websocket_parse_protocol" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ev" variable
+                       (:pointer 1
+                        :type ("ngx_event_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2722 2738]))                  
+                :type "void")
+                nil [2677 2739])
+            ("websocket_http_request_parser_execute" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("hp" variable
+                       (:pointer 1
+                        :type ("http_request_parser" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2795 2819]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [2740 2820])
+            ("ngx_tcp_websocket_proxy_handler" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ev" variable
+                       (:pointer 1
+                        :type ("ngx_event_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2866 2882]))                  
+                :type "void")
+                nil [2822 2883])
+            ("ngx_tcp_websocket_create_conf" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2927 2942]))                  
+                :type "void")
+                nil [2884 2943])
+            ("ngx_tcp_websocket_merge_conf" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2986 3001])
+                    ("parent" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3002 3015])
+                    ("child" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3020 3032]))                  
+                :type "char")
+                nil [2944 3033])
+            ("ngx_tcp_websocket_protocol" variable
+               (:typemodifiers ("static")
+                :type ("ngx_tcp_protocol_t" type (:type "class") nil nil))
+                nil [3035 3343])
+            ("ngx_tcp_websocket_commands" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("ngx_command_t" type (:type "class") nil nil))
+                nil [3346 4562])
+            ("ngx_tcp_websocket_module_ctx" variable
+               (:typemodifiers ("static")
+                :type ("ngx_tcp_module_t" type (:type "class") nil nil))
+                nil [4565 4986])
+            ("ngx_tcp_websocket_module" variable (:type ("ngx_module_t" type (:type "class") nil nil)) nil [4989 5700])
+            ("ngx_tcp_websocket_init_session" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("ngx_tcp_session_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5747 5768]))                  
+                :type "void")
+                nil [5703 7183])
+            ("ngx_tcp_websocket_dummy_write_handler" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("wev" variable
+                       (:pointer 1
+                        :type ("ngx_event_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7236 7253]))                  
+                :type "void")
+                nil [7186 7568])
+            ("ngx_tcp_websocket_dummy_read_handler" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("rev" variable
+                       (:pointer 1
+                        :type ("ngx_event_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7620 7637]))                  
+                :type "void")
+                nil [7571 7950])
+            ("ngx_tcp_websocket_init_protocol" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ev" variable
+                       (:pointer 1
+                        :type ("ngx_event_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7997 8013]))                  
+                :type "void")
+                nil [7953 8597])
+            ("websocket_http_request_parser_init" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("hp" variable
+                       (:pointer 1
+                        :type ("http_request_parser" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8648 8672])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [8673 8684]))                  
+                :type "void")
+                nil [8600 9065])
+            ("request_method" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9096 9107])
+                    ("at" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "signed char")
+                        (reparse-symbol arg-sub-list) [9108 9130])
+                    ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9131 9145]))                  
+                :type "void")
+                nil [9068 9393])
+            ("request_uri" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9421 9432])
+                    ("at" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "signed char")
+                        (reparse-symbol arg-sub-list) [9433 9455])
+                    ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9456 9470]))                  
+                :type "void")
+                nil [9396 9715])
+            ("fragment" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9740 9751])
+                    ("at" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "signed char")
+                        (reparse-symbol arg-sub-list) [9752 9774])
+                    ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9775 9789]))                  
+                :type "void")
+                nil [9718 10039])
+            ("request_path" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [10068 10079])
+                    ("at" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "signed char")
+                        (reparse-symbol arg-sub-list) [10080 10102])
+                    ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10103 10117]))                  
+                :type "void")
+                nil [10042 11006])
+            ("query_string" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [11035 11046])
+                    ("at" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "signed char")
+                        (reparse-symbol arg-sub-list) [11047 11069])
+                    ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11070 11084]))                  
+                :type "void")
+                nil [11009 11331])
+            ("http_version" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [11360 11371])
+                    ("at" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "signed char")
+                        (reparse-symbol arg-sub-list) [11372 11394])
+                    ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11395 11409]))                  
+                :type "void")
+                nil [11334 11658])
+            ("http_field" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [11685 11696])
+                    ("field" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "signed char")
+                        (reparse-symbol arg-sub-list) [11697 11722])
+                    ("flen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11728 11740])
+                    ("value" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "signed char")
+                        (reparse-symbol arg-sub-list) [11741 11766])
+                    ("vlen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11767 11779]))                  
+                :type "void")
+                nil [11661 13024])
+            ("header_done" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [13052 13063])
+                    ("at" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "signed char")
+                        (reparse-symbol arg-sub-list) [13064 13086])
+                    ("length" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13087 13101]))                  
+                :type "void")
+                nil [13027 13119])
+            ("ngx_tcp_websocket_parse_protocol" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ev" variable
+                       (:pointer 1
+                        :type ("ngx_event_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13168 13184]))                  
+                :type "void")
+                nil [13122 16025])
+            ("websocket_http_request_parser_execute" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("hp" variable
+                       (:pointer 1
+                        :type ("http_request_parser" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16084 16108]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [16028 17055])
+            ("ngx_tcp_websocket_init_upstream" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("ngx_connection_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17103 17123])
+                    ("s" variable
+                       (:pointer 1
+                        :type ("ngx_tcp_session_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17124 17145]))                  
+                :type "void")
+                nil [17058 19388])
+            ("ngx_tcp_websocket_find_virtual_server" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("ngx_tcp_session_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19464 19485])
+                    ("ctx" variable
+                       (:pointer 1
+                        :type ("ngx_tcp_websocket_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19491 19520]))                  
+                :type ("ngx_tcp_virtual_server_t" type (:type "class") nil nil))
+                nil [19391 20220])
+            ("ngx_tcp_websocket_find_path_upstream" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("ngx_tcp_session_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20293 20314])
+                    ("ctx" variable
+                       (:pointer 1
+                        :type ("ngx_tcp_websocket_ctx_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20319 20348]))                  
+                :type ("ngx_tcp_path_upstream_t" type (:type "class") nil nil))
+                nil [20223 20867])
+            ("ngx_tcp_upstream_websocket_proxy_init_handler" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("ngx_tcp_session_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20929 20950])
+                    ("u" variable
+                       (:pointer 1
+                        :type ("ngx_tcp_upstream_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20955 20977]))                  
+                :type "void")
+                nil [20870 22629])
+            ("ngx_tcp_websocket_proxy_handler" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ev" variable
+                       (:pointer 1
+                        :type ("ngx_event_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22676 22692]))                  
+                :type "void")
+                nil [22632 28654])
+            ("ngx_tcp_websocket_pass" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28694 28709])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28710 28729])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [28730 28741]))                  
+                :type "char")
+                nil [28657 30765])
+            ("ngx_tcp_websocket_create_conf" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30812 30827]))                  
+                :type "void")
+                nil [30768 31372])
+            ("ngx_tcp_websocket_merge_conf" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31418 31433])
+                    ("parent" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [31434 31447])
+                    ("child" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [31448 31460]))                  
+                :type "char")
+                nil [31375 32918]))          
+    :file "ngx_tcp_websocket_proxy_module.c"
+    :pointmax 32919
+    :fsize 32918
+    :lastmodtime '(21142 60557 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ngx_tcp_generic_proxy_module.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("ngx_config.h" include (:system-flag t) nil [3 26])
+            ("ngx_core.h" include (:system-flag t) nil [27 48])
+            ("ngx_tcp.h" include (:system-flag t) nil [49 69])
+            ("ngx_tcp_proxy_ctx_t" type
+               (:typedef ("ngx_tcp_proxy_s" type (:type "struct") nil nil)
+                :superclasses "ngx_tcp_proxy_s"
+                :type "typedef")
+                nil [72 205])
+            ("ngx_tcp_proxy_s" type
+               (:members 
+                  ( ("upstream" variable
+                       (:pointer 1
+                        :type ("ngx_peer_connection_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [109 144])
+                    ("buffer" variable
+                       (:pointer 1
+                        :type ("ngx_buf_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [149 182]))                  
+                :type "struct")
+                nil [72 205])
+            ("ngx_tcp_proxy_conf_t" type
+               (:typedef ("ngx_tcp_proxy_conf_s" type (:type "struct") nil nil)
+                :superclasses "ngx_tcp_proxy_conf_s"
+                :type "typedef")
+                nil [208 388])
+            ("ngx_tcp_proxy_conf_s" type
+               (:members 
+                  ( ("upstream" variable (:type ("ngx_tcp_upstream_conf_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [250 285])
+                    ("url" variable (:type ("ngx_str_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [291 321])
+                    ("buffer_size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [326 364]))                  
+                :type "struct")
+                nil [208 388])
+            ("ngx_tcp_proxy_init_session" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("ngx_tcp_session_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [430 451]))                  
+                :type "void")
+                nil [391 452])
+            ("ngx_tcp_proxy_init_upstream" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("ngx_connection_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [495 515])
+                    ("s" variable
+                       (:pointer 1
+                        :type ("ngx_tcp_session_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [521 542]))                  
+                :type "void")
+                nil [454 543])
+            ("ngx_tcp_upstream_init_proxy_handler" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("ngx_tcp_session_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [592 613])
+                    ("u" variable
+                       (:pointer 1
+                        :type ("ngx_tcp_upstream_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [619 641]))                  
+                :type "void")
+                nil [544 642])
+            ("ngx_tcp_proxy_pass" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [675 690])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [691 710])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [711 722]))                  
+                :type "char")
+                nil [643 723])
+            ("ngx_tcp_proxy_dummy_read_handler" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ev" variable
+                       (:pointer 1
+                        :type ("ngx_event_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [769 785]))                  
+                :type "void")
+                nil [724 786])
+            ("ngx_tcp_proxy_dummy_write_handler" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ev" variable
+                       (:pointer 1
+                        :type ("ngx_event_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [833 849]))                  
+                :type "void")
+                nil [787 850])
+            ("ngx_tcp_proxy_handler" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ev" variable
+                       (:pointer 1
+                        :type ("ngx_event_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [885 901]))                  
+                :type "void")
+                nil [851 902])
+            ("ngx_tcp_proxy_create_conf" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [942 957]))                  
+                :type "void")
+                nil [903 958])
+            ("ngx_tcp_proxy_merge_conf" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [997 1012])
+                    ("parent" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1013 1026])
+                    ("child" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1031 1043]))                  
+                :type "char")
+                nil [959 1044])
+            ("ngx_tcp_server_types" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("ngx_keyval_t" type (:type "class") nil nil))
+                nil [1046 1207])
+            ("ngx_tcp_generic_protocol" variable
+               (:typemodifiers ("static")
+                :type ("ngx_tcp_protocol_t" type (:type "class") nil nil))
+                nil [1209 1451])
+            ("ngx_tcp_proxy_commands" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("ngx_command_t" type (:type "class") nil nil))
+                nil [1454 2625])
+            ("ngx_tcp_proxy_module_ctx" variable
+               (:typemodifiers ("static")
+                :type ("ngx_tcp_module_t" type (:type "class") nil nil))
+                nil [2628 3045])
+            ("ngx_tcp_proxy_module" variable (:type ("ngx_module_t" type (:type "class") nil nil)) nil [3048 3755])
+            ("ngx_tcp_proxy_init_session" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("ngx_tcp_session_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3798 3819]))                  
+                :type "void")
+                nil [3758 4559])
+            ("ngx_tcp_proxy_dummy_write_handler" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("wev" variable
+                       (:pointer 1
+                        :type ("ngx_event_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4608 4625]))                  
+                :type "void")
+                nil [4562 4935])
+            ("ngx_tcp_proxy_dummy_read_handler" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("rev" variable
+                       (:pointer 1
+                        :type ("ngx_event_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4983 5000]))                  
+                :type "void")
+                nil [4938 5308])
+            ("ngx_tcp_proxy_init_upstream" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("ngx_connection_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5352 5372])
+                    ("s" variable
+                       (:pointer 1
+                        :type ("ngx_tcp_session_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5373 5394]))                  
+                :type "void")
+                nil [5311 6463])
+            ("ngx_tcp_upstream_init_proxy_handler" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("ngx_tcp_session_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6515 6536])
+                    ("u" variable
+                       (:pointer 1
+                        :type ("ngx_tcp_upstream_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6537 6559]))                  
+                :type "void")
+                nil [6466 8178])
+            ("ngx_tcp_proxy_handler" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ev" variable
+                       (:pointer 1
+                        :type ("ngx_event_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8215 8231]))                  
+                :type "void")
+                nil [8181 15397])
+            ("ngx_tcp_proxy_pass" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15433 15448])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15449 15468])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [15469 15480]))                  
+                :type "char")
+                nil [15400 16570])
+            ("ngx_tcp_proxy_create_conf" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16613 16628]))                  
+                :type "void")
+                nil [16573 17007])
+            ("ngx_tcp_proxy_merge_conf" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17049 17064])
+                    ("parent" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [17065 17078])
+                    ("child" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [17079 17091]))                  
+                :type "char")
+                nil [17010 17712]))          
+    :file "ngx_tcp_generic_proxy_module.c"
+    :pointmax 17713
+    :fsize 17712
+    :lastmodtime '(21142 60557 0 0)
+    :unmatched-syntax 'nil
+    )
+    (semanticdb-table "ngx_tcp_ssl_module.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("ngx_config.h" include (:system-flag t) nil [2 25])
+            ("ngx_core.h" include (:system-flag t) nil [26 47])
+            ("ngx_tcp.h" include (:system-flag t) nil [48 68])
+            ("NGX_DEFAULT_CIPHERS" variable (:constant-flag t) nil [79 98])
+            ("ngx_tcp_ssl_create_srv_conf" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [270 285]))                  
+                :type "void")
+                nil [229 286])
+            ("ngx_tcp_ssl_merge_srv_conf" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [327 342])
+                    ("parent" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [347 360])
+                    ("child" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [361 373]))                  
+                :type "char")
+                nil [287 374])
+            ("ngx_tcp_ssl_enable" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [408 423])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [424 443])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [448 459]))                  
+                :type "char")
+                nil [376 460])
+            ("ngx_tcp_ssl_session_cache" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [500 515])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [516 535])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [540 551]))                  
+                :type "char")
+                nil [461 552])
+            ("ngx_tcp_ssl_protocols" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("ngx_conf_bitmask_t" type (:type "class") nil nil))
+                nil [555 929])
+            ("ngx_tcp_ssl_verify" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("ngx_conf_enum_t" type (:type "class") nil nil))
+                nil [932 1104])
+            ("ngx_tcp_ssl_commands" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("ngx_command_t" type (:type "class") nil nil))
+                nil [1107 4342])
+            ("ngx_tcp_ssl_module_ctx" variable
+               (:typemodifiers ("static")
+                :type ("ngx_tcp_module_t" type (:type "class") nil nil))
+                nil [4345 4751])
+            ("ngx_tcp_ssl_module" variable (:type ("ngx_module_t" type (:type "class") nil nil)) nil [4754 5459])
+            ("ngx_tcp_ssl_sess_id_ctx" variable
+               (:typemodifiers ("static")
+                :type ("ngx_str_t" type (:type "class") nil nil))
+                nil [5462 5523])
+            ("ngx_tcp_ssl_create_srv_conf" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5568 5583]))                  
+                :type "void")
+                nil [5526 6476])
+            ("ngx_tcp_ssl_merge_srv_conf" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6520 6535])
+                    ("parent" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6536 6549])
+                    ("child" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6550 6562]))                  
+                :type "char")
+                nil [6479 12346])
+            ("ngx_tcp_ssl_enable" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12382 12397])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12398 12417])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [12418 12429]))                  
+                :type "char")
+                nil [12349 12706])
+            ("ngx_tcp_ssl_session_cache" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12749 12764])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12765 12784])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [12785 12796]))                  
+                :type "char")
+                nil [12709 15752]))          
+    :file "ngx_tcp_ssl_module.c"
+    :pointmax 15753
+    :fsize 15752
+    :lastmodtime '(21142 60557 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("NGX_DEFAULT_CIPHERS" . ((string "\"HIGH:!aNULL:!MD5\"" 100 . 118)))
+          )
+
+    )
+   (semanticdb-table "ngx_tcp_upstream_ip_hash_module.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("ngx_config.h" include (:system-flag t) nil [2 25])
+            ("ngx_core.h" include (:system-flag t) nil [26 47])
+            ("ngx_tcp.h" include (:system-flag t) nil [48 68])
+            ("ngx_tcp_upstream_ip_hash_peer_data_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("rrp" variable (:type ("ngx_tcp_upstream_rr_peer_data_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [137 176])
+                          ("hash" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [182 222])
+                          ("addr" variable
+                             (:dereference 1
+                              :type ("u_char" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [228 271])
+                          ("tries" variable (:type ("u_char" type (:type "class") nil nil)) (reparse-symbol classsubparts) [277 318])
+                          ("get_rr_peer" variable (:type ("ngx_event_get_peer_pt" type (:type "class") nil nil)) (reparse-symbol classsubparts) [324 371]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [71 411])
+            ("ngx_tcp_upstream_init_ip_hash_peer" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("ngx_tcp_session_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [466 487])
+                    ("us" variable
+                       (:pointer 1
+                        :type ("ngx_tcp_upstream_srv_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [492 524]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [414 525])
+            ("ngx_tcp_upstream_get_ip_hash_peer" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("pc" variable
+                       (:pointer 1
+                        :type ("ngx_peer_connection_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [577 603])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [608 619]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [526 620])
+            ("ngx_tcp_upstream_ip_hash" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [659 674])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [675 694])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [699 710]))                  
+                :type "char")
+                nil [621 711])
+            ("ngx_tcp_upstream_ip_hash_commands" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("ngx_command_t" type (:type "class") nil nil))
+                nil [714 936])
+            ("ngx_tcp_upstream_ip_hash_module_ctx" variable
+               (:typemodifiers ("static")
+                :type ("ngx_tcp_module_t" type (:type "class") nil nil))
+                nil [939 1352])
+            ("ngx_tcp_upstream_ip_hash_module" variable (:type ("ngx_module_t" type (:type "class") nil nil)) nil [1355 2073])
+            ("ngx_tcp_upstream_init_ip_hash" function
+               (:arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2116 2131])
+                    ("us" variable
+                       (:pointer 1
+                        :type ("ngx_tcp_upstream_srv_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2132 2164]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [2076 2340])
+            ("ngx_tcp_upstream_init_ip_hash_peer" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("ngx_tcp_session_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2395 2416])
+                    ("us" variable
+                       (:pointer 1
+                        :type ("ngx_tcp_upstream_srv_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2421 2453]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [2343 3452])
+            ("ngx_tcp_upstream_get_ip_hash_peer" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pc" variable
+                       (:pointer 1
+                        :type ("ngx_peer_connection_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3506 3532])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3533 3544]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [3455 5690])
+            ("ngx_tcp_upstream_ip_hash" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5732 5747])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5748 5767])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [5768 5779]))                  
+                :type "char")
+                nil [5693 6211]))          
+    :file "ngx_tcp_upstream_ip_hash_module.c"
+    :pointmax 6212
+    :fsize 6211
+    :lastmodtime '(21142 60557 0 0)
+    :unmatched-syntax 'nil
+    )
+    (semanticdb-table "ngx_tcp_monitor_server_module.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("ngx_config.h" include (:system-flag t) nil [72 95])
+            ("ngx_core.h" include (:system-flag t) nil [96 117])
+            ("ngx_tcp.h" include (:system-flag t) nil [118 138])
+            ("ngx_tcp_monitor_header_t" type
+               (:typedef ("ngx_tcp_monitor_header_s" type (:type "struct") nil nil)
+                :superclasses "ngx_tcp_monitor_header_s"
+                :type "typedef")
+                nil [259 389])
+            ("ngx_tcp_monitor_header_s" type
+               (:members 
+                  ( ("length" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [305 321])
+                    ("type" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [326 340])
+                    ("spare0" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [345 361]))                  
+                :type "struct")
+                nil [259 389])
+            ("HEADER_LENGTH" variable (:constant-flag t) nil [399 412])
+            ("monitor_packet_size" variable (:constant-flag t) nil [455 474])
+            ("MONITOR_TYPE_OFFSET" variable (:constant-flag t) nil [678 697])
+            ("monitor_packet_type" variable (:constant-flag t) nil [747 766])
+            ("PACKET_TYPE_JSON" variable (:constant-flag t) nil [903 919])
+            ("PACKET_TYPE_TLV" variable (:constant-flag t) nil [934 949])
+            ("PACKET_TYPE_BSON" variable (:constant-flag t) nil [965 981])
+            ("PACKET_TYPE_MSGPACK" variable (:constant-flag t) nil [996 1015])
+            ("ngx_tcp_monitor_ctx_t" type
+               (:typedef ("ngx_tcp_monitor_ctx_s" type (:type "struct") nil nil)
+                :superclasses "ngx_tcp_monitor_ctx_s"
+                :type "typedef")
+                nil [1020 1494])
+            ("ngx_tcp_monitor_ctx_s" type
+               (:members 
+                  ( ("upstream" variable
+                       (:pointer 1
+                        :type ("ngx_peer_connection_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1063 1098])
+                    ("request_body" variable
+                       (:pointer 1
+                        :type ("ngx_buf_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1191 1230])
+                    ("request_len" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1235 1273])
+                    ("header_out" variable
+                       (:pointer 1
+                        :type ("ngx_buf_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1279 1316])
+                    ("reponse_body" variable
+                       (:pointer 1
+                        :type ("ngx_buf_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1321 1360])
+                    ("upstream_request_header" variable
+                       (:pointer 1
+                        :type ("ngx_buf_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1366 1416])
+                    ("upstream_request_tail" variable
+                       (:pointer 1
+                        :type ("ngx_buf_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1421 1469]))                  
+                :type "struct")
+                nil [1020 1494])
+            ("ngx_tcp_monitor_conf_t" type
+               (:typedef ("ngx_tcp_monitor_conf_s" type (:type "struct") nil nil)
+                :superclasses "ngx_tcp_monitor_conf_s"
+                :type "typedef")
+                nil [1497 1679])
+            ("ngx_tcp_monitor_conf_s" type
+               (:members 
+                  ( ("upstream" variable (:type ("ngx_tcp_upstream_conf_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1541 1576])
+                    ("url" variable (:type ("ngx_str_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1581 1611])
+                    ("queue_name" variable (:type ("ngx_str_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1616 1653]))                  
+                :type "struct")
+                nil [1497 1679])
+            ("ngx_tcp_monitor_init_session" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("ngx_tcp_session_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1879 1900]))                  
+                :type "void")
+                nil [1838 1901])
+            ("ngx_tcp_monitor_init_upstream" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("ngx_connection_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1946 1966])
+                    ("s" variable
+                       (:pointer 1
+                        :type ("ngx_tcp_session_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1972 1993]))                  
+                :type "void")
+                nil [1903 1994])
+            ("ngx_tcp_upstream_init_monitor_handler" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("ngx_tcp_session_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2045 2066])
+                    ("u" variable
+                       (:pointer 1
+                        :type ("ngx_tcp_upstream_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2072 2094]))                  
+                :type "void")
+                nil [1995 2095])
+            ("ngx_tcp_monitor_pass" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2130 2145])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2146 2165])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2166 2177]))                  
+                :type "char")
+                nil [2096 2178])
+            ("ngx_tcp_monitor_client_read_handler" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("rev" variable
+                       (:pointer 1
+                        :type ("ngx_event_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2227 2244]))                  
+                :type "void")
+                nil [2179 2245])
+            ("ngx_tcp_monitor_client_write_handler" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("wev" variable
+                       (:pointer 1
+                        :type ("ngx_event_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2295 2312]))                  
+                :type "void")
+                nil [2246 2313])
+            ("ngx_tcp_monitor_upstream_read_handler" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("rev" variable
+                       (:pointer 1
+                        :type ("ngx_event_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2364 2381]))                  
+                :type "void")
+                nil [2314 2382])
+            ("ngx_tcp_monitor_upstream_write_handler" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("wev" variable
+                       (:pointer 1
+                        :type ("ngx_event_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2434 2451]))                  
+                :type "void")
+                nil [2383 2452])
+            ("ngx_tcp_monitor_create_conf" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2494 2509]))                  
+                :type "void")
+                nil [2453 2510])
+            ("ngx_tcp_monitor_merge_conf" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2551 2566])
+                    ("parent" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2567 2580])
+                    ("child" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2585 2597]))                  
+                :type "char")
+                nil [2511 2598])
+            ("ngx_tcp_monitor_build_query" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("ngx_tcp_session_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2644 2665])
+                    ("header" variable
+                       (:pointer 2
+                        :type ("ngx_buf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2670 2689])
+                    ("tail" variable
+                       (:pointer 2
+                        :type ("ngx_buf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2690 2707]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [2599 2708])
+            ("ngx_tcp_generic_protocol" variable
+               (:typemodifiers ("static")
+                :type ("ngx_tcp_protocol_t" type (:type "class") nil nil))
+                nil [2710 2957])
+            ("ngx_tcp_monitor_commands" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("ngx_command_t" type (:type "class") nil nil))
+                nil [2960 4129])
+            ("ngx_tcp_monitor_module_ctx" variable
+               (:typemodifiers ("static")
+                :type ("ngx_tcp_module_t" type (:type "class") nil nil))
+                nil [4132 4551])
+            ("ngx_tcp_monitor_module" variable (:type ("ngx_module_t" type (:type "class") nil nil)) nil [4554 5263])
+            ("ngx_tcp_monitor_init_session" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("ngx_tcp_session_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5308 5329]))                  
+                :type "void")
+                nil [5266 6400])
+            ("ngx_tcp_monitor_client_read_handler" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("rev" variable
+                       (:pointer 1
+                        :type ("ngx_event_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6562 6579]))                  
+                :type "void")
+                nil [6514 9565])
+            ("ngx_tcp_monitor_client_write_handler" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("wev" variable
+                       (:pointer 1
+                        :type ("ngx_event_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9617 9634]))                  
+                :type "void")
+                nil [9568 9947])
+            ("ngx_tcp_monitor_upstream_read_handler" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("rev" variable
+                       (:pointer 1
+                        :type ("ngx_event_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10000 10017]))                  
+                :type "void")
+                nil [9950 10345])
+            ("ngx_tcp_monitor_upstream_write_handler" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("wev" variable
+                       (:pointer 1
+                        :type ("ngx_event_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10399 10416]))                  
+                :type "void")
+                nil [10348 13096])
+            ("ngx_tcp_monitor_build_query" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("ngx_tcp_session_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13144 13165])
+                    ("header" variable
+                       (:pointer 2
+                        :type ("ngx_buf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13166 13185])
+                    ("tail" variable
+                       (:pointer 2
+                        :type ("ngx_buf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13186 13203]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [13099 14407])
+            ("ngx_tcp_monitor_init_upstream" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("ngx_connection_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14453 14473])
+                    ("s" variable
+                       (:pointer 1
+                        :type ("ngx_tcp_session_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14474 14495]))                  
+                :type "void")
+                nil [14410 15435])
+            ("ngx_tcp_upstream_init_monitor_handler" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type ("ngx_tcp_session_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15489 15510])
+                    ("u" variable
+                       (:pointer 1
+                        :type ("ngx_tcp_upstream_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15511 15533]))                  
+                :type "void")
+                nil [15438 16888])
+            ("ngx_tcp_monitor_pass" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23171 23186])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23187 23206])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [23207 23218]))                  
+                :type "char")
+                nil [23136 24310])
+            ("ngx_tcp_monitor_create_conf" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24355 24370]))                  
+                :type "void")
+                nil [24313 24708])
+            ("ngx_tcp_monitor_merge_conf" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24752 24767])
+                    ("parent" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [24768 24781])
+                    ("child" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [24782 24794]))                  
+                :type "char")
+                nil [24711 25296]))          
+    :file "ngx_tcp_monitor_server_module.c"
+    :pointmax 25297
+    :fsize 25296
+    :lastmodtime '(21142 60557 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("monitor_packet_size" (spp-arg-list ("ptr") 474 . 479) . ((semantic-list "(*(u_char *)(ptr)  + \\
+                     (*((u_char *)(ptr) + 1) << 8)  + \\
+                     (*((u_char *)(ptr) + 2) << 16) + \\
+                     (*((u_char *)(ptr) + 3) << 24) )" 480 . 668)))
+          ("PACKET_TYPE_JSON" . ((number "1" 924 . 925)))
+          ("HEADER_LENGTH" . ((SIZEOF "sizeof" 413 . 419) (semantic-list "(ngx_tcp_monitor_header_t)" 419 . 445)))
+          ("PACKET_TYPE_BSON" . ((number "3" 986 . 987)))
+          ("PACKET_TYPE_TLV" . ((number "2" 955 . 956)))
+          ("monitor_packet_type" (spp-arg-list ("ptr") 766 . 771) . ((semantic-list "(*((u_char *)(ptr) + MONITOR_TYPE_OFFSET) + \\
+                      (*((u_char *)(ptr) + MONITOR_TYPE_OFFSET + 1) << 8) )" 772 . 893)))
+          ("PACKET_TYPE_MSGPACK" . ((number "4" 1017 . 1018)))
+          ("MONITOR_TYPE_OFFSET" . ((symbol "offsetof" 698 . 706) (semantic-list "(ngx_tcp_monitor_header_t, type)" 706 . 738)))
+          )
+
+    )
+   (semanticdb-table "ngx_tcp_upstream_busyness_module.c"
+    :major-mode 'c-mode
+    :tags nil
+    :file "ngx_tcp_upstream_busyness_module.c"
+    :pointmax 6466
+    :fsize 6465
+    :lastmodtime '(21142 60557 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!git!nginx_tcp_proxy_module!modules!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

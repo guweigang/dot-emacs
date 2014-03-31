@@ -1,0 +1,40 @@
+;; Object guweigang.github.io/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "guweigang.github.io/"
+  :tables (list 
+   (semanticdb-table "index.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("我的志愿是做一个校长 - 闭眼听世界" section nil nil [50 336])
+            ("闭眼听世界" section (:members 
+              ( ("闭眼听世界" section (:members 
+                  ( ("闭眼听世界" anchor nil nil [438 441])
+                    ("Blog" anchor nil nil [524 527])
+                    ("Tags" anchor nil nil [569 572])
+                    ("About" anchor nil nil [614 617])
+                    ("GitHub" anchor nil nil [661 664])
+                    ("RSS" anchor nil nil [730 733]))                  ) nil [411 1076])
+                ("我的志愿是做一个校长" section nil nil [1076 1408]))              ) nil [336 1408])
+            ("var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'cnwggu@gmail.com']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();" section (:members 
+              ( ("Emacs" anchor nil nil [1982 1985])
+                ("Org" anchor nil nil [2045 2048])
+                ("Guweigang" anchor nil nil [2149 2152])
+                ("org-page" anchor nil nil [2282 2285]))              ) nil [1408 2412]))          
+    :file "index.html"
+    :pointmax 2412
+    :fsize 3023
+    :lastmodtime '(21090 41218 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!git!guweigang.github.io!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

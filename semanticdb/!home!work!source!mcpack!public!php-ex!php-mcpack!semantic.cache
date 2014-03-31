@@ -1,0 +1,584 @@
+;; Object php-mcpack/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "php-mcpack/"
+  :tables (list 
+   (semanticdb-table "php_mc_pack_version.c"
+    :major-mode 'c-mode
+    :tags nil
+    :file "php_mc_pack_version.c"
+    :pointmax 1370
+    :fsize 1394
+    :lastmodtime '(21059 55480 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "php_mc_pack.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("PHP_MC_PACK_H" variable (:constant-flag t) nil [99 112])
+            ("mc_pack_module_entry" variable
+               (:typemodifiers ("extern")
+                :type ("zend_module_entry" type (:type "class") nil nil))
+                nil [114 160])
+            ("phpext_mc_pack_ptr" variable (:constant-flag t) nil [169 187])
+            ("PHP_MC_PACK_API" variable (:constant-flag t) nil [288 303])
+            ("PHP_MINIT_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("mc_pack" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [368 376]))                  
+                :type "int")
+                nil [349 377])
+            ("PHP_MSHUTDOWN_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("mc_pack" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [401 409]))                  
+                :type "int")
+                nil [378 410])
+            ("PHP_RINIT_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("mc_pack" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [430 438]))                  
+                :type "int")
+                nil [411 439])
+            ("PHP_RSHUTDOWN_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("mc_pack" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [463 471]))                  
+                :type "int")
+                nil [440 472])
+            ("PHP_MINFO_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("mc_pack" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [492 500]))                  
+                :type "int")
+                nil [473 501])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("mc_pack_perror" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [518 533]))                  
+                :type "int")
+                nil [505 534])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("mc_pack_array2pack" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [550 569]))                  
+                :type "int")
+                nil [537 570])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("mc_pack_pack2array" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [586 605]))                  
+                :type "int")
+                nil [573 606])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("mc_pack_text2pack" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [622 640]))                  
+                :type "int")
+                nil [609 641])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("mc_pack_pack2text" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [657 675]))                  
+                :type "int")
+                nil [644 676])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("mc_pack_get_version" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [692 712]))                  
+                :type "int")
+                nil [679 713]))          
+    :file "php_mc_pack.h"
+    :pointmax 881
+    :fsize 880
+    :lastmodtime '(19318 27099 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("phpext_mc_pack_ptr" . ((punctuation "&" 188 . 189) (symbol "mc_pack_module_entry" 189 . 209)))
+          ("PHP_MC_PACK_API")
+          ("PHP_MC_PACK_H")
+          )
+
+    )
+   (semanticdb-table "php_mc_pack.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("php.h" include nil nil [471 487])
+            ("php_ini.h" include nil nil [488 508])
+            ("ext/standard/info.h" include nil nil [509 539])
+            ("mc_pack.h" include nil nil [541 561])
+            ("php_mc_pack.h" include nil nil [562 586])
+            ("stdint.h" include nil nil [587 606])
+            ("mc_pack_functions" variable
+               (:dereference 1
+                :type ("zend_function_entry" type (:type "class") nil nil))
+                nil [609 875])
+            ("mc_pack_module_entry" variable (:type ("zend_module_entry" type (:type "class") nil nil)) nil [928 1266])
+            ("PHP_MC_PACK_V1" variable
+               (:pointer 1
+                :constant-flag t
+                :type "char")
+                nil [1739 1785])
+            ("PHP_MC_PACK_V2" variable
+               (:pointer 1
+                :constant-flag t
+                :type "char")
+                nil [1805 1851])
+            ("PHP_MC_PACK_MAX_VERSION" variable
+               (:constant-flag t
+                :type "int")
+                nil [1870 1908])
+            ("PHP_MC_PACK_TMPBUF_MIN" variable
+               (:constant-flag t
+                :type "int")
+                nil [1931 1971])
+            ("PHP_MINIT_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("mc_pack" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2145 2153]))                  
+                :type "int")
+                nil [2126 5034])
+            ("PHP_MSHUTDOWN_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("mc_pack" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5087 5095]))                  
+                :type "int")
+                nil [5064 5145])
+            ("PHP_RINIT_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("mc_pack" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5189 5197]))                  
+                :type "int")
+                nil [5170 5218])
+            ("PHP_RSHUTDOWN_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("mc_pack" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5268 5276]))                  
+                :type "int")
+                nil [5245 5297])
+            ("PHP_MINFO_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("mc_pack" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5350 5358]))                  
+                :type "int")
+                nil [5331 5510])
+            ("php_mcpack_efree" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("buff" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [5624 5635]))                  
+                :type "void")
+                nil [5588 5678])
+            ("php_mc_pack_version" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("version_str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5866 5890])
+                    ("version_len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5891 5910]))                  
+                :type "int")
+                nil [5828 6274])
+            ("array_add_long" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("array" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6561 6573])
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) [6574 6583])
+                    ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6584 6595])
+                    ("value" variable (:type "long") (reparse-symbol arg-sub-list) [6596 6607]))                  
+                :type "int")
+                nil [6528 6807])
+            ("array_add_stringl" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("array" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6879 6891])
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) [6892 6901])
+                    ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6902 6913])
+                    ("value" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6914 6927])
+                    ("length" variable (:type "int") (reparse-symbol arg-sub-list) [6928 6939]))                  
+                :type "int")
+                nil [6843 7167])
+            ("array_add_string" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("array" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7241 7253])
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) [7254 7263])
+                    ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7264 7275])
+                    ("value" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7276 7289]))                  
+                :type "int")
+                nil [7206 7499])
+            ("array_add_zval" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("array" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7567 7579])
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) [7580 7589])
+                    ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7590 7601])
+                    ("value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7602 7614]))                  
+                :type "int")
+                nil [7534 7814])
+            ("array_add_double" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("array" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7883 7895])
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) [7896 7905])
+                    ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7906 7917])
+                    ("value" variable (:type "double") (reparse-symbol arg-sub-list) [7918 7931]))                  
+                :type "int")
+                nil [7848 8142])
+            ("array_add_bool" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("array" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8207 8219])
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) [8220 8229])
+                    ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8230 8241])
+                    ("value" variable (:type "int") (reparse-symbol arg-sub-list) [8242 8252]))                  
+                :type "int")
+                nil [8174 8459])
+            ("array_add_null" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("array" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8522 8534])
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) [8535 8544])
+                    ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8545 8556]))                  
+                :type "int")
+                nil [8489 8749])
+            ("MAX_64_DIGITS" variable (:constant-flag t) nil [8854 8867])
+            ("ADD_NUM_TO_ARRAY_AS_STRING" variable (:constant-flag t) nil [8999 9025])
+            ("php_mc_pack_create_array" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pack" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("mc_pack_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9658 9680])
+                    ("pack_type" variable (:type "int") (reparse-symbol arg-sub-list) [9681 9695])
+                    ("array" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9696 9708]))                  
+                :type "int")
+                nil [9622 13793])
+            ("php_mc_pack_get_array_type" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("array" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13864 13876]))                  
+                :type "int")
+                nil [13826 14187])
+            ("VALIDATE_PACK_OR_RETURN" variable (:constant-flag t) nil [14228 14251])
+            ("php_mc_pack_fill_pack_by_name" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ppack" variable
+                       (:pointer 1
+                        :type ("mc_pack_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14502 14519])
+                    ("array" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14520 14532]))                  
+                :type "int")
+                nil [14461 14533])
+            ("php_mc_pack_fill_pack_by_index" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ppack" variable
+                       (:pointer 1
+                        :type ("mc_pack_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14618 14635])
+                    ("array" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14636 14648]))                  
+                :type "int")
+                nil [14576 14649])
+            ("TARGET_TYPE" type
+               (:typedef ("_TARGET_TYPE" type (:type "enum") nil nil)
+                :superclasses "_TARGET_TYPE"
+                :type "typedef")
+                nil [14681 15080])
+            ("_TARGET_TYPE" type
+               (:members 
+                  ( ("TARGET_TYPE_ERROR" variable
+                       (:constant-flag t
+                        :default-value (14730 14732)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14710 14732])
+                    ("TARGET_TYPE_UNKNOWN" variable
+                       (:constant-flag t
+                        :default-value (14757 14758)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14735 14758])
+                    ("TARGET_TYPE_INT32" variable
+                       (:constant-flag t
+                        :default-value (14820 14821)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14800 14821])
+                    ("TARGET_TYPE_UINT32" variable
+                       (:constant-flag t
+                        :default-value (14845 14846)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14824 14846])
+                    ("TARGET_TYPE_INT64" variable
+                       (:constant-flag t
+                        :default-value (14869 14870)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14849 14870])
+                    ("TARGET_TYPE_UINT64" variable
+                       (:constant-flag t
+                        :default-value (14894 14895)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14873 14895])
+                    ("TARGET_TYPE_FLOAT" variable
+                       (:constant-flag t
+                        :default-value (14918 14919)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14898 14919])
+                    ("TARGET_TYPE_DOUBLE" variable
+                       (:constant-flag t
+                        :default-value (14943 14944)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14922 14944])
+                    ("TARGET_TYPE_STR" variable
+                       (:constant-flag t
+                        :default-value (14965 14966)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14947 14966])
+                    ("TARGET_TYPE_RAW" variable
+                       (:constant-flag t
+                        :default-value (14987 14988)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14969 14988])
+                    ("TARGET_TYPE_ARRAY" variable
+                       (:constant-flag t
+                        :default-value (15011 15013)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [14991 15013])
+                    ("TARGET_TYPE_BOOL" variable
+                       (:constant-flag t
+                        :default-value (15038 15040)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [15019 15040])
+                    ("TARGET_TYPE_NULL" variable
+                       (:constant-flag t
+                        :default-value (15062 15064)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [15043 15064]))                  
+                :type "enum")
+                nil [14681 15080])
+            ("guess_type_from_zval" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15153 15165]))                  
+                :type ("TARGET_TYPE" type (:type "class") nil nil))
+                nil [15113 16229])
+            ("get_type_from_item_name" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("original_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16308 16334])
+                    ("new_name" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16335 16357]))                  
+                :type ("TARGET_TYPE" type (:type "class") nil nil))
+                nil [16265 17578])
+            ("check_compatiable_target_type" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("specified" variable (:type ("TARGET_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17658 17680])
+                    ("guessed" variable (:type ("TARGET_TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17683 17703])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17704 17721])
+                    ("value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17722 17734]))                  
+                :type "int")
+                nil [17610 18658])
+            ("CHECK_STRING_NUM_TYPE" variable (:constant-flag t) nil [18706 18727])
+            ("php_mc_pack_add_zval" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ppack" variable
+                       (:pointer 1
+                        :type ("mc_pack_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19672 19689])
+                    ("original_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [19690 19710])
+                    ("value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19711 19723]))                  
+                :type "int")
+                nil [19640 25953])
+            ("php_mc_pack_fill_pack_by_name" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ppack" variable
+                       (:pointer 1
+                        :type ("mc_pack_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25996 26013])
+                    ("array" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26014 26026]))                  
+                :type "int")
+                nil [25955 27148])
+            ("php_mc_pack_fill_pack_by_index" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ppack" variable
+                       (:pointer 1
+                        :type ("mc_pack_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27193 27210])
+                    ("array" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27211 27223]))                  
+                :type "int")
+                nil [27151 27872])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("mc_pack_pack2array" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28140 28159]))                  
+                :type "int")
+                nil [28127 30050])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("mc_pack_array2pack" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30840 30859]))                  
+                :type "int")
+                nil [30827 34624])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("mc_pack_text2pack" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35227 35245]))                  
+                :type "int")
+                nil [35214 39094])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("mc_pack_pack2text" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39772 39790]))                  
+                :type "int")
+                nil [39759 42289])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("mc_pack_perror" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42552 42567]))                  
+                :type "int")
+                nil [42539 42841])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("mc_pack_get_version" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43233 43253]))                  
+                :type "int")
+                nil [43220 44394]))          
+    :file "php_mc_pack.c"
+    :pointmax 44533
+    :fsize 46974
+    :lastmodtime '(21059 55523 0 0)
+    :unmatched-syntax '((semantic-list 1735 . 1737) (symbol 1724 . 1735) (semantic-list 1669 . 1723) (symbol 1656 . 1669) (string 1691 . 1700) (string 1670 . 1689) (semantic-list 1602 . 1654) (symbol 1589 . 1602) (string 1628 . 1634) (string 1603 . 1626) (semantic-list 1536 . 1587) (symbol 1523 . 1536) (string 1564 . 1567) (string 1537 . 1562) (semantic-list 1519 . 1521) (symbol 1506 . 1519))
+    :lexical-table 
+        '(("VALIDATE_PACK_OR_RETURN" (spp-arg-list ("pack") 14251 . 14257) . 
+              ((DO "do" 14258 . 14260) (semantic-list "{\\
+	if (MC_PACK_PTR_ERR(pack) != 0) { \\
+		php_error(E_WARNING,\"Create subpack in mc_pack failed/\"); \\
+		return MC_PACK_PTR_ERR(pack); \\
+	} \\
+}" 14261 . 14403) (WHILE "while" 14404 . 14409) (semantic-list "(0)" 14410 . 14413) (punctuation ";" 14413 . 14414)))
+          ("MAX_64_DIGITS" . ((number "22" 8868 . 8870)))
+          ("ADD_NUM_TO_ARRAY_AS_STRING" (spp-arg-list ("array" "pack_type" "name" "pvalue" "format" "type") 9025 . 9071) . 
+              ((DO "do" 9072 . 9074) (semantic-list "{\\
+	char buffer[MAX_64_DIGITS]; \\
+	type value = *((type *)pvalue); \\
+	snprintf(buffer, MAX_64_DIGITS, format, value); \\
+	array_add_string(array, pack_type, name, buffer); \\
+}" 9075 . 9249) (WHILE "while" 9250 . 9255) (semantic-list "(0)" 9256 . 9259) (punctuation ";" 9259 . 9260)))
+          ("CHECK_STRING_NUM_TYPE" (spp-arg-list ("strval" "type" "mc_pack_type" "func" "arg...") 18727 . 18769) . 
+              ((DO "do" 18773 . 18775) (semantic-list "{\\
+		char *end = NULL;\\
+		double dval;\\
+		type val; \\
+		errno = 0;\\
+		val = (type)func(strval, &end,##arg);\\
+		if (0 == errno && \\
+			end != strval && *end == '\\0') { \\
+			return mc_pack_put_##mc_pack_type(ppack, name, (type)val); \\
+		}\\
+	    errno = 0; \\
+		dval = (double)strtod(strval, &end); \\
+		if (0 == errno && \\
+			end != strval && *end == '\\0') { \\
+			if ((type)dval == dval) { \\
+				return mc_pack_put_##mc_pack_type(ppack, name, (type)dval); \\
+			} \\
+		} \\
+	}" 18776 . 19245) (WHILE "while" 19246 . 19251) (semantic-list "(0)" 19251 . 19254) (punctuation ";" 19254 . 19255)))
+          )
+
+    )
+   )
+  :file "!home!work!source!mcpack!public!php-ex!php-mcpack!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

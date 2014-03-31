@@ -1,0 +1,996 @@
+;; Object php-binary-json/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "php-binary-json/"
+  :tables (list 
+   (semanticdb-table "php_binaryjson.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("PHP_BINARYJSON_H" variable (:constant-flag t) nil [1178 1194])
+            ("PHP_BINARYJSON_VERSION" variable (:constant-flag t) nil [1204 1226])
+            ("PHP_BINARYJSON_EXTNAME" variable (:constant-flag t) nil [1241 1263])
+            ("binaryjson_module_entry" variable
+               (:typemodifiers ("extern")
+                :type ("zend_module_entry" type (:type "class") nil nil))
+                nil [1278 1327])
+            ("phpext_binaryjson_ptr" variable (:constant-flag t) nil [1336 1357])
+            ("PHP_BINARYJSON_API" variable (:constant-flag t) nil [1501 1519])
+            ("PHP_MINIT_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("binaryjson" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1658 1669]))                  
+                :type "int")
+                nil [1639 1670])
+            ("PHP_MSHUTDOWN_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("binaryjson" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1694 1705]))                  
+                :type "int")
+                nil [1671 1706])
+            ("PHP_RINIT_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("binaryjson" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1726 1737]))                  
+                :type "int")
+                nil [1707 1738])
+            ("PHP_RSHUTDOWN_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("binaryjson" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1762 1773]))                  
+                :type "int")
+                nil [1739 1774])
+            ("PHP_MINFO_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("binaryjson" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1794 1805]))                  
+                :type "int")
+                nil [1775 1806])
+            ("OP_REPLY" variable (:constant-flag t) nil [1902 1910])
+            ("OP_MSG" variable (:constant-flag t) nil [1921 1927])
+            ("OP_UPDATE" variable (:constant-flag t) nil [1941 1950])
+            ("OP_INSERT" variable (:constant-flag t) nil [1964 1973])
+            ("OP_GET_BY_OID" variable (:constant-flag t) nil [1987 2000])
+            ("OP_QUERY" variable (:constant-flag t) nil [2014 2022])
+            ("OP_GET_MORE" variable (:constant-flag t) nil [2036 2047])
+            ("OP_DELETE" variable (:constant-flag t) nil [2061 2070])
+            ("buffer" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("start" variable
+                             (:pointer 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [2095 2107])
+                          ("pos" variable
+                             (:pointer 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [2109 2119])
+                          ("end" variable
+                             (:pointer 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [2121 2131]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [2077 2141])
+            ("binaryjson_msg_header" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("length" variable (:type "int") (reparse-symbol classsubparts) [2161 2172])
+                          ("request_id" variable (:type "int") (reparse-symbol classsubparts) [2174 2189])
+                          ("response_to" variable (:type "int") (reparse-symbol classsubparts) [2191 2207])
+                          ("op" variable (:type "int") (reparse-symbol classsubparts) [2209 2216]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [2143 2241])
+            ("BUF_REMAINING" variable (:constant-flag t) nil [2251 2264])
+            ("CREATE_BUF" variable (:constant-flag t) nil [2294 2304])
+            ("CHECK_BUFFER_LEN" variable (:constant-flag t) nil [2417 2433])
+            ("CREATE_MSG_HEADER" variable (:constant-flag t) nil [2729 2746])
+            ("PHP_BINARYJSON_SERIALIZE_KEY" variable (:constant-flag t) nil [2876 2904])
+            ("length" variable (:type "int") nil [2775 2786])
+            ("request_id" variable (:type "int") nil [2797 2814])
+            ("response_to" variable (:type "int") nil [2825 2843])
+            ("op" variable (:type "int") nil [2854 2866])
+            ("PHP_BINARYJSON_SERIALIZE_KEY" variable (:constant-flag t) nil [2876 2904])
+            ("DEFAULT_MAX_MESSAGE_SIZE" variable (:constant-flag t) nil [3091 3115])
+            ("DEFAULT_MAX_DOCUMENT_SIZE" variable (:constant-flag t) nil [3144 3169])
+            ("MSG_HEADER_SIZE" variable (:constant-flag t) nil [3198 3213])
+            ("INITIAL_BUF_SIZE" variable (:constant-flag t) nil [3226 3242])
+            ("INT_32" variable (:constant-flag t) nil [3256 3262])
+            ("INT_64" variable (:constant-flag t) nil [3273 3279])
+            ("DOUBLE_64" variable (:constant-flag t) nil [3290 3299])
+            ("BYTE_8" variable (:constant-flag t) nil [3310 3316])
+            ("PREP" variable (:constant-flag t) nil [3328 3332])
+            ("NO_PREP" variable (:constant-flag t) nil [3343 3350])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("binaryjson_encode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3367 3385]))                  
+                :type "int")
+                nil [3354 3386])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("binaryjson_decode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3400 3418]))                  
+                :type "int")
+                nil [3387 3419])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("binaryjson_header_pack" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3433 3456]))                  
+                :type "int")
+                nil [3420 3457])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("binaryjson_header_unpack" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3471 3496]))                  
+                :type "int")
+                nil [3458 3497])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("binaryjson_msg_pack" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3511 3531]))                  
+                :type "int")
+                nil [3498 3532])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("binaryjson_msg_unpack" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3546 3568]))                  
+                :type "int")
+                nil [3533 3569])
+            ("request_id" variable (:type "long") nil [3609 3625])
+            ("machine" variable (:type "int") nil [3626 3648])
+            ("pid" variable (:type "int") nil [3626 3648])
+            ("inc" variable (:type "int") nil [3626 3648])
+            ("BINARYJSON_G" variable (:constant-flag t) nil [4322 4334])
+            ("bullsoft_php.h" include nil nil [4370 4395]))          
+    :file "php_binaryjson.h"
+    :pointmax 4565
+    :fsize 4564
+    :lastmodtime '(21078 17296 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("PREP" . ((number "1" 3369 . 3370)))
+          ("OP_REPLY" . ((number "1" 1911 . 1912)))
+          ("BINARYJSON_G" (spp-arg-list ("v") 4370 . 4373) . ((semantic-list "(binaryjson_globals.v)" 4374 . 4396)))
+          ("PHP_BINARYJSON_H")
+          ("phpext_binaryjson_ptr" . ((punctuation "&" 1358 . 1359) (symbol "binaryjson_module_entry" 1359 . 1382)))
+          ("INT_64" . ((number "8" 3316 . 3317)))
+          ("CHECK_BUFFER_LEN" (spp-arg-list ("len") 2433 . 2438) . 
+              ((DO "do" 2442 . 2444) (semantic-list "{ \\
+		if (buf + (len) >= buf_end) { \\
+			zval_ptr_dtor(&value); \\
+			zend_throw_exception_ex(zend_exception_get_default(TSRMLS_C), 21 TSRMLS_CC, \"Reading data for type %02x would exceed buffer for key \\\"%s\\\"\", (unsigned char) type, name); \\
+			return 0; \\
+		} \\
+	}" 2445 . 2709) (WHILE "while" 2710 . 2715) (semantic-list "(0)" 2716 . 2719)))
+          ("DEFAULT_MAX_MESSAGE_SIZE" . ((semantic-list "(32 * 1024 * 1024)" 3153 . 3171)))
+          ("DEFAULT_MAX_DOCUMENT_SIZE" . ((semantic-list "(16 * 1024 * 1024)" 3206 . 3224)))
+          ("MSG_HEADER_SIZE" . ((number "20" 3250 . 3252)))
+          ("OP_MSG" . ((number "1000" 1928 . 1932)))
+          ("INT_32" . ((number "4" 3299 . 3300)))
+          ("PHP_BINARYJSON_API" . ((symbol "__attribute__" 1520 . 1533) (semantic-list "((visibility(\"default\")))" 1534 . 1559)))
+          ("PHP_BINARYJSON_SERIALIZE_KEY" (spp-arg-list ("type") 2904 . 2910) . 
+              ((symbol "php_binaryjson_set_type" 2914 . 2937) (semantic-list "(buf, type)" 2937 . 2948) (punctuation ";" 2948 . 2949) (symbol "php_binaryjson_serialize_key" 2953 . 2981) (semantic-list "(buf, name, name_len, prep TSRMLS_CC)" 2981 . 3018) (punctuation ";" 3018 . 3019) (IF "if" 3023 . 3025) (semantic-list "(EG(exception))" 3026 . 3041) (semantic-list "{ \\
+		return ZEND_HASH_APPLY_STOP; \\
+	}" 3042 . 3081)))
+          ("OP_INSERT" . ((number "2002" 1974 . 1978)))
+          ("PHP_BINARYJSON_VERSION" . ((string "\"0.1\"" 1227 . 1232)))
+          ("OP_GET_BY_OID" . ((number "2003" 2001 . 2005)))
+          ("INITIAL_BUF_SIZE" . ((number "4096" 3279 . 3283)))
+          ("DOUBLE_64" . ((number "8" 3336 . 3337)))
+          ("NO_PREP" . ((number "0" 3387 . 3388)))
+          ("OP_UPDATE" . ((number "2001" 1951 . 1955)))
+          ("BYTE_8" . ((number "1" 3353 . 3354)))
+          ("OP_GET_MORE" . ((number "2005" 2048 . 2052)))
+          ("OP_DELETE" . ((number "2006" 2071 . 2075)))
+          ("CREATE_MSG_HEADER" (spp-arg-list ("rid" "rto" "opcode") 2746 . 2764) . 
+              ((symbol "binaryjson_msg_header" 2771 . 2792) (symbol "header" 2793 . 2799) (punctuation ";" 2799 . 2800) (symbol "header" 2804 . 2810) (punctuation "." 2810 . 2811) (symbol "length" 2811 . 2817) (punctuation "=" 2818 . 2819) (number "0" 2820 . 2821) (punctuation ";" 2821 . 2822) (symbol "header" 2826 . 2832) (punctuation "." 2832 . 2833) (symbol "request_id" 2833 . 2843) (punctuation "=" 2844 . 2845) (symbol "rid" 2846 . 2849) (punctuation ";" 2849 . 2850) (symbol "header" 2854 . 2860) (punctuation "." 2860 . 2861) (symbol "response_to" 2861 . 2872) (punctuation "=" 2873 . 2874) (symbol "rto" 2875 . 2878) (punctuation ";" 2878 . 2879) (symbol "header" 2883 . 2889) (punctuation "." 2889 . 2890) (symbol "op" 2890 . 2892) (punctuation "=" 2893 . 2894) (symbol "opcode" 2895 . 2901) (punctuation ";" 2901 . 2902)))
+          ("PHP_BINARYJSON_EXTNAME" . ((string "\"binaryjson\"" 1264 . 1276)))
+          ("BUF_REMAINING" . ((semantic-list "(buf->end-buf->pos)" 2265 . 2284)))
+          ("OP_QUERY" . ((number "2004" 2023 . 2027)))
+          ("CREATE_BUF" (spp-arg-list ("buf" "size") 2304 . 2315) . 
+              ((symbol "buf" 2319 . 2322) (punctuation "." 2322 . 2323) (symbol "start" 2323 . 2328) (punctuation "=" 2329 . 2330) (semantic-list "(char*)" 2331 . 2338) (symbol "emalloc" 2338 . 2345) (semantic-list "(size)" 2345 . 2351) (punctuation ";" 2351 . 2352) (symbol "buf" 2356 . 2359) (punctuation "." 2359 . 2360) (symbol "pos" 2360 . 2363) (punctuation "=" 2364 . 2365) (symbol "buf" 2366 . 2369) (punctuation "." 2369 . 2370) (symbol "start" 2370 . 2375) (punctuation ";" 2375 . 2376) (symbol "buf" 2380 . 2383) (punctuation "." 2383 . 2384) (symbol "end" 2384 . 2387) (punctuation "=" 2388 . 2389) (symbol "buf" 2390 . 2393) (punctuation "." 2393 . 2394) (symbol "start" 2394 . 2399) (punctuation "+" 2400 . 2401) (symbol "size" 2402 . 2406) (punctuation ";" 2406 . 2407)))
+          )
+
+    )
+   (semanticdb-table "bullsoft_php.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("BULLSOFT_PHP_H" variable (:constant-flag t) nil [32 46])
+            ("PHP_FE_END" variable (:constant-flag t) nil [75 85])
+            ("ZEND_MOD_END" variable (:constant-flag t) nil [150 162])
+            ("BULLSOFT_INIT_FUNCS" variable (:constant-flag t) nil [335 354])
+            ("BULLSOFT_INIT_CLASS" variable (:constant-flag t) nil [436 455])
+            ("BULLSOFT_INIT" variable (:constant-flag t) nil [551 564])
+            ("BULLSOFT_REGISTER_CLASS" variable (:constant-flag t) nil [738 761])
+            ("HASH_P" variable (:constant-flag t) nil [1083 1089])
+            ("HASH_PP" variable (:constant-flag t) nil [1160 1167])
+            ("IS_SCALAR_P" variable (:constant-flag t) nil [1242 1253])
+            ("IS_SCALAR_PP" variable (:constant-flag t) nil [1398 1410])
+            ("IS_ARRAY_OR_OBJECT_P" variable (:constant-flag t) nil [1438 1458])
+            ("Z_NUMVAL_P" variable (:constant-flag t) nil [1596 1606])
+            ("Z_NUMVAL_PP" variable (:constant-flag t) nil [1813 1824])
+            ("BULLSOFT_EXCEPTION" variable (:constant-flag t) nil [2033 2051]))          
+    :file "bullsoft_php.h"
+    :pointmax 2144
+    :fsize 2143
+    :lastmodtime '(21064 17871 0 0)
+    :unmatched-syntax '((symbol 2026 . 2032) (punctuation 2025 . 2026))
+    :lexical-table 
+        '(("IS_ARRAY_OR_OBJECT_P" (spp-arg-list ("a") 1458 . 1461) . ((semantic-list "(Z_TYPE_P(a) == IS_ARRAY || Z_TYPE_P(a) == IS_OBJECT)" 1462 . 1515)))
+          ("Z_NUMVAL_P" (spp-arg-list ("variable" "value") 1606 . 1623) . ((semantic-list "((Z_TYPE_P(variable) == IS_LONG && Z_LVAL_P(variable) == value) ||    \\
+   (Z_TYPE_P(variable) == IS_DOUBLE && Z_DVAL_P(variable) == value))" 1664 . 1804)))
+          ("HASH_P" (spp-arg-list ("a") 1089 . 1092) . ((semantic-list "(Z_TYPE_P(a) == IS_ARRAY ? Z_ARRVAL_P(a) : Z_OBJPROP_P(a))" 1093 . 1151)))
+          ("BULLSOFT_PHP_H")
+          ("IS_SCALAR_PP" (spp-arg-list ("a") 1410 . 1413) . ((symbol "IS_SCALAR_P" 1414 . 1425) (semantic-list "(*a)" 1425 . 1429)))
+          ("BULLSOFT_INIT" (spp-arg-list ("extname" "name") 564 . 579) . 
+              ((IF "if" 625 . 627) (semantic-list "(extname## _ ##name## _init(INIT_FUNC_ARGS_PASSTHRU) == FAILURE)" 628 . 692) (semantic-list "{ \\
+        return FAILURE; \\
+    }" 693 . 728)))
+          ("Z_NUMVAL_PP" (spp-arg-list ("variable" "value") 1824 . 1841) . ((semantic-list "((Z_TYPE_PP(variable) == IS_LONG && Z_LVAL_PP(variable) == value) ||  \\
+   (Z_TYPE_PP(variable) == IS_DOUBLE && Z_DVAL_PP(variable) == value))" 1881 . 2023)))
+          ("PHP_FE_END" . ((semantic-list "{ NULL, NULL, NULL, 0, 0 }" 86 . 112)))
+          ("BULLSOFT_REGISTER_CLASS" (spp-arg-list ("extname" "class_name" "name" "methods" "flags") 761 . 804) . ((semantic-list "{ \\
+    zend_class_entry ce; \\
+    memset(&ce, 0, sizeof(zend_class_entry)); \\
+    INIT_CLASS_ENTRY(ce, #class_name, methods); \\
+    extname## _ ##name## _ce = zend_register_internal_class(&ce TSRMLS_CC); \\
+    extname## _ ##name## _ce->ce_flags |= flags;  \\
+  }" 811 . 1073)))
+          ("BULLSOFT_EXCEPTION" (spp-arg-list ("msg") 2051 . 2056) . 
+              ((symbol "zend_throw_exception" 2057 . 2077) (semantic-list "(zend_exception_get_default(TSRMLS_C), #msg, 0 TSRMLS_CC)" 2077 . 2134) (punctuation ";" 2134 . 2135)))
+          ("BULLSOFT_INIT_FUNCS" (spp-arg-list ("class_functions") 354 . 371) . 
+              ((STATIC "static" 372 . 378) (CONST "const" 379 . 384) (symbol "function_entry" 385 . 399) (symbol "class_functions" 400 . 415) (semantic-list "[]" 415 . 417) (punctuation "=" 418 . 419)))
+          ("HASH_PP" (spp-arg-list ("a") 1167 . 1170) . ((semantic-list "(Z_TYPE_PP(a) == IS_ARRAY ? Z_ARRVAL_PP(a) : Z_OBJPROP_PP(a))" 1171 . 1232)))
+          ("IS_SCALAR_P" (spp-arg-list ("a") 1253 . 1256) . ((semantic-list "(Z_TYPE_P(a) == IS_NULL || Z_TYPE_P(a) == IS_LONG || Z_TYPE_P(a) == IS_DOUBLE || Z_TYPE_P(a) == IS_BOOL || Z_TYPE_P(a) == IS_STRING)" 1257 . 1389)))
+          ("ZEND_MOD_END" . ((semantic-list "{ NULL, NULL, NULL, 0 }" 163 . 186)))
+          ("BULLSOFT_INIT_CLASS" (spp-arg-list ("extname" "name") 455 . 470) . 
+              ((INT "int" 495 . 498) (spp-symbol-merge ((spp-symbol-merge ((spp-symbol-merge ((symbol "extname" 499 . 506) (symbol "_" 509 . 510)) 499 . 510) (symbol "name" 513 . 517)) 499 . 517) (symbol "_init" 520 . 525)) 499 . 525) (semantic-list "(INIT_FUNC_ARGS)" 525 . 541)))
+          )
+
+    )
+   (semanticdb-table "binaryjson.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("php.h" include nil nil [1194 1210])
+            ("php_ini.h" include nil nil [1211 1231])
+            ("ext/standard/info.h" include nil nil [1232 1262])
+            ("php_binaryjson.h" include nil nil [1263 1290])
+            ("binaryjson.h" include nil nil [1291 1314])
+            ("id.h" include nil nil [1315 1330])
+            ("zend_exceptions.h" include nil nil [1331 1359])
+            ("apply_func_args_wrapper" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2368 2380])
+                    ("num_args" variable (:type "int") (reparse-symbol arg-sub-list) [2381 2394])
+                    ("args" variable (:type ("va_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2395 2408])
+                    ("key" variable
+                       (:pointer 1
+                        :type ("zend_hash_key" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2409 2428]))                  
+                :type "int")
+                nil [2333 2429])
+            ("is_utf8" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2457 2471])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [2472 2480]))                  
+                :type "int")
+                nil [2438 2481])
+            ("binaryjson_functions" variable
+               (:dereference 1
+                :constant-flag t
+                :type ("zend_function_entry" type (:type "class") nil nil))
+                nil [2597 3110])
+            ("binaryjson_module_entry" variable (:type ("zend_module_entry" type (:type "class") nil nil)) nil [3157 3717])
+            ("php_binaryjson_init_globals" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("binaryjson_globals" variable
+                       (:pointer 1
+                        :type ("zend_binaryjson_globals" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3845 3889]))                  
+                :type "void")
+                nil [3805 5805])
+            ("PHP_MINIT_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("binaryjson" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5856 5867]))                  
+                :type "int")
+                nil [5837 6984])
+            ("PHP_MSHUTDOWN_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("binaryjson" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7053 7064]))                  
+                :type "int")
+                nil [7030 7085])
+            ("PHP_RINIT_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("binaryjson" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7201 7212]))                  
+                :type "int")
+                nil [7182 7233])
+            ("PHP_RSHUTDOWN_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("binaryjson" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7355 7366]))                  
+                :type "int")
+                nil [7332 7387])
+            ("PHP_MINFO_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("binaryjson" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7448 7459]))                  
+                :type "int")
+                nil [7429 7669])
+            ("php_binaryjson_serialize_size" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("start" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7722 7734])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7735 7747])
+                    ("max_size" variable (:type "int") (reparse-symbol arg-sub-list) [7748 7770])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7761 7771]))                  
+                :type "int")
+                nil [7681 8078])
+            ("zval_to_binaryjson" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8126 8138])
+                    ("hash" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8139 8155])
+                    ("prep" variable (:type "int") (reparse-symbol arg-sub-list) [8156 8165])
+                    ("max_document_size" variable (:type "int") (reparse-symbol arg-sub-list) [8166 8197])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8188 8198]))                  
+                :type "int")
+                nil [8103 9066])
+            ("strtoll" variable (:constant-flag t) nil [9234 9241])
+            ("php_binaryjson_serialize_byte" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9318 9330])
+                    ("b" variable (:type "char") (reparse-symbol arg-sub-list) [9331 9338]))                  
+                :type "void")
+                nil [9283 9439])
+            ("php_binaryjson_serialize_bytes" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9477 9489])
+                    ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9490 9500])
+                    ("str_len" variable (:type "int") (reparse-symbol arg-sub-list) [9501 9513]))                  
+                :type "void")
+                nil [9441 9647])
+            ("php_binaryjson_serialize_string" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9686 9698])
+                    ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9699 9709])
+                    ("str_len" variable (:type "int") (reparse-symbol arg-sub-list) [9710 9722]))                  
+                :type "void")
+                nil [9649 9932])
+            ("php_binaryjson_serialize_int" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9968 9980])
+                    ("num" variable (:type "int") (reparse-symbol arg-sub-list) [9981 9989]))                  
+                :type "void")
+                nil [9934 10143])
+            ("php_binaryjson_serialize_long" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10180 10192])
+                    ("num" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10193 10205]))                  
+                :type "void")
+                nil [10145 10364])
+            ("php_binaryjson_serialize_double" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10403 10415])
+                    ("num" variable (:type "double") (reparse-symbol arg-sub-list) [10416 10427]))                  
+                :type "void")
+                nil [10366 10658])
+            ("php_binaryjson_serialize_key" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10769 10781])
+                    ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10782 10798])
+                    ("str_len" variable (:type "int") (reparse-symbol arg-sub-list) [10799 10811])
+                    ("prep" variable (:type "int") (reparse-symbol arg-sub-list) [10812 10830])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10821 10831]))                  
+                :type "void")
+                nil [10735 11576])
+            ("binaryjson_buf_init" function
+               (:arguments 
+                  ( ("dest" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11603 11614]))                  
+                :type "void")
+                nil [11578 11635])
+            ("binaryjson_buf_append" function
+               (:arguments 
+                  ( ("dest" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11664 11675])
+                    ("piece" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11676 11688]))                  
+                :type "void")
+                nil [11637 11764])
+            ("binaryjson_resize_buf" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11792 11804])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [11805 11814]))                  
+                :type "int")
+                nil [11766 12135])
+            ("apply_func_args_wrapper" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [12312 12324])
+                    ("num_args" variable (:type "int") (reparse-symbol arg-sub-list) [12325 12338])
+                    ("args" variable (:type ("va_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12339 12352])
+                    ("key" variable
+                       (:pointer 1
+                        :type ("zend_hash_key" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12353 12372]))                  
+                :type "int")
+                nil [12277 13398])
+            ("php_binaryjson_serialize_ns" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13433 13445])
+                    ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13446 13465])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13456 13466]))                  
+                :type "void")
+                nil [13400 13670])
+            ("php_binaryjson_serialize_element" function
+               (:arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13709 13726])
+                    ("name_len" variable (:type "int") (reparse-symbol arg-sub-list) [13727 13740])
+                    ("data" variable
+                       (:pointer 2
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13741 13753])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13754 13766])
+                    ("prep" variable (:type "int") (reparse-symbol arg-sub-list) [13767 13785])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13776 13786]))                  
+                :type "int")
+                nil [13672 15872])
+            ("prep_id_for_binaryjson" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15908 15920])
+                    ("array" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15921 15947])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15938 15948]))                  
+                :type "int")
+                nil [15874 16438])
+            ("binaryjson_to_zval" function
+               (:pointer 1
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16465 16475])
+                    ("result" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16476 16503])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16494 16504]))                  
+                :type "char")
+                nil [16440 20031])
+            ("is_utf8" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20052 20066])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [20067 20075]))                  
+                :type "int")
+                nil [20033 20523])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("binaryjson_encode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20642 20660]))                  
+                :type "int")
+                nil [20629 21909])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("binaryjson_decode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21924 21942]))                  
+                :type "int")
+                nil [21911 22160])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("binaryjson_header_pack" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22175 22198]))                  
+                :type "int")
+                nil [22162 22810])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("binaryjson_header_unpack" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22825 22850]))                  
+                :type "int")
+                nil [22812 23449])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("binaryjson_msg_pack" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23464 23484]))                  
+                :type "int")
+                nil [23451 25180])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("binaryjson_msg_unpack" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25195 25217]))                  
+                :type "int")
+                nil [25182 26079])
+            ("INT_32" variable (:type "int") nil [25665 25672])
+            ("INT_32" variable (:type "int") nil [25744 25751])
+            ("INT_32" variable (:type "int") nil [25825 25832])
+            ("body" variable
+               (:pointer 1
+                :type ("zval" type (:type "class") nil nil))
+                nil [25842 25853]))          
+    :file "binaryjson.c"
+    :pointmax 26217
+    :fsize 26217
+    :lastmodtime '(21078 21023 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("strtoll" (spp-arg-list ("s" "f" "b") 8407 . 8416) . ((symbol "strtol" 8417 . 8423) (semantic-list "(s, f, b)" 8423 . 8432)))
+          )
+
+    )
+   (semanticdb-table "binaryjson.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("PHP_BSON_H" variable (:constant-flag t) nil [567 577])
+            ("OID_SIZE" variable (:constant-flag t) nil [589 597])
+            ("BSON_DOUBLE" variable (:constant-flag t) nil [677 688])
+            ("BSON_STRING" variable (:constant-flag t) nil [705 716])
+            ("BSON_OBJECT" variable (:constant-flag t) nil [733 744])
+            ("BSON_ARRAY" variable (:constant-flag t) nil [761 771])
+            ("BSON_BINARY" variable (:constant-flag t) nil [789 800])
+            ("BSON_UNDEF" variable (:constant-flag t) nil [817 827])
+            ("BSON_OID" variable (:constant-flag t) nil [845 853])
+            ("BSON_BOOL" variable (:constant-flag t) nil [873 882])
+            ("BSON_DATE" variable (:constant-flag t) nil [901 910])
+            ("BSON_NULL" variable (:constant-flag t) nil [929 938])
+            ("BSON_REGEX" variable (:constant-flag t) nil [957 967])
+            ("BSON_DBREF" variable (:constant-flag t) nil [985 995])
+            ("BSON_CODE__D" variable (:constant-flag t) nil [1013 1025])
+            ("BSON_SYMBOL" variable (:constant-flag t) nil [1041 1052])
+            ("BSON_CODE" variable (:constant-flag t) nil [1069 1078])
+            ("BSON_INT" variable (:constant-flag t) nil [1097 1105])
+            ("BSON_TIMESTAMP" variable (:constant-flag t) nil [1125 1139])
+            ("BSON_LONG" variable (:constant-flag t) nil [1153 1162])
+            ("BSON_MINKEY" variable (:constant-flag t) nil [1181 1192])
+            ("BSON_MAXKEY" variable (:constant-flag t) nil [1209 1220])
+            ("GROW_SLOWLY" variable (:constant-flag t) nil [1238 1249])
+            ("CREATE_BUF_STATIC" variable (:constant-flag t) nil [1267 1284])
+            ("php_binaryjson_serialize_element" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1423 1440])
+                    ("name_len" variable (:type "int") (reparse-symbol arg-sub-list) [1441 1454])
+                    ("" variable
+                       (:pointer 2
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1455 1462])
+                    ("" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1463 1471])
+                    ("TSRMLS_DC" variable (:type "int") (reparse-symbol arg-sub-list) [1472 1486]))                  
+                :type "int")
+                nil [1386 1487])
+            ("php_binaryjson_serialize_double" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1545 1553])
+                    ("" variable (:type "double") (reparse-symbol arg-sub-list) [1554 1561]))                  
+                :type "void")
+                nil [1508 1562])
+            ("php_binaryjson_serialize_string" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1600 1608])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1609 1615])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [1616 1620]))                  
+                :type "void")
+                nil [1563 1621])
+            ("php_binaryjson_serialize_long" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1657 1665])
+                    ("" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1666 1674]))                  
+                :type "void")
+                nil [1622 1675])
+            ("php_binaryjson_serialize_int" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1710 1718])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [1719 1723]))                  
+                :type "void")
+                nil [1676 1724])
+            ("php_binaryjson_serialize_byte" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1760 1768])
+                    ("" variable (:type "char") (reparse-symbol arg-sub-list) [1769 1774]))                  
+                :type "void")
+                nil [1725 1775])
+            ("php_binaryjson_serialize_bytes" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1812 1820])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1821 1827])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [1828 1832]))                  
+                :type "void")
+                nil [1776 1833])
+            ("php_binaryjson_serialize_key" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1868 1876])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1877 1889])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [1890 1894])
+                    ("TSRMLS_DC" variable (:type "int") (reparse-symbol arg-sub-list) [1895 1909]))                  
+                :type "void")
+                nil [1834 1910])
+            ("php_binaryjson_serialize_ns" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1944 1952])
+                    ("TSRMLS_DC" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1953 1969]))                  
+                :type "void")
+                nil [1911 1970])
+            ("php_binaryjson_set_type" variable (:constant-flag t) nil [2057 2080])
+            ("php_binaryjson_set_type" variable (:constant-flag t) nil [2057 2080])
+            ("prep_id_for_binaryjson" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2006 2018])
+                    ("array" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2019 2045])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2036 2046]))                  
+                :type "int")
+                nil [1972 2047])
+            ("php_binaryjson_set_type" variable (:constant-flag t) nil [2057 2080])
+            ("prep_id_for_binaryjson" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2006 2018])
+                    ("array" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2019 2045])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2036 2046]))                  
+                :type "int")
+                nil [1972 2047])
+            ("php_binaryjson_set_type" variable (:constant-flag t) nil [2057 2080])
+            ("prep_id_for_binaryjson" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2006 2018])
+                    ("array" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2019 2045])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2036 2046]))                  
+                :type "int")
+                nil [1972 2047])
+            ("php_binaryjson_set_type" variable (:constant-flag t) nil [2057 2080])
+            ("php_binaryjson_serialize_null" variable (:constant-flag t) nil [2147 2176])
+            ("php_binaryjson_serialize_bool" variable (:constant-flag t) nil [2234 2263])
+            ("binaryjson_resize_buf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2343 2351])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [2352 2356]))                  
+                :type "int")
+                nil [2317 2357])
+            ("zval_to_binaryjson" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2382 2390])
+                    ("" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2391 2402])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [2403 2407])
+                    ("max_document_size" variable (:type "int") (reparse-symbol arg-sub-list) [2408 2439])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2430 2440]))                  
+                :type "int")
+                nil [2359 2441])
+            ("binaryjson_to_zval" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2467 2473])
+                    ("TSRMLS_DC" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2474 2495]))                  
+                :type "char")
+                nil [2442 2496])
+            ("binaryjson_buf_init" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dest" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2626 2637]))                  
+                :type "void")
+                nil [2601 2638])
+            ("binaryjson_buf_append" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dest" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2895 2906])
+                    ("piece" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2907 2919]))                  
+                :type "void")
+                nil [2868 2920])
+            ("MONGO_32" variable (:constant-flag t) nil [3857 3865])
+            ("MONGO_64" variable (:constant-flag t) nil [3882 3890]))          
+    :file "binaryjson.h"
+    :pointmax 4031
+    :fsize 4030
+    :lastmodtime '(21077 8543 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("BSON_DOUBLE" . ((number "0x01" 692 . 696)))
+          ("CREATE_BUF_STATIC" (spp-arg-list ("n") 1284 . 1287) . 
+              ((CHAR "char" 1288 . 1292) (symbol "b" 1293 . 1294) (semantic-list "[n]" 1294 . 1297) (punctuation ";" 1297 . 1298) (symbol "buf" 1310 . 1313) (punctuation "." 1313 . 1314) (symbol "start" 1314 . 1319) (punctuation "=" 1320 . 1321) (symbol "buf" 1322 . 1325) (punctuation "." 1325 . 1326) (symbol "pos" 1326 . 1329) (punctuation "=" 1330 . 1331) (symbol "b" 1332 . 1333) (punctuation ";" 1333 . 1334) (symbol "buf" 1357 . 1360) (punctuation "." 1360 . 1361) (symbol "end" 1361 . 1364) (punctuation "=" 1365 . 1366) (symbol "b" 1367 . 1368) (punctuation "+" 1368 . 1369) (symbol "n" 1369 . 1370) (punctuation ";" 1370 . 1371)))
+          ("BSON_NULL" . ((number "0x0A" 944 . 948)))
+          ("PHP_BSON_H" . ((number "1" 578 . 579)))
+          ("php_binaryjson_set_type" (spp-arg-list ("buf" "type") 2080 . 2091) . ((symbol "php_binaryjson_serialize_byte" 2092 . 2121) (semantic-list "(buf, (char)type)" 2121 . 2138)))
+          ("php_binaryjson_serialize_bool" (spp-arg-list ("buf" "b") 2186 . 2194) . ((symbol "php_binaryjson_serialize_byte" 2195 . 2224) (semantic-list "(buf, (char)b)" 2224 . 2238)))
+          ("BSON_SYMBOL" . ((number "0x0E" 1056 . 1060)))
+          ("BSON_OID" . ((number "0x07" 860 . 864)))
+          ("BSON_DBREF" . ((number "0x0C" 1000 . 1004)))
+          ("BSON_MAXKEY" . ((number "0x7F" 1224 . 1228)))
+          ("BSON_ARRAY" . ((number "0x04" 776 . 780)))
+          ("BSON_MINKEY" . ((number "0xFF" 1196 . 1200)))
+          ("GROW_SLOWLY" . ((number "1048576" 1250 . 1257)))
+          ("BSON_UNDEF" . ((number "0x06" 832 . 836)))
+          ("php_binaryjson_serialize_null" (spp-arg-list ("buf") 2099 . 2104) . ((symbol "php_binaryjson_serialize_byte" 2105 . 2134) (semantic-list "(buf, (char)0)" 2134 . 2148)))
+          ("MONGO_64" (spp-arg-list ("b") 3813 . 3816) . ((semantic-list "(b)" 3817 . 3820)))
+          ("BSON_REGEX" . ((number "0x0B" 972 . 976)))
+          ("BSON_CODE__D" . ((number "0x0D" 1028 . 1032)))
+          ("BSON_INT" . ((number "0x10" 1112 . 1116)))
+          ("BSON_BOOL" . ((number "0x08" 888 . 892)))
+          ("BSON_CODE" . ((number "0x0F" 1084 . 1088)))
+          ("MONGO_32" (spp-arg-list ("b") 3788 . 3791) . ((semantic-list "(b)" 3792 . 3795)))
+          ("BSON_STRING" . ((number "0x02" 720 . 724)))
+          ("BSON_DATE" . ((number "0x09" 916 . 920)))
+          ("OID_SIZE" . ((number "12" 598 . 600)))
+          ("BSON_TIMESTAMP" . ((number "0x11" 1140 . 1144)))
+          ("BSON_LONG" . ((number "0x12" 1168 . 1172)))
+          ("BSON_OBJECT" . ((number "0x03" 748 . 752)))
+          ("BSON_BINARY" . ((number "0x05" 804 . 808)))
+          )
+
+    )
+   (semanticdb-table "id.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("__BINARYJSON_ID_H__" variable (:constant-flag t) nil [37 56])
+            ("generate_id" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [75 95])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [86 96]))                  
+                :type "void")
+                nil [58 97]))          
+    :file "id.h"
+    :pointmax 218
+    :fsize 217
+    :lastmodtime '(21078 18254 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("__BINARYJSON_ID_H__")
+          )
+
+    )
+   (semanticdb-table "id.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("php.h" include (:system-flag t) nil [1 17])
+            ("zend_exceptions.h" include (:system-flag t) nil [18 46])
+            ("php_binaryjson.h" include nil nil [47 74])
+            ("binaryjson.h" include nil nil [75 98])
+            ("id.h" include nil nil [99 114])
+            ("generate_id" function
+               (:arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [173 193])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [184 194]))                  
+                :type "void")
+                nil [156 1177])
+            ("php_binaryjson_id_to_hex" function
+               (:pointer 1
+                :arguments 
+                  ( ("id_str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1210 1223]))                  
+                :type "char")
+                nil [1179 1634])
+            ("php_binaryjson_id_populate" function
+               (:arguments 
+                  ( ("newid" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1668 1680])
+                    ("id" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1681 1699])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1690 1700]))                  
+                :type "void")
+                nil [1636 2770])
+            ("php_binaryjson_id_serialize" function
+               (:arguments 
+                  ( ("id" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2771 2771])
+                    ("serialized_data" variable
+                       (:pointer 2
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [2771 2771])
+                    ("serialized_length" variable
+                       (:pointer 1
+                        :type ("zend_uint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2771 2771])
+                    ("var_hash" variable
+                       (:pointer 1
+                        :type ("zend_serialize_data" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2771 2771])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2771 2771]))                  
+                :type "int")
+                nil [2771 2771]))          
+    :file "id.c"
+    :pointmax 2771
+    :fsize 2770
+    :lastmodtime '(21078 18210 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!git!php-binary-json!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

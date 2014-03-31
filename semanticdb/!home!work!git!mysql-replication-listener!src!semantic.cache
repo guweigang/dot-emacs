@@ -1,0 +1,1231 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "binary_log.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("list" include (:system-flag t) nil [715 730])
+            ("binlog_api.h" include nil nil [732 755])
+            ("boost/foreach.hpp" include (:system-flag t) nil [756 784])
+            ("mysql" using (:type ("mysql" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [786 808])
+            ("mysql::system" using (:type ("mysql::system" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [809 839])
+            ("mysql" type
+               (:members 
+                  ( ("Binary_log" function
+                       (:constructor-flag t
+                        :parent "Binary_log"
+                        :arguments 
+                          ( ("drv" variable
+                               (:pointer 1
+                                :type ("Binary_log_driver" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [881 904]))                          
+                        :type ("Binary_log" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [858 1033])
+                    ("content_handler_pipeline" function
+                       (:pointer 1
+                        :parent "Binary_log"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1098 1103]))                          
+                        :type ("Content_handler_pipeline" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1035 1137])
+                    ("wait_for_next_event" function
+                       (:parent "Binary_log"
+                        :arguments 
+                          ( ("event_ptr" variable
+                               (:pointer 2
+                                :type ("mysql::Binary_log_event" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1175 1211]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [1139 2019])
+                    ("set_position" function
+                       (:parent "Binary_log"
+                        :arguments 
+                          ( ("filename" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2050 2078])
+                            ("position" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2079 2102]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [2021 2275])
+                    ("set_position" function
+                       (:parent "Binary_log"
+                        :arguments 
+                          ( ("position" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2306 2329]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [2277 2449])
+                    ("get_position" function
+                       (:parent "Binary_log"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2490 2495]))                          
+                        :type "unsigned long")
+                        (reparse-symbol namespacesubparts) [2451 2527])
+                    ("get_position" function
+                       (:parent "Binary_log"
+                        :arguments 
+                          ( ("filename" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2568 2590]))                          
+                        :type "unsigned long")
+                        (reparse-symbol namespacesubparts) [2529 2711])
+                    ("connect" function
+                       (:parent "Binary_log"
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [2713 2772]))                  
+                :type "namespace")
+                nil [840 2775]))          
+    :file "binary_log.cpp"
+    :pointmax 2776
+    :fsize 2775
+    :lastmodtime '(20703 18278 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "basic_content_handler.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("basic_content_handler.h" include nil nil [714 748])
+            ("boost/bind.hpp" include (:system-flag t) nil [749 774])
+            ("mysql" type
+               (:members 
+                  ( ("Content_handler" function
+                       (:constructor-flag t
+                        :parent "Content_handler"
+                        :type ("Content_handler" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [795 833])
+                    ("Content_handler" function
+                       (:destructor-flag t
+                        :parent "Content_handler"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [834 873])
+                    ("process_event" function
+                       (:pointer 1
+                        :parent "Content_handler"
+                        :arguments 
+                          ( ("ev" variable
+                               (:pointer 1
+                                :type ("mysql::Query_event" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [930 953]))                          
+                        :type ("mysql::Binary_log_event" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [874 968])
+                    ("process_event" function
+                       (:pointer 1
+                        :parent "Content_handler"
+                        :arguments 
+                          ( ("ev" variable
+                               (:pointer 1
+                                :type ("mysql::Row_event" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1025 1046]))                          
+                        :type ("mysql::Binary_log_event" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [969 1061])
+                    ("process_event" function
+                       (:pointer 1
+                        :parent "Content_handler"
+                        :arguments 
+                          ( ("ev" variable
+                               (:pointer 1
+                                :type ("mysql::Table_map_event" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1118 1145]))                          
+                        :type ("mysql::Binary_log_event" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1062 1160])
+                    ("process_event" function
+                       (:pointer 1
+                        :parent "Content_handler"
+                        :arguments 
+                          ( ("ev" variable
+                               (:pointer 1
+                                :type ("mysql::Xid" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1217 1232]))                          
+                        :type ("mysql::Binary_log_event" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1161 1247])
+                    ("process_event" function
+                       (:pointer 1
+                        :parent "Content_handler"
+                        :arguments 
+                          ( ("ev" variable
+                               (:pointer 1
+                                :type ("mysql::User_var_event" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1304 1330]))                          
+                        :type ("mysql::Binary_log_event" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1248 1345])
+                    ("process_event" function
+                       (:pointer 1
+                        :parent "Content_handler"
+                        :arguments 
+                          ( ("ev" variable
+                               (:pointer 1
+                                :type ("mysql::Incident_event" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1402 1428]))                          
+                        :type ("mysql::Binary_log_event" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1346 1443])
+                    ("process_event" function
+                       (:pointer 1
+                        :parent "Content_handler"
+                        :arguments 
+                          ( ("ev" variable
+                               (:pointer 1
+                                :type ("mysql::Rotate_event" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1500 1524]))                          
+                        :type ("mysql::Binary_log_event" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1444 1539])
+                    ("process_event" function
+                       (:pointer 1
+                        :parent "Content_handler"
+                        :arguments 
+                          ( ("ev" variable
+                               (:pointer 1
+                                :type ("mysql::Int_var_event" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1596 1621]))                          
+                        :type ("mysql::Binary_log_event" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1540 1636])
+                    ("process_event" function
+                       (:pointer 1
+                        :parent "Content_handler"
+                        :arguments 
+                          ( ("ev" variable
+                               (:pointer 1
+                                :type ("mysql::Binary_log_event" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1693 1721]))                          
+                        :type ("mysql::Binary_log_event" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1637 1736])
+                    ("get_injection_queue" function
+                       (:pointer 1
+                        :parent "Content_handler"
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1792 1797]))                          
+                        :type ("Injection_queue" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1738 1828])
+                    ("set_injection_queue" function
+                       (:parent "Content_handler"
+                        :arguments 
+                          ( ("queue" variable
+                               (:pointer 1
+                                :type ("Injection_queue" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1872 1895]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1830 1926])
+                    ("internal_process_event" function
+                       (:pointer 1
+                        :parent "Content_handler"
+                        :arguments 
+                          ( ("ev" variable
+                               (:pointer 1
+                                :type ("mysql::Binary_log_event" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1995 2023]))                          
+                        :type ("mysql::Binary_log_event" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1928 3688]))                  
+                :type "namespace")
+                nil [776 3691]))          
+    :file "basic_content_handler.cpp"
+    :pointmax 3709
+    :fsize 3708
+    :lastmodtime '(20703 18278 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "binlog_event.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("binlog_event.h" include nil nil [715 740])
+            ("iostream" include (:system-flag t) nil [741 760])
+            ("mysql" type
+               (:members 
+                  ( ("system" type
+                       (:members 
+                          ( ("get_event_type_str" function
+                               (:pointer 1
+                                :constant-flag t
+                                :arguments 
+                                  ( ("type" variable (:type ("Log_event_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [831 851]))                                  
+                                :type "char")
+                                (reparse-symbol namespacesubparts) [800 2152]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [780 2155])
+                    ("Binary_log_event" function
+                       (:destructor-flag t
+                        :parent "Binary_log_event"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2182 2223])
+                    ("create_incident_event" function
+                       (:pointer 1
+                        :arguments 
+                          ( ("type" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2267 2285])
+                            ("message" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [2286 2306])
+                            ("pos" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2307 2325]))                          
+                        :type ("Binary_log_event" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2226 2631]))                  
+                :type "namespace")
+                nil [761 2634]))          
+    :file "binlog_event.cpp"
+    :pointmax 2658
+    :fsize 2657
+    :lastmodtime '(20703 18278 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "binlog_driver.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("binlog_driver.h" include nil nil [743 769])
+            ("mysql" type
+               (:members 
+                  ( ("system" type
+                       (:members 
+                          ( ("parse_event" function
+                               (:pointer 1
+                                :parent "Binary_log_driver"
+                                :arguments 
+                                  ( ("is" variable
+                                       (:reference 1
+                                        :type ("std::istream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1117 1134])
+                                    ("header" variable
+                                       (:pointer 1
+                                        :type ("Log_event_header" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1184 1209]))                                  
+                                :type ("Binary_log_event" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1068 2263]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [789 2266]))                  
+                :type "namespace")
+                nil [771 2268]))          
+    :file "binlog_driver.cpp"
+    :pointmax 2269
+    :fsize 2268
+    :lastmodtime '(20703 18278 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "value.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("value.h" include nil nil [714 732])
+            ("binlog_event.h" include nil nil [733 758])
+            ("boost/lexical_cast.hpp" include (:system-flag t) nil [759 792])
+            ("iomanip" include (:system-flag t) nil [793 811])
+            ("boost/format.hpp" include (:system-flag t) nil [812 839])
+            ("mysql" using (:type ("mysql" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [841 863])
+            ("mysql::system" using (:type ("mysql::system" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [864 894])
+            ("mysql" type
+               (:members 
+                  ( ("calc_field_size" function
+                       (:arguments 
+                          ( ("column_type" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [934 960])
+                            ("field_ptr" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "unsigned char")
+                                (reparse-symbol arg-sub-list) [961 992])
+                            ("metadata" variable (:type ("boost::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [993 1018]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [914 4681])
+                    ("Value" function
+                       (:constructor-flag t
+                        :parent "Value"
+                        :arguments 
+                          ( ("val" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4864 4881]))                          
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4851 5015])
+                    ("=" function
+                       (:operator-flag t
+                        :parent "Value"
+                        :arguments 
+                          ( ("val" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5041 5058]))                          
+                        :type ("Value" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [5017 5208])
+                    ("==" function
+                       (:operator-flag t
+                        :parent "Value"
+                        :arguments 
+                          ( ("val" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5233 5250]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [5210 5412])
+                    ("!=" function
+                       (:operator-flag t
+                        :parent "Value"
+                        :arguments 
+                          ( ("val" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5437 5454]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [5414 5491])
+                    ("as_c_str" function
+                       (:pointer 1
+                        :parent "Value"
+                        :arguments 
+                          ( ("size" variable
+                               (:reference 1
+                                :type "unsigned long")
+                                (reparse-symbol arg-sub-list) [5515 5535]))                          
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [5493 5984])
+                    ("as_blob" function
+                       (:pointer 1
+                        :parent "Value"
+                        :arguments 
+                          ( ("size" variable
+                               (:reference 1
+                                :type "unsigned long")
+                                (reparse-symbol arg-sub-list) [6016 6036]))                          
+                        :type "unsigned char")
+                        (reparse-symbol namespacesubparts) [5986 6494])
+                    ("as_int32" function
+                       (:parent "Value"
+                        :type ("boost::int32_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [6496 6742])
+                    ("as_int8" function
+                       (:parent "Value"
+                        :type ("boost::int8_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [6744 6984])
+                    ("as_int16" function
+                       (:parent "Value"
+                        :type ("boost::int16_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [6986 7230])
+                    ("as_int64" function
+                       (:parent "Value"
+                        :type ("boost::int64_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [7232 7476])
+                    ("as_float" function
+                       (:parent "Value"
+                        :type "float")
+                        (reparse-symbol namespacesubparts) [7478 7559])
+                    ("as_double" function
+                       (:parent "Value"
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [7561 7645])
+                    ("to" function
+                       (:parent "Converter"
+                        :arguments 
+                          ( ("str" variable
+                               (:reference 1
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7666 7683])
+                            ("val" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7684 7701]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7647 10780])
+                    ("to" function
+                       (:parent "Converter"
+                        :arguments 
+                          ( ("out" variable
+                               (:reference 1
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [10801 10812])
+                            ("val" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10813 10830]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [10782 10953])
+                    ("to" function
+                       (:parent "Converter"
+                        :arguments 
+                          ( ("out" variable
+                               (:reference 1
+                                :type "long long")
+                                (reparse-symbol arg-sub-list) [10975 10990])
+                            ("val" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10991 11008]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [10956 12853])
+                    ("to" function
+                       (:parent "Converter"
+                        :arguments 
+                          ( ("out" variable
+                               (:reference 1
+                                :type "long")
+                                (reparse-symbol arg-sub-list) [12874 12884])
+                            ("val" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Value" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12885 12902]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [12855 14644]))                  
+                :type "namespace")
+                nil [895 14648]))          
+    :file "value.cpp"
+    :pointmax 14672
+    :fsize 14675
+    :lastmodtime '(20846 31564 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "protocol.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("stdint.h" include (:system-flag t) nil [714 733])
+            ("boost/array.hpp" include (:system-flag t) nil [734 760])
+            ("vector" include (:system-flag t) nil [761 778])
+            ("protocol.h" include nil nil [780 801])
+            ("iostream" include (:system-flag t) nil [802 821])
+            ("mysql" using (:type ("mysql" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [822 844])
+            ("mysql::system" using (:type ("mysql::system" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [845 875])
+            ("mysql" type
+               (:members 
+                  ( ("system" type
+                       (:members 
+                          ( ("proto_read_package_header" function
+                               (:arguments 
+                                  ( ("socket" variable
+                                       (:pointer 1
+                                        :type ("tcp::socket" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [945 965])
+                                    ("packet_length" variable
+                                       (:pointer 1
+                                        :type "unsigned long")
+                                        (reparse-symbol arg-sub-list) [966 995])
+                                    ("packet_no" variable
+                                       (:pointer 1
+                                        :type "unsigned char")
+                                        (reparse-symbol arg-sub-list) [996 1021]))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [915 1450])
+                            ("proto_read_package_header" function
+                               (:arguments 
+                                  ( ("socket" variable
+                                       (:pointer 1
+                                        :type ("tcp::socket" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1482 1502])
+                                    ("buff" variable
+                                       (:reference 1
+                                        :type ("boost::asio::streambuf" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1503 1532])
+                                    ("packet_length" variable
+                                       (:pointer 1
+                                        :type "unsigned long")
+                                        (reparse-symbol arg-sub-list) [1533 1562])
+                                    ("packet_no" variable
+                                       (:pointer 1
+                                        :type "unsigned char")
+                                        (reparse-symbol arg-sub-list) [1563 1588]))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [1452 2145])
+                            ("proto_get_one_package" function
+                               (:arguments 
+                                  ( ("socket" variable
+                                       (:pointer 1
+                                        :type ("tcp::socket" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2174 2194])
+                                    ("buff" variable
+                                       (:reference 1
+                                        :type ("boost::asio::streambuf" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2195 2224])
+                                    ("packet_no" variable
+                                       (:pointer 1
+                                        :type ("boost::uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2251 2277]))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [2148 2655])
+                            ("prot_parse_error_message" function
+                               (:arguments 
+                                  ( ("is" variable
+                                       (:reference 1
+                                        :type ("std::istream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2687 2704])
+                                    ("err" variable
+                                       (:reference 1
+                                        :type ("st_error_package" type
+                                             (:prototype t
+                                              :type "struct")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [2705 2734])
+                                    ("packet_length" variable (:type "int") (reparse-symbol arg-sub-list) [2765 2783]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [2657 3321])
+                            ("prot_parse_ok_message" function
+                               (:arguments 
+                                  ( ("is" variable
+                                       (:reference 1
+                                        :type ("std::istream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3350 3367])
+                                    ("ok" variable
+                                       (:reference 1
+                                        :type ("st_ok_package" type
+                                             (:prototype t
+                                              :type "struct")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [3368 3393])
+                                    ("packet_length" variable (:type "int") (reparse-symbol arg-sub-list) [3394 3412]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [3323 4397])
+                            ("prot_parse_eof_message" function
+                               (:arguments 
+                                  ( ("is" variable
+                                       (:reference 1
+                                        :type ("std::istream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4427 4444])
+                                    ("eof" variable
+                                       (:reference 1
+                                        :type ("st_eof_package" type
+                                             (:prototype t
+                                              :type "struct")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [4445 4472]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [4399 4679])
+                            ("proto_get_handshake_package" function
+                               (:arguments 
+                                  ( ("is" variable
+                                       (:reference 1
+                                        :type ("std::istream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4714 4731])
+                                    ("p" variable
+                                       (:reference 1
+                                        :type ("st_handshake_package" type
+                                             (:prototype t
+                                              :type "struct")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [4765 4796])
+                                    ("packet_length" variable (:type "int") (reparse-symbol arg-sub-list) [4830 4848]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [4681 6251])
+                            ("write_packet_header" function
+                               (:arguments 
+                                  ( ("buff" variable
+                                       (:pointer 1
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [6278 6289])
+                                    ("size" variable (:type ("boost::uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6290 6311])
+                                    ("packet_no" variable (:type ("boost::uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6312 6337]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [6253 6394])
+                            (">>" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("src" variable
+                                       (:reference 1
+                                        :type ("buffer_source" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6423 6442])
+                                    ("chunk" variable
+                                       (:reference 1
+                                        :type ("Protocol" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6443 6459]))                                  
+                                :type ("buffer_source" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [6397 6659])
+                            (">>" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("is" variable
+                                       (:reference 1
+                                        :type ("std::istream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6686 6703])
+                                    ("chunk" variable
+                                       (:reference 1
+                                        :type ("Protocol" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6704 6720]))                                  
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [6661 7697])
+                            (">>" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("is" variable
+                                       (:reference 1
+                                        :type ("std::istream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7724 7741])
+                                    ("str" variable
+                                       (:reference 1
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7742 7759]))                                  
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [7699 7940])
+                            (">>" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("is" variable
+                                       (:reference 1
+                                        :type ("std::istream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7967 7984])
+                                    ("str" variable
+                                       (:reference 1
+                                        :type ("Protocol_chunk_string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7985 8012]))                                  
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [7942 8176])
+                            (">>" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("is" variable
+                                       (:reference 1
+                                        :type ("std::istream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8203 8220])
+                                    ("lenstr" variable
+                                       (:reference 1
+                                        :type ("Protocol_chunk_string_len" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8221 8255]))                                  
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [8178 8475])
+                            ("<<" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("os" variable
+                                       (:reference 1
+                                        :type ("std::ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8502 8519])
+                                    ("chunk" variable
+                                       (:reference 1
+                                        :type ("Protocol" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8520 8536]))                                  
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [8477 8626])
+                            ("proto_query_event" function
+                               (:pointer 1
+                                :arguments 
+                                  ( ("is" variable
+                                       (:reference 1
+                                        :type ("std::istream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8659 8676])
+                                    ("header" variable
+                                       (:pointer 1
+                                        :type ("Log_event_header" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8677 8702]))                                  
+                                :type ("Query_event" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [8628 10884])
+                            ("proto_rotate_event" function
+                               (:pointer 1
+                                :arguments 
+                                  ( ("is" variable
+                                       (:reference 1
+                                        :type ("std::istream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10919 10936])
+                                    ("header" variable
+                                       (:pointer 1
+                                        :type ("Log_event_header" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10937 10962]))                                  
+                                :type ("Rotate_event" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [10886 11305])
+                            ("proto_incident_event" function
+                               (:pointer 1
+                                :arguments 
+                                  ( ("is" variable
+                                       (:reference 1
+                                        :type ("std::istream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11344 11361])
+                                    ("header" variable
+                                       (:pointer 1
+                                        :type ("Log_event_header" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11362 11387]))                                  
+                                :type ("Incident_event" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [11307 11674])
+                            ("proto_rows_event" function
+                               (:pointer 1
+                                :arguments 
+                                  ( ("is" variable
+                                       (:reference 1
+                                        :type ("std::istream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11704 11721])
+                                    ("header" variable
+                                       (:pointer 1
+                                        :type ("Log_event_header" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11722 11747]))                                  
+                                :type ("Row_event" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [11676 13117])
+                            ("proto_intvar_event" function
+                               (:pointer 1
+                                :arguments 
+                                  ( ("is" variable
+                                       (:reference 1
+                                        :type ("std::istream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13153 13170])
+                                    ("header" variable
+                                       (:pointer 1
+                                        :type ("Log_event_header" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13171 13196]))                                  
+                                :type ("Int_var_event" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [13119 13429])
+                            ("proto_uservar_event" function
+                               (:pointer 1
+                                :arguments 
+                                  ( ("is" variable
+                                       (:reference 1
+                                        :type ("std::istream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13467 13484])
+                                    ("header" variable
+                                       (:pointer 1
+                                        :type ("Log_event_header" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13485 13510]))                                  
+                                :type ("User_var_event" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [13431 14376])
+                            ("proto_table_map_event" function
+                               (:pointer 1
+                                :arguments 
+                                  ( ("is" variable
+                                       (:reference 1
+                                        :type ("std::istream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14417 14434])
+                                    ("header" variable
+                                       (:pointer 1
+                                        :type ("Log_event_header" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [14435 14460]))                                  
+                                :type ("Table_map_event" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [14378 15897])
+                            (">>" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("is" variable
+                                       (:reference 1
+                                        :type ("std::istream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15924 15941])
+                                    ("chunk" variable
+                                       (:reference 1
+                                        :type ("Protocol_chunk_vector" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15942 15971]))                                  
+                                :type ("std::istream" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [15899 16122]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [895 16126]))                  
+                :type "namespace")
+                nil [877 16128]))          
+    :file "protocol.cpp"
+    :pointmax 16160
+    :fsize 16159
+    :lastmodtime '(20703 18278 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "row_of_fields.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("vector" include (:system-flag t) nil [714 731])
+            ("row_of_fields.h" include nil nil [733 759])
+            ("stdexcept" include (:system-flag t) nil [760 780])
+            ("boost/foreach.hpp" include (:system-flag t) nil [781 809])
+            ("value.h" include nil nil [810 828])
+            ("mysql" using (:type ("mysql" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [830 852])
+            ("=" function
+               (:operator-flag t
+                :parent "Row_of_fields"
+                :arguments 
+                  ( ("right" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Row_of_fields" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [894 921]))                  
+                :type ("Row_of_fields" type (:type "class") nil nil))
+                nil [854 1118])
+            ("=" function
+               (:operator-flag t
+                :parent "Row_of_fields"
+                :arguments 
+                  ( ("right" variable
+                       (:reference 1
+                        :type ("Row_of_fields" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1160 1181]))                  
+                :type ("Row_of_fields" type (:type "class") nil nil))
+                nil [1120 1378]))          
+    :file "row_of_fields.cpp"
+    :pointmax 1379
+    :fsize 1378
+    :lastmodtime '(20703 18278 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "field_iterator.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("field_iterator.h" include nil nil [714 741])
+            ("mysql" type
+               (:members 
+                  ( ("is_null" function
+                       (:arguments 
+                          ( ("bitmap" variable
+                               (:pointer 1
+                                :type "unsigned char")
+                                (reparse-symbol arg-sub-list) [847 869])
+                            ("index" variable (:type "int") (reparse-symbol arg-sub-list) [870 880]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [834 996])
+                    ("extract_metadata" function
+                       (:arguments 
+                          ( ("map" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("Table_map_event" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1032 1059])
+                            ("col_no" variable (:type "int") (reparse-symbol arg-sub-list) [1060 1071]))                          
+                        :type ("boost::uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [999 1794])
+                    ("lookup_metadata_field_size" function
+                       (:arguments 
+                          ( ("" variable (:type ("mysql" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [1827 1838])
+                            ("field_type" variable (:type ("system::enum_field_types" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1839 1875]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [1796 3089]))                  
+                :type "namespace")
+                nil [814 3092]))          
+    :file "field_iterator.cpp"
+    :pointmax 3116
+    :fsize 3115
+    :lastmodtime '(20703 18278 0 0)
+    :unmatched-syntax '((punctuation 1838 . 1839) (punctuation 1837 . 1838))
+    )
+   (semanticdb-table "tcp_driver.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("binlog_api.h" include nil nil [714 737])
+            ("iostream" include (:system-flag t) nil [738 757])
+            ("tcp_driver.h" include nil nil [758 781])
+            ("fstream" include (:system-flag t) nil [784 802])
+            ("time.h" include (:system-flag t) nil [803 820])
+            ("boost/cstdint.hpp" include (:system-flag t) nil [821 849])
+            ("streambuf" include (:system-flag t) nil [850 870])
+            ("stdio.h" include (:system-flag t) nil [871 889])
+            ("boost/bind.hpp" include (:system-flag t) nil [890 915])
+            ("boost/thread.hpp" include (:system-flag t) nil [916 943])
+            ("exception" include (:system-flag t) nil [944 964])
+            ("boost/foreach.hpp" include (:system-flag t) nil [965 993])
+            ("openssl/evp.h" include (:system-flag t) nil [994 1018])
+            ("openssl/rand.h" include (:system-flag t) nil [1019 1044])
+            ("protocol.h" include nil nil [1046 1067])
+            ("binlog_event.h" include nil nil [1068 1093])
+            ("rowset.h" include nil nil [1094 1113])
+            ("field_iterator.h" include nil nil [1114 1141])
+            ("boost::asio::ip::tcp" using (:type ("boost::asio::ip::tcp" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [1143 1170])
+            ("mysql::system" using (:type ("mysql::system" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1171 1201])
+            ("mysql" using (:type ("mysql" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1202 1224])
+            ("uchar" type
+               (:typedef ("unsigned char")
+                :superclasses "unsigned char"
+                :type "typedef")
+                nil [1226 1254])
+            ("mysql" type
+               (:members 
+                  ( ("system" type
+                       (:members 
+                          ( ("encrypt_password" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("reply" variable
+                                       (:pointer 1
+                                        :type ("boost::uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1322 1344])
+                                    ("scramble_buff" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("boost::uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1413 1449])
+                                    ("pass" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [1478 1495]))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [1294 1496])
+                            ("hash_sha1" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("output" variable
+                                       (:pointer 1
+                                        :type ("boost::uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1518 1541])
+                                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [1542 1546]))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [1497 1547])
+                            ("connect" function
+                               (:parent "Binlog_tcp_driver"
+                                :arguments 
+                                  ( ("user" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1584 1608])
+                                    ("passwd" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1609 1635])
+                                    ("host" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1671 1695])
+                                    ("port" variable (:type "long") (reparse-symbol arg-sub-list) [1696 1706])
+                                    ("binlog_filename" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1742 1777])
+                                    ("offset" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1778 1792]))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [1553 2434])
+                            ("sync_connect_and_authenticate" function
+                               (:pointer 1
+                                :arguments 
+                                  ( ("io_service" variable
+                                       (:reference 1
+                                        :type ("boost::asio::io_service" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2479 2515])
+                                    ("user" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2516 2540])
+                                    ("passwd" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2541 2567])
+                                    ("host" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2568 2592])
+                                    ("port" variable (:type "long") (reparse-symbol arg-sub-list) [2593 2603]))                                  
+                                :type ("tcp::socket" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2436 6505])
+                            ("start_binlog_dump" function
+                               (:parent "Binlog_tcp_driver"
+                                :arguments 
+                                  ( ("binlog_file_name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6553 6589])
+                                    ("offset" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6590 6604]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [6511 7877])
+                            ("proto_event_packet_header" function
+                               (:typemodifiers ("static")
+                                :arguments 
+                                  ( ("event_src" variable
+                                       (:reference 1
+                                        :type ("boost::asio::streambuf" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7995 8029])
+                                    ("h" variable
+                                       (:pointer 1
+                                        :type ("Log_event_header" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8030 8050]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [7957 8725])
+                            ("handle_net_packet" function
+                               (:parent "Binlog_tcp_driver"
+                                :arguments 
+                                  ( ("err" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("boost::system::error_code" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8769 8806])
+                                    ("bytes_transferred" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8807 8837]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [8727 11242])
+                            ("handle_net_packet_header" function
+                               (:parent "Binlog_tcp_driver"
+                                :arguments 
+                                  ( ("err" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("boost::system::error_code" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11293 11330])
+                                    ("bytes_transferred" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11331 11361]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [11244 12905])
+                            ("authenticate" function
+                               (:arguments 
+                                  ( ("socket" variable
+                                       (:pointer 1
+                                        :type ("tcp::socket" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12928 12948])
+                                    ("user" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12949 12973])
+                                    ("passwd" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12974 13000])
+                                    ("handshake_package" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("st_handshake_package" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13022 13068]))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [12911 15898])
+                            ("wait_for_next_event" function
+                               (:parent "Binlog_tcp_driver"
+                                :arguments 
+                                  ( ("event_ptr" variable
+                                       (:pointer 2
+                                        :type ("mysql::Binary_log_event" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15943 15979]))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [15900 16141])
+                            ("start_event_loop" function
+                               (:parent "Binlog_tcp_driver"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [16143 16922])
+                            ("connect" function
+                               (:parent "Binlog_tcp_driver"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [16924 17012])
+                            ("reconnect" function
+                               (:parent "Binlog_tcp_driver"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [17053 17153])
+                            ("disconnect" function
+                               (:parent "Binlog_tcp_driver"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [17155 17467])
+                            ("shutdown" function
+                               (:parent "Binlog_tcp_driver"
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [17503 17508]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [17470 17555])
+                            ("set_position" function
+                               (:parent "Binlog_tcp_driver"
+                                :arguments 
+                                  ( ("str" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17593 17616])
+                                    ("position" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [17617 17640]))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [17557 19165])
+                            ("get_position" function
+                               (:parent "Binlog_tcp_driver"
+                                :arguments 
+                                  ( ("filename_ptr" variable
+                                       (:pointer 1
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [19203 19229])
+                                    ("position_ptr" variable
+                                       (:pointer 1
+                                        :type "unsigned long")
+                                        (reparse-symbol arg-sub-list) [19230 19258]))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [19167 19708])
+                            ("fetch_master_status" function
+                               (:arguments 
+                                  ( ("socket" variable
+                                       (:pointer 1
+                                        :type ("tcp::socket" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [19735 19755])
+                                    ("filename" variable
+                                       (:pointer 1
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [19756 19778])
+                                    ("position" variable
+                                       (:pointer 1
+                                        :type "unsigned long")
+                                        (reparse-symbol arg-sub-list) [19779 19803]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [19710 20640])
+                            ("fetch_binlogs_name_and_size" function
+                               (:arguments 
+                                  ( ("socket" variable
+                                       (:pointer 1
+                                        :type ("tcp::socket" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [20675 20695])
+                                    ("binlog_map" variable
+                                       (:reference 1
+                                        :type ("std::map" type
+                                             (:template-specifier 
+                                                ( ("std::string" type nil nil nil)
+                                                  ("unsigned long" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [20696 20745]))                                  
+                                :type "bool")
+                                (reparse-symbol namespacesubparts) [20642 21663])
+                            ("SCRAMBLE_BUFF_SIZE" variable (:constant-flag t) (reparse-symbol namespacesubparts) [21674 21692])
+                            ("hash_sha1" function
+                               (:arguments 
+                                  ( ("output" variable
+                                       (:pointer 1
+                                        :type ("boost::uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [21711 21734])
+                                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [21735 21739]))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [21697 22267])
+                            ("encrypt_password" function
+                               (:arguments 
+                                  ( ("reply" variable
+                                       (:pointer 1
+                                        :type ("boost::uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [22291 22313])
+                                    ("scramble_buff" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("boost::uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [22374 22410])
+                                    ("pass" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [22430 22447]))                                  
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [22270 23358]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1274 23361]))                  
+                :type "namespace")
+                nil [1256 23362]))          
+    :file "tcp_driver.cpp"
+    :pointmax 23394
+    :fsize 23393
+    :lastmodtime '(20703 18278 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("SCRAMBLE_BUFF_SIZE" . ((number "20" 21693 . 21695)))
+          )
+
+    )
+   )
+  :file "!home!work!git!mysql-replication-listener!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,22 @@
+;; Object proxy/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "proxy/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("luaextdir" variable (:default-value ("${pkglibdir}/lua/")) nil [1 31])
+            ("pkglib_proxydir" variable (:default-value ("$(luaextdir)/proxy")) nil [32 69])
+            ("dist_pkglib_proxy_DATA" variable (:default-value ("auto-config.lua" "balance.lua" "commands.lua" "parser.lua" "tokenizer.lua" "test.lua")) nil [69 199])
+            ("EXTRA_DIST" variable (:default-value ("CMakeLists.txt")) nil [200 226]))          
+    :file "Makefile.am"
+    :pointmax 226
+    :fsize 225
+    :lastmodtime '(21022 63839 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!git!mm!mysql-proxy-0.8.2!lib!proxy!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

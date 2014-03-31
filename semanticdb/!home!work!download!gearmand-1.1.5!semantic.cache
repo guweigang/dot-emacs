@@ -1,0 +1,70 @@
+;; Object gearmand-1.1.5/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "gearmand-1.1.5/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("ACLOCAL_AMFLAGS" variable (:default-value ("-I" "m4")) nil [307 330])
+            ("bin_PROGRAMS" variable nil nil [331 345])
+            ("sbin_PROGRAMS" variable nil nil [345 361])
+            ("check_PROGRAMS" variable nil nil [361 377])
+            ("noinst_PROGRAMS" variable nil nil [377 394])
+            ("lib_LTLIBRARIES" variable nil nil [394 411])
+            ("noinst_LTLIBRARIES" variable nil nil [411 431])
+            ("nobase_include_HEADERS" variable nil nil [431 455])
+            ("noinst_HEADERS" variable nil nil [455 471])
+            ("man1_MANS" variable nil nil [471 482])
+            ("man3_MANS" variable nil nil [482 493])
+            ("man8_MANS" variable nil nil [493 504])
+            ("DISTCLEANFILES" variable nil nil [504 520])
+            ("EXTRA_DIST" variable nil nil [520 532])
+            ("CLEANFILES" variable nil nil [532 544])
+            ("BUILT_SOURCES" variable nil nil [544 559])
+            ("TESTS" variable nil nil [559 566])
+            ("XFAIL_TESTS" variable nil nil [566 579])
+            (".PHONY" variable nil nil [579 587])
+            ("dist_man_MANS" variable nil nil [587 602])
+            ("man_MANS" variable nil nil [602 612])
+            ("DISTCLEANFILES" variable (:default-value ("aminclude.am")) nil [674 704])
+            ("libtest/include.am" include nil nil [730 757])
+            ("libhostile/include.am" include nil nil [757 787])
+            ("libhashkit-1.0/include.am" include nil nil [787 821])
+            ("libhashkit/include.am" include nil nil [822 852])
+            ("benchmark/include.am" include nil nil [852 881])
+            ("bin/include.am" include nil nil [881 904])
+            ("examples/include.am" include nil nil [904 932])
+            ("gearmand/include.am" include nil nil [932 960])
+            ("libgearman-server/include.am" include nil nil [960 997])
+            ("libgearman/include.am" include nil nil [997 1027])
+            ("libgearman-1.0/include.am" include nil nil [1027 1061])
+            ("util/include.am" include nil nil [1061 1085])
+            ("tests/include.am" include nil nil [1085 1110])
+            ("support/include.am" include nil nil [1110 1137])
+            ("docs/include.am" include nil nil [1137 1161])
+            ("man/include.am" include nil nil [1161 1184])
+            ("m4/include.am" include nil nil [1185 1207])
+            ("TESTS" variable (:default-value ("$(bin_PROGRAMS)")) nil [1208 1233])
+            ("TESTS" variable (:default-value ("$(check_PROGRAMS)")) nil [1233 1260])
+            ("XFAIL_TESTS" variable (:default-value ("$(bin_PROGRAMS)")) nil [1260 1291])
+            ("EXTRA_DIST" variable (:default-value ("HACKING")) nil [1292 1313])
+            ("EXTRA_DIST" variable (:default-value ("scripts/README.solaris")) nil [1313 1349])
+            ("test" function (:arguments ("check")) nil [1350 1362])
+            ("BUILT_SOURCES" variable (:default-value ("configmake.h")) nil [1363 1392])
+            ("CLEANFILES" variable (:default-value ("configmake.h" "configmake.h-t")) nil [1392 1433])
+            ("configmake.h" function (:arguments ("Makefile")) nil [1433 1882])
+            ("clean-local" function (:arguments ("clean-libtest-check" "clean-docs-check")) nil [1883 1933])
+            ("maintainer-clean-local" function nil nil [1934 2509])
+            ("rpm.am" include nil nil [2510 2525])
+            ("merge-clean" function nil nil [2526 3041]))          
+    :file "Makefile.am"
+    :pointmax 3041
+    :fsize 3040
+    :lastmodtime '(20746 498)
+    :unmatched-syntax '((shell-command 3027 . 3040) (bol 3026 . 3026))
+    )
+   )
+  :file "!home!work!download!gearmand-1.1.5!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

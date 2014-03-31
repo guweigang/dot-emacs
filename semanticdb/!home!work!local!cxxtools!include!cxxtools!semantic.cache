@@ -1,0 +1,33 @@
+;; Object cxxtools/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cxxtools/"
+  :tables (list 
+   (semanticdb-table "config.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("CXXTOOLS_ATOMICITY_GCC_X86_64" variable (:constant-flag t) nil [61 90])
+            ("CXXTOOLS_WITH_STD_LOCALE" variable (:constant-flag t) nil [150 174])
+            ("NO_LONG_LONG" variable (:constant-flag t) nil [230 242])
+            ("NO_UNSIGNED_LONG_LONG" variable (:constant-flag t) nil [307 328])
+            ("HAVE_REVERSE_ITERATOR" variable (:constant-flag t) nil [398 419])
+            ("NO_REVERSE_ITERATOR_4" variable (:constant-flag t) nil [531 552]))          
+    :file "config.h"
+    :pointmax 553
+    :fsize 552
+    :lastmodtime '(20859 38289 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("CXXTOOLS_WITH_STD_LOCALE")
+          ("CXXTOOLS_ATOMICITY_GCC_X86_64")
+          ("NO_LONG_LONG")
+          ("HAVE_REVERSE_ITERATOR")
+          ("NO_UNSIGNED_LONG_LONG")
+          ("NO_REVERSE_ITERATOR_4")
+          )
+
+    )
+   )
+  :file "!home!work!local!cxxtools!include!cxxtools!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

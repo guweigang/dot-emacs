@@ -1,0 +1,87 @@
+Title: GCCSense - C/C++のための最も賢い開発援助ツール
+CSS: style.css
+
+GCCSense
+========
+
+*C/C++のための最も賢い開発援助ツール*
+
+\[[English](index.txt)]
+
+* * * *
+
+{toc}
+
+* * * *
+
+GCCSenseとは？
+--------------
+
+GCCSenseは[GCC][]のコード解析器を利用した開発援助ツールです。コンパイラの情報を利用するため非常に高精度なコード補完などが可能になります。独立したプログラムとして動作するので理論的にはどのエディタからも利用することができます。
+
+特徴
+----
+
+* 高精度コード補完
+* 自動構文チェック
+
+スクリーンショット
+------------------
+
+![](gccsense-emacs-2.png)
+![](gccsense-vim.png)
+
+デモ
+----
+
+* [YouTube](http://www.youtube.com/watch?v=sz68cCQ0Zpc)
+* [Ogg Theora with video tag](demo.txt)
+
+ダウンロード
+------------
+
+GCCSenseとgcc-code-assistの両方をダウンロードしてください。
+
+### 最新安定板 ###
+
+* [gccsense-0.1.tar.bz2](/pub/gccsense/gccsense-0.1.tar.bz2)
+* [gcc-code-assist-0.1-4.4.4.tar.bz2](/pub/gccsense/gcc-code-assist-0.1-4.4.4.tar.bz2)
+
+ユーザーマニュアル
+------------------
+
+[GCCSenseユーザーマニュアル](manual.ja.txt)
+
+利用者の声
+----------
+
+利用者の声をぜひお聞かせください。あなたの名前（匿名希望可）とコメントをそえて[tomo@cx4a.org](mailto: tomo@cx4a.org)までメールでお願いします。どんなコメントでも歓迎です。
+
+ソースコード
+------------
+
+ソースコードは以下のGitリポジトリから取得できます。
+
+* GCCSense
+
+  <http://cx4a.org/repo/gccsense.git>
+
+* gcc-code-assist
+
+  <http://cx4a.org/repo/gcc.git>
+
+ソースコードを取得するには次のコマンドを実行します。GCCのリポジトリは巨大なので注意してください。
+
+    $ git clone http://cx4a.org/repo/gccsense.git
+    $ git clone http://cx4a.org/repo/gcc.git
+    $ cd gcc
+    $ # code-assistブランチをチェックアウト
+    $ git checkout code-assist
+
+ライセンス
+----------
+
+このソフトウェアは[GPLv3+][]のもとで配布されます。
+
+[GCC]: http://gcc.gnu.org/
+[GPLv3+]: http://gplv3.fsf.org/

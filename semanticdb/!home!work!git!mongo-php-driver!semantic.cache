@@ -1,0 +1,3077 @@
+;; Object mongo-php-driver/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mongo-php-driver/"
+  :tables (list 
+   (semanticdb-table "bson.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("php.h" include (:system-flag t) nil [608 624])
+            ("zend_exceptions.h" include (:system-flag t) nil [625 653])
+            ("php_mongo.h" include nil nil [755 777])
+            ("bson.h" include nil nil [778 795])
+            ("types/date.h" include nil nil [796 819])
+            ("types/id.h" include nil nil [820 841])
+            ("CHECK_BUFFER_LEN" variable (:constant-flag t) nil [851 867])
+            ("mongo_ce_Int64" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [1143 1398])
+            ("mongo_ce_Int32" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [1143 1398])
+            ("mongo_ce_CursorException" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [1143 1398])
+            ("mongo_ce_Exception" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [1143 1398])
+            ("mongo_ce_MaxKey" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [1143 1398])
+            ("mongo_ce_MinKey" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [1143 1398])
+            ("mongo_ce_Timestamp" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [1143 1398])
+            ("mongo_ce_Regex" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [1143 1398])
+            ("mongo_ce_Id" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [1143 1398])
+            ("mongo_ce_Date" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [1143 1398])
+            ("mongo_ce_Code" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [1143 1398])
+            ("mongo_ce_BinData" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [1143 1398])
+            ("prep_obj_for_db" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1462 1474])
+                    ("array" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1475 1501])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1492 1502]))                  
+                :type "int")
+                nil [1435 1503])
+            ("apply_func_args_wrapper" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1680 1692])
+                    ("num_args" variable (:type "int") (reparse-symbol arg-sub-list) [1693 1706])
+                    ("args" variable (:type ("va_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1707 1720])
+                    ("key" variable
+                       (:pointer 1
+                        :type ("zend_hash_key" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1721 1740]))                  
+                :type "int")
+                nil [1645 1741])
+            ("is_utf8" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1768 1782])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [1783 1791]))                  
+                :type "int")
+                nil [1749 1792])
+            ("insert_helper" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1818 1830])
+                    ("doc" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1831 1841])
+                    ("max" variable (:type "int") (reparse-symbol arg-sub-list) [1842 1859])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1850 1860]))                  
+                :type "int")
+                nil [1793 1861])
+            ("php_mongo_serialize_size" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("start" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1996 2008])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2009 2021])
+                    ("max_size" variable (:type "int") (reparse-symbol arg-sub-list) [2022 2044])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2035 2045]))                  
+                :type "int")
+                nil [1960 2334])
+            ("prep_obj_for_db" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2364 2376])
+                    ("array" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2377 2403])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2394 2404]))                  
+                :type "int")
+                nil [2337 2931])
+            ("zval_to_bson" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2974 2986])
+                    ("hash" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2987 3003])
+                    ("prep" variable (:type "int") (reparse-symbol arg-sub-list) [3004 3013])
+                    ("max_document_size" variable (:type "int") (reparse-symbol arg-sub-list) [3014 3045])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3036 3046]))                  
+                :type "int")
+                nil [2957 3885])
+            ("apply_func_args_wrapper" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4062 4074])
+                    ("num_args" variable (:type "int") (reparse-symbol arg-sub-list) [4075 4088])
+                    ("args" variable (:type ("va_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4089 4102])
+                    ("key" variable
+                       (:pointer 1
+                        :type ("zend_hash_key" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4103 4122]))                  
+                :type "int")
+                nil [4027 5140])
+            ("php_mongo_serialize_element" function
+               (:arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5174 5191])
+                    ("name_len" variable (:type "int") (reparse-symbol arg-sub-list) [5192 5205])
+                    ("data" variable
+                       (:pointer 2
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5206 5218])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5219 5231])
+                    ("prep" variable (:type "int") (reparse-symbol arg-sub-list) [5232 5250])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5241 5251]))                  
+                :type "int")
+                nil [5142 9344])
+            ("resize_buf" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9361 9373])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [9374 9383]))                  
+                :type "int")
+                nil [9346 9704])
+            ("php_mongo_serialize_date" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9812 9824])
+                    ("date" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9825 9845])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9836 9846]))                  
+                :type "void")
+                nil [9782 10130])
+            ("strtoll" variable (:constant-flag t) nil [10298 10305])
+            ("php_mongo_serialize_int32" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10428 10440])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10441 10461])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10452 10462]))                  
+                :type "void")
+                nil [10397 10647])
+            ("php_mongo_serialize_int64" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10730 10742])
+                    ("data" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10743 10763])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10754 10764]))                  
+                :type "void")
+                nil [10699 10955])
+            ("php_mongo_serialize_regex" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11052 11064])
+                    ("regex" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11065 11086])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11077 11087]))                  
+                :type "void")
+                nil [11021 11376])
+            ("php_mongo_serialize_code" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11548 11560])
+                    ("code" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11561 11581])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11572 11582]))                  
+                :type "void")
+                nil [11518 12244])
+            ("php_mongo_serialize_bin_data" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12393 12405])
+                    ("bin" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12406 12425])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12416 12426]))                  
+                :type "void")
+                nil [12359 13432])
+            ("php_mongo_serialize_ts" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13561 13573])
+                    ("time" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13574 13594])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13585 13595]))                  
+                :type "void")
+                nil [13533 13892])
+            ("php_mongo_serialize_byte" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13924 13936])
+                    ("b" variable (:type "char") (reparse-symbol arg-sub-list) [13937 13944]))                  
+                :type "void")
+                nil [13894 14034])
+            ("php_mongo_serialize_bytes" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14067 14079])
+                    ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14080 14090])
+                    ("str_len" variable (:type "int") (reparse-symbol arg-sub-list) [14091 14103]))                  
+                :type "void")
+                nil [14036 14226])
+            ("php_mongo_serialize_string" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14260 14272])
+                    ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14273 14283])
+                    ("str_len" variable (:type "int") (reparse-symbol arg-sub-list) [14284 14296]))                  
+                :type "void")
+                nil [14228 14495])
+            ("php_mongo_serialize_int" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14526 14538])
+                    ("num" variable (:type "int") (reparse-symbol arg-sub-list) [14539 14547]))                  
+                :type "void")
+                nil [14497 14691])
+            ("php_mongo_serialize_long" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14723 14735])
+                    ("num" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14736 14748]))                  
+                :type "void")
+                nil [14693 14896])
+            ("php_mongo_serialize_double" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14930 14942])
+                    ("num" variable (:type "double") (reparse-symbol arg-sub-list) [14943 14954]))                  
+                :type "void")
+                nil [14898 15176])
+            ("php_mongo_serialize_key" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15282 15294])
+                    ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15295 15311])
+                    ("str_len" variable (:type "int") (reparse-symbol arg-sub-list) [15312 15324])
+                    ("prep" variable (:type "int") (reparse-symbol arg-sub-list) [15325 15343])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15334 15344]))                  
+                :type "void")
+                nil [15253 16197])
+            ("php_mongo_serialize_ns" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16413 16425])
+                    ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [16426 16445])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16436 16446]))                  
+                :type "void")
+                nil [16385 17000])
+            ("insert_helper" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17255 17267])
+                    ("doc" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17268 17278])
+                    ("max_document_size" variable (:type "int") (reparse-symbol arg-sub-list) [17279 17310])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17301 17311]))                  
+                :type "int")
+                nil [17230 18098])
+            ("php_mongo_write_insert" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18127 18139])
+                    ("ns" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [18140 18149])
+                    ("doc" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18150 18160])
+                    ("max_document_size" variable (:type "int") (reparse-symbol arg-sub-list) [18161 18183])
+                    ("max_message_size" variable (:type "int") (reparse-symbol arg-sub-list) [18184 18214])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18205 18215]))                  
+                :type "int")
+                nil [18100 18494])
+            ("php_mongo_write_batch_insert" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18529 18541])
+                    ("ns" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [18542 18551])
+                    ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [18552 18562])
+                    ("docs" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18563 18574])
+                    ("max_document_size" variable (:type "int") (reparse-symbol arg-sub-list) [18575 18597])
+                    ("max_message_size" variable (:type "int") (reparse-symbol arg-sub-list) [18598 18628])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18619 18629]))                  
+                :type "int")
+                nil [18496 19982])
+            ("php_mongo_write_update" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20011 20023])
+                    ("ns" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20024 20033])
+                    ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [20034 20044])
+                    ("criteria" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20045 20060])
+                    ("newobj" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20061 20074])
+                    ("max_document_size" variable (:type "int") (reparse-symbol arg-sub-list) [20075 20097])
+                    ("max_message_size" variable (:type "int") (reparse-symbol arg-sub-list) [20098 20128])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20119 20129]))                  
+                :type "int")
+                nil [19984 20686])
+            ("php_mongo_write_delete" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20715 20727])
+                    ("ns" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20728 20737])
+                    ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [20738 20748])
+                    ("criteria" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20749 20764])
+                    ("max_document_size" variable (:type "int") (reparse-symbol arg-sub-list) [20765 20787])
+                    ("max_message_size" variable (:type "int") (reparse-symbol arg-sub-list) [20788 20818])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20809 20819]))                  
+                :type "int")
+                nil [20688 21181])
+            ("php_mongo_write_query" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21368 21380])
+                    ("cursor" variable
+                       (:pointer 1
+                        :type ("mongo_cursor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21381 21402])
+                    ("max_document_size" variable (:type "int") (reparse-symbol arg-sub-list) [21403 21425])
+                    ("max_message_size" variable (:type "int") (reparse-symbol arg-sub-list) [21426 21456])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21447 21457]))                  
+                :type "int")
+                nil [21342 22184])
+            ("php_mongo_write_kill_cursors" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22219 22231])
+                    ("cursor_id" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22232 22250])
+                    ("max_message_size" variable (:type "int") (reparse-symbol arg-sub-list) [22251 22281])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22272 22282]))                  
+                :type "int")
+                nil [22186 22594])
+            ("php_mongo_write_get_more" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22768 22780])
+                    ("cursor" variable
+                       (:pointer 1
+                        :type ("mongo_cursor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22781 22811])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22802 22812]))                  
+                :type "int")
+                nil [22739 23221])
+            ("mongo_get_limit" function
+               (:arguments 
+                  ( ("cursor" variable
+                       (:pointer 1
+                        :type ("mongo_cursor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23244 23265]))                  
+                :type "int")
+                nil [23224 23707])
+            ("bson_to_zval" function
+               (:pointer 1
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [23729 23739])
+                    ("result" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23740 23767])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23758 23768]))                  
+                :type "char")
+                nil [23710 33475])
+            ("is_utf8" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [33496 33510])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [33511 33519]))                  
+                :type "int")
+                nil [33477 33967])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("bson_encode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34085 34097]))                  
+                :type "int")
+                nil [34072 36540])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("bson_decode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36718 36730]))                  
+                :type "int")
+                nil [36705 36943])
+            ("mongo_buf_init" function
+               (:arguments 
+                  ( ("dest" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [36975 36986]))                  
+                :type "void")
+                nil [36955 37007])
+            ("mongo_buf_append" function
+               (:arguments 
+                  ( ("dest" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [37031 37042])
+                    ("piece" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [37043 37055]))                  
+                :type "void")
+                nil [37009 37131])
+            ("php_mongo_handle_int64" function
+               (:arguments 
+                  ( ("value" variable
+                       (:pointer 2
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37161 37174])
+                    ("nr" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37175 37195])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [37186 37196]))                  
+                :type "void")
+                nil [37133 37989]))          
+    :file "bson.c"
+    :pointmax 38108
+    :fsize 38107
+    :lastmodtime '(21077 1389 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "php_mongo.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("PHP_MONGO_H" variable (:constant-flag t) nil [636 647])
+            ("PHP_MONGO_VERSION" variable (:constant-flag t) nil [659 676])
+            ("PHP_MONGO_EXTNAME" variable (:constant-flag t) nil [696 713])
+            ("mcon/types.h" include nil nil [824 847])
+            ("mcon/read_preference.h" include nil nil [848 881])
+            ("PHP_CONNECTION_RES_NAME" variable (:constant-flag t) nil [912 935])
+            ("PHP_SERVER_RES_NAME" variable (:constant-flag t) nil [963 982])
+            ("PHP_CURSOR_LIST_RES_NAME" variable (:constant-flag t) nil [1011 1035])
+            ("zend_parse_parameters_none" variable (:constant-flag t) nil [1095 1121])
+            ("Z_UNSET_ISREF_P" variable (:constant-flag t) nil [1221 1236])
+            ("ZVAL_COPY_VALUE" variable (:constant-flag t) nil [1301 1316])
+            ("INIT_PZVAL_COPY" variable (:constant-flag t) nil [1447 1462])
+            ("MAKE_COPY_ZVAL" variable (:constant-flag t) nil [1611 1625])
+            ("Z_ADDREF_P" variable (:constant-flag t) nil [1804 1814])
+            ("Z_ADDREF_PP" variable (:constant-flag t) nil [1888 1899])
+            ("Z_DELREF_P" variable (:constant-flag t) nil [1974 1984])
+            ("Z_SET_REFCOUNT_P" variable (:constant-flag t) nil [2063 2079])
+            ("INT_32" variable (:constant-flag t) nil [2131 2137])
+            ("INT_64" variable (:constant-flag t) nil [2148 2154])
+            ("DOUBLE_64" variable (:constant-flag t) nil [2165 2174])
+            ("BYTE_8" variable (:constant-flag t) nil [2185 2191])
+            ("OP_REPLY" variable (:constant-flag t) nil [2216 2224])
+            ("OP_MSG" variable (:constant-flag t) nil [2235 2241])
+            ("OP_UPDATE" variable (:constant-flag t) nil [2255 2264])
+            ("OP_INSERT" variable (:constant-flag t) nil [2278 2287])
+            ("OP_GET_BY_OID" variable (:constant-flag t) nil [2301 2314])
+            ("OP_QUERY" variable (:constant-flag t) nil [2328 2336])
+            ("OP_GET_MORE" variable (:constant-flag t) nil [2350 2361])
+            ("OP_DELETE" variable (:constant-flag t) nil [2375 2384])
+            ("OP_KILL_CURSORS" variable (:constant-flag t) nil [2398 2413])
+            ("CURSOR_NOT_FOUND" variable (:constant-flag t) nil [2447 2463])
+            ("CURSOR_ERR" variable (:constant-flag t) nil [2474 2484])
+            ("MSG_HEADER_SIZE" variable (:constant-flag t) nil [2496 2511])
+            ("REPLY_HEADER_SIZE" variable (:constant-flag t) nil [2523 2540])
+            ("INITIAL_BUF_SIZE" variable (:constant-flag t) nil [2570 2586])
+            ("DEFAULT_CHUNK_SIZE" variable (:constant-flag t) nil [2600 2618])
+            ("PHP_MONGO_DEFAULT_WTIMEOUT" variable (:constant-flag t) nil [2639 2665])
+            ("PHP_MONGO_DEFAULT_SOCKET_TIMEOUT" variable (:constant-flag t) nil [2680 2712])
+            ("PREP" variable (:constant-flag t) nil [2764 2768])
+            ("NO_PREP" variable (:constant-flag t) nil [2779 2786])
+            ("NOISY" variable (:constant-flag t) nil [2798 2803])
+            ("QUIET" variable (:constant-flag t) nil [2814 2819])
+            ("DUP" variable (:constant-flag t) nil [2855 2858])
+            ("NO_DUP" variable (:constant-flag t) nil [2869 2875])
+            ("PERSIST" variable (:constant-flag t) nil [2887 2894])
+            ("NO_PERSIST" variable (:constant-flag t) nil [2905 2915])
+            ("FLAGS" variable (:constant-flag t) nil [2927 2932])
+            ("LAST_ERROR" variable (:constant-flag t) nil [2944 2954])
+            ("PREV_ERROR" variable (:constant-flag t) nil [2965 2975])
+            ("RESET_ERROR" variable (:constant-flag t) nil [2986 2997])
+            ("FORCE_ERROR" variable (:constant-flag t) nil [3008 3019])
+            ("MONGO_ARGINFO_STATIC" variable (:constant-flag t) nil [3095 3115])
+            ("PUSH_PARAM" variable (:constant-flag t) nil [3337 3347])
+            ("POP_PARAM" variable (:constant-flag t) nil [3408 3417])
+            ("PUSH_EO_PARAM" variable (:constant-flag t) nil [3475 3488])
+            ("POP_EO_PARAM" variable (:constant-flag t) nil [3547 3559])
+            ("MONGO_E_DEPRECATED" variable (:constant-flag t) nil [3700 3718])
+            ("MUST_BE_ARRAY_OR_OBJECT" variable (:constant-flag t) nil [3744 3767])
+            ("zpp_var_args" variable (:constant-flag t) nil [4085 4097])
+            ("MONGO_METHOD_BASE" variable (:constant-flag t) nil [4583 4600])
+            ("MONGO_METHOD_HELPER" variable (:constant-flag t) nil [4652 4671])
+            ("MONGO_METHOD" variable (:constant-flag t) nil [4985 4997])
+            ("MONGO_METHOD1" variable (:constant-flag t) nil [5121 5134])
+            ("MONGO_METHOD2" variable (:constant-flag t) nil [5256 5269])
+            ("MONGO_METHOD3" variable (:constant-flag t) nil [5443 5456])
+            ("MONGO_METHOD4" variable (:constant-flag t) nil [5668 5681])
+            ("MONGO_METHOD5" variable (:constant-flag t) nil [5932 5945])
+            ("HASH_P" variable (:constant-flag t) nil [6236 6242])
+            ("HASH_PP" variable (:constant-flag t) nil [6313 6320])
+            ("IS_SCALAR_P" variable (:constant-flag t) nil [6395 6406])
+            ("IS_SCALAR_PP" variable (:constant-flag t) nil [6551 6563])
+            ("IS_ARRAY_OR_OBJECT_P" variable (:constant-flag t) nil [6591 6611])
+            ("Z_NUMVAL_P" variable (:constant-flag t) nil [6749 6759])
+            ("Z_NUMVAL_PP" variable (:constant-flag t) nil [6966 6977])
+            ("init_properties" variable (:constant-flag t) nil [7303 7318])
+            ("PHP_MONGO_TYPE_OBJ_NEW" variable (:constant-flag t) nil [7595 7617])
+            ("PHP_MONGO_TYPE_OBJ_NEW" variable (:constant-flag t) nil [7595 7617])
+            ("PHP_MONGO_OBJ_NEW" variable (:constant-flag t) nil [8519 8536])
+            ("php_mongo_type_object_new" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("class_type" variable
+                       (:pointer 1
+                        :type ("zend_class_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9470 9508])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9499 9509]))                  
+                :type ("zend_object_value" type (:type "class") nil nil))
+                nil [9426 9510])
+            ("php_mongo_type_object_free" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9543 9565])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9556 9566]))                  
+                :type "void")
+                nil [9511 9567])
+            ("mongo_write_property" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9732 9745])
+                    ("member" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9746 9759])
+                    ("value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9760 9781])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9772 9782]))                  
+                :type "void")
+                nil [9706 9783])
+            ("mongo_read_property" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9952 9965])
+                    ("member" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9966 9979])
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) [9980 9998])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9989 9999]))                  
+                :type ("zval" type (:type "class") nil nil))
+                nil [9926 10000])
+            ("RS_PRIMARY" variable (:constant-flag t) nil [10018 10028])
+            ("RS_SECONDARY" variable (:constant-flag t) nil [10039 10051])
+            ("MONGO_ACC_READ_ONLY" variable (:constant-flag t) nil [10150 10169])
+            ("mongo_type_object" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("std" variable (:type ("zend_object" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10200 10216]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [10182 10237])
+            ("mongoclient" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("std" variable (:type ("zend_object" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10257 10273])
+                          ("manager" variable
+                             (:pointer 1
+                              :type ("mongo_con_manager" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [10276 10303])
+                          ("servers" variable
+                             (:pointer 1
+                              :type ("mongo_servers" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [10342 10369]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [10239 10384])
+            ("MONGO_CURSOR" variable (:constant-flag t) nil [10394 10406])
+            ("mongo_msg_header" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("length" variable (:type "int") (reparse-symbol classsubparts) [10428 10439])
+                          ("request_id" variable (:type "int") (reparse-symbol classsubparts) [10441 10456])
+                          ("response_to" variable (:type "int") (reparse-symbol classsubparts) [10458 10474])
+                          ("op" variable (:type "int") (reparse-symbol classsubparts) [10476 10483]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [10410 10503])
+            ("buffer" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("start" variable
+                             (:pointer 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [10523 10535])
+                          ("pos" variable
+                             (:pointer 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [10537 10547])
+                          ("end" variable
+                             (:pointer 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [10549 10559]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [10505 10569])
+            ("CREATE_MSG_HEADER" variable (:constant-flag t) nil [10579 10596])
+            ("CREATE_RESPONSE_HEADER" variable (:constant-flag t) nil [10726 10748])
+            ("CREATE_HEADER_WITH_OPTS" variable (:constant-flag t) nil [10870 10893])
+            ("CREATE_HEADER" variable (:constant-flag t) nil [11017 11030])
+            ("APPEND_HEADER" variable (:constant-flag t) nil [11104 11117])
+            ("APPEND_HEADER_NS" variable (:constant-flag t) nil [11347 11363])
+            ("MONGO_CHECK_INITIALIZED" variable (:constant-flag t) nil [11464 11487])
+            ("MONGO_CHECK_INITIALIZED_STRING" variable (:constant-flag t) nil [11703 11733])
+            ("PHP_MONGO_GET_LINK" variable (:constant-flag t) nil [11957 11975])
+            ("PHP_MONGO_GET_DB" variable (:constant-flag t) nil [12111 12127])
+            ("PHP_MONGO_GET_COLLECTION" variable (:constant-flag t) nil [12255 12279])
+            ("PHP_MONGO_GET_CURSOR" variable (:constant-flag t) nil [12419 12439])
+            ("PHP_MONGO_GET_MONGOCLIENT_FROM_CURSOR" variable (:constant-flag t) nil [12591 12628])
+            ("PHP_MONGO_CHECK_EXCEPTION" variable (:constant-flag t) nil [12736 12761])
+            ("PHP_MONGO_CHECK_EXCEPTION1" variable (:constant-flag t) nil [12804 12830])
+            ("PHP_MONGO_CHECK_EXCEPTION2" variable (:constant-flag t) nil [12927 12953])
+            ("PHP_MONGO_CHECK_EXCEPTION3" variable (:constant-flag t) nil [13095 13121])
+            ("PHP_MONGO_CHECK_EXCEPTION4" variable (:constant-flag t) nil [13310 13336])
+            ("PHP_MONGO_SERIALIZE_KEY" variable (:constant-flag t) nil [13571 13594])
+            ("REPLY_HEADER_LEN" variable (:constant-flag t) nil [13772 13788])
+            ("mongo_cursor" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("std" variable (:type ("zend_object" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13811 13827])
+                          ("connection" variable
+                             (:pointer 1
+                              :type ("mongo_connection" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [13848 13877])
+                          ("zmongoclient" variable
+                             (:pointer 1
+                              :type ("zval" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [13879 13898])
+                          ("ns" variable
+                             (:pointer 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [13929 13938])
+                          ("query" variable
+                             (:pointer 1
+                              :type ("zval" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [13963 13975])
+                          ("fields" variable
+                             (:pointer 1
+                              :type ("zval" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [13977 13990])
+                          ("limit" variable (:type "int") (reparse-symbol classsubparts) [13992 14002])
+                          ("batch_size" variable (:type "int") (reparse-symbol classsubparts) [14004 14019])
+                          ("skip" variable (:type "int") (reparse-symbol classsubparts) [14021 14030])
+                          ("opts" variable (:type "int") (reparse-symbol classsubparts) [14032 14041])
+                          ("special" variable (:type "char") (reparse-symbol classsubparts) [14044 14057])
+                          ("timeout" variable (:type "int") (reparse-symbol classsubparts) [14059 14071])
+                          ("send" variable (:type ("mongo_msg_header" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14074 14096])
+                          ("recv" variable (:type ("mongo_msg_header" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14098 14120])
+                          ("flag" variable (:type "int") (reparse-symbol classsubparts) [14146 14155])
+                          ("start" variable (:type "int") (reparse-symbol classsubparts) [14157 14167])
+                          ("at" variable (:type "int") (reparse-symbol classsubparts) [14199 14206])
+                          ("num" variable (:type "int") (reparse-symbol classsubparts) [14239 14247])
+                          ("buf" variable (:type ("buffer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14264 14275])
+                          ("cursor_id" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14609 14627])
+                          ("started_iterating" variable (:type ("zend_bool" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14630 14658])
+                          ("persist" variable (:type ("zend_bool" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14660 14678])
+                          ("current" variable
+                             (:pointer 1
+                              :type ("zval" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [14681 14695])
+                          ("retry" variable (:type "int") (reparse-symbol classsubparts) [14697 14707])
+                          ("read_pref" variable (:type ("mongo_read_preference" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14710 14742])
+                          ("force_primary" variable (:type "int") (reparse-symbol classsubparts) [14745 14763])
+                          ("dead" variable (:type "int") (reparse-symbol classsubparts) [14855 14864]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [13793 14880])
+            ("cursor_node" type
+               (:typedef ("_cursor_node" type (:type "struct") nil nil)
+                :superclasses "_cursor_node"
+                :type "typedef")
+                nil [15367 15503])
+            ("_cursor_node" type
+               (:members 
+                  ( ("cursor_id" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15398 15416])
+                    ("socket" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [15418 15431])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("_cursor_node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [15434 15460])
+                    ("prev" variable
+                       (:pointer 1
+                        :type ("_cursor_node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [15462 15488]))                  
+                :type "struct")
+                nil [15367 15503])
+            ("mongo_id" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("std" variable (:type ("zend_object" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15523 15539])
+                          ("id" variable
+                             (:pointer 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [15541 15550]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [15505 15562])
+            ("mongo_db" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("std" variable (:type ("zend_object" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15583 15599])
+                          ("link" variable
+                             (:pointer 1
+                              :type ("zval" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [15601 15612])
+                          ("name" variable
+                             (:pointer 1
+                              :type ("zval" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [15614 15625])
+                          ("read_pref" variable (:type ("mongo_read_preference" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15628 15660]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [15565 15672])
+            ("mongo_collection" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("std" variable (:type ("zend_object" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15692 15708])
+                          ("parent" variable
+                             (:pointer 1
+                              :type ("zval" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [15734 15747])
+                          ("link" variable
+                             (:pointer 1
+                              :type ("zval" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [15749 15760])
+                          ("name" variable
+                             (:pointer 1
+                              :type ("zval" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [15776 15787])
+                          ("ns" variable
+                             (:pointer 1
+                              :type ("zval" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [15789 15798])
+                          ("read_pref" variable (:type ("mongo_read_preference" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15801 15833]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [15674 15853])
+            ("BUF_REMAINING" variable (:constant-flag t) nil [15864 15877])
+            ("CREATE_BUF" variable (:constant-flag t) nil [15907 15917])
+            ("PHP_MINIT_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("mongo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16041 16047]))                  
+                :type "int")
+                nil [16022 16048])
+            ("PHP_MSHUTDOWN_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("mongo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16072 16078]))                  
+                :type "int")
+                nil [16049 16079])
+            ("PHP_RINIT_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("mongo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16099 16105]))                  
+                :type "int")
+                nil [16080 16106])
+            ("PHP_MINFO_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("mongo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16126 16132]))                  
+                :type "int")
+                nil [16107 16133])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("bson_encode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16178 16190]))                  
+                :type "int")
+                nil [16165 16191])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("bson_decode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16205 16217]))                  
+                :type "int")
+                nil [16192 16218])
+            ("LOCK" variable (:constant-flag t) nil [16575 16579])
+            ("UNLOCK" variable (:constant-flag t) nil [16626 16632])
+            ("mongo_init_MongoDB" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("TSRMLS_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16704 16713]))                  
+                :type "void")
+                nil [16680 16714])
+            ("mongo_init_MongoCollection" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("TSRMLS_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16747 16756]))                  
+                :type "void")
+                nil [16715 16757])
+            ("mongo_init_MongoCursor" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("TSRMLS_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16786 16795]))                  
+                :type "void")
+                nil [16758 16796])
+            ("mongo_init_MongoGridFS" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("TSRMLS_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16826 16835]))                  
+                :type "void")
+                nil [16798 16836])
+            ("mongo_init_MongoGridFSFile" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("TSRMLS_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16869 16878]))                  
+                :type "void")
+                nil [16837 16879])
+            ("mongo_init_MongoGridFSCursor" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("TSRMLS_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16914 16923]))                  
+                :type "void")
+                nil [16880 16924])
+            ("mongo_init_MongoId" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("TSRMLS_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16950 16959]))                  
+                :type "void")
+                nil [16926 16960])
+            ("mongo_init_MongoCode" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("TSRMLS_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16987 16996]))                  
+                :type "void")
+                nil [16961 16997])
+            ("mongo_init_MongoRegex" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("TSRMLS_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17025 17034]))                  
+                :type "void")
+                nil [16998 17035])
+            ("mongo_init_MongoDate" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("TSRMLS_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17062 17071]))                  
+                :type "void")
+                nil [17036 17072])
+            ("mongo_init_MongoBinData" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("TSRMLS_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17102 17111]))                  
+                :type "void")
+                nil [17073 17112])
+            ("mongo_init_MongoDBRef" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("TSRMLS_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17140 17149]))                  
+                :type "void")
+                nil [17113 17150])
+            ("mongo_init_MongoTimestamp" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("TSRMLS_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17182 17191]))                  
+                :type "void")
+                nil [17151 17192])
+            ("mongo_init_MongoInt32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("TSRMLS_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17220 17229]))                  
+                :type "void")
+                nil [17193 17230])
+            ("mongo_init_MongoInt64" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("TSRMLS_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17258 17267]))                  
+                :type "void")
+                nil [17231 17268])
+            ("php_mongo_make_tagsets" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("rp" variable
+                       (:pointer 1
+                        :type ("mongo_read_preference" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17329 17355]))                  
+                :type ("zval" type (:type "class") nil nil))
+                nil [17300 17356])
+            ("php_mongo_add_tagsets" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17384 17403])
+                    ("rp" variable
+                       (:pointer 1
+                        :type ("mongo_read_preference" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17404 17430]))                  
+                :type "void")
+                nil [17357 17431])
+            ("php_mongo_set_readpreference" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("rp" variable
+                       (:pointer 1
+                        :type ("mongo_read_preference" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17465 17491])
+                    ("read_preference" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17492 17514])
+                    ("tags" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17515 17540])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17531 17541]))                  
+                :type "int")
+                nil [17432 17542])
+            ("default_host" variable
+               (:pointer 1
+                :type "char")
+                nil [17601 17620])
+            ("default_port" variable (:type "long") nil [17622 17640])
+            ("request_id" variable (:type "long") nil [17642 17658])
+            ("chunk_size" variable (:type "int") nil [17660 17675])
+            ("cmd_char" variable
+               (:pointer 1
+                :type "char")
+                nil [17699 17714])
+            ("native_long" variable (:type "long") nil [17716 17733])
+            ("long_as_object" variable (:type "long") nil [17735 17755])
+            ("allow_empty_keys" variable (:type "long") nil [17757 17779])
+            ("machine" variable (:type "int") nil [17812 17834])
+            ("pid" variable (:type "int") nil [17812 17834])
+            ("inc" variable (:type "int") nil [17812 17834])
+            ("ts_inc" variable (:type "long") nil [17872 17884])
+            ("errmsg" variable
+               (:pointer 1
+                :type "char")
+                nil [17886 17899])
+            ("response_num" variable (:type "int") nil [17901 17918])
+            ("pool_size" variable (:type "int") nil [17920 17934])
+            ("log_level" variable (:type "long") nil [17937 17952])
+            ("log_module" variable (:type "long") nil [17954 17970])
+            ("log_callback_info" variable (:type ("zend_fcall_info" type (:type "class") nil nil)) nil [17972 18006])
+            ("log_callback_info_cache" variable (:type ("zend_fcall_info_cache" type (:type "class") nil nil)) nil [18008 18054])
+            ("ping_interval" variable (:type "long") nil [18057 18076])
+            ("ismaster_interval" variable (:type "long") nil [18078 18101])
+            ("manager" variable
+               (:pointer 1
+                :type ("mongo_con_manager" type (:type "class") nil nil))
+                nil [18104 18131])
+            ("MonGlo" variable (:constant-flag t) nil [18276 18282])
+            ("mongo_module_entry" variable
+               (:typemodifiers ("extern")
+                :type ("zend_module_entry" type (:type "class") nil nil))
+                nil [18312 18356])
+            ("phpext_mongo_ptr" variable (:constant-flag t) nil [18365 18381]))          
+    :file "php_mongo.h"
+    :pointmax 22915
+    :fsize 22914
+    :lastmodtime '(21064 7699 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("ZVAL_COPY_VALUE" (spp-arg-list ("z" "v") 1316 . 1322) . 
+              ((DO "do" 1326 . 1328) (semantic-list "{ \\
+		(z)->value = (v)->value; \\
+		Z_TYPE_P(z) = Z_TYPE_P(v); \\
+	}" 1329 . 1395) (WHILE "while" 1396 . 1401) (semantic-list "(0)" 1402 . 1405)))
+          ("PREP" . ((number "1" 2769 . 2770)))
+          ("NO_PERSIST" . ((number "0" 2916 . 2917)))
+          ("PHP_MONGO_TYPE_OBJ_NEW" (spp-arg-list ("mongo_obj") 7617 . 7628) . 
+              ((symbol "zend_object_value" 7651 . 7668) (symbol "retval" 7669 . 7675) (punctuation ";" 7675 . 7676) (symbol "mongo_obj" 7706 . 7715) (punctuation "*" 7716 . 7717) (symbol "intern" 7717 . 7723) (punctuation ";" 7723 . 7724) (symbol "intern" 7816 . 7822) (punctuation "=" 7823 . 7824) (semantic-list "(mongo_obj*)" 7825 . 7837) (symbol "emalloc" 7837 . 7844) (semantic-list "(sizeof(mongo_obj))" 7844 . 7863) (punctuation ";" 7863 . 7864) (symbol "memset" 7882 . 7888) (semantic-list "(intern, 0, sizeof(mongo_obj))" 7888 . 7918) (punctuation ";" 7918 . 7919) (symbol "zend_object_std_init" 8014 . 8034) (semantic-list "(&intern->std, class_type TSRMLS_CC)" 8034 . 8070) (punctuation ";" 8070 . 8071) (symbol "init_properties" 8080 . 8095) (semantic-list "(intern)" 8095 . 8103) (punctuation ";" 8103 . 8104) (symbol "retval" 8212 . 8218) (punctuation "." 8218 . 8219) (symbol "handle" 8219 . 8225) (punctuation "=" 8226 . 8227) (symbol "zend_objects_store_put" 8228 . 8250) (semantic-list "(intern,(zend_objects_store_dtor_t) zend_objects_destroy_object, php_##mongo_obj##_free, NULL TSRMLS_CC)" 8250 . 8354) (punctuation ";" 8354 . 8355) (symbol "retval" 8359 . 8365) (punctuation "." 8365 . 8366) (symbol "handlers" 8366 . 8374) (punctuation "=" 8375 . 8376) (punctuation "&" 8377 . 8378) (symbol "mongo_type_object_handlers" 8378 . 8404) (punctuation ";" 8404 . 8405) (RETURN "return" 8495 . 8501) (symbol "retval" 8502 . 8508) (punctuation ";" 8508 . 8509)))
+          ("MONGO_CHECK_INITIALIZED_STRING" (spp-arg-list ("member" "class_name") 11733 . 11753) . 
+              ((IF "if" 11757 . 11759) (semantic-list "(!(member))" 11760 . 11771) (semantic-list "{ \\
+		zend_throw_exception(mongo_ce_Exception, \"The \" #class_name \" object has not been correctly initialized by its constructor\", 0 TSRMLS_CC); \\
+		RETURN_STRING(\"\", 1); \\
+	}" 11772 . 11947)))
+          ("PHP_MONGO_GET_MONGOCLIENT_FROM_CURSOR" (spp-arg-list ("cursor") 12628 . 12636) . 
+              ((symbol "client" 12640 . 12646) (punctuation "=" 12647 . 12648) (semantic-list "(mongoclient*)" 12649 . 12663) (symbol "zend_object_store_get_object" 12663 . 12691) (semantic-list "((cursor)->zmongoclient TSRMLS_CC)" 12691 . 12725) (punctuation ";" 12725 . 12726)))
+          ("MonGlo" (spp-arg-list ("v") 18282 . 18285) . ((semantic-list "(mongo_globals.v)" 18286 . 18303)))
+          ("PHP_CURSOR_LIST_RES_NAME" . ((string "\"cursor list\"" 1036 . 1049)))
+          ("Z_DELREF_P" (spp-arg-list ("pz") 1984 . 1988) . 
+              ((semantic-list "(pz)" 2004 . 2008) (punctuation "-" 2008 . 2009) (punctuation ">" 2009 . 2010) (symbol "refcount" 2010 . 2018) (punctuation "-" 2018 . 2019) (punctuation "-" 2019 . 2020)))
+          ("PHP_MONGO_DEFAULT_WTIMEOUT" . ((number "10000" 2666 . 2671)))
+          ("FORCE_ERROR" . ((number "3" 3020 . 3021)))
+          ("IS_ARRAY_OR_OBJECT_P" (spp-arg-list ("a") 6611 . 6614) . ((semantic-list "(Z_TYPE_P(a) == IS_ARRAY || Z_TYPE_P(a) == IS_OBJECT)" 6615 . 6668)))
+          ("Z_NUMVAL_P" (spp-arg-list ("variable" "value") 6759 . 6776) . ((semantic-list "((Z_TYPE_P(variable) == IS_LONG && Z_LVAL_P(variable) == value) ||    \\
+   (Z_TYPE_P(variable) == IS_DOUBLE && Z_DVAL_P(variable) == value))" 6817 . 6957)))
+          ("Z_UNSET_ISREF_P" (spp-arg-list ("pz") 1236 . 1240) . 
+              ((symbol "pz" 1246 . 1248) (punctuation "-" 1248 . 1249) (punctuation ">" 1249 . 1250) (symbol "is_ref" 1250 . 1256) (punctuation "=" 1257 . 1258) (number "0" 1259 . 1260)))
+          ("OP_REPLY" . ((number "1" 2225 . 2226)))
+          ("REPLY_HEADER_SIZE" . ((semantic-list "(MSG_HEADER_SIZE+20)" 2541 . 2561)))
+          ("QUIET" . ((number "1" 2820 . 2821)))
+          ("HASH_P" (spp-arg-list ("a") 6242 . 6245) . ((semantic-list "(Z_TYPE_P(a) == IS_ARRAY ? Z_ARRVAL_P(a) : Z_OBJPROP_P(a))" 6246 . 6304)))
+          ("init_properties" (spp-arg-list ("intern") 7318 . 7326) . ((semantic-list "{                                     \\
+	zval *tmp;                                                         \\
+	zend_hash_copy(intern->std.properties, &class_type->default_properties, (copy_ctor_func_t) zval_add_ref, (void *) &tmp, sizeof(zval *)); \\
+}" 7327 . 7578)))
+          ("RS_PRIMARY" . ((number "1" 10029 . 10030)))
+          ("CREATE_RESPONSE_HEADER" (spp-arg-list ("buf" "ns" "rto" "opcode") 10748 . 10770) . 
+              ((symbol "CREATE_MSG_HEADER" 10774 . 10791) (semantic-list "(MonGlo(request_id)++, rto, opcode)" 10791 . 10826) (punctuation ";" 10826 . 10827) (symbol "APPEND_HEADER_NS" 10831 . 10847) (semantic-list "(buf, ns, 0)" 10847 . 10859) (punctuation ";" 10859 . 10860)))
+          ("PHP_MONGO_GET_LINK" (spp-arg-list ("obj") 11975 . 11980) . 
+              ((symbol "link" 11984 . 11988) (punctuation "=" 11989 . 11990) (semantic-list "(mongoclient*)" 11991 . 12005) (symbol "zend_object_store_get_object" 12005 . 12033) (semantic-list "((obj) TSRMLS_CC)" 12033 . 12050) (punctuation ";" 12050 . 12051) (symbol "MONGO_CHECK_INITIALIZED" 12055 . 12078) (semantic-list "(link->servers, Mongo)" 12078 . 12100) (punctuation ";" 12100 . 12101)))
+          ("PHP_MONGO_CHECK_EXCEPTION1" (spp-arg-list ("arg1") 12830 . 12836) . 
+              ((IF "if" 12840 . 12842) (semantic-list "(EG(exception))" 12843 . 12858) (semantic-list "{ \\
+		if (*arg1) { zval_ptr_dtor(arg1); } \\
+		return; \\
+	}" 12859 . 12917)))
+          ("phpext_mongo_ptr" . ((punctuation "&" 18382 . 18383) (symbol "mongo_module_entry" 18383 . 18401)))
+          ("zend_parse_parameters_none" (spp-arg-list nil 1121 . 1123) . ((symbol "zend_parse_parameters" 1127 . 1148) (semantic-list "(ZEND_NUM_ARGS() TSRMLS_CC, \"\")" 1148 . 1179)))
+          ("INIT_PZVAL_COPY" (spp-arg-list ("z" "v") 1462 . 1468) . 
+              ((DO "do" 1472 . 1474) (semantic-list "{ \\
+		ZVAL_COPY_VALUE(z, v); \\
+		Z_SET_REFCOUNT_P(z, 1); \\
+		Z_UNSET_ISREF_P(z); \\
+	}" 1475 . 1560) (WHILE "while" 1561 . 1566) (semantic-list "(0)" 1567 . 1570)))
+          ("Z_SET_REFCOUNT_P" (spp-arg-list ("pz" "rc") 2079 . 2087) . 
+              ((semantic-list "(pz)" 2093 . 2097) (punctuation "-" 2097 . 2098) (punctuation ">" 2098 . 2099) (symbol "refcount" 2099 . 2107) (punctuation "=" 2108 . 2109) (semantic-list "(rc)" 2110 . 2114)))
+          ("INT_64" . ((number "8" 2155 . 2156)))
+          ("CURSOR_ERR" . ((number "2" 2485 . 2486)))
+          ("zpp_var_args" (spp-arg-list ("argv" "argc") 4097 . 4109) . 
+              ((DO "do" 4110 . 4112) (semantic-list "{ \\
+	if (ZEND_NUM_ARGS() < 1) { \\
+		WRONG_PARAM_COUNT; \\
+	} \\
+	argv = (zval ***)safe_emalloc(ZEND_NUM_ARGS(), sizeof(zval **), 0); \\
+	if (zend_get_parameters_array_ex(ZEND_NUM_ARGS(), argv) == FAILURE) { \\
+		efree(argv); \\
+		WRONG_PARAM_COUNT; \\
+	} \\
+	argc = ZEND_NUM_ARGS(); \\
+}" 4113 . 4392) (WHILE "while" 4393 . 4398) (semantic-list "(0)" 4398 . 4401) (punctuation ";" 4401 . 4402)))
+          ("MONGO_METHOD" (spp-arg-list ("classname" "name" "retval" "thisptr") 4997 . 5031) . 
+              ((symbol "MONGO_METHOD_BASE" 5037 . 5054) (semantic-list "(classname, name)" 5054 . 5071) (semantic-list "(0, retval, NULL, thisptr, 0 TSRMLS_CC)" 5071 . 5110) (punctuation ";" 5110 . 5111)))
+          ("IS_SCALAR_PP" (spp-arg-list ("a") 6563 . 6566) . ((symbol "IS_SCALAR_P" 6567 . 6578) (semantic-list "(*a)" 6578 . 6582)))
+          ("APPEND_HEADER" (spp-arg-list ("buf" "opts") 11117 . 11128) . 
+              ((symbol "buf" 11129 . 11132) (punctuation "-" 11132 . 11133) (punctuation ">" 11133 . 11134) (symbol "pos" 11134 . 11137) (punctuation "+" 11138 . 11139) (punctuation "=" 11139 . 11140) (symbol "INT_32" 11141 . 11147) (punctuation ";" 11147 . 11148) (symbol "php_mongo_serialize_int" 11152 . 11175) (semantic-list "(buf, header.request_id)" 11175 . 11199) (punctuation ";" 11199 . 11200) (symbol "php_mongo_serialize_int" 11204 . 11227) (semantic-list "(buf, header.response_to)" 11227 . 11252) (punctuation ";" 11252 . 11253) (symbol "php_mongo_serialize_int" 11257 . 11280) (semantic-list "(buf, header.op)" 11280 . 11296) (punctuation ";" 11296 . 11297) (symbol "php_mongo_serialize_int" 11301 . 11324) (semantic-list "(buf, opts)" 11324 . 11335) (punctuation ";" 11335 . 11336)))
+          ("PHP_MONGO_CHECK_EXCEPTION2" (spp-arg-list ("arg1" "arg2") 12953 . 12965) . 
+              ((IF "if" 12969 . 12971) (semantic-list "(EG(exception))" 12972 . 12987) (semantic-list "{ \\
+		if (*arg1) { zval_ptr_dtor(arg1); } \\
+		if (*arg2) { zval_ptr_dtor(arg2); } \\
+	return; \\
+	}" 12988 . 13085)))
+          ("REPLY_HEADER_LEN" . ((number "36" 13789 . 13791)))
+          ("MSG_HEADER_SIZE" . ((number "16" 2512 . 2514)))
+          ("MONGO_ACC_READ_ONLY" . ((number "0x10000000" 10170 . 10180)))
+          ("CREATE_HEADER" (spp-arg-list ("buf" "ns" "opcode") 11030 . 11047) . 
+              ((symbol "CREATE_RESPONSE_HEADER" 11051 . 11073) (semantic-list "(buf, ns, 0, opcode)" 11073 . 11093) (punctuation ";" 11093 . 11094)))
+          ("PHP_MONGO_GET_DB" (spp-arg-list ("obj") 12127 . 12132) . 
+              ((symbol "db" 12136 . 12138) (punctuation "=" 12139 . 12140) (semantic-list "(mongo_db*)" 12141 . 12152) (symbol "zend_object_store_get_object" 12152 . 12180) (semantic-list "((obj) TSRMLS_CC)" 12180 . 12197) (punctuation ";" 12197 . 12198) (symbol "MONGO_CHECK_INITIALIZED" 12202 . 12225) (semantic-list "(db->name, MongoDB)" 12225 . 12244) (punctuation ";" 12244 . 12245)))
+          ("PHP_MONGO_CHECK_EXCEPTION3" (spp-arg-list ("arg1" "arg2" "arg3") 13121 . 13139) . 
+              ((IF "if" 13143 . 13145) (semantic-list "(EG(exception))" 13146 . 13161) (semantic-list "{ \\
+		if (*arg1) { zval_ptr_dtor(arg1); } \\
+		if (*arg2) { zval_ptr_dtor(arg2); } \\
+		if (*arg3) { zval_ptr_dtor(arg3); } \\
+		return; \\
+	}" 13162 . 13300)))
+          ("INT_32" . ((number "4" 2138 . 2139)))
+          ("OP_MSG" . ((number "1000" 2242 . 2246)))
+          ("CURSOR_NOT_FOUND" . ((number "1" 2464 . 2465)))
+          ("NO_DUP" . ((number "0" 2876 . 2877)))
+          ("PERSIST" . ((number "1" 2895 . 2896)))
+          ("RESET_ERROR" . ((number "2" 2998 . 2999)))
+          ("PUSH_EO_PARAM" (spp-arg-list nil 3488 . 3490) . ((symbol "zend_ptr_stack_push" 3491 . 3510) (semantic-list "(&EG(argument_stack), NULL)" 3510 . 3537)))
+          ("MUST_BE_ARRAY_OR_OBJECT" (spp-arg-list ("num" "arg") 3767 . 3777) . 
+              ((DO "do" 3778 . 3780) (semantic-list "{ \\
+	if (arg && !(Z_TYPE_P(arg) == IS_ARRAY || Z_TYPE_P(arg) == IS_OBJECT)) { \\
+		php_error_docref(NULL TSRMLS_CC, E_WARNING, \"expects parameter %d to be an array or object, %s given\", num, zend_get_type_by_const(Z_TYPE_P(arg))); \\
+		RETURN_NULL(); \\
+	} \\
+}" 3781 . 4038) (WHILE "while" 4039 . 4044) (semantic-list "(0)" 4044 . 4047) (punctuation ";" 4047 . 4048)))
+          ("Z_NUMVAL_PP" (spp-arg-list ("variable" "value") 6977 . 6994) . ((semantic-list "((Z_TYPE_PP(variable) == IS_LONG && Z_LVAL_PP(variable) == value) ||  \\
+   (Z_TYPE_PP(variable) == IS_DOUBLE && Z_DVAL_PP(variable) == value))" 7034 . 7176)))
+          ("PHP_MONGO_CHECK_EXCEPTION4" (spp-arg-list ("arg1" "arg2" "arg3" "arg4") 13336 . 13360) . 
+              ((IF "if" 13364 . 13366) (semantic-list "(EG(exception))" 13367 . 13382) (semantic-list "{ \\
+		if (*arg1) { zval_ptr_dtor(arg1); } \\
+		if (*arg2) { zval_ptr_dtor(arg2); } \\
+		if (*arg3) { zval_ptr_dtor(arg3); } \\
+		if (*arg4) { zval_ptr_dtor(arg4); } \\
+		return; \\
+	}" 13383 . 13561)))
+          ("PHP_SERVER_RES_NAME" . ((string "\"mongo server info\"" 983 . 1002)))
+          ("Z_ADDREF_PP" (spp-arg-list ("ppz") 1899 . 1904) . ((symbol "Z_ADDREF_P" 1919 . 1929) (semantic-list "(*(ppz))" 1929 . 1937)))
+          ("MONGO_ARGINFO_STATIC" . ((STATIC "static" 3116 . 3122)))
+          ("POP_EO_PARAM" (spp-arg-list nil 3559 . 3561) . 
+              ((semantic-list "(void)" 3562 . 3568) (symbol "zend_ptr_stack_pop" 3568 . 3586) (semantic-list "(&EG(argument_stack))" 3586 . 3607)))
+          ("MONGO_METHOD1" (spp-arg-list ("classname" "name" "retval" "thisptr" "param1") 5134 . 5176) . 
+              ((symbol "MONGO_METHOD_HELPER" 5181 . 5200) (semantic-list "(classname, name, retval, thisptr, 1, param1)" 5200 . 5245) (punctuation ";" 5245 . 5246)))
+          ("RS_SECONDARY" . ((number "2" 10052 . 10053)))
+          ("PHP_MONGO_H" . ((number "1" 648 . 649)))
+          ("PHP_MONGO_VERSION" . ((string "\"1.5.0dev\"" 677 . 687)))
+          ("PHP_CONNECTION_RES_NAME" . ((string "\"mongo connection\"" 936 . 954)))
+          ("MAKE_COPY_ZVAL" (spp-arg-list ("ppzv" "pzv") 1625 . 1636) . 
+              ((symbol "INIT_PZVAL_COPY" 1640 . 1655) (semantic-list "(pzv, *(ppzv))" 1655 . 1669) (punctuation ";" 1669 . 1670) (symbol "zval_copy_ctor" 1674 . 1688) (semantic-list "((pzv))" 1688 . 1695) (punctuation ";" 1695 . 1696)))
+          ("OP_INSERT" . ((number "2002" 2288 . 2292)))
+          ("MONGO_METHOD_HELPER" (spp-arg-list ("classname" "name" "retval" "thisptr" "num" "param") 4671 . 4717) . 
+              ((symbol "PUSH_PARAM" 4721 . 4731) (semantic-list "(param)" 4731 . 4738) (punctuation ";" 4738 . 4739) (symbol "PUSH_PARAM" 4740 . 4750) (semantic-list "((void*)num)" 4750 . 4762) (punctuation ";" 4762 . 4763) (symbol "PUSH_EO_PARAM" 4770 . 4783) (semantic-list "()" 4783 . 4785) (punctuation ";" 4785 . 4786) (symbol "MONGO_METHOD_BASE" 4796 . 4813) (semantic-list "(classname, name)" 4813 . 4830) (semantic-list "(num, retval, NULL, thisptr, 0 TSRMLS_CC)" 4830 . 4871) (punctuation ";" 4871 . 4872) (symbol "POP_EO_PARAM" 4876 . 4888) (semantic-list "()" 4888 . 4890) (punctuation ";" 4890 . 4891) (symbol "POP_PARAM" 4897 . 4906) (semantic-list "()" 4906 . 4908) (punctuation ";" 4908 . 4909) (symbol "POP_PARAM" 4910 . 4919) (semantic-list "()" 4919 . 4921) (punctuation ";" 4921 . 4922)))
+          ("MONGO_METHOD2" (spp-arg-list ("classname" "name" "retval" "thisptr" "param1" "param2") 5269 . 5319) . 
+              ((symbol "PUSH_PARAM" 5323 . 5333) (semantic-list "(param1)" 5333 . 5341) (punctuation ";" 5341 . 5342) (symbol "MONGO_METHOD_HELPER" 5352 . 5371) (semantic-list "(classname, name, retval, thisptr, 2, param2)" 5371 . 5416) (punctuation ";" 5416 . 5417) (symbol "POP_PARAM" 5421 . 5430) (semantic-list "()" 5430 . 5432) (punctuation ";" 5432 . 5433)))
+          ("MONGO_CURSOR" . ((number "1" 10407 . 10408)))
+          ("MONGO_CHECK_INITIALIZED" (spp-arg-list ("member" "class_name") 11487 . 11507) . 
+              ((IF "if" 11511 . 11513) (semantic-list "(!(member))" 11514 . 11525) (semantic-list "{ \\
+		zend_throw_exception(mongo_ce_Exception, \"The \" #class_name \" object has not been correctly initialized by its constructor\", 0 TSRMLS_CC); \\
+		RETURN_FALSE; \\
+	}" 11526 . 11693)))
+          ("DOUBLE_64" . ((number "8" 2175 . 2176)))
+          ("OP_GET_BY_OID" . ((number "2003" 2315 . 2319)))
+          ("INITIAL_BUF_SIZE" . ((number "4096" 2587 . 2591)))
+          ("NO_PREP" . ((number "0" 2787 . 2788)))
+          ("NOISY" . ((number "0" 2804 . 2805)))
+          ("PUSH_PARAM" (spp-arg-list ("arg") 3347 . 3352) . ((symbol "zend_ptr_stack_push" 3353 . 3372) (semantic-list "(&EG(argument_stack), arg)" 3372 . 3398)))
+          ("MONGO_METHOD3" (spp-arg-list ("classname" "name" "retval" "thisptr" "param1" "param2" "param3") 5456 . 5514) . 
+              ((symbol "PUSH_PARAM" 5518 . 5528) (semantic-list "(param1)" 5528 . 5536) (punctuation ";" 5536 . 5537) (symbol "PUSH_PARAM" 5538 . 5548) (semantic-list "(param2)" 5548 . 5556) (punctuation ";" 5556 . 5557) (symbol "MONGO_METHOD_HELPER" 5564 . 5583) (semantic-list "(classname, name, retval, thisptr, 3, param3)" 5583 . 5628) (punctuation ";" 5628 . 5629) (symbol "POP_PARAM" 5633 . 5642) (semantic-list "()" 5642 . 5644) (punctuation ";" 5644 . 5645) (symbol "POP_PARAM" 5646 . 5655) (semantic-list "()" 5655 . 5657) (punctuation ";" 5657 . 5658)))
+          ("HASH_PP" (spp-arg-list ("a") 6320 . 6323) . ((semantic-list "(Z_TYPE_PP(a) == IS_ARRAY ? Z_ARRVAL_PP(a) : Z_OBJPROP_PP(a))" 6324 . 6385)))
+          ("PHP_MONGO_CHECK_EXCEPTION" (spp-arg-list nil 12761 . 12763) . 
+              ((IF "if" 12764 . 12766) (semantic-list "(EG(exception))" 12767 . 12782) (semantic-list "{ return; }" 12783 . 12794)))
+          ("UNLOCK" (spp-arg-list ("lk") 16632 . 16636) . 
+              ((symbol "pthread_mutex_unlock" 16637 . 16657) (semantic-list "(&lk##_mutex)" 16657 . 16670) (punctuation ";" 16670 . 16671)))
+          ("BYTE_8" . ((number "1" 2192 . 2193)))
+          ("OP_UPDATE" . ((number "2001" 2265 . 2269)))
+          ("PHP_MONGO_DEFAULT_SOCKET_TIMEOUT" . ((number "30000L" 2713 . 2719)))
+          ("POP_PARAM" (spp-arg-list nil 3417 . 3419) . 
+              ((semantic-list "(void)" 3420 . 3426) (symbol "zend_ptr_stack_pop" 3426 . 3444) (semantic-list "(&EG(argument_stack))" 3444 . 3465)))
+          ("MONGO_METHOD4" (spp-arg-list ("classname" "name" "retval" "thisptr" "param1" "param2" "param3" "param4") 5681 . 5747) . 
+              ((symbol "PUSH_PARAM" 5751 . 5761) (semantic-list "(param1)" 5761 . 5769) (punctuation ";" 5769 . 5770) (symbol "PUSH_PARAM" 5771 . 5781) (semantic-list "(param2)" 5781 . 5789) (punctuation ";" 5789 . 5790) (symbol "PUSH_PARAM" 5791 . 5801) (semantic-list "(param3)" 5801 . 5809) (punctuation ";" 5809 . 5810) (symbol "MONGO_METHOD_HELPER" 5815 . 5834) (semantic-list "(classname, name, retval, thisptr, 4, param4)" 5834 . 5879) (punctuation ";" 5879 . 5880) (symbol "POP_PARAM" 5884 . 5893) (semantic-list "()" 5893 . 5895) (punctuation ";" 5895 . 5896) (symbol "POP_PARAM" 5897 . 5906) (semantic-list "()" 5906 . 5908) (punctuation ";" 5908 . 5909) (symbol "POP_PARAM" 5910 . 5919) (semantic-list "()" 5919 . 5921) (punctuation ";" 5921 . 5922)))
+          ("IS_SCALAR_P" (spp-arg-list ("a") 6406 . 6409) . ((semantic-list "(Z_TYPE_P(a) == IS_NULL || Z_TYPE_P(a) == IS_LONG || Z_TYPE_P(a) == IS_DOUBLE || Z_TYPE_P(a) == IS_BOOL || Z_TYPE_P(a) == IS_STRING)" 6410 . 6542)))
+          ("CREATE_HEADER_WITH_OPTS" (spp-arg-list ("buf" "ns" "opcode" "opts") 10893 . 10916) . 
+              ((symbol "CREATE_MSG_HEADER" 10920 . 10937) (semantic-list "(MonGlo(request_id)++, 0, opcode)" 10937 . 10970) (punctuation ";" 10970 . 10971) (symbol "APPEND_HEADER_NS" 10975 . 10991) (semantic-list "(buf, ns, opts)" 10991 . 11006) (punctuation ";" 11006 . 11007)))
+          ("PHP_MONGO_EXTNAME" . ((string "\"mongo\"" 714 . 721)))
+          ("Z_ADDREF_P" (spp-arg-list ("pz") 1814 . 1818) . 
+              ((semantic-list "(pz)" 1834 . 1838) (punctuation "-" 1838 . 1839) (punctuation ">" 1839 . 1840) (symbol "refcount" 1840 . 1848) (punctuation "+" 1848 . 1849) (punctuation "+" 1849 . 1850)))
+          ("OP_GET_MORE" . ((number "2005" 2362 . 2366)))
+          ("OP_DELETE" . ((number "2006" 2385 . 2389)))
+          ("DEFAULT_CHUNK_SIZE" . ((semantic-list "(256*1024)" 2619 . 2629)))
+          ("FLAGS" . ((number "0" 2933 . 2934)))
+          ("LAST_ERROR" . ((number "0" 2955 . 2956)))
+          ("PREV_ERROR" . ((number "1" 2976 . 2977)))
+          ("MONGO_E_DEPRECATED" . ((symbol "E_STRICT" 3719 . 3727)))
+          ("MONGO_METHOD5" (spp-arg-list ("classname" "name" "retval" "thisptr" "param1" "param2" "param3" "param4" "param5") 5945 . 6019) . 
+              ((symbol "PUSH_PARAM" 6023 . 6033) (semantic-list "(param1)" 6033 . 6041) (punctuation ";" 6041 . 6042) (symbol "PUSH_PARAM" 6043 . 6053) (semantic-list "(param2)" 6053 . 6061) (punctuation ";" 6061 . 6062) (symbol "PUSH_PARAM" 6063 . 6073) (semantic-list "(param3)" 6073 . 6081) (punctuation ";" 6081 . 6082) (symbol "PUSH_PARAM" 6083 . 6093) (semantic-list "(param4)" 6093 . 6101) (punctuation ";" 6101 . 6102) (symbol "MONGO_METHOD_HELPER" 6106 . 6125) (semantic-list "(classname, name, retval, thisptr, 5, param5)" 6125 . 6170) (punctuation ";" 6170 . 6171) (symbol "POP_PARAM" 6175 . 6184) (semantic-list "()" 6184 . 6186) (punctuation ";" 6186 . 6187) (symbol "POP_PARAM" 6188 . 6197) (semantic-list "()" 6197 . 6199) (punctuation ";" 6199 . 6200) (symbol "POP_PARAM" 6201 . 6210) (semantic-list "()" 6210 . 6212) (punctuation ";" 6212 . 6213) (symbol "POP_PARAM" 6214 . 6223) (semantic-list "()" 6223 . 6225) (punctuation ";" 6225 . 6226)))
+          ("CREATE_MSG_HEADER" (spp-arg-list ("rid" "rto" "opcode") 10596 . 10614) . 
+              ((symbol "header" 10618 . 10624) (punctuation "." 10624 . 10625) (symbol "length" 10625 . 10631) (punctuation "=" 10632 . 10633) (number "0" 10634 . 10635) (punctuation ";" 10635 . 10636) (symbol "header" 10640 . 10646) (punctuation "." 10646 . 10647) (symbol "request_id" 10647 . 10657) (punctuation "=" 10658 . 10659) (symbol "rid" 10660 . 10663) (punctuation ";" 10663 . 10664) (symbol "header" 10668 . 10674) (punctuation "." 10674 . 10675) (symbol "response_to" 10675 . 10686) (punctuation "=" 10687 . 10688) (symbol "rto" 10689 . 10692) (punctuation ";" 10692 . 10693) (symbol "header" 10697 . 10703) (punctuation "." 10703 . 10704) (symbol "op" 10704 . 10706) (punctuation "=" 10707 . 10708) (symbol "opcode" 10709 . 10715) (punctuation ";" 10715 . 10716)))
+          ("APPEND_HEADER_NS" (spp-arg-list ("buf" "ns" "opts") 11363 . 11378) . 
+              ((symbol "APPEND_HEADER" 11382 . 11395) (semantic-list "(buf, opts)" 11395 . 11406) (punctuation ";" 11406 . 11407) (symbol "php_mongo_serialize_ns" 11411 . 11433) (semantic-list "(buf, ns TSRMLS_CC)" 11433 . 11452) (punctuation ";" 11452 . 11453)))
+          ("LOCK" (spp-arg-list ("lk") 16579 . 16583) . 
+              ((symbol "pthread_mutex_lock" 16584 . 16602) (semantic-list "(&lk##_mutex)" 16602 . 16615) (punctuation ";" 16615 . 16616)))
+          ("DUP" . ((number "1" 2859 . 2860)))
+          ("PHP_MONGO_OBJ_NEW" (spp-arg-list ("mongo_obj") 8536 . 8547) . 
+              ((symbol "zend_object_value" 8570 . 8587) (symbol "retval" 8588 . 8594) (punctuation ";" 8594 . 8595) (symbol "mongo_obj" 8625 . 8634) (punctuation "*" 8635 . 8636) (symbol "intern" 8636 . 8642) (punctuation ";" 8642 . 8643) (symbol "intern" 8735 . 8741) (punctuation "=" 8742 . 8743) (semantic-list "(mongo_obj*)" 8744 . 8756) (symbol "emalloc" 8756 . 8763) (semantic-list "(sizeof(mongo_obj))" 8763 . 8782) (punctuation ";" 8782 . 8783) (symbol "memset" 8801 . 8807) (semantic-list "(intern, 0, sizeof(mongo_obj))" 8807 . 8837) (punctuation ";" 8837 . 8838) (symbol "zend_object_std_init" 8933 . 8953) (semantic-list "(&intern->std, class_type TSRMLS_CC)" 8953 . 8989) (punctuation ";" 8989 . 8990) (symbol "init_properties" 8999 . 9014) (semantic-list "(intern)" 9014 . 9022) (punctuation ";" 9022 . 9023) (symbol "retval" 9131 . 9137) (punctuation "." 9137 . 9138) (symbol "handle" 9138 . 9144) (punctuation "=" 9145 . 9146) (symbol "zend_objects_store_put" 9147 . 9169) (semantic-list "(intern,(zend_objects_store_dtor_t) zend_objects_destroy_object, php_##mongo_obj##_free, NULL TSRMLS_CC)" 9169 . 9273) (punctuation ";" 9273 . 9274) (symbol "retval" 9278 . 9284) (punctuation "." 9284 . 9285) (symbol "handlers" 9285 . 9293) (punctuation "=" 9294 . 9295) (punctuation "&" 9296 . 9297) (symbol "mongo_default_handlers" 9297 . 9319) (punctuation ";" 9319 . 9320) (RETURN "return" 9410 . 9416) (symbol "retval" 9417 . 9423) (punctuation ";" 9423 . 9424)))
+          ("PHP_MONGO_SERIALIZE_KEY" (spp-arg-list ("type") 13594 . 13600) . 
+              ((symbol "php_mongo_set_type" 13604 . 13622) (semantic-list "(buf, type)" 13622 . 13633) (punctuation ";" 13633 . 13634) (symbol "php_mongo_serialize_key" 13638 . 13661) (semantic-list "(buf, name, name_len, prep TSRMLS_CC)" 13661 . 13698) (punctuation ";" 13698 . 13699) (IF "if" 13703 . 13705) (semantic-list "(EG(exception))" 13706 . 13721) (semantic-list "{ \\
+		return ZEND_HASH_APPLY_STOP; \\
+	}" 13722 . 13761)))
+          ("BUF_REMAINING" . ((semantic-list "(buf->end-buf->pos)" 15878 . 15897)))
+          ("OP_QUERY" . ((number "2004" 2337 . 2341)))
+          ("OP_KILL_CURSORS" . ((number "2007" 2414 . 2418)))
+          ("MONGO_METHOD_BASE" (spp-arg-list ("classname" "name") 4600 . 4617) . ((spp-symbol-merge ((spp-symbol-merge ((spp-symbol-merge ((symbol "zim_" 4618 . 4622) (symbol "classname" 4624 . 4633)) 4618 . 4633) (symbol "_" 4635 . 4636)) 4618 . 4636) (symbol "name" 4638 . 4642)) 4618 . 4642)))
+          ("PHP_MONGO_GET_COLLECTION" (spp-arg-list ("obj") 12279 . 12284) . 
+              ((symbol "c" 12288 . 12289) (punctuation "=" 12290 . 12291) (semantic-list "(mongo_collection*)" 12292 . 12311) (symbol "zend_object_store_get_object" 12311 . 12339) (semantic-list "((obj) TSRMLS_CC)" 12339 . 12356) (punctuation ";" 12356 . 12357) (symbol "MONGO_CHECK_INITIALIZED" 12361 . 12384) (semantic-list "(c->ns, MongoCollection)" 12384 . 12408) (punctuation ";" 12408 . 12409)))
+          ("PHP_MONGO_GET_CURSOR" (spp-arg-list ("obj") 12439 . 12444) . 
+              ((symbol "cursor" 12448 . 12454) (punctuation "=" 12455 . 12456) (semantic-list "(mongo_cursor*)" 12457 . 12472) (symbol "zend_object_store_get_object" 12472 . 12500) (semantic-list "((obj) TSRMLS_CC)" 12500 . 12517) (punctuation ";" 12517 . 12518) (symbol "MONGO_CHECK_INITIALIZED" 12522 . 12545) (semantic-list "(cursor->zmongoclient, MongoCursor)" 12545 . 12580) (punctuation ";" 12580 . 12581)))
+          ("CREATE_BUF" (spp-arg-list ("buf" "size") 15917 . 15928) . 
+              ((symbol "buf" 15932 . 15935) (punctuation "." 15935 . 15936) (symbol "start" 15936 . 15941) (punctuation "=" 15942 . 15943) (semantic-list "(char*)" 15944 . 15951) (symbol "emalloc" 15951 . 15958) (semantic-list "(size)" 15958 . 15964) (punctuation ";" 15964 . 15965) (symbol "buf" 15969 . 15972) (punctuation "." 15972 . 15973) (symbol "pos" 15973 . 15976) (punctuation "=" 15977 . 15978) (symbol "buf" 15979 . 15982) (punctuation "." 15982 . 15983) (symbol "start" 15983 . 15988) (punctuation ";" 15988 . 15989) (symbol "buf" 15993 . 15996) (punctuation "." 15996 . 15997) (symbol "end" 15997 . 16000) (punctuation "=" 16001 . 16002) (symbol "buf" 16003 . 16006) (punctuation "." 16006 . 16007) (symbol "start" 16007 . 16012) (punctuation "+" 16013 . 16014) (symbol "size" 16015 . 16019) (punctuation ";" 16019 . 16020)))
+          )
+
+    )
+   (semanticdb-table "bson.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("PHP_BSON_H" variable (:constant-flag t) nil [635 645])
+            ("OID_SIZE" variable (:constant-flag t) nil [658 666])
+            ("BSON_DOUBLE" variable (:constant-flag t) nil [746 757])
+            ("BSON_STRING" variable (:constant-flag t) nil [774 785])
+            ("BSON_OBJECT" variable (:constant-flag t) nil [802 813])
+            ("BSON_ARRAY" variable (:constant-flag t) nil [830 840])
+            ("BSON_BINARY" variable (:constant-flag t) nil [858 869])
+            ("BSON_UNDEF" variable (:constant-flag t) nil [886 896])
+            ("BSON_OID" variable (:constant-flag t) nil [914 922])
+            ("BSON_BOOL" variable (:constant-flag t) nil [942 951])
+            ("BSON_DATE" variable (:constant-flag t) nil [970 979])
+            ("BSON_NULL" variable (:constant-flag t) nil [998 1007])
+            ("BSON_REGEX" variable (:constant-flag t) nil [1026 1036])
+            ("BSON_DBREF" variable (:constant-flag t) nil [1054 1064])
+            ("BSON_CODE__D" variable (:constant-flag t) nil [1082 1094])
+            ("BSON_SYMBOL" variable (:constant-flag t) nil [1110 1121])
+            ("BSON_CODE" variable (:constant-flag t) nil [1138 1147])
+            ("BSON_INT" variable (:constant-flag t) nil [1166 1174])
+            ("BSON_TIMESTAMP" variable (:constant-flag t) nil [1194 1208])
+            ("BSON_LONG" variable (:constant-flag t) nil [1222 1231])
+            ("BSON_MINKEY" variable (:constant-flag t) nil [1250 1261])
+            ("BSON_MAXKEY" variable (:constant-flag t) nil [1278 1289])
+            ("GROW_SLOWLY" variable (:constant-flag t) nil [1307 1318])
+            ("CREATE_BUF_STATIC" variable (:constant-flag t) nil [1336 1353])
+            ("php_mongo_serialize_element" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1487 1504])
+                    ("name_len" variable (:type "int") (reparse-symbol arg-sub-list) [1505 1518])
+                    ("" variable
+                       (:pointer 2
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1519 1526])
+                    ("" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1527 1535])
+                    ("TSRMLS_DC" variable (:type "int") (reparse-symbol arg-sub-list) [1536 1550]))                  
+                :type "int")
+                nil [1455 1551])
+            ("php_mongo_serialize_date" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1597 1605])
+                    ("TSRMLS_DC" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1606 1622]))                  
+                :type "void")
+                nil [1567 1623])
+            ("php_mongo_serialize_regex" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1655 1663])
+                    ("TSRMLS_DC" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1664 1680]))                  
+                :type "void")
+                nil [1624 1681])
+            ("php_mongo_serialize_code" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1712 1720])
+                    ("TSRMLS_DC" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1721 1737]))                  
+                :type "void")
+                nil [1682 1738])
+            ("php_mongo_serialize_ts" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1767 1775])
+                    ("TSRMLS_DC" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1776 1792]))                  
+                :type "void")
+                nil [1739 1793])
+            ("php_mongo_serialize_bin_data" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1828 1836])
+                    ("TSRMLS_DC" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1837 1853]))                  
+                :type "void")
+                nil [1794 1854])
+            ("php_mongo_serialize_int32" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1886 1894])
+                    ("TSRMLS_DC" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1895 1911]))                  
+                :type "void")
+                nil [1855 1912])
+            ("php_mongo_serialize_int64" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1944 1952])
+                    ("TSRMLS_DC" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1953 1969]))                  
+                :type "void")
+                nil [1913 1970])
+            ("php_mongo_serialize_double" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2023 2031])
+                    ("" variable (:type "double") (reparse-symbol arg-sub-list) [2032 2039]))                  
+                :type "void")
+                nil [1991 2040])
+            ("php_mongo_serialize_string" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2073 2081])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2082 2088])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [2089 2093]))                  
+                :type "void")
+                nil [2041 2094])
+            ("php_mongo_serialize_long" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2125 2133])
+                    ("" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2134 2142]))                  
+                :type "void")
+                nil [2095 2143])
+            ("php_mongo_serialize_int" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2173 2181])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [2182 2186]))                  
+                :type "void")
+                nil [2144 2187])
+            ("php_mongo_serialize_byte" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2218 2226])
+                    ("" variable (:type "char") (reparse-symbol arg-sub-list) [2227 2232]))                  
+                :type "void")
+                nil [2188 2233])
+            ("php_mongo_serialize_bytes" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2265 2273])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2274 2280])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [2281 2285]))                  
+                :type "void")
+                nil [2234 2286])
+            ("php_mongo_serialize_key" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2316 2324])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2325 2337])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [2338 2342])
+                    ("TSRMLS_DC" variable (:type "int") (reparse-symbol arg-sub-list) [2343 2357]))                  
+                :type "void")
+                nil [2287 2358])
+            ("php_mongo_serialize_ns" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2387 2395])
+                    ("TSRMLS_DC" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2396 2412]))                  
+                :type "void")
+                nil [2359 2413])
+            ("php_mongo_write_insert" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2442 2450])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2451 2457])
+                    ("" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2458 2464])
+                    ("max_document_size" variable (:type "int") (reparse-symbol arg-sub-list) [2465 2487])
+                    ("max_message_size" variable (:type "int") (reparse-symbol arg-sub-list) [2488 2518])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2509 2519]))                  
+                :type "int")
+                nil [2415 2520])
+            ("php_mongo_write_batch_insert" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2554 2562])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2563 2569])
+                    ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [2570 2580])
+                    ("" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2581 2587])
+                    ("max_document_size" variable (:type "int") (reparse-symbol arg-sub-list) [2588 2610])
+                    ("max_message_size" variable (:type "int") (reparse-symbol arg-sub-list) [2611 2641])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2632 2642]))                  
+                :type "int")
+                nil [2521 2643])
+            ("php_mongo_write_query" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2670 2678])
+                    ("" variable
+                       (:pointer 1
+                        :type ("mongo_cursor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2679 2693])
+                    ("max_document_size" variable (:type "int") (reparse-symbol arg-sub-list) [2694 2716])
+                    ("max_message_size" variable (:type "int") (reparse-symbol arg-sub-list) [2717 2747])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2738 2748]))                  
+                :type "int")
+                nil [2644 2749])
+            ("php_mongo_write_get_more" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2779 2787])
+                    ("TSRMLS_DC" variable
+                       (:pointer 1
+                        :type ("mongo_cursor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2788 2812]))                  
+                :type "int")
+                nil [2750 2813])
+            ("php_mongo_write_delete" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2841 2849])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2850 2856])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [2857 2861])
+                    ("" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2862 2868])
+                    ("max_document_size" variable (:type "int") (reparse-symbol arg-sub-list) [2869 2891])
+                    ("max_message_size" variable (:type "int") (reparse-symbol arg-sub-list) [2892 2922])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2913 2923]))                  
+                :type "int")
+                nil [2814 2924])
+            ("php_mongo_write_update" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2952 2960])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2961 2967])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [2968 2972])
+                    ("" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2973 2979])
+                    ("" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2980 2986])
+                    ("max_document_size" variable (:type "int") (reparse-symbol arg-sub-list) [2987 3009])
+                    ("max_message_size" variable (:type "int") (reparse-symbol arg-sub-list) [3010 3040])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3031 3041]))                  
+                :type "int")
+                nil [2925 3042])
+            ("php_mongo_write_kill_cursors" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3076 3084])
+                    ("" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3085 3093])
+                    ("max_message_size" variable (:type "int") (reparse-symbol arg-sub-list) [3094 3124])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3115 3125]))                  
+                :type "int")
+                nil [3043 3126])
+            ("php_mongo_set_type" variable (:constant-flag t) nil [3136 3154])
+            ("php_mongo_serialize_null" variable (:constant-flag t) nil [3216 3240])
+            ("php_mongo_serialize_bool" variable (:constant-flag t) nil [3293 3317])
+            ("resize_buf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3381 3389])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [3390 3394]))                  
+                :type "int")
+                nil [3366 3395])
+            ("zval_to_bson" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3414 3422])
+                    ("" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3423 3434])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [3435 3439])
+                    ("max_document_size" variable (:type "int") (reparse-symbol arg-sub-list) [3440 3471])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3462 3472]))                  
+                :type "int")
+                nil [3397 3473])
+            ("bson_to_zval" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3493 3499])
+                    ("TSRMLS_DC" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3500 3521]))                  
+                :type "char")
+                nil [3474 3522])
+            ("mongo_buf_init" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dest" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3647 3658]))                  
+                :type "void")
+                nil [3627 3659])
+            ("mongo_buf_append" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dest" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3911 3922])
+                    ("piece" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3923 3935]))                  
+                :type "void")
+                nil [3889 3936])
+            ("mongo_get_limit" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("cursor" variable
+                       (:pointer 1
+                        :type ("mongo_cursor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4069 4090]))                  
+                :type "int")
+                nil [4049 4091])
+            ("php_mongo_handle_int64" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("value" variable
+                       (:pointer 2
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4121 4134])
+                    ("nr" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4135 4155])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4146 4156]))                  
+                :type "void")
+                nil [4093 4157])
+            ("MONGO_32" variable (:constant-flag t) nil [5094 5102])
+            ("MONGO_64" variable (:constant-flag t) nil [5119 5127]))          
+    :file "bson.h"
+    :pointmax 5268
+    :fsize 5267
+    :lastmodtime '(21064 7699 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("BSON_DOUBLE" . ((number "0x01" 761 . 765)))
+          ("CREATE_BUF_STATIC" (spp-arg-list ("n") 1353 . 1356) . 
+              ((CHAR "char" 1357 . 1361) (symbol "b" 1362 . 1363) (semantic-list "[n]" 1363 . 1366) (punctuation ";" 1366 . 1367) (symbol "buf" 1379 . 1382) (punctuation "." 1382 . 1383) (symbol "start" 1383 . 1388) (punctuation "=" 1389 . 1390) (symbol "buf" 1391 . 1394) (punctuation "." 1394 . 1395) (symbol "pos" 1395 . 1398) (punctuation "=" 1399 . 1400) (symbol "b" 1401 . 1402) (punctuation ";" 1402 . 1403) (symbol "buf" 1426 . 1429) (punctuation "." 1429 . 1430) (symbol "end" 1430 . 1433) (punctuation "=" 1434 . 1435) (symbol "b" 1436 . 1437) (punctuation "+" 1437 . 1438) (symbol "n" 1438 . 1439) (punctuation ";" 1439 . 1440)))
+          ("BSON_NULL" . ((number "0x0A" 1013 . 1017)))
+          ("PHP_BSON_H" . ((number "1" 646 . 647)))
+          ("BSON_SYMBOL" . ((number "0x0E" 1125 . 1129)))
+          ("BSON_OID" . ((number "0x07" 929 . 933)))
+          ("BSON_DBREF" . ((number "0x0C" 1069 . 1073)))
+          ("BSON_MAXKEY" . ((number "0x7F" 1293 . 1297)))
+          ("BSON_ARRAY" . ((number "0x04" 845 . 849)))
+          ("BSON_MINKEY" . ((number "0xFF" 1265 . 1269)))
+          ("GROW_SLOWLY" . ((number "1048576" 1319 . 1326)))
+          ("BSON_UNDEF" . ((number "0x06" 901 . 905)))
+          ("php_mongo_serialize_bool" (spp-arg-list ("buf" "b") 3317 . 3325) . ((symbol "php_mongo_serialize_byte" 3326 . 3350) (semantic-list "(buf, (char)b)" 3350 . 3364)))
+          ("MONGO_64" (spp-arg-list ("b") 5127 . 5130) . ((semantic-list "(b)" 5131 . 5134)))
+          ("BSON_REGEX" . ((number "0x0B" 1041 . 1045)))
+          ("BSON_CODE__D" . ((number "0x0D" 1097 . 1101)))
+          ("BSON_INT" . ((number "0x10" 1181 . 1185)))
+          ("BSON_BOOL" . ((number "0x08" 957 . 961)))
+          ("BSON_CODE" . ((number "0x0F" 1153 . 1157)))
+          ("MONGO_32" (spp-arg-list ("b") 5102 . 5105) . ((semantic-list "(b)" 5106 . 5109)))
+          ("BSON_STRING" . ((number "0x02" 789 . 793)))
+          ("BSON_DATE" . ((number "0x09" 985 . 989)))
+          ("OID_SIZE" . ((number "12" 667 . 669)))
+          ("BSON_TIMESTAMP" . ((number "0x11" 1209 . 1213)))
+          ("BSON_LONG" . ((number "0x12" 1237 . 1241)))
+          ("BSON_OBJECT" . ((number "0x03" 817 . 821)))
+          ("BSON_BINARY" . ((number "0x05" 873 . 877)))
+          ("php_mongo_set_type" (spp-arg-list ("buf" "type") 3154 . 3165) . ((symbol "php_mongo_serialize_byte" 3166 . 3190) (semantic-list "(buf, (char)type)" 3190 . 3207)))
+          ("php_mongo_serialize_null" (spp-arg-list ("buf") 3240 . 3245) . ((symbol "php_mongo_serialize_byte" 3246 . 3270) (semantic-list "(buf, (char)0)" 3270 . 3284)))
+          )
+
+    )
+   (semanticdb-table "mongo.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("php.h" include (:system-flag t) nil [608 624])
+            ("zend_exceptions.h" include (:system-flag t) nil [625 653])
+            ("php_mongo.h" include nil nil [654 676])
+            ("mongoclient.h" include nil nil [677 701])
+            ("mongo.h" include nil nil [702 720])
+            ("db.h" include nil nil [721 736])
+            ("util/pool.h" include nil nil [737 759])
+            ("mongoclient_handlers" variable
+               (:typemodifiers ("extern")
+                :type ("zend_object_handlers" type (:type "class") nil nil))
+                nil [761 810])
+            ("mongo_ce_Mongo" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [847 880])
+            ("mongo_ce_DB" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [882 942])
+            ("mongo_ce_MongoClient" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [882 942])
+            ("mongo_ce_Exception" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [943 987])
+            ("mongo_methods" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("zend_function_entry" type (:type "class") nil nil))
+                nil [1552 2979])
+            ("mongo_init_Mongo" function
+               (:arguments 
+                  ( ("" variable (:type ("TSRMLS_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3003 3012]))                  
+                :type "void")
+                nil [2981 3647])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Mongo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3818 3824])
+                    ("" variable (:type ("__construct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3825 3837]))                  
+                :type "int")
+                nil [3807 3895])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Mongo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4016 4022])
+                    ("" variable (:type ("getSlaveOkay" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4023 4036]))                  
+                :type "int")
+                nil [4005 4157])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Mongo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4320 4326])
+                    ("" variable (:type ("getSlave" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4327 4336]))                  
+                :type "int")
+                nil [4309 4655])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Mongo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4821 4827])
+                    ("" variable (:type ("setSlaveOkay" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4828 4841]))                  
+                :type "int")
+                nil [4810 5187])
+            ("run_err" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("err_type" variable (:type "int") (reparse-symbol arg-sub-list) [5220 5233])
+                    ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5234 5253])
+                    ("this_ptr" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5254 5278])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5269 5279]))                  
+                :type "void")
+                nil [5200 5861])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Mongo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5903 5909])
+                    ("" variable (:type ("lastError" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5910 5920]))                  
+                :type "int")
+                nil [5892 5981])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Mongo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6033 6039])
+                    ("" variable (:type ("prevError" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6040 6050]))                  
+                :type "int")
+                nil [6022 6111])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Mongo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6164 6170])
+                    ("" variable (:type ("resetError" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6171 6182]))                  
+                :type "int")
+                nil [6153 6244])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Mongo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6297 6303])
+                    ("" variable (:type ("forceError" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6304 6315]))                  
+                :type "int")
+                nil [6286 6377])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Mongo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6429 6435])
+                    ("" variable (:type ("connectUtil" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6436 6448]))                  
+                :type "int")
+                nil [6418 6562])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Mongo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6614 6620])
+                    ("" variable (:type ("switchSlave" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6621 6633]))                  
+                :type "int")
+                nil [6603 6692]))          
+    :file "mongo.c"
+    :pointmax 6821
+    :fsize 6820
+    :lastmodtime '(21064 7699 0 0)
+    :unmatched-syntax '((semantic-list 1548 . 1550) (symbol 1531 . 1548) (semantic-list 1521 . 1530) (symbol 1508 . 1521) (number 1522 . 1523) (semantic-list 1460 . 1506) (symbol 1438 . 1460) (number 1504 . 1505) (number 1482 . 1483) (symbol 1417 . 1437) (number 1504 . 1505) (number 1482 . 1483) (semantic-list 1413 . 1415) (symbol 1396 . 1413) (semantic-list 1380 . 1395) (symbol 1367 . 1380) (number 1381 . 1382) (semantic-list 1318 . 1365) (symbol 1296 . 1318) (number 1363 . 1364) (number 1341 . 1342) (symbol 1275 . 1295) (number 1363 . 1364) (number 1341 . 1342) (semantic-list 1271 . 1273) (symbol 1254 . 1271) (semantic-list 1205 . 1253) (symbol 1183 . 1205) (number 1251 . 1252) (number 1229 . 1230) (symbol 1162 . 1182) (number 1251 . 1252) (number 1229 . 1230) (semantic-list 1158 . 1160) (symbol 1141 . 1158) (semantic-list 1125 . 1140) (symbol 1106 . 1125) (number 1138 . 1139) (number 1126 . 1127) (semantic-list 1093 . 1104) (symbol 1080 . 1093) (number 1094 . 1095) (semantic-list 1032 . 1078) (symbol 1010 . 1032) (number 1076 . 1077) (number 1054 . 1055) (symbol 989 . 1009) (number 1076 . 1077) (number 1054 . 1055) (semantic-list 838 . 845) (symbol 812 . 838))
+    )
+   (semanticdb-table "mongoclient.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("__MONGOCLIENT_H__" variable (:constant-flag t) nil [642 659])
+            ("php_mongo_create_le" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("cursor" variable
+                       (:pointer 1
+                        :type ("mongo_cursor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [685 706])
+                    ("name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [707 727])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [718 728]))                  
+                :type "int")
+                nil [661 729])
+            ("php_mongoclient_new" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("class_type" variable
+                       (:pointer 1
+                        :type ("zend_class_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [768 806])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [797 807]))                  
+                :type ("zend_object_value" type (:type "class") nil nil))
+                nil [730 808])
+            ("mongo_init_MongoClient" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("TSRMLS_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [837 846]))                  
+                :type "void")
+                nil [809 847])
+            ("php_mongo_ctor" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("INTERNAL_FUNCTION_PARAMETERS" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [868 897])
+                    ("bc" variable (:type "int") (reparse-symbol arg-sub-list) [898 905]))                  
+                :type "void")
+                nil [848 906])
+            ("php_mongo_connect" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("link" variable
+                       (:pointer 1
+                        :type ("mongoclient" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [984 1002])
+                    ("flags" variable (:type "int") (reparse-symbol arg-sub-list) [1003 1022])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1013 1023]))                  
+                :type ("mongo_connection" type (:type "class") nil nil))
+                nil [948 1024])
+            ("mongo_get_debug_info" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1057 1070])
+                    ("is_temp" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1071 1093])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1084 1094]))                  
+                :type ("HashTable" type (:type "class") nil nil))
+                nil [1025 1095])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MongoClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1133 1145])
+                    ("" variable (:type ("__construct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1146 1158]))                  
+                :type "int")
+                nil [1122 1159])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MongoClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1171 1183])
+                    ("" variable (:type ("getConnections" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1184 1199]))                  
+                :type "int")
+                nil [1160 1200])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MongoClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1212 1224])
+                    ("" variable (:type ("connect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1225 1233]))                  
+                :type "int")
+                nil [1201 1234])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MongoClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1246 1258])
+                    ("" variable (:type ("pairConnect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1259 1271]))                  
+                :type "int")
+                nil [1235 1272])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MongoClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1284 1296])
+                    ("" variable (:type ("persistConnect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1297 1312]))                  
+                :type "int")
+                nil [1273 1313])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MongoClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1325 1337])
+                    ("" variable (:type ("pairPersistConnect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1338 1357]))                  
+                :type "int")
+                nil [1314 1358])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MongoClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1370 1382])
+                    ("" variable (:type ("__toString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1383 1394]))                  
+                :type "int")
+                nil [1359 1395])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MongoClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1407 1419])
+                    ("" variable (:type ("__get" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1420 1426]))                  
+                :type "int")
+                nil [1396 1427])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MongoClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1439 1451])
+                    ("" variable (:type ("selectDB" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1452 1461]))                  
+                :type "int")
+                nil [1428 1462])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MongoClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1474 1486])
+                    ("" variable (:type ("selectCollection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1487 1504]))                  
+                :type "int")
+                nil [1463 1505])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MongoClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1517 1529])
+                    ("" variable (:type ("getReadPreference" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1530 1548]))                  
+                :type "int")
+                nil [1506 1549])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MongoClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1561 1573])
+                    ("" variable (:type ("setReadPreference" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1574 1592]))                  
+                :type "int")
+                nil [1550 1593])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MongoClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1605 1617])
+                    ("" variable (:type ("dropDB" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1618 1625]))                  
+                :type "int")
+                nil [1594 1626])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MongoClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1638 1650])
+                    ("" variable (:type ("lastError" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1651 1661]))                  
+                :type "int")
+                nil [1627 1662])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MongoClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1674 1686])
+                    ("" variable (:type ("prevError" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1687 1697]))                  
+                :type "int")
+                nil [1663 1698])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MongoClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1710 1722])
+                    ("" variable (:type ("resetError" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1723 1734]))                  
+                :type "int")
+                nil [1699 1735])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MongoClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1747 1759])
+                    ("" variable (:type ("forceError" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1760 1771]))                  
+                :type "int")
+                nil [1736 1772])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MongoClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1784 1796])
+                    ("" variable (:type ("close" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1797 1803]))                  
+                :type "int")
+                nil [1773 1804])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MongoClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1816 1828])
+                    ("" variable (:type ("listDBs" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1829 1837]))                  
+                :type "int")
+                nil [1805 1838])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MongoClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1850 1862])
+                    ("" variable (:type ("getHosts" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1863 1872]))                  
+                :type "int")
+                nil [1839 1873])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("MongoClient" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1885 1897])
+                    ("" variable (:type ("killCursor" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1898 1909]))                  
+                :type "int")
+                nil [1874 1910]))          
+    :file "mongoclient.h"
+    :pointmax 2037
+    :fsize 2036
+    :lastmodtime '(21064 7699 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("__MONGOCLIENT_H__")
+          )
+
+    )
+   (semanticdb-table "mongo.h"
+    :file "mongo.h"
+    :fsize 1210
+    :lastmodtime '(21064 7699 0 0)
+    )
+   (semanticdb-table "db.h"
+    :file "db.h"
+    :fsize 2447
+    :lastmodtime '(21064 7699 0 0)
+    )
+   (semanticdb-table "php_mongo.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("php.h" include (:system-flag t) nil [608 624])
+            ("zend_exceptions.h" include (:system-flag t) nil [626 654])
+            ("php_ini.h" include (:system-flag t) nil [655 675])
+            ("ext/standard/info.h" include (:system-flag t) nil [676 706])
+            ("php_mongo.h" include nil nil [708 730])
+            ("mongoclient.h" include nil nil [732 756])
+            ("mongo.h" include nil nil [757 775])
+            ("cursor.h" include nil nil [776 795])
+            ("io_stream.h" include nil nil [796 818])
+            ("exceptions/exception.h" include nil nil [820 853])
+            ("exceptions/connection_exception.h" include nil nil [854 898])
+            ("exceptions/cursor_exception.h" include nil nil [899 939])
+            ("exceptions/cursor_timeout_exception.h" include nil nil [940 988])
+            ("exceptions/gridfs_exception.h" include nil nil [989 1029])
+            ("exceptions/result_exception.h" include nil nil [1030 1070])
+            ("types/id.h" include nil nil [1072 1093])
+            ("util/log.h" include nil nil [1095 1116])
+            ("util/pool.h" include nil nil [1117 1139])
+            ("mcon/manager.h" include nil nil [1141 1166])
+            ("mongo_id_handlers" variable
+               (:typemodifiers ("extern")
+                :type ("zend_object_handlers" type (:type "class") nil nil))
+                nil [1319 1389])
+            ("mongo_default_handlers" variable
+               (:typemodifiers ("extern")
+                :type ("zend_object_handlers" type (:type "class") nil nil))
+                nil [1319 1389])
+            ("mongo_type_object_handlers" variable (:type ("zend_object_handlers" type (:type "class") nil nil)) nil [1390 1438])
+            ("mongo_ce_ResultException" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [1455 1532])
+            ("mongo_ce_CursorException" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [1455 1532])
+            ("mongo_ce_Exception" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [1533 1608])
+            ("mongo_ce_ConnectionException" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [1533 1608])
+            ("mongo_ce_GridFSException" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [1609 1659])
+            ("mongo_ce_MinKey" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [1661 1713])
+            ("mongo_ce_MaxKey" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [1661 1713])
+            ("le_cursor_list" variable (:type "int") nil [1732 1751])
+            ("mongo_init_MongoExceptions" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("TSRMLS_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1792 1801]))                  
+                :type "void")
+                nil [1753 1802])
+            ("PHP_GINIT_FUNCTION" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("mongo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1866 1872]))                  
+                :type "int")
+                nil [1840 1873])
+            ("PHP_GSHUTDOWN_FUNCTION" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("mongo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1904 1910]))                  
+                :type "int")
+                nil [1874 1911])
+            ("mongo_functions" variable
+               (:dereference 1
+                :type ("zend_function_entry" type (:type "class") nil nil))
+                nil [1959 2079])
+            ("mongo_deps" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :type ("zend_module_dep" type (:type "class") nil nil))
+                nil [2111 2285])
+            ("mongo_module_entry" variable (:type ("zend_module_entry" type (:type "class") nil nil)) nil [2286 2630])
+            ("PHP_INI_MH" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("OnUpdatePingInterval" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2715 2736]))                  
+                :type "int")
+                nil [2697 2976])
+            ("PHP_INI_MH" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("OnUpdateIsMasterInterval" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2996 3021]))                  
+                :type "int")
+                nil [2978 3265])
+            ("PHP_MINIT_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("mongo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4487 4493]))                  
+                :type "int")
+                nil [4468 8112])
+            ("PHP_GINIT_FUNCTION" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("mongo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8180 8186]))                  
+                :type "int")
+                nil [8154 11179])
+            ("PHP_GSHUTDOWN_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("mongo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11214 11220]))                  
+                :type "int")
+                nil [11191 11263])
+            ("PHP_MSHUTDOWN_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("mongo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11322 11328]))                  
+                :type "int")
+                nil [11299 11627])
+            ("PHP_RINIT_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("mongo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11689 11695]))                  
+                :type "int")
+                nil [11670 11766])
+            ("PHP_MINFO_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("mongo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11828 11834]))                  
+                :type "int")
+                nil [11809 12835])
+            ("mongo_init_MongoExceptions" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("TSRMLS_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12886 12895]))                  
+                :type "void")
+                nil [12847 13168])
+            ("php_mongo_type_object_free" function
+               (:arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [13250 13272])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13263 13273]))                  
+                :type "void")
+                nil [13218 13390])
+            ("php_mongo_type_object_new" function
+               (:arguments 
+                  ( ("class_type" variable
+                       (:pointer 1
+                        :type ("zend_class_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13436 13474])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13465 13475]))                  
+                :type ("zend_object_value" type (:type "class") nil nil))
+                nil [13392 13523])
+            ("get_tagset_from_array" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("tagset_id" variable (:type "int") (reparse-symbol arg-sub-list) [13624 13638])
+                    ("ztagset" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13639 13662])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13653 13663]))                  
+                :type ("mongo_read_preference_tagset" type (:type "class") nil nil))
+                nil [13565 14717])
+            ("php_mongo_make_tagsets" function
+               (:pointer 1
+                :arguments 
+                  ( ("rp" variable
+                       (:pointer 1
+                        :type ("mongo_read_preference" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14895 14921]))                  
+                :type ("zval" type (:type "class") nil nil))
+                nil [14866 15497])
+            ("php_mongo_add_tagsets" function
+               (:arguments 
+                  ( ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15526 15545])
+                    ("rp" variable
+                       (:pointer 1
+                        :type ("mongo_read_preference" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15546 15572]))                  
+                :type "void")
+                nil [15499 15726])
+            ("php_mongo_use_tagsets" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("rp" variable
+                       (:pointer 1
+                        :type ("mongo_read_preference" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16024 16050])
+                    ("tagsets" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16051 16079])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16070 16080]))                  
+                :type "int")
+                nil [15991 16977])
+            ("php_mongo_set_readpreference" function
+               (:arguments 
+                  ( ("rp" variable
+                       (:pointer 1
+                        :type ("mongo_read_preference" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17129 17155])
+                    ("read_preference" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17156 17178])
+                    ("tags" variable
+                       (:pointer 1
+                        :type ("HashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17179 17204])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17195 17205]))                  
+                :type "int")
+                nil [17096 18342]))          
+    :file "php_mongo.c"
+    :pointmax 18461
+    :fsize 18460
+    :lastmodtime '(21064 7699 0 0)
+    :unmatched-syntax '((semantic-list 4423 . 4425) (symbol 4412 . 4423) (semantic-list 4303 . 4411) (symbol 4290 . 4303) (string 4304 . 4330) (semantic-list 4191 . 4288) (symbol 4178 . 4191) (string 4192 . 4213) (semantic-list 4064 . 4175) (symbol 4047 . 4064) (string 4091 . 4094) (string 4065 . 4089) (semantic-list 3938 . 4045) (symbol 3921 . 3938) (string 3963 . 3966) (string 3939 . 3961) (semantic-list 3818 . 3919) (symbol 3801 . 3818) (string 3840 . 3843) (string 3819 . 3838) (semantic-list 3700 . 3799) (symbol 3683 . 3700) (string 3714 . 3717) (string 3701 . 3712) (semantic-list 3577 . 3681) (symbol 3560 . 3577) (string 3598 . 3606) (string 3578 . 3596) (semantic-list 3451 . 3558) (symbol 3434 . 3451) (string 3474 . 3481) (string 3452 . 3472) (semantic-list 3319 . 3432) (symbol 3302 . 3319) (string 3342 . 3353) (string 3320 . 3340) (semantic-list 3298 . 3300) (symbol 3285 . 3298) (semantic-list 1831 . 1838) (symbol 1804 . 1831))
+    )
+   (semanticdb-table "cursor.h"
+    :file "cursor.h"
+    :fsize 5166
+    :lastmodtime '(21064 7699 0 0)
+    )
+   (semanticdb-table "io_stream.h"
+    :file "io_stream.h"
+    :fsize 1617
+    :lastmodtime '(21064 7699 0 0)
+    )
+   (semanticdb-table "mongoclient.c"
+    :major-mode 'c-mode
+    :tags nil
+    :file "mongoclient.c"
+    :pointmax 35259
+    :fsize 35260
+    :lastmodtime '(21064 7699 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "collection.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("php.h" include (:system-flag t) nil [608 624])
+            ("zend_exceptions.h" include (:system-flag t) nil [625 653])
+            ("ext/standard/php_smart_str.h" include (:system-flag t) nil [654 693])
+            ("php_mongo.h" include nil nil [695 717])
+            ("collection.h" include nil nil [718 741])
+            ("cursor.h" include nil nil [742 761])
+            ("bson.h" include nil nil [762 779])
+            ("types/code.h" include nil nil [780 803])
+            ("types/db_ref.h" include nil nil [804 829])
+            ("db.h" include nil nil [830 845])
+            ("mcon/manager.h" include nil nil [846 871])
+            ("mcon/io.h" include nil nil [872 892])
+            ("log_stream.h" include nil nil [893 916])
+            ("mongo_ce_Cursor" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [918 996])
+            ("mongo_ce_DB" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [918 996])
+            ("mongo_ce_MongoClient" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [918 996])
+            ("mongo_ce_ResultException" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [997 1084])
+            ("mongo_ce_Exception" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [997 1084])
+            ("mongo_ce_Code" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [997 1084])
+            ("le_connection" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [1086 1127])
+            ("le_pconnection" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [1086 1127])
+            ("mongo_default_handlers" variable
+               (:typemodifiers ("extern")
+                :type ("zend_object_handlers" type (:type "class") nil nil))
+                nil [1128 1179])
+            ("mongo_ce_Collection" variable
+               (:pointer 1
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [1216 1261])
+            ("get_server" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("mongo_collection" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1299 1319])
+                    ("connection_flags" variable (:type "int") (reparse-symbol arg-sub-list) [1320 1350])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1341 1351]))                  
+                :type ("mongo_connection" type (:type "class") nil nil))
+                nil [1263 1352])
+            ("is_gle_op" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("options" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1374 1388])
+                    ("server_options" variable
+                       (:pointer 1
+                        :type ("mongo_server_options" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1389 1435])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1426 1436]))                  
+                :type "int")
+                nil [1353 1437])
+            ("do_gle_op" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("manager" variable
+                       (:pointer 1
+                        :type ("mongo_con_manager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1460 1487])
+                    ("connection" variable
+                       (:pointer 1
+                        :type ("mongo_connection" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1488 1517])
+                    ("cursor_z" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1518 1533])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1534 1546])
+                    ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1547 1575])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1566 1576]))                  
+                :type "void")
+                nil [1438 1577])
+            ("append_getlasterror" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("coll" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1611 1622])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1623 1635])
+                    ("options" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1636 1650])
+                    ("connection" variable
+                       (:pointer 1
+                        :type ("mongo_connection" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1651 1689])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1680 1690]))                  
+                :type ("zval" type (:type "class") nil nil))
+                nil [1578 1691])
+            ("php_mongo_trigger_error_on_command_failure" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("document" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1746 1770])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1761 1771]))                  
+                :type "int")
+                nil [1692 1772])
+            ("to_index_string" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("zkeys" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1802 1814])
+                    ("key_len" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1815 1837])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1828 1838]))                  
+                :type "char")
+                nil [1773 1839])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("MongoCollection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1975 1991])
+                    ("" variable (:type ("__construct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1992 2004]))                  
+                :type "int")
+                nil [1964 3639])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("MongoCollection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3790 3806])
+                    ("" variable (:type ("__toString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3807 3818]))                  
+                :type "int")
+                nil [3779 3910])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("MongoCollection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4014 4030])
+                    ("" variable (:type ("getName" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4031 4039]))                  
+                :type "int")
+                nil [4003 4133])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("MongoCollection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4259 4275])
+                    ("" variable (:type ("getSlaveOkay" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4276 4289]))                  
+                :type "int")
+                nil [4248 4407])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("MongoCollection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4585 4601])
+                    ("" variable (:type ("setSlaveOkay" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4602 4615]))                  
+                :type "int")
+                nil [4574 4945])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("MongoCollection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5139 5155])
+                    ("" variable (:type ("getReadPreference" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5156 5174]))                  
+                :type "int")
+                nil [5128 5418])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("MongoCollection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5585 5601])
+                    ("" variable (:type ("setReadPreference" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5602 5620]))                  
+                :type "int")
+                nil [5574 6029])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("MongoCollection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6142 6158])
+                    ("" variable (:type ("getWriteConcern" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6159 6175]))                  
+                :type "int")
+                nil [6131 6645])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("MongoCollection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6783 6799])
+                    ("" variable (:type ("setWriteConcern" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6800 6816]))                  
+                :type "int")
+                nil [6772 7654])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("MongoCollection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7789 7805])
+                    ("" variable (:type ("drop" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7806 7811]))                  
+                :type "int")
+                nil [7778 8221])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("MongoCollection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8410 8426])
+                    ("" variable (:type ("validate" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8427 8436]))                  
+                :type "int")
+                nil [8399 9009])
+            ("append_getlasterror" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("coll" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9203 9214])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9215 9227])
+                    ("options" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9228 9242])
+                    ("connection" variable
+                       (:pointer 1
+                        :type ("mongo_connection" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9243 9281])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9272 9282]))                  
+                :type ("zval" type (:type "class") nil nil))
+                nil [9170 17232])
+            ("get_server" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("mongo_collection" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17405 17425])
+                    ("connection_flags" variable (:type "int") (reparse-symbol arg-sub-list) [17426 17456])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17447 17457]))                  
+                :type ("mongo_connection" type (:type "class") nil nil))
+                nil [17369 18219])
+            ("send_message" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("this_ptr" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18297 18312])
+                    ("connection" variable
+                       (:pointer 1
+                        :type ("mongo_connection" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18313 18342])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18343 18355])
+                    ("options" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18356 18370])
+                    ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18371 18399])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18390 18400]))                  
+                :type "int")
+                nil [18273 19552])
+            ("is_gle_op" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("options" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19576 19590])
+                    ("server_options" variable
+                       (:pointer 1
+                        :type ("mongo_server_options" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19591 19637])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19628 19638]))                  
+                :type "int")
+                nil [19555 21589])
+            ("MONGO_ERROR_G" variable (:constant-flag t) nil [21660 21673])
+            ("connection_deregister_wrapper" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("manager" variable
+                       (:pointer 1
+                        :type ("mongo_con_manager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22327 22354])
+                    ("connection" variable
+                       (:pointer 1
+                        :type ("mongo_connection" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22355 22393])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22384 22394]))                  
+                :type "void")
+                nil [22285 22750])
+            ("do_gle_op" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("manager" variable
+                       (:pointer 1
+                        :type ("mongo_con_manager" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22774 22801])
+                    ("connection" variable
+                       (:pointer 1
+                        :type ("mongo_connection" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22802 22831])
+                    ("cursor_z" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22832 22847])
+                    ("buf" variable
+                       (:pointer 1
+                        :type ("buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22848 22860])
+                    ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22861 22889])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22880 22890]))                  
+                :type "void")
+                nil [22752 24658])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("MongoCollection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24940 24956])
+                    ("" variable (:type ("insert" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24957 24964]))                  
+                :type "int")
+                nil [24929 25940])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("MongoCollection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26246 26262])
+                    ("" variable (:type ("batchInsert" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26263 26275]))                  
+                :type "int")
+                nil [26235 27853])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("MongoCollection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28120 28136])
+                    ("" variable (:type ("find" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28137 28142]))                  
+                :type "int")
+                nil [28109 29118])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("MongoCollection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29387 29403])
+                    ("" variable (:type ("findOne" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29404 29412]))                  
+                :type "int")
+                nil [29376 30032])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("MongoCollection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30216 30232])
+                    ("" variable (:type ("findAndModify" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30233 30247]))                  
+                :type "int")
+                nil [30205 32172])
+            ("php_mongocollection_update" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("this_ptr" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32224 32239])
+                    ("c" variable
+                       (:pointer 1
+                        :type ("mongo_collection" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32240 32260])
+                    ("criteria" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32261 32276])
+                    ("newobj" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32277 32290])
+                    ("options" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32291 32305])
+                    ("return_value" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32306 32334])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32325 32335]))                  
+                :type "void")
+                nil [32185 33753])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("MongoCollection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34050 34066])
+                    ("" variable (:type ("update" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34067 34074]))                  
+                :type "int")
+                nil [34039 34470])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("MongoCollection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34636 34652])
+                    ("" variable (:type ("remove" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34653 34660]))                  
+                :type "int")
+                nil [34625 36274])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("MongoCollection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36432 36448])
+                    ("" variable (:type ("ensureIndex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36449 36461]))                  
+                :type "int")
+                nil [36421 39457])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("MongoCollection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39569 39585])
+                    ("" variable (:type ("deleteIndex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39586 39598]))                  
+                :type "int")
+                nil [39558 40306])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("MongoCollection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40425 40441])
+                    ("" variable (:type ("deleteIndexes" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40442 40456]))                  
+                :type "int")
+                nil [40414 40909])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("MongoCollection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41019 41035])
+                    ("" variable (:type ("getIndexInfo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41036 41049]))                  
+                :type "int")
+                nil [41008 42012])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("MongoCollection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42196 42212])
+                    ("" variable (:type ("count" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42213 42219]))                  
+                :type "int")
+                nil [42185 43635])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("MongoCollection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44001 44017])
+                    ("" variable (:type ("save" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44018 44023]))                  
+                :type "int")
+                nil [43990 44867])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("MongoCollection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44993 45009])
+                    ("" variable (:type ("createDBRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45010 45022]))                  
+                :type "int")
+                nil [44982 45446])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("MongoCollection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45577 45593])
+                    ("" variable (:type ("getDBRef" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45594 45603]))                  
+                :type "int")
+                nil [45566 45876])
+            ("replace_dots" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("key" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [45913 45923])
+                    ("key_len" variable (:type "int") (reparse-symbol arg-sub-list) [45924 45936]))                  
+                :type "void")
+                nil [45888 46029])
+            ("to_index_string" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("zkeys" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46060 46072])
+                    ("key_len" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [46073 46095])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46086 46096]))                  
+                :type "char")
+                nil [46031 47617])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("MongoCollection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47776 47792])
+                    ("" variable (:type ("toIndexString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47793 47807]))                  
+                :type "int")
+                nil [47765 48085])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("MongoCollection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48464 48480])
+                    ("" variable (:type ("aggregate" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48481 48491]))                  
+                :type "int")
+                nil [48453 50044])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("MongoCollection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50326 50342])
+                    ("" variable (:type ("distinct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50343 50352]))                  
+                :type "int")
+                nil [50315 51530])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("MongoCollection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51813 51829])
+                    ("" variable (:type ("group" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51830 51836]))                  
+                :type "int")
+                nil [51802 54218])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("MongoCollection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54507 54523])
+                    ("" variable (:type ("__get" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54524 54530]))                  
+                :type "int")
+                nil [54496 55655])
+            ("MongoCollection_methods" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type ("zend_function_entry" type (:type "class") nil nil))
+                nil [59827 62270])
+            ("php_mongo_collection_free" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("object" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [62310 62332])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [62323 62333]))                  
+                :type "void")
+                nil [62272 62697])
+            ("php_mongo_trigger_error_on_command_failure" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("document" variable
+                       (:pointer 1
+                        :type ("zval" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [62753 62777])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [62768 62778]))                  
+                :type "int")
+                nil [62699 63963])
+            ("php_mongo_collection_new" function
+               (:arguments 
+                  ( ("class_type" variable
+                       (:pointer 1
+                        :type ("zend_class_entry" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [64045 64083])
+                    ("" variable (:type ("TSRMLS_DC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [64074 64084]))                  
+                :type ("zend_object_value" type (:type "class") nil nil))
+                nil [64002 64126])
+            ("mongo_init_MongoCollection" function
+               (:arguments 
+                  ( ("" variable (:type ("TSRMLS_D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [64170 64179]))                  
+                :type "void")
+                nil [64138 64833]))          
+    :file "collection.c"
+    :pointmax 64952
+    :fsize 64951
+    :lastmodtime '(21064 7699 0 0)
+    :unmatched-syntax '((semantic-list 59823 . 59825) (symbol 59806 . 59823) (semantic-list 59797 . 59805) (symbol 59784 . 59797) (number 59798 . 59799) (semantic-list 59775 . 59782) (symbol 59762 . 59775) (number 59776 . 59777) (semantic-list 59747 . 59760) (symbol 59734 . 59747) (number 59748 . 59749) (semantic-list 59704 . 59732) (symbol 59682 . 59704) (number 59730 . 59731) (number 59727 . 59728) (number 59724 . 59725) (symbol 59661 . 59681) (number 59730 . 59731) (number 59727 . 59728) (number 59724 . 59725) (semantic-list 59657 . 59659) (symbol 59640 . 59657) (semantic-list 59624 . 59639) (symbol 59605 . 59624) (number 59637 . 59638) (number 59625 . 59626) (semantic-list 59580 . 59603) (symbol 59567 . 59580) (number 59581 . 59582) (semantic-list 59547 . 59565) (symbol 59534 . 59547) (number 59548 . 59549) (semantic-list 59510 . 59532) (symbol 59497 . 59510) (number 59511 . 59512) (semantic-list 59455 . 59495) (symbol 59433 . 59455) (number 59493 . 59494) (number 59471 . 59472) (symbol 59412 . 59432) (number 59493 . 59494) (number 59471 . 59472) (semantic-list 59408 . 59410) (symbol 59391 . 59408) (semantic-list 59362 . 59390) (symbol 59349 . 59362) (number 59363 . 59364) (semantic-list 59299 . 59347) (symbol 59277 . 59299) (number 59345 . 59346) (number 59323 . 59324) (symbol 59256 . 59276) (number 59345 . 59346) (number 59323 . 59324) (semantic-list 59252 . 59254) (symbol 59235 . 59252) (semantic-list 59220 . 59234) (symbol 59207 . 59220) (number 59221 . 59222) (semantic-list 59162 . 59205) (symbol 59140 . 59162) (number 59203 . 59204) (number 59181 . 59182) (symbol 59119 . 59139) (number 59203 . 59204) (number 59181 . 59182) (semantic-list 59115 . 59117) (symbol 59098 . 59115) (semantic-list 59061 . 59097) (symbol 59048 . 59061) (number 59062 . 59063) (semantic-list 59000 . 59046) (symbol 58978 . 59000) (number 59044 . 59045) (number 59022 . 59023) (symbol 58957 . 58977) (number 59044 . 59045) (number 59022 . 59023) (semantic-list 58953 . 58955) (symbol 58936 . 58953) (semantic-list 58926 . 58935) (symbol 58913 . 58926) (number 58927 . 58928) (semantic-list 58901 . 58911) (symbol 58888 . 58901) (number 58902 . 58903) (semantic-list 58847 . 58886) (symbol 58834 . 58847) (number 58848 . 58849) (semantic-list 58792 . 58832) (symbol 58770 . 58792) (number 58830 . 58831) (number 58808 . 58809) (symbol 58749 . 58769) (number 58830 . 58831) (number 58808 . 58809) (semantic-list 58745 . 58747) (symbol 58728 . 58745) (semantic-list 58699 . 58727) (symbol 58686 . 58699) (number 58700 . 58701) (semantic-list 58638 . 58684) (symbol 58616 . 58638) (number 58682 . 58683) (number 58660 . 58661) (symbol 58595 . 58615) (number 58682 . 58683) (number 58660 . 58661) (semantic-list 58591 . 58593) (symbol 58574 . 58591) (semantic-list 58558 . 58573) (symbol 58539 . 58558) (number 58571 . 58572) (number 58559 . 58560) (semantic-list 58512 . 58537) (symbol 58499 . 58512) (number 58513 . 58514) (semantic-list 58451 . 58497) (symbol 58429 . 58451) (number 58495 . 58496) (number 58473 . 58474) (symbol 58408 . 58428) (number 58495 . 58496) (number 58473 . 58474) (semantic-list 58404 . 58406) (symbol 58387 . 58404) (semantic-list 58371 . 58386) (symbol 58352 . 58371) (number 58384 . 58385) (number 58372 . 58373) (semantic-list 58320 . 58350) (symbol 58307 . 58320) (number 58321 . 58322) (semantic-list 58264 . 58305) (symbol 58242 . 58264) (number 58303 . 58304) (number 58281 . 58282) (symbol 58221 . 58241) (number 58303 . 58304) (number 58281 . 58282) (semantic-list 58217 . 58219) (symbol 58200 . 58217) (semantic-list 58184 . 58199) (symbol 58165 . 58184) (number 58197 . 58198) (number 58185 . 58186) (semantic-list 58129 . 58163) (symbol 58116 . 58129) (number 58130 . 58131) (semantic-list 58080 . 58114) (symbol 58067 . 58080) (number 58081 . 58082) (semantic-list 58024 . 58065) (symbol 58002 . 58024) (number 58063 . 58064) (number 58041 . 58042) (symbol 57981 . 58001) (number 58063 . 58064) (number 58041 . 58042) (semantic-list 57977 . 57979) (symbol 57960 . 57977) (semantic-list 57944 . 57959) (symbol 57925 . 57944) (number 57957 . 57958) (number 57945 . 57946) (semantic-list 57909 . 57923) (symbol 57890 . 57909) (number 57921 . 57922) (number 57910 . 57911) (semantic-list 57874 . 57888) (symbol 57855 . 57874) (number 57886 . 57887) (number 57875 . 57876) (semantic-list 57840 . 57853) (symbol 57821 . 57840) (number 57851 . 57852) (number 57841 . 57842) (semantic-list 57771 . 57819) (symbol 57749 . 57771) (number 57817 . 57818) (number 57795 . 57796) (symbol 57728 . 57748) (number 57817 . 57818) (number 57795 . 57796) (semantic-list 57724 . 57726) (symbol 57707 . 57724) (semantic-list 57695 . 57706) (symbol 57682 . 57695) (number 57696 . 57697) (semantic-list 57670 . 57680) (symbol 57657 . 57670) (number 57671 . 57672) (semantic-list 57612 . 57655) (symbol 57590 . 57612) (number 57653 . 57654) (number 57631 . 57632) (symbol 57569 . 57589) (number 57653 . 57654) (number 57631 . 57632) (semantic-list 57565 . 57567) (symbol 57548 . 57565) (semantic-list 57536 . 57547) (symbol 57523 . 57536) (number 57537 . 57538) (semantic-list 57511 . 57521) (symbol 57498 . 57511) (number 57512 . 57513) (semantic-list 57457 . 57496) (symbol 57435 . 57457) (number 57494 . 57495) (number 57472 . 57473) (symbol 57414 . 57434) (number 57494 . 57495) (number 57472 . 57473) (semantic-list 57410 . 57412) (symbol 57393 . 57410) (semantic-list 57377 . 57392) (symbol 57358 . 57377) (number 57390 . 57391) (number 57378 . 57379) (semantic-list 57314 . 57331) (symbol 57295 . 57314) (number 57329 . 57330) (number 57315 . 57316) (semantic-list 57247 . 57293) (symbol 57225 . 57247) (number 57291 . 57292) (number 57269 . 57270) (symbol 57204 . 57224) (number 57291 . 57292) (number 57269 . 57270) (semantic-list 57200 . 57202) (symbol 57183 . 57200) (semantic-list 57167 . 57182) (symbol 57148 . 57167) (number 57180 . 57181) (number 57168 . 57169) (semantic-list 57116 . 57146) (symbol 57103 . 57116) (number 57117 . 57118) (semantic-list 57060 . 57101) (symbol 57038 . 57060) (number 57099 . 57100) (number 57077 . 57078) (symbol 57017 . 57037) (number 57099 . 57100) (number 57077 . 57078) (semantic-list 57013 . 57015) (symbol 56996 . 57013) (semantic-list 56982 . 56995) (symbol 56969 . 56982) (number 56983 . 56984) (semantic-list 56924 . 56967) (symbol 56902 . 56924) (number 56965 . 56966) (number 56943 . 56944) (symbol 56881 . 56901) (number 56965 . 56966) (number 56943 . 56944) (semantic-list 56877 . 56879) (symbol 56860 . 56877) (semantic-list 56846 . 56859) (symbol 56833 . 56846) (number 56847 . 56848) (semantic-list 56825 . 56831) (symbol 56812 . 56825) (number 56826 . 56827) (semantic-list 56760 . 56810) (symbol 56738 . 56760) (number 56808 . 56809) (number 56786 . 56787) (symbol 56717 . 56737) (number 56808 . 56809) (number 56786 . 56787) (semantic-list 56713 . 56715) (symbol 56696 . 56713) (semantic-list 56645 . 56695) (symbol 56623 . 56645) (number 56693 . 56694) (number 56671 . 56672) (symbol 56602 . 56622) (number 56693 . 56694) (number 56671 . 56672) (semantic-list 56598 . 56600) (symbol 56581 . 56598) (semantic-list 56533 . 56545) (symbol 56514 . 56533) (number 56543 . 56544) (number 56534 . 56535) (semantic-list 56492 . 56512) (symbol 56479 . 56492) (number 56493 . 56494) (semantic-list 56425 . 56477) (symbol 56403 . 56425) (number 56475 . 56476) (number 56453 . 56454) (symbol 56382 . 56402) (number 56475 . 56476) (number 56453 . 56454) (semantic-list 56378 . 56380) (symbol 56361 . 56378) (semantic-list 56345 . 56360) (symbol 56332 . 56345) (number 56346 . 56347) (semantic-list 56283 . 56330) (symbol 56261 . 56283) (number 56328 . 56329) (number 56306 . 56307) (symbol 56240 . 56260) (number 56328 . 56329) (number 56306 . 56307) (semantic-list 56236 . 56238) (symbol 56219 . 56236) (semantic-list 56209 . 56218) (symbol 56196 . 56209) (number 56210 . 56211) (semantic-list 56154 . 56194) (symbol 56132 . 56154) (number 56192 . 56193) (number 56170 . 56171) (symbol 56111 . 56131) (number 56192 . 56193) (number 56170 . 56171) (semantic-list 56107 . 56109) (symbol 56090 . 56107) (semantic-list 56041 . 56089) (symbol 56019 . 56041) (number 56087 . 56088) (number 56065 . 56066) (symbol 55998 . 56018) (number 56087 . 56088) (number 56065 . 56066) (semantic-list 55994 . 55996) (symbol 55977 . 55994) (semantic-list 55966 . 55976) (symbol 55953 . 55966) (number 55967 . 55968) (semantic-list 55943 . 55951) (symbol 55930 . 55943) (number 55944 . 55945) (semantic-list 55901 . 55928) (symbol 55879 . 55901) (number 55926 . 55927) (number 55923 . 55924) (number 55920 . 55921) (symbol 55858 . 55878) (number 55926 . 55927) (number 55923 . 55924) (number 55920 . 55921) (semantic-list 55854 . 55856) (symbol 55837 . 55854) (semantic-list 55816 . 55836) (symbol 55803 . 55816) (number 55817 . 55818) (semantic-list 55776 . 55801) (symbol 55759 . 55776) (number 55799 . 55800) (number 55777 . 55778) (semantic-list 55711 . 55757) (symbol 55689 . 55711) (number 55755 . 55756) (number 55733 . 55734) (symbol 55668 . 55688) (number 55755 . 55756) (number 55733 . 55734) (semantic-list 1207 . 1214) (symbol 1181 . 1207))
+    :lexical-table 
+        '(("MONGO_ERROR_G" . ((symbol "PG" 21674 . 21676)))
+          )
+
+    )
+   (semanticdb-table "collection.h"
+    :file "collection.h"
+    :fsize 1917
+    :lastmodtime '(21064 7699 0 0)
+    )
+   (semanticdb-table "log_stream.h"
+    :file "log_stream.h"
+    :fsize 1619
+    :lastmodtime '(21064 7699 0 0)
+    )
+   )
+  :file "!home!work!git!mongo-php-driver!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

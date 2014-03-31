@@ -1,0 +1,23 @@
+;; Object mytap/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mytap/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("AM_CPPFLAGS" variable (:default-value ("-I$(top_builddir)/include" "-I$(top_srcdir)/include" "-I$(srcdir)")) nil [693 770])
+            ("noinst_LIBRARIES" variable (:default-value ("libmytap.a")) nil [771 803])
+            ("noinst_HEADERS" variable (:default-value ("tap.h")) nil [803 830])
+            ("libmytap_a_SOURCES" variable (:default-value ("tap.c")) nil [831 858])
+            ("SUBDIRS" variable (:default-value ("." "t")) nil [859 884]))          
+    :file "Makefile.am"
+    :pointmax 937
+    :fsize 936
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax '((symbol 928 . 936) (punctuation 927 . 928) (punctuation 926 . 927) (symbol 925 . 926) (bol 925 . 925))
+    )
+   )
+  :file "!home!work!git!mm!mysql-5.1.71!unittest!mytap!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

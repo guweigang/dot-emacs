@@ -1,0 +1,23 @@
+;; Object app/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "app/"
+  :tables (list 
+   (semanticdb-table "about.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("About" section (:members 
+              ( ("minikomi" anchor nil nil [45 48])
+                ("backbone.js" anchor nil nil [296 299])
+                ("underscode.js templates" anchor nil nil [361 364])
+                ("github project" anchor nil nil [522 525]))              ) nil [1 853]))          
+    :file "about.html"
+    :pointmax 853
+    :fsize 852
+    :lastmodtime '(21112 33592 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!local!httpd!htdocs!adbox!form-builder!assets!js!templates!app!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

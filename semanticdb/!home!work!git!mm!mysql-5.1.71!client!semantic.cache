@@ -1,0 +1,49 @@
+;; Object client/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "client/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("LIBMYSQLCLIENT_LA" variable (:default-value ("$(top_builddir)/libmysql_r/libmysqlclient_r.la")) nil [826 894])
+            ("LIBMYSQLCLIENT_LA" variable (:default-value ("$(top_builddir)/libmysql/libmysqlclient.la")) nil [899 963])
+            ("INCLUDES" variable (:default-value ("-I$(top_builddir)/include" "-I$(top_srcdir)/include" "-I$(top_srcdir)/regex" "$(openssl_includes)")) nil [970 1121])
+            ("LIBS" variable (:default-value ("@CLIENT_LIBS@")) nil [1122 1146])
+            ("LDADD" variable (:default-value ("@CLIENT_EXTRA_LDFLAGS@" "$(CLIENT_THREAD_LIBS)" "$(top_builddir)/libmysql/libmysqlclient.la")) nil [1147 1251])
+            ("noinst_HEADERS" variable (:default-value ("sql_string.h" "completion_hash.h" "my_readline.h" "client_priv.h")) nil [1252 1335])
+            ("EXTRA_DIST" variable (:default-value ("get_password.c" "CMakeLists.txt" "echo.c")) nil [1336 1388])
+            ("BUILT_SOURCES" variable (:default-value ("link_sources")) nil [1389 1420])
+            ("CLEANFILES" variable (:default-value ("$(BUILT_SOURCES)")) nil [1421 1453])
+            ("bin_PROGRAMS" variable (:default-value ("mysql")) nil [1454 1631])
+            ("mysql_SOURCES" variable (:default-value ("mysql.cc" "readline.cc" "sql_string.cc" "completion_hash.cc")) nil [1632 1710])
+            ("mysql_LDADD" variable (:default-value ("@readline_link@" "@TERMCAP_LIB@" "$(LDADD)" "$(CXXLDFLAGS)")) nil [1710 1785])
+            ("mysqladmin_SOURCES" variable (:default-value ("mysqladmin.cc")) nil [1785 1821])
+            ("mysqlbinlog_SOURCES" variable (:default-value ("mysqlbinlog.cc" "$(top_srcdir)/mysys/mf_tempdir.c" "$(top_srcdir)/mysys/my_new.cc" "$(top_srcdir)/mysys/my_bit.c" "$(top_srcdir)/mysys/my_bitmap.c" "$(top_srcdir)/mysys/my_vle.c" "$(top_srcdir)/mysys/base64.c")) nil [1822 2078])
+            ("mysqlbinlog_LDADD" variable (:default-value ("$(LDADD)" "$(CXXLDFLAGS)")) nil [2078 2122])
+            ("mysqldump_SOURCES" variable (:default-value ("mysqldump.c" "my_user.c" "$(top_srcdir)/mysys/mf_getdate.c")) nil [2123 2243])
+            ("mysqlimport_SOURCES" variable (:default-value ("mysqlimport.c")) nil [2244 2280])
+            ("mysqlimport_CFLAGS" variable (:default-value ("-DTHREAD" "-UUNDEF_THREADS_HACK")) nil [2280 2331])
+            ("mysqlimport_LDADD" variable (:default-value ("$(CXXLDFLAGS)" "$(CLIENT_THREAD_LIBS)" "@CLIENT_EXTRA_LDFLAGS@" "$(LIBMYSQLCLIENT_LA)" "$(top_builddir)/mysys/libmysys.a")) nil [2331 2483])
+            ("mysqlshow_SOURCES" variable (:default-value ("mysqlshow.c")) nil [2484 2516])
+            ("mysqlslap_SOURCES" variable (:default-value ("mysqlslap.c")) nil [2517 2549])
+            ("mysqlslap_CFLAGS" variable (:default-value ("-DTHREAD" "-UMYSQL_CLIENT_NO_THREADS")) nil [2549 2603])
+            ("mysqlslap_LDADD" variable (:default-value ("$(CXXLDFLAGS)" "$(CLIENT_THREAD_LIBS)" "@CLIENT_EXTRA_LDFLAGS@" "$(LIBMYSQLCLIENT_LA)" "$(top_builddir)/mysys/libmysys.a")) nil [2603 2753])
+            ("mysqltest_SOURCES" variable (:default-value ("mysqltest.cc")) nil [2754 2787])
+            ("mysqltest_CXXFLAGS" variable (:default-value ("-DTHREAD" "-UMYSQL_CLIENT_NO_THREADS")) nil [2787 2843])
+            ("mysqltest_LDADD" variable (:default-value ("$(CXXLDFLAGS)" "$(CLIENT_THREAD_LIBS)" "@CLIENT_EXTRA_LDFLAGS@" "$(LIBMYSQLCLIENT_LA)" "$(top_builddir)/mysys/libmysys.a" "$(top_builddir)/regex/libregex.a" "$(CLIENT_THREAD_LIBS)")) nil [2843 3060])
+            ("mysql_upgrade_SOURCES" variable (:default-value ("mysql_upgrade.c" "$(top_srcdir)/mysys/my_getpagesize.c")) nil [3061 3180])
+            ("DEFS" variable (:default-value ("-DMYSQL_CLIENT_NO_THREADS" "-DDEFAULT_MYSQL_HOME=\"\\\"$(prefix)\\\"\"" "-DMYSQL_DATADIR=\"\\\"$(localstatedir)\\\"\"")) nil [3203 3324])
+            ("sql_src" variable (:default-value ("log_event.h" "mysql_priv.h" "rpl_constants.h" "rpl_utility.h" "rpl_tblmap.h" "rpl_tblmap.cc" "log_event.cc" "my_decimal.h" "my_decimal.cc" "log_event_old.h" "log_event_old.cc" "rpl_record_old.h" "rpl_record_old.cc")) nil [3325 3535])
+            ("strings_src" variable (:default-value ("decimal.c")) nil [3535 3557])
+            ("link_sources" function nil nil [3558 3879]))          
+    :file "Makefile.am"
+    :pointmax 3932
+    :fsize 3931
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax '((symbol 3923 . 3931) (punctuation 3922 . 3923) (punctuation 3921 . 3922) (symbol 3920 . 3921) (bol 3920 . 3920))
+    )
+   )
+  :file "!home!work!git!mm!mysql-5.1.71!client!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

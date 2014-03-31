@@ -1,0 +1,25 @@
+;; Object debug/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "debug/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("plugindir" variable (:default-value ("${pkglibdir}/plugins")) nil [1 34])
+            ("plugin_LTLIBRARIES" variable (:default-value ("libdebug.la")) nil [35 68])
+            ("libdebug_la_LDFLAGS" variable (:default-value ("-export-dynamic" "-no-undefined" "-avoid-version" "-dynamic")) nil [68 145])
+            ("libdebug_la_SOURCES" variable (:default-value ("debug-plugin.c")) nil [145 183])
+            ("libdebug_la_LIBADD" variable (:default-value ("$(EVENT_LIBS)" "$(GLIB_LIBS)" "$(GMODULE_LIBS)" "$(top_builddir)/src/libmysql-proxy.la")) nil [183 287])
+            ("libdebug_la_CPPFLAGS" variable (:default-value ("$(MYSQL_CFLAGS)" "$(GLIB_CFLAGS)" "$(LUA_CFLAGS)" "$(GMODULE_CFLAGS)" "-I$(top_srcdir)/src/")) nil [287 394])
+            ("EXTRA_DIST" variable (:default-value ("CMakeLists.txt")) nil [395 421]))          
+    :file "Makefile.am"
+    :pointmax 422
+    :fsize 421
+    :lastmodtime '(21022 63839 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!git!mm!mysql-proxy-0.8.2!plugins!debug!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

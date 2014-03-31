@@ -1,0 +1,28 @@
+;; Object sql-common/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "sql-common/"
+  :tables (list 
+   (semanticdb-table "client.c"
+    :major-mode 'c-mode
+    :tags nil
+    :file "client.c"
+    :pointmax 99126
+    :fsize 99125
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("EXTRA_DIST" variable (:default-value ("client.c" "pack.c" "my_time.c" "my_user.c")) nil [759 808]))          
+    :file "Makefile.am"
+    :pointmax 861
+    :fsize 860
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax '((symbol 852 . 860) (punctuation 851 . 852) (punctuation 850 . 851) (symbol 849 . 850) (bol 849 . 849))
+    )
+   )
+  :file "!home!work!git!mm!mysql-5.1.71!sql-common!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,22 @@
+;; Object storage/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "storage/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("AUTOMAKE_OPTIONS" variable (:default-value ("foreign")) nil [814 841])
+            ("EXTRA_DIST" variable (:default-value ("mysql_storage_engine.cmake")) nil [894 935])
+            ("SUBDIRS" variable (:default-value ("@mysql_se_dirs@")) nil [935 961])
+            ("DIST_SUBDIRS" variable (:default-value ("@mysql_se_distdirs@")) nil [961 996]))          
+    :file "Makefile.am"
+    :pointmax 1049
+    :fsize 1048
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax '((symbol 1040 . 1048) (punctuation 1039 . 1040) (punctuation 1038 . 1039) (symbol 1037 . 1038) (bol 1037 . 1037))
+    )
+   )
+  :file "!home!work!git!mm!mysql-5.1.71!storage!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

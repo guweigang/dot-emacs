@@ -1,0 +1,24 @@
+;; Object xmlrpc/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "xmlrpc/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("AM_CPPFLAGS" variable (:default-value ("-I$(top_srcdir)/src" "-I$(top_builddir)/include" "-I$(top_srcdir)/include")) nil [1 85])
+            ("lib_LTLIBRARIES" variable (:default-value ("libcxxtools-xmlrpc.la")) nil [86 126])
+            ("libcxxtools_xmlrpc_la_SOURCES" variable (:default-value ("client.cpp" "clientimpl.cpp" "httpclient.cpp" "httpclientimpl.cpp" "formatter.cpp" "responder.cpp" "scanner.cpp" "service.cpp")) nil [127 295])
+            ("noinst_HEADERS" variable (:default-value ("clientimpl.h" "httpclientimpl.h")) nil [296 349])
+            ("libcxxtools_xmlrpc_la_LIBADD" variable (:default-value ("$(top_builddir)/src/libcxxtools.la" "$(top_builddir)/src/http/libcxxtools-http.la")) nil [350 461])
+            ("libcxxtools_xmlrpc_la_LDFLAGS" variable (:default-value ("-version-info" "@sonumber@" "@SHARED_LIB_FLAG@")) nil [462 537]))          
+    :file "Makefile.am"
+    :pointmax 538
+    :fsize 537
+    :lastmodtime '(20859 30360 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!git!php-hogdeer!cxxtools!src!xmlrpc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

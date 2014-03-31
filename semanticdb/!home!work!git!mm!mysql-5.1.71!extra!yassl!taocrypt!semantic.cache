@@ -1,0 +1,20 @@
+;; Object taocrypt/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "taocrypt/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("SUBDIRS" variable (:default-value ("src" "test" "benchmark")) nil [706 735])
+            ("EXTRA_DIST" variable (:default-value ("CMakeLists.txt" "$(wildcard mySTL/*.hpp)")) nil [735 787]))          
+    :file "Makefile.am"
+    :pointmax 840
+    :fsize 839
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax '((symbol 831 . 839) (punctuation 830 . 831) (punctuation 829 . 830) (symbol 828 . 829) (bol 828 . 828))
+    )
+   )
+  :file "!home!work!git!mm!mysql-5.1.71!extra!yassl!taocrypt!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

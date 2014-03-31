@@ -1,0 +1,27 @@
+;; Object libmysql_r/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "libmysql_r/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("target" variable (:default-value ("libmysqlclient_r.la")) nil [919 948])
+            ("target_defs" variable (:default-value ("-DDONT_USE_RAID" "-DMYSQL_CLIENT" "@LIB_EXTRA_CCFLAGS@")) nil [948 1013])
+            ("LIBS" variable (:default-value ("@LIBS@" "@ZLIB_LIBS@" "@openssl_libs@")) nil [1013 1054])
+            ("INCLUDES" variable (:default-value ("-I$(top_builddir)/include" "-I$(top_srcdir)/include" "$(openssl_includes)" "@ZLIB_INCLUDES@")) nil [1055 1156])
+            ("$(top_srcdir)/libmysql/Makefile.shared" include nil nil [1229 1276])
+            ("nodist_libmysqlclient_r_la_SOURCES" variable (:default-value ("$(target_sources)")) nil [1277 1332])
+            ("libmysqlclient_r_la_LIBADD" variable (:default-value ("$(target_libadd)" "$(yassl_las)")) nil [1332 1391])
+            ("libmysqlclient_r_la_LDFLAGS" variable (:default-value ("$(target_ldflags)")) nil [1391 1439])
+            ("link_sources" function nil nil [1440 1667]))          
+    :file "Makefile.am"
+    :pointmax 1720
+    :fsize 1719
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax '((symbol 1711 . 1719) (punctuation 1710 . 1711) (punctuation 1709 . 1710) (symbol 1708 . 1709) (bol 1708 . 1708))
+    )
+   )
+  :file "!home!work!git!mm!mysql-5.1.71!libmysql_r!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

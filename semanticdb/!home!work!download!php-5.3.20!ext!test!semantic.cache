@@ -1,0 +1,120 @@
+;; Object test/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "test/"
+  :tables (list 
+   (semanticdb-table "test.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("php.h" include nil nil [1194 1210])
+            ("php_ini.h" include nil nil [1211 1231])
+            ("ext/standard/info.h" include nil nil [1232 1262])
+            ("php_test.h" include nil nil [1263 1284])
+            ("zend_alloc.h" include (:system-flag t) nil [1285 1308])
+            ("test_functions" variable
+               (:dereference 1
+                :constant-flag t
+                :type ("zend_function_entry" type (:type "class") nil nil))
+                nil [1412 1583])
+            ("test_module_entry" variable (:type ("zend_module_entry" type (:type "class") nil nil)) nil [1624 2119])
+            ("PHP_MINIT_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("test" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2861 2866]))                  
+                :type "int")
+                nil [2842 3912])
+            ("PHP_MSHUTDOWN_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("test" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3981 3986]))                  
+                :type "int")
+                nil [3958 4086])
+            ("PHP_RINIT_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("test" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4202 4207]))                  
+                :type "int")
+                nil [4183 4228])
+            ("PHP_RSHUTDOWN_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("test" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4350 4355]))                  
+                :type "int")
+                nil [4327 4376])
+            ("PHP_MINFO_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("test" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4437 4442]))                  
+                :type "int")
+                nil [4418 4646])
+            ("PHP_FUNCTION" function
+               (:arguments 
+                  ( ("" variable (:type ("json_encode1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5039 5052]))                  
+                :type "int")
+                nil [5026 5393]))          
+    :file "test.c"
+    :pointmax 5856
+    :fsize 5855
+    :lastmodtime '(21079 58737 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "php_test.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("PHP_TEST_H" variable (:constant-flag t) nil [1172 1182])
+            ("test_module_entry" variable
+               (:typemodifiers ("extern")
+                :type ("zend_module_entry" type (:type "class") nil nil))
+                nil [1184 1227])
+            ("phpext_test_ptr" variable (:constant-flag t) nil [1236 1251])
+            ("PHP_TEST_API" variable (:constant-flag t) nil [1383 1395])
+            ("PHP_MINIT_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("test" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1528 1533]))                  
+                :type "int")
+                nil [1509 1534])
+            ("PHP_MSHUTDOWN_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("test" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1558 1563]))                  
+                :type "int")
+                nil [1535 1564])
+            ("PHP_RINIT_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("test" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1584 1589]))                  
+                :type "int")
+                nil [1565 1590])
+            ("PHP_RSHUTDOWN_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("test" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1614 1619]))                  
+                :type "int")
+                nil [1591 1620])
+            ("PHP_MINFO_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("test" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1640 1645]))                  
+                :type "int")
+                nil [1621 1646])
+            ("TEST_G" variable (:constant-flag t) nil [2520 2526])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("json_encode1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1661 1674]))                  
+                :type "int")
+                nil [1648 1675])
+            ("TEST_G" variable (:constant-flag t) nil [2520 2526]))          
+    :file "php_test.h"
+    :pointmax 2709
+    :fsize 2716
+    :lastmodtime '(21079 56641 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("TEST_G" (spp-arg-list ("v") 2525 . 2528) . ((semantic-list "(test_globals.v)" 2529 . 2545)))
+          ("phpext_test_ptr" . ((punctuation "&" 1252 . 1253) (symbol "test_module_entry" 1253 . 1270)))
+          ("PHP_TEST_H")
+          ("PHP_TEST_API" . ((symbol "__attribute__" 1396 . 1409) (semantic-list "((visibility(\"default\")))" 1410 . 1435)))
+          )
+
+    )
+   )
+  :file "!home!work!download!php-5.3.20!ext!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,20 @@
+;; Object base/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "base/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("SUBDIRS" variable (:default-value ("t" "r")) nil [1 13])
+            ("EXTRA_DIST" variable (:default-value ("tests_to_skip.lua")) nil [13 50]))          
+    :file "Makefile.am"
+    :pointmax 50
+    :fsize 49
+    :lastmodtime '(21022 63839 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!git!mm!mysql-proxy-0.8.2!tests!suite!base!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,69 @@
+;; Object binlog/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "binlog/"
+  :tables (list 
+   (semanticdb-table "php_binlog.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("PHP_BINLOG_H" variable (:constant-flag t) nil [1174 1186])
+            ("binlog_module_entry" variable
+               (:typemodifiers ("extern")
+                :type ("zend_module_entry" type (:type "class") nil nil))
+                nil [1188 1233])
+            ("phpext_binlog_ptr" variable (:constant-flag t) nil [1242 1259])
+            ("PHP_BINLOG_API" variable (:constant-flag t) nil [1395 1409])
+            ("PHP_MINIT_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("binlog" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1544 1551]))                  
+                :type "int")
+                nil [1525 1552])
+            ("PHP_MSHUTDOWN_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("binlog" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1576 1583]))                  
+                :type "int")
+                nil [1553 1584])
+            ("PHP_RINIT_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("binlog" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1604 1611]))                  
+                :type "int")
+                nil [1585 1612])
+            ("PHP_RSHUTDOWN_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("binlog" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1636 1643]))                  
+                :type "int")
+                nil [1613 1644])
+            ("PHP_MINFO_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("binlog" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1664 1671]))                  
+                :type "int")
+                nil [1645 1672])
+            ("PHP_FUNCTION" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("confirm_binlog_compiled" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1687 1711]))                  
+                :type "int")
+                nil [1674 1712])
+            ("BINLOG_G" variable (:constant-flag t) nil [2571 2579]))          
+    :file "php_binlog.h"
+    :pointmax 2774
+    :fsize 2773
+    :lastmodtime '(20843 45564 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("PHP_BINLOG_H")
+          ("BINLOG_G" (spp-arg-list ("v") 2579 . 2582) . ((semantic-list "(binlog_globals.v)" 2583 . 2601)))
+          ("PHP_BINLOG_API" . ((symbol "__attribute__" 1410 . 1423) (semantic-list "((visibility(\"default\")))" 1424 . 1449)))
+          ("phpext_binlog_ptr" . ((punctuation "&" 1260 . 1261) (symbol "binlog_module_entry" 1261 . 1280)))
+          )
+
+    )
+   )
+  :file "!home!work!download!php-5.3.20!ext!binlog!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

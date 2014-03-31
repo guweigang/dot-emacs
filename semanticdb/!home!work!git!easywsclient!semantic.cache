@@ -1,0 +1,64 @@
+;; Object easywsclient/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "easywsclient/"
+  :tables (list 
+   (semanticdb-table "example-client.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("easywsclient.hpp" include nil nil [1 28])
+            ("stdio.h" include (:system-flag t) nil [119 137])
+            ("string" include (:system-flag t) nil [138 155])
+            ("easywsclient::WebSocket" using (:type ("easywsclient::WebSocket" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [157 187])
+            ("ws" variable
+               (:typemodifiers ("static")
+                :type ("WebSocket::pointer" type (:type "class") nil nil))
+                nil [188 224])
+            ("handle_message" function
+               (:arguments 
+                  ( ("message" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [246 274]))                  
+                :type "void")
+                nil [226 364])
+            ("main" function (:type "int") nil [366 675]))          
+    :file "example-client.cpp"
+    :pointmax 987
+    :fsize 673
+    :lastmodtime '(21247 35219 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "easywsclient.hpp"
+    :file "easywsclient.hpp"
+    :fsize 1810
+    :lastmodtime '(21247 34591 0 0)
+    )
+   (semanticdb-table "example-client-cpp11.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("easywsclient.hpp" include nil nil [87 114])
+            ("assert.h" include (:system-flag t) nil [278 297])
+            ("stdio.h" include (:system-flag t) nil [298 316])
+            ("string" include (:system-flag t) nil [317 334])
+            ("memory" include (:system-flag t) nil [335 352])
+            ("main" function (:type "int") nil [354 1239]))          
+    :file "example-client-cpp11.cpp"
+    :pointmax 1208
+    :fsize 1239
+    :lastmodtime '(21247 35083 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "easywsclient.cpp"
+    :file "easywsclient.cpp"
+    :fsize 18366
+    :lastmodtime '(21247 34591 0 0)
+    )
+   )
+  :file "!home!work!git!easywsclient!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

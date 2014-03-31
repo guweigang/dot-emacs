@@ -1,0 +1,87 @@
+;; Object bigbang/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bigbang/"
+  :tables (list 
+   (semanticdb-table "index.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("index" section nil nil [629 652])
+            ("多彩生活" section nil nil [652 727])
+            ("多彩生活" section nil nil [727 803])
+            ("多彩生活" section (:members 
+              ( ("Item" anchor nil nil [2158 2161])
+                ("Another item" anchor nil nil [2197 2200])
+                ("Item" anchor nil nil [2244 2247])
+                ("Another item" anchor nil nil [2283 2286])
+                ("Separated item" anchor nil nil [2372 2375]))              ) nil [803 2919])
+            ("$.post('temp/goods.html', function(data) {
+				var html = '';
+				for (var i = 0; i < 9; i++) {
+					html += data;
+				}
+				$('.goods-box-inner').html(html);
+				//$('.goods-box-inner').find('.single-goods').css('opacity',1);
+			});" section nil nil [2919 3217]))          
+    :file "index.html"
+    :pointmax 3217
+    :fsize 3266
+    :lastmodtime '(21141 27384 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "godds-detail.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("index" section nil nil [631 654])
+            ("多彩生活" section nil nil [654 729])
+            ("多彩生活" section nil nil [729 805])
+            ("多彩生活" section (:members 
+              ( ("现货 日本 京都老店豆政 代表之作 豆腐布丁~ 3种口味可选 单个~" anchor nil nil [2180 2183])
+                ("京东商城" anchor nil nil [2812 2815])
+                ("我是测试用户" anchor nil nil [2954 2957])
+                ("套一套" anchor nil nil [3614 3617])
+                ("Go>>" anchor nil nil [3867 3870])
+                ("套一套" anchor nil nil [3968 3971])
+                ("Go>>" anchor nil nil [4221 4224])
+                ("套一套" anchor nil nil [4322 4325])
+                ("Go>>" anchor nil nil [4575 4578])
+                ("套一套" anchor nil nil [4676 4679])
+                ("Go>>" anchor nil nil [4929 4932]))              ) nil [805 6647]))          
+    :file "godds-detail.html"
+    :pointmax 6647
+    :fsize 7126
+    :lastmodtime '(21141 27384 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "goods-publish-detail.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("index" section nil nil [654 679])
+            ("多彩生活" section nil nil [679 756])
+            ("多彩生活" section nil nil [756 834])
+            ("多彩生活" section (:members 
+              ( ("推荐商品" section nil nil [2064 4041]))              ) nil [834 4041]))          
+    :file "goods-publish-detail.html"
+    :pointmax 4041
+    :fsize 4375
+    :lastmodtime '(21141 27384 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "goods-publish.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("index" section nil nil [654 679])
+            ("多彩生活" section nil nil [679 756])
+            ("多彩生活" section nil nil [756 834])
+            ("多彩生活" section (:members 
+              ( ("推荐商品" section nil nil [2072 4024]))              ) nil [834 4024]))          
+    :file "goods-publish.html"
+    :pointmax 4024
+    :fsize 4454
+    :lastmodtime '(21141 27384 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!git!phalcon-framework!skeleton!public!bigbang!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,19 @@
+;; Object RHEL4-SElinux/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "RHEL4-SElinux/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("EXTRA_DIST" variable (:default-value ("mysql.fc" "mysql.te")) nil [793 825]))          
+    :file "Makefile.am"
+    :pointmax 878
+    :fsize 877
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax '((symbol 869 . 877) (punctuation 868 . 869) (punctuation 867 . 868) (symbol 866 . 867) (bol 866 . 866))
+    )
+   )
+  :file "!home!work!git!mm!mysql-5.1.71!support-files!RHEL4-SElinux!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

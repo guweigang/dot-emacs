@@ -1,0 +1,761 @@
+;; Object xml/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "xml/"
+  :tables (list 
+   (semanticdb-table "xml.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("IS_EXT_MODULE" variable (:constant-flag t) nil [1321 1334])
+            ("php.h" include nil nil [1385 1401])
+            ("PHP_XML_INTERNAL" variable (:constant-flag t) nil [1411 1427])
+            ("zend_variables.h" include nil nil [1428 1455])
+            ("ext/standard/php_string.h" include nil nil [1456 1492])
+            ("ext/standard/info.h" include nil nil [1493 1523])
+            ("ALLOC_ZVAL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40634 40641])
+                    ("" variable (:type ("object" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40642 40649]))                  
+                :type "int")
+                nil [40623 40650])
+            ("MAKE_COPY_ZVAL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("mythis" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40668 40675])
+                    ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40676 40683])
+                    ("" variable (:type ("object" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [40684 40691]))                  
+                :type "int")
+                nil [40652 40692])
+            ("RETVAL_TRUE" variable (:type "int") nil [40695 40707])
+            ("parser" variable
+               (:pointer 1
+                :type ("xml_parser" type (:type "class") nil nil))
+                nil [40891 40910])
+            ("ehdl" variable
+               (:pointer 2
+                :type ("zval" type (:type "class") nil nil))
+                nil [40912 40939])
+            ("shdl" variable
+               (:pointer 2
+                :type ("zval" type (:type "class") nil nil))
+                nil [40912 40939])
+            ("pind" variable
+               (:pointer 1
+                :type ("zval" type (:type "class") nil nil))
+                nil [40912 40939])
+            ("ZEND_FETCH_RESOURCE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41072 41079])
+                    ("" variable
+                       (:pointer 1
+                        :type ("xml_parser" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [41079 41092])
+                    ("" variable (:type ("pind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41094 41099])
+                    ("" variable (:type ("le_xml_parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41118 41132]))                  
+                :type "int")
+                nil [41052 41133])
+            ("xml_set_handler" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41153 41160])
+                    ("" variable (:type ("startElementHandler" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41161 41181])
+                    ("" variable (:type ("shdl" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41182 41187]))                  
+                :type "int")
+                nil [41136 41188])
+            ("xml_set_handler" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41207 41214])
+                    ("" variable (:type ("endElementHandler" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41215 41233])
+                    ("" variable (:type ("ehdl" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41234 41239]))                  
+                :type "int")
+                nil [41190 41240])
+            ("XML_SetElementHandler" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41264 41271])
+                    ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41272 41279])
+                    ("" variable (:type ("_xml_startElementHandler" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41280 41305])
+                    ("" variable (:type ("_xml_endElementHandler" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41306 41329]))                  
+                :type "int")
+                nil [41242 41330])
+            ("RETVAL_TRUE" variable (:type "int") nil [41332 41344])
+            ("parser" variable
+               (:pointer 1
+                :type ("xml_parser" type (:type "class") nil nil))
+                nil [41520 41539])
+            ("hdl" variable
+               (:pointer 2
+                :type ("zval" type (:type "class") nil nil))
+                nil [41541 41559])
+            ("pind" variable
+               (:pointer 1
+                :type ("zval" type (:type "class") nil nil))
+                nil [41541 41559])
+            ("ZEND_FETCH_RESOURCE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41683 41690])
+                    ("" variable
+                       (:pointer 1
+                        :type ("xml_parser" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [41690 41703])
+                    ("" variable (:type ("pind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41705 41710])
+                    ("" variable (:type ("le_xml_parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41729 41743]))                  
+                :type "int")
+                nil [41663 41744])
+            ("xml_set_handler" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41764 41771])
+                    ("" variable (:type ("characterDataHandler" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41772 41793])
+                    ("" variable (:type ("hdl" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41794 41798]))                  
+                :type "int")
+                nil [41747 41799])
+            ("XML_SetCharacterDataHandler" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41829 41836])
+                    ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41837 41844])
+                    ("" variable (:type ("_xml_characterDataHandler" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41845 41871]))                  
+                :type "int")
+                nil [41801 41872])
+            ("RETVAL_TRUE" variable (:type "int") nil [41874 41886])
+            ("parser" variable
+               (:pointer 1
+                :type ("xml_parser" type (:type "class") nil nil))
+                nil [42091 42110])
+            ("hdl" variable
+               (:pointer 2
+                :type ("zval" type (:type "class") nil nil))
+                nil [42112 42130])
+            ("pind" variable
+               (:pointer 1
+                :type ("zval" type (:type "class") nil nil))
+                nil [42112 42130])
+            ("ZEND_FETCH_RESOURCE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42254 42261])
+                    ("" variable
+                       (:pointer 1
+                        :type ("xml_parser" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42261 42274])
+                    ("" variable (:type ("pind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42276 42281])
+                    ("" variable (:type ("le_xml_parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42300 42314]))                  
+                :type "int")
+                nil [42234 42315])
+            ("xml_set_handler" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42335 42342])
+                    ("" variable (:type ("processingInstructionHandler" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42343 42372])
+                    ("" variable (:type ("hdl" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42373 42377]))                  
+                :type "int")
+                nil [42318 42378])
+            ("XML_SetProcessingInstructionHandler" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42416 42423])
+                    ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42424 42431])
+                    ("" variable (:type ("_xml_processingInstructionHandler" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42432 42466]))                  
+                :type "int")
+                nil [42380 42467])
+            ("RETVAL_TRUE" variable (:type "int") nil [42469 42481])
+            ("parser" variable
+               (:pointer 1
+                :type ("xml_parser" type (:type "class") nil nil))
+                nil [42636 42655])
+            ("hdl" variable
+               (:pointer 2
+                :type ("zval" type (:type "class") nil nil))
+                nil [42657 42675])
+            ("pind" variable
+               (:pointer 1
+                :type ("zval" type (:type "class") nil nil))
+                nil [42657 42675])
+            ("ZEND_FETCH_RESOURCE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42798 42805])
+                    ("" variable
+                       (:pointer 1
+                        :type ("xml_parser" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42805 42818])
+                    ("" variable (:type ("pind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42820 42825])
+                    ("" variable (:type ("le_xml_parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42844 42858]))                  
+                :type "int")
+                nil [42778 42859])
+            ("xml_set_handler" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42879 42886])
+                    ("" variable (:type ("defaultHandler" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42887 42902])
+                    ("" variable (:type ("hdl" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42903 42907]))                  
+                :type "int")
+                nil [42862 42908])
+            ("XML_SetDefaultHandler" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42932 42939])
+                    ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42940 42947])
+                    ("" variable (:type ("_xml_defaultHandler" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42948 42968]))                  
+                :type "int")
+                nil [42910 42969])
+            ("RETVAL_TRUE" variable (:type "int") nil [42971 42983])
+            ("parser" variable
+               (:pointer 1
+                :type ("xml_parser" type (:type "class") nil nil))
+                nil [43184 43203])
+            ("hdl" variable
+               (:pointer 2
+                :type ("zval" type (:type "class") nil nil))
+                nil [43205 43223])
+            ("pind" variable
+               (:pointer 1
+                :type ("zval" type (:type "class") nil nil))
+                nil [43205 43223])
+            ("ZEND_FETCH_RESOURCE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43347 43354])
+                    ("" variable
+                       (:pointer 1
+                        :type ("xml_parser" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43354 43367])
+                    ("" variable (:type ("pind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43369 43374])
+                    ("" variable (:type ("le_xml_parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43393 43407]))                  
+                :type "int")
+                nil [43327 43408])
+            ("xml_set_handler" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43428 43435])
+                    ("" variable (:type ("unparsedEntityDeclHandler" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43436 43462])
+                    ("" variable (:type ("hdl" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43463 43467]))                  
+                :type "int")
+                nil [43411 43468])
+            ("XML_SetUnparsedEntityDeclHandler" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43503 43510])
+                    ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43511 43518])
+                    ("" variable (:type ("_xml_unparsedEntityDeclHandler" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43519 43550]))                  
+                :type "int")
+                nil [43470 43551])
+            ("RETVAL_TRUE" variable (:type "int") nil [43553 43565])
+            ("parser" variable
+               (:pointer 1
+                :type ("xml_parser" type (:type "class") nil nil))
+                nil [43745 43764])
+            ("hdl" variable
+               (:pointer 2
+                :type ("zval" type (:type "class") nil nil))
+                nil [43766 43784])
+            ("pind" variable
+               (:pointer 1
+                :type ("zval" type (:type "class") nil nil))
+                nil [43766 43784])
+            ("ZEND_FETCH_RESOURCE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43907 43914])
+                    ("" variable
+                       (:pointer 1
+                        :type ("xml_parser" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43914 43927])
+                    ("" variable (:type ("pind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43929 43934])
+                    ("" variable (:type ("le_xml_parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43953 43967]))                  
+                :type "int")
+                nil [43887 43968])
+            ("xml_set_handler" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43988 43995])
+                    ("" variable (:type ("notationDeclHandler" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43996 44016])
+                    ("" variable (:type ("hdl" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44017 44021]))                  
+                :type "int")
+                nil [43971 44022])
+            ("XML_SetNotationDeclHandler" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44051 44058])
+                    ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44059 44066])
+                    ("" variable (:type ("_xml_notationDeclHandler" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44067 44092]))                  
+                :type "int")
+                nil [44024 44093])
+            ("RETVAL_TRUE" variable (:type "int") nil [44095 44107])
+            ("parser" variable
+               (:pointer 1
+                :type ("xml_parser" type (:type "class") nil nil))
+                nil [44304 44323])
+            ("hdl" variable
+               (:pointer 2
+                :type ("zval" type (:type "class") nil nil))
+                nil [44325 44343])
+            ("pind" variable
+               (:pointer 1
+                :type ("zval" type (:type "class") nil nil))
+                nil [44325 44343])
+            ("ZEND_FETCH_RESOURCE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44466 44473])
+                    ("" variable
+                       (:pointer 1
+                        :type ("xml_parser" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [44473 44486])
+                    ("" variable (:type ("pind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44488 44493])
+                    ("" variable (:type ("le_xml_parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44512 44526]))                  
+                :type "int")
+                nil [44446 44527])
+            ("xml_set_handler" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44547 44554])
+                    ("" variable (:type ("externalEntityRefHandler" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44555 44580])
+                    ("" variable (:type ("hdl" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44581 44585]))                  
+                :type "int")
+                nil [44530 44586])
+            ("XML_SetExternalEntityRefHandler" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44620 44627])
+                    ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44628 44635])
+                    ("" variable (:type ("_xml_externalEntityRefHandler" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [44645 44675]))                  
+                :type "int")
+                nil [44588 44676])
+            ("RETVAL_TRUE" variable (:type "int") nil [44678 44690])
+            ("parser" variable
+               (:pointer 1
+                :type ("xml_parser" type (:type "class") nil nil))
+                nil [44878 44897])
+            ("hdl" variable
+               (:pointer 2
+                :type ("zval" type (:type "class") nil nil))
+                nil [44899 44917])
+            ("pind" variable
+               (:pointer 1
+                :type ("zval" type (:type "class") nil nil))
+                nil [44899 44917])
+            ("ZEND_FETCH_RESOURCE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45041 45048])
+                    ("" variable
+                       (:pointer 1
+                        :type ("xml_parser" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [45048 45061])
+                    ("" variable (:type ("pind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45063 45068])
+                    ("" variable (:type ("le_xml_parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45087 45101]))                  
+                :type "int")
+                nil [45021 45102])
+            ("xml_set_handler" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45122 45129])
+                    ("" variable (:type ("startNamespaceDeclHandler" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45130 45156])
+                    ("" variable (:type ("hdl" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45157 45161]))                  
+                :type "int")
+                nil [45105 45162])
+            ("XML_SetStartNamespaceDeclHandler" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45197 45204])
+                    ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45205 45212])
+                    ("" variable (:type ("_xml_startNamespaceDeclHandler" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45213 45244]))                  
+                :type "int")
+                nil [45164 45245])
+            ("RETVAL_TRUE" variable (:type "int") nil [45247 45259])
+            ("parser" variable
+               (:pointer 1
+                :type ("xml_parser" type (:type "class") nil nil))
+                nil [45443 45462])
+            ("hdl" variable
+               (:pointer 2
+                :type ("zval" type (:type "class") nil nil))
+                nil [45464 45482])
+            ("pind" variable
+               (:pointer 1
+                :type ("zval" type (:type "class") nil nil))
+                nil [45464 45482])
+            ("ZEND_FETCH_RESOURCE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45606 45613])
+                    ("" variable
+                       (:pointer 1
+                        :type ("xml_parser" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [45613 45626])
+                    ("" variable (:type ("pind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45628 45633])
+                    ("" variable (:type ("le_xml_parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45652 45666]))                  
+                :type "int")
+                nil [45586 45667])
+            ("xml_set_handler" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45687 45694])
+                    ("" variable (:type ("endNamespaceDeclHandler" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45695 45719])
+                    ("" variable (:type ("hdl" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45720 45724]))                  
+                :type "int")
+                nil [45670 45725])
+            ("XML_SetEndNamespaceDeclHandler" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45758 45765])
+                    ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45766 45773])
+                    ("" variable (:type ("_xml_endNamespaceDeclHandler" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45774 45803]))                  
+                :type "int")
+                nil [45727 45804])
+            ("RETVAL_TRUE" variable (:type "int") nil [45806 45818])
+            ("parser" variable
+               (:pointer 1
+                :type ("xml_parser" type (:type "class") nil nil))
+                nil [45969 45988])
+            ("pind" variable
+               (:pointer 1
+                :type ("zval" type (:type "class") nil nil))
+                nil [45990 46001])
+            ("data" variable
+               (:pointer 1
+                :type "char")
+                nil [46003 46014])
+            ("ret" variable (:type "int") nil [46016 46034])
+            ("data_len" variable (:type "int") nil [46016 46034])
+            ("isFinal" variable (:type "long") nil [46036 46053])
+            ("ZEND_FETCH_RESOURCE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46200 46207])
+                    ("" variable
+                       (:pointer 1
+                        :type ("xml_parser" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46207 46220])
+                    ("" variable (:type ("pind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46222 46227])
+                    ("" variable (:type ("le_xml_parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46246 46260]))                  
+                :type "int")
+                nil [46180 46261])
+            ("isparsing" variable (:type "int") nil [46272 46286])
+            ("ret" variable (:type "int") nil [46288 46345])
+            ("isparsing" variable (:type "int") nil [46355 46369])
+            ("RETVAL_LONG" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("ret" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46383 46387]))                  
+                :type "int")
+                nil [46371 46388])
+            ("parser" variable
+               (:pointer 1
+                :type ("xml_parser" type (:type "class") nil nil))
+                nil [46574 46593])
+            ("info" variable
+               (:pointer 2
+                :type ("zval" type (:type "class") nil nil))
+                nil [46595 46630])
+            ("xdata" variable
+               (:pointer 2
+                :type ("zval" type (:type "class") nil nil))
+                nil [46595 46630])
+            ("pind" variable
+               (:pointer 1
+                :type ("zval" type (:type "class") nil nil))
+                nil [46595 46630])
+            ("data" variable
+               (:pointer 1
+                :type "char")
+                nil [46632 46643])
+            ("ret" variable (:type "int") nil [46645 46663])
+            ("data_len" variable (:type "int") nil [46645 46663])
+            ("ZEND_FETCH_RESOURCE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46877 46884])
+                    ("" variable
+                       (:pointer 1
+                        :type ("xml_parser" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [46884 46897])
+                    ("" variable (:type ("pind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46899 46904])
+                    ("" variable (:type ("le_xml_parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46923 46937]))                  
+                :type "int")
+                nil [46857 46938])
+            ("zval_dtor" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("xdata" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46952 46958]))                  
+                :type "int")
+                nil [46941 46959])
+            ("array_init" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("xdata" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46973 46979]))                  
+                :type "int")
+                nil [46961 46980])
+            ("data" variable (:type "int") nil [46991 47005])
+            ("level" variable (:type "int") nil [47059 47069])
+            ("ltags" variable (:type "int") nil [47079 47133])
+            ("XML_SetDefaultHandler" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47158 47165])
+                    ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47166 47173])
+                    ("" variable (:type ("_xml_defaultHandler" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47174 47194]))                  
+                :type "int")
+                nil [47136 47195])
+            ("XML_SetElementHandler" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47219 47226])
+                    ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47227 47234])
+                    ("" variable (:type ("_xml_startElementHandler" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47235 47260])
+                    ("" variable (:type ("_xml_endElementHandler" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47261 47284]))                  
+                :type "int")
+                nil [47197 47285])
+            ("XML_SetCharacterDataHandler" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47315 47322])
+                    ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47323 47330])
+                    ("" variable (:type ("_xml_characterDataHandler" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47331 47357]))                  
+                :type "int")
+                nil [47287 47358])
+            ("isparsing" variable (:type "int") nil [47369 47383])
+            ("ret" variable (:type "int") nil [47385 47436])
+            ("isparsing" variable (:type "int") nil [47446 47460])
+            ("RETVAL_LONG" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("ret" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47475 47479]))                  
+                :type "int")
+                nil [47463 47480])
+            ("parser" variable
+               (:pointer 1
+                :type ("xml_parser" type (:type "class") nil nil))
+                nil [47616 47635])
+            ("pind" variable
+               (:pointer 1
+                :type ("zval" type (:type "class") nil nil))
+                nil [47637 47648])
+            ("ZEND_FETCH_RESOURCE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47764 47771])
+                    ("" variable
+                       (:pointer 1
+                        :type ("xml_parser" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [47771 47784])
+                    ("" variable (:type ("pind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47786 47791])
+                    ("" variable (:type ("le_xml_parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47810 47824]))                  
+                :type "int")
+                nil [47744 47825])
+            ("RETVAL_LONG" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("XML_GetErrorCode" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47846 47878]))                  
+                :type "int")
+                nil [47828 47880])
+            ("code" variable (:type "long") nil [48009 48019])
+            ("str" variable
+               (:pointer 1
+                :type "char")
+                nil [48021 48031])
+            ("str" variable (:type "int") nil [48128 48169])
+            ("parser" variable
+               (:pointer 1
+                :type ("xml_parser" type (:type "class") nil nil))
+                nil [48379 48398])
+            ("pind" variable
+               (:pointer 1
+                :type ("zval" type (:type "class") nil nil))
+                nil [48400 48411])
+            ("ZEND_FETCH_RESOURCE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48527 48534])
+                    ("" variable
+                       (:pointer 1
+                        :type ("xml_parser" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [48534 48547])
+                    ("" variable (:type ("pind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48549 48554])
+                    ("" variable (:type ("le_xml_parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48573 48587]))                  
+                :type "int")
+                nil [48507 48588])
+            ("RETVAL_LONG" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("XML_GetCurrentLineNumber" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48603 48643]))                  
+                :type "int")
+                nil [48591 48645])
+            ("parser" variable
+               (:pointer 1
+                :type ("xml_parser" type (:type "class") nil nil))
+                nil [48820 48839])
+            ("pind" variable
+               (:pointer 1
+                :type ("zval" type (:type "class") nil nil))
+                nil [48841 48852])
+            ("ZEND_FETCH_RESOURCE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48968 48975])
+                    ("" variable
+                       (:pointer 1
+                        :type ("xml_parser" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [48975 48988])
+                    ("" variable (:type ("pind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48990 48995])
+                    ("" variable (:type ("le_xml_parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49014 49028]))                  
+                :type "int")
+                nil [48948 49029])
+            ("RETVAL_LONG" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("XML_GetCurrentColumnNumber" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49044 49086]))                  
+                :type "int")
+                nil [49032 49088])
+            ("parser" variable
+               (:pointer 1
+                :type ("xml_parser" type (:type "class") nil nil))
+                nil [49255 49274])
+            ("pind" variable
+               (:pointer 1
+                :type ("zval" type (:type "class") nil nil))
+                nil [49276 49287])
+            ("ZEND_FETCH_RESOURCE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49403 49410])
+                    ("" variable
+                       (:pointer 1
+                        :type ("xml_parser" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49410 49423])
+                    ("" variable (:type ("pind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49425 49430])
+                    ("" variable (:type ("le_xml_parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49449 49463]))                  
+                :type "int")
+                nil [49383 49464])
+            ("RETVAL_LONG" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("XML_GetCurrentByteIndex" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49479 49518]))                  
+                :type "int")
+                nil [49467 49520])
+            ("pind" variable
+               (:pointer 1
+                :type ("zval" type (:type "class") nil nil))
+                nil [49643 49654])
+            ("parser" variable
+               (:pointer 1
+                :type ("xml_parser" type (:type "class") nil nil))
+                nil [49656 49675])
+            ("ZEND_FETCH_RESOURCE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49792 49799])
+                    ("" variable
+                       (:pointer 1
+                        :type ("xml_parser" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [49799 49812])
+                    ("" variable (:type ("pind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49814 49819])
+                    ("" variable (:type ("le_xml_parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49838 49852]))                  
+                :type "int")
+                nil [49772 49853])
+            ("RETVAL_TRUE" variable (:type "int") nil [50072 50084])
+            ("parser" variable
+               (:pointer 1
+                :type ("xml_parser" type (:type "class") nil nil))
+                nil [50254 50273])
+            ("val" variable
+               (:pointer 2
+                :type ("zval" type (:type "class") nil nil))
+                nil [50275 50293])
+            ("pind" variable
+               (:pointer 1
+                :type ("zval" type (:type "class") nil nil))
+                nil [50275 50293])
+            ("opt" variable (:type "long") nil [50295 50304])
+            ("ZEND_FETCH_RESOURCE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50434 50441])
+                    ("" variable
+                       (:pointer 1
+                        :type ("xml_parser" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50441 50454])
+                    ("" variable (:type ("pind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50456 50461])
+                    ("" variable (:type ("le_xml_parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50480 50494]))                  
+                :type "int")
+                nil [50414 50495])
+            ("RETVAL_TRUE" variable (:type "int") nil [51302 51314])
+            ("parser" variable
+               (:pointer 1
+                :type ("xml_parser" type (:type "class") nil nil))
+                nil [51473 51492])
+            ("pind" variable
+               (:pointer 1
+                :type ("zval" type (:type "class") nil nil))
+                nil [51494 51505])
+            ("opt" variable (:type "long") nil [51507 51516])
+            ("ZEND_FETCH_RESOURCE" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51639 51646])
+                    ("" variable
+                       (:pointer 1
+                        :type ("xml_parser" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [51646 51659])
+                    ("" variable (:type ("pind" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51661 51666])
+                    ("" variable (:type ("le_xml_parser" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51685 51699]))                  
+                :type "int")
+                nil [51619 51700])
+            ("RETVAL_FALSE" variable (:type "int") nil [52006 52019])
+            ("arg" variable
+               (:pointer 1
+                :type "char")
+                nil [52172 52182])
+            ("encoded" variable
+               (:pointer 1
+                :type ("XML_Char" type (:type "class") nil nil))
+                nil [52184 52202])
+            ("len" variable (:type "int") nil [52204 52221])
+            ("arg_len" variable (:type "int") nil [52204 52221])
+            ("encoded" variable (:type "int") nil [52327 52387])
+            ("RETVAL_STRINGL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("encoded" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [52447 52455])
+                    ("" variable (:type ("len" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [52456 52460]))                  
+                :type "int")
+                nil [52432 52464])
+            ("arg" variable
+               (:pointer 1
+                :type "char")
+                nil [52605 52615])
+            ("decoded" variable
+               (:pointer 1
+                :type ("XML_Char" type (:type "class") nil nil))
+                nil [52617 52635])
+            ("len" variable (:type "int") nil [52637 52654])
+            ("arg_len" variable (:type "int") nil [52637 52654])
+            ("decoded" variable (:type "int") nil [52760 52820])
+            ("RETVAL_STRINGL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("decoded" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [52880 52888])
+                    ("" variable (:type ("len" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [52889 52893]))                  
+                :type "int")
+                nil [52865 52897]))          
+    :file "xml.c"
+    :pointmax 53045
+    :fsize 53044
+    :lastmodtime '(20689 55724 0 0)
+    :unmatched-syntax '((close-paren 52898 . 52899) (number 52894 . 52895) (semantic-list 52843 . 52863) (semantic-list 52825 . 52842) (IF 52822 . 52824) (semantic-list 52743 . 52757) (semantic-list 52660 . 52742) (IF 52657 . 52659) (open-paren 52602 . 52603) (close-paren 52600 . 52601) (symbol 52589 . 52600) (open-paren 52588 . 52589) (symbol 52576 . 52588) (close-paren 52465 . 52466) (number 52461 . 52462) (semantic-list 52410 . 52430) (semantic-list 52392 . 52409) (IF 52389 . 52391) (semantic-list 52310 . 52324) (semantic-list 52227 . 52309) (IF 52224 . 52226) (open-paren 52169 . 52170) (close-paren 52167 . 52168) (symbol 52156 . 52167) (open-paren 52155 . 52156) (symbol 52143 . 52155) (close-paren 52040 . 52041) (semantic-list 51716 . 52003) (semantic-list 51710 . 51715) (SWITCH 51703 . 51709) (string 51671 . 51683) (number 51668 . 51669) (punctuation 51667 . 51668) (punctuation 51660 . 51661) (semantic-list 51603 . 51617) (semantic-list 51522 . 51602) (IF 51519 . 51521) (open-paren 51470 . 51471) (close-paren 51468 . 51469) (symbol 51447 . 51468) (open-paren 51446 . 51447) (symbol 51434 . 51446) (close-paren 51315 . 51316) (semantic-list 50511 . 51300) (semantic-list 50505 . 50510) (SWITCH 50498 . 50504) (string 50466 . 50478) (number 50463 . 50464) (punctuation 50462 . 50463) (punctuation 50455 . 50456) (semantic-list 50398 . 50412) (semantic-list 50310 . 50397) (IF 50307 . 50309) (open-paren 50251 . 50252) (close-paren 50249 . 50250) (symbol 50228 . 50249) (open-paren 50227 . 50228) (symbol 50215 . 50227) (close-paren 50085 . 50086) (semantic-list 50049 . 50069) (semantic-list 50004 . 50048) (IF 50001 . 50003) (semantic-list 49884 . 49998) (semantic-list 49859 . 49883) (IF 49856 . 49858) (string 49824 . 49836) (number 49821 . 49822) (punctuation 49820 . 49821) (punctuation 49813 . 49814) (semantic-list 49755 . 49769) (semantic-list 49681 . 49754) (IF 49678 . 49680) (open-paren 49640 . 49641) (close-paren 49638 . 49639) (symbol 49623 . 49638) (open-paren 49622 . 49623) (symbol 49610 . 49622) (close-paren 49521 . 49522) (semantic-list 49502 . 49518) (string 49435 . 49447) (number 49432 . 49433) (punctuation 49431 . 49432) (punctuation 49424 . 49425) (semantic-list 49367 . 49381) (semantic-list 49293 . 49366) (IF 49290 . 49292) (open-paren 49252 . 49253) (close-paren 49250 . 49251) (symbol 49224 . 49250) (open-paren 49223 . 49224) (symbol 49211 . 49223) (close-paren 49089 . 49090) (semantic-list 49070 . 49086) (string 49000 . 49012) (number 48997 . 48998) (punctuation 48996 . 48997) (punctuation 48989 . 48990) (semantic-list 48932 . 48946) (semantic-list 48858 . 48931) (IF 48855 . 48857) (open-paren 48817 . 48818) (close-paren 48815 . 48816) (symbol 48786 . 48815) (open-paren 48785 . 48786) (symbol 48773 . 48785) (close-paren 48646 . 48647) (semantic-list 48627 . 48643) (string 48559 . 48571) (number 48556 . 48557) (punctuation 48555 . 48556) (punctuation 48548 . 48549) (semantic-list 48491 . 48505) (semantic-list 48417 . 48490) (IF 48414 . 48416) (open-paren 48376 . 48377) (close-paren 48374 . 48375) (symbol 48347 . 48374) (open-paren 48346 . 48347) (symbol 48334 . 48346) (close-paren 48210 . 48211) (semantic-list 48180 . 48209) (semantic-list 48174 . 48179) (IF 48171 . 48173) (semantic-list 48111 . 48125) (semantic-list 48037 . 48110) (IF 48034 . 48036) (open-paren 48006 . 48007) (close-paren 48004 . 48005) (symbol 47988 . 48004) (open-paren 47987 . 47988) (symbol 47975 . 47987) (close-paren 47881 . 47882) (semantic-list 47862 . 47878) (semantic-list 47840 . 47846) (string 47796 . 47808) (number 47793 . 47794) (punctuation 47792 . 47793) (punctuation 47785 . 47786) (semantic-list 47728 . 47742) (semantic-list 47654 . 47727) (IF 47651 . 47653) (open-paren 47613 . 47614) (close-paren 47611 . 47612) (symbol 47593 . 47611) (open-paren 47592 . 47593) (symbol 47580 . 47592) (close-paren 47481 . 47482) (punctuation 47445 . 47446) (punctuation 47444 . 47445) (symbol 47438 . 47444) (punctuation 47368 . 47369) (punctuation 47367 . 47368) (symbol 47361 . 47367) (punctuation 47322 . 47323) (punctuation 47321 . 47322) (punctuation 47226 . 47227) (punctuation 47225 . 47226) (punctuation 47165 . 47166) (punctuation 47164 . 47165) (punctuation 47078 . 47079) (punctuation 47077 . 47078) (symbol 47071 . 47077) (punctuation 47058 . 47059) (punctuation 47057 . 47058) (symbol 47051 . 47057) (semantic-list 47019 . 47047) (semantic-list 47012 . 47018) (IF 47009 . 47011) (punctuation 46990 . 46991) (punctuation 46989 . 46990) (symbol 46983 . 46989) (punctuation 46972 . 46973) (punctuation 46951 . 46952) (string 46909 . 46921) (number 46906 . 46907) (punctuation 46905 . 46906) (punctuation 46898 . 46899) (semantic-list 46808 . 46854) (semantic-list 46801 . 46807) (IF 46798 . 46800) (semantic-list 46780 . 46794) (semantic-list 46669 . 46779) (IF 46666 . 46668) (open-paren 46571 . 46572) (close-paren 46569 . 46570) (symbol 46548 . 46569) (open-paren 46547 . 46548) (symbol 46535 . 46547) (close-paren 46389 . 46390) (punctuation 46354 . 46355) (punctuation 46353 . 46354) (symbol 46347 . 46353) (punctuation 46271 . 46272) (punctuation 46270 . 46271) (symbol 46264 . 46270) (string 46232 . 46244) (number 46229 . 46230) (punctuation 46228 . 46229) (punctuation 46221 . 46222) (semantic-list 46164 . 46178) (semantic-list 46059 . 46163) (IF 46056 . 46058) (open-paren 45966 . 45967) (close-paren 45964 . 45965) (symbol 45955 . 45964) (open-paren 45954 . 45955) (symbol 45942 . 45954) (close-paren 45819 . 45820) (punctuation 45765 . 45766) (punctuation 45764 . 45765) (punctuation 45694 . 45695) (punctuation 45693 . 45694) (punctuation 45686 . 45687) (string 45638 . 45650) (number 45635 . 45636) (punctuation 45634 . 45635) (punctuation 45627 . 45628) (semantic-list 45569 . 45583) (semantic-list 45488 . 45568) (IF 45485 . 45487) (open-paren 45440 . 45441) (close-paren 45438 . 45439) (symbol 45404 . 45438) (open-paren 45403 . 45404) (symbol 45391 . 45403) (close-paren 45260 . 45261) (punctuation 45204 . 45205) (punctuation 45203 . 45204) (punctuation 45129 . 45130) (punctuation 45128 . 45129) (punctuation 45121 . 45122) (string 45073 . 45085) (number 45070 . 45071) (punctuation 45069 . 45070) (punctuation 45062 . 45063) (semantic-list 45004 . 45018) (semantic-list 44923 . 45003) (IF 44920 . 44922) (open-paren 44875 . 44876) (close-paren 44873 . 44874) (symbol 44837 . 44873) (open-paren 44836 . 44837) (symbol 44824 . 44836) (close-paren 44691 . 44692) (semantic-list 44636 . 44644) (punctuation 44627 . 44628) (punctuation 44626 . 44627) (punctuation 44554 . 44555) (punctuation 44553 . 44554) (punctuation 44546 . 44547) (string 44498 . 44510) (number 44495 . 44496) (punctuation 44494 . 44495) (punctuation 44487 . 44488) (semantic-list 44430 . 44444) (semantic-list 44349 . 44429) (IF 44346 . 44348) (open-paren 44301 . 44302) (close-paren 44299 . 44300) (symbol 44264 . 44299) (open-paren 44263 . 44264) (symbol 44251 . 44263) (close-paren 44108 . 44109) (punctuation 44058 . 44059) (punctuation 44057 . 44058) (punctuation 43995 . 43996) (punctuation 43994 . 43995) (punctuation 43987 . 43988) (string 43939 . 43951) (number 43936 . 43937) (punctuation 43935 . 43936) (punctuation 43928 . 43929) (semantic-list 43871 . 43885) (semantic-list 43790 . 43870) (IF 43787 . 43789) (open-paren 43742 . 43743) (close-paren 43740 . 43741) (symbol 43711 . 43740) (open-paren 43710 . 43711) (symbol 43698 . 43710) (close-paren 43566 . 43567) (punctuation 43510 . 43511) (punctuation 43509 . 43510) (punctuation 43435 . 43436) (punctuation 43434 . 43435) (punctuation 43427 . 43428) (string 43379 . 43391) (number 43376 . 43377) (punctuation 43375 . 43376) (punctuation 43368 . 43369) (semantic-list 43310 . 43324) (semantic-list 43229 . 43309) (IF 43226 . 43228) (open-paren 43181 . 43182) (close-paren 43179 . 43180) (symbol 43143 . 43179) (open-paren 43142 . 43143) (symbol 43130 . 43142) (close-paren 42984 . 42985) (punctuation 42939 . 42940) (punctuation 42938 . 42939) (punctuation 42886 . 42887) (punctuation 42885 . 42886) (punctuation 42878 . 42879) (string 42830 . 42842) (number 42827 . 42828) (punctuation 42826 . 42827) (punctuation 42819 . 42820) (semantic-list 42762 . 42776) (semantic-list 42681 . 42761) (IF 42678 . 42680) (open-paren 42633 . 42634) (close-paren 42631 . 42632) (symbol 42608 . 42631) (open-paren 42607 . 42608) (symbol 42595 . 42607) (close-paren 42482 . 42483) (punctuation 42423 . 42424) (punctuation 42422 . 42423) (punctuation 42342 . 42343) (punctuation 42341 . 42342) (punctuation 42334 . 42335) (string 42286 . 42298) (number 42283 . 42284) (punctuation 42282 . 42283) (punctuation 42275 . 42276) (semantic-list 42217 . 42231) (semantic-list 42136 . 42216) (IF 42133 . 42135) (open-paren 42088 . 42089) (close-paren 42086 . 42087) (symbol 42048 . 42086) (open-paren 42047 . 42048) (symbol 42035 . 42047) (close-paren 41887 . 41888) (punctuation 41836 . 41837) (punctuation 41835 . 41836) (punctuation 41771 . 41772) (punctuation 41770 . 41771) (punctuation 41763 . 41764) (string 41715 . 41727) (number 41712 . 41713) (punctuation 41711 . 41712) (punctuation 41704 . 41705) (semantic-list 41646 . 41660) (semantic-list 41565 . 41645) (IF 41562 . 41564) (open-paren 41517 . 41518) (close-paren 41515 . 41516) (symbol 41485 . 41515) (open-paren 41484 . 41485) (symbol 41472 . 41484) (close-paren 41345 . 41346) (punctuation 41271 . 41272) (punctuation 41270 . 41271) (punctuation 41214 . 41215) (punctuation 41213 . 41214) (punctuation 41206 . 41207) (punctuation 41160 . 41161) (punctuation 41159 . 41160) (punctuation 41152 . 41153) (string 41104 . 41116) (number 41101 . 41102) (punctuation 41100 . 41101) (punctuation 41093 . 41094) (semantic-list 41035 . 41049) (semantic-list 40945 . 41034) (IF 40942 . 40944) (open-paren 40888 . 40889) (close-paren 40886 . 40887) (symbol 40863 . 40886) (open-paren 40862 . 40863) (symbol 40850 . 40862) (close-paren 40708 . 40709) (punctuation 40683 . 40684) (punctuation 40682 . 40683) (punctuation 40667 . 40668) (punctuation 40641 . 40642) (punctuation 40640 . 40641) (IF 46056 . 46058) (open-paren 45966 . 45967) (close-paren 45964 . 45965) (symbol 45955 . 45964) (open-paren 45954 . 45955) (symbol 45942 . 45954) (close-paren 45819 . 45820) (punctuation 45765 . 45766) (punctuation 45764 . 45765) (punctuation 45694 . 45695) (punctuation 45693 . 45694) (punctuation 45686 . 45687) (string 45638 . 45650) (number 45635 . 45636) (punctuation 45634 . 45635) (punctuation 45627 . 45628) (semantic-list 45569 . 45583) (semantic-list 45488 . 45568) (IF 45485 . 45487) (open-paren 45440 . 45441) (close-paren 45438 . 45439) (symbol 45404 . 45438) (open-paren 45403 . 45404) (symbol 45391 . 45403) (close-paren 45260 . 45261) (punctuation 45204 . 45205) (punctuation 45203 . 45204) (punctuation 45129 . 45130) (punctuation 45128 . 45129) (punctuation 45121 . 45122) (string 45073 . 45085) (number 45070 . 45071) (punctuation 45069 . 45070) (punctuation 45062 . 45063) (semantic-list 45004 . 45018) (semantic-list 44923 . 45003) (IF 44920 . 44922) (open-paren 44875 . 44876) (close-paren 44873 . 44874) (symbol 44837 . 44873) (open-paren 44836 . 44837) (symbol 44824 . 44836) (close-paren 44691 . 44692) (semantic-list 44636 . 44644) (punctuation 44627 . 44628) (punctuation 44626 . 44627) (punctuation 44554 . 44555) (punctuation 44553 . 44554) (punctuation 44546 . 44547) (string 44498 . 44510) (number 44495 . 44496) (punctuation 44494 . 44495) (punctuation 44487 . 44488) (semantic-list 44430 . 44444) (semantic-list 44349 . 44429) (IF 44346 . 44348) (open-paren 44301 . 44302) (close-paren 44299 . 44300) (symbol 44264 . 44299) (open-paren 44263 . 44264) (symbol 44251 . 44263) (close-paren 44108 . 44109) (punctuation 44058 . 44059) (punctuation 44057 . 44058) (punctuation 43995 . 43996) (punctuation 43994 . 43995) (punctuation 43987 . 43988) (string 43939 . 43951) (number 43936 . 43937) (punctuation 43935 . 43936) (punctuation 43928 . 43929) (semantic-list 43871 . 43885) (semantic-list 43790 . 43870) (IF 43787 . 43789) (open-paren 43742 . 43743) (close-paren 43740 . 43741) (symbol 43711 . 43740) (open-paren 43710 . 43711) (symbol 43698 . 43710) (close-paren 43566 . 43567) (punctuation 43510 . 43511) (punctuation 43509 . 43510) (punctuation 43435 . 43436) (punctuation 43434 . 43435) (punctuation 43427 . 43428) (string 43379 . 43391) (number 43376 . 43377) (punctuation 43375 . 43376) (punctuation 43368 . 43369) (semantic-list 43310 . 43324) (semantic-list 43229 . 43309) (IF 43226 . 43228) (open-paren 43181 . 43182) (close-paren 43179 . 43180) (symbol 43143 . 43179) (open-paren 43142 . 43143) (symbol 43130 . 43142) (close-paren 42984 . 42985) (punctuation 42939 . 42940) (punctuation 42938 . 42939) (punctuation 42886 . 42887) (punctuation 42885 . 42886) (punctuation 42878 . 42879) (string 42830 . 42842) (number 42827 . 42828) (punctuation 42826 . 42827) (punctuation 42819 . 42820) (semantic-list 42762 . 42776) (semantic-list 42681 . 42761) (IF 42678 . 42680) (open-paren 42633 . 42634) (close-paren 42631 . 42632) (symbol 42608 . 42631) (open-paren 42607 . 42608) (symbol 42595 . 42607) (close-paren 42482 . 42483) (punctuation 42423 . 42424) (punctuation 42422 . 42423) (punctuation 42342 . 42343) (punctuation 42341 . 42342) (punctuation 42334 . 42335) (string 42286 . 42298) (number 42283 . 42284) (punctuation 42282 . 42283) (punctuation 42275 . 42276) (semantic-list 42217 . 42231) (semantic-list 42136 . 42216) (IF 42133 . 42135) (open-paren 42088 . 42089) (close-paren 42086 . 42087) (symbol 42048 . 42086) (open-paren 42047 . 42048) (symbol 42035 . 42047) (close-paren 41887 . 41888) (punctuation 41836 . 41837) (punctuation 41835 . 41836) (punctuation 41771 . 41772) (punctuation 41770 . 41771) (punctuation 41763 . 41764) (string 41715 . 41727) (number 41712 . 41713) (punctuation 41711 . 41712) (punctuation 41704 . 41705) (semantic-list 41646 . 41660) (semantic-list 41565 . 41645) (IF 41562 . 41564) (open-paren 41517 . 41518) (close-paren 41515 . 41516) (symbol 41485 . 41515) (open-paren 41484 . 41485) (symbol 41472 . 41484) (close-paren 41345 . 41346) (punctuation 41271 . 41272) (punctuation 41270 . 41271) (punctuation 41214 . 41215) (punctuation 41213 . 41214) (punctuation 41206 . 41207) (punctuation 41160 . 41161) (punctuation 41159 . 41160) (punctuation 41152 . 41153) (string 41104 . 41116) (number 41101 . 41102) (punctuation 41100 . 41101) (punctuation 41093 . 41094) (semantic-list 41035 . 41049) (semantic-list 40945 . 41034) (IF 40942 . 40944) (open-paren 40888 . 40889) (close-paren 40886 . 40887) (symbol 40863 . 40886) (open-paren 40862 . 40863) (symbol 40850 . 40862) (close-paren 40708 . 40709) (punctuation 40683 . 40684) (punctuation 40682 . 40683) (punctuation 40667 . 40668) (punctuation 40641 . 40642) (punctuation 40640 . 40641))
+    :lexical-table 
+        '(("IS_EXT_MODULE")
+          ("PHP_XML_INTERNAL")
+          )
+
+    )
+   )
+  :file "!home!work!download!php-5.3.20!ext!xml!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

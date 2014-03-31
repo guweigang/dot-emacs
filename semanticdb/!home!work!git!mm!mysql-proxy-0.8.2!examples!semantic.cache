@@ -1,0 +1,23 @@
+;; Object examples/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "examples/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("EXTRA_DIST" variable nil nil [1 13])
+            ("example_scripts" variable (:default-value ("tutorial-basic.lua" "tutorial-constants.lua" "tutorial-inject.lua" "tutorial-keepalive.lua" "tutorial-monitor.lua" "tutorial-packets.lua" "tutorial-query-time.lua" "tutorial-prep-stmts.lua" "tutorial-resultset.lua" "tutorial-rewrite.lua" "tutorial-routing.lua" "tutorial-scramble.lua" "tutorial-states.lua" "tutorial-tokenize.lua" "tutorial-union.lua" "tutorial-warnings.lua")) nil [14 425])
+            ("dist_doc_DATA" variable (:default-value ("${example_scripts}")) nil [448 483])
+            ("EXTRA_DIST" variable (:default-value ("${example_scripts}")) nil [488 521])
+            ("EXTRA_DIST" variable (:default-value ("CMakeLists.txt")) nil [528 555]))          
+    :file "Makefile.am"
+    :pointmax 555
+    :fsize 554
+    :lastmodtime '(21022 63839 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!git!mm!mysql-proxy-0.8.2!examples!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

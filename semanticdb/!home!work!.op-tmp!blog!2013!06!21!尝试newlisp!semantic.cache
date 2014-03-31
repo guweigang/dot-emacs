@@ -1,0 +1,18 @@
+;; Object 尝试newlisp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "尝试newlisp/"
+  :tables (list 
+   (semanticdb-table "index.html"
+    :major-mode 'html-mode
+    :tags nil
+    :file "index.html"
+    :pointmax 3223
+    :fsize 3350
+    :lastmodtime '(20931 63955 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!.op-tmp!blog!2013!06!21!尝试newlisp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,128 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables (list 
+   (semanticdb-table "event.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_EVENT_H_" variable (:constant-flag t) nil [1559 1568])
+            ("event2/tag_compat.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [2677 2707])
+            ("event2/tag.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [2653 2676])
+            ("event2/bufferevent_compat.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [2614 2652])
+            ("event2/bufferevent_struct.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [2575 2613])
+            ("event2/bufferevent.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [2543 2574])
+            ("event2/buffer_compat.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [2509 2542])
+            ("event2/buffer.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [2482 2508])
+            ("event2/event_compat.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [2449 2481])
+            ("event2/event.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [2423 2448])
+            ("event2/event_struct.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [2390 2422])
+            ("evutil.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [2153 2172])
+            ("stdarg.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [2111 2130])
+            ("event2/event-config.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [1903 1935])
+            ("C" extern (:members 
+              ( ("event2/event-config.h" include
+                   (:typemodifiers ("extern" "\"C\"")
+                    :system-flag t)
+                    (reparse-symbol extern-c-contents) [1903 1935])
+                ("stdarg.h" include
+                   (:typemodifiers ("extern" "\"C\"")
+                    :system-flag t)
+                    (reparse-symbol extern-c-contents) [2111 2130])
+                ("evutil.h" include
+                   (:typemodifiers ("extern" "\"C\"")
+                    :system-flag t)
+                    (reparse-symbol extern-c-contents) [2153 2172])
+                ("event2/event_struct.h" include
+                   (:typemodifiers ("extern" "\"C\"")
+                    :system-flag t)
+                    (reparse-symbol extern-c-contents) [2390 2422])
+                ("event2/event.h" include
+                   (:typemodifiers ("extern" "\"C\"")
+                    :system-flag t)
+                    (reparse-symbol extern-c-contents) [2423 2448])
+                ("event2/event_compat.h" include
+                   (:typemodifiers ("extern" "\"C\"")
+                    :system-flag t)
+                    (reparse-symbol extern-c-contents) [2449 2481])
+                ("event2/buffer.h" include
+                   (:typemodifiers ("extern" "\"C\"")
+                    :system-flag t)
+                    (reparse-symbol extern-c-contents) [2482 2508])
+                ("event2/buffer_compat.h" include
+                   (:typemodifiers ("extern" "\"C\"")
+                    :system-flag t)
+                    (reparse-symbol extern-c-contents) [2509 2542])
+                ("event2/bufferevent.h" include
+                   (:typemodifiers ("extern" "\"C\"")
+                    :system-flag t)
+                    (reparse-symbol extern-c-contents) [2543 2574])
+                ("event2/bufferevent_struct.h" include
+                   (:typemodifiers ("extern" "\"C\"")
+                    :system-flag t)
+                    (reparse-symbol extern-c-contents) [2575 2613])
+                ("event2/bufferevent_compat.h" include
+                   (:typemodifiers ("extern" "\"C\"")
+                    :system-flag t)
+                    (reparse-symbol extern-c-contents) [2614 2652])
+                ("event2/tag.h" include
+                   (:typemodifiers ("extern" "\"C\"")
+                    :system-flag t)
+                    (reparse-symbol extern-c-contents) [2653 2676])
+                ("event2/tag_compat.h" include
+                   (:typemodifiers ("extern" "\"C\"")
+                    :system-flag t)
+                    (reparse-symbol extern-c-contents) [2677 2707]))              ) nil [1882 2729]))          
+    :file "event.h"
+    :pointmax 2761
+    :fsize 2760
+    :lastmodtime '(20683 60819)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("_EVENT_H_")
+          )
+
+    )
+   )
+  :file "!home!work!local!libevent!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

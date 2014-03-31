@@ -1,0 +1,307 @@
+;; Object adapter/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "adapter/"
+  :tables (list 
+   (semanticdb-table "pdo.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("php.h" include nil nil [1213 1229])
+            ("php_phalcon.h" include nil nil [1230 1254])
+            ("phalcon.h" include nil nil [1255 1275])
+            ("Zend/zend_operators.h" include nil nil [1277 1309])
+            ("Zend/zend_exceptions.h" include nil nil [1310 1343])
+            ("Zend/zend_interfaces.h" include nil nil [1344 1377])
+            ("kernel/main.h" include nil nil [1379 1403])
+            ("kernel/memory.h" include nil nil [1404 1430])
+            ("db/adapter/pdo_constants.h" include nil nil [1432 1469])
+            ("kernel/array.h" include nil nil [1470 1495])
+            ("kernel/exception.h" include nil nil [1496 1525])
+            ("kernel/fcall.h" include nil nil [1526 1551])
+            ("kernel/object.h" include nil nil [1552 1578])
+            ("kernel/concat.h" include nil nil [1579 1605])
+            ("kernel/string.h" include nil nil [1606 1632])
+            ("kernel/operators.h" include nil nil [1633 1662])
+            ("PHALCON_INIT_CLASS" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter_Pdo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2078 2101]))                  
+                :type "int")
+                nil [2059 2609])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter_Pdo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2703 2726])
+                    ("" variable (:type ("__construct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2727 2739]))                  
+                :type "int")
+                nil [2692 3204])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter_Pdo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3677 3700])
+                    ("" variable (:type ("connect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3701 3709]))                  
+                :type "int")
+                nil [3666 7611])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter_Pdo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7943 7966])
+                    ("" variable (:type ("prepare" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7967 7975]))                  
+                :type "int")
+                nil [7932 8309])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter_Pdo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8724 8747])
+                    ("" variable (:type ("executePrepared" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8748 8764]))                  
+                :type "int")
+                nil [8713 11112])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter_Pdo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11642 11665])
+                    ("" variable (:type ("query" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11666 11672]))                  
+                :type "int")
+                nil [11631 14040])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter_Pdo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14556 14579])
+                    ("" variable (:type ("execute" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14580 14588]))                  
+                :type "int")
+                nil [14545 16864])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter_Pdo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17133 17156])
+                    ("" variable (:type ("affectedRows" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17157 17170]))                  
+                :type "int")
+                nil [17122 17218])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter_Pdo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17398 17421])
+                    ("" variable (:type ("close" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17422 17428]))                  
+                :type "int")
+                nil [17387 17698])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter_Pdo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17965 17988])
+                    ("" variable (:type ("escapeIdentifier" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17989 18006]))                  
+                :type "int")
+                nil [17954 18591])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter_Pdo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18838 18861])
+                    ("" variable (:type ("escapeString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18862 18875]))                  
+                :type "int")
+                nil [18827 19181])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter_Pdo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19469 19492])
+                    ("" variable (:type ("convertBoundParams" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19493 19512]))                  
+                :type "int")
+                nil [19458 22181])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter_Pdo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22600 22623])
+                    ("" variable (:type ("lastInsertId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22624 22637]))                  
+                :type "int")
+                nil [22589 23105])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter_Pdo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23190 23213])
+                    ("" variable (:type ("begin" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23214 23220]))                  
+                :type "int")
+                nil [23179 25466])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter_Pdo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25563 25586])
+                    ("" variable (:type ("rollback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25587 25596]))                  
+                :type "int")
+                nil [25552 28229])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter_Pdo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28324 28347])
+                    ("" variable (:type ("commit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28348 28355]))                  
+                :type "int")
+                nil [28313 30978])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter_Pdo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31066 31089])
+                    ("" variable (:type ("getTransactionLevel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31090 31110]))                  
+                :type "int")
+                nil [31055 31162])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter_Pdo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31363 31386])
+                    ("" variable (:type ("isUnderTransaction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31387 31406]))                  
+                :type "int")
+                nil [31352 31709])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter_Pdo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31780 31803])
+                    ("" variable (:type ("getInternalHandler" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31804 31823]))                  
+                :type "int")
+                nil [31769 31974]))          
+    :file "pdo.c"
+    :pointmax 31870
+    :fsize 31975
+    :lastmodtime '(20913 29969 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "pdo_constants.h"
+    :major-mode 'c-mode
+    :tags nil
+    :file "pdo_constants.h"
+    :pointmax 1494
+    :fsize 1493
+    :lastmodtime '(20911 24049 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "pdo.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("phalcon_db_adapter_pdo_ce" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("zend_class_entry" type (:type "class") nil nil))
+                nil [1164 1215])
+            ("PHALCON_INIT_CLASS" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter_Pdo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1236 1259]))                  
+                :type "int")
+                nil [1217 1260])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter_Pdo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1273 1296])
+                    ("" variable (:type ("__construct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1297 1309]))                  
+                :type "int")
+                nil [1262 1310])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter_Pdo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1322 1345])
+                    ("" variable (:type ("connect" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1346 1354]))                  
+                :type "int")
+                nil [1311 1355])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter_Pdo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1367 1390])
+                    ("" variable (:type ("prepare" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1391 1399]))                  
+                :type "int")
+                nil [1356 1400])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter_Pdo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1412 1435])
+                    ("" variable (:type ("executePrepared" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1436 1452]))                  
+                :type "int")
+                nil [1401 1453])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter_Pdo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1465 1488])
+                    ("" variable (:type ("query" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1489 1495]))                  
+                :type "int")
+                nil [1454 1496])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter_Pdo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1508 1531])
+                    ("" variable (:type ("execute" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1532 1540]))                  
+                :type "int")
+                nil [1497 1541])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter_Pdo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1553 1576])
+                    ("" variable (:type ("affectedRows" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1577 1590]))                  
+                :type "int")
+                nil [1542 1591])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter_Pdo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1603 1626])
+                    ("" variable (:type ("close" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1627 1633]))                  
+                :type "int")
+                nil [1592 1634])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter_Pdo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1646 1669])
+                    ("" variable (:type ("escapeIdentifier" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1670 1687]))                  
+                :type "int")
+                nil [1635 1688])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter_Pdo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1700 1723])
+                    ("" variable (:type ("escapeString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1724 1737]))                  
+                :type "int")
+                nil [1689 1738])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter_Pdo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1750 1773])
+                    ("" variable (:type ("convertBoundParams" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1774 1793]))                  
+                :type "int")
+                nil [1739 1794])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter_Pdo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1806 1829])
+                    ("" variable (:type ("lastInsertId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1830 1843]))                  
+                :type "int")
+                nil [1795 1844])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter_Pdo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1856 1879])
+                    ("" variable (:type ("begin" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1880 1886]))                  
+                :type "int")
+                nil [1845 1887])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter_Pdo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1899 1922])
+                    ("" variable (:type ("rollback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1923 1932]))                  
+                :type "int")
+                nil [1888 1933])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter_Pdo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1945 1968])
+                    ("" variable (:type ("commit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1969 1976]))                  
+                :type "int")
+                nil [1934 1977])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter_Pdo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1989 2012])
+                    ("" variable (:type ("getTransactionLevel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2013 2033]))                  
+                :type "int")
+                nil [1978 2034])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter_Pdo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2046 2069])
+                    ("" variable (:type ("isUnderTransaction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2070 2089]))                  
+                :type "int")
+                nil [2035 2090])
+            ("PHP_METHOD" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("Phalcon_Db_Adapter_Pdo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2102 2125])
+                    ("" variable (:type ("getInternalHandler" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2126 2145]))                  
+                :type "int")
+                nil [2091 2146])
+            ("PHALCON_INIT_FUNCS" function
+               (:arguments 
+                  ( ("" variable (:type ("phalcon_db_adapter_pdo_method_entry" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3635 3671]))                  
+                :type "int")
+                nil [3616 5325]))          
+    :file "pdo.h"
+    :pointmax 5328
+    :fsize 5327
+    :lastmodtime '(20911 24049 0 0)
+    :unmatched-syntax '((punctuation 5325 . 5326) (semantic-list 3612 . 3614) (symbol 3595 . 3612) (semantic-list 3577 . 3594) (symbol 3564 . 3577) (number 3578 . 3579) (semantic-list 3508 . 3562) (symbol 3486 . 3508) (number 3560 . 3561) (number 3557 . 3558) (number 3554 . 3555) (semantic-list 3482 . 3484) (symbol 3465 . 3482) (semantic-list 3453 . 3464) (symbol 3440 . 3453) (number 3454 . 3455) (semantic-list 3430 . 3438) (symbol 3417 . 3430) (number 3431 . 3432) (semantic-list 3355 . 3415) (symbol 3333 . 3355) (number 3413 . 3414) (number 3410 . 3411) (number 3407 . 3408) (semantic-list 3329 . 3331) (symbol 3312 . 3329) (semantic-list 3303 . 3311) (symbol 3290 . 3303) (number 3304 . 3305) (semantic-list 3234 . 3288) (symbol 3212 . 3234) (number 3286 . 3287) (number 3283 . 3284) (number 3280 . 3281) (semantic-list 3208 . 3210) (symbol 3191 . 3208) (semantic-list 3175 . 3190) (symbol 3162 . 3175) (number 3176 . 3177) (semantic-list 3102 . 3160) (symbol 3080 . 3102) (number 3158 . 3159) (number 3155 . 3156) (number 3152 . 3153) (semantic-list 3076 . 3078) (symbol 3059 . 3076) (semantic-list 3044 . 3058) (symbol 3031 . 3044) (number 3045 . 3046) (semantic-list 3014 . 3029) (symbol 3001 . 3014) (number 3015 . 3016) (semantic-list 2982 . 2999) (symbol 2969 . 2982) (number 2983 . 2984) (semantic-list 2918 . 2967) (symbol 2896 . 2918) (number 2965 . 2966) (number 2962 . 2963) (number 2959 . 2960) (semantic-list 2892 . 2894) (symbol 2875 . 2892) (semantic-list 2860 . 2874) (symbol 2847 . 2860) (number 2861 . 2862) (semantic-list 2830 . 2845) (symbol 2817 . 2830) (number 2831 . 2832) (semantic-list 2798 . 2815) (symbol 2785 . 2798) (number 2799 . 2800) (semantic-list 2736 . 2783) (symbol 2714 . 2736) (number 2781 . 2782) (number 2778 . 2779) (number 2775 . 2776) (semantic-list 2710 . 2712) (symbol 2693 . 2710) (semantic-list 2678 . 2692) (symbol 2665 . 2678) (number 2679 . 2680) (semantic-list 2646 . 2663) (symbol 2633 . 2646) (number 2647 . 2648) (semantic-list 2617 . 2631) (symbol 2604 . 2617) (number 2618 . 2619) (semantic-list 2545 . 2602) (symbol 2523 . 2545) (number 2600 . 2601) (number 2597 . 2598) (number 2594 . 2595) (semantic-list 2519 . 2521) (symbol 2502 . 2519) (semantic-list 2484 . 2501) (symbol 2471 . 2484) (number 2485 . 2486) (semantic-list 2420 . 2469) (symbol 2398 . 2420) (number 2467 . 2468) (number 2464 . 2465) (number 2461 . 2462) (semantic-list 2394 . 2396) (symbol 2377 . 2394) (semantic-list 2361 . 2376) (symbol 2348 . 2361) (number 2362 . 2363) (semantic-list 2297 . 2346) (symbol 2275 . 2297) (number 2344 . 2345) (number 2341 . 2342) (number 2338 . 2339) (semantic-list 2271 . 2273) (symbol 2254 . 2271) (semantic-list 2238 . 2253) (symbol 2225 . 2238) (number 2239 . 2240) (semantic-list 2170 . 2223) (symbol 2148 . 2170) (number 2221 . 2222) (number 2218 . 2219) (number 2215 . 2216))
+    )
+   )
+  :file "!home!work!git!bullsoft!cphalcon!ext!db!adapter!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

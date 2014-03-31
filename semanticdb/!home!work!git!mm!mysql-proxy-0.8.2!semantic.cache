@@ -1,0 +1,28 @@
+;; Object mysql-proxy-0.8.2/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mysql-proxy-0.8.2/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("SUBDIRS" variable (:default-value ("cmake" "src" "lib" "plugins" "examples" "scripts" "tests" "m4" "doc")) nil [1 63])
+            ("EXTRA_DIST" variable (:default-value ("config.h.cmake" "Doxyfile" "README.TESTS" "autogen.sh" "mysql-proxy.spec" "winbuild.bat" "doxygen-scripts" "CMakeLists.txt" "mysql-chassis.pc.cmake" "mysql-proxy.pc.cmake" "deps" "internal")) nil [64 292])
+            ("ACLOCAL_AMFLAGS" variable (:default-value ("-I" "m4")) nil [293 317])
+            ("pkgconfigdir" variable (:default-value ("$(libdir)/pkgconfig")) nil [318 353])
+            ("pkgconfig_DATA" variable (:default-value ("mysql-proxy.pc" "mysql-chassis.pc")) nil [353 402])
+            ("$(pkgconfig_DATA)" function (:arguments ("config.status")) nil [403 436])
+            ("dist-hook" function nil nil [437 500])
+            ("docs" function nil nil [589 711])
+            ("docs-bzr" function nil nil [824 993])
+            ("installcheck" function nil nil [1270 1758]))          
+    :file "Makefile.am"
+    :pointmax 1758
+    :fsize 1757
+    :lastmodtime '(21022 63839 0 0)
+    :unmatched-syntax '((shell-command 1285 . 1757) (bol 1284 . 1284))
+    )
+   )
+  :file "!home!work!git!mm!mysql-proxy-0.8.2!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

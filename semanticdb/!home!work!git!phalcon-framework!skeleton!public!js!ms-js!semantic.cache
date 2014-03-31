@@ -1,0 +1,30 @@
+;; Object ms-js/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ms-js/"
+  :tables (list 
+   (semanticdb-table "ms-login.js"
+    :major-mode 'js-mode
+    :tags nil
+    :file "ms-login.js"
+    :pointmax 3800
+    :fsize 3835
+    :lastmodtime '(21254 8636 0 0)
+    :unmatched-syntax '((PAREN_BLOCK 3772 . 3798) (PAREN_BLOCK 1 . 3772))
+    )
+   (semanticdb-table "login.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("登陆<a href=\"#\">xueping" section (:members 
+              ( ("xueping" anchor nil nil [107 110])
+                ("立即注册" anchor nil nil [3077 3080]))              ) nil [101 3132]))          
+    :file "login.html"
+    :pointmax 3132
+    :fsize 3289
+    :lastmodtime '(21254 8636 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!git!phalcon-framework!skeleton!public!js!ms-js!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

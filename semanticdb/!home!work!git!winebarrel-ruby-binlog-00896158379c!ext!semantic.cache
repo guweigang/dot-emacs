@@ -1,0 +1,168 @@
+;; Object ext/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ext/"
+  :tables (list 
+   (semanticdb-table "ruby_binlog.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("ruby_binlog.h" include nil nil [1 25])
+            ("rb_cBinlogQueryEvent" variable
+               (:typemodifiers ("extern")
+                :type ("VALUE" type (:type "class") nil nil))
+                nil [27 61])
+            ("rb_cBinlogRotateEvent" variable
+               (:typemodifiers ("extern")
+                :type ("VALUE" type (:type "class") nil nil))
+                nil [62 97])
+            ("rb_cBinlogFormatEvent" variable
+               (:typemodifiers ("extern")
+                :type ("VALUE" type (:type "class") nil nil))
+                nil [98 133])
+            ("rb_cBinlogUserVarEvent" variable
+               (:typemodifiers ("extern")
+                :type ("VALUE" type (:type "class") nil nil))
+                nil [134 170])
+            ("rb_cBinlogTableMapEvent" variable
+               (:typemodifiers ("extern")
+                :type ("VALUE" type (:type "class") nil nil))
+                nil [171 208])
+            ("rb_cBinlogRowEvent" variable
+               (:typemodifiers ("extern")
+                :type ("VALUE" type (:type "class") nil nil))
+                nil [209 241])
+            ("rb_cBinlogIntVarEvent" variable
+               (:typemodifiers ("extern")
+                :type ("VALUE" type (:type "class") nil nil))
+                nil [242 277])
+            ("rb_cBinlogIncidentEvent" variable
+               (:typemodifiers ("extern")
+                :type ("VALUE" type (:type "class") nil nil))
+                nil [278 315])
+            ("rb_cBinlogXid" variable
+               (:typemodifiers ("extern")
+                :type ("VALUE" type (:type "class") nil nil))
+                nil [316 343])
+            ("rb_cBinlogUnimplementedEvent" variable
+               (:typemodifiers ("extern")
+                :type ("VALUE" type (:type "class") nil nil))
+                nil [344 386])
+            ("ruby" type
+               (:members 
+                  ( ("binlog" type
+                       (:members 
+                          ( ("Client" type
+                               (:members 
+                                  ( ("m_binlog" variable
+                                       (:pointer 1
+                                        :type ("Binary_log" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [443 464])
+                                    ("m_table_map" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [467 485])
+                                    ("free" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("p" variable
+                                               (:pointer 1
+                                                :type ("Client" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [506 516]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [489 640])
+                                    ("mark" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("p" variable
+                                               (:pointer 1
+                                                :type ("Client" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [661 671]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [644 743])
+                                    ("alloc" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("klass" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [766 778]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [747 912])
+                                    ("initialize" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [940 951])
+                                            ("uri" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [952 962]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [916 1173])
+                                    ("connect" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1198 1209]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1177 1394])
+                                    ("is_closed" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2025 2036]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2002 2472])
+                                    ("wait_for_next_event" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2509 2520]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2476 5518])
+                                    ("set_position" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [5548 5557])
+                                            ("argv" variable
+                                               (:pointer 1
+                                                :type ("VALUE" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5558 5570])
+                                            ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5571 5582]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [5522 6477])
+                                    ("set_position2" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6508 6519])
+                                            ("position" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6520 6535]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6481 6972])
+                                    ("get_position" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [7002 7011])
+                                            ("argv" variable
+                                               (:pointer 1
+                                                :type ("VALUE" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7012 7024])
+                                            ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7025 7036]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6976 7499])
+                                    ("get_position2" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("self" variable (:type ("VALUE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7530 7541]))                                          
+                                        :type ("VALUE" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7503 7734])
+                                    ("init" function
+                                       (:typemodifiers ("static")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [7738 8703]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [425 8706]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [405 8709]))                  
+                :type "namespace")
+                nil [388 8731])
+            ("rb_mBinlog" variable (:type ("VALUE" type (:type "class") nil nil)) nil [8751 8768])
+            ("rb_cBinlogEvent" variable (:type ("VALUE" type (:type "class") nil nil)) nil [8769 8791])
+            ("rb_eBinlogError" variable (:type ("VALUE" type (:type "class") nil nil)) nil [8792 8814])
+            ("Init_binlog" function (:type "void") nil [8816 11987]))          
+    :file "ruby_binlog.cpp"
+    :pointmax 11988
+    :fsize 11987
+    :lastmodtime '(20653 43180)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!work!git!winebarrel-ruby-binlog-00896158379c!ext!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.0"
+  )

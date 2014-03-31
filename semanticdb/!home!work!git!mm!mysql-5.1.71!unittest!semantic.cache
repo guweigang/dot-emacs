@@ -1,0 +1,24 @@
+;; Object unittest/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "unittest/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("SUBDIRS" variable (:default-value ("mytap" "." "mysys" "examples" "strings" "my_decimal")) nil [736 793])
+            ("EXTRA_DIST" variable (:default-value ("unit.pl")) nil [794 815])
+            ("CLEANFILES" variable (:default-value ("unit")) nil [815 833])
+            ("unittests" variable (:default-value ("mytap" "mysys" "strings" "my_decimal" "@mysql_se_unittest_dirs@" "@mysql_pg_unittest_dirs@")) nil [834 928])
+            ("test" function nil nil [929 966])
+            ("test-verbose" function nil nil [967 1030]))          
+    :file "Makefile.am"
+    :pointmax 1083
+    :fsize 1082
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax '((symbol 1074 . 1082) (punctuation 1073 . 1074) (punctuation 1072 . 1073) (symbol 1071 . 1072) (bol 1071 . 1071))
+    )
+   )
+  :file "!home!work!git!mm!mysql-5.1.71!unittest!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

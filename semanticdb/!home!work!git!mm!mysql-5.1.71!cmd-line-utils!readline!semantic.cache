@@ -1,0 +1,24 @@
+;; Object readline/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "readline/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags 
+        '( ("INCLUDES" variable (:default-value ("-I$(top_builddir)/include" "-I$(top_srcdir)/include" "-I$(top_srcdir)")) nil [205 288])
+            ("noinst_LIBRARIES" variable (:default-value ("libreadline.a")) nil [289 322])
+            ("libreadline_a_SOURCES" variable (:default-value ("readline.c" "funmap.c" "keymaps.c" "vi_mode.c" "parens.c" "rltty.c" "complete.c" "bind.c" "isearch.c" "display.c" "signals.c" "util.c" "kill.c" "undo.c" "macro.c" "input.c" "callback.c" "terminal.c" "xmalloc.c" "history.c" "histsearch.c" "histexpand.c" "histfile.c" "nls.c" "search.c" "shell.c" "tilde.c" "misc.c" "text.c" "mbutil.c" "compat.c" "savestring.c")) nil [323 694])
+            ("noinst_HEADERS" variable (:default-value ("readline.h" "chardefs.h" "keymaps.h" "history.h" "tilde.h" "rlmbutil.h" "rltypedefs.h" "rlprivate.h" "rlshell.h" "xmalloc.h" "\\")) nil [695 832])
+            ("EXTRA_DIST" variable (:default-value ("emacs_keymap.c" "vi_keymap.c")) nil [989 1029])
+            ("DEFS" variable (:default-value ("-DMYSQL_CLIENT_NO_THREADS" "-DHAVE_CONFIG_H" "-DNO_KILL_INTR" "-D_GNU_SOURCE=1")) nil [1030 1112]))          
+    :file "Makefile.am"
+    :pointmax 1165
+    :fsize 1164
+    :lastmodtime '(20958 46488 0 0)
+    :unmatched-syntax '((symbol 1156 . 1164) (punctuation 1155 . 1156) (punctuation 1154 . 1155) (symbol 1153 . 1154) (bol 1153 . 1153) (shell-command 833 . 987) (bol 832 . 832))
+    )
+   )
+  :file "!home!work!git!mm!mysql-5.1.71!cmd-line-utils!readline!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

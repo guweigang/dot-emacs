@@ -1,0 +1,562 @@
+;; Object mvc/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mvc/"
+  :tables (list 
+   (semanticdb-table "model.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("php.h" include nil nil [1213 1229])
+            ("php_phalcon.h" include nil nil [1230 1254])
+            ("phalcon.h" include nil nil [1255 1275])
+            ("Zend/zend_operators.h" include nil nil [1277 1309])
+            ("Zend/zend_exceptions.h" include nil nil [1310 1343])
+            ("Zend/zend_interfaces.h" include nil nil [1344 1377])
+            ("kernel/main.h" include nil nil [1379 1403])
+            ("kernel/memory.h" include nil nil [1404 1430])
+            ("kernel/fcall.h" include nil nil [1432 1457])
+            ("kernel/exception.h" include nil nil [1458 1487])
+            ("kernel/object.h" include nil nil [1488 1514])
+            ("kernel/hash.h" include nil nil [1515 1539])
+            ("kernel/array.h" include nil nil [1540 1565])
+            ("kernel/concat.h" include nil nil [1566 1592])
+            ("kernel/operators.h" include nil nil [1593 1622])
+            ("kernel/string.h" include nil nil [1623 1649])
+            ("kernel/file.h" include nil nil [1650 1674])
+            ("kernel/variables.h" include nil nil [1675 1704])
+            ("PHALCON_INIT_CLASS" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2974 2992]))                  
+                :type "int")
+                nil [2955 5294])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5461 5479])
+                    ("" variable (:type ("__construct" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5480 5492]))                  
+                :type "int")
+                nil [5450 7510])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7627 7645])
+                    ("" variable (:type ("setDI" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7646 7652]))                  
+                :type "int")
+                nil [7616 7842])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7943 7961])
+                    ("" variable (:type ("getDI" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7962 7968]))                  
+                :type "int")
+                nil [7932 8022])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8135 8153])
+                    ("" variable (:type ("setEventsManager" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8154 8171]))                  
+                :type "int")
+                nil [8124 8537])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8641 8659])
+                    ("" variable (:type ("getEventsManager" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8660 8677]))                  
+                :type "int")
+                nil [8630 9029])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9171 9189])
+                    ("" variable (:type ("getModelsMetaData" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9190 9208]))                  
+                :type "int")
+                nil [9160 10456])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10587 10605])
+                    ("" variable (:type ("getModelsManager" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10606 10623]))                  
+                :type "int")
+                nil [10576 10672])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11630 11648])
+                    ("" variable (:type ("setTransaction" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11649 11664]))                  
+                :type "int")
+                nil [11619 11993])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12119 12137])
+                    ("" variable (:type ("setSource" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12138 12148]))                  
+                :type "int")
+                nil [12108 12473])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12557 12575])
+                    ("" variable (:type ("getSource" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12576 12586]))                  
+                :type "int")
+                nil [12546 12898])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13026 13044])
+                    ("" variable (:type ("setSchema" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13045 13055]))                  
+                :type "int")
+                nil [13015 13380])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13475 13493])
+                    ("" variable (:type ("getSchema" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13494 13504]))                  
+                :type "int")
+                nil [13464 13816])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13961 13979])
+                    ("" variable (:type ("setConnectionService" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13980 14001]))                  
+                :type "int")
+                nil [13950 14368])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14531 14549])
+                    ("" variable (:type ("setReadConnectionService" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14550 14575]))                  
+                :type "int")
+                nil [14520 14946])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15110 15128])
+                    ("" variable (:type ("setWriteConnectionService" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15129 15155]))                  
+                :type "int")
+                nil [15099 15527])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15664 15682])
+                    ("" variable (:type ("getReadConnectionService" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15683 15708]))                  
+                :type "int")
+                nil [15653 16078])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16219 16237])
+                    ("" variable (:type ("getWriteConnectionService" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16238 16264]))                  
+                :type "int")
+                nil [16208 16635])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16793 16811])
+                    ("" variable (:type ("setDirtyState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16812 16826]))                  
+                :type "int")
+                nil [16782 16999])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17136 17154])
+                    ("" variable (:type ("getDirtyState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17155 17169]))                  
+                :type "int")
+                nil [17125 17215])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17333 17351])
+                    ("" variable (:type ("getReadConnection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17352 17370]))                  
+                :type "int")
+                nil [17322 17701])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17819 17837])
+                    ("" variable (:type ("getWriteConnection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17838 17857]))                  
+                :type "int")
+                nil [17808 18487])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18794 18812])
+                    ("" variable (:type ("assign" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18813 18820]))                  
+                :type "int")
+                nil [18783 20278])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20708 20726])
+                    ("" variable (:type ("cloneResultMap" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20727 20742]))                  
+                :type "int")
+                nil [20697 23046])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23232 23250])
+                    ("" variable (:type ("cloneResultMapHydrate" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23251 23273]))                  
+                :type "int")
+                nil [23221 25467])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25832 25850])
+                    ("" variable (:type ("cloneResult" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25851 25863]))                  
+                :type "int")
+                nil [25821 27338])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28184 28202])
+                    ("" variable (:type ("find" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28203 28208]))                  
+                :type "int")
+                nil [28173 30464])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31122 31140])
+                    ("" variable (:type ("findFirst" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31141 31151]))                  
+                :type "int")
+                nil [31111 33374])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33528 33546])
+                    ("" variable (:type ("query" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33547 33553]))                  
+                :type "int")
+                nil [33517 34410])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34613 34631])
+                    ("" variable (:type ("_exists" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34632 34640]))                  
+                :type "int")
+                nil [34602 41567])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41771 41789])
+                    ("" variable (:type ("_groupResult" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41790 41803]))                  
+                :type "int")
+                nil [41760 45456])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45869 45887])
+                    ("" variable (:type ("count" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [45888 45894]))                  
+                :type "int")
+                nil [45858 46347])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46841 46859])
+                    ("" variable (:type ("sum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [46860 46864]))                  
+                :type "int")
+                nil [46830 47315])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47825 47843])
+                    ("" variable (:type ("maximum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [47844 47852]))                  
+                :type "int")
+                nil [47814 48302])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48800 48818])
+                    ("" variable (:type ("minimum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [48819 48827]))                  
+                :type "int")
+                nil [48789 49277])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49818 49836])
+                    ("" variable (:type ("average" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49837 49845]))                  
+                :type "int")
+                nil [49807 50295])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50461 50479])
+                    ("" variable (:type ("fireEvent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [50480 50490]))                  
+                :type "int")
+                nil [50450 51142])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51385 51403])
+                    ("" variable (:type ("fireEventCancel" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [51404 51420]))                  
+                :type "int")
+                nil [51374 52215])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [52290 52308])
+                    ("" variable (:type ("_cancelOperation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [52309 52326]))                  
+                :type "int")
+                nil [52279 52820])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [53327 53345])
+                    ("" variable (:type ("appendMessage" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [53346 53360]))                  
+                :type "int")
+                nil [53316 53913])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54418 54436])
+                    ("" variable (:type ("validate" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [54437 54446]))                  
+                :type "int")
+                nil [54407 55468])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55950 55968])
+                    ("" variable (:type ("validationHasFailed" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [55969 55989]))                  
+                :type "int")
+                nil [55939 56312])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [56794 56812])
+                    ("" variable (:type ("getMessages" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [56813 56825]))                  
+                :type "int")
+                nil [56783 56874])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [57095 57113])
+                    ("" variable (:type ("_checkForeignKeysRestrict" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [57114 57140]))                  
+                :type "int")
+                nil [57084 64270])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [64429 64447])
+                    ("" variable (:type ("_checkForeignKeysReverseRestrict" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [64448 64481]))                  
+                :type "int")
+                nil [64418 71109])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [71267 71285])
+                    ("" variable (:type ("_checkForeignKeysReverseCascade" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [71286 71318]))                  
+                :type "int")
+                nil [71256 76802])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [77007 77025])
+                    ("" variable (:type ("_preSave" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [77026 77035]))                  
+                :type "int")
+                nil [76996 85416])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [85560 85578])
+                    ("" variable (:type ("_postSave" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [85579 85589]))                  
+                :type "int")
+                nil [85549 86408])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [86657 86675])
+                    ("" variable (:type ("_doLowInsert" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [86676 86689]))                  
+                :type "int")
+                nil [86646 94531])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [94786 94804])
+                    ("" variable (:type ("_doLowUpdate" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [94805 94818]))                  
+                :type "int")
+                nil [94775 103122])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [103340 103358])
+                    ("" variable (:type ("_preSaveRelatedRecords" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [103359 103382]))                  
+                :type "int")
+                nil [103329 107155])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [107367 107385])
+                    ("" variable (:type ("_postSaveRelatedRecords" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [107386 107410]))                  
+                :type "int")
+                nil [107356 115681])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [116158 116176])
+                    ("" variable (:type ("save" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [116177 116182]))                  
+                :type "int")
+                nil [116147 122993])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [123606 123624])
+                    ("" variable (:type ("create" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [123625 123632]))                  
+                :type "int")
+                nil [123595 127926])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [128312 128330])
+                    ("" variable (:type ("update" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [128331 128338]))                  
+                :type "int")
+                nil [128301 132898])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [133190 133208]))                  
+                :type "int")
+                nil [133179 140008])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [140155 140173])
+                    ("" variable (:type ("getOperationMade" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [140174 140191]))                  
+                :type "int")
+                nil [140144 140240])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [140336 140354])
+                    ("" variable (:type ("refresh" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [140355 140363]))                  
+                :type "int")
+                nil [140325 144629])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [144732 144750])
+                    ("" variable (:type ("skipOperation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [144751 144765]))                  
+                :type "int")
+                nil [144721 144899])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [145071 145089])
+                    ("" variable (:type ("readAttribute" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [145090 145104]))                  
+                :type "int")
+                nil [145060 145452])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [145637 145655])
+                    ("" variable (:type ("writeAttribute" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [145656 145671]))                  
+                :type "int")
+                nil [145626 145832])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [146157 146175])
+                    ("" variable (:type ("skipAttributes" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [146176 146191]))                  
+                :type "int")
+                nil [146146 147291])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [147622 147640])
+                    ("" variable (:type ("skipAttributesOnCreate" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [147641 147664]))                  
+                :type "int")
+                nil [147611 148663])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [148995 149013])
+                    ("" variable (:type ("skipAttributesOnUpdate" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [149014 149037]))                  
+                :type "int")
+                nil [148984 150036])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [150453 150471])
+                    ("" variable (:type ("hasOne" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [150472 150479]))                  
+                :type "int")
+                nil [150442 151031])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [151454 151472])
+                    ("" variable (:type ("belongsTo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [151473 151483]))                  
+                :type "int")
+                nil [151443 152038])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [152450 152468])
+                    ("" variable (:type ("hasMany" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [152469 152477]))                  
+                :type "int")
+                nil [152439 153030])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [153739 153757])
+                    ("" variable (:type ("hasManyToMany" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [153758 153772]))                  
+                :type "int")
+                nil [153728 154715])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [155154 155172])
+                    ("" variable (:type ("addBehavior" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [155173 155185]))                  
+                :type "int")
+                nil [155143 155494])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [155782 155800])
+                    ("" variable (:type ("keepSnapshots" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [155801 155815]))                  
+                :type "int")
+                nil [155771 156141])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [156353 156371])
+                    ("" variable (:type ("setSnapshotData" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [156372 156388]))                  
+                :type "int")
+                nil [156342 158144])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [158238 158256])
+                    ("" variable (:type ("hasSnapshotData" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [158257 158273]))                  
+                :type "int")
+                nil [158227 158505])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [158584 158602])
+                    ("" variable (:type ("getSnapshotData" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [158603 158619]))                  
+                :type "int")
+                nil [158573 158663])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [158819 158837])
+                    ("" variable (:type ("hasChanged" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [158838 158849]))                  
+                :type "int")
+                nil [158808 163727])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [163804 163822])
+                    ("" variable (:type ("getChangedFields" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [163823 163840]))                  
+                :type "int")
+                nil [163793 166772])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [167068 167086])
+                    ("" variable (:type ("useDynamicUpdate" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [167087 167104]))                  
+                :type "int")
+                nil [167057 167436])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [167613 167631])
+                    ("" variable (:type ("getRelated" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [167632 167643]))                  
+                :type "int")
+                nil [167602 169282])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [169477 169495])
+                    ("" variable (:type ("_getRelatedRecords" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [169496 169515]))                  
+                :type "int")
+                nil [169466 171703])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [171853 171871])
+                    ("" variable (:type ("__call" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [171872 171879]))                  
+                :type "int")
+                nil [171842 173208])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [173365 173383])
+                    ("" variable (:type ("__callStatic" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [173384 173397]))                  
+                :type "int")
+                nil [173354 177864])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [177988 178006])
+                    ("" variable (:type ("__set" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [178007 178013]))                  
+                :type "int")
+                nil [177977 179300])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [179468 179486])
+                    ("" variable (:type ("__get" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [179487 179493]))                  
+                :type "int")
+                nil [179457 181753])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [181863 181881])
+                    ("" variable (:type ("__isset" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [181882 181890]))                  
+                :type "int")
+                nil [181852 182444])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [182580 182598])
+                    ("" variable (:type ("serialize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [182599 182609]))                  
+                :type "int")
+                nil [182569 183903])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [184002 184020])
+                    ("" variable (:type ("unserialize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [184021 184033]))                  
+                :type "int")
+                nil [183991 186141])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [186313 186331])
+                    ("" variable (:type ("dump" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [186332 186337]))                  
+                :type "int")
+                nil [186302 186504])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [186649 186667])
+                    ("" variable (:type ("toArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [186668 186676]))                  
+                :type "int")
+                nil [186638 188583])
+            ("PHP_METHOD" function
+               (:arguments 
+                  ( ("" variable (:type ("Phalcon_Mvc_Model" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [188671 188689])
+                    ("" variable (:type ("setup" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [188690 188696]))                  
+                :type "int")
+                nil [188660 191170]))          
+    :file "model.c"
+    :pointmax 191172
+    :fsize 191176
+    :lastmodtime '(20955 42574 0 0)
+    :unmatched-syntax '((DELETE 133209 . 133215) (DELETE 133209 . 133215))
+    )
+   )
+  :file "!home!work!git!cphalcon-1.2.0!ext!mvc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )
