@@ -21,7 +21,7 @@
 ;; GNU Emacs; see the file COPYING.  If not, write to the Free Software
 ;; Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
 
-;; $Id: ecb-winman-support.el,v 1.16 2009/05/15 15:19:53 berndl Exp $
+;; $Id$
 
 ;;; Commentary
 ;;
@@ -294,17 +294,17 @@ ecb-frame. This advice is a permanent advice set!"
 (when-ecb-running-xemacs
   (defecb-advice push-window-configuration before ecb-winman-not-supported-function-advices
     (if (and (equal (selected-frame) ecb-frame)
-             (interactive-p))
+             (called-interactively-p 'any))
         (ecb-error "Can't use interactive push-window-configuration in the ecb-frame.")))
 
   (defecb-advice pop-window-configuration before ecb-winman-not-supported-function-advices
     (if (and (equal (selected-frame) ecb-frame)
-             (interactive-p))
+             (called-interactively-p 'any))
         (ecb-error "Can't use interactive pop-window-configuration in the ecb-frame.")))
   
   (defecb-advice unpop-window-configuration before ecb-winman-not-supported-function-advices
     (if (and (equal (selected-frame) ecb-frame)
-             (interactive-p))
+             (called-interactively-p 'any))
         (ecb-error "Can't use interactive unpop-window-configuration in the ecb-frame.")))
   )
 

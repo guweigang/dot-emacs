@@ -25,7 +25,7 @@
 ;; GNU Emacs; see the file COPYING.  If not, write to the Free Software
 ;; Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
 
-;; $Id: ecb-common-browser.el,v 1.45 2010/02/23 16:08:56 berndl Exp $
+;; $Id$
 
 
 ;;; History
@@ -47,7 +47,8 @@
 (require 'ecb-navigate)
 
 ;; various loads
-(require 'assoc)
+(if (or (not (fboundp 'version<)) (version< emacs-version "24.3"))
+    (require 'assoc))
 
 (eval-when-compile
   ;; to avoid compiler grips
@@ -1502,7 +1503,7 @@ has been contained)."
 
 (defmacro defecb-autocontrol/sync-function (fcn buffer-name-symbol
                                                 buffer-sync-option-symbol
-                                                interactive-p docstring
+                                                called-interactively-p docstring
                                                 &rest body)
   "Define a function run either by idle-timer or before or after each command.
 Such a function is used either for automatic self-controlling certain aspects
@@ -1542,7 +1543,7 @@ exactly true when either:
 - The value of BUFFER-SYNC-OPTION-SYMBOL is 'basic and the conditions above
   are true for `ecb-basic-buffer-sync'.
 
-If INTERACTIVE-P is not nil then FCN will be defined as an interactice
+If CALLED-INTERACTIVELY-P is not nil then FCN will be defined as an interactice
 command, i.e. it will containe the clause \(interactive \"P\").
 
 The defined function is automatically prepared for tracing its calls when
@@ -1573,7 +1574,7 @@ hold in the variable `ecb-a-special-buffer-name'.
 
      (defun ,fcn (&optional force)
        ,docstring
-       ,(if interactive-p
+       ,(if called-interactively-p
             '(interactive "P"))
        (ecb-autotrace-autocontrol/sync-fcn-error (quote ,fcn)
                                                  "Begin: Cur-buf: %s" (current-buffer))

@@ -23,7 +23,7 @@
 ;; GNU Emacs; see the file COPYING.  If not, write to the Free Software
 ;; Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
 
-;; $Id: ecb-method-browser.el,v 1.99 2010/02/23 16:09:05 berndl Exp $
+;; $Id$
 
 ;;; Commentary:
 
@@ -42,11 +42,13 @@
 
 (require 'ecb-cedet-wrapper)
 (require 'ecb-semantic)
+(require 'ecb-semantic-wrapper)
 ;; This loads the semantic-setups for the major-modes.
 ;; (require 'semantic-load)
 
 ;; various loads
-(require 'assoc)
+(if (or (not (fboundp 'version<)) (version< emacs-version "24.3"))
+    (require 'assoc))
 
 (eval-when-compile
   ;; to avoid compiler grips
@@ -1902,6 +1904,7 @@ This function MUST be called with the source-buffer as current buffer!"
                                 (if has-protection 1 -1)
                                 icon-name)))
 
+
 (defun ecb-children-tags (parent-tag)
   "Return a list of children-tags of PARENT-TAG. If a child is not a
 semantic-tag \(but a plain string) then it will be converted to a positionless
@@ -3085,6 +3088,8 @@ a list of cons-cells where the car is the name of the source and the cdr is
 the current tag-tree for this source. The cache contains exactly one element
 for a certain source.")
 (setq ecb-tag-tree-cache nil)
+
+(require 'assoc)
 
 (defun ecb-clear-tag-tree-cache (&optional source-name)
   "Clears either the whole tag-tree-cache \(SOURCE-NAME is nil) or
